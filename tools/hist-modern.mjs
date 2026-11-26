@@ -6,7 +6,8 @@ export const ROWS = [
   // ---------------- Europe
   ["GEROCC", "Alemanha (ocupada pelos Aliados)", "blank", 1946, 1948, ["DEU", "DEU~E"]],
   ["FRG", "Alemanha Ocidental", "x:de", 1949, 1989, ["DEU"], [9, 50.6]],
-  ["GDR", "Alemanha Oriental", "h:ddr", 1949, 1989, ["DEU~E"], [12.6, 52.2]],
+  ["GDR49", "Alemanha Oriental", "x:de", 1949, 1958, ["DEU~E"], [12.6, 52.2]], // brasão só a partir de 1/out/1959
+  ["GDR", "Alemanha Oriental", "h:ddr", 1959, 1989, ["DEU~E"], [12.6, 52.2]],
   ["AUTOCC", "Áustria (ocupada pelos Aliados)", "x:at", 1946, 1955, ["AUT"]],
   ["SUN", "União Soviética", "h:su", 1946, 1990, ["RUS", "UKR", "BLR", "EST", "LVA", "LTU", "MDA", "GEO", "ARM", "AZE", "KAZ", "UZB", "TKM", "KGZ", "TJK"], [95, 62]],
   // Crimeia: transferida à RSS da Ucrânia em 1954 (dentro da URSS); Ucrânia independente em 1991; anexada pela Rússia em 2014 (disputada)
@@ -23,14 +24,25 @@ export const ROWS = [
   ["ROU1", null, "h:ro_old", 1948, 1988, ["ROU"]],
   ["BGR1", null, "h:bg_old", 1946, 1989, ["BGR"]],
   ["ALB1", null, "h:al_old", 1946, 1991, ["ALB"]],
-  ["GRC1", null, "h:gr_cross", 1946, 1977, ["GRC"]],
+  // Grécia: cruz até 1968; listras como única bandeira de 18/ago/1969 a 7/jun/1975; cruz até 22/dez/1978
+  ["GRC1", null, "h:gr_cross", 1946, 1968, ["GRC"]],
+  ["GRC69", null, "x:gr", 1969, 1974, ["GRC"]],
+  ["GRC75", null, "h:gr_cross", 1975, 1977, ["GRC"]],
   ["CYP0", "Chipre (britânico)", G, 1946, 1959, ["CYP"]],
   ["MLT0", "Malta (britânica)", G, 1946, 1963, ["MLT"]],
   ["GEO1", null, "h:ge90", 1991, 2003, ["GEO"]],
+  // Ásia Central: bandeiras da época soviética até 1992 (Cazaquistão 4/jun/1992, Turcomenistão 19/fev/1992, Quirguistão 3/mar/1992, Tadjiquistão 24/nov/1992)
+  ["KAZ91", null, "h:kz_ssr", 1991, 1991, ["KAZ"]],
+  ["TKM91", null, "h:tm_ssr", 1991, 1991, ["TKM"]],
+  ["KGZ91", null, "h:kg_ssr", 1991, 1991, ["KGZ"]],
+  ["TJK91", null, "h:tj_ssr", 1991, 1991, ["TJK"]],
   ["BLR1", null, "h:by91", 1991, 1994, ["BLR"]],
   ["BIH1", null, "h:ba92", 1992, 1997, ["BIH"]],
   ["MKD1", "Macedônia", "h:mk92", 1991, 1994, ["MKD"]],
   ["MKD2", "Macedônia", "x:mk", 1995, 2018, ["MKD"]],
+  ["HUN46", null, "h:hu_k", 1946, 1948, ["HUN"]],
+  ["HUN49", null, "h:hu49", 1949, 1955, ["HUN"]],
+  ["HUN56", null, "h:hu_k", 1956, 1956, ["HUN"]], // tricolor sem brasão oficial desde 23/mai/1957
   // ---------------- Asia
   ["KORUS", "Coreia (ocupação americana)", "x:us", 1946, 1947, ["KOR"]],
   ["KORSU", "Coreia (ocupação soviética)", "h:su", 1946, 1947, ["PRK"]],
@@ -39,10 +51,12 @@ export const ROWS = [
   ["OKI", "Okinawa (adm. americana)", "x:us", 1946, 1971, ["JPN~O"]],
   ["INDBR", "Índia Britânica", G, 1946, 1946, ["IND", "PAK", "BGD"]],
   ["PAK1", "Paquistão", "x:pk", 1947, 1970, ["PAK", "BGD"]],
+  ["BGD71", null, "h:bd71", 1971, 1971, ["BGD"]], // mapa tirado em 13/jan/1972
   ["SKM", "Sikkim", "blank", 1946, 1974, ["IND~SK"]],
   ["GOA", "Goa (Portugal)", P, 1946, 1960, ["IND~GA"]],
   ["LKA0", "Ceilão (britânico)", G, 1946, 1947, ["LKA"]],
-  ["LKA1", "Ceilão", "x:lk", 1948, 1971, ["LKA"]],
+  ["LKA48", "Ceilão", "h:lk48", 1948, 1950, ["LKA"]],
+  ["LKA1", "Ceilão", "x:lk", 1951, 1971, ["LKA"]],
   ["MMR0", "Birmânia (britânica)", G, 1946, 1947, ["MMR"]],
   ["MMR48", "Birmânia", "h:mm48", 1948, 1973, ["MMR"]],
   ["MMR1", "Birmânia", "h:mm_old", 1974, 1988, ["MMR"]],
@@ -58,13 +72,15 @@ export const ROWS = [
   ["TLS0", "Timor Português", P, 1946, 1974, ["TLS"]],
   ["TLS1", "Timor-Leste (ocupado pela Indonésia)", "x:id", 1975, 1998, ["TLS"]],
   ["TLS2", "Timor-Leste (administração da ONU)", "h:un", 1999, 2001, ["TLS"]],
-  ["FIC", "Indochina Francesa", F, 1946, 1953, ["VNM", "VNM~S", "LAO", "KHM"]],
+  ["FIC", "Indochina Francesa", F, 1946, 1952, ["VNM", "VNM~S", "LAO", "KHM"]],
+  ["FIC53", "Indochina Francesa (Vietnã)", F, 1953, 1953, ["VNM", "VNM~S"]], // Laos (22/out/1953) e Camboja (9/nov/1953) independentes
   ["NVN", "Vietnã do Norte", "x:vn", 1954, 1975, ["VNM"], [105.5, 20.5]],
   ["SVN", "Vietnã do Sul", "h:vn_s", 1954, 1974, ["VNM~S"]],
   ["PRG", "Vietnã do Sul (Governo Revolucionário)", "h:prg", 1975, 1975, ["VNM~S"]],
-  ["LAOK", "Reino do Laos", "h:lao_k", 1954, 1974, ["LAO"]],
+  ["LAOK", "Reino do Laos", "h:lao_k", 1953, 1974, ["LAO"]],
   ["KHM70", "República Khmer", "h:kh70", 1970, 1974, ["KHM"]],
-  ["KHM1", "Kampuchea Democrática", "h:kh76", 1975, 1978, ["KHM"]],
+  ["KHM75", "Kampuchea", "x:kh", 1975, 1975, ["KHM"]], // bandeira de 1948 até a do Kampuchea Democrático (1976)
+  ["KHM1", "Kampuchea Democrática", "h:kh76", 1976, 1978, ["KHM"]],
   ["KHM2", "Kampuchea", "h:kh79", 1979, 1988, ["KHM"]],
   ["KHM3", "Camboja", "h:kh89", 1989, 1992, ["KHM"]],
   ["HKG1", "Hong Kong (britânico)", "h:hk_brit", 1946, 1996, ["HKG"]],
@@ -75,7 +91,8 @@ export const ROWS = [
   ["AFGK", "Reino do Afeganistão", "h:af_old", 1946, 1972, ["AFG"]],
   ["AFG1", null, "h:af74", 1973, 1977, ["AFG"]],
   ["AFG2", null, "h:af78", 1978, 1979, ["AFG"]],
-  ["AFG3", null, "h:af80", 1980, 1991, ["AFG"]],
+  ["AFG3", null, "h:af80", 1980, 1986, ["AFG"]],
+  ["AFG87", null, "h:af87", 1987, 1991, ["AFG"]], // List of Afghan flags: 1987–1992
   ["AFG4", null, "h:af92", 1992, 1995, ["AFG"]],
   // Talibã em Cabul desde 27/set/1996: bandeira branca lisa; chahada desde 27/out/1997 (governo de fato)
   ["AFGT1", null, "h:af96", 1996, 1996, ["AFG"]],
@@ -111,7 +128,7 @@ export const ROWS = [
   ["KWT0", "Kuwait (protetorado britânico)", G, 1946, 1960, ["KWT"]],
   // ---------------- Africa
   ["EGYK", "Reino do Egito", "h:eg_k", 1946, 1952, ["EGY"]],
-  ["EGY53", "Egito", "x:eg", 1953, 1957, ["EGY"]],
+  ["EGY53", "Egito", "h:eg_k", 1953, 1957, ["EGY"]], // a bandeira do reino seguiu oficial até 1958
   ["UAR", "República Árabe Unida", "h:uar", 1958, 1960, ["EGY", "SYR"], [30, 27]],
   ["UAR2", "República Árabe Unida", "h:uar", 1961, 1971, ["EGY"]],
   ["EGY1", null, "h:far", 1972, 1983, ["EGY"]],
@@ -154,19 +171,24 @@ export const ROWS = [
   ["GAB0", "Gabão (França)", F, 1946, 1959, ["GAB"]],
   ["GNQ0", "Guiné Espanhola", ES, 1946, 1967, ["GNQ"]],
   ["COD0", "Congo Belga", BE, 1946, 1959, ["COD"]],
-  ["COD60", "Congo-Léopoldville", "h:cd97", 1960, 1970, ["COD"]],
+  ["COD60", "Congo-Léopoldville", "h:cd97", 1960, 1962, ["COD"]],
+  ["COD63", "Congo-Léopoldville", "h:cd63", 1963, 1970, ["COD"]],
   ["COD1", "Zaire", "h:zaire", 1971, 1996, ["COD"]],
   ["COD2", null, "h:cd97", 1997, 2005, ["COD"]],
   ["RUR", "Ruanda-Urundi (Bélgica)", BE, 1946, 1961, ["RWA", "BDI"], [29.9, -2.6]],
+  ["BDI62", "Reino do Burundi", "blank", 1962, 1965, ["BDI"]], // bandeira de 1962 sem descrição no Wikipedia
+  ["BDI66", null, "blank", 1966, 1966, ["BDI"]], // monarquia abolida em nov/1966; bandeira atual desde 28/jun/1967
   ["RWA1", null, "h:rw_old", 1962, 2000, ["RWA"]],
   ["AGO0", "Angola (Portugal)", P, 1946, 1974, ["AGO"]],
   ["MOZ0", "Moçambique (Portugal)", P, 1946, 1974, ["MOZ"]],
+  ["MOZ75", null, "h:mz75", 1975, 1982, ["MOZ"]], // bandeira atual desde 1/mai/1983
   ["NRH", "Rodésia do Norte (britânica)", G, 1946, 1952, ["ZMB"]],
   ["NYA", "Niassalândia (britânica)", G, 1946, 1952, ["MWI"]],
   ["SRH", "Rodésia do Sul (britânica)", "h:brit_blue", 1946, 1952, ["ZWE"]],
   ["FRN", "Federação da Rodésia e Niassalândia", "h:brit_blue", 1953, 1963, ["ZMB", "ZWE", "MWI"], [28, -14]],
-  ["SRH64", "Rodésia do Sul (britânica)", "h:brit_blue", 1964, 1964, ["ZWE"]],
-  ["ZWE1", "Rodésia", "h:rhodesia", 1965, 1978, ["ZWE"]],
+  ["SRH64", "Rodésia do Sul (britânica)", "h:rh64", 1964, 1964, ["ZWE"]],
+  ["ZWE0", "Rodésia", "h:rh64", 1965, 1967, ["ZWE"]],
+  ["ZWE1", "Rodésia", "h:rhodesia", 1968, 1978, ["ZWE"]], // verde-branco-verde desde 11/nov/1968
   ["ZWE2", "Rodésia do Sul (adm. britânica)", G, 1979, 1979, ["ZWE"]],
   ["MWI1", null, "h:mw10", 2010, 2011, ["MWI"]],
   ["BWA0", "Bechuanalândia (britânica)", G, 1946, 1965, ["BWA"]],
@@ -186,7 +208,8 @@ export const ROWS = [
   ["COM96", null, "h:km96", 1996, 2000, ["COM"]], // bandeira atual desde 23/dez/2001
   ["MUS0", "Maurício (britânico)", G, 1946, 1967, ["MUS"]],
   ["SYC0", "Seychelles (britânicas)", "h:brit_blue", 1946, 1975, ["SYC"]],
-  ["SYC1", null, "h:syc77", 1976, 1995, ["SYC"]],
+  ["SYC76", null, "h:syc76", 1976, 1976, ["SYC"]],
+  ["SYC1", null, "h:syc77", 1977, 1995, ["SYC"]],
   ["TGK", "Tanganica (britânica)", G, 1946, 1960, ["TZA"]],
   ["TGK61", "Tanganica", "h:tg61", 1961, 1963, ["TZA"]],
   ["ZNZ0", "Zanzibar (protetorado britânico)", "h:zanzibar", 1946, 1962, ["TZA~Z"]],
@@ -218,10 +241,12 @@ export const ROWS = [
   ["BHS0", "Bahamas (britânicas)", G, 1946, 1972, ["BHS"]],
   ["GRD0", "Granada (britânica)", G, 1946, 1973, ["GRD"]],
   ["DMA1", "Dominica (britânica)", "h:brit_blue", 1946, 1977, ["DMA"]],
-  ["LCA1", "Santa Lúcia (britânica)", "x:lc", 1946, 1978, ["LCA"]],
+  ["LCA0", "Santa Lúcia (britânica)", "h:brit_blue", 1946, 1966, ["LCA"]],
+  ["LCA1", "Santa Lúcia (britânica)", "x:lc", 1967, 1978, ["LCA"]], // bandeira atual desde 1/mar/1967
   ["VCT1", "São Vicente (britânico)", "h:vct_old", 1946, 1978, ["VCT"]],
   ["VCT2", null, "h:vct_old", 1979, 1984, ["VCT"]],
-  ["ATG1", "Antígua (britânica)", "x:ag", 1946, 1980, ["ATG"]],
+  ["ATG0", "Antígua (britânica)", "h:brit_blue", 1946, 1966, ["ATG"]],
+  ["ATG1", "Antígua (britânica)", "x:ag", 1967, 1980, ["ATG"]], // bandeira atual desde 27/fev/1967
   ["KNA1", "São Cristóvão-Névis-Anguila (britânico)", "h:kna_old", 1946, 1979, ["KNA", "AIA"]],
   ["KNA2", "São Cristóvão e Névis (Estado Associado)", "h:kna_old", 1980, 1982, ["KNA"]],
   ["BLZ1", "Honduras Britânica", "h:brit_blue", 1946, 1980, ["BLZ"]],

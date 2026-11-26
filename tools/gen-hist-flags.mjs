@@ -44,6 +44,12 @@ const hammerSickle = (x, y, s, c) => `<g transform="translate(${x} ${y}) scale($
 const F = {};
 // --- dissolved states ---
 F.su = svg(`<rect width="640" height="480" fill="#CC0000"/>${hammerSickle(70, 70, 1.5, "#FFD700")}${star(118, 52, 16, "none", 'stroke="#FFD700" stroke-width="4"')}`);
+// RSS da Ásia Central (usadas até 1992): vermelho com foice e martelo e faixas
+const ssr = (stripes) => svg(`<rect width="640" height="480" fill="#CC0000"/>${stripes}${hammerSickle(70, 70, 1.5, "#FFD700")}${star(118, 52, 16, "none", 'stroke="#FFD700" stroke-width="4"')}`);
+F.kz_ssr = ssr(`<rect y="330" width="640" height="55" fill="#2FA4DC"/>`);
+F.tm_ssr = ssr(`<rect y="195" width="640" height="30" fill="#1E4E9C"/><rect y="255" width="640" height="30" fill="#1E4E9C"/>`);
+F.kg_ssr = ssr(`<rect y="190" width="640" height="100" fill="#1E3A8C"/><rect y="220" width="640" height="40" fill="#fff"/>`);
+F.tj_ssr = ssr(`<rect y="200" width="640" height="90" fill="#fff"/><rect y="290" width="640" height="45" fill="#00A651"/>`);
 F.ddr = svg(H("#000", "#D00", "#FFCE00") + `<circle cx="320" cy="240" r="92" fill="none" stroke="#E8B200" stroke-width="22" stroke-dasharray="10 6"/>
   <circle cx="320" cy="240" r="70" fill="#D00"/>
   <path d="M290 280l30-90 30 90" fill="none" stroke="#FFCE00" stroke-width="10"/>
@@ -95,6 +101,8 @@ F.cv_old = svg(`<rect width="640" height="480" fill="#009E49"/><rect width="640"
 F.zaire = svg(`<rect width="640" height="480" fill="#00A651"/><circle cx="320" cy="240" r="130" fill="#FDD100"/><path d="M265 330l60-120 22 12-60 120z" fill="#7B4A12"/><path d="M325 205q-25-40 10-80 10 40 30 50-10 25-40 30z" fill="#ED1C24"/>`);
 F.cd97 = svg(`<rect width="640" height="480" fill="#007FFF"/>` + star(320, 240, 120, "#F7D618") + [0, 1, 2, 3, 4, 5].map((i) => star(60, 50 + i * 76, 26, "#F7D618")).join(""));
 F.hv = svg(H("#000", "#fff", "#CE1126"));
+// Seychelles 1976–1977: aspa branca, triângulos vermelhos em cima e embaixo, azuis nas laterais
+F.syc76 = svg(`<rect width="640" height="480" fill="#0033A0"/><path d="M0 0H640L320 240zM0 480H640L320 240z" fill="#D62828"/><path d="M0 0L640 480M640 0L0 480" stroke="#fff" stroke-width="40"/>`);
 F.syc77 = svg(`<rect width="640" height="480" fill="#007A3D"/><rect width="640" height="230" fill="#D62828"/><path d="M0 240q160-55 320 0t320 0" stroke="#fff" stroke-width="40" fill="none"/>`);
 F.ht_old = svg(V("#000", "#D21034") + `<rect x="245" y="165" width="150" height="150" fill="#fff"/><rect x="316" y="205" width="8" height="80" fill="#016A16"/><circle cx="320" cy="200" r="28" fill="#016A16"/>`);
 F.vct_old = svg(`<rect width="640" height="480" fill="#0072C6"/><rect x="160" width="320" height="480" fill="#FCD116"/><rect x="480" width="160" height="480" fill="#009E60"/><path d="M320 140q90 60 0 200q-90-140 0-200z" fill="#009E60"/><rect x="295" y="215" width="50" height="60" rx="8" fill="#fff" stroke="#0072C6" stroke-width="5"/>`);
@@ -117,6 +125,8 @@ F.iq91 = svg(H("#CE1126", "#fff", "#000") + [170, 320, 470].map((x) => star(x, 2
 F.af74 = svg(H("#000", "#D32011", "#007A36") + `<circle cx="90" cy="80" r="44" fill="none" stroke="#FFD700" stroke-width="8"/><path d="M70 95q20-40 40 0" stroke="#FFD700" stroke-width="7" fill="none"/>`);
 F.af78 = svg(`<rect width="640" height="480" fill="#C8102E"/><circle cx="110" cy="100" r="52" fill="none" stroke="#FFD700" stroke-width="10"/>` + star(110, 55, 16, "#FFD700") + `<path d="M85 115h50" stroke="#FFD700" stroke-width="8"/>`);
 F.af80 = svg(H("#000", "#D32011", "#007A36") + `<circle cx="100" cy="80" r="48" fill="none" stroke="#FFD700" stroke-width="9"/>` + star(100, 42, 12, "#D32011") + `<path d="M75 95q25-35 50 0" stroke="#FFD700" stroke-width="7" fill="none"/>`);
+// Afeganistão 1987–1992 (Najibullah): como a de 1980, sem a estrela vermelha
+F.af87 = svg(H("#000", "#D32011", "#007A36") + `<circle cx="100" cy="80" r="48" fill="none" stroke="#FFD700" stroke-width="9"/><path d="M75 95q25-35 50 0" stroke="#FFD700" stroke-width="7" fill="none"/><rect x="85" y="105" width="30" height="10" fill="#FFD700"/>`);
 F.af92 = svg(H("#007A36", "#fff", "#000") + `<circle cx="320" cy="240" r="46" fill="none" stroke="#007A36" stroke-width="7"/><path d="M296 255q24-40 48 0" stroke="#007A36" stroke-width="6" fill="none"/>`);
 F.bh_old = svg(`<rect width="640" height="480" fill="#CE1126"/><path d="M0 0h170l70 30-70 30 70 30-70 30 70 30-70 30 70 30-70 30 70 30-70 30 70 30-70 30 70 30-70 30 70 30-70 30H0z" fill="#fff"/>`);
 F.mm_old = svg(`<rect width="640" height="480" fill="#CE1126"/><rect width="320" height="240" fill="#00247D"/>` + rays(160, 125, 48, 60, 14, "#fff") + `<circle cx="160" cy="125" r="34" fill="#00247D"/><path d="M160 150v-45m-14 25l14-10 14 10m-14-25l-10-10" stroke="#fff" stroke-width="5" fill="none"/>` +
@@ -202,6 +212,20 @@ F.dk_norway = svg(`<rect width="640" height="480" fill="#C8102E"/><rect x="180" 
 
 // write
 for (const [k, v] of Object.entries(F)) if (!v.startsWith("<svg")) throw new Error(k);
+// ---- revisão 1946–1991 (conferida no Wikipedia)
+// Moçambique 1975–1983: faixas diagonais verde, vermelha, preta e amarela (bordas brancas) a partir do canto superior, roda dentada branca
+F.mz75 = svg(`<rect width="640" height="480" fill="#FCE100"/><path d="M0 0H640V160L0 640z" fill="#000"/><path d="M0 0H640L0 400z" fill="#fff"/><path d="M0 0H560L0 340z" fill="#D21034"/><path d="M0 0H440L0 260z" fill="#fff"/><path d="M0 0H400L0 230z" fill="#007168"/><path d="M640 200V230L0 640V610z" fill="#fff"/><circle cx="90" cy="80" r="50" fill="#fff"/>` + star(90, 80, 22, "#D21034"));
+// Bangladesh 1971: verde, disco vermelho com o mapa do país em amarelo
+F.bd71 = svg(`<rect width="640" height="480" fill="#006A4E"/><circle cx="290" cy="240" r="130" fill="#F42A41"/><path d="M265 150l40 10 15 40 25 20-10 50 15 45-35-10-20 30-20-50-25-20 5-60z" fill="#FFCC00"/>`);
+// Ceilão 1948–1951: leão dourado em campo grená com borda dourada
+F.lk48 = svg(`<rect width="640" height="480" fill="#FFB700"/><rect x="25" y="25" width="590" height="430" fill="#8D153A"/><path d="M230 330l20-90 40-40 70 0 30 40-10 50 40 40h-40l-20-30h-60l-20 30z" fill="#FFB700"/>`);
+// Congo-Léopoldville 1963–1971: azul, estrela amarela no canto e faixa diagonal vermelha com bordas amarelas
+F.cd63 = svg(`<rect width="640" height="480" fill="#007FFF"/><path d="M0 480L560 0H640V0L80 480z" fill="#F7D618"/><path d="M20 480L580 0H620L60 480z" fill="#CE1021"/>` + star(110, 100, 60, "#F7D618"));
+// Hungria: tricolor com o brasão de Kossuth (1946–1949, 1956–1957) e com o brasão de Rákosi (1949–1956)
+F.hu_k = svg(H("#CE2939", "#fff", "#477050") + `<path d="M290 190h60v50q0 35-30 45-30-10-30-45z" fill="#CE2939" stroke="#477050" stroke-width="5"/>`);
+F.hu49 = svg(H("#CE2939", "#fff", "#477050") + `<circle cx="320" cy="240" r="45" fill="#477050" stroke="#E8B200" stroke-width="6"/>` + star(320, 205, 16, "#CE2939"));
+// Rodésia 1964–1968: bandeira azul-clara com a Union Jack e o escudo
+F.rh64 = svg(`<rect width="640" height="480" fill="#5D9BD5"/>${nest("gb", 0, 0, 320, 240)}<path d="M450 170h60v70q0 40-30 55-30-15-30-55z" fill="#1EB53A" stroke="#333" stroke-width="3"/><rect x="450" y="170" width="60" height="22" fill="#C8102E"/>`);
 fs.writeFileSync("data/flags-hist.json", JSON.stringify(F));
 console.log("hist flags", Object.keys(F).length, Math.round(JSON.stringify(F).length / 1024), "KB");
 // preview sheet
