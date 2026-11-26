@@ -135,11 +135,11 @@ export function powerFlag(p, y) {
   switch (p) {
     case "GB": return y < 1707 ? "h:england" : y < 1801 ? "h:gb1707" : "x:gb";
     case "FR": return y < 1790 || (y >= 1815 && y < 1830) ? "h:fr_bourbon" : "x:fr";
-    case "ES": return y < 1785 ? "h:es_burgundy" : y >= 1931 && y < 1939 ? "h:es_rep" : y >= 1939 && y < 1981 ? "h:es45" : "x:es";
+    case "ES": return y < 1785 ? "h:es_burgundy" : y >= 1931 && y < 1936 ? "h:es_rep" : y >= 1936 && y < 1939 ? "h:es36" : y >= 1939 && y < 1981 ? "h:es45" : "x:es";
     case "PT": return y < 1911 ? "h:pt_mon" : "x:pt";
     case "NL": return y < 1660 ? "h:nl_prince" : "x:nl";
     case "BE": return "x:be";
-    case "DE": return y < 1919 || y >= 1933 ? "h:de_emp" : "x:de";
+    case "DE": return y < 1919 || (y >= 1933 && y < 1935) ? "h:de_emp" : y >= 1935 && y < 1946 ? "h:de_nazi" : "x:de";
     case "IT": return y < 1946 ? "h:it_sav" : "x:it";
     case "DK": return "x:dk";
     case "RU": return y < 1918 ? "x:ru" : "h:su";
@@ -245,8 +245,8 @@ export function flagFor(name, subj, y) {
 const POWER_OF_FLAG = {
   "x:gb": "GB", "h:gb1707": "GB", "h:england": "GB", "x:fr": "FR", "h:fr_bourbon": "FR", "x:es": "ES", "h:es_burgundy": "ES", "h:es_rep": "ES", "x:pt": "PT", "h:pt_mon": "PT",
   "x:nl": "NL", "h:nl_prince": "NL", "x:be": "BE", "h:de_emp": "DE", "x:de": "DE", "h:it_sav": "IT", "x:it": "IT", "x:dk": "DK", "h:dk_norway": "DK", "x:ru": "RU", "h:su": "SU",
-  "x:jp": "JP", "x:us": "US", "h:us48": "US", "h:us49": "US", "h:es45": "ES", "x:tr": "TR", "h:ottoman_old": "TR", "h:at_hab": "AT", "h:za_old": "ZA", "x:au": "AU", "x:nz": "NZ", "h:cn_qing": "CN", "h:cn_5": "CN", "x:tw": "CN",
-  "h:prussia": "PR", "x:id": "ID", "h:hk_brit": "GB",
+  "x:jp": "JP", "x:us": "US", "h:us48": "US", "h:us49": "US", "h:es45": "ES", "h:es36": "ES", "x:tr": "TR", "h:ottoman_old": "TR", "h:at_hab": "AT", "h:za_old": "ZA", "x:au": "AU", "x:nz": "NZ", "h:cn_qing": "CN", "h:cn_5": "CN", "x:tw": "CN",
+  "h:prussia": "PR", "h:de_nazi": "DE", "x:id": "ID", "h:hk_brit": "GB",
 };
 export function powerName(p, y) {
   switch (p) {

@@ -258,6 +258,14 @@ F.bn06 = svg(`<rect width="640" height="480" fill="#F7E017"/><path d="M0 70L640 
 F.ck73 = svg(`<rect width="640" height="480" fill="#007A3D"/>` + [...Array(15)].map((_, i) => { const a = (2 * Math.PI * i) / 15; return star(320 + 150 * Math.sin(a), 240 - 150 * Math.cos(a), 22, "#FCD116"); }).join("")); // Ilhas Cook 1974–1979
 F.kg92 = svg(`<rect width="640" height="480" fill="#E8112D"/>` + [...Array(40)].map((_, i) => { const a = (2 * Math.PI * i) / 40; return `<path d="M${320 + 70 * Math.sin(a)} ${240 - 70 * Math.cos(a)}Q${320 + 115 * Math.sin(a + 0.08)} ${240 - 115 * Math.cos(a + 0.08)} ${320 + 150 * Math.sin(a)} ${240 - 150 * Math.cos(a)}" stroke="#FFEF00" stroke-width="7" fill="none"/>`; }).join("") + `<circle cx="320" cy="240" r="75" fill="#FFEF00"/><circle cx="320" cy="240" r="52" fill="#E8112D"/><path d="M272 225q48-30 96 0M272 255q48-30 96 0M300 195v90M340 195v90" stroke="#FFEF00" stroke-width="8" fill="none"/>`); // Quirguistão 1992–2023 (raios ondulados)
 F.hn26 = svg(H("#0F2D69", "#fff", "#0F2D69") + [[320, 240], [220, 195], [420, 195], [220, 285], [420, 285]].map(([x, y]) => star(x, y, 26, "#0F2D69")).join("")); // Honduras: azul-marinho desde 27/jan/2026
+// Espanha nacionalista 1936–1938: bicolor vermelho-amarelo-vermelho (decreto de 29/ago/1936)
+F.es36 = svg(`<rect width="640" height="480" fill="#AA151B"/><rect y="120" width="640" height="240" fill="#F1BF00"/>`);
+// Alemanha 1935–1945: vermelha com disco branco e suástica preta inclinada 45°
+{
+  const c = 40, o = (x, y, w, h) => `<rect x="${320 + (x - 2.5) * c}" y="${240 + (y - 2.5) * c}" width="${w * c}" height="${h * c}"/>`;
+  F.de_nazi = svg(`<rect width="640" height="480" fill="#DD0000"/><circle cx="320" cy="240" r="170" fill="#fff"/><g fill="#000" transform="rotate(45 320 240)">` +
+    o(2, 0, 1, 5) + o(0, 2, 5, 1) + o(3, 0, 2, 1) + o(4, 3, 1, 2) + o(0, 4, 2, 1) + o(0, 0, 1, 2) + `</g>`);
+}
 fs.writeFileSync("data/flags-hist.json", JSON.stringify(F));
 console.log("hist flags", Object.keys(F).length, Math.round(JSON.stringify(F).length / 1024), "KB");
 // preview sheet

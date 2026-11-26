@@ -1,0 +1,710 @@
+{
+ "_doc": "Units the old maps lack: today's provinces (Natural Earth admin-1) given to a new unit, by country (adm0_a3) or province (iso_3166_2). Borders are approximate at province level. Order matters: new keys come after the map's own keys, in this order (hist_overlay.py and hist-old.mjs). 'take' moves pieces of another unit whose centre lies in bbox [lon0, lat0, lon1, lat1]. 'labels' fixes a unit's label point.",
+ "1930": [
+  {
+   "key": "Korea",
+   "adm0": [
+    "KOR",
+    "PRK"
+   ]
+  },
+  {
+   "key": "Taiwan",
+   "adm0": [
+    "TWN"
+   ]
+  },
+  {
+   "key": "Lebanon",
+   "adm0": [
+    "LBN"
+   ]
+  },
+  {
+   "key": "Burma",
+   "adm0": [
+    "MMR"
+   ]
+  },
+  {
+   "key": "Tuva",
+   "iso": [
+    "RU-TY"
+   ]
+  },
+  {
+   "key": "South West Africa",
+   "adm0": [
+    "NAM"
+   ]
+  },
+  {
+   "key": "Greenland",
+   "adm0": [
+    "GRL"
+   ]
+  },
+  {
+   "key": "Faroe Islands",
+   "adm0": [
+    "FRO"
+   ]
+  },
+  {
+   "key": "Jordan",
+   "adm0": [
+    "JOR"
+   ]
+  },
+  {
+   "key": "Kuwait",
+   "adm0": [
+    "KWT"
+   ]
+  },
+  {
+   "key": "Bahrain",
+   "adm0": [
+    "BHR"
+   ]
+  },
+  {
+   "key": "Cyprus",
+   "adm0": [
+    "CYP",
+    "CYN",
+    "ESB",
+    "WSB"
+   ]
+  },
+  {
+   "key": "Malta",
+   "adm0": [
+    "MLT"
+   ]
+  },
+  {
+   "key": "Gibraltar",
+   "adm0": [
+    "GIB"
+   ]
+  },
+  {
+   "key": "Macau",
+   "adm0": [
+    "MAC"
+   ]
+  },
+  {
+   "key": "Goa",
+   "iso": [
+    "IN-GA"
+   ]
+  },
+  {
+   "key": "French India",
+   "iso": [
+    "IN-PY"
+   ]
+  },
+  {
+   "key": "Portuguese Timor",
+   "adm0": [
+    "TLS"
+   ]
+  },
+  {
+   "key": "Cape Verde",
+   "adm0": [
+    "CPV"
+   ]
+  },
+  {
+   "key": "Sao Tome",
+   "adm0": [
+    "STP"
+   ]
+  },
+  {
+   "key": "Mauritius",
+   "adm0": [
+    "MUS"
+   ]
+  },
+  {
+   "key": "Seychelles",
+   "adm0": [
+    "SYC"
+   ]
+  },
+  {
+   "key": "Reunion",
+   "iso": [
+    "FR-RE"
+   ]
+  },
+  {
+   "key": "Comoros",
+   "adm0": [
+    "COM"
+   ],
+   "iso": [
+    "FR-YT"
+   ]
+  },
+  {
+   "key": "Zanzibar",
+   "iso": [
+    "TZ-06",
+    "TZ-07",
+    "TZ-10",
+    "TZ-11",
+    "TZ-15"
+   ]
+  },
+  {
+   "key": "Maldives",
+   "adm0": [
+    "MDV"
+   ]
+  },
+  {
+   "key": "Channel Islands",
+   "adm0": [
+    "GGY",
+    "JEY"
+   ]
+  },
+  {
+   "key": "Aden",
+   "iso": [
+    "YE-HD",
+    "YE-MR",
+    "YE-LA",
+    "YE-AD",
+    "YE-AB",
+    "YE-SH",
+    "YE-DA"
+   ]
+  },
+  {
+   "key": "South Seas Mandate",
+   "adm0": [
+    "MNP",
+    "PLW",
+    "FSM",
+    "MHL"
+   ]
+  },
+  {
+   "key": "Guam",
+   "adm0": [
+    "GUM"
+   ]
+  },
+  {
+   "key": "Saar",
+   "take": {
+    "from": "France",
+    "iso": [
+     "DE-SL"
+    ]
+   }
+  },
+  {
+   "key": "Czechoslovakia",
+   "take": {
+    "from": "Austria",
+    "adm0": [
+     "SVK"
+    ]
+   }
+  },
+  {
+   "key": "Ireland",
+   "adm0": [
+    "IRL"
+   ]
+  }
+ ],
+ "1938": [
+  {
+   "key": "Iceland",
+   "adm0": [
+    "ISL"
+   ]
+  },
+  {
+   "key": "Lebanon",
+   "adm0": [
+    "LBN"
+   ]
+  },
+  {
+   "key": "Burma",
+   "adm0": [
+    "MMR"
+   ]
+  },
+  {
+   "key": "Korea",
+   "adm0": [
+    "KOR",
+    "PRK"
+   ]
+  },
+  {
+   "key": "Taiwan",
+   "adm0": [
+    "TWN"
+   ]
+  },
+  {
+   "key": "Manchukuo",
+   "iso": [
+    "CN-HL",
+    "CN-JL",
+    "CN-LN"
+   ],
+   "take": {
+    "from": "Empire of Japan",
+    "bbox": [
+     112,
+     38.5,
+     135.5,
+     54
+    ]
+   }
+  },
+  {
+   "key": "Tuva",
+   "iso": [
+    "RU-TY"
+   ]
+  },
+  {
+   "key": "South West Africa",
+   "adm0": [
+    "NAM"
+   ]
+  },
+  {
+   "key": "Hatay",
+   "iso": [
+    "TR-31"
+   ]
+  },
+  {
+   "key": "Greenland",
+   "adm0": [
+    "GRL"
+   ]
+  },
+  {
+   "key": "Faroe Islands",
+   "adm0": [
+    "FRO"
+   ]
+  },
+  {
+   "key": "Jordan",
+   "adm0": [
+    "JOR"
+   ]
+  },
+  {
+   "key": "Kuwait",
+   "adm0": [
+    "KWT"
+   ]
+  },
+  {
+   "key": "Bahrain",
+   "adm0": [
+    "BHR"
+   ]
+  },
+  {
+   "key": "Cyprus",
+   "adm0": [
+    "CYP",
+    "CYN",
+    "ESB",
+    "WSB"
+   ]
+  },
+  {
+   "key": "Malta",
+   "adm0": [
+    "MLT"
+   ]
+  },
+  {
+   "key": "Gibraltar",
+   "adm0": [
+    "GIB"
+   ]
+  },
+  {
+   "key": "Macau",
+   "adm0": [
+    "MAC"
+   ]
+  },
+  {
+   "key": "Goa",
+   "iso": [
+    "IN-GA"
+   ]
+  },
+  {
+   "key": "French India",
+   "iso": [
+    "IN-PY"
+   ]
+  },
+  {
+   "key": "Portuguese Timor",
+   "adm0": [
+    "TLS"
+   ]
+  },
+  {
+   "key": "Cape Verde",
+   "adm0": [
+    "CPV"
+   ]
+  },
+  {
+   "key": "Sao Tome",
+   "adm0": [
+    "STP"
+   ]
+  },
+  {
+   "key": "Mauritius",
+   "adm0": [
+    "MUS"
+   ]
+  },
+  {
+   "key": "Seychelles",
+   "adm0": [
+    "SYC"
+   ]
+  },
+  {
+   "key": "Reunion",
+   "iso": [
+    "FR-RE"
+   ]
+  },
+  {
+   "key": "Comoros",
+   "adm0": [
+    "COM"
+   ],
+   "iso": [
+    "FR-YT"
+   ]
+  },
+  {
+   "key": "Zanzibar",
+   "iso": [
+    "TZ-06",
+    "TZ-07",
+    "TZ-10",
+    "TZ-11",
+    "TZ-15"
+   ]
+  },
+  {
+   "key": "Maldives",
+   "adm0": [
+    "MDV"
+   ]
+  },
+  {
+   "key": "Andaman and Nicobar",
+   "iso": [
+    "IN-AN"
+   ]
+  },
+  {
+   "key": "Channel Islands",
+   "adm0": [
+    "GGY",
+    "JEY"
+   ]
+  },
+  {
+   "key": "Slovakia",
+   "take": {
+    "from": "Germany",
+    "adm0": [
+     "SVK"
+    ]
+   }
+  },
+  {
+   "key": "Carpathian Ruthenia",
+   "take": {
+    "from": "Hungary",
+    "iso": [
+     "UA-21"
+    ]
+   }
+  },
+  {
+   "key": "Memel",
+   "take": {
+    "from": "Lithuania",
+    "iso": [
+     "LT-KL"
+    ]
+   }
+  },
+  {
+   "key": "Vilnius region",
+   "take": {
+    "from": "Poland",
+    "adm0": [
+     "LTU"
+    ]
+   }
+  },
+  {
+   "key": "Eastern Poland",
+   "take": {
+    "from": "Poland",
+    "adm0": [
+     "BLR",
+     "UKR"
+    ]
+   }
+  },
+  {
+   "key": "Bessarabia",
+   "take": {
+    "from": "Romania",
+    "adm0": [
+     "MDA",
+     "UKR"
+    ]
+   }
+  },
+  {
+   "key": "Southern Dobruja",
+   "take": {
+    "from": "Romania",
+    "adm0": [
+     "BGR"
+    ]
+   }
+  },
+  {
+   "key": "Northern Transylvania",
+   "take": {
+    "from": "Romania",
+    "iso": [
+     "RO-MM",
+     "RO-SM",
+     "RO-BH",
+     "RO-SJ",
+     "RO-CJ",
+     "RO-BN",
+     "RO-MS",
+     "RO-HR",
+     "RO-CV"
+    ]
+   }
+  },
+  {
+   "key": "Finnish Karelia",
+   "take": {
+    "from": "Finland",
+    "adm0": [
+     "RUS"
+    ]
+   }
+  },
+  {
+   "key": "Alsace-Moselle",
+   "take": {
+    "from": "France",
+    "iso": [
+     "FR-67",
+     "FR-68",
+     "FR-57"
+    ]
+   }
+  },
+  {
+   "key": "Belarusian SSR",
+   "take": {
+    "from": "USSR",
+    "adm0": [
+     "BLR"
+    ]
+   }
+  },
+  {
+   "key": "Ukrainian SSR east",
+   "take": {
+    "from": "USSR",
+    "iso": [
+     "UA-09",
+     "UA-14",
+     "UA-63",
+     "UA-59",
+     "UA-53",
+     "UA-74",
+     "UA-32",
+     "UA-30",
+     "UA-23",
+     "UA-12"
+    ]
+   }
+  },
+  {
+   "key": "Ukrainian SSR",
+   "take": {
+    "from": "USSR",
+    "adm0": [
+     "UKR"
+    ]
+   }
+  },
+  {
+   "key": "Crimea",
+   "take": {
+    "from": "USSR",
+    "iso": [
+     "UA-43",
+     "UA-40"
+    ]
+   }
+  },
+  {
+   "key": "Dodecanese",
+   "take": {
+    "from": "Italy",
+    "adm0": [
+     "GRC"
+    ]
+   }
+  },
+  {
+   "key": "Southern Italy",
+   "take": {
+    "from": "Italy",
+    "region": [
+     "ITA/Sicily",
+     "ITA/Sardegna",
+     "ITA/Calabria",
+     "ITA/Basilicata",
+     "ITA/Apulia",
+     "ITA/Campania",
+     "ITA/Molise"
+    ]
+   }
+  },
+  {
+   "key": "Central Italy",
+   "take": {
+    "from": "Italy",
+    "region": [
+     "ITA/Lazio",
+     "ITA/Abruzzo",
+     "ITA/Umbria",
+     "ITA/Toscana",
+     "ITA/Marche"
+    ]
+   }
+  },
+  {
+   "key": "Croatia",
+   "take": {
+    "from": "Yugoslavia",
+    "adm0": [
+     "HRV",
+     "BIH"
+    ]
+   }
+  },
+  {
+   "key": "Slovenia",
+   "take": {
+    "from": "Yugoslavia",
+    "adm0": [
+     "SVN"
+    ]
+   }
+  },
+  {
+   "key": "Montenegro",
+   "take": {
+    "from": "Yugoslavia",
+    "adm0": [
+     "MNE"
+    ]
+   }
+  },
+  {
+   "key": "Vardar Macedonia",
+   "take": {
+    "from": "Yugoslavia",
+    "adm0": [
+     "MKD"
+    ]
+   }
+  },
+  {
+   "key": "Kosovo",
+   "take": {
+    "from": "Yugoslavia",
+    "adm0": [
+     "KOS"
+    ]
+   }
+  },
+  {
+   "key": "Eastern Poland 1944",
+   "take": {
+    "from": "Poland",
+    "iso": [
+     "PL-LU",
+     "PL-PK",
+     "PL-PD"
+    ]
+   }
+  },
+  {
+   "key": "Western Thrace",
+   "take": {
+    "from": "Greece",
+    "iso": [
+     "GR-A"
+    ]
+   }
+  }
+ ],
+ "labels": {
+  "1938": {
+   "Empire of Japan": [
+    138.5,
+    36.5
+   ],
+   "Ireland": [
+    -8.0,
+    53.2
+   ]
+  },
+  "1930": {
+   "Ireland": [
+    -8.0,
+    53.2
+   ]
+  }
+ }
+}
