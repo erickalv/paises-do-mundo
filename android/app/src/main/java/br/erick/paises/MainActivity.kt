@@ -167,7 +167,7 @@ fun App(model: AppModel, host: GlobeHost) {
                     Modifier.clip(RoundedCornerShape(22.dp)).background(Surface).border(1.dp, Color(0xFF232B3D), RoundedCornerShape(22.dp)).padding(4.dp),
                     horizontalArrangement = Arrangement.spacedBy(4.dp),
                 ) {
-                    TabButton("Jogar", model.mode == Mode.START) { model.mode = Mode.START; model.pick = null; model.styleVersion++ }
+                    TabButton("Jogar", model.mode == Mode.START) { model.mode = Mode.START; model.clearPicks(); model.styleVersion++ }
                     TabButton("História", model.mode == Mode.HISTORY) { model.mode = Mode.HISTORY; model.styleVersion++ }
                 }
             }

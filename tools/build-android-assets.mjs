@@ -11,7 +11,7 @@ import { triangulate, polysOf } from "./tri.mjs";
 import { feature } from "topojson-client";
 import { geoArea, geoBounds, geoInterpolate, geoDistance } from "d3-geo";
 import polylabel from "polylabel";
-import { ROWS, MODERN_FROM } from "./hist-modern.mjs";
+import { ROWS, MODERN_FROM, OPEN_FROM } from "./hist-modern.mjs";
 import { buildSnapshots, buildEras } from "./hist-old.mjs";
 import { modernOwner, SOVEREIGN } from "./hist-names.mjs";
 
@@ -150,7 +150,7 @@ const rows = ROWS.map((u) => {
 const snaps = buildSnapshots(OUT);
 const eras = buildEras(snaps);
 const flagRefs = new Set([...rows.map((r) => r[2]), ...eras.flatMap((e) => e.u.map((u) => u[1]))]);
-fs.writeFileSync(OUT + "/history.json", JSON.stringify({ from: snaps[0].sy, to: 2026, modernFrom: MODERN_FROM, units: rows, snaps: snaps.map((s) => ({ y: s.sy, n: s.units.length })), eras }));
+fs.writeFileSync(OUT + "/history.json", JSON.stringify({ from: snaps[0].sy, open: OPEN_FROM, to: 2026, modernFrom: MODERN_FROM, units: rows, snaps: snaps.map((s) => ({ y: s.sy, n: s.units.length })), eras }));
 
 // ---------- flags as PNG ----------
 const tmp = "/tmp/flag.svg";
