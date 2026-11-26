@@ -35,6 +35,7 @@ export const ROWS = [
   ["KAZ91", null, "h:kz_ssr", 1991, 1991, ["KAZ"]],
   ["TKM91", null, "h:tm_ssr", 1991, 1991, ["TKM"]],
   ["KGZ91", null, "h:kg_ssr", 1991, 1991, ["KGZ"]],
+  ["KGZ92", null, "h:kg92", 1992, 2022, ["KGZ"]], // raios retos desde 26/dez/2023
   ["TJK91", null, "h:tj_ssr", 1991, 1991, ["TJK"]],
   ["BLR1", null, "h:by91", 1991, 1994, ["BLR"]],
   ["BIH1", null, "h:ba92", 1992, 1997, ["BIH"]],
@@ -66,7 +67,7 @@ export const ROWS = [
   ["MMR1", "Birmânia", "h:mm_old", 1974, 1988, ["MMR"]],
   ["MMR2", null, "h:mm_old", 1989, 2009, ["MMR"]],
   ["MAL0", "Malásia Britânica", G, 1946, 1956, ["MYS"]],
-  ["MAL1", "Federação Malaia", "x:my", 1957, 1962, ["MYS"]],
+  ["MAL1", "Federação Malaia", "h:my50", 1957, 1962, ["MYS"]], // 11 listras até 16/set/1963
   ["BOR", "Bornéu do Norte e Sarawak (britânicos)", G, 1946, 1962, ["MYS~B"]],
   ["SGP0", "Singapura (britânica)", G, 1946, 1962, ["SGP"]],
   ["MYS63", "Malásia", "x:my", 1963, 1964, ["MYS", "MYS~B", "SGP"]],
@@ -89,7 +90,8 @@ export const ROWS = [
   ["KHM3", "Camboja", "h:kh89", 1989, 1992, ["KHM"]],
   ["HKG1", "Hong Kong (britânico)", "h:hk_brit", 1946, 1996, ["HKG"]],
   ["MAC1", "Macau (português)", P, 1946, 1998, ["MAC"]],
-  ["BRN1", "Brunei (protetorado britânico)", "x:bn", 1946, 1983, ["BRN"]],
+  ["BRN0", "Brunei (protetorado britânico)", "h:bn06", 1946, 1958, ["BRN"]], // emblema vermelho só em 29/set/1959
+  ["BRN1", "Brunei (protetorado britânico)", "x:bn", 1959, 1983, ["BRN"]],
   ["MDV0", "Maldivas (protetorado britânico)", G, 1946, 1964, ["MDV"]],
   ["MNG1", null, "h:mn_old", 1946, 1991, ["MNG"]],
   ["AFGK", "Reino do Afeganistão", "h:af_old", 1946, 1972, ["AFG"]],
@@ -149,6 +151,7 @@ export const ROWS = [
   ["MRT1", null, "h:mr_old", 1960, 2016, ["MRT"]],
   ["SEN0", "Senegal (França)", F, 1946, 1959, ["SEN"]],
   ["MLI0", "Sudão Francês", F, 1946, 1959, ["MLI"]],
+  ["MLI60", null, "h:ml59", 1960, 1960, ["MLI"]], // kanaga tirada em 1/mar/1961
   ["GIN0", "Guiné Francesa", F, 1946, 1957, ["GIN"]],
   ["CIV0", "Costa do Marfim (França)", F, 1946, 1959, ["CIV"]],
   ["BFA0", "Alto Volta (França)", F, 1946, 1959, ["BFA"]],
@@ -159,6 +162,7 @@ export const ROWS = [
   ["BEN1", null, "h:bj_old", 1975, 1989, ["BEN"]],
   ["TGO0", "Togo (França)", F, 1946, 1959, ["TGO"]],
   ["GHA0", "Costa do Ouro (britânica)", G, 1946, 1956, ["GHA"]],
+  ["GHA64", null, "h:gh64", 1964, 1965, ["GHA"]], // faixa branca de 1964 a fev/1966
   ["NGA0", "Nigéria (britânica)", G, 1946, 1959, ["NGA"]],
   ["SLE0", "Serra Leoa (britânica)", G, 1946, 1960, ["SLE"]],
   ["GMB0", "Gâmbia (britânica)", G, 1946, 1964, ["GMB"]],
@@ -167,6 +171,8 @@ export const ROWS = [
   ["CPV1", null, "h:cv_old", 1975, 1991, ["CPV"]],
   ["STP0", "São Tomé e Príncipe (Portugal)", P, 1946, 1974, ["STP"]],
   ["CMR0", "Camarões (França)", F, 1946, 1959, ["CMR"]],
+  ["CMR60", null, "h:cm60", 1960, 1960, ["CMR"]],
+  ["CMR61", null, "h:cm61", 1961, 1974, ["CMR"]], // uma estrela só desde 20/mai/1975
   ["TCD0", "Chade (França)", F, 1946, 1959, ["TCD"]],
   ["CAF0", "Ubangui-Chari (França)", F, 1946, 1959, ["CAF"]],
   ["COG0", "Congo Francês", F, 1946, 1959, ["COG"]],
@@ -265,6 +271,7 @@ export const ROWS = [
   // EUA: 48 estrelas até 3/jul/1959, 49 até 3/jul/1960; Brasil: 21 estrelas até 1960, 22 até 1968, 23 até 1992; Espanha: águia até 1981
   ["USA48", null, "h:us48", 1946, 1958, ["USA"]],
   ["USA49", null, "h:us49", 1959, 1959, ["USA"]],
+  ["HND26", null, "h:hn26", 2026, 2026, ["HND"]], // volta ao azul-marinho em 27/jan/2026 (turquesa de 1949 a 2025)
   ["BRA21", null, "h:br21", 1946, 1959, ["BRA"]],
   ["BRA22", null, "h:br22", 1960, 1967, ["BRA"]],
   ["BRA23", null, "h:br23", 1968, 1991, ["BRA"]],
@@ -274,6 +281,13 @@ export const ROWS = [
   ["TTPI", "Território Fiduciário das Ilhas do Pacífico", "h:ttpi", 1946, 1985, ["FSM", "MHL", "PLW", "MNP"], [152, 8]],
   ["PLW86", "Palau (sob tutela dos EUA)", "x:pw", 1986, 1993, ["PLW"]],
   ["PNG0", "Papua e Nova Guiné (Austrália)", "x:au", 1946, 1974, ["PNG"]],
+  // Ilhas Cook: bandeira da Nova Zelândia; autogoverno em livre associação desde 1965; bandeira verde hasteada em 24/jan/1974; atual desde 4/ago/1979
+  ["COK0", "Ilhas Cook", "x:nz", 1946, 1964, ["COK"], null, "Nova Zelândia"],
+  ["COK65", "Ilhas Cook", "x:nz", 1965, 1973, ["COK"], null, "associado à Nova Zelândia"],
+  ["COK74", "Ilhas Cook", "h:ck73", 1974, 1978, ["COK"], null, "associado à Nova Zelândia"],
+  // Niue: bandeira anterior a 1975 não descrita no Wikipedia; autogoverno desde 1974
+  ["NIU0", "Niue", "blank", 1946, 1973, ["NIU"], null, "Nova Zelândia"],
+  ["NIU74", "Niue", "blank", 1974, 1974, ["NIU"], null, "associado à Nova Zelândia"],
   ["WSM0", "Samoa Ocidental (tutela da Nova Zelândia)", "x:nz", 1946, 1961, ["WSM"]],
   ["WSM1", "Samoa Ocidental", "x:ws", 1962, 1996, ["WSM"]],
   ["NRU0", "Nauru (tutela australiana)", "x:au", 1946, 1967, ["NRU"]],
@@ -281,6 +295,7 @@ export const ROWS = [
   ["TON0", "Tonga (protetorado britânico)", "x:to", 1946, 1969, ["TON"]],
   ["GEIC", "Ilhas Gilbert e Ellice (britânicas)", "h:brit_blue", 1946, 1974, ["KIR", "TUV"], [173, 1.4]],
   ["TUV1", "Tuvalu (colônia britânica)", "h:brit_blue", 1975, 1977, ["TUV"]],
+  ["TUV95", null, "h:tv95", 1995, 1996, ["TUV"]], // bandeira de 22/dez/1995 até 11/abr/1997
   ["KIR1", "Ilhas Gilbert (colônia britânica)", "h:brit_blue", 1975, 1978, ["KIR"]],
   ["SLB1", "Ilhas Salomão (britânicas)", "h:brit_blue", 1946, 1977, ["SLB"]],
   ["VUT1", "Novas Hébridas", "h:nh", 1946, 1979, ["VUT"]],

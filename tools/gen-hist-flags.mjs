@@ -247,6 +247,17 @@ F.br22 = brFlag(22);
 F.br23 = brFlag(23);
 // Espanha franquista (1938–1981): vermelho-amarelo-vermelho com a águia de São João
 F.es45 = svg(`<rect width="640" height="480" fill="#AA151B"/><rect y="120" width="640" height="240" fill="#F1BF00"/><path d="M220 150l-75 40 20 10-25 25 25 5-15 25 70-20zM220 150l75 40-20 10 25 25-25 5 15 25-70-20z" fill="#000"/><circle cx="220" cy="148" r="14" fill="#000"/><path d="M185 185h70v60q0 30-35 42-35-12-35-42z" fill="#000"/><path d="M193 192h54v52q0 24-27 34-27-10-27-34z" fill="#AA151B"/><path d="M193 218h54v26q0 24-27 34-27-10-27-34z" fill="#F1BF00"/>`);
+// ---- bandeiras que mudaram depois de 1946 (Wikipedia)
+F.gh64 = svg(H("#CE1126", "#fff", "#006B3F") + star(320, 240, 75, "#000")); // Gana 1964–1966
+F.ml59 = svg(V("#14B53A", "#FCD116", "#CE1126") + `<g fill="#000"><circle cx="320" cy="170" r="22"/><rect x="305" y="195" width="30" height="80"/><path d="M270 120h14v90h-14zM356 120h14v90h-14zM270 200h100v14h-100zM290 270h14v80h-14zM336 270h14v80h-14z"/></g>`); // Mali 1959–1961 (kanaga)
+F.my50 = svg([...Array(11)].map((_, i) => `<rect y="${(480 / 11) * i}" width="640" height="${480 / 11 + 0.5}" fill="${i % 2 ? "#fff" : "#CC0001"}"/>`).join("") + `<rect width="320" height="${(480 / 11) * 6}" fill="#010066"/><circle cx="125" cy="130" r="80" fill="#FC0"/><circle cx="148" cy="130" r="70" fill="#010066"/>` + star(225, 130, 50, "#FC0")); // Malaia 1950–1963 (11 listras)
+F.cm60 = svg(V("#007A5E", "#CE1126", "#FCD116")); // Camarões 1957–1961
+F.cm61 = svg(V("#007A5E", "#CE1126", "#FCD116") + star(106, 110, 40, "#E8B000") + star(106, 220, 40, "#E8B000")); // Camarões 1961–1975 (duas estrelas)
+F.tv95 = svg(`<rect width="640" height="480" fill="#C8102E"/><rect y="150" width="640" height="180" fill="#fff"/><rect y="165" width="640" height="150" fill="#5B97D1"/><path d="M0 120L180 240 0 360z" fill="#fff"/>` + [0, 1, 2, 3, 4, 5, 6, 7].map((i) => star(300 + (i % 4) * 95, i < 4 ? 70 : 410, 22, "#fff")).join("")); // Tuvalu 1995–1997
+F.bn06 = svg(`<rect width="640" height="480" fill="#F7E017"/><path d="M0 70L640 300V400L0 170z" fill="#fff"/><path d="M0 150L640 380V450L0 220z" fill="#000"/>`); // Brunei 1906–1959
+F.ck73 = svg(`<rect width="640" height="480" fill="#007A3D"/>` + [...Array(15)].map((_, i) => { const a = (2 * Math.PI * i) / 15; return star(320 + 150 * Math.sin(a), 240 - 150 * Math.cos(a), 22, "#FCD116"); }).join("")); // Ilhas Cook 1974–1979
+F.kg92 = svg(`<rect width="640" height="480" fill="#E8112D"/>` + [...Array(40)].map((_, i) => { const a = (2 * Math.PI * i) / 40; return `<path d="M${320 + 70 * Math.sin(a)} ${240 - 70 * Math.cos(a)}Q${320 + 115 * Math.sin(a + 0.08)} ${240 - 115 * Math.cos(a + 0.08)} ${320 + 150 * Math.sin(a)} ${240 - 150 * Math.cos(a)}" stroke="#FFEF00" stroke-width="7" fill="none"/>`; }).join("") + `<circle cx="320" cy="240" r="75" fill="#FFEF00"/><circle cx="320" cy="240" r="52" fill="#E8112D"/><path d="M272 225q48-30 96 0M272 255q48-30 96 0M300 195v90M340 195v90" stroke="#FFEF00" stroke-width="8" fill="none"/>`); // Quirguistão 1992–2023 (raios ondulados)
+F.hn26 = svg(H("#0F2D69", "#fff", "#0F2D69") + [[320, 240], [220, 195], [420, 195], [220, 285], [420, 285]].map(([x, y]) => star(x, y, 26, "#0F2D69")).join("")); // Honduras: azul-marinho desde 27/jan/2026
 fs.writeFileSync("data/flags-hist.json", JSON.stringify(F));
 console.log("hist flags", Object.keys(F).length, Math.round(JSON.stringify(F).length / 1024), "KB");
 // preview sheet

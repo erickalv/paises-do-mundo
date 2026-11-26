@@ -122,7 +122,7 @@ export const EVENTS = {
       "Papua New Guinea": "x:au", "American Samoa": "h:us48", "Samoa": "x:nz", "Niue": "x:nz", "Tonga": "x:to", "Wallis and Futuna Islands": "x:fr",
       "Turks and Caicos Islands": "x:gb", "Dominica": "x:gb", "Saint Lucia": "x:gb", "Antigua and Barbuda": "x:gb", "Saint Vincent and the Grenadines": "x:gb",
       "Grenada": "x:gb", "Saint Kitts and Nevis": "x:gb", "Montserrat": "x:gb", "Anguilla": "x:gb", "Netherlands Antilles": "x:nl", "Saint Martin": "x:fr",
-      "Saint Barthelemy": "x:fr", "Rapa Nui": "x:cl", "Bhutan": "blank" } },
+      "Saint Barthelemy": "x:fr", "Rapa Nui": "x:cl", "Bhutan": "blank", "Brunei": "h:bn06" } },
     { y: 1945, m: ["China", "x:tw", ["China", "Taiwan"]] }, // Taiwan entregue à República da China em 25/out/1945
     { y: 1945, m: ["Nigéria", "x:gb", ["Nigeria", "Benin"]] }, // o Reino do Benim foi anexado em 1897
   ],
