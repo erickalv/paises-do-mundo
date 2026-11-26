@@ -111,7 +111,10 @@ class MainActivity : ComponentActivity() {
             override fun labelMode() = model.labelMode()
             override fun onTap(lon: Double, lat: Double, sx: Float, sy: Float) {
                 if (model.mode == Mode.HISTORY) { model.historyTap(sx, sy, host); host.redraw(); return }
-                val id = model.tapTarget(lon, lat, sx, sy, host) ?: return
+                val id = model.tapTarget(lon, lat, sx, sy, host)
+                if (id == null) { model.clearOutline(); return }
+                if (!model.isFound(id) && !model.revealed) { model.outlineOf(id, host.renderer.hit); return }
+                model.clearOutline()
                 model.pinned = id
                 model.pinnedUntil = android.os.SystemClock.elapsedRealtime() + 3500
                 host.redraw()
@@ -174,7 +177,7 @@ fun App(model: AppModel, host: GlobeHost) {
         } else {
             GameHud(model, Modifier.onGloballyPositioned { topY = it.boundsInRoot().bottom })
             Box(Modifier.align(Alignment.BottomCenter).onGloballyPositioned { bottomY = it.boundsInRoot().top }) {
-                SearchArea(model) { e -> host.flyTo(e.lon, e.lat, host.zoomFor(e)) }
+                SearchArea(model)
             }
         }
 
@@ -366,7 +369,7 @@ private fun GameHud(model: AppModel, modifier: Modifier) {
 }
 
 @Composable
-private fun SearchArea(model: AppModel, fly: (Entity) -> Unit) {
+private fun SearchArea(model: AppModel) {
     var text by remember { mutableStateOf("") }
     val focus = remember { FocusRequester() }
     val t = model.toast
@@ -374,10 +377,9 @@ private fun SearchArea(model: AppModel, fly: (Entity) -> Unit) {
     LaunchedEffect(model.revealed) { if (!model.revealed) try { focus.requestFocus() } catch (_: Exception) {} }
 
     fun submit() {
-        val e = model.submit(text)
+        model.submit(text)
         val kind = model.toast?.kind
         if (kind == ToastKind.OK || kind == ToastKind.WARN) text = ""
-        if (e != null) fly(e)
     }
 
     Column(Modifier.fillMaxWidth().imePadding().navigationBarsPadding().padding(start = 16.dp, end = 16.dp, bottom = 16.dp), horizontalAlignment = Alignment.CenterHorizontally) {

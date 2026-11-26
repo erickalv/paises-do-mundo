@@ -103,8 +103,11 @@ class FillMesh(bytes: ByteArray) {
 
 val REGIONS = listOf(
     "eu" to "Europa", "as" to "Ásia", "af" to "África", "oc" to "Oceania",
-    "na" to "América do Norte", "sa" to "América do Sul", "an" to "Antártida",
+    "na" to "América do Norte", "sa" to "América do Sul", "an" to "Antártida", "sm" to "Sete Mares",
 )
+
+/** Islands of the open ocean, played as their own region ("Sete Mares") instead of their continent. */
+private val SEVEN_SEAS = setOf("MDV", "MUS", "BVT", "SGS", "ATF", "SHN", "SYC", "CLP", "HMD", "IOT")
 
 object Names {
     private val marks = Regex("\\p{Mn}+")
@@ -148,7 +151,7 @@ class GeoData(ctx: Context) {
                 name = o.getString("n"),
                 aliases = List(al.length()) { al.getString(it) },
                 c2 = if (o.isNull("c2")) null else o.getString("c2"),
-                region = o.getString("r"),
+                region = if (o.getString("id") in SEVEN_SEAS) "sm" else o.getString("r"),
                 lon = ll.getDouble(0), lat = ll.getDouble(1),
                 area = o.optDouble("area", 0.0).let { if (it.isNaN()) 0.0 else it },
                 dot = o.optInt("dot", 0) == 1,

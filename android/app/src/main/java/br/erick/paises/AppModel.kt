@@ -41,6 +41,10 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
     /** History tab: the point the user tapped; the unit there (in the chosen year) is painted yellow */
     var pick: DoubleArray? = null
 
+    /** Game: a country not found yet that the user tapped; its outline is drawn strong */
+    var outlineId: String? = null
+    private var outline: FloatArray? = null
+
     var pinned: String? = null
     var pinnedUntil = 0L
     /** the label of a country just found shows only for a moment */
@@ -60,7 +64,7 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
 
     fun start(isPractice: Boolean) {
         practice = isPractice; revealed = false; finished = false
-        found.clear(); foundSet.clear(); pinned = null
+        found.clear(); foundSet.clear(); pinned = null; outlineId = null; outline = null
         elapsedBase = 0; runStart = SystemClock.elapsedRealtime(); running = !isPractice
         mode = Mode.GAME
         styleVersion++
@@ -69,7 +73,7 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
 
     fun endGame() {
         running = false; finished = false; practice = false; revealed = false
-        found.clear(); foundSet.clear(); pinned = null
+        found.clear(); foundSet.clear(); pinned = null; outlineId = null; outline = null
         mode = Mode.START
         styleVersion++
         prefs.edit().remove("game").apply()
@@ -89,6 +93,7 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
             return e
         }
         found += e.id; foundSet += e.id
+        if (outlineId == e.id) { outlineId = null; outline = null }
         recentUntil = SystemClock.elapsedRealtime() + 2500
         toast = ToastMsg(e.name, ToastKind.OK)
         styleVersion++
@@ -102,7 +107,7 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
 
     fun toggleReveal() {
         if (!revealed) {
-            revealed = true; pinned = null
+            revealed = true; pinned = null; outlineId = null; outline = null
             val miss = selectedTotal() - found.size
             toast = if (miss > 0) ToastMsg("Faltaram $miss", ToastKind.WARN) else ToastMsg("Você acertou todos!", ToastKind.OK)
         } else {
@@ -120,10 +125,25 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
     fun pause() { if (running) { elapsedBase = elapsed(); running = false; save() } }
     fun resume() { if (mode == Mode.GAME && !finished && !practice && !running) { runStart = SystemClock.elapsedRealtime(); running = true } }
 
+    fun outlineOf(id: String, hit: GlobeRenderer.HitData?) {
+        if (id == outlineId) return
+        val e = data.byId.getValue(id)
+        outlineId = id
+        outline = hit?.outline { p -> data.pieceOwner.getOrElse(p) { -1 } == e.index }
+        styleVersion++
+    }
+
+    fun clearOutline() {
+        if (outlineId == null) return
+        outlineId = null; outline = null
+        styleVersion++
+    }
+
     // ---------- tap on the globe ----------
     fun tapTarget(lon: Double, lat: Double, sx: Float, sy: Float, host: GlobeHost): String? {
         if (mode != Mode.GAME) return null
-        val cand = if (revealed) data.entities.filter { it.region in selected }.map { it.id }.toSet() else foundSet.toSet()
+        // any country of the chosen regions: a found one shows its name, one not found yet gets its outline drawn
+        val cand = data.entities.filter { it.region in selected }.map { it.id }.toSet()
         if (cand.isEmpty()) return null
         val d = host.resources.displayMetrics.density
         val tmp = DoubleArray(3)
@@ -242,11 +262,14 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
         for ((k, ei) in dotEntities.withIndex()) {
             val c = if (pk != null && data.firstPieceOf[ei] in pk.pieces) FOUND else colorOf(data.entities[ei])
             dots[k * 4] = ((c shr 16) and 0xFF) / 255f; dots[k * 4 + 1] = ((c shr 8) and 0xFF) / 255f
-            dots[k * 4 + 2] = (c and 0xFF) / 255f; dots[k * 4 + 3] = 1f
+            dots[k * 4 + 2] = (c and 0xFF) / 255f
+            // alpha 0.5 = draw the dot with a strong ring (tapped, not found yet)
+            dots[k * 4 + 3] = if (mode == Mode.GAME && data.entities[ei].id == outlineId) 0.5f else 1f
         }
         val sm = info?.snapMap
         val pickUnits = if (sm != null && pk != null && pk.code >= 0) sm.indices.filter { sm[it] == pk.code }.toSet() else emptySet()
-        return Style(pal, units, mode == Mode.HISTORY, dots, info?.snap ?: -1, snapUnits, pickUnits)
+        return Style(pal, units, mode == Mode.HISTORY, dots, info?.snap ?: -1, snapUnits, pickUnits,
+            if (mode == Mode.GAME) outline else null)
     }
 
     // ---------- labels ----------

@@ -10,6 +10,7 @@ import java.nio.IntBuffer
 import java.util.concurrent.atomic.AtomicReference
 import javax.microedition.khronos.egl.EGLConfig
 import javax.microedition.khronos.opengles.GL10
+import kotlin.math.abs
 import kotlin.math.cos
 import kotlin.math.sin
 
@@ -28,6 +29,7 @@ class Style(
     val snap: Int = -1,            // before 1946: index of the historical map whose borders are drawn
     val snapUnits: ByteArray? = null, // RGBA-encoded unit code per unit of that map
     val pickUnits: Set<Int> = emptySet(), // before 1946: units of the historical map painted yellow (the tapped one)
+    val outline: FloatArray? = null, // game: segments (ax ay az bx by bz) of the outline drawn strong
 )
 
 class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSurfaceView.Renderer {
@@ -45,6 +47,8 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
     private var texPal = 0; private var texUnit = 0; private var texOwner = 0; private var texSnap = 0
     private val snapVaos = HashMap<Int, IntArray>()   // snap index -> (vao, index count)
     private var dotColorBuf = 0
+    private var outlineSrc: FloatArray? = null; private var outlineVao = 0; private var outlineCount = 0
+    private val outlineBufs = IntArray(2)
     private val nPieces = data.pieceIds.size
 
     /** dot index -> entity index */
@@ -63,6 +67,7 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
         buildQuad()
         texPal = makeTex(); texUnit = makeTex(); texOwner = makeTex(); texSnap = makeTex()
         snapVaos.clear()
+        outlineSrc = null; outlineVao = 0; outlineCount = 0
         // static owner mapping (today's borders)
         val own = ByteArray(nPieces * 4)
         for (p in 0 until nPieces) putCode(own, p, if (data.pieceOwner[p] >= 0) data.pieceOwner[p] else 100000 + p)
@@ -122,6 +127,18 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
         } else {
             lines(v, vaoBorder, borderCount, texUnit, 0, bc, 0.75f * v.density)
         }
+        // strong outline of the tapped country (game)
+        val ol = st.outline
+        if (ol !== outlineSrc) {
+            if (outlineVao != 0) { glDeleteVertexArrays(1, intArrayOf(outlineVao), 0); glDeleteBuffers(2, outlineBufs, 0); outlineVao = 0; outlineCount = 0 }
+            if (ol != null && ol.isNotEmpty()) {
+                val q = quadsOf(ol)
+                outlineVao = lineVao(q.first, q.second, outlineBufs)
+                outlineCount = q.second.size
+            }
+            outlineSrc = ol
+        }
+        if (outlineCount > 0) lines(v, outlineVao, outlineCount, texOwner, 1, floatArrayOf(28 / 255f, 24 / 255f, 20 / 255f, 1f), 2.4f * v.density)
         // dots for tiny places
         glUseProgram(progDot)
         common(progDot, v)
@@ -252,6 +269,24 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
         return verts to idx
     }
 
+    /** Quads for plain segments (6 floats each), drawn without the unit check. */
+    private fun quadsOf(segs: FloatArray): Pair<FloatArray, IntArray> {
+        val ns = segs.size / 6
+        val verts = FloatArray(ns * 40)
+        val idx = IntArray(ns * 6)
+        for (s in 0 until ns) {
+            for (k in 0 until 4) {
+                val o = (s * 4 + k) * 10
+                System.arraycopy(segs, s * 6, verts, o, 6)
+                verts[o + 6] = if (k < 2) 0f else 1f
+                verts[o + 7] = if (k % 2 == 0) -1f else 1f
+            }
+            val b = s * 4; val i = s * 6
+            idx[i] = b; idx[i + 1] = b + 1; idx[i + 2] = b + 2; idx[i + 3] = b + 1; idx[i + 4] = b + 3; idx[i + 5] = b + 2
+        }
+        return verts to idx
+    }
+
     private fun buildGraticule() {
         val segs = ArrayList<FloatArray>()
         fun xyz(lon: Double, lat: Double): FloatArray {
@@ -298,12 +333,15 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
         vbo(floatBuf(floatArrayOf(-1f, -1f, 1f, -1f, -1f, 1f, 1f, 1f)), 32); attrib(0, 2, 8, 0)
     }
 
-    private fun lineVao(verts: FloatArray, idx: IntArray): Int {
+    /** bufs, if given, receives the two buffer names so they can be deleted later. */
+    private fun lineVao(verts: FloatArray, idx: IntArray, bufs: IntArray? = null): Int {
         val vao = genVao()
         glBindVertexArray(vao)
-        vbo(floatBuf(verts), verts.size * 4)
+        val vb = vbo(floatBuf(verts), verts.size * 4)
         attrib(0, 3, 40, 0); attrib(1, 3, 40, 12); attrib(2, 1, 40, 24); attrib(3, 1, 40, 28); attrib(4, 2, 40, 32)
-        ebo(intBuf(idx), idx.size * 4)
+        val eb = ebo(intBuf(idx), idx.size * 4)
+        glBindVertexArray(0)
+        bufs?.let { it[0] = vb; it[1] = eb }
         return vao
     }
 
@@ -321,6 +359,44 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
                 if (inside(a, b, c, x, y, z)) return p
             }
             return -1
+        }
+        /**
+         * Outline (coast and land borders) of the pieces allowed: the triangle edges used only once among them.
+         * Vertices are matched by position so the line between two pieces of the same country cancels out.
+         * Returns segments as ax ay az bx by bz.
+         */
+        fun outline(allowed: (Int) -> Boolean): FloatArray {
+            val ib = ByteBuffer.wrap(bytes).order(ByteOrder.LITTLE_ENDIAN)
+            fun vkey(i: Int): Long {
+                val x = Math.round(v(i, 0) * 1e6) + 1048576; val y = Math.round(v(i, 1) * 1e6) + 1048576; val z = Math.round(v(i, 2) * 1e6) + 1048576
+                return (x shl 42) or (y shl 21) or z
+            }
+            val pairs = HashMap<Pair<Long, Long>, IntArray>()   // edge -> (uses, vertex a, vertex b)
+            var t = 0
+            while (t < ni) {
+                val p = piece[ib.getInt(idxOff + t * 4)].toInt()
+                if (allowed(p)) {
+                    for (k in 0 until 3) {
+                        val a = ib.getInt(idxOff + (t + k) * 4); val b = ib.getInt(idxOff + (t + (k + 1) % 3) * 4)
+                        val ka = vkey(a); val kb = vkey(b)
+                        val key = if (ka < kb) Pair(ka, kb) else Pair(kb, ka)
+                        val e = pairs[key]
+                        if (e == null) pairs[key] = intArrayOf(1, a, b) else e[0]++
+                    }
+                }
+                t += 3
+            }
+            val out = ArrayList<Float>()
+            for (e in pairs.values) {
+                if (e[0] != 1) continue
+                val a = e[1]; val b = e[2]
+                // cuts made by the source data along the 180° meridian and through the pole are not real edges
+                if (abs(v(a, 0)) < 1e-5 && abs(v(b, 0)) < 1e-5 && v(a, 2) < 0 && v(b, 2) < 0) continue
+                if (abs(v(a, 1)) > 0.99999 || abs(v(b, 1)) > 0.99999) continue
+                for (k in 0 until 3) out += v(a, k).toFloat()
+                for (k in 0 until 3) out += v(b, k).toFloat()
+            }
+            return out.toFloatArray()
         }
         private fun v(i: Int, k: Int) = pos.getFloat(posOff + i * 12 + k * 4).toDouble()
         private fun inside(a: Int, b: Int, c: Int, x: Double, y: Double, z: Double): Boolean {
@@ -359,9 +435,10 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
         glBindBuffer(GL_ARRAY_BUFFER, a[0]); glBufferData(GL_ARRAY_BUFFER, bytes, buf, usage)
         return a[0]
     }
-    private fun ebo(buf: java.nio.Buffer, bytes: Int) {
+    private fun ebo(buf: java.nio.Buffer, bytes: Int): Int {
         val a = IntArray(1); glGenBuffers(1, a, 0)
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, a[0]); glBufferData(GL_ELEMENT_ARRAY_BUFFER, bytes, buf, GL_STATIC_DRAW)
+        return a[0]
     }
     private fun attrib(loc: Int, size: Int, stride: Int, offset: Int) {
         glEnableVertexAttribArray(loc)
@@ -486,7 +563,8 @@ in vec4 vColor; out vec4 o;
 void main() {
     float r = length(gl_PointCoord - vec2(0.5)) * 2.0;
     if (r > 1.0) discard;
-    o = r > 0.72 ? vec4(0.043, 0.063, 0.125, 1.0) : vec4(vColor.rgb, 1.0);
+    if (vColor.a < 0.99) o = r > 0.55 ? vec4(0.96, 0.96, 0.98, 1.0) : vec4(vColor.rgb, 1.0);   // tapped: strong ring
+    else o = r > 0.72 ? vec4(0.043, 0.063, 0.125, 1.0) : vec4(vColor.rgb, 1.0);
 }"""
 
         const val VS_QUAD = """#version 300 es
