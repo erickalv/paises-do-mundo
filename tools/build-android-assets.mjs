@@ -143,7 +143,7 @@ const rows = ROWS.map((u) => {
     const fsx = u[5].map((m) => featById.get(m)).filter(Boolean);
     ll = labelPoint(fsx) || outEnts.find((e) => e.id === ownerOf(u[5][0])).ll;
   }
-  let own = modernOwner(u[2], u[5], u[3]);
+  let own = u[7] !== undefined ? u[7] : modernOwner(u[2], u[5], u[3]);
   if (!own && u[4] >= 2026) own = SOVEREIGN[ownerOf(u[5][0])] || null;
   return [u[0], u[1], u[2], u[3], u[4], u[5], ll, own];
 });

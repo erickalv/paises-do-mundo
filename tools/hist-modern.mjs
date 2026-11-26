@@ -1,5 +1,5 @@
 // Political units by year 1946–2026, built from pieces of today's countries (situation on 31 December).
-// Row: [key, name (null = today's name), flag, fromYear, toYear, members[], labelPoint?]
+// Row: [key, name (null = today's name), flag, fromYear, toYear, members[], labelPoint?, owner?] (owner: texto de "pertence a"; minúsculo = frase completa)
 const G = "x:gb", F = "x:fr", P = "x:pt", BE = "x:be", NL = "x:nl", ES = "x:es";
 export const MODERN_FROM = 1946;
 export const ROWS = [
@@ -9,6 +9,9 @@ export const ROWS = [
   ["GDR", "Alemanha Oriental", "h:ddr", 1949, 1989, ["DEU~E"], [12.6, 52.2]],
   ["AUTOCC", "Áustria (ocupada pelos Aliados)", "x:at", 1946, 1955, ["AUT"]],
   ["SUN", "União Soviética", "h:su", 1946, 1990, ["RUS", "UKR", "BLR", "EST", "LVA", "LTU", "MDA", "GEO", "ARM", "AZE", "KAZ", "UZB", "TKM", "KGZ", "TJK"], [95, 62]],
+  // Crimeia: transferida à RSS da Ucrânia em 1954 (dentro da URSS); Ucrânia independente em 1991; anexada pela Rússia em 2014 (disputada)
+  ["UKR91", null, "x:ua", 1991, 2013, ["UKR", "RUS~CR"]],
+  ["CRI14", "Crimeia", "x:ru", 2014, 2026, ["RUS~CR"], null, "disputada (controlada pela Rússia)"],
   ["YUG1", "Iugoslávia", "h:yu_sfr", 1946, 1990, ["SVN", "HRV", "BIH", "SRB", "MNE", "UNK", "MKD"], [18.8, 44.3]],
   ["YUG2", "Iugoslávia", "h:yu_sfr", 1991, 1991, ["BIH", "SRB", "MNE", "UNK"], [19.6, 43.8]],
   ["YUG3", "Iugoslávia", "h:yu_fr", 1992, 2002, ["SRB", "MNE", "UNK"], [20.6, 43.6]],

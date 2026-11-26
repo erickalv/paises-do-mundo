@@ -111,6 +111,8 @@ const SPLITS = {
   NLD: [["BES", ([x, y]) => y < 20]],
   NZL: [["TKL", ([x, y]) => y > -10 && y < -8 && x < -170]],
   __IOT: [["CXR", ([x, y]) => x > 105], ["CCK", ([x, y]) => x < 100]],
+  // Crimeia (polígono próprio no mapa): parte da Ucrânia em 1991–2013, disputada desde 2014 (História)
+  RUS: [["RUS~CR", ([x, y]) => x > 32 && x < 36.7 && y > 44 && y < 46.3]],
 };
 
 for (const [id, gs] of groups) {
