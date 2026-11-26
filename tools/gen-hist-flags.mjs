@@ -79,7 +79,17 @@ F.rw_old = svg(V("#E20000", "#FAD201", "#00A100") + `<path d="M285 165h48q38 0 3
 F.mw10 = svg(H("#CE1126", "#000", "#339E35") + `<circle cx="320" cy="240" r="58" fill="#fff"/>` + rays(320, 240, 58, 90, 45, "#fff"));
 F.ls66 = svg(`<rect width="640" height="480" fill="#00209F"/><rect x="480" width="80" height="480" fill="#009543"/><rect x="560" width="80" height="480" fill="#CE1126"/><path d="M180 300l60-130 60 130zM220 210q20-30 40 0" fill="#fff"/><rect x="170" y="296" width="140" height="14" rx="7" fill="#fff"/>`);
 F.ls87 = svg(`<rect width="640" height="480" fill="#009543"/><polygon points="0,0 640,0 0,480" fill="#00209F"/><polygon points="0,0 470,0 0,352" fill="#fff"/><path d="M110 110q40-30 80 0v40q-40 40-80 0z" fill="#8B4513"/><path d="M100 80l110 110M210 80L100 190" stroke="#8B4513" stroke-width="6"/>`);
-F.km_old = svg(`<rect width="640" height="480" fill="#3A75C4"/><rect width="640" height="480" fill="#009A44"/><circle cx="250" cy="240" r="110" fill="#fff"/><circle cx="295" cy="225" r="105" fill="#009A44"/>` + [0, 1, 2, 3].map((i) => star(300 + i * 40, 150 + i * 60, 18, "#fff")).join(""));
+// Comores 1978–2001: verde, crescente no centro com as 4 estrelas em linha entre as pontas (d = para onde abre o crescente)
+const kmMoon = (dx, dy) => {
+  const L = Math.hypot(dx, dy), ux = dx / L, uy = dy / L;
+  return `<circle cx="320" cy="240" r="120" fill="#fff"/><circle cx="${320 + ux * 45}" cy="${240 + uy * 45}" r="108" fill="#009A44"/>` +
+    [-1.5, -0.5, 0.5, 1.5].map((k) => star(320 + ux * 70 - uy * k * 42, 240 + uy * 70 + ux * k * 42, 16, "#fff")).join("");
+};
+F.km78 = svg(`<rect width="640" height="480" fill="#009A44"/>` + kmMoon(1, 1));
+F.km92 = svg(`<rect width="640" height="480" fill="#009A44"/>` + kmMoon(0, -1));
+F.km96 = svg(`<rect width="640" height="480" fill="#009A44"/>` + kmMoon(1, 0) + `<g font-family="DejaVu Sans" font-weight="bold" fill="#fff" font-size="54" text-anchor="middle"><text x="110" y="430">محمد</text><text x="540" y="90">الله</text></g>`);
+// Afeganistão 1996–1997: bandeira branca lisa do Talibã
+F.af96 = svg(`<rect width="640" height="480" fill="#fff"/>`);
 F.mr_old = svg(`<rect width="640" height="480" fill="#006233"/><path d="M200 220a120 120 0 0 0 240 0 132 132 0 0 1-240 0" fill="#FFC400"/>` + star(320, 170, 48, "#FFC400"));
 F.cv_old = svg(`<rect width="640" height="480" fill="#009E49"/><rect width="640" height="240" fill="#F7D116"/><rect width="220" height="480" fill="#CE1126"/><path d="M50 250q60 90 120 0" stroke="#F7D116" stroke-width="12" fill="none"/>` + star(110, 230, 46, "#000"));
 F.zaire = svg(`<rect width="640" height="480" fill="#00A651"/><circle cx="320" cy="240" r="130" fill="#FDD100"/><path d="M265 330l60-120 22 12-60 120z" fill="#7B4A12"/><path d="M325 205q-25-40 10-80 10 40 30 50-10 25-40 30z" fill="#ED1C24"/>`);

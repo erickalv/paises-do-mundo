@@ -76,7 +76,11 @@ export const ROWS = [
   ["AFG1", null, "h:af74", 1973, 1977, ["AFG"]],
   ["AFG2", null, "h:af78", 1978, 1979, ["AFG"]],
   ["AFG3", null, "h:af80", 1980, 1991, ["AFG"]],
-  ["AFG4", null, "h:af92", 1992, 2001, ["AFG"]],
+  ["AFG4", null, "h:af92", 1992, 1995, ["AFG"]],
+  // Talibã em Cabul desde 27/set/1996: bandeira branca lisa; chahada desde 27/out/1997 (governo de fato)
+  ["AFGT1", null, "h:af96", 1996, 1996, ["AFG"]],
+  ["AFGT2", null, "h:af21", 1997, 2000, ["AFG"]],
+  ["AFG4B", null, "h:af92", 2001, 2001, ["AFG"]], // Talibã caiu em nov/2001; bandeira do Estado Islâmico até 27/jan/2002
   ["AFG5", null, "h:af21", 2021, 2026, ["AFG"]], // bandeira do governo de fato (Emirado Islâmico) desde ago/2021
   ["IRN1", null, "h:ir_old", 1946, 1979, ["IRN"]],
   ["IRQK", "Reino do Iraque", "h:iq_k", 1946, 1958, ["IRQ"]],
@@ -175,7 +179,11 @@ export const ROWS = [
   ["ZAF1", null, "h:za_old", 1946, 1993, ["ZAF"]],
   ["MDG0", "Madagascar (França)", F, 1946, 1959, ["MDG"]],
   ["COM0", "Comores (França)", F, 1946, 1974, ["COM"]],
-  ["COM1", null, "h:km_old", 1975, 2001, ["COM"]],
+  // Comores: bandeira de 1975–1978 (Ali Soilih) sem descrição completa no Wikipedia, fica sem bandeira
+  ["COM1", null, "blank", 1975, 1977, ["COM"]],
+  ["COM78", null, "h:km78", 1978, 1991, ["COM"]],
+  ["COM92", null, "h:km92", 1992, 1995, ["COM"]],
+  ["COM96", null, "h:km96", 1996, 2000, ["COM"]], // bandeira atual desde 23/dez/2001
   ["MUS0", "Maurício (britânico)", G, 1946, 1967, ["MUS"]],
   ["SYC0", "Seychelles (britânicas)", "h:brit_blue", 1946, 1975, ["SYC"]],
   ["SYC1", null, "h:syc77", 1976, 1995, ["SYC"]],
