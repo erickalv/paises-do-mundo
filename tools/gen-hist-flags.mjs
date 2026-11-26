@@ -124,6 +124,8 @@ F.vn_s = svg(`<rect width="640" height="480" fill="#FFDD00"/><rect y="170" width
 F.prg = svg(`<rect width="640" height="480" fill="#0072BC"/><rect width="640" height="240" fill="#DA251D"/>` + star(320, 240, 110, "#FFDD00"));
 F.lao_k = svg(`<rect width="640" height="480" fill="#CE1126"/>` + elephant(310, 250, 1.4, "#fff") + `<rect x="300" y="110" width="20" height="60" fill="#fff"/><path d="M250 120h120l-20-30h-80z" fill="#fff"/>`);
 F.kh70 = svg(`<rect width="640" height="480" fill="#032EA1"/><rect width="320" height="240" fill="#E00025"/>` + angkor(160, 110, 0.5, 3, "#fff") + star(470, 60, 24, "#fff") + star(520, 60, 24, "#fff") + star(570, 60, 24, "#fff"));
+// Emirado Islâmico (desde 2021): chahada em preto sobre branco
+F.af21 = svg(`<rect width="640" height="480" fill="#fff"/><g font-family="DejaVu Sans" font-weight="bold" font-size="70" text-anchor="middle" direction="rtl"><text x="320" y="225">لا إله إلا الله</text><text x="320" y="305">محمد رسول الله</text></g>`);
 F.af_old = svg(V("#000", "#D32011", "#007A36") + `<circle cx="320" cy="240" r="80" fill="none" stroke="#fff" stroke-width="12"/><path d="M280 260h80v20h-80zM300 200h40v60h-40z" fill="#fff"/>`);
 F.iq_k = svg(H("#000", "#fff", "#007A3D") + `<polygon points="0,0 200,160 200,320 0,480" fill="#CE1126"/>` + star(70, 205, 26, "#fff") + star(70, 275, 26, "#fff"));
 F.iq59 = svg(V("#000", "#fff", "#007A3D") + rays(320, 240, 60, 130, 8, "#CE1126") + `<circle cx="320" cy="240" r="46" fill="#FCD116"/>`);

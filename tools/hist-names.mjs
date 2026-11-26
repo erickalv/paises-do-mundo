@@ -285,6 +285,7 @@ export const SOVEREIGN = {
   ...D("Reino Unido", ["AIA", "BMU", "SHN", "CYM", "FLK", "GGY", "GIB", "IMN", "IOT", "JEY", "MSR", "PCN", "SGS", "TCA", "VGB", "AKR"]),
   ALA: "Finlândia", ...D("Estados Unidos", ["ASM", "GUM", "MNP", "PRI", "UMI", "VIR"]),
   ...D("França", ["ATF", "BLM", "GLP", "GUF", "MAF", "MTQ", "MYT", "NCL", "PYF", "REU", "SPM", "WLF", "CLP"]),
-  ...D("Noruega", ["BVT", "SJM"]), ...D("Austrália", ["CCK", "CXR", "HMD", "NFK"]), ...D("Nova Zelândia", ["COK", "NIU", "TKL"]),
+  ...D("Noruega", ["BVT", "SJM"]), ...D("Austrália", ["CCK", "CXR", "HMD", "NFK"]), TKL: "Nova Zelândia", ...D("associado à Nova Zelândia", ["COK", "NIU"]),
   ...D("Dinamarca", ["FRO", "GRL"]), ...D("China", ["HKG", "MAC"]), ESH: "disputado (administrado pelo Marrocos)",
+  SCB: "disputado (controlado pela China)", BJN: "disputado (administrado pela Colômbia)",
 };

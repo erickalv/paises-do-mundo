@@ -74,6 +74,7 @@ export const ROWS = [
   ["AFG2", null, "h:af78", 1978, 1979, ["AFG"]],
   ["AFG3", null, "h:af80", 1980, 1991, ["AFG"]],
   ["AFG4", null, "h:af92", 1992, 2001, ["AFG"]],
+  ["AFG5", null, "h:af21", 2021, 2026, ["AFG"]], // bandeira do governo de fato (Emirado Islâmico) desde ago/2021
   ["IRN1", null, "h:ir_old", 1946, 1979, ["IRN"]],
   ["IRQK", "Reino do Iraque", "h:iq_k", 1946, 1958, ["IRQ"]],
   ["IRQ59", null, "h:iq59", 1959, 1962, ["IRQ"]],

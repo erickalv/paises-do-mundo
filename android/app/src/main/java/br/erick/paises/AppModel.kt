@@ -289,7 +289,7 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
                 val p = pick
                 if (pk != null && p != null) {
                     out += LabelItem("pick", pk.name, pk.flag, p[0], p[1], 0.0, true, top = true, missed = false,
-                        sub = pk.owner?.let { "pertence a $it" })
+                        sub = pk.owner?.let { if (it.first().isLowerCase()) it.replaceFirstChar { c -> c.uppercaseChar() } else "pertence a $it" })
                 }
                 info.units.filter { it.name.isNotEmpty() }
                     .sortedWith(compareByDescending<YearUnit> { it.historical }.thenByDescending { it.sr })
