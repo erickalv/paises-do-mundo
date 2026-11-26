@@ -40,7 +40,11 @@ class YearUnit(
     val code: Int,
 )
 
-class YearInfo(val unitOfPiece: IntArray, val units: List<YearUnit>)
+/** unitOfPiece: unit code of each piece of today's map (1946–2026).
+ *  snap/snapMap: for 1800–1945, which historical map is used and the unit code of each of its units. */
+class YearInfo(val unitOfPiece: IntArray, val units: List<YearUnit>, val snap: Int = -1, val snapMap: IntArray? = null)
+
+class Era(val y0: Int, val y1: Int, val snap: Int, val units: List<YearUnit>, val map: IntArray)
 
 val REGIONS = listOf(
     "eu" to "Europa", "as" to "Ásia", "af" to "África", "oc" to "Oceania",
@@ -68,6 +72,9 @@ class GeoData(ctx: Context) {
     val hist: List<HistRow>
     val histFrom: Int
     val histTo: Int
+    val modernFrom: Int
+    val snapYears: IntArray
+    val eras: List<Era>
     private val lookup = HashMap<String, String>()
     private val lookupStripped = HashMap<String, String>()
 
@@ -110,7 +117,26 @@ class GeoData(ctx: Context) {
         }
 
         val hj = org.json.JSONObject(ctx.assets.open("history.json").bufferedReader().readText())
-        histFrom = hj.getInt("from"); histTo = hj.getInt("to")
+        histFrom = hj.getInt("from"); histTo = hj.getInt("to"); modernFrom = hj.getInt("modernFrom")
+        val sj = hj.getJSONArray("snaps")
+        snapYears = IntArray(sj.length()) { sj.getJSONObject(it).getInt("y") }
+        val ej2 = hj.getJSONArray("eras")
+        eras = List(ej2.length()) { k ->
+            val o = ej2.getJSONObject(k)
+            val us = o.getJSONArray("u"); val mp = o.getJSONArray("m")
+            Era(
+                o.getInt("y0"), o.getInt("y1"), o.getInt("s"),
+                List(us.length()) { i ->
+                    val u = us.getJSONArray(i)
+                    YearUnit(
+                        key = "e$k.$i", name = if (u.isNull(0)) "" else u.getString(0), flag = u.getString(1),
+                        lon = u.getDouble(2), lat = u.getDouble(3), members = emptyList(), historical = false,
+                        sr = u.getDouble(4), dot = false, code = i,
+                    )
+                },
+                IntArray(mp.length()) { mp.getInt(it) },
+            )
+        }
         val units = hj.getJSONArray("units")
         hist = List(units.length()) { k ->
             val u = units.getJSONArray(k)
@@ -143,6 +169,10 @@ class GeoData(ctx: Context) {
     private val yearCache = HashMap<Int, YearInfo>()
 
     fun yearInfo(y: Int): YearInfo = yearCache.getOrPut(y) {
+        if (y < modernFrom) {
+            val era = eras.first { y >= it.y0 && y <= it.y1 }
+            return@getOrPut YearInfo(IntArray(0), era.units, era.snap, era.map)
+        }
         val unitKeyOf = HashMap<String, String>()
         val rows = LinkedHashMap<String, Triple<HistRow?, Entity?, List<String>>>()
         for (h in hist) {

@@ -36,6 +36,8 @@ import kotlin.math.pow
 import kotlin.math.sin
 import kotlin.math.sqrt
 
+const val MAX_ZOOM = 80.0
+
 /** Orthographic camera looking at (lon0, lat0). */
 class Camera {
     var lon0 = -40.0
@@ -243,9 +245,10 @@ class GlobeHost(context: Context, val data: GeoData) : FrameLayout(context) {
             val midLat = Math.toRadians((b[1] + b[3]) / 2)
             theta = Math.toRadians(max(dLon * cos(midLat), b[3] - b[1]))
         }
-        theta = max(theta, 0.03)
+        theta = max(theta, 0.004)
         val z = (0.28 * minDim / theta) / cam.baseR
-        return z.coerceIn(1.0, 3.0)
+        // small places get more zoom so islands are visible as shapes
+        return z.coerceIn(1.0, if (e.area < 30000) 12.0 else 4.0)
     }
 
     private fun slerp(lon0: Double, lat0: Double, lon1: Double, lat1: Double, t: Double): DoubleArray {
@@ -271,7 +274,7 @@ class GlobeHost(context: Context, val data: GeoData) : FrameLayout(context) {
     // ---------- gestures ----------
     private val scale = ScaleGestureDetector(context, object : ScaleGestureDetector.SimpleOnScaleGestureListener() {
         override fun onScale(d: ScaleGestureDetector): Boolean {
-            cam.zoom = (cam.zoom * d.scaleFactor).coerceIn(0.8, 30.0)
+            cam.zoom = (cam.zoom * d.scaleFactor).coerceIn(0.8, MAX_ZOOM)
             return true
         }
     })
@@ -296,7 +299,7 @@ class GlobeHost(context: Context, val data: GeoData) : FrameLayout(context) {
         }
         override fun onDoubleTap(e: MotionEvent): Boolean {
             val ll = cam.unproject(e.x.toDouble(), e.y.toDouble()) ?: return true
-            flyTo(ll[0], ll[1], (cam.zoom * 1.8).coerceIn(0.8, 30.0), 450)
+            flyTo(ll[0], ll[1], (cam.zoom * 1.8).coerceIn(0.8, MAX_ZOOM), 450)
             return true
         }
     })
@@ -378,13 +381,14 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
             if (mode == 2 && angularDistance(it.lon, it.lat, cam.lon0, cam.lat0) > 1.2) continue
             val px = it.sr * R * R
             if (!it.top) {
-                val min = if (mode == 0) 900 * d2 else 260 * d2
-                val dotOk = it.dot && cam.zoom > (if (mode == 0) 3.0 else 2.0)
+                val min = 120 * d2
+                val dotOk = it.dot && cam.zoom > 2.0
                 if (px < min && !dotOk && !(mode == 2 && it.missed && px > 40 * d2)) continue
             }
             val w = pad + fw + gap + text.measureText(it.name) + pad * 1.4f
             val rpx = sqrt(it.sr / PI) * R
-            val above = it.dot || (mode != 2 && rpx * 2.2 < w)
+            // a label wider than its country sits above it, with a pointer to the right place
+            val above = it.dot || rpx * 2.2 < w
             val x = (tmp[0] - w / 2).toFloat()
             val y = if (above) (tmp[1] - h - max(12.0 * d, if (it.dot) 12.0 * d else rpx * 0.9 + 8 * d)).toFloat() else (tmp[1] - h / 2).toFloat()
             val box = floatArrayOf(x - 3 * d, y - 3 * d, x + w + 3 * d, y + h + 3 * d)

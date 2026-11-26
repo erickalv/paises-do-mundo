@@ -1,0 +1,181 @@
+// Historical flags (1976–2026), drawn as simplified SVGs, 640x480 like flag-icons.
+import fs from "fs";
+const FI = (c) => fs.readFileSync(`node_modules/flag-icons/flags/4x3/${c}.svg`, "utf8");
+const inner = (c) => FI(c).replace(/^[\s\S]*?<svg[^>]*>/, "").replace(/<\/svg>\s*$/, "").replace(/id="/g, `id="${c}n-`).replace(/#(\w+)-/g, (m) => m).replace(/href="#/g, `href="#${c}n-`);
+const nest = (c, x, y, w, h, keep) => `<svg x="${x}" y="${y}" width="${w}" height="${h}" viewBox="0 0 640 480" preserveAspectRatio="${keep ? "xMidYMid meet" : "none"}">${inner(c)}</svg>`;
+const svg = (body) => `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 640 480">${body}</svg>`;
+const H = (...cols) => cols.map((c, i) => `<rect y="${(480 / cols.length) * i}" width="640" height="${480 / cols.length + 0.5}" fill="${c}"/>`).join("");
+const V = (...cols) => cols.map((c, i) => `<rect x="${(640 / cols.length) * i}" width="${640 / cols.length + 0.5}" height="480" fill="${c}"/>`).join("");
+const star = (cx, cy, r, fill, extra = "", rot = 0) => {
+  const pts = [];
+  for (let i = 0; i < 10; i++) {
+    const a = (Math.PI / 5) * i - Math.PI / 2 + rot;
+    const rr = i % 2 ? r * 0.382 : r;
+    pts.push((cx + rr * Math.cos(a)).toFixed(1) + "," + (cy + rr * Math.sin(a)).toFixed(1));
+  }
+  return `<polygon points="${pts.join(" ")}" fill="${fill}" ${extra}/>`;
+};
+const rays = (cx, cy, r0, r1, n, fill) => {
+  const pts = [];
+  for (let i = 0; i < n * 2; i++) {
+    const a = (Math.PI / n) * i - Math.PI / 2;
+    const rr = i % 2 ? r0 : r1;
+    pts.push((cx + rr * Math.cos(a)).toFixed(1) + "," + (cy + rr * Math.sin(a)).toFixed(1));
+  }
+  return `<polygon points="${pts.join(" ")}" fill="${fill}"/>`;
+};
+const blueEnsign = (badge) => svg(`<rect width="640" height="480" fill="#012169"/>${nest("gb", 0, 0, 320, 240)}${badge}`);
+const angkor = (cx, cy, s, n, fill) => {
+  // simplified temple: n towers on a base
+  const w = 300 * s, base = `<rect x="${cx - w / 2}" y="${cy + 40 * s}" width="${w}" height="${30 * s}" fill="${fill}"/>`;
+  let t = base;
+  const xs = n === 3 ? [-0.3, 0, 0.3] : [-0.4, -0.2, 0, 0.2, 0.4];
+  xs.forEach((f) => {
+    const h = f === 0 ? 150 : Math.abs(f) < 0.25 ? 120 : 95;
+    const x = cx + f * w, bw = 34 * s;
+    t += `<polygon points="${x - bw},${cy + 40 * s} ${x - bw * 0.6},${cy + 40 * s - h * s * 0.6} ${x},${cy + 40 * s - h * s} ${x + bw * 0.6},${cy + 40 * s - h * s * 0.6} ${x + bw},${cy + 40 * s}" fill="${fill}"/>`;
+  });
+  return t;
+};
+const hammerSickle = (x, y, s, c) => `<g transform="translate(${x} ${y}) scale(${s})" fill="${c}">
+  <path d="M10 46c8 10 26 12 38 4l6 6 6-6-6-6c10-14 6-34-10-44 8 12 8 26-2 36L22 16l-8 8 20 20c-10 8-20 6-24 2z"/>
+  <path d="M2 56l26-26 4 4-26 26z"/></g>`;
+
+const F = {};
+// --- dissolved states ---
+F.su = svg(`<rect width="640" height="480" fill="#CC0000"/>${hammerSickle(70, 70, 1.5, "#FFD700")}${star(118, 52, 16, "none", 'stroke="#FFD700" stroke-width="4"')}`);
+F.ddr = svg(H("#000", "#D00", "#FFCE00") + `<circle cx="320" cy="240" r="92" fill="none" stroke="#E8B200" stroke-width="22" stroke-dasharray="10 6"/>
+  <circle cx="320" cy="240" r="70" fill="#D00"/>
+  <path d="M290 280l30-90 30 90" fill="none" stroke="#FFCE00" stroke-width="10"/>
+  <rect x="304" y="196" width="32" height="14" fill="#FFCE00"/><rect x="316" y="205" width="8" height="70" fill="#FFCE00"/>`);
+F.yu_sfr = svg(H("#0C4076", "#fff", "#C6363C") + star(320, 240, 120, "#C6363C", 'stroke="#FCD116" stroke-width="10"'));
+F.yu_fr = svg(H("#0C4076", "#fff", "#C6363C"));
+F.yem_n = svg(H("#CE1126", "#fff", "#000") + star(320, 240, 52, "#009A44"));
+F.yem_s = svg(H("#CE1126", "#fff", "#000") + `<polygon points="0,0 260,240 0,480" fill="#4D9BDB"/>` + star(90, 240, 44, "#CE1126"));
+F.an6 = svg(`<rect width="640" height="480" fill="#fff"/><rect x="290" width="60" height="480" fill="#CF142B"/><rect y="160" width="640" height="160" fill="#00247D"/>` +
+  [[-110, 0], [-55, -40], [55, -40], [110, 0], [55, 40], [-55, 40]].map(([dx, dy]) => star(320 + dx, 240 + dy, 18, "#fff")).join(""));
+F.an5 = svg(`<rect width="640" height="480" fill="#fff"/><rect x="290" width="60" height="480" fill="#CF142B"/><rect y="160" width="640" height="160" fill="#00247D"/>` +
+  [[-90, -20], [-40, 30], [0, -35], [40, 30], [90, -20]].map(([dx, dy]) => star(320 + dx, 240 + dy, 18, "#fff")).join(""));
+F.ttpi = svg(`<rect width="640" height="480" fill="#5A9BD5"/>` + [0, 1, 2, 3, 4, 5].map((i) => { const a = (Math.PI / 3) * i - Math.PI / 2; return star(320 + 110 * Math.cos(a), 240 + 110 * Math.sin(a), 30, "#fff"); }).join(""));
+F.kna_old = svg(V("#007A3D", "#FCD116", "#00529B") + `<rect x="314" y="150" width="12" height="210" fill="#000"/><path d="M320 155c-40-30-80-20-110 10 30-10 70-12 110-2zm0 0c40-30 80-20 110 10-30-10-70-12-110-2zm0 0c-20-40-50-55-80-60 30 15 55 35 80 62zm0 0c20-40 50-55 80-60-30 15-55 35-80 62z" fill="#000"/>`);
+// --- colonies / dependencies ---
+F.brit_blue = blueEnsign(`<circle cx="480" cy="240" r="70" fill="#fff"/><circle cx="480" cy="240" r="52" fill="#3B7A3B"/>`);
+F.hk_brit = blueEnsign(`<circle cx="480" cy="240" r="78" fill="#fff"/><rect x="440" y="200" width="80" height="80" fill="#2B6CB0"/><path d="M445 255q35-30 70 0" stroke="#fff" stroke-width="8" fill="none"/>`);
+F.nh = svg(`<rect width="320" height="480" fill="#fff"/><rect width="107" height="480" fill="#002395"/><rect x="213" width="107" height="480" fill="#ED2939"/>${nest("gb", 320, 0, 320, 480)}`);
+F.rhodesia = svg(V("#1EB53A", "#fff", "#1EB53A") + `<path d="M290 180h60v70q0 40-30 55-30-15-30-55z" fill="#1EB53A" stroke="#333" stroke-width="3"/><rect x="290" y="180" width="60" height="22" fill="#C8102E"/><circle cx="320" cy="250" r="10" fill="#FFD100"/>`);
+F.za_old = svg(H("#FF7F00", "#fff", "#00247D") + nest("gb", 228, 205, 66, 50) +
+  `<g>${[0, 1, 2, 3, 4, 5, 6].map((i) => `<rect x="${300 + i * 6}" y="205" width="6" height="50" fill="${i % 2 ? "#fff" : "#FF7F00"}"/>`).join("")}<rect x="318" y="205" width="6" height="16" fill="#AE1C28"/><rect x="324" y="205" width="6" height="16" fill="#fff"/><rect x="330" y="205" width="6" height="16" fill="#21468B"/></g>` +
+  `<g><rect x="348" y="205" width="16" height="50" fill="#007749"/><rect x="364" y="205" width="48" height="17" fill="#AE1C28"/><rect x="364" y="222" width="48" height="16" fill="#fff"/><rect x="364" y="238" width="48" height="17" fill="#21468B"/></g>`);
+F.un = svg(`<rect width="640" height="480" fill="#4B92DB"/><g fill="none" stroke="#fff" stroke-width="7"><circle cx="320" cy="225" r="85"/><circle cx="320" cy="225" r="55"/><circle cx="320" cy="225" r="25"/><path d="M320 140v170M235 225h170"/></g><path d="M230 300q-50-80 0-170M410 300q50-80 0-170" stroke="#fff" stroke-width="10" fill="none"/>`);
+// --- Arab Republics federation hawk (Egypt, Libya, Syria in the 1970s) ---
+F.far = svg(H("#CE1126", "#fff", "#000") + `<path d="M320 175l22 18 30-6-14 30 14 40-30-12-22 22-22-22-30 12 14-40-14-30 30 6z" fill="#C09300"/><rect x="300" y="272" width="40" height="10" fill="#C09300"/>`);
+F.ly_green = svg(`<rect width="640" height="480" fill="#239E46"/>`);
+// --- Africa ---
+F.bj_old = svg(`<rect width="640" height="480" fill="#008751"/>` + star(110, 90, 60, "#E8112D"));
+F.cg_old = svg(`<rect width="640" height="480" fill="#CE1126"/><path d="M60 150q50 50 100 0" stroke="#009543" stroke-width="12" fill="none"/>` + star(110, 55, 26, "#FCD116") + `<path d="M80 120l60-40M140 120l-60-40" stroke="#FCD116" stroke-width="9"/>`);
+F.eth_plain = svg(H("#078930", "#FCDD09", "#DA121A"));
+F.eth_87 = svg(H("#078930", "#FCDD09", "#DA121A") + `<circle cx="320" cy="240" r="62" fill="#FCDD09" stroke="#078930" stroke-width="8"/>` + rays(320, 240, 30, 52, 12, "#DA121A") + star(320, 240, 26, "#FCDD09"));
+F.rw_old = svg(V("#E20000", "#FAD201", "#00A100") + `<path d="M285 165h48q38 0 38 38 0 28-26 35l32 77h-32l-28-72h-6v72h-26zm26 26v44h20q12 0 12-22 0-22-12-22z" fill="#000"/>`);
+F.mw10 = svg(H("#CE1126", "#000", "#339E35") + `<circle cx="320" cy="240" r="58" fill="#fff"/>` + rays(320, 240, 58, 90, 45, "#fff"));
+F.ls66 = svg(`<rect width="640" height="480" fill="#00209F"/><rect x="480" width="80" height="480" fill="#009543"/><rect x="560" width="80" height="480" fill="#CE1126"/><path d="M180 300l60-130 60 130zM220 210q20-30 40 0" fill="#fff"/><rect x="170" y="296" width="140" height="14" rx="7" fill="#fff"/>`);
+F.ls87 = svg(`<rect width="640" height="480" fill="#009543"/><polygon points="0,0 640,0 0,480" fill="#00209F"/><polygon points="0,0 470,0 0,352" fill="#fff"/><path d="M110 110q40-30 80 0v40q-40 40-80 0z" fill="#8B4513"/><path d="M100 80l110 110M210 80L100 190" stroke="#8B4513" stroke-width="6"/>`);
+F.km_old = svg(`<rect width="640" height="480" fill="#3A75C4"/><rect width="640" height="480" fill="#009A44"/><circle cx="250" cy="240" r="110" fill="#fff"/><circle cx="295" cy="225" r="105" fill="#009A44"/>` + [0, 1, 2, 3].map((i) => star(300 + i * 40, 150 + i * 60, 18, "#fff")).join(""));
+F.mr_old = svg(`<rect width="640" height="480" fill="#006233"/><path d="M200 220a120 120 0 0 0 240 0 132 132 0 0 1-240 0" fill="#FFC400"/>` + star(320, 170, 48, "#FFC400"));
+F.cv_old = svg(`<rect width="640" height="480" fill="#009E49"/><rect width="640" height="240" fill="#F7D116"/><rect width="220" height="480" fill="#CE1126"/><path d="M50 250q60 90 120 0" stroke="#F7D116" stroke-width="12" fill="none"/>` + star(110, 230, 46, "#000"));
+F.zaire = svg(`<rect width="640" height="480" fill="#00A651"/><circle cx="320" cy="240" r="130" fill="#FDD100"/><path d="M265 330l60-120 22 12-60 120z" fill="#7B4A12"/><path d="M325 205q-25-40 10-80 10 40 30 50-10 25-40 30z" fill="#ED1C24"/>`);
+F.cd97 = svg(`<rect width="640" height="480" fill="#007FFF"/>` + star(320, 240, 120, "#F7D618") + [0, 1, 2, 3, 4, 5].map((i) => star(60, 50 + i * 76, 26, "#F7D618")).join(""));
+F.hv = svg(H("#000", "#fff", "#CE1126"));
+F.syc77 = svg(`<rect width="640" height="480" fill="#007A3D"/><rect width="640" height="230" fill="#D62828"/><path d="M0 240q160-55 320 0t320 0" stroke="#fff" stroke-width="40" fill="none"/>`);
+F.ht_old = svg(V("#000", "#D21034") + `<rect x="245" y="165" width="150" height="150" fill="#fff"/><rect x="316" y="205" width="8" height="80" fill="#016A16"/><circle cx="320" cy="200" r="28" fill="#016A16"/>`);
+F.vct_old = svg(`<rect width="640" height="480" fill="#0072C6"/><rect x="160" width="320" height="480" fill="#FCD116"/><rect x="480" width="160" height="480" fill="#009E60"/><path d="M320 140q90 60 0 200q-90-140 0-200z" fill="#009E60"/><rect x="295" y="215" width="50" height="60" rx="8" fill="#fff" stroke="#0072C6" stroke-width="5"/>`);
+// --- Americas ---
+F.ve7 = svg(H("#FFCC00", "#00247D", "#CF142B") + [0, 1, 2, 3, 4, 5, 6].map((i) => { const a = Math.PI * (0.18 + (0.64 * i) / 6); return star(320 - 120 * Math.cos(a), 300 - 120 * Math.sin(a), 18, "#fff"); }).join(""));
+// --- Europe ---
+F.gr_cross = svg(`<rect width="640" height="480" fill="#0D5EAF"/><rect x="270" width="100" height="480" fill="#fff"/><rect y="190" width="640" height="100" fill="#fff"/>`);
+F.ro_old = svg(V("#002B7F", "#FCD116", "#CE1126") + `<circle cx="320" cy="235" r="62" fill="#3C9" stroke="#C49A2C" stroke-width="12"/><path d="M270 240l50-40 50 40v20h-100z" fill="#2266AA"/>` + star(320, 180, 14, "#CE1126"));
+F.bg_old = svg(H("#fff", "#00966E", "#D62612") + `<circle cx="110" cy="110" r="62" fill="none" stroke="#C49A2C" stroke-width="12"/><circle cx="110" cy="115" r="42" fill="#D62612"/><path d="M90 130l15-35 15 10 10-8-5 33z" fill="#FFD700"/>` + star(110, 52, 14, "#D62612"));
+F.al_old = svg(nest("al", 0, 0, 640, 480) + star(320, 58, 30, "#E41E20", 'stroke="#FFD700" stroke-width="5"'));
+F.by91 = svg(H("#fff", "#C8313E", "#fff"));
+F.ge90 = svg(`<rect width="640" height="480" fill="#8B0000"/><rect width="213" height="80" fill="#000"/><rect y="80" width="213" height="80" fill="#fff"/>`);
+F.ba92 = svg(`<rect width="640" height="480" fill="#fff"/><path d="M230 120h180v140q0 80-90 110-90-30-90-110z" fill="#1F4E9B"/><path d="M240 140l160 200" stroke="#fff" stroke-width="22"/>` + [[270, 175], [305, 175], [270, 220], [365, 250], [365, 295], [330, 295]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="12" fill="#FCD116"/>`).join(""));
+F.mk92 = svg(`<rect width="640" height="480" fill="#D20000"/>` + rays(320, 240, 40, 170, 16, "#FFE600") + `<circle cx="320" cy="240" r="48" fill="#FFE600"/>`);
+// --- Asia ---
+F.ir_old = svg(H("#239F40", "#fff", "#DA0000") + rays(345, 225, 22, 40, 14, "#E0A100") + `<circle cx="345" cy="225" r="22" fill="#E0A100"/><path d="M262 276l10-30q30-8 60 0l14 30h-10l-8-14h-46l-8 14zM300 246l-4-30 14 0" fill="#C49A2C"/><path d="M250 290l60-110" stroke="#777" stroke-width="5"/>`);
+F.iq63 = svg(H("#CE1126", "#fff", "#000") + [180, 320, 460].map((x) => star(x, 240, 42, "#007A3D")).join(""));
+F.iq91 = svg(H("#CE1126", "#fff", "#000") + [170, 320, 470].map((x) => star(x, 240, 36, "#007A3D")).join("") +
+  `<path d="M210 250q10-30 25 0t25-5M370 250q10-30 25 0t25-5" stroke="#007A3D" stroke-width="7" fill="none"/>`);
+F.af74 = svg(H("#000", "#D32011", "#007A36") + `<circle cx="90" cy="80" r="44" fill="none" stroke="#FFD700" stroke-width="8"/><path d="M70 95q20-40 40 0" stroke="#FFD700" stroke-width="7" fill="none"/>`);
+F.af78 = svg(`<rect width="640" height="480" fill="#C8102E"/><circle cx="110" cy="100" r="52" fill="none" stroke="#FFD700" stroke-width="10"/>` + star(110, 55, 16, "#FFD700") + `<path d="M85 115h50" stroke="#FFD700" stroke-width="8"/>`);
+F.af80 = svg(H("#000", "#D32011", "#007A36") + `<circle cx="100" cy="80" r="48" fill="none" stroke="#FFD700" stroke-width="9"/>` + star(100, 42, 12, "#D32011") + `<path d="M75 95q25-35 50 0" stroke="#FFD700" stroke-width="7" fill="none"/>`);
+F.af92 = svg(H("#007A36", "#fff", "#000") + `<circle cx="320" cy="240" r="46" fill="none" stroke="#007A36" stroke-width="7"/><path d="M296 255q24-40 48 0" stroke="#007A36" stroke-width="6" fill="none"/>`);
+F.bh_old = svg(`<rect width="640" height="480" fill="#CE1126"/><path d="M0 0h170l70 30-70 30 70 30-70 30 70 30-70 30 70 30-70 30 70 30-70 30 70 30-70 30 70 30-70 30 70 30-70 30H0z" fill="#fff"/>`);
+F.mm_old = svg(`<rect width="640" height="480" fill="#CE1126"/><rect width="320" height="240" fill="#00247D"/>` + rays(160, 125, 48, 60, 14, "#fff") + `<circle cx="160" cy="125" r="34" fill="#00247D"/><path d="M160 150v-45m-14 25l14-10 14 10m-14-25l-10-10" stroke="#fff" stroke-width="5" fill="none"/>` +
+  Array.from({ length: 14 }, (_, i) => { const a = (2 * Math.PI * i) / 14 - Math.PI / 2; return star(160 + 92 * Math.cos(a), 125 + 92 * Math.sin(a), 11, "#fff"); }).join(""));
+F.mn_old = svg(nest("mn", 0, 0, 640, 480) + star(106.7, 45, 18, "#FFD900"));
+F.kh76 = svg(`<rect width="640" height="480" fill="#DA121A"/>` + angkor(320, 230, 1, 3, "#FFD700"));
+F.kh79 = svg(`<rect width="640" height="480" fill="#DA121A"/>` + angkor(320, 230, 1, 5, "#FFD700"));
+F.kh89 = svg(`<rect width="640" height="480" fill="#032EA1"/><rect width="640" height="240" fill="#E00025"/>` + angkor(320, 225, 0.95, 5, "#FFD700"));
+// --- 1800–1975 additions ---
+const elephant = (cx, cy, s, c) => `<g fill="${c}" transform="translate(${cx} ${cy}) scale(${s})"><ellipse cx="0" cy="0" rx="70" ry="42"/><rect x="-55" y="20" width="18" height="50"/><rect x="-20" y="20" width="18" height="50"/><rect x="15" y="20" width="18" height="50"/><rect x="45" y="20" width="18" height="50"/><path d="M60-20q40 0 45 30t-10 60h-14q14-30 6-55t-30-15z"/></g>`;
+const crescent = (cx, cy, r, c, bg) => `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${c}"/><circle cx="${cx + r * 0.3}" cy="${cy}" r="${r * 0.82}" fill="${bg}"/>`;
+const shield = (cx, cy, s, fill, cross) => `<g transform="translate(${cx} ${cy}) scale(${s})"><path d="M-40-50h80v55q0 40-40 55-40-15-40-55z" fill="${fill}" stroke="#244" stroke-width="4"/>${cross ? '<path d="M-8-50h16v110h-16zM-40-8h80v16h-80z" fill="#fff"/>' : ""}</g>`;
+F.mm48 = svg(`<rect width="640" height="480" fill="#CE1126"/><rect width="320" height="240" fill="#00247D"/>` + star(160, 120, 48, "#fff") + [0, 1, 2, 3, 4].map((i) => { const a = (2 * Math.PI * i) / 5 - Math.PI / 2; return star(160 + 85 * Math.cos(a), 120 + 85 * Math.sin(a), 18, "#fff"); }).join(""));
+F.vn_s = svg(`<rect width="640" height="480" fill="#FFDD00"/><rect y="170" width="640" height="30" fill="#DA251D"/><rect y="225" width="640" height="30" fill="#DA251D"/><rect y="280" width="640" height="30" fill="#DA251D"/>`);
+F.prg = svg(`<rect width="640" height="480" fill="#0072BC"/><rect width="640" height="240" fill="#DA251D"/>` + star(320, 240, 110, "#FFDD00"));
+F.lao_k = svg(`<rect width="640" height="480" fill="#CE1126"/>` + elephant(310, 250, 1.4, "#fff") + `<rect x="300" y="110" width="20" height="60" fill="#fff"/><path d="M250 120h120l-20-30h-80z" fill="#fff"/>`);
+F.kh70 = svg(`<rect width="640" height="480" fill="#032EA1"/><rect width="320" height="240" fill="#E00025"/>` + angkor(160, 110, 0.5, 3, "#fff") + star(470, 60, 24, "#fff") + star(520, 60, 24, "#fff") + star(570, 60, 24, "#fff"));
+F.af_old = svg(V("#000", "#D32011", "#007A36") + `<circle cx="320" cy="240" r="80" fill="none" stroke="#fff" stroke-width="12"/><path d="M280 260h80v20h-80zM300 200h40v60h-40z" fill="#fff"/>`);
+F.iq_k = svg(H("#000", "#fff", "#007A3D") + `<polygon points="0,0 200,160 200,320 0,480" fill="#CE1126"/>` + star(70, 205, 26, "#fff") + star(70, 275, 26, "#fff"));
+F.iq59 = svg(V("#000", "#fff", "#007A3D") + rays(320, 240, 60, 130, 8, "#CE1126") + `<circle cx="320" cy="240" r="46" fill="#FCD116"/>`);
+F.uar = svg(H("#CE1126", "#fff", "#000") + star(230, 240, 46, "#007A3D") + star(410, 240, 46, "#007A3D"));
+F.yem_k = svg(`<rect width="640" height="480" fill="#CE1126"/><path d="M180 300h280l20-12-20-12H180z" fill="#fff"/>` + [0, 1, 2, 3, 4].map((i) => { const a = Math.PI * (1.15 + 0.175 * i); return star(320 + 120 * Math.cos(a), 280 + 120 * Math.sin(a), 22, "#fff"); }).join(""));
+F.om_red = svg(`<rect width="640" height="480" fill="#C8102E"/>`);
+F.zanzibar = svg(`<rect width="640" height="480" fill="#C8102E"/>`);
+F.ma_red = svg(`<rect width="640" height="480" fill="#C1272D"/>`);
+F.eg_k = svg(`<rect width="640" height="480" fill="#0B8A3C"/>` + crescent(290, 240, 110, "#fff", "#0B8A3C") + star(330, 170, 22, "#fff") + star(360, 240, 22, "#fff") + star(330, 310, 22, "#fff"));
+F.ly_k = svg(`<rect width="640" height="480" fill="#239E46"/><rect width="640" height="360" fill="#000"/><rect width="640" height="120" fill="#E70013"/>` + crescent(300, 240, 50, "#fff", "#000") + star(345, 240, 22, "#fff"));
+F.ly69 = svg(H("#CE1126", "#fff", "#000"));
+F.tg61 = svg(`<rect width="640" height="480" fill="#1EB53A"/><rect y="170" width="640" height="140" fill="#FCD116"/><rect y="185" width="640" height="110" fill="#000"/>`);
+F.eth_emp = svg(H("#078930", "#FCDD09", "#DA121A") + `<circle cx="320" cy="240" r="58" fill="#FCDD09" stroke="#DA121A" stroke-width="6"/><path d="M290 270q10-50 40-55l12-20 6 20q16 10 14 55z" fill="#DA121A"/>`);
+F.sd56 = svg(H("#0033A0", "#FCD116", "#007A3D"));
+F.ca_red = svg(`<rect width="640" height="480" fill="#D52B1E"/>${nest("gb", 0, 0, 320, 240)}` + shield(470, 240, 1.2, "#fff") + `<rect x="440" y="200" width="60" height="22" fill="#D52B1E"/><path d="M445 250h50l-25 40z" fill="#2E7D32"/>`);
+F.gb1707 = svg(`<rect width="640" height="480" fill="#012169"/><path d="M0 0l640 480M640 0L0 480" stroke="#fff" stroke-width="80"/><path d="M320 0v480M0 240h640" stroke="#fff" stroke-width="140"/><path d="M320 0v480M0 240h640" stroke="#C8102E" stroke-width="84"/>`);
+F.at_hab = svg(H("#000", "#FCD116"));
+F.pt_mon = svg(`<rect width="640" height="480" fill="#fff"/><rect width="320" height="480" fill="#1D4F9C"/>` + shield(320, 240, 1.3, "#fff") + `<path d="M285 200h70v60q0 30-35 42-35-12-35-42z" fill="#1D4F9C"/><path d="M285 150h70l-10-25h-50z" fill="#FCD116"/>`);
+F.th_el = svg(`<rect width="640" height="480" fill="#C8102E"/>` + elephant(320, 240, 1.6, "#fff"));
+F.two_sicilies = svg(`<rect width="640" height="480" fill="#fff"/>` + shield(320, 240, 1.4, "#E9C46A") + `<circle cx="320" cy="235" r="26" fill="#1D4F9C"/>`);
+F.hanover = svg(H("#FCD116", "#fff"));
+F.prussia = svg(H("#000", "#fff"));
+F.papal = svg(V("#FCD116", "#fff"));
+F.tuscany = svg(H("#CE1126", "#fff", "#CE1126"));
+F.bavaria = svg(`<rect width="640" height="480" fill="#fff"/>` + Array.from({ length: 48 }, (_, i) => { const c = i % 8, r = Math.floor(i / 8); return (c + r) % 2 ? "" : `<polygon points="${c * 80 + 40},${r * 80} ${c * 80 + 80},${r * 80 + 40} ${c * 80 + 40},${r * 80 + 80} ${c * 80},${r * 80 + 40}" fill="#0098D4"/>`; }).join(""));
+F.saxony = svg(H("#fff", "#009639"));
+F.baden = svg(H("#CE1126", "#FCD116", "#CE1126"));
+F.wurttemberg = svg(H("#000", "#CE1126"));
+F.cn_qing = svg(`<rect width="640" height="480" fill="#FCD116"/><path d="M120 300q60-120 140-40t140-30 120 40" fill="none" stroke="#1D4F9C" stroke-width="34" stroke-linecap="round"/><circle cx="110" cy="130" r="40" fill="#CE1126"/>`);
+F.fr_bourbon = svg(`<rect width="640" height="480" fill="#fff"/>`);
+F.savoy = svg(`<rect width="640" height="480" fill="#CE1126"/><rect x="270" width="100" height="480" fill="#fff"/><rect y="190" width="640" height="100" fill="#fff"/>`);
+F.hawaii = svg([0, 1, 2, 3, 4, 5, 6, 7].map((i) => `<rect y="${i * 60}" width="640" height="61" fill="${["#fff", "#CE1126", "#002868"][i % 3]}"/>`).join("") + nest("gb", 0, 0, 300, 240));
+F.krakow = svg(H("#fff", "#1D4F9C"));
+F.br_emp = svg(`<rect width="640" height="480" fill="#009B3A"/><polygon points="320,50 590,240 320,430 50,240" fill="#FEDF00"/><circle cx="320" cy="240" r="90" fill="#1D4F9C"/><circle cx="320" cy="240" r="90" fill="none" stroke="#009B3A" stroke-width="10"/><path d="M280 150h80l-10-30h-60z" fill="#C8102E"/>`);
+F.it_sav = svg(V("#009246", "#fff", "#CE2B37") + `<path d="M280 170h80v70q0 40-40 55-40-15-40-55z" fill="#CE2B37" stroke="#1D4F9C" stroke-width="8"/><path d="M312 170h16v125h-16zM280 220h80v16h-80z" fill="#fff"/>`);
+F.de_emp = svg(H("#000", "#fff", "#DD0000"));
+F.ofs = svg([0, 1, 2, 3, 4, 5, 6].map((i) => `<rect y="${(480 / 7) * i}" width="640" height="${480 / 7 + 1}" fill="${i % 2 ? "#F7941D" : "#fff"}"/>`).join("") + `<rect width="200" height="206" fill="#fff"/><rect width="200" height="69" fill="#AE1C28"/><rect y="137" width="200" height="69" fill="#21468B"/>`);
+F.transvaal = svg(`<rect width="640" height="160" fill="#AE1C28"/><rect y="160" width="640" height="160" fill="#fff"/><rect y="320" width="640" height="160" fill="#21468B"/><rect width="170" height="480" fill="#007749"/>`);
+F.cn_5 = svg(H("#CE1126", "#FCD116", "#1D4F9C", "#fff", "#000"));
+F.tibet = svg(`<rect width="640" height="480" fill="#1D4F9C"/>` + Array.from({ length: 12 }, (_, i) => { const a1 = Math.PI + (Math.PI / 12) * i, a2 = a1 + Math.PI / 24; return `<polygon points="320,300 ${320 + 700 * Math.cos(a1)},${300 + 700 * Math.sin(a1)} ${320 + 700 * Math.cos(a2)},${300 + 700 * Math.sin(a2)}" fill="#CE1126"/>`; }).join("") + `<polygon points="120,480 320,250 520,480" fill="#fff"/><circle cx="320" cy="250" r="55" fill="#FCD116"/>`);
+F.manchukuo = svg(`<rect width="640" height="480" fill="#FCD116"/><rect width="210" height="40" fill="#CE1126"/><rect y="40" width="210" height="40" fill="#1D4F9C"/><rect y="80" width="210" height="40" fill="#fff"/><rect y="120" width="210" height="40" fill="#000"/>`);
+F.es_rep = svg(H("#C8102E", "#FCD116", "#5E2B7E"));
+
+// write
+for (const [k, v] of Object.entries(F)) if (!v.startsWith("<svg")) throw new Error(k);
+fs.writeFileSync("data/flags-hist.json", JSON.stringify(F));
+console.log("hist flags", Object.keys(F).length, Math.round(JSON.stringify(F).length / 1024), "KB");
+// preview sheet
+const keys = Object.keys(F);
+const cols = 8, w = 120, h = 90;
+const sheet = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${cols * (w + 10) + 10}" height="${Math.ceil(keys.length / cols) * (h + 26) + 10}"><rect width="100%" height="100%" fill="#223"/>${keys.map((k, i) => {
+  const x = 10 + (i % cols) * (w + 10), y = 10 + Math.floor(i / cols) * (h + 26);
+  return `<g transform="translate(${x} ${y})">${F[k].replace("<svg ", `<svg width="${w}" height="${h}" `)}<text x="0" y="${h + 14}" fill="#ddd" font-size="12" font-family="sans-serif">${k}</text></g>`;
+}).join("")}</svg>`;
+fs.writeFileSync("scratch/flags-sheet.svg", sheet);

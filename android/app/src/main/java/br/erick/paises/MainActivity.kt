@@ -138,6 +138,8 @@ fun App(model: AppModel, host: GlobeHost) {
         host.applyStyle(model.style(host.renderer.dotEntities))
     }
     LaunchedEffect(topY, bottomY) { host.setInsets(topY, bottomY) }
+    // the label of a country just found disappears after a moment
+    LaunchedEffect(model.toast?.id) { if (model.toast != null) { delay(2700); host.redraw() } }
 
     BackHandler(enabled = model.mode != Mode.START || model.dialog != null) {
         when {

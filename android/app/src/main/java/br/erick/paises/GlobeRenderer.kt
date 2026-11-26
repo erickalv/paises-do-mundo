@@ -25,6 +25,8 @@ class Style(
     val units: ByteArray,          // RGBA-encoded unit code per piece (borders are drawn between different units)
     val faintToday: Boolean,       // History tab: draw today's borders faintly underneath
     val dotColors: FloatArray,     // RGBA per dot
+    val snap: Int = -1,            // 1800–1945: index of the historical map whose borders are drawn
+    val snapUnits: ByteArray? = null, // RGBA-encoded unit code per unit of that map
 )
 
 class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSurfaceView.Renderer {
@@ -38,7 +40,8 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
     private var vaoGrat = 0; private var gratCount = 0
     private var vaoDot = 0; private var dotCount = 0
     private var vaoQuad = 0
-    private var texPal = 0; private var texUnit = 0; private var texOwner = 0
+    private var texPal = 0; private var texUnit = 0; private var texOwner = 0; private var texSnap = 0
+    private val snapVaos = HashMap<Int, IntArray>()   // snap index -> (vao, index count)
     private var dotColorBuf = 0
     private val nPieces = data.pieceIds.size
 
@@ -54,7 +57,8 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
         buildGraticule()
         buildDots()
         buildQuad()
-        texPal = makeTex(); texUnit = makeTex(); texOwner = makeTex()
+        texPal = makeTex(); texUnit = makeTex(); texOwner = makeTex(); texSnap = makeTex()
+        snapVaos.clear()
         // static owner mapping (today's borders)
         val own = ByteArray(nPieces * 4)
         for (p in 0 until nPieces) putCode(own, p, if (data.pieceOwner[p] >= 0) data.pieceOwner[p] else 100000 + p)
@@ -78,6 +82,7 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
         if (st != null && st !== styleUploaded) {
             uploadTex(texPal, st.palette)
             uploadTex(texUnit, st.units)
+            st.snapUnits?.let { uploadTex(texSnap, it) }
             glBindBuffer(GL_ARRAY_BUFFER, dotColorBuf)
             glBufferSubData(GL_ARRAY_BUFFER, 0, st.dotColors.size * 4, floatBuf(st.dotColors))
             styleUploaded = st
@@ -98,11 +103,17 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
         // borders
         val bc = floatArrayOf(98 / 255f, 94 / 255f, 84 / 255f, 0.8f)
         if (st.faintToday) lines(v, vaoBorder, borderCount, texOwner, 0, floatArrayOf(98 / 255f, 94 / 255f, 84 / 255f, 0.25f), 0.5f * v.density)
-        lines(v, vaoBorder, borderCount, texUnit, 0, bc, 0.75f * v.density)
+        if (st.snap >= 0 && st.snapUnits != null) {
+            val sv = snapLines(st.snap)
+            lines(v, sv[0], sv[1], texSnap, 0, bc, 0.75f * v.density)
+        } else {
+            lines(v, vaoBorder, borderCount, texUnit, 0, bc, 0.75f * v.density)
+        }
         // dots for tiny places
         glUseProgram(progDot)
         common(progDot, v)
         glUniform1f(glGetUniformLocation(progDot, "uSize"), (2f * (3.2f + minOf(3f, v.zoom * 0.12f)) + 2f) * v.density)
+        glUniform1f(glGetUniformLocation(progDot, "uHide"), 600f * v.density * v.density)
         glBindVertexArray(vaoDot)
         glDrawArrays(GL_POINTS, 0, dotCount)
         // shading and rim
@@ -163,8 +174,23 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
         ebo(idxBuf, ni * 4)
         landCount = ni
 
-        // border segments -> screen-space quads
-        val segs = ByteBuffer.wrap(bytes, off, ns * 28).order(ByteOrder.LITTLE_ENDIAN)
+        val q = segmentQuads(ByteBuffer.wrap(bytes, off, ns * 28).order(ByteOrder.LITTLE_ENDIAN), ns)
+        vaoBorder = lineVao(q.first, q.second)
+        borderCount = q.second.size
+    }
+
+    /** Border segments of a historical map, loaded the first time that map is shown. */
+    private fun snapLines(si: Int): IntArray = snapVaos.getOrPut(si) {
+        val bytes = ctx.assets.open("hist/s${data.snapYears[si]}.bin").use { it.readBytes() }
+        val bb = ByteBuffer.wrap(bytes).order(ByteOrder.LITTLE_ENDIAN)
+        bb.position(4)
+        val ns = bb.int
+        val q = segmentQuads(ByteBuffer.wrap(bytes, 8, ns * 28).order(ByteOrder.LITTLE_ENDIAN), ns)
+        intArrayOf(lineVao(q.first, q.second), q.second.size)
+    }
+
+    /** Each segment becomes a quad (4 vertices) widened on screen by the line shader. */
+    private fun segmentQuads(segs: ByteBuffer, ns: Int): Pair<FloatArray, IntArray> {
         val verts = FloatArray(ns * 4 * 10)
         val idx = IntArray(ns * 6)
         for (s in 0 until ns) {
@@ -182,8 +208,7 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
             val b = s * 4; val i = s * 6
             idx[i] = b; idx[i + 1] = b + 1; idx[i + 2] = b + 2; idx[i + 3] = b + 1; idx[i + 4] = b + 3; idx[i + 5] = b + 2
         }
-        vaoBorder = lineVao(verts, idx)
-        borderCount = idx.size
+        return verts to idx
     }
 
     private fun buildGraticule() {
@@ -391,12 +416,12 @@ void main() { if (vZ < 0.0) discard; o = uColor; }"""
 layout(location = 0) in vec3 aPos;
 layout(location = 1) in float aSr;
 layout(location = 2) in vec4 aColor;
-uniform float uSize;
+uniform float uSize; uniform float uHide;
 out vec4 vColor;
 void main() {
     vec3 p = uRot * aPos;
     vColor = aColor;
-    if (p.z < 0.02 || aSr * uR * uR > 160.0 * 6.0 || aColor.a == 0.0) { gl_Position = vec4(3.0, 3.0, 0.0, 1.0); gl_PointSize = 1.0; return; }
+    if (p.z < 0.02 || aSr * uR * uR > uHide || aColor.a == 0.0) { gl_Position = vec4(3.0, 3.0, 0.0, 1.0); gl_PointSize = 1.0; return; }
     gl_Position = toClip(toScreen(p));
     gl_PointSize = uSize;
 }"""

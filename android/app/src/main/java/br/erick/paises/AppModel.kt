@@ -40,6 +40,8 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
 
     var pinned: String? = null
     var pinnedUntil = 0L
+    /** the label of a country just found shows only for a moment */
+    private var recentUntil = 0L
 
     private var elapsedBase = 0L
     private var runStart = 0L
@@ -84,6 +86,7 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
             return e
         }
         found += e.id; foundSet += e.id
+        recentUntil = SystemClock.elapsedRealtime() + 2500
         toast = ToastMsg(e.name, ToastKind.OK)
         styleVersion++
         if (found.size == selectedTotal()) {
@@ -155,12 +158,13 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
         val pal = ByteArray(n * 4)
         val units = ByteArray(n * 4)
         val info = if (mode == Mode.HISTORY) data.yearInfo(year) else null
+        val snapUnits = info?.snapMap?.let { m -> ByteArray(m.size * 4).also { b -> for (i in m.indices) GlobeRenderer.putCode(b, i, m[i]) } }
         for (p in 0 until n) {
             val o = data.pieceOwner[p]
             val c = if (o >= 0) colorOf(data.entities[o]) else LAND
             pal[p * 4] = ((c shr 16) and 0xFF).toByte(); pal[p * 4 + 1] = ((c shr 8) and 0xFF).toByte()
             pal[p * 4 + 2] = (c and 0xFF).toByte(); pal[p * 4 + 3] = 0xFF.toByte()
-            val code = info?.unitOfPiece?.get(p) ?: if (o >= 0) o else 100000 + p
+            val code = info?.unitOfPiece?.getOrNull(p) ?: if (o >= 0) o else 100000 + p
             GlobeRenderer.putCode(units, p, code)
         }
         val dots = FloatArray(dotEntities.size * 4)
@@ -169,7 +173,7 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
             dots[k * 4] = ((c shr 16) and 0xFF) / 255f; dots[k * 4 + 1] = ((c shr 8) and 0xFF) / 255f
             dots[k * 4 + 2] = (c and 0xFF) / 255f; dots[k * 4 + 3] = 1f
         }
-        return Style(pal, units, mode == Mode.HISTORY, dots)
+        return Style(pal, units, mode == Mode.HISTORY, dots, info?.snap ?: -1, snapUnits)
     }
 
     // ---------- labels ----------
@@ -184,14 +188,16 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
             Mode.START -> return emptyList()
             Mode.HISTORY -> {
                 val info = data.yearInfo(year)
-                return info.units.sortedWith(compareByDescending<YearUnit> { it.historical }.thenByDescending { it.sr })
+                return info.units.filter { it.name.isNotEmpty() }
+                    .sortedWith(compareByDescending<YearUnit> { it.historical }.thenByDescending { it.sr })
                     .map { LabelItem(it.key, it.name, it.flag, it.lon, it.lat, it.sr, it.dot, top = false, missed = it.historical) }
             }
             Mode.GAME -> {
                 val now = SystemClock.elapsedRealtime()
                 val pin = if (pinned != null && now < pinnedUntil) pinned else null
-                val recent = if (!revealed) found.lastOrNull() else null
-                val pool = if (revealed) data.entities.filter { it.region in selected }.map { it.id } else found.toList()
+                val recent = if (!revealed && now < recentUntil) found.lastOrNull() else null
+                // while playing only the latest find (for a moment) and tapped countries are labelled
+                val pool = if (revealed) data.entities.filter { it.region in selected }.map { it.id } else emptyList()
                 val out = ArrayList<LabelItem>()
                 fun add(id: String, top: Boolean) {
                     val e = data.byId.getValue(id)
