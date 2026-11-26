@@ -141,14 +141,63 @@ for (const [id, gs] of groups) {
     const a = geoArea({ type: "Polygon", coordinates: poly });
     return a > 2 * Math.PI ? poly.map((r) => r.slice().reverse()) : poly;
   });
+  function restorePoints(mp, pools) {
+    const CELL = 0.25, grid = new Map(), pts = [];
+    const key = (i, j) => i * 100000 + j;
+    for (const g of pools) for (const poly of g) for (const ring of poly) for (const p of ring) {
+      const k = key(Math.floor(p[0] / CELL), Math.floor(p[1] / CELL));
+      if (!grid.has(k)) grid.set(k, []);
+      grid.get(k).push(pts.length); pts.push(p);
+    }
+    const near = (x0, y0, x1, y1, f) => {
+      for (let i = Math.floor(Math.min(x0, x1) / CELL) - 1; i <= Math.floor(Math.max(x0, x1) / CELL) + 1; i++)
+        for (let j = Math.floor(Math.min(y0, y1) / CELL) - 1; j <= Math.floor(Math.max(y0, y1) / CELL) + 1; j++) {
+          const l = grid.get(key(i, j)); if (l) for (const n of l) f(pts[n]);
+        }
+    };
+    const TOL = 1e-5;
+    const snap = (p) => {
+      let best = p, bd = TOL;
+      near(p[0], p[1], p[0], p[1], (q) => { const d = Math.hypot(q[0] - p[0], q[1] - p[1]); if (d < bd || (d === 0 && best === p)) { bd = d; best = q; } });
+      return [best[0], best[1]];
+    };
+    return mp.map((poly) => poly.map((ring) => {
+      const r = ring.map(snap), out = [];
+      for (let i = 0; i < r.length - 1; i++) {
+        const a = r[i], b = r[i + 1];
+        out.push(a);
+        const dx = b[0] - a[0], dy = b[1] - a[1], L2 = dx * dx + dy * dy;
+        if (L2 === 0) continue;
+        const L = Math.sqrt(L2), seen = new Set(), add = [];
+        near(a[0], a[1], b[0], b[1], (q) => {
+          const t = ((q[0] - a[0]) * dx + (q[1] - a[1]) * dy) / L2;
+          if (t <= 1e-9 || t >= 1 - 1e-9) return;
+          if (Math.abs((q[0] - a[0]) * dy - (q[1] - a[1]) * dx) / L > TOL) return;
+          const k = q[0] + "," + q[1];
+          if (seen.has(k)) return;
+          seen.add(k); add.push([t, q]);
+        });
+        add.sort((u, v) => u[0] - v[0]);
+        for (const [, q] of add) out.push([q[0], q[1]]);
+      }
+      out.push(out[0].slice());
+      return out;
+    }));
+  }
+  const GROWN = fs.existsSync("data/split_regions.json") ? JSON.parse(fs.readFileSync("data/split_regions.json", "utf8")) : {};
   function split(id, pieceId, region) {
+    if (GROWN[pieceId]) region = GROWN[pieceId];
     const i = features.findIndex((f) => f.id === id);
     const base = coordsOf(features[i].geometry);
     const orig = new Set(base.map((poly) => poly[0][0].join(",")));
     // drop slivers left where the cutting region and the border almost coincide (keep real small islands)
     const clean = (mp) => rewind(mp).filter((poly) => orig.has(poly[0][0].join(",")) || geoArea({ type: "Polygon", coordinates: poly }) > 3e-7);
-    const piece = clean(polyclip.intersection(base, region));
-    const rest = clean(polyclip.difference(base, region));
+    let piece = clean(polyclip.intersection(base, region));
+    let rest = clean(polyclip.difference(base, region));
+    // polyclip drops points that lie on a straight line and may nudge others; neighbours keep them,
+    // so shared borders would stop being shared arcs (no border drawn). Put every point back.
+    const pool = [base, piece, rest];
+    piece = restorePoints(piece, pool); rest = restorePoints(rest, pool);
     features[i] = { type: "Feature", id, properties: {}, geometry: { type: "MultiPolygon", coordinates: rest } };
     features.push({ type: "Feature", id: pieceId, properties: {}, geometry: { type: "MultiPolygon", coordinates: piece } });
     console.log("split", id, "->", pieceId, "parts", rest.length, piece.length);
@@ -214,6 +263,7 @@ fs.writeFileSync(ANDROID ? "data/android/entities.json" : "data/entities.json", 
 
 // ---------- Topologies ----------
 const fc = { type: "FeatureCollection", features };
+if (process.env.DUMP) fs.writeFileSync(process.env.DUMP, JSON.stringify(fc));
 function build(minWeightQ, keepQ, quant) {
   let t = topology({ c: fc }, 1e6);
   t = presimplify(t);

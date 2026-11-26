@@ -108,6 +108,7 @@ fun angularDistance(lon1: Double, lat1: Double, lon2: Double, lat2: Double): Dou
 class LabelItem(
     val key: String, val name: String, val flag: String, val lon: Double, val lat: Double,
     val sr: Double, val dot: Boolean, val top: Boolean, val missed: Boolean,
+    val sub: String? = null,      // second line (History: who the place belongs to)
 )
 
 interface GlobeListener {
@@ -316,22 +317,23 @@ class GlobeHost(context: Context, val data: GeoData) : FrameLayout(context) {
         return true
     }
 
-    /** MSAA 4x when available, so borders and coasts look smooth. */
+    /** MSAA 4x when available, so borders and coasts look smooth; a stencil buffer keeps highlights on land. */
     private class MsaaChooser : GLSurfaceView.EGLConfigChooser {
         override fun chooseConfig(egl: EGL10, display: EGLDisplay): EGLConfig {
             val EGL_OPENGL_ES3_BIT = 0x40
-            fun pick(samples: Int): EGLConfig? {
+            fun pick(samples: Int, stencil: Boolean = true): EGLConfig? {
                 val attrs = mutableListOf(
                     EGL10.EGL_RED_SIZE, 8, EGL10.EGL_GREEN_SIZE, 8, EGL10.EGL_BLUE_SIZE, 8,
                     EGL10.EGL_RENDERABLE_TYPE, EGL_OPENGL_ES3_BIT,
                 )
+                if (stencil) attrs += listOf(EGL10.EGL_STENCIL_SIZE, 8)
                 if (samples > 0) attrs += listOf(EGL10.EGL_SAMPLE_BUFFERS, 1, EGL10.EGL_SAMPLES, samples)
                 attrs += EGL10.EGL_NONE
                 val n = IntArray(1)
                 val cfgs = arrayOfNulls<EGLConfig>(1)
                 return if (egl.eglChooseConfig(display, attrs.toIntArray(), cfgs, 1, n) && n[0] > 0) cfgs[0] else null
             }
-            return pick(4) ?: pick(0) ?: throw IllegalStateException("No EGL config")
+            return pick(4) ?: pick(0) ?: pick(4, false) ?: pick(0, false) ?: throw IllegalStateException("No EGL config")
         }
     }
 }
@@ -346,6 +348,9 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
     private val strokeTop = Paint(stroke).apply { color = Color.parseColor("#88E6C66E") }
     private val text = Paint(Paint.ANTI_ALIAS_FLAG).apply {
         color = Color.parseColor("#F2EEE4"); textSize = 13.5f * d; typeface = Typeface.create(Typeface.DEFAULT, Typeface.BOLD)
+    }
+    private val subText = Paint(Paint.ANTI_ALIAS_FLAG).apply {
+        color = Color.parseColor("#C9C2B0"); textSize = 12f * d; typeface = Typeface.DEFAULT
     }
     private val blank = Paint().apply { color = Color.parseColor("#F4F4F2") }
     private val flagBorder = Paint().apply { color = Color.parseColor("#2A2F3A") }
@@ -374,7 +379,6 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
         val d2 = d * d
         val placed = ArrayList<FloatArray>()
         val fw = 24 * d; val fh = 18 * d; val pad = 6 * d; val gap = 7 * d
-        val h = fh + 2 * pad
         for (it in items) {
             cam.project(it.lon, it.lat, tmp)
             if (tmp[2] <= 0.02) continue
@@ -383,9 +387,11 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
             if (!it.top) {
                 val min = 120 * d2
                 val dotOk = it.dot && cam.zoom > 2.0
-                if (px < min && !dotOk && !(mode == 2 && it.missed && px > 40 * d2)) continue
+                if (px < min && !dotOk && !(mode == 2 && it.missed && px > 25 * d2)) continue
             }
-            val w = pad + fw + gap + text.measureText(it.name) + pad * 1.4f
+            val sub = it.sub
+            val h = if (sub != null) fh + 2 * pad + subText.textSize + 3 * d else fh + 2 * pad
+            val w = pad + fw + gap + max(text.measureText(it.name), if (sub != null) subText.measureText(sub) else 0f) + pad * 1.4f
             val rpx = sqrt(it.sr / PI) * R
             // a label wider than its country sits above it, with a pointer to the right place
             val above = it.dot || rpx * 2.2 < w
@@ -404,11 +410,15 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
                 arrow.close()
                 canvas.drawPath(arrow, bg)
             }
-            canvas.drawRoundRect(rect, 10 * d, 10 * d, if (it.missed && mode == 1) strokeMissed else if (it.top && mode == 0) strokeTop else stroke)
+            canvas.drawRoundRect(rect, 10 * d, 10 * d, if (it.missed && mode == 1) strokeMissed else if (it.top && mode != 1) strokeTop else stroke)
             rect.set(x + pad, y + pad, x + pad + fw, y + pad + fh)
             val bmp = flag(it.flag)
             if (bmp != null) canvas.drawBitmap(bmp, null, rect, bmpPaint) else canvas.drawRect(rect, blank)
-            canvas.drawText(it.name, x + pad + fw + gap, y + h / 2 - (text.descent() + text.ascent()) / 2, text)
+            if (sub == null) canvas.drawText(it.name, x + pad + fw + gap, y + h / 2 - (text.descent() + text.ascent()) / 2, text)
+            else {
+                canvas.drawText(it.name, x + pad + fw + gap, y + pad + fh / 2 - (text.descent() + text.ascent()) / 2, text)
+                canvas.drawText(sub, x + pad + fw + gap, y + pad + fh + 3 * d - subText.ascent(), subText)
+            }
         }
     }
 }

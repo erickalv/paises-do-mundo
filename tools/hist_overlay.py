@@ -3,7 +3,8 @@
 Every province goes to the historical unit that covers most of it; a province shared by several
 units is cut along the historical border. The result is an exact partition of today's land, so the
 borders of a year always close, follow the real coastline and never run over the sea.
-Output: data/android/frag_<year>.geojson with properties u (unit index, same order as hist-old.mjs).
+Output: data/android/frag_<year>.geojson with properties u (unit index, same order as hist-old.mjs;
+land no unit covers goes to an extra last unit "_none").
 """
 import json, sys, time
 from shapely.geometry import shape, mapping
@@ -12,7 +13,7 @@ from shapely.validation import make_valid
 from shapely.ops import unary_union
 from shapely import prepared
 
-YEARS = [int(a) for a in sys.argv[1:]] or [1800, 1815, 1880, 1900, 1914, 1920, 1930, 1938, 1945]
+YEARS = [int(a) for a in sys.argv[1:]] or [1600, 1650, 1700, 1715, 1783, 1800, 1815, 1880, 1900, 1914, 1920, 1930, 1938, 1945]
 
 def polys_only(g):
     g = make_valid(g)
@@ -55,10 +56,12 @@ for year in YEARS:
     prep = [prepared.prep(g) for g in geoms]
     out = []
     split_count = 0
+    NONE = len(keys)  # land that no unit of the old map covers
     for A in provinces:
         cand = tree.query(A, predicate="intersects")
         if len(cand) == 0:
-            continue  # not covered by the old map (no owner)
+            out.append((A, NONE))  # not covered by the old map (no owner)
+            continue
         whole = next((c for c in cand if prep[c].contains(A)), None)
         if whole is not None:
             out.append((A, unit_of_feat[whole]))
@@ -73,6 +76,7 @@ for year in YEARS:
                 u = unit_of_feat[c]
                 share[u] = share.get(u, 0.0) + a
         if not share:
+            out.append((A, NONE))
             continue
         total = A.area
         order = sorted(share.items(), key=lambda kv: -kv[1])
@@ -98,6 +102,8 @@ for year in YEARS:
         rest = polys_only(A.difference(taken)) if taken is not None else A
         if rest is not None:
             out.append((rest, big_u))
+    if any(u == NONE for _, u in out):
+        keys.append("_none")
     feats = [{"type": "Feature", "properties": {"u": u}, "geometry": mapping(g)} for g, u in out]
     json.dump({"type": "FeatureCollection", "keys": keys, "features": feats}, open(f"data/android/frag_{year}.geojson", "w"))
     print(year, "units", len(keys), "fragments", len(feats), "split provinces", split_count, round(time.time() - t1, 1), "s", flush=True)

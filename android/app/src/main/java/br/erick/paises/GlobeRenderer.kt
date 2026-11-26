@@ -25,8 +25,9 @@ class Style(
     val units: ByteArray,          // RGBA-encoded unit code per piece (borders are drawn between different units)
     val faintToday: Boolean,       // History tab: draw today's borders faintly underneath
     val dotColors: FloatArray,     // RGBA per dot
-    val snap: Int = -1,            // 1800–1945: index of the historical map whose borders are drawn
+    val snap: Int = -1,            // before 1946: index of the historical map whose borders are drawn
     val snapUnits: ByteArray? = null, // RGBA-encoded unit code per unit of that map
+    val pickUnits: Set<Int> = emptySet(), // before 1946: units of the historical map painted yellow (the tapped one)
 )
 
 class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSurfaceView.Renderer {
@@ -34,7 +35,8 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
     val style = AtomicReference<Style?>(null)
     private var styleUploaded: Style? = null
 
-    private var progBg = 0; private var progLand = 0; private var progLine = 0; private var progDot = 0
+    private var progBg = 0; private var progLand = 0; private var progLine = 0; private var progDot = 0; private var progFill = 0
+    private var fillSnap = -1; private var fillVao = 0; private var fillCount = 0; private val fillBufs = IntArray(2)
     private var vaoLand = 0; private var landCount = 0
     private var vaoBorder = 0; private var borderCount = 0
     private var vaoGrat = 0; private var gratCount = 0
@@ -53,6 +55,8 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
         progLand = program(VS_LAND, FS_LAND)
         progLine = program(VS_LINE, FS_LINE)
         progDot = program(VS_DOT, FS_DOT)
+        progFill = program(VS_FILL, FS_FILL)
+        fillSnap = -1; fillVao = 0
         loadGlobe()
         buildGraticule()
         buildDots()
@@ -76,7 +80,8 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
 
     override fun onDrawFrame(gl: GL10?) {
         glClearColor(0f, 0f, 0f, 1f)
-        glClear(GL_COLOR_BUFFER_BIT)
+        glClearStencil(0)
+        glClear(GL_COLOR_BUFFER_BIT or GL_STENCIL_BUFFER_BIT)
         val v = view.get() ?: return
         val st = style.get()
         if (st != null && st !== styleUploaded) {
@@ -99,7 +104,15 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
         glActiveTexture(GL_TEXTURE0); glBindTexture(GL_TEXTURE_2D, texPal)
         glUniform1i(glGetUniformLocation(progLand, "uPal"), 0)
         glBindVertexArray(vaoLand)
+        // land marks the stencil, so the yellow fill of a tapped historical unit stays on land
+        glEnable(GL_STENCIL_TEST)
+        glStencilFunc(GL_ALWAYS, 1, 0xFF); glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE)
         glDrawElements(GL_TRIANGLES, landCount, GL_UNSIGNED_INT, 0)
+        if (st.snap >= 0 && st.pickUnits.isNotEmpty()) {
+            glStencilFunc(GL_EQUAL, 1, 0xFF); glStencilOp(GL_KEEP, GL_KEEP, GL_KEEP)
+            drawFill(v, st.snap, st.pickUnits)
+        }
+        glDisable(GL_STENCIL_TEST)
         // borders
         val bc = floatArrayOf(98 / 255f, 94 / 255f, 84 / 255f, 0.8f)
         if (st.faintToday) lines(v, vaoBorder, borderCount, texOwner, 0, floatArrayOf(98 / 255f, 94 / 255f, 84 / 255f, 0.25f), 0.5f * v.density)
@@ -119,6 +132,34 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
         // shading and rim
         drawQuad(v, 1)
         glBindVertexArray(0)
+    }
+
+    /** Yellow fill of the tapped unit of a historical map: only the chunks of that unit are drawn. */
+    private fun drawFill(v: View3D, snap: Int, units: Set<Int>) {
+        val m = data.fill(snap)
+        if (fillSnap != snap) {
+            if (fillVao != 0) { glDeleteVertexArrays(1, intArrayOf(fillVao), 0); glDeleteBuffers(2, fillBufs, 0); fillVao = 0 }
+            fillVao = genVao()
+            glBindVertexArray(fillVao)
+            val vb = ByteBuffer.allocateDirect(m.lonLat.size * 2).order(ByteOrder.nativeOrder())
+            vb.asShortBuffer().put(m.lonLat); vb.position(0)
+            fillBufs[0] = vbo(vb, m.lonLat.size * 2)
+            glEnableVertexAttribArray(0)
+            val ib = ByteBuffer.allocateDirect(m.idx.size * 2).order(ByteOrder.nativeOrder())
+            ib.asShortBuffer().put(m.idx); ib.position(0)
+            val a = IntArray(1); glGenBuffers(1, a, 0); fillBufs[1] = a[0]
+            glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, a[0]); glBufferData(GL_ELEMENT_ARRAY_BUFFER, m.idx.size * 2, ib, GL_STATIC_DRAW)
+            fillSnap = snap
+        }
+        glUseProgram(progFill)
+        common(progFill, v)
+        glBindVertexArray(fillVao)
+        glBindBuffer(GL_ARRAY_BUFFER, fillBufs[0])
+        for (c in m.chunkUnit.indices) {
+            if (m.chunkUnit[c] !in units) continue
+            glVertexAttribPointer(0, 2, GL_SHORT, false, 4, m.chunkVBase[c] * 4)
+            glDrawElements(GL_TRIANGLES, m.chunkCount[c], GL_UNSIGNED_SHORT, m.chunkIBase[c] * 2)
+        }
     }
 
     private fun common(p: Int, v: View3D) {
@@ -411,6 +452,20 @@ void main() {
 precision mediump float;
 uniform vec4 uColor; in float vZ; out vec4 o;
 void main() { if (vZ < 0.0) discard; o = uColor; }"""
+
+        const val VS_FILL = "#version 300 es\n" + PROJ + """
+layout(location = 0) in vec2 aLL;   // lon/lat in 1/100 degree
+out float vZ;
+void main() {
+    float lon = radians(aLL.x * 0.01); float lat = radians(aLL.y * 0.01);
+    vec3 p = uRot * vec3(cos(lat) * sin(lon), sin(lat), cos(lat) * cos(lon));
+    vZ = p.z;
+    gl_Position = toClip(toScreen(p));
+}"""
+        const val FS_FILL = """#version 300 es
+precision mediump float;
+in float vZ; out vec4 o;
+void main() { if (vZ < 0.0) discard; o = vec4(230.0 / 255.0, 198.0 / 255.0, 110.0 / 255.0, 1.0); }"""
 
         const val VS_DOT = "#version 300 es\n" + PROJ + """
 layout(location = 0) in vec3 aPos;

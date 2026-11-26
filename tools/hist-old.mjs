@@ -6,9 +6,11 @@ import { presimplify, simplify, quantile } from "topojson-simplify";
 import { feature } from "topojson-client";
 import { geoArea, geoInterpolate, geoDistance } from "d3-geo";
 import polylabel from "polylabel";
-import { translate, flagFor } from "./hist-names.mjs";
+import { translate, flagFor, ownerFor } from "./hist-names.mjs";
+import { triangulate, polysOf } from "./tri.mjs";
 
 export const SNAPS = [
+  [1600, 1600, 1649], [1650, 1650, 1699], [1700, 1700, 1714], [1715, 1715, 1782], [1783, 1783, 1799],
   [1800, 1800, 1814], [1815, 1815, 1879], [1880, 1880, 1899], [1900, 1900, 1913], [1914, 1914, 1919],
   [1920, 1920, 1929], [1930, 1930, 1937], [1938, 1938, 1944], [1945, 1945, 1945],
 ];
@@ -20,7 +22,23 @@ const ITALY = ["Kingdom of Sardinia", "Tuscany", "Kingdom of the Two Sicilies", 
 
 // Events: applied to every year >= y inside the snapshot's period. Situation on 31 December.
 // r: rename {key: name}, f: flag {key: flag}, m: merge [newName, flag, [keys]] (keys may be earlier merges' first key)
+const KONGO = { "Congo": "Reino do Congo" };
 export const EVENTS = {
+  1600: [
+    { y: 1600, r: { ...KONGO, "Portugal": "Portugal (União Ibérica)" } },
+    { y: 1640, r: { "Portugal": "Portugal" } },
+  ],
+  1650: [{ y: 1650, r: KONGO }],
+  1700: [
+    { y: 1700, r: KONGO },
+    { y: 1707, m: ["Reino da Grã-Bretanha", "h:gb1707", ["England and Ireland", "Scotland"]] },
+  ],
+  1715: [
+    { y: 1715, r: KONGO },
+    { y: 1721, r: { "Tsardom of Muscovy": "Império Russo" } },
+    { y: 1776, r: { "British American colonies": "Estados Unidos" }, f: { "British American colonies": "x:us" } },
+  ],
+  1783: [{ y: 1783, r: KONGO }],
   1800: [
     { y: 1800, r: { "Paraguay": "Intendência do Paraguai" } },
   ],
@@ -138,6 +156,9 @@ export function buildSnapshots(OUT) {
     });
     // border segments between different units, from the map rebuilt on today's provinces (hist_overlay.py)
     const frag = JSON.parse(fs.readFileSync(`data/android/frag_${sy}.geojson`, "utf8"));
+    if (frag.keys.length === keys.length + 1 && frag.keys[keys.length] === "_none") {
+      keys.push("_none"); units.push({ key: "_none", subj: "", sr: 0, ll: [0, 0] });
+    }
     if (frag.keys.length !== keys.length || frag.keys.some((k, i) => k !== keys[i])) throw new Error("unit order differs in " + sy);
     const landSr = new Array(keys.length).fill(0);
     for (const f of frag.features) { const a = geoArea(f); landSr[f.properties.u] += Math.min(a, 4 * Math.PI - a); }
@@ -166,6 +187,39 @@ export function buildSnapshots(OUT) {
         let prev = a;
         for (let s = 1; s <= n; s++) { const cur = s === n ? b : it(s / n); seg.push(...toXYZ(prev), ...toXYZ(cur), ua, ub); prev = cur; }
       }
+    }
+    // fill shapes (fill_overlay.py) for highlighting a tapped unit and finding what was tapped.
+    // Vertices are lon/lat in 1/100 degree (int16); triangles come in chunks of one unit with 16-bit indices.
+    {
+      const fill = JSON.parse(fs.readFileSync(`data/android/fill_${sy}.geojson`, "utf8"));
+      const V = [], I = [], chunks = [];
+      for (const f of fill.features) {
+        let ch = null, vm = null;
+        const open = () => { ch = { u: f.properties.u, vb: V.length / 2, ib: I.length, n: 0, nv: 0 }; chunks.push(ch); vm = new Map(); };
+        open();
+        const v = (p) => {
+          const x = Math.round(p[0] * 100), y = Math.round(p[1] * 100), k = x * 100000 + y;
+          let i = vm.get(k);
+          if (i === undefined) { i = ch.nv++; V.push(x, y); vm.set(k, i); }
+          return i;
+        };
+        triangulate(polysOf(f.geometry), (a, b, c) => {
+          if (ch.nv > 65000) open();
+          const t = [v(a), v(b), v(c)];
+          if (t[0] === t[1] || t[1] === t[2] || t[0] === t[2]) return;
+          I.push(...t); ch.n += 3;
+        }, 8);
+      }
+      const nv = V.length / 2, ni = I.length, nc = chunks.length;
+      for (const x of V) if (Math.abs(x) > 32767) throw new Error("fill coordinate out of range");
+      const fb = Buffer.alloc(16 + nc * 16 + nv * 4 + ni * 2);
+      fb.write("FIL2", 0); fb.writeUInt32LE(nv, 4); fb.writeUInt32LE(ni, 8); fb.writeUInt32LE(nc, 12);
+      let q = 16;
+      for (const c of chunks) { fb.writeUInt32LE(c.u, q); fb.writeUInt32LE(c.vb, q + 4); fb.writeUInt32LE(c.ib, q + 8); fb.writeUInt32LE(c.n, q + 12); q += 16; }
+      for (const x of V) { fb.writeInt16LE(x, q); q += 2; }
+      for (const x of I) { fb.writeUInt16LE(x, q); q += 2; }
+      fs.writeFileSync(`${OUT}/hist/f${sy}.bin`, fb);
+      console.log("  fill", sy, "vertices", nv, "triangles", ni / 3, "chunks", nc, (fb.length / 1048576).toFixed(2), "MB");
     }
     const S = seg.length / 8;
     const buf = Buffer.alloc(8 + S * 28);
@@ -196,7 +250,7 @@ export function buildEras(snaps) {
     for (let y = sn.p0; y <= sn.p1; y++) {
       const idx = new Map(sn.units.map((u, i) => [u.key, i]));
       const unitOf = sn.units.map((_, i) => i);            // snapshot unit -> group root
-      const name = sn.units.map((u) => (u.key.startsWith("_null_") ? null : u.key === "__UKNL" ? "Reino Unido dos Países Baixos" : translate(u.key)));
+      const name = sn.units.map((u) => (u.key.startsWith("_null_") || u.key === "_none" ? null : u.key === "__UKNL" ? "Reino Unido dos Países Baixos" : translate(u.key)));
       const flag = sn.units.map((u) => (u.key === "__UKNL" ? "x:nl" : flagFor(u.key, u.subj, y)));
       const root = (i) => { while (unitOf[i] !== i) i = unitOf[i]; return i; };
       for (const e of evs) {
@@ -220,7 +274,7 @@ export function buildEras(snaps) {
         const big = members.reduce((a, b) => (sn.units[b].sr > sn.units[a].sr ? b : a));
         const sr = members.reduce((s, i) => s + sn.units[i].sr, 0);
         const ll = sn.units[big].ll.map((v) => +v.toFixed(2));
-        return [name[r], flag[r], ll[0], ll[1], +sr.toPrecision(4)];
+        return [name[r], flag[r], ll[0], ll[1], +sr.toPrecision(4), name[r] ? ownerFor(sn.units[r].key, name[r], flag[r], y) : null];
       });
       const map = sn.units.map((_, i) => code.get(root(i)));
       const sig = JSON.stringify([units, map]);

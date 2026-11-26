@@ -166,6 +166,27 @@ F.cn_5 = svg(H("#CE1126", "#FCD116", "#1D4F9C", "#fff", "#000"));
 F.tibet = svg(`<rect width="640" height="480" fill="#1D4F9C"/>` + Array.from({ length: 12 }, (_, i) => { const a1 = Math.PI + (Math.PI / 12) * i, a2 = a1 + Math.PI / 24; return `<polygon points="320,300 ${320 + 700 * Math.cos(a1)},${300 + 700 * Math.sin(a1)} ${320 + 700 * Math.cos(a2)},${300 + 700 * Math.sin(a2)}" fill="#CE1126"/>`; }).join("") + `<polygon points="120,480 320,250 520,480" fill="#fff"/><circle cx="320" cy="250" r="55" fill="#FCD116"/>`);
 F.manchukuo = svg(`<rect width="640" height="480" fill="#FCD116"/><rect width="210" height="40" fill="#CE1126"/><rect y="40" width="210" height="40" fill="#1D4F9C"/><rect y="80" width="210" height="40" fill="#fff"/><rect y="120" width="210" height="40" fill="#000"/>`);
 F.es_rep = svg(H("#C8102E", "#FCD116", "#5E2B7E"));
+// 1600–1800
+F.england = svg(`<rect width="640" height="480" fill="#fff"/><path d="M320 0v480M0 240h640" stroke="#CE1126" stroke-width="96"/>`);
+F.scotland = svg(`<rect width="640" height="480" fill="#005EB8"/><path d="M0 0l640 480M640 0L0 480" stroke="#fff" stroke-width="90"/>`);
+F.es_burgundy = svg(`<rect width="640" height="480" fill="#fff"/><path d="M90 40l460 400M550 40L90 440" stroke="#C8102E" stroke-width="56" stroke-linecap="round" stroke-dasharray="70 18"/>`);
+const eagle = (cx, cy, s, fill, heads = 2) => `<g transform="translate(${cx} ${cy}) scale(${s})" fill="${fill}">` +
+  `<path d="M0 -40c-12 0-20 10-20 22v70l20 26 20-26v-70c0-12-8-22-20-22z"/>` +
+  `<path d="M-14 -10l-110 -40 18 26-34-4 22 24-30 2 30 22-20 10 40 4 20 20 10-30zM14 -10l110 -40-18 26 34-4-22 24 30 2-30 22 20 10-40 4-20 20-10-30z"/>` +
+  (heads === 2 ? `<circle cx="-22" cy="-56" r="15"/><circle cx="22" cy="-56" r="15"/><path d="M-36 -58l-14 6 14 4zM36 -58l14 6-14 4z"/>` : `<circle cx="0" cy="-58" r="17"/><path d="M14 -60l16 6-16 5z"/>`) +
+  `<path d="M-30 70l-14 30h16l8-16zM30 70l14 30h-16l-8-16z"/></g>`;
+F.hre = svg(`<rect width="640" height="480" fill="#FCD116"/>` + eagle(320, 240, 1.6, "#000"));
+F.pl_lt = svg(`<rect width="640" height="480" fill="#DC143C"/>` + eagle(320, 245, 1.6, "#fff", 1));
+F.venice = svg(`<rect width="640" height="480" fill="#B0161E"/><path d="M220 330q-10-90 60-120 10-50 60-55 50 5 50 50-10 30-40 40 60 20 80 85zM250 150l40-30 20 25z" fill="#FCD116"/><path d="M470 0h170v480h-170l60-80-60-80 60-80-60-80 60-80z" fill="#B0161E" stroke="#FCD116" stroke-width="10"/>`);
+F.mughal = svg(`<rect width="640" height="480" fill="#1E7B34"/><circle cx="320" cy="240" r="110" fill="#FCD116"/><circle cx="355" cy="225" r="100" fill="#1E7B34"/>`);
+F.ottoman_old = svg(`<rect width="640" height="480" fill="#C8102E"/>` + [[200, 150], [440, 150], [320, 330]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="62" fill="#fff"/><circle cx="${x + 18}" cy="${y}" r="52" fill="#C8102E"/>`).join(""));
+F.nl_prince = svg(H("#F68B1F", "#fff", "#21468B"));
+F.ru_tsar = svg(H("#fff", "#0039A6", "#D52B1E"));
+F.sweden_old = svg(`<rect width="640" height="480" fill="#006AA7"/><rect x="180" width="90" height="480" fill="#FECC00"/><rect y="195" width="640" height="90" fill="#FECC00"/>`);
+F.maratha = svg(`<rect width="640" height="480" fill="#F28C28"/>`);
+F.safavid = svg(`<rect width="640" height="480" fill="#1E7B34"/><circle cx="430" cy="190" r="80" fill="#FCD116"/><path d="M140 360q40-90 140-80 60-40 120 10 40 0 60 40l-30 30q-40-30-60-20 10 40-20 60h-40q20-30 0-50-60 20-100 0l-20 50h-40z" fill="#FCD116"/>`);
+F.morocco_old = svg(`<rect width="640" height="480" fill="#C1272D"/>`);
+F.dk_norway = svg(`<rect width="640" height="480" fill="#C8102E"/><rect x="180" width="70" height="480" fill="#fff"/><rect y="205" width="640" height="70" fill="#fff"/>`);
 
 // write
 for (const [k, v] of Object.entries(F)) if (!v.startsWith("<svg")) throw new Error(k);

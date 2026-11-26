@@ -76,6 +76,31 @@ export const TR = {
   "Sindh": "Sind", "Carnatic": "Carnático", "Travancore": "Travancore", "Cochin": "Cochim", "Malabar": "Malabar", "Bundelkhand": "Bundelkhand", "Circars": "Circars", "Bahawalpur": "Bahawalpur",
   "Inupiaq": "Inupiat", "Yup'ik & Cup'ik": "Yupik", "Hail": "Emirado de Hail", "Awsa": "Sultanato de Aussa", "Wadai": "Império Wadai", "Bagirmi": "Baguirmi", "Rabih az-Zubayr": "Estado de Rabih",
   "Kingdom of Ireland": "Reino da Irlanda",
+  // 1600–1799
+  "Tsardom of Muscovy": "Czarado da Rússia", "Ming Chinese Empire": "Império Ming", "Holy Roman Empire": "Sacro Império Romano-Germânico", "Safavid Empire": "Império Safávida",
+  "Mughal Empire": "Império Mogol", "Quazaq Khanate": "Canato Cazaque", "Khiva Khanate": "Canato de Khiva", "Crimean Khanate": "Canato da Crimeia", "Inca Empire": "Império Inca",
+  "Poland-Lithuania": "Polônia-Lituânia", "Polish–Lithuanian Commonwealth": "República das Duas Nações (Polônia-Lituânia)", "Islamic and Hindu states": "Estados islâmicos e hindus",
+  "Malaysian Islamic states": "Estados islâmicos malaios", "Ayutthaya": "Reino de Ayutthaya (Sião)", "Vijayanagara": "Império Vijayanagara", "Nogai Horde": "Horda Nogai",
+  "Watassid Morocco": "Marrocos (Oatácida)", "Adal": "Sultanato de Adal", "Rajputana": "Rajputana", "Shan states": "Estados Shan", "Japan (Warring States)": "Japão (Período Sengoku)",
+  "Maoris": "Maori", "Islamic city-states": "Cidades-Estado islâmicas", "England and Ireland": "Inglaterra e Irlanda", "England": "Inglaterra", "Scotland": "Escócia",
+  "Mwenemutapa": "Império Monomotapa", "Burmese kingdoms": "Reinos birmaneses", "Malacca": "Sultanato de Malaca", "Bengal": "Bengala", "Laos": "Laos", "Habsburg Netherlands": "Países Baixos Espanhóis",
+  "Venice": "República de Veneza", "Swiss Confederation": "Confederação Suíça", "Florence": "Florença", "Dutch Republic": "República Holandesa", "Savoy": "Saboia", "Naples": "Reino de Nápoles",
+  "Sicily": "Sicília", "Genoa": "República de Gênova", "Milan": "Ducado de Milão", "Sardinia": "Sardenha", "Post-Ming Warlords": "China (senhores da guerra pós-Ming)",
+  "Portuguese Brazil": "Brasil (Portugal)", "Dutch Brazil": "Brasil Holandês", "Tokugawa shogunate": "Xogunato Tokugawa", "Ava": "Reino de Ava (Birmânia)", "Laotian states": "Estados laosianos",
+  "Florida": "Flórida (Espanha)", "Florida (Spain)": "Flórida (Espanha)", "Golkonda": "Golconda", "Golconda": "Golconda", "Ahmadnagar": "Ahmadnagar", "Bijapur": "Bijapur", "Bidar": "Bidar",
+  "Rozwi": "Império Rozwi", "Essequibo": "Essequibo (Holanda)", "New France": "Nova França", "Virginia": "Virgínia (Inglaterra)", "Massachusetts Bay": "Baía de Massachusetts (Inglaterra)",
+  "New Amsterdam": "Nova Amsterdã (Holanda)", "Sardinia-Piedmont": "Saboia-Piemonte", "Savoy-Piedmont": "Saboia-Piemonte", "Hindu kingdoms": "Reinos hindus",
+  "British American colonies": "Treze Colônias (britânicas)", "Guyana (Netherlands)": "Guiana Holandesa", "Maratha": "Império Marata", "Mahratta states": "Confederação Marata",
+  "Brandenburg": "Brandemburgo-Prússia", "Cayenne": "Caiena (França)", "Louisiana": "Luisiana (França)", "Lahore": "Lahore (Império Sikh)", "Multan": "Multan", "Sind": "Sind",
+  "Amazon hunter-gatherers": "Caçadores-coletores amazônicos", "Savanna hunter-gatherers": "Caçadores-coletores da savana", "Subarctic forest hunter-gatherers": "Caçadores-coletores subárticos",
+  "Andean hunter-gatherers": "Caçadores-coletores andinos", "Caribbean hunter-gatherers": "Caçadores-coletores caribenhos", "Tasmanian hunter-gatherers": "Aborígenes da Tasmânia",
+  "Athabaskan": "Atabascanos", "Athabascan": "Atabascanos", "Spanish Habsburg": "Espanha", "Cuba (Spain)": "Cuba (Espanha)", "Hispaniola (Spain)": "Hispaniola (Espanha)",
+  "Republic of the Seven Zenden": "República dos Sete Dízimos (Valais)", "Geneva": "Genebra", "Japan": "Japão", "Korea": "Coreia", "Arma": "Paxalique de Tombuctu", "Tekrur": "Tekrur",
+  "Egypt": "Egito", "Algiers": "Argel", "Tunis": "Túnis", "Tripolitania": "Tripolitânia", "Hadramaut": "Hadramaute", "Mahra": "Sultanato de Mahra", "Chukchi": "Chukchis", "Koryaks": "Koriaks",
+  "Itelmen": "Itelmens", "Yukagir": "Yukaguires", "Nganasan": "Nganasans", "Enets": "Enets", "Ainu": "Ainu", "Iroquois": "Iroqueses", "Cree": "Cree", "Comanche": "Comanches", "Apache": "Apaches",
+  "Cherokee": "Cherokees", "Mayas": "Maias", "Maya": "Maias", "Oromo": "Oromo", "Darfur": "Sultanato de Darfur", "Akan": "Akan", "Kali": "Kali",
+  "Saylan": "Ceilão", "Pegu": "Reino de Pegu", "Lan Na": "Lan Na", "Orissa": "Orissa", "Aceh": "Sultanato de Achém", "Mossi States": "Estados Mossi", "Oyo": "Império de Oió",
+  "Danemark": "Dinamarca", "Dutch Formosa": "Formosa Holandesa", "Neterlands": "Países Baixos", "Prussia": "Prússia", "Luxembourg": "Luxemburgo", "Kandy": "Reino de Kandy",
 };
 
 const PATTERNS = [
@@ -84,6 +109,7 @@ const PATTERNS = [
   [/^(.+) Kingdom$/, "Reino $1"], [/^(.+) Caliphate$/, "Califado $1"], [/^(.+) Khanate$/, "Canato de $1"], [/^(.+) States$/, "Estados $1"], [/^(.+) \(Indian princely state\)$/, "$1"],
   [/^(.+) \(UK\)$/, "$1 (britânico)"], [/^(.+) \(GB\)$/, "$1 (britânico)"], [/^(.+) \(FR\)$/, "$1 (França)"], [/^(.+) \(France\)$/, "$1 (França)"], [/^(.+) \(Italy\)$/, "$1 (Itália)"],
   [/^(.+) \(Portugal\)$/, "$1 (Portugal)"], [/^(.+) \(Spain\)$/, "$1 (Espanha)"], [/^(.+) \(Belgium\)$/, "$1 (Bélgica)"], [/^(.+) \(Germany\)$/, "$1 (Alemanha)"],
+  [/^(.+) \(Danemark\)$/, "$1 (Dinamarca)"], [/^(.+) \(Netherlands\)$/, "$1 (Holanda)"],
 ];
 export function translate(n) {
   if (TR[n]) return TR[n];
@@ -94,19 +120,20 @@ export function translate(n) {
 // ---------- flags ----------
 // who rules a territory, from SUBJECTO or from the name suffix
 const SOV = [
-  [/^(UK|United Kingdom.*|Great Britain|British East India Company)$/, "GB"], [/^France$/, "FR"], [/^Spain$/, "ES"], [/^Portugal$/, "PT"], [/^(Netherlands|Dutch East Indies)$/, "NL"],
+  [/^(UK|United Kingdom.*|Great Britain|British East India Company|England|England and Ireland)$/, "GB"], [/^France$/, "FR"], [/^(Spain|Spanish Habsburg)$/, "ES"], [/^Portugal$/, "PT"],
+  [/^(Netherlands|Neterlands|Dutch Republic|Dutch East Indies)$/, "NL"], [/^(Danemark)$/, "DK"], [/^Tsardom of Muscovy$/, "RU"], [/^Prussia$/, "PR"],
   [/^Belgium$/, "BE"], [/^(German Empire|Germany)$/, "DE"], [/^Italy$/, "IT"], [/^(Denmark|Denmark-Norway)$/, "DK"], [/^(Russia|Russian Empire)$/, "RU"], [/^USSR$/, "SU"],
-  [/^(Empire of Japan|Imperial Japan|Japan)$/, "JP"], [/^(USA|United States)$/, "US"], [/^Ottoman Empire$/, "TR"], [/^(Habsburg Austria|Austrian Empire)$/, "AT"],
+  [/^(Empire of Japan|Imperial Japan|Japan|Tokugawa shogunate)$/, "JP"], [/^(USA|United States)$/, "US"], [/^Ottoman Empire$/, "TR"], [/^(Habsburg Austria|Austrian Empire|Holy Roman Empire)$/, "AT"],
 ];
 const SUFFIX = [[/\((UK|GB)\)|\(UK Lybia\)/, "GB"], [/\((FR|France)\)|Frech Lybia/, "FR"], [/\(IT|Italy\)/, "IT"], [/\(Portugal\)/, "PT"], [/\(Spain\)/, "ES"], [/\(Belgium\)/, "BE"], [/\(Dutch\)/, "NL"], [/\((USA)\)/, "US"], [/\(Soviet|USSR\)/, "SU"], [/\(RU\)/, "RU"]];
 
 export function powerFlag(p, y) {
   switch (p) {
-    case "GB": return y < 1801 ? "h:gb1707" : "x:gb";
-    case "FR": return y >= 1815 && y < 1830 ? "h:fr_bourbon" : "x:fr";
-    case "ES": return y >= 1931 && y < 1939 ? "h:es_rep" : "x:es";
+    case "GB": return y < 1707 ? "h:england" : y < 1801 ? "h:gb1707" : "x:gb";
+    case "FR": return y < 1790 || (y >= 1815 && y < 1830) ? "h:fr_bourbon" : "x:fr";
+    case "ES": return y < 1785 ? "h:es_burgundy" : y >= 1931 && y < 1939 ? "h:es_rep" : "x:es";
     case "PT": return y < 1911 ? "h:pt_mon" : "x:pt";
-    case "NL": return "x:nl";
+    case "NL": return y < 1660 ? "h:nl_prince" : "x:nl";
     case "BE": return "x:be";
     case "DE": return y < 1919 || y >= 1933 ? "h:de_emp" : "x:de";
     case "IT": return y < 1946 ? "h:it_sav" : "x:it";
@@ -115,8 +142,10 @@ export function powerFlag(p, y) {
     case "SU": return "h:su";
     case "JP": return "x:jp";
     case "US": return "x:us";
-    case "TR": return "x:tr";
+    case "TR": return y < 1793 ? "h:ottoman_old" : "x:tr";
     case "AT": return y < 1919 ? "h:at_hab" : "x:at";
+    case "DKN": return "h:dk_norway";
+    case "PR": return "h:prussia";
   }
   return "blank";
 }
@@ -145,6 +174,11 @@ const OWN = {
   "Saxony": () => "h:saxony", "Württemberg": () => "h:wurttemberg", "Baden": () => "h:baden", "Hanover": () => "h:hanover", "Tuscany": () => "h:tuscany", "Republic of Kraków": () => "h:krakow",
   "Sultanate of Zanzibar": () => "h:zanzibar", "Zanzibar": () => "h:zanzibar", "Burma": () => "blank", "Ukraine": () => "x:ua", "Georgia": () => "h:ge90", "Armenia": () => "x:am", "Azerbaijan": () => "x:az",
   "Far Eastern SSR": () => "h:su", "Taiwan": (y) => (y < 1946 ? "x:jp" : "x:tw"),
+  "Tsardom of Muscovy": () => "x:ru", "Spanish Habsburg": (y) => powerFlag("ES", y), "England and Ireland": () => "h:england", "England": () => "h:england", "Scotland": () => "h:scotland",
+  "Dutch Republic": (y) => powerFlag("NL", y), "Holy Roman Empire": () => "h:hre", "Poland-Lithuania": () => "h:pl_lt", "Polish–Lithuanian Commonwealth": () => "h:pl_lt", "Venice": () => "h:venice",
+  "Swiss Confederation": () => "x:ch", "Mughal Empire": () => "h:mughal", "Safavid Empire": () => "h:safavid", "Tokugawa shogunate": () => "x:jp", "Japan (Warring States)": () => "x:jp",
+  "Maratha": () => "h:maratha", "Mahratta states": () => "h:maratha", "Maratha Confederacy": () => "h:maratha", "Watassid Morocco": () => "h:morocco_old", "Savoy": () => "h:savoy", "Savoy-Piedmont": () => "h:savoy",
+  "Sardinia-Piedmont": () => "h:savoy", "Brandenburg": () => "h:prussia",
 };
 
 // colonies whose maps do not say who ruled them: [power, from, to]
@@ -173,6 +207,11 @@ const COLONY = {
   "Belgian Congo": C("BE"), "Zaire": C("BE"), "Zaire (Belgium)": C("BE"), "Rwanda (Belgium)": C("BE"), "Rwanda": C("BE", 1919), "Burundi": C("BE", 1919),
   "Greenland": C("DK"), "Iceland": C("DK", 0, 1918), "Namibia": C("ZA", 1915), "South Africa": C("ZA", 1910), "Indonesia": C("ID", 1945),
   "Xinjiang": C("CN", 1912), "Rupert's Land": C("GB"), "British East India Company": C("GB"), "Viceroyalty of the Río de la Plata": C("ES", 0, 1815),
+  "Viceroyalty of New Spain": C("ES", 0, 1820), "Viceroyalty of Peru": C("ES", 0, 1820), "Viceroyalty of New Granada": C("ES", 0, 1818), "Viceroyalty of Brazil": C("PT", 0, 1821),
+  "Portuguese Brazil": C("PT"), "Dutch Brazil": C("NL"), "Florida": C("ES"), "Florida (Spain)": C("ES"), "New France": C("FR"), "Virginia": C("GB"), "Massachusetts Bay": C("GB"),
+  "New Amsterdam": C("NL"), "Essequibo": C("NL"), "Cayenne": C("FR"), "Louisiana": C("FR"), "British American colonies": C("GB"), "Habsburg Netherlands": C("ES"),
+  "Naples": C("ES", 0, 1713), "Sicily": C("ES", 0, 1713), "Sardinia": C("ES", 0, 1713), "Milan": C("ES", 0, 1706), "Cuba (Spain)": C("ES"), "Hispaniola (Spain)": C("ES"),
+  "Guyana (Netherlands)": C("NL"), "Dutch Formosa": C("NL"), "Austrian Netherlands": C("AT"), "Quebec": C("GB", 1763),
   "Algiers": C("TR", 0, 1829), "Tunis": C("TR"), "Tripolitania": C("TR"), "Cyrenaica": C("TR"), "Acadian Peninsula (UK)": C("GB"),
 };
 export function flagFor(name, subj, y) {
@@ -182,9 +221,12 @@ export function flagFor(name, subj, y) {
     if (col[0] === "ZA") return "h:za_old";
     if (col[0] === "ID") return "x:id";
     if (col[0] === "CN") return "h:cn_5";
-    if (col[0] === "TR") return "x:tr";
+    if (col[0] === "TR") return powerFlag("TR", y);
     return powerFlag(col[0], y);
   }
+  if (name === "Denmark-Norway" || name === "Denmark") return y < 1814 ? "h:dk_norway" : "x:dk";
+  if (name === "Sweden") return y < 1906 ? "h:sweden_old" : "x:se";
+  if (name === "Ottoman Empire" || name === "Ottoman Sultanate") return powerFlag("TR", y);
   if (OWN[name] && (!subj || subj === name || /^(USA|UK|Russia)$/.test(subj))) return OWN[name](y);
   let p = null;
   for (const [re, code] of SUFFIX) if (re.test(name)) { p = code; break; }
@@ -193,3 +235,56 @@ export function flagFor(name, subj, y) {
   if (OWN[name]) return OWN[name](y);
   return "blank";
 }
+
+// ---------- who a territory belongs to ("pertence a ...") ----------
+// derived from the unit's flag: a territory flying a power's flag belongs to that power, unless it is the power itself
+const POWER_OF_FLAG = {
+  "x:gb": "GB", "h:gb1707": "GB", "h:england": "GB", "x:fr": "FR", "h:fr_bourbon": "FR", "x:es": "ES", "h:es_burgundy": "ES", "h:es_rep": "ES", "x:pt": "PT", "h:pt_mon": "PT",
+  "x:nl": "NL", "h:nl_prince": "NL", "x:be": "BE", "h:de_emp": "DE", "x:de": "DE", "h:it_sav": "IT", "x:it": "IT", "x:dk": "DK", "h:dk_norway": "DK", "x:ru": "RU", "h:su": "SU",
+  "x:jp": "JP", "x:us": "US", "x:tr": "TR", "h:ottoman_old": "TR", "h:at_hab": "AT", "h:za_old": "ZA", "x:au": "AU", "x:nz": "NZ", "h:cn_qing": "CN", "h:cn_5": "CN", "x:tw": "CN",
+  "h:prussia": "PR", "x:id": "ID", "h:hk_brit": "GB",
+};
+export function powerName(p, y) {
+  switch (p) {
+    case "GB": return y < 1707 ? "Inglaterra" : y < 1801 ? "Grã-Bretanha" : "Reino Unido";
+    case "FR": return "França"; case "ES": return "Espanha"; case "PT": return "Portugal";
+    case "NL": return y < 1795 ? "República Holandesa" : "Países Baixos"; case "BE": return "Bélgica";
+    case "DE": return y < 1919 ? "Império Alemão" : "Alemanha"; case "IT": return "Itália"; case "DK": return "Dinamarca";
+    case "RU": return y < 1721 ? "Czarado da Rússia" : "Império Russo"; case "SU": return "União Soviética"; case "JP": return "Japão"; case "US": return "Estados Unidos";
+    case "TR": return y < 1923 ? "Império Otomano" : "Turquia"; case "AT": return y < 1867 ? "Áustria (Habsburgo)" : y < 1919 ? "Áustria-Hungria" : "Áustria";
+    case "ZA": return "África do Sul"; case "AU": return "Austrália"; case "NZ": return "Nova Zelândia"; case "CN": return "China"; case "PR": return "Prússia"; case "ID": return "Indonésia";
+  }
+  return null;
+}
+// units that are the power itself (English keys of the maps, and Portuguese names given by events)
+const SELF = new Set(["United Kingdom", "United Kingdom of Great Britain and Ireland", "England and Ireland", "England", "France", "Spain", "Spanish Habsburg", "Portugal", "Netherlands",
+  "Dutch Republic", "Batavian Republic", "Belgium", "Germany", "German Empire", "Italy", "Kingdom of Italy", "Denmark", "Denmark-Norway", "Russian Empire", "Tsardom of Muscovy", "USSR", "Japan",
+  "Empire of Japan", "Imperial Japan", "Tokugawa shogunate", "Japan (Warring States)", "United States", "United States of America", "Ottoman Empire", "Ottoman Sultanate", "Turkey",
+  "Republic of Turkey", "Austrian Empire", "Austria Hungary", "Austro-Hungarian Empire", "Austria", "Holy Roman Empire", "Qing Empire", "Manchu Empire", "China", "Chinese Warlords",
+  "Chinese warlords", "Union of South Africa", "Indonesia", "Prussia", "Brandenburg", "Kingdom of Sardinia", "Australia", "New Zealand", "South Africa", "Taiwan",
+  "Reino Unido", "Grã-Bretanha", "Império Alemão", "Confederação da Alemanha do Norte", "União Soviética", "Rússia Soviética", "Reino da Itália", "União Sul-Africana", "República da China",
+  "Império Austríaco", "Áustria-Hungria", "Turquia", "Alemanha (República de Weimar)", "Reino da Grã-Bretanha"]);
+export function ownerFor(key, name, flag, y) {
+  if (SELF.has(key) || SELF.has(name)) return null;
+  const p = POWER_OF_FLAG[flag];
+  return p ? powerName(p, y) : null;
+}
+
+const HOME = { GB: "GBR", FR: "FRA", ES: "ESP", PT: "PRT", NL: "NLD", BE: "BEL", DE: "DEU", IT: "ITA", DK: "DNK", SU: "RUS", RU: "RUS", JP: "JPN", US: "USA", TR: "TUR",
+  AT: "AUT", ZA: "ZAF", AU: "AUS", NZ: "NZL", CN: "CHN", ID: "IDN" };
+/** 1946+: a unit flying a power's flag without containing the power's own land belongs to it. */
+export function modernOwner(flag, members, y) {
+  const p = POWER_OF_FLAG[flag];
+  if (!p || members.includes(HOME[p])) return null;
+  return powerName(p, y);
+}
+// today's dependent territories
+const D = (owner, ids) => Object.fromEntries(ids.map((i) => [i, owner]));
+export const SOVEREIGN = {
+  ...D("Países Baixos", ["ABW", "BES", "CUW", "SXM"]),
+  ...D("Reino Unido", ["AIA", "BMU", "SHN", "CYM", "FLK", "GGY", "GIB", "IMN", "IOT", "JEY", "MSR", "PCN", "SGS", "TCA", "VGB", "AKR"]),
+  ALA: "Finlândia", ...D("Estados Unidos", ["ASM", "GUM", "MNP", "PRI", "UMI", "VIR"]),
+  ...D("França", ["ATF", "BLM", "GLP", "GUF", "MAF", "MTQ", "MYT", "NCL", "PYF", "REU", "SPM", "WLF", "CLP"]),
+  ...D("Noruega", ["BVT", "SJM"]), ...D("Austrália", ["CCK", "CXR", "HMD", "NFK"]), ...D("Nova Zelândia", ["COK", "NIU", "TKL"]),
+  ...D("Dinamarca", ["FRO", "GRL"]), ...D("China", ["HKG", "MAC"]), ESH: "disputado (administrado pelo Marrocos)",
+};

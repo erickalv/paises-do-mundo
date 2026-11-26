@@ -19,13 +19,14 @@ class Entity(
     val dot: Boolean,
     val sr: Double,               // area on the unit sphere (steradians)
     val bounds: DoubleArray?,     // lon0, lat0, lon1, lat1
+    val sovereign: String?,       // dependent territories: the country they belong to
 ) {
     /** Reference to the flag image: "x:<iso2>" for today's flags, "blank" when there is none. */
     val flag: String get() = if (c2 != null) "x:" + c2.lowercase(Locale.ROOT) else "blank"
 }
 
 /** A political unit of a given year in the History tab, rows of history.json. */
-class HistRow(val key: String, val name: String?, val flag: String, val y0: Int, val y1: Int, val members: List<String>, val ll: DoubleArray?)
+class HistRow(val key: String, val name: String?, val flag: String, val y0: Int, val y1: Int, val members: List<String>, val ll: DoubleArray?, val owner: String?)
 
 class YearUnit(
     val key: String,
@@ -38,13 +39,67 @@ class YearUnit(
     val sr: Double,
     val dot: Boolean,
     val code: Int,
+    val owner: String? = null,    // who the unit belongs to (colonies, dependencies, occupied land)
 )
 
 /** unitOfPiece: unit code of each piece of today's map (1946–2026).
- *  snap/snapMap: for 1800–1945, which historical map is used and the unit code of each of its units. */
+ *  snap/snapMap: before 1946, which historical map is used and the unit code of each of its units. */
 class YearInfo(val unitOfPiece: IntArray, val units: List<YearUnit>, val snap: Int = -1, val snapMap: IntArray? = null)
 
 class Era(val y0: Int, val y1: Int, val snap: Int, val units: List<YearUnit>, val map: IntArray)
+
+/** Fill shapes of one historical map (hist/f<year>.bin): triangles in lon/lat (1/100 degree), in chunks
+ *  that each belong to one unit of the map. Drawn to highlight a tapped unit, and used to find what was tapped. */
+class FillMesh(bytes: ByteArray) {
+    val nv: Int
+    val ni: Int
+    val chunkUnit: IntArray
+    val chunkVBase: IntArray
+    val chunkIBase: IntArray
+    val chunkCount: IntArray
+    val lonLat: ShortArray
+    val idx: ShortArray
+
+    init {
+        val bb = java.nio.ByteBuffer.wrap(bytes).order(java.nio.ByteOrder.LITTLE_ENDIAN)
+        bb.position(4)
+        nv = bb.int; ni = bb.int
+        val nc = bb.int
+        chunkUnit = IntArray(nc); chunkVBase = IntArray(nc); chunkIBase = IntArray(nc); chunkCount = IntArray(nc)
+        for (c in 0 until nc) { chunkUnit[c] = bb.int; chunkVBase[c] = bb.int; chunkIBase[c] = bb.int; chunkCount[c] = bb.int }
+        lonLat = ShortArray(nv * 2); bb.asShortBuffer().get(lonLat); bb.position(bb.position() + nv * 4)
+        idx = ShortArray(ni); bb.asShortBuffer().get(idx)
+    }
+
+    /** unit of the map at (lon, lat), or -1 */
+    fun unitAt(lon: Double, lat: Double): Int {
+        val y = (lat * 100).toFloat()
+        for (c in chunkUnit.indices) {
+            val vb = chunkVBase[c]
+            var t = chunkIBase[c]
+            val end = t + chunkCount[c]
+            while (t < end) {
+                val a = vb + (idx[t].toInt() and 0xFFFF); val b = vb + (idx[t + 1].toInt() and 0xFFFF); val cc = vb + (idx[t + 2].toInt() and 0xFFFF)
+                t += 3
+                val ay = lonLat[a * 2 + 1].toFloat(); val by = lonLat[b * 2 + 1].toFloat(); val cy = lonLat[cc * 2 + 1].toFloat()
+                if (y < minOf(ay, by, cy) || y > maxOf(ay, by, cy)) continue
+                val ax = lonLat[a * 2].toFloat(); val bx = lonLat[b * 2].toFloat(); val cx = lonLat[cc * 2].toFloat()
+                // longitudes of a triangle may be unwrapped past ±180
+                for (sh in SHIFTS) {
+                    val x = (lon * 100).toFloat() + sh
+                    if (x < minOf(ax, bx, cx) || x > maxOf(ax, bx, cx)) continue
+                    val d1 = (bx - ax) * (y - ay) - (by - ay) * (x - ax)
+                    val d2 = (cx - bx) * (y - by) - (cy - by) * (x - bx)
+                    val d3 = (ax - cx) * (y - cy) - (ay - cy) * (x - cx)
+                    if ((d1 >= 0 && d2 >= 0 && d3 >= 0) || (d1 <= 0 && d2 <= 0 && d3 <= 0)) return chunkUnit[c]
+                }
+            }
+        }
+        return -1
+    }
+
+    private companion object { val SHIFTS = floatArrayOf(0f, 36000f, -36000f) }
+}
 
 val REGIONS = listOf(
     "eu" to "Europa", "as" to "Ásia", "af" to "África", "oc" to "Oceania",
@@ -64,6 +119,7 @@ object Names {
 fun ownerOf(id: String) = if (id.contains('~')) id.substringBefore('~') else id
 
 class GeoData(ctx: Context) {
+    private val appCtx: Context = ctx.applicationContext
     val entities: List<Entity>
     val byId: Map<String, Entity>
     val pieceIds: List<String>
@@ -98,6 +154,7 @@ class GeoData(ctx: Context) {
                 dot = o.optInt("dot", 0) == 1,
                 sr = o.optDouble("sr", 0.0),
                 bounds = b?.let { DoubleArray(4) { k -> it.getDouble(k) } },
+                sovereign = if (o.isNull("o")) null else o.optString("o", "").ifEmpty { null },
             )
         }
         entities = list
@@ -130,8 +187,9 @@ class GeoData(ctx: Context) {
                     val u = us.getJSONArray(i)
                     YearUnit(
                         key = "e$k.$i", name = if (u.isNull(0)) "" else u.getString(0), flag = u.getString(1),
-                        lon = u.getDouble(2), lat = u.getDouble(3), members = emptyList(), historical = false,
+                        lon = u.getDouble(2), lat = u.getDouble(3), members = emptyList(), historical = true,
                         sr = u.getDouble(4), dot = false, code = i,
+                        owner = if (u.length() > 5 && !u.isNull(5)) u.getString(5) else null,
                     )
                 },
                 IntArray(mp.length()) { mp.getInt(it) },
@@ -147,6 +205,7 @@ class GeoData(ctx: Context) {
                 flag = u.getString(2), y0 = u.getInt(3), y1 = u.getInt(4),
                 members = List(m.length()) { m.getString(it) },
                 ll = if (u.length() > 6) u.getJSONArray(6).let { doubleArrayOf(it.getDouble(0), it.getDouble(1)) } else null,
+                owner = if (u.length() > 7 && !u.isNull(7)) u.getString(7) else null,
             )
         }
     }
@@ -165,6 +224,12 @@ class GeoData(ctx: Context) {
         for (p in pieceOwner.indices) { val o = pieceOwner[p]; if (o >= 0 && a[o] < 0) a[o] = p }
         a
     }
+
+    private val fills = object : android.util.LruCache<Int, FillMesh>(3) {
+        override fun create(key: Int): FillMesh = FillMesh(appCtx.assets.open("hist/f${snapYears[key]}.bin").use { it.readBytes() })
+    }
+    /** fill shapes of historical map number [snap] (loaded on first use) */
+    fun fill(snap: Int): FillMesh = synchronized(fills) { fills.get(snap) }
 
     private val yearCache = HashMap<Int, YearInfo>()
 
@@ -203,6 +268,7 @@ class GeoData(ctx: Context) {
                 sr = ms.sumOf { it.sr },
                 dot = ms.size == 1 && ms[0].dot,
                 code = codeOf.getValue(k),
+                owner = if (h != null) h.owner else e?.sovereign,
             )
         }
         val unitOfPiece = IntArray(pieceIds.size) { p ->

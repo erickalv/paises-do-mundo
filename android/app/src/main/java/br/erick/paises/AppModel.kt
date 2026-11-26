@@ -38,6 +38,9 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
     /** bumped whenever the globe's colours or borders must be rebuilt */
     var styleVersion by mutableIntStateOf(0)
 
+    /** History tab: the point the user tapped; the unit there (in the chosen year) is painted yellow */
+    var pick: DoubleArray? = null
+
     var pinned: String? = null
     var pinnedUntil = 0L
     /** the label of a country just found shows only for a moment */
@@ -144,6 +147,73 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
         return if (p >= 0) data.entities[data.pieceOwner[p]].id else null
     }
 
+    // ---------- tap in the History tab ----------
+    /** What the History map shows at a point in the current year. */
+    class Picked(val name: String, val flag: String, val owner: String?, val code: Int, val pieces: Set<Int>)
+
+    private var pickCacheKey: Triple<Int, Double, Double>? = null
+    private var pickCache: Picked? = null
+
+    fun picked(): Picked? {
+        val p = pick ?: return null
+        val key = Triple(year, p[0], p[1])
+        if (key == pickCacheKey) return pickCache
+        pickCacheKey = key
+        pickCache = unitAt(p[0], p[1], p[2].toInt())
+        return pickCache
+    }
+
+    private fun unitAt(lon: Double, lat: Double, piece: Int): Picked? {
+        val info = data.yearInfo(year)
+        if (info.snap >= 0) {
+            val su = data.fill(info.snap).unitAt(lon, lat)
+            if (su < 0) return null
+            val code = info.snapMap!!.getOrElse(su) { -1 }
+            val u = info.units.getOrNull(code)
+            return if (u == null || u.name.isEmpty()) Picked("Sem informação neste mapa", "blank", null, code, emptySet())
+            else Picked(u.name, u.flag, u.owner, code, emptySet())
+        }
+        if (piece < 0) return null
+        val code = info.unitOfPiece.getOrElse(piece) { -1 }
+        val u = info.units.getOrNull(code) ?: return null
+        val pieces = info.unitOfPiece.indices.filter { info.unitOfPiece[it] == code }.toSet()
+        return Picked(u.name, u.flag, u.owner, code, pieces)
+    }
+
+    /** Tap in the History tab: select the land under the finger (or the closest small island), tap again to clear. */
+    fun historyTap(sx: Float, sy: Float, host: GlobeHost) {
+        val d = host.resources.displayMetrics.density
+        val tmp = DoubleArray(3)
+        var piece = -1
+        var at: DoubleArray? = null
+        // small places drawn as dots
+        var bd = 22.0 * d
+        for (e in data.entities) {
+            if (!e.dot) continue
+            host.cam.project(e.lon, e.lat, tmp)
+            if (tmp[2] <= 0) continue
+            val dist = hypot(tmp[0] - sx, tmp[1] - sy)
+            if (dist < bd) { bd = dist; piece = data.firstPieceOf[e.index]; at = doubleArrayOf(e.lon, e.lat) }
+        }
+        if (at == null) {
+            val ll = host.cam.unproject(sx.toDouble(), sy.toDouble())
+            val xyz = host.cam.unprojectXYZ(sx.toDouble(), sy.toDouble())
+            val hit = host.renderer.hit
+            if (ll != null && xyz != null && hit != null) {
+                piece = hit.pieceAt(xyz[0], xyz[1], xyz[2]) { true }
+                if (piece >= 0) at = doubleArrayOf(ll[0], ll[1])
+            }
+        }
+        val old = picked()
+        if (at == null) { pick = null }
+        else {
+            pick = doubleArrayOf(at[0], at[1], piece.toDouble())
+            val now = picked()
+            if (old != null && now != null && old.code == now.code && old.name == now.name) pick = null
+        }
+        styleVersion++
+    }
+
     // ---------- globe style ----------
     private fun colorOf(e: Entity): Int = when {
         mode != Mode.GAME -> LAND
@@ -158,10 +228,11 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
         val pal = ByteArray(n * 4)
         val units = ByteArray(n * 4)
         val info = if (mode == Mode.HISTORY) data.yearInfo(year) else null
+        val pk = if (mode == Mode.HISTORY) picked() else null
         val snapUnits = info?.snapMap?.let { m -> ByteArray(m.size * 4).also { b -> for (i in m.indices) GlobeRenderer.putCode(b, i, m[i]) } }
         for (p in 0 until n) {
             val o = data.pieceOwner[p]
-            val c = if (o >= 0) colorOf(data.entities[o]) else LAND
+            val c = if (pk != null && p in pk.pieces) FOUND else if (o >= 0) colorOf(data.entities[o]) else LAND
             pal[p * 4] = ((c shr 16) and 0xFF).toByte(); pal[p * 4 + 1] = ((c shr 8) and 0xFF).toByte()
             pal[p * 4 + 2] = (c and 0xFF).toByte(); pal[p * 4 + 3] = 0xFF.toByte()
             val code = info?.unitOfPiece?.getOrNull(p) ?: if (o >= 0) o else 100000 + p
@@ -169,11 +240,13 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
         }
         val dots = FloatArray(dotEntities.size * 4)
         for ((k, ei) in dotEntities.withIndex()) {
-            val c = colorOf(data.entities[ei])
+            val c = if (pk != null && data.firstPieceOf[ei] in pk.pieces) FOUND else colorOf(data.entities[ei])
             dots[k * 4] = ((c shr 16) and 0xFF) / 255f; dots[k * 4 + 1] = ((c shr 8) and 0xFF) / 255f
             dots[k * 4 + 2] = (c and 0xFF) / 255f; dots[k * 4 + 3] = 1f
         }
-        return Style(pal, units, mode == Mode.HISTORY, dots, info?.snap ?: -1, snapUnits)
+        val sm = info?.snapMap
+        val pickUnits = if (sm != null && pk != null && pk.code >= 0) sm.indices.filter { sm[it] == pk.code }.toSet() else emptySet()
+        return Style(pal, units, mode == Mode.HISTORY, dots, info?.snap ?: -1, snapUnits, pickUnits)
     }
 
     // ---------- labels ----------
@@ -188,9 +261,17 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
             Mode.START -> return emptyList()
             Mode.HISTORY -> {
                 val info = data.yearInfo(year)
-                return info.units.filter { it.name.isNotEmpty() }
+                val out = ArrayList<LabelItem>()
+                val pk = picked()
+                val p = pick
+                if (pk != null && p != null) {
+                    out += LabelItem("pick", pk.name, pk.flag, p[0], p[1], 0.0, true, top = true, missed = false,
+                        sub = pk.owner?.let { "pertence a $it" })
+                }
+                info.units.filter { it.name.isNotEmpty() }
                     .sortedWith(compareByDescending<YearUnit> { it.historical }.thenByDescending { it.sr })
-                    .map { LabelItem(it.key, it.name, it.flag, it.lon, it.lat, it.sr, it.dot, top = false, missed = it.historical) }
+                    .forEach { out += LabelItem(it.key, it.name, it.flag, it.lon, it.lat, it.sr, it.dot, top = false, missed = it.historical) }
+                return out
             }
             Mode.GAME -> {
                 val now = SystemClock.elapsedRealtime()

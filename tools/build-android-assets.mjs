@@ -7,12 +7,13 @@
 //   flags/x_<code>.png, flags/h_<key>.png
 import fs from "fs";
 import { execFileSync } from "child_process";
-import earcut from "earcut";
+import { triangulate, polysOf } from "./tri.mjs";
 import { feature } from "topojson-client";
 import { geoArea, geoBounds, geoInterpolate, geoDistance } from "d3-geo";
 import polylabel from "polylabel";
 import { ROWS, MODERN_FROM } from "./hist-modern.mjs";
 import { buildSnapshots, buildEras } from "./hist-old.mjs";
+import { modernOwner, SOVEREIGN } from "./hist-names.mjs";
 
 const OUT = process.argv[2] || "/home/claude/paises-do-mundo/android/app/src/main/assets";
 fs.mkdirSync(OUT + "/flags", { recursive: true });
@@ -37,7 +38,6 @@ const toXYZ = ([lon, lat]) => {
 
 // ---------- land triangles ----------
 const pos = [], pidx = [], idx = [];
-const MAXE = 3.0; // degrees: split triangles with longer edges so they follow the curve of the sphere
 let vmap = new Map(); // shared vertices within one piece
 function vert(v, pi) {
   const key = v[0].toFixed(5) + "," + v[1].toFixed(5);
@@ -45,51 +45,9 @@ function vert(v, pi) {
   if (k === undefined) { k = pos.length / 3; pos.push(...toXYZ(v)); pidx.push(pi); vmap.set(key, k); }
   return k;
 }
-function addTri(a, b, c, pi, depth = 0) {
-  const d = (u, v) => Math.hypot(u[0] - v[0], u[1] - v[1]);
-  const ab = d(a, b), bc = d(b, c), ca = d(c, a);
-  const m = Math.max(ab, bc, ca);
-  if (m > MAXE && depth < 14) {
-    const mid = (u, v) => [(u[0] + v[0]) / 2, (u[1] + v[1]) / 2];
-    if (m === ab) { const x = mid(a, b); addTri(a, x, c, pi, depth + 1); addTri(x, b, c, pi, depth + 1); }
-    else if (m === bc) { const x = mid(b, c); addTri(a, b, x, pi, depth + 1); addTri(a, x, c, pi, depth + 1); }
-    else { const x = mid(c, a); addTri(a, b, x, pi, depth + 1); addTri(x, b, c, pi, depth + 1); }
-    return;
-  }
-  idx.push(vert(a, pi), vert(b, pi), vert(c, pi));
-}
 geoms.forEach((g, pi) => {
   vmap = new Map();
-  const f = feature(topo, g);
-  const polys = f.geometry.type === "Polygon" ? [f.geometry.coordinates] : f.geometry.type === "MultiPolygon" ? f.geometry.coordinates : [];
-  for (const poly of polys) {
-    const flat = [], holes = [];
-    poly.forEach((ring, k) => {
-      if (k) holes.push(flat.length / 2);
-      // ring is closed: drop the repeated last point; unwrap longitudes across the 180° meridian
-      const pts = [];
-      let prev = null, shift = 0;
-      for (let i = 0; i < ring.length - 1; i++) {
-        let [x, y] = ring[i];
-        if (prev !== null) { const d = x + shift - prev; if (d > 180) shift -= 360; else if (d < -180) shift += 360; }
-        x += shift; pts.push([x, y]); prev = x;
-      }
-      // a ring that goes all the way around (Antarctica) is closed through the pole
-      const span = pts[pts.length - 1][0] - pts[0][0];
-      const closing = ring[0][0] + 0 - (ring[ring.length - 2][0]);
-      if (Math.abs(pts[pts.length - 1][0] + (((ring[0][0] - ring[ring.length - 2][0]) + 540) % 360 - 180) - pts[0][0]) > 180) {
-        const pole = pts.reduce((sum, p) => sum + p[1], 0) < 0 ? -90 : 90;
-        const xe = pts[pts.length - 1][0] + (((ring[0][0] - ring[ring.length - 2][0]) + 540) % 360 - 180);
-        pts.push([xe, pole], [pts[0][0], pole]);
-      }
-      for (const [x, y] of pts) flat.push(x, y);
-    });
-    const tri = earcut(flat, holes, 2);
-    for (let i = 0; i < tri.length; i += 3) {
-      const P = (j) => [flat[2 * tri[i + j]], flat[2 * tri[i + j] + 1]];
-      addTri(P(0), P(1), P(2), pi);
-    }
-  }
+  triangulate(polysOf(feature(topo, g).geometry), (a, b, c) => idx.push(vert(a, pi), vert(b, pi), vert(c, pi)));
 });
 
 // ---------- border segments (each arc knows the pieces on both sides) ----------
@@ -165,7 +123,7 @@ const outEnts = ents.map((e) => {
   const col = fs_ ? { type: "FeatureCollection", features: fs_ } : null;
   const b = col ? geoBounds(col).flat().map((v) => +v.toFixed(3)) : null;
   const ll = fs_ ? labelPoint(fs_) || e.ll : e.ll;
-  return { id: e.id, n: e.n, a: e.a.filter((s) => !/^[A-Z]{2}$/.test(s)), c2: e.c2, r: e.r, ll, area: e.area, dot: e.dot, sr: col ? +geoArea(col).toPrecision(5) : 0, b };
+  return { id: e.id, n: e.n, a: e.a.filter((s) => !/^[A-Z]{2}$/.test(s)), c2: e.c2, r: e.r, ll, area: e.area, dot: e.dot, sr: col ? +geoArea(col).toPrecision(5) : 0, b, o: SOVEREIGN[e.id] || null };
 });
 fs.writeFileSync(OUT + "/entities.json", JSON.stringify(outEnts));
 fs.writeFileSync(OUT + "/pieces.json", JSON.stringify(pieces.map((p) => [p.id, p.owner])));
@@ -185,12 +143,14 @@ const rows = ROWS.map((u) => {
     const fsx = u[5].map((m) => featById.get(m)).filter(Boolean);
     ll = labelPoint(fsx) || outEnts.find((e) => e.id === ownerOf(u[5][0])).ll;
   }
-  return [u[0], u[1], u[2], u[3], u[4], u[5], ll];
+  let own = modernOwner(u[2], u[5], u[3]);
+  if (!own && u[4] >= 2026) own = SOVEREIGN[ownerOf(u[5][0])] || null;
+  return [u[0], u[1], u[2], u[3], u[4], u[5], ll, own];
 });
 const snaps = buildSnapshots(OUT);
 const eras = buildEras(snaps);
 const flagRefs = new Set([...rows.map((r) => r[2]), ...eras.flatMap((e) => e.u.map((u) => u[1]))]);
-fs.writeFileSync(OUT + "/history.json", JSON.stringify({ from: 1800, to: 2026, modernFrom: MODERN_FROM, units: rows, snaps: snaps.map((s) => ({ y: s.sy, n: s.units.length })), eras }));
+fs.writeFileSync(OUT + "/history.json", JSON.stringify({ from: snaps[0].sy, to: 2026, modernFrom: MODERN_FROM, units: rows, snaps: snaps.map((s) => ({ y: s.sy, n: s.units.length })), eras }));
 
 // ---------- flags as PNG ----------
 const tmp = "/tmp/flag.svg";

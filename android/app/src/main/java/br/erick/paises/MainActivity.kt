@@ -110,6 +110,7 @@ class MainActivity : ComponentActivity() {
             override fun labels() = model.labels()
             override fun labelMode() = model.labelMode()
             override fun onTap(lon: Double, lat: Double, sx: Float, sy: Float) {
+                if (model.mode == Mode.HISTORY) { model.historyTap(sx, sy, host); host.redraw(); return }
                 val id = model.tapTarget(lon, lat, sx, sy, host) ?: return
                 model.pinned = id
                 model.pinnedUntil = android.os.SystemClock.elapsedRealtime() + 3500
@@ -163,7 +164,7 @@ fun App(model: AppModel, host: GlobeHost) {
                     Modifier.clip(RoundedCornerShape(22.dp)).background(Surface).border(1.dp, Color(0xFF232B3D), RoundedCornerShape(22.dp)).padding(4.dp),
                     horizontalArrangement = Arrangement.spacedBy(4.dp),
                 ) {
-                    TabButton("Jogar", model.mode == Mode.START) { model.mode = Mode.START; model.styleVersion++ }
+                    TabButton("Jogar", model.mode == Mode.START) { model.mode = Mode.START; model.pick = null; model.styleVersion++ }
                     TabButton("História", model.mode == Mode.HISTORY) { model.mode = Mode.HISTORY; model.styleVersion++ }
                 }
             }
