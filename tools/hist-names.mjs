@@ -13,7 +13,7 @@ export const TR = {
   "Turan": "Turan (Ásia Central)", "Egypt": "Egito", "Union of South Africa": "União Sul-Africana", "Saudi Arabia": "Arábia Saudita", "Mexico": "México", "Empire of Japan": "Império do Japão",
   "Arabia (Nejd)": "Négede", "Dutch East Indies": "Índias Orientais Holandesas", "Netherlands Indies": "Índias Orientais Holandesas", "Queensland (UK)": "Queensland (britânica)",
   "Xinjiang": "Xinjiang", "Libya (IT)": "Líbia Italiana", "Libya": "Líbia Italiana", "Iran": "Irã", "Mongolia": "Mongólia", "Far Eastern SSR": "República do Extremo Oriente", "Bolivia": "Bolívia",
-  "Colombia": "Colômbia", "Indonesia": "Indonésia", "Afghanistan": "Afeganistão", "Peru": "Peru", "Chad": "Chade", "Mali": "Sudão Francês", "Angola": "Angola", "Angola (Portugal)": "Angola (Portugal)",
+  "Colombia": "Colômbia", "Indonesia": "Indonésia", "Rift Valley States": "Estados do Vale do Rift", "Afghanistan": "Afeganistão", "Peru": "Peru", "Chad": "Chade", "Mali": "Sudão Francês", "Angola": "Angola", "Angola (Portugal)": "Angola (Portugal)",
   "Northern Territory (UK)": "Território do Norte (britânico)", "South Africa": "África do Sul", "Niger": "Níger", "Venezuela": "Venezuela", "Rhodesia": "Rodésia", "Tibet": "Tibete",
   "Abyssinia": "Abissínia", "Ethiopia": "Etiópia", "Ethiopia (Italy)": "Etiópia (ocupada pela Itália)", "Emirate of Bin Shal'an": "Emirado de Bin Shalan", "Manchuria": "Manchúria",
   "South Australia (UK)": "Austrália Meridional (britânica)", "Mauritania": "Mauritânia", "British East India Company": "Cia. Britânica das Índias Orientais", "Sokoto Caliphate": "Califado de Sokoto",
@@ -30,7 +30,7 @@ export const TR = {
   "French Indo-China": "Indochina Francesa", "Morocco (France)": "Marrocos (protetorado francês)", "Paraguay": "Paraguai", "Zimbabwe": "Rodésia do Sul", "Southern Rhodesia": "Rodésia do Sul",
   "Poland": "Polônia", "Yemen": "Iêmen", "Dominion of Newfoundland": "Domínio da Terra Nova", "Dutch Guinea": "Guiana Holandesa", "Tukular Caliphate": "Califado Tukulor", "Imperial Japan": "Império do Japão",
   "Finland": "Finlândia", "Japan": "Japão", "Japan (USA)": "Japão (ocupação americana)", "Grand Duchy of Finland": "Grão-Ducado da Finlândia", "Norway": "Noruega", "Congo": "Congo",
-  "Congo (France)": "Congo Francês", "United Kingdom of Great Britain and Ireland": "Reino Unido", "Malaya": "Malásia", "Malaysia": "Malásia Britânica", "Syria (France)": "Síria (mandato francês)",
+  "Congo (France)": "Congo Francês", "United Kingdom of Great Britain and Ireland": "Reino Unido", "Malaya": "Malaia", "Malaysia": "Malásia Britânica", "Syria (France)": "Síria (mandato francês)",
   "Portuguese East Africa": "África Oriental Portuguesa", "Ivory Coast": "Costa do Marfim", "Muscat and Oman": "Mascate e Omã", "Oman": "Omã", "Oman (British Raj)": "Omã", "Italy": "Itália",
   "Romania": "Romênia", "Sultanate of Zanzibar": "Sultanato de Zanzibar", "Đại Việt": "Dai Viet (Vietnã)", "Annam": "Aname", "Yemen (UK)": "Áden (britânico)", "Kingdom of Italy": "Reino da Itália",
   "Prussia": "Prússia", "Uganda": "Uganda", "Burkina Faso": "Alto Volta", "Western Sahara": "Saara Ocidental", "Wadai Empire": "Império Wadai", "Gabon": "Gabão", "Guinea": "Guiné Francesa",
@@ -147,7 +147,44 @@ const OWN = {
   "Far Eastern SSR": () => "h:su", "Taiwan": (y) => (y < 1946 ? "x:jp" : "x:tw"),
 };
 
+// colonies whose maps do not say who ruled them: [power, from, to]
+const C = (p, a = 0, b = 9999) => [p, a, b];
+const COLONY = {
+  "Dutch East Indies": C("NL"), "Netherlands Indies": C("NL"), "Suriname": C("NL"), "Dutch Guiana": C("NL"), "Dutch Guinea": C("NL"),
+  "Malaya": C("GB", 1880), "Malaysia": C("GB"), "Cape Colony": C("GB", 1806), "Natal": C("GB"), "Gold Coast": C("GB"), "Ghana": C("GB"), "Nigeria": C("GB"),
+  "Kenya": C("GB"), "British East Africa": C("GB"), "Uganda": C("GB", 1894), "Tanzania, United Republic of": C("GB", 1919), "Malawi": C("GB"), "Nyasaland": C("GB"),
+  "Zambia": C("GB"), "Northern Rhodesia": C("GB"), "Zimbabwe": C("GB"), "Southern Rhodesia": C("GB"), "Rhodesia": C("GB"), "Botswana": C("GB"), "Lesotho": C("GB"),
+  "Basutoland": C("GB"), "Swaziland": C("GB", 1903), "Sudan": C("GB"), "Anglo-Egyptian Sudan": C("GB"), "British Somaliland": C("GB"), "Sierra Leone": C("GB"),
+  "Gambia": C("GB"), "Gambia, The": C("GB"), "British Guiana": C("GB"), "Guyana": C("GB", 1831), "Belize": C("GB"), "Ceylon": C("GB", 1815), "Sri Lanka": C("GB"),
+  "Burma": C("GB", 1886), "Jamaica": C("GB"), "Bahamas": C("GB"), "Trinidad": C("GB"), "Barbados": C("GB"), "Dominion of Newfoundland": C("GB"), "Fiji": C("GB", 1874),
+  "British Protectorate": C("GB"), "Egypt": C("GB", 1914, 1921), "Mesopotamia (GB)": C("GB"), "Mandatory Palestine (GB)": C("GB"), "Kuwait": C("GB", 1899),
+  "Qatar": C("GB", 1916), "Trucial Oman": C("GB"), "United Arab Emirates": C("GB"), "Yemen (UK)": C("GB"), "Muscat and Oman": C("GB"),
+  "Algeria": C("FR", 1830), "Algeria (FR)": C("FR"), "French Indochina": C("FR"), "French Indo-China": C("FR"), "Laos": C("FR", 1893, 1945), "Annam": C("FR", 1883, 1945),
+  "Tonkin": C("FR", 1883), "Cochin China": C("FR", 1862), "Cambodia": C("FR", 1863, 1945), "French West Africa": C("FR"), "Mali": C("FR"), "Niger": C("FR"),
+  "Mauritania": C("FR"), "Senegal": C("FR"), "Guinea": C("FR"), "Ivory Coast": C("FR"), "Burkina Faso": C("FR"), "Dahomey": C("FR", 1894), "Chad": C("FR"),
+  "Central African Republic": C("FR"), "Gabon": C("FR"), "Congo": C("FR", 1880), "French Equatorial Africa": C("FR"), "Cameroon": C("FR", 1919), "French Cameroons": C("FR"),
+  "Madagascar": C("FR", 1896), "Morocco": C("FR", 1912), "Tunisia": C("FR", 1881), "French Somaliland": C("FR"), "Djibouti": C("FR"), "French Guiana": C("FR"),
+  "New Caledonia": C("FR"), "Lebanon": C("FR", 1920, 1943), "Togo": C("FR", 1919), "Togoland": C("DE"),
+  "Kamerun": C("DE"), "German South-West Africa": C("DE"), "German E. Africa (Tanganyika)": C("DE"),
+  "Libya": C("IT"), "Eritrea": C("IT", 1890, 1941), "Italian Somaliland": C("IT"), "Somalia": C("IT", 1889),
+  "Angola": C("PT"), "Mozambique": C("PT"), "Portuguese East Africa": C("PT"), "Portuguese Guinea": C("PT"), "Guinea-Bissau": C("PT"), "Goa": C("PT"),
+  "Spanish Sahara": C("ES"), "Rio De Oro": C("ES"), "Western Sahara": C("ES", 1884), "Spanish Guinea": C("ES"), "Equatorial Guinea": C("ES"), "Spanish Morocco": C("ES"),
+  "Cuba": C("ES", 0, 1898), "Puerto Rico": C("US", 1899),
+  "Belgian Congo": C("BE"), "Zaire": C("BE"), "Zaire (Belgium)": C("BE"), "Rwanda (Belgium)": C("BE"), "Rwanda": C("BE", 1919), "Burundi": C("BE", 1919),
+  "Greenland": C("DK"), "Iceland": C("DK", 0, 1918), "Namibia": C("ZA", 1915), "South Africa": C("ZA", 1910), "Indonesia": C("ID", 1945),
+  "Xinjiang": C("CN", 1912), "Rupert's Land": C("GB"), "British East India Company": C("GB"), "Viceroyalty of the Río de la Plata": C("ES", 0, 1815),
+  "Algiers": C("TR", 0, 1829), "Tunis": C("TR"), "Tripolitania": C("TR"), "Cyrenaica": C("TR"), "Acadian Peninsula (UK)": C("GB"),
+};
 export function flagFor(name, subj, y) {
+  if (name === "Egypt" && y < 1914) return "x:tr";
+  const col = COLONY[name];
+  if (col && y >= col[1] && y <= col[2]) {
+    if (col[0] === "ZA") return "h:za_old";
+    if (col[0] === "ID") return "x:id";
+    if (col[0] === "CN") return "h:cn_5";
+    if (col[0] === "TR") return "x:tr";
+    return powerFlag(col[0], y);
+  }
   if (OWN[name] && (!subj || subj === name || /^(USA|UK|Russia)$/.test(subj))) return OWN[name](y);
   let p = null;
   for (const [re, code] of SUFFIX) if (re.test(name)) { p = code; break; }

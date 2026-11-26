@@ -2,6 +2,7 @@
 // Writes <OUT>/hist/s<year>.bin (border segments between the snapshot's units) and returns the eras.
 import fs from "fs";
 import { topology } from "topojson-server";
+import { presimplify, simplify, quantile } from "topojson-simplify";
 import { feature } from "topojson-client";
 import { geoArea, geoInterpolate, geoDistance } from "d3-geo";
 import polylabel from "polylabel";
@@ -70,11 +71,13 @@ export const EVENTS = {
     { y: 1922, m: ["União Soviética", "h:su", ["USSR", "Ukraine", "Georgia", "Armenia", "Azerbaijan", "Far Eastern SSR", "White Russia", "South Russia"]] },
     { y: 1923, r: { "Ottoman Sultanate": "Turquia" } },
     { y: 1926, r: { "Hejaz": "Reino de Hejaz e Négede" }, f: { "Hejaz": "x:sa" } },
+    { y: 1928, r: { "Chinese Warlords": "República da China" }, f: { "Chinese Warlords": "x:tw" } },
   ],
   1930: [
     { y: 1930, m: ["União Soviética", "h:su", ["White Russia", "Azerbaijan", "Armenia", "Georgia"]] },
     { y: 1932, r: { "Mesopotamia (GB)": "Reino do Iraque", "Manchuria": "Manchukuo (Japão)" }, f: { "Mesopotamia (GB)": "h:iq_k", "Manchuria": "h:manchukuo" } },
     { y: 1932, r: { "Hejaz": "Arábia Saudita" }, f: { "Hejaz": "x:sa" } },
+    { y: 1930, r: { "Chinese Warlords": "República da China" }, f: { "Chinese Warlords": "x:tw" } },
     { y: 1935, r: { "Iran": "Irã" } },
     { y: 1936, r: { "Ethiopia": "Etiópia (ocupada pela Itália)" }, f: { "Ethiopia": "h:it_sav" } },
   ],
@@ -133,12 +136,19 @@ export function buildSnapshots(OUT) {
       }
       return { key: k, subj: subj[u], sr, ll };
     });
-    // border segments between different units
-    const t = topology({ c: g }, 1e6);
+    // border segments between different units, from the map rebuilt on today's provinces (hist_overlay.py)
+    const frag = JSON.parse(fs.readFileSync(`data/android/frag_${sy}.geojson`, "utf8"));
+    if (frag.keys.length !== keys.length || frag.keys.some((k, i) => k !== keys[i])) throw new Error("unit order differs in " + sy);
+    const landSr = new Array(keys.length).fill(0);
+    for (const f of frag.features) { const a = geoArea(f); landSr[f.properties.u] += Math.min(a, 4 * Math.PI - a); }
+    units.forEach((u, i) => { u.sr = landSr[i]; });
+    let t = topology({ c: frag }, 1e6);
+    t = presimplify(t);
+    t = simplify(t, quantile(t, 0.2));
     const geoms = t.objects.c.geometries;
     const use = new Map();
     geoms.forEach((gm) => {
-      const u = gm.properties._u;
+      const u = gm.properties.u;
       const walk = (a) => { if (Array.isArray(a)) a.forEach(walk); else { const k = a < 0 ? ~a : a; if (!use.has(k)) use.set(k, new Set()); use.get(k).add(u); } };
       walk(gm.arcs || []);
     });
