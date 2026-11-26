@@ -177,7 +177,7 @@ class GeoData(ctx: Context) {
         }
 
         val hj = org.json.JSONObject(ctx.assets.open("history.json").bufferedReader().readText())
-        histFrom = hj.optInt("open", hj.getInt("from")); // first year open on the ruler (the review goes back step by step) histTo = hj.getInt("to"); modernFrom = hj.getInt("modernFrom")
+        histFrom = hj.optInt("open", hj.getInt("from")); histTo = hj.getInt("to"); modernFrom = hj.getInt("modernFrom")
         val sj = hj.getJSONArray("snaps")
         snapYears = IntArray(sj.length()) { sj.getJSONObject(it).getInt("y") }
         val ej2 = hj.getJSONArray("eras")
