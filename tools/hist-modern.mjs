@@ -91,7 +91,7 @@ export const ROWS = [
   ["SYR61", null, "x:sy", 1961, 1962, ["SYR"]],
   ["SYR63", null, "h:iq63", 1963, 1971, ["SYR"]],
   ["SYR1", null, "h:far", 1972, 1979, ["SYR"]],
-  ["SYR80", null, "h:uar", 1980, 2024, ["SYR"]],
+  ["SYR80", null, "h:uar", 1980, 2023, ["SYR"]], // governo novo usa a bandeira da independência desde 8/dez/2024
   ["YEMK", "Reino do Iêmen", "h:yem_k", 1946, 1961, ["YEM"]],
   ["YAR", "Iêmen do Norte", "h:yem_n", 1962, 1989, ["YEM"], [44.2, 15.4]],
   ["ADEN", "Áden e protetorados (britânicos)", G, 1946, 1966, ["YEM~S"]],
