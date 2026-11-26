@@ -1,6 +1,6 @@
 // Political units by year 1946–2026, built from pieces of today's countries (situation on 31 December).
 // Row: [key, name (null = today's name), flag, fromYear, toYear, members[], labelPoint?, owner?] (owner: texto de "pertence a"; minúsculo = frase completa)
-const G = "x:gb", F = "x:fr", P = "x:pt", BE = "x:be", NL = "x:nl", ES = "x:es";
+const G = "x:gb", F = "x:fr", P = "x:pt", BE = "x:be", NL = "x:nl", ES = "h:es45"; // Espanha franquista até 1981
 export const MODERN_FROM = 1946;
 export const ROWS = [
   // ---------------- Europe
@@ -40,15 +40,19 @@ export const ROWS = [
   ["BIH1", null, "h:ba92", 1992, 1997, ["BIH"]],
   ["MKD1", "Macedônia", "h:mk92", 1991, 1994, ["MKD"]],
   ["MKD2", "Macedônia", "x:mk", 1995, 2018, ["MKD"]],
+  ["ESP39", null, "h:es45", 1946, 1980, ["ESP"]], // brasão atual desde out–dez/1981
+  ["BTN0", null, "blank", 1946, 1968, ["BTN"]], // primeira bandeira em 1949 (desenho não descrito no Wikipedia); a atual é de 1969
   ["HUN46", null, "h:hu_k", 1946, 1948, ["HUN"]],
   ["HUN49", null, "h:hu49", 1949, 1955, ["HUN"]],
   ["HUN56", null, "h:hu_k", 1956, 1956, ["HUN"]], // tricolor sem brasão oficial desde 23/mai/1957
   // ---------------- Asia
-  ["KORUS", "Coreia (ocupação americana)", "x:us", 1946, 1947, ["KOR"]],
+  ["KORUS", "Coreia (ocupação americana)", "h:us48", 1946, 1947, ["KOR"]],
   ["KORSU", "Coreia (ocupação soviética)", "h:su", 1946, 1947, ["PRK"]],
   ["ROC", "China (República)", "x:tw", 1946, 1948, ["CHN", "TWN"]],
   ["JPNOCC", "Japão (ocupação americana)", "x:jp", 1946, 1951, ["JPN"]],
-  ["OKI", "Okinawa (adm. americana)", "x:us", 1946, 1971, ["JPN~O"]],
+  ["OKI", "Okinawa (adm. americana)", "h:us48", 1946, 1958, ["JPN~O"]],
+  ["OKI59", "Okinawa (adm. americana)", "h:us49", 1959, 1959, ["JPN~O"]],
+  ["OKI60", "Okinawa (adm. americana)", "x:us", 1960, 1971, ["JPN~O"]],
   ["INDBR", "Índia Britânica", G, 1946, 1946, ["IND", "PAK", "BGD"]],
   ["PAK1", "Paquistão", "x:pk", 1947, 1970, ["PAK", "BGD"]],
   ["BGD71", null, "h:bd71", 1971, 1971, ["BGD"]], // mapa tirado em 13/jan/1972
@@ -255,7 +259,15 @@ export const ROWS = [
   ["ANT1", "Antilhas Neerlandesas", "h:an6", 1954, 1985, ["CUW", "SXM", "BES", "ABW"], [-68.9, 12.2]],
   ["ANT2", "Antilhas Neerlandesas", "h:an5", 1986, 2009, ["CUW", "SXM", "BES"], [-68.9, 12.2]],
   ["GLP1", "Guadalupe", "x:gp", 1946, 2006, ["GLP", "MAF", "BLM"]],
-  ["PCZ", "Zona do Canal do Panamá (EUA)", "x:us", 1946, 1978, ["PAN~CZ"], [-79.7, 9.1]],
+  ["PCZ", "Zona do Canal do Panamá (EUA)", "h:us48", 1946, 1958, ["PAN~CZ"], [-79.7, 9.1]],
+  ["PCZ59", "Zona do Canal do Panamá (EUA)", "h:us49", 1959, 1959, ["PAN~CZ"], [-79.7, 9.1]],
+  ["PCZ60", "Zona do Canal do Panamá (EUA)", "x:us", 1960, 1978, ["PAN~CZ"], [-79.7, 9.1]],
+  // EUA: 48 estrelas até 3/jul/1959, 49 até 3/jul/1960; Brasil: 21 estrelas até 1960, 22 até 1968, 23 até 1992; Espanha: águia até 1981
+  ["USA48", null, "h:us48", 1946, 1958, ["USA"]],
+  ["USA49", null, "h:us49", 1959, 1959, ["USA"]],
+  ["BRA21", null, "h:br21", 1946, 1959, ["BRA"]],
+  ["BRA22", null, "h:br22", 1960, 1967, ["BRA"]],
+  ["BRA23", null, "h:br23", 1968, 1991, ["BRA"]],
   ["HTI1", null, "h:ht_old", 1964, 1985, ["HTI"]],
   ["VEN1", null, "h:ve7", 1946, 2005, ["VEN"]],
   // ---------------- Oceania

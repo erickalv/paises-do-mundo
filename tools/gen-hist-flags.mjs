@@ -226,6 +226,27 @@ F.hu_k = svg(H("#CE2939", "#fff", "#477050") + `<path d="M290 190h60v50q0 35-30 
 F.hu49 = svg(H("#CE2939", "#fff", "#477050") + `<circle cx="320" cy="240" r="45" fill="#477050" stroke="#E8B200" stroke-width="6"/>` + star(320, 205, 16, "#CE2939"));
 // Rodésia 1964–1968: bandeira azul-clara com a Union Jack e o escudo
 F.rh64 = svg(`<rect width="640" height="480" fill="#5D9BD5"/>${nest("gb", 0, 0, 320, 240)}<path d="M450 170h60v70q0 40-30 55-30-15-30-55z" fill="#1EB53A" stroke="#333" stroke-width="3"/><rect x="450" y="170" width="60" height="22" fill="#C8102E"/>`);
+// Estados Unidos: 48 estrelas (1912–1959), 49 (4/jul/1959–3/jul/1960)
+const usFlag = (rows, cols) => {
+  let b = `<rect width="640" height="480" fill="#fff"/>`;
+  for (let i = 0; i < 13; i += 2) b += `<rect y="${(480 / 13) * i}" width="640" height="${480 / 13 + 0.5}" fill="#B22234"/>`;
+  b += `<rect width="290" height="${(480 / 13) * 7}" fill="#3C3B6E"/>`;
+  for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) b += star(22 + c * (250 / (cols - 1)), 20 + r * (220 / (rows - 1)), 9, "#fff");
+  return svg(b);
+};
+F.us48 = usFlag(6, 8);
+F.us49 = usFlag(7, 7);
+// Brasil: 21 estrelas (1889–1960), 22 (1960–1968), 23 (1968–1992)
+const brFlag = (n) => {
+  let b = `<rect width="640" height="480" fill="#009B3A"/><polygon points="320,44 600,240 320,436 40,240" fill="#FEDF00"/><circle cx="320" cy="240" r="125" fill="#1D4F9C"/><path d="M198 215q130-30 245 45l-4 18q-115-70-238-40z" fill="#fff"/>`;
+  for (let i = 0; i < n; i++) { const a = Math.PI * (0.15 + 0.7 * ((i * 0.618) % 1)), rr = 40 + ((i * 37) % 70); b += `<circle cx="${320 + Math.cos(a) * rr * (i % 2 ? 1 : -1)}" cy="${255 + Math.sin(a) * rr * 0.8}" r="5" fill="#fff"/>`; }
+  return svg(b);
+};
+F.br21 = brFlag(21);
+F.br22 = brFlag(22);
+F.br23 = brFlag(23);
+// Espanha franquista (1938–1981): vermelho-amarelo-vermelho com a águia de São João
+F.es45 = svg(`<rect width="640" height="480" fill="#AA151B"/><rect y="120" width="640" height="240" fill="#F1BF00"/><path d="M220 150l-75 40 20 10-25 25 25 5-15 25 70-20zM220 150l75 40-20 10 25 25-25 5 15 25-70-20z" fill="#000"/><circle cx="220" cy="148" r="14" fill="#000"/><path d="M185 185h70v60q0 30-35 42-35-12-35-42z" fill="#000"/><path d="M193 192h54v52q0 24-27 34-27-10-27-34z" fill="#AA151B"/><path d="M193 218h54v26q0 24-27 34-27-10-27-34z" fill="#F1BF00"/>`);
 fs.writeFileSync("data/flags-hist.json", JSON.stringify(F));
 console.log("hist flags", Object.keys(F).length, Math.round(JSON.stringify(F).length / 1024), "KB");
 // preview sheet

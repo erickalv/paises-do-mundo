@@ -106,12 +106,25 @@ export const EVENTS = {
     { y: 1939, r: { "Albania": "Albânia (ocupada pela Itália)", "Czechoslovakia": "Boêmia-Morávia e Eslováquia (domínio alemão)", "Poland": "Polônia (ocupada)" }, f: { "Albania": "h:it_sav", "Czechoslovakia": "h:de_emp", "Poland": "blank" } },
     { y: 1940, r: { "France": "França (ocupada / Vichy)" } },
     { y: 1940, m: ["União Soviética", "h:su", ["USSR", "Estonia", "Latvia", "Lithuania"]] },
-    { y: 1941, r: { "Ethiopia (Italy)": "Etiópia" }, f: { "Ethiopia (Italy)": "h:eth_plain" } },
+    { y: 1941, r: { "Ethiopia (Italy)": "Império da Etiópia" }, f: { "Ethiopia (Italy)": "h:eth_emp" } },
   ],
   1945: [
     { y: 1945, f: { "Israel": "x:gb" }, r: { "Burma": "Birmânia (britânica)" } },
     { y: 1945, f: { "Burma": "x:gb" } },
-    { y: 1945, m: ["Índia Britânica", "x:gb", ["India", "Pakistan"]] },
+    { y: 1945, m: ["Índia Britânica", "x:gb", ["India", "Pakistan", "Bangladesh"]] },
+    // revisão 1945 (situação em 31/dez/1945)
+    { y: 1945, r: { "Egypt": "Reino do Egito", "Ethiopia": "Império da Etiópia", "Manchuria": "Manchúria (ocupação soviética)", "Somalia": "Somália (adm. britânica)",
+      "Saar Protectorate": "Sarre (ocupação francesa)", "Rhodesia": "Rodésia do Sul", "Guyana": "Guiana Britânica", "Dutch Guinea": "Nova Guiné Holandesa",
+      "Papua New Guinea": "Papua e Nova Guiné (Austrália)", "American Samoa": "Samoa Americana", "Samoa": "Samoa Ocidental (tutela da Nova Zelândia)",
+      "Tonga": "Tonga (protetorado britânico)", "Wallis and Futuna Islands": "Wallis e Futuna", "Turks and Caicos Islands": "Ilhas Turks e Caicos",
+      "United States Virgin Islands": "Ilhas Virgens Americanas", "Netherlands Antilles": "Curaçao e dependências", "Rapa Nui": "Rapa Nui (Chile)", "Bhutan": "Butão" },
+      f: { "Egypt": "h:eg_k", "Ethiopia": "h:eth_emp", "Manchuria": "h:su", "Somalia": "x:gb", "Yugoslavia": "h:yu_sfr", "Japan (USA)": "x:jp", "Xinjiang": "x:tw",
+      "Papua New Guinea": "x:au", "American Samoa": "h:us48", "Samoa": "x:nz", "Niue": "x:nz", "Tonga": "x:to", "Wallis and Futuna Islands": "x:fr",
+      "Turks and Caicos Islands": "x:gb", "Dominica": "x:gb", "Saint Lucia": "x:gb", "Antigua and Barbuda": "x:gb", "Saint Vincent and the Grenadines": "x:gb",
+      "Grenada": "x:gb", "Saint Kitts and Nevis": "x:gb", "Montserrat": "x:gb", "Anguilla": "x:gb", "Netherlands Antilles": "x:nl", "Saint Martin": "x:fr",
+      "Saint Barthelemy": "x:fr", "Rapa Nui": "x:cl", "Bhutan": "blank" } },
+    { y: 1945, m: ["China", "x:tw", ["China", "Taiwan"]] }, // Taiwan entregue à República da China em 25/out/1945
+    { y: 1945, m: ["Nigéria", "x:gb", ["Nigeria", "Benin"]] }, // o Reino do Benim foi anexado em 1897
   ],
 };
 

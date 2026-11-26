@@ -127,11 +127,15 @@ const SOV = [
 ];
 const SUFFIX = [[/\((UK|GB)\)|\(UK Lybia\)/, "GB"], [/\((FR|France)\)|Frech Lybia/, "FR"], [/\(IT|Italy\)/, "IT"], [/\(Portugal\)/, "PT"], [/\(Spain\)/, "ES"], [/\(Belgium\)/, "BE"], [/\(Dutch\)/, "NL"], [/\((USA)\)/, "US"], [/\(Soviet|USSR\)/, "SU"], [/\(RU\)/, "RU"]];
 
+// Etiópia: bandeira imperial com o Leão de Judá em 1897, 1914–1936 e 1941–1974 (Wikipedia)
+const ethFlag = (y) => (y === 1897 || (y >= 1914 && y < 1936) || y >= 1941 ? "h:eth_emp" : "h:eth_plain");
+const brFlag = (y) => (y < 1960 ? "h:br21" : y < 1968 ? "h:br22" : y < 1992 ? "h:br23" : "x:br");
+
 export function powerFlag(p, y) {
   switch (p) {
     case "GB": return y < 1707 ? "h:england" : y < 1801 ? "h:gb1707" : "x:gb";
     case "FR": return y < 1790 || (y >= 1815 && y < 1830) ? "h:fr_bourbon" : "x:fr";
-    case "ES": return y < 1785 ? "h:es_burgundy" : y >= 1931 && y < 1939 ? "h:es_rep" : "x:es";
+    case "ES": return y < 1785 ? "h:es_burgundy" : y >= 1931 && y < 1939 ? "h:es_rep" : y >= 1939 && y < 1981 ? "h:es45" : "x:es";
     case "PT": return y < 1911 ? "h:pt_mon" : "x:pt";
     case "NL": return y < 1660 ? "h:nl_prince" : "x:nl";
     case "BE": return "x:be";
@@ -141,7 +145,7 @@ export function powerFlag(p, y) {
     case "RU": return y < 1918 ? "x:ru" : "h:su";
     case "SU": return "h:su";
     case "JP": return "x:jp";
-    case "US": return "x:us";
+    case "US": return y >= 1912 && y < 1959 ? "h:us48" : y === 1959 ? "h:us49" : "x:us"; // antes de 1912: pendente
     case "TR": return y < 1793 ? "h:ottoman_old" : "x:tr";
     case "AT": return y < 1919 ? "h:at_hab" : "x:at";
     case "DKN": return "h:dk_norway";
@@ -155,21 +159,21 @@ const OWN = {
   "United Kingdom": (y) => powerFlag("GB", y), "United Kingdom of Great Britain and Ireland": (y) => powerFlag("GB", y), "France": (y) => powerFlag("FR", y), "Spain": (y) => powerFlag("ES", y),
   "Portugal": (y) => powerFlag("PT", y), "Netherlands": () => "x:nl", "Batavian Republic": () => "x:nl", "Belgium": () => "x:be", "Germany": (y) => powerFlag("DE", y), "German Empire": () => "h:de_emp",
   "Prussia": () => "h:prussia", "Italy": (y) => powerFlag("IT", y), "Kingdom of Italy": (y) => powerFlag("IT", y), "Denmark": () => "x:dk", "Denmark-Norway": () => "x:dk",
-  "Russian Empire": () => "x:ru", "USSR": () => "h:su", "Japan": () => "x:jp", "Empire of Japan": () => "x:jp", "Imperial Japan": () => "x:jp", "United States": () => "x:us", "United States of America": () => "x:us",
+  "Russian Empire": () => "x:ru", "USSR": () => "h:su", "Japan": () => "x:jp", "Empire of Japan": () => "x:jp", "Imperial Japan": () => "x:jp", "United States": (y) => powerFlag("US", y), "United States of America": (y) => powerFlag("US", y),
   "Ottoman Empire": () => "x:tr", "Ottoman Sultanate": () => "x:tr", "Turkey": () => "x:tr", "Republic of Turkey": () => "x:tr", "Austrian Empire": () => "h:at_hab", "Austria Hungary": () => "h:at_hab",
   "Austro-Hungarian Empire": () => "h:at_hab", "Austria": () => "x:at", "Hungary": () => "x:hu", "Switzerland": () => "x:ch", "Helvetic Republic": () => "x:ch", "Sweden": () => "x:se", "Sweden–Norway": () => "x:se",
   "Norway": () => "x:no", "Finland": () => "x:fi", "Poland": () => "x:pl", "Czechoslovakia": () => "x:cz", "Romania": () => "x:ro", "Bulgaria": () => "x:bg", "Greece": () => "h:gr_cross", "Serbia": () => "h:yu_fr",
   "Yugoslavia": () => "h:yu_fr", "Montenegro": () => "x:me", "Albania": () => "x:al", "Estonia": () => "x:ee", "Latvia": () => "x:lv", "Lithuania": () => "x:lt", "Ireland": () => "x:ie",
   "Luxembourg": () => "x:lu", "Iceland": () => "x:is", "Qing Empire": () => "h:cn_qing", "Manchu Empire": () => "h:cn_qing", "China": (y) => (y < 1928 ? "h:cn_5" : "x:tw"),
   "Chinese Warlords": () => "h:cn_5", "Chinese warlords": () => "h:cn_5", "Persia": () => "h:ir_old", "Iran": () => "h:ir_old", "Siam": (y) => (y < 1917 ? "h:th_el" : "x:th"), "Rattanakosin Kingdom": () => "h:th_el",
-  "Thailand": () => "x:th", "Korea": () => "x:kr", "Afghanistan": () => "h:af_old", "Ethiopia": () => "h:eth_plain", "Abyssinia": () => "h:eth_plain", "Liberia": () => "x:lr", "Egypt": (y) => (y >= 1922 ? "h:eg_k" : "blank"),
-  "Brazil": () => "x:br", "Kingdom of Brazil": (y) => (y < 1889 ? "h:br_emp" : "x:br"), "Argentina": () => "x:ar", "Chile": () => "x:cl", "Peru": () => "x:pe", "Bolivia": () => "x:bo", "Colombia": () => "x:co", "Venezuela": () => "h:ve7",
+  "Thailand": () => "x:th", "Korea": () => "x:kr", "Afghanistan": () => "h:af_old", "Ethiopia": (y) => ethFlag(y), "Abyssinia": (y) => ethFlag(y), "Liberia": () => "x:lr", "Egypt": (y) => (y >= 1922 ? "h:eg_k" : "blank"),
+  "Brazil": (y) => brFlag(y), "Kingdom of Brazil": (y) => (y < 1889 ? "h:br_emp" : brFlag(y)), "Argentina": () => "x:ar", "Chile": () => "x:cl", "Peru": () => "x:pe", "Bolivia": () => "x:bo", "Colombia": () => "x:co", "Venezuela": () => "h:ve7",
   "Ecuador": () => "x:ec", "Paraguay": () => "x:py", "Uruguay": () => "x:uy", "Mexico": () => "x:mx", "Guatemala": () => "x:gt", "Honduras": () => "x:hn", "El Salvador": () => "x:sv", "Nicaragua": () => "x:ni",
   "Costa Rica": () => "x:cr", "Panama": () => "x:pa", "Cuba": () => "x:cu", "Haiti": () => "x:ht", "Dominican Republic": () => "x:do", "Canada": (y) => (y < 1868 ? powerFlag("GB", y) : "h:ca_red"),
   "Australia": () => "x:au", "New Zealand": () => "x:nz", "Union of South Africa": () => "h:za_old", "Transvaal": () => "h:transvaal", "Orange Free State": () => "h:ofs", "Kingdom of Hawaii": () => "h:hawaii",
   "Saudi Arabia": () => "x:sa", "Nejd": () => "x:sa", "Arabia (Nejd)": () => "x:sa", "Hejaz": () => "x:sa", "Iraq": () => "h:iq_k", "Yemen": () => "h:yem_k", "Oman": () => "h:om_red", "Muscat and Oman": () => "h:om_red",
   "Morocco": () => "h:ma_red", "Tunisia": () => "x:tn", "Nepal": () => "x:np", "Bhutan": () => "x:bt", "Mongolia": () => "h:mn_old", "Tibet": () => "h:tibet", "Manchuria": () => "h:manchukuo",
-  "Jordan": () => "x:jo", "Kuwait": () => "x:kw", "Lebanon": () => "x:lb", "Syria": () => "x:sy", "Philippines": (y) => (y < 1899 ? powerFlag("ES", y) : y < 1946 ? "x:us" : "x:ph"),
+  "Jordan": () => "x:jo", "Kuwait": () => "x:kw", "Lebanon": () => "x:lb", "Syria": () => "x:sy", "Philippines": (y) => (y < 1899 ? powerFlag("ES", y) : y < 1946 ? powerFlag("US", y) : "x:ph"),
   "San Marino": () => "x:sm", "Papal States": () => "h:papal", "Kingdom of the Two Sicilies": () => "h:two_sicilies", "Kingdom of Sardinia": () => "h:savoy", "Bavaria": () => "h:bavaria",
   "Saxony": () => "h:saxony", "Württemberg": () => "h:wurttemberg", "Baden": () => "h:baden", "Hanover": () => "h:hanover", "Tuscany": () => "h:tuscany", "Republic of Kraków": () => "h:krakow",
   "Sultanate of Zanzibar": () => "h:zanzibar", "Zanzibar": () => "h:zanzibar", "Burma": () => "blank", "Ukraine": () => "x:ua", "Georgia": () => "h:ge90", "Armenia": () => "x:am", "Azerbaijan": () => "x:az",
@@ -241,7 +245,7 @@ export function flagFor(name, subj, y) {
 const POWER_OF_FLAG = {
   "x:gb": "GB", "h:gb1707": "GB", "h:england": "GB", "x:fr": "FR", "h:fr_bourbon": "FR", "x:es": "ES", "h:es_burgundy": "ES", "h:es_rep": "ES", "x:pt": "PT", "h:pt_mon": "PT",
   "x:nl": "NL", "h:nl_prince": "NL", "x:be": "BE", "h:de_emp": "DE", "x:de": "DE", "h:it_sav": "IT", "x:it": "IT", "x:dk": "DK", "h:dk_norway": "DK", "x:ru": "RU", "h:su": "SU",
-  "x:jp": "JP", "x:us": "US", "x:tr": "TR", "h:ottoman_old": "TR", "h:at_hab": "AT", "h:za_old": "ZA", "x:au": "AU", "x:nz": "NZ", "h:cn_qing": "CN", "h:cn_5": "CN", "x:tw": "CN",
+  "x:jp": "JP", "x:us": "US", "h:us48": "US", "h:us49": "US", "h:es45": "ES", "x:tr": "TR", "h:ottoman_old": "TR", "h:at_hab": "AT", "h:za_old": "ZA", "x:au": "AU", "x:nz": "NZ", "h:cn_qing": "CN", "h:cn_5": "CN", "x:tw": "CN",
   "h:prussia": "PR", "x:id": "ID", "h:hk_brit": "GB",
 };
 export function powerName(p, y) {
@@ -259,7 +263,7 @@ export function powerName(p, y) {
 // units that are the power itself (English keys of the maps, and Portuguese names given by events)
 const SELF = new Set(["United Kingdom", "United Kingdom of Great Britain and Ireland", "England and Ireland", "England", "France", "Spain", "Spanish Habsburg", "Portugal", "Netherlands",
   "Dutch Republic", "Batavian Republic", "Belgium", "Germany", "German Empire", "Italy", "Kingdom of Italy", "Denmark", "Denmark-Norway", "Russian Empire", "Tsardom of Muscovy", "USSR", "Japan",
-  "Empire of Japan", "Imperial Japan", "Tokugawa shogunate", "Japan (Warring States)", "United States", "United States of America", "Ottoman Empire", "Ottoman Sultanate", "Turkey",
+  "Empire of Japan", "Imperial Japan", "Japan (USA)", "Tokugawa shogunate", "Japan (Warring States)", "United States", "United States of America", "Ottoman Empire", "Ottoman Sultanate", "Turkey",
   "Republic of Turkey", "Austrian Empire", "Austria Hungary", "Austro-Hungarian Empire", "Austria", "Holy Roman Empire", "Qing Empire", "Manchu Empire", "China", "Chinese Warlords",
   "Chinese warlords", "Union of South Africa", "Indonesia", "Prussia", "Brandenburg", "Kingdom of Sardinia", "Australia", "New Zealand", "South Africa", "Taiwan",
   "Reino Unido", "Grã-Bretanha", "Império Alemão", "Confederação da Alemanha do Norte", "União Soviética", "Rússia Soviética", "Reino da Itália", "União Sul-Africana", "República da China",
