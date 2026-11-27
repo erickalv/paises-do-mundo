@@ -5046,6 +5046,24 @@
    }
   },
   {
+   "key": "Upper Hungary",
+   "take": {
+    "from": "Austria Hungary",
+    "adm0": [
+     "SVK"
+    ]
+   }
+  },
+  {
+   "key": "Podolia",
+   "take": {
+    "from": "Right-bank Ukraine",
+    "iso": [
+     "UA-68"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",

@@ -1028,6 +1028,8 @@ export const EVENTS = {
     { y: 1707, /*fixo*/ m: [null, null, ["United Kingdom of Great Britain and Ireland", "Scotland"]] },
     { y: 1707, /*fixo*/ m: [null, null, ["Spain", "Valencia"]] }, // Valência reconquistada por Filipe V após Almansa (25/abr/1707) // Ato de União, 1/mai/1707
     { y: 1690, /*fixo*/ m: [null, null, ["Austria Hungary", "Transylvania"]] }, // Diploma Leopoldino (16/out/1690); antes, principado vassalo otomano
+    { y: 1685, /*fixo*/ m: [null, null, ["Austria Hungary", "Upper Hungary"]] }, // Principado da Alta Hungria (Thököly) extinto em 15/out/1685
+    { y: 1699, /*fixo*/ m: [null, null, ["Right-bank Ukraine", "Podolia"]] }, // Podólia devolvida à Polônia-Lituânia em Karlowitz (1699)
     { y: 1718, /*fixo*/ m: [null, null, ["Austria Hungary", "Banat"]] }, // Banato de Temesvár: conquistado em out/1716, reconhecido em Passarowitz (21/jul/1718)
     { y: 1739, /*fixo*/ m: [null, null, ["Serbia", "Habsburg Serbia"]] }, // Reino da Sérvia habsburgo (1718–1739) devolvido em Belgrado, 18/set/1739
     { y: 1737, /*fixo*/ m: [null, null, ["Wallachia", "Oltenia"]] }, // Banato de Craiova reconquistado no fim de 1737; volta à Valáquia em 1739
@@ -10576,6 +10578,11 @@ export const EVENTS = {
     // Qing: sem bandeira oficial antes de 1862; a triangular (1862) não é descrita em detalhe; retangular promulgada em 1888 (um evento por ano para vencer as fusões)
     ...Array.from({ length: 204 }, (_, i) => ({ y: 1684 + i, y1: 1684 + i, f: { "Manchu Empire": "blank" } })),
     // correções de anacronismos (aplicadas por último; fontes: Wikipedia)
+    ...perYear(1600, 1681, { m: [null, null, ["Austria Hungary", "Upper Hungary"]] }), /*fixo*/
+    ...perYear(1682, 1684, { r: { "Upper Hungary": "Principado da Alta Hungria (Thököly, vassalo otomano)" }, f: { "Upper Hungary": "blank" }, o: { "Upper Hungary": "Império Otomano" } }), /*fixo*/ // 19/nov/1682–15/out/1685; capital Kassa
+    ...perYear(1600, 1671, { m: [null, null, ["Right-bank Ukraine", "Podolia"]] }), /*fixo*/
+    ...perYear(1672, 1682, { r: { "Podolia": "Podólia (eialete otomano)" }, f: { "Podolia": "blank" }, o: { "Podolia": "Império Otomano" } }), /*fixo*/ // Kamianets tomada em 1672 (Tratado de Buchach)
+    ...perYear(1683, 1698, { r: { "Podolia": "Podólia (disputada; Kamianets otomana e bloqueada)" }, f: { "Podolia": "blank" }, o: { "Podolia": null } }), /*fixo*/ // depois de 1683 o domínio otomano se limitou à fortaleza bloqueada
     ...perYear(1689, 1690, { r: { "Ireland": "Reino da Irlanda (dividido entre jacobitas e guilhermitas)" }, f: { "Ireland": "blank" }, o: { "Ireland": null } }), /*fixo*/ // guerra guilhermita (12/mar/1689–3/out/1691): Ulster guilhermita em 1689; jacobitas a oeste do Shannon em 1690
     ...perYear(1634, 1660, { r: { "Lorraine": "Ducado da Lorena (ocupação francesa)" }, f: { "Lorraine": "x:fr" }, o: { "Lorraine": null } }), /*fixo*/ // ocupado em 1634; Carlos IV restaurado em 1661
     ...perYear(1670, 1697, { r: { "Lorraine": "Ducado da Lorena (ocupação francesa)" }, f: { "Lorraine": "x:fr" }, o: { "Lorraine": null } }), /*fixo*/ // invadido em 1670; devolvido pelo Tratado de Ryswick (1697)
