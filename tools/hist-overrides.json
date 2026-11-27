@@ -4312,6 +4312,33 @@
    }
   },
   {
+   "key": "Louisiana N",
+   "take": {
+    "from": "United States of America",
+    "iso": [
+     "US-MO",
+     "US-IA",
+     "US-NE",
+     "US-KS",
+     "US-OK",
+     "US-SD",
+     "US-ND",
+     "US-MT",
+     "US-WY"
+    ]
+   }
+  },
+  {
+   "key": "Louisiana S",
+   "take": {
+    "from": "Confederate States",
+    "iso": [
+     "US-LA",
+     "US-AR"
+    ]
+   }
+  },
+  {
    "key": "Kingdom of Haiti",
    "take": {
     "from": "Haiti",
