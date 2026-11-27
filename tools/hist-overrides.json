@@ -4387,6 +4387,94 @@
    }
   },
   {
+   "key": "NRW",
+   "take": {
+    "from": "Germany",
+    "iso": [
+     "DE-NW"
+    ]
+   }
+  },
+  {
+   "key": "Altmark",
+   "take": {
+    "from": "Germany",
+    "iso": [
+     "DE-ST"
+    ]
+   }
+  },
+  {
+   "key": "Valais",
+   "take": {
+    "from": "Switzerland",
+    "iso": [
+     "CH-VS"
+    ]
+   }
+  },
+  {
+   "key": "Geneva",
+   "take": {
+    "from": "Switzerland",
+    "iso": [
+     "CH-GE"
+    ]
+   }
+  },
+  {
+   "key": "Tarnopol",
+   "take": {
+    "from": "Austria Hungary",
+    "iso": [
+     "UA-61"
+    ]
+   }
+  },
+  {
+   "key": "Dubrovnik",
+   "take": {
+    "from": [
+     "Bosnia-Herzegovina",
+     "Austria Hungary"
+    ],
+    "iso": [
+     "HR-19"
+    ]
+   }
+  },
+  {
+   "key": "Illyria",
+   "take": {
+    "from": "Austria Hungary",
+    "region": [
+     "SVN/Osrednjeslovenska",
+     "SVN/Gorenjska",
+     "SVN/Jugovzhodna Slovenija",
+     "SVN/Goriška",
+     "SVN/Obalno-kraška",
+     "SVN/Notranjsko-kraška",
+     "SVN/Zasavska"
+    ]
+   }
+  },
+  {
+   "key": "Illyria",
+   "take": {
+    "from": "Austria Hungary",
+    "iso": [
+     "IT-TS",
+     "HR-18",
+     "HR-08",
+     "HR-09",
+     "HR-04",
+     "HR-13",
+     "HR-15",
+     "HR-17"
+    ]
+   }
+  },
+  {
    "key": "Rhine Left",
    "take": {
     "from": "Germany",
