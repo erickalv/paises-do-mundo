@@ -22,6 +22,52 @@ sealed class DialogKind {
 private const val LAND = 0xFFE4DED0.toInt()
 private const val DIM = 0xFF6E6C66.toInt()
 private const val FOUND = 0xFFE6C66E.toInt()
+/** softer yellow: colonies, dependencies and occupied land of a selected country (History tab) */
+private const val SUB = 0xFFE8D8A6.toInt()
+private const val UNKNOWN = "Sem informação neste mapa"
+
+/** Who rules a unit, read from its owner text and name: "Reino Unido", "protetorado britânico", "(ocupação alemã)"... */
+private val RULER_ADJ = mapOf(
+    "alemã" to listOf("Alemanha", "Império Alemão"), "alemão" to listOf("Alemanha", "Império Alemão"),
+    "britânica" to listOf("Reino Unido"), "britânico" to listOf("Reino Unido"), "britânicos" to listOf("Reino Unido"), "britânicas" to listOf("Reino Unido"),
+    "francesa" to listOf("França"), "francês" to listOf("França"), "japonesa" to listOf("Japão"), "japonês" to listOf("Japão"),
+    "italiana" to listOf("Itália"), "italiano" to listOf("Itália"), "americana" to listOf("Estados Unidos"), "americano" to listOf("Estados Unidos"),
+    "soviética" to listOf("União Soviética"), "soviético" to listOf("União Soviética"), "belga" to listOf("Bélgica"),
+    "sul-africana" to listOf("União Sul-Africana", "África do Sul"), "neozelandesa" to listOf("Nova Zelândia"), "australiana" to listOf("Austrália"),
+    "búlgara" to listOf("Bulgária"), "grega" to listOf("Grécia"), "húngara" to listOf("Hungria"), "austro-húngara" to listOf("Áustria-Hungria"),
+    "polonesa" to listOf("Polônia"), "romena" to listOf("Romênia"), "chinesa" to listOf("China"), "portuguesa" to listOf("Portugal"),
+    "espanhola" to listOf("Espanha"), "holandesa" to listOf("Países Baixos"), "israelense" to listOf("Israel"), "turca" to listOf("Turquia"),
+    "marroquina" to listOf("Marrocos"), "indonésia" to listOf("Indonésia"), "tailandesa" to listOf("Tailândia"), "egípcia" to listOf("Egito"),
+    "jordaniana" to listOf("Jordânia"), "dinamarquesa" to listOf("Dinamarca"), "russa" to listOf("Rússia", "Império Russo"), "iraquiana" to listOf("Iraque"),
+    "vietnamita" to listOf("Vietnã"), "indiana" to listOf("Índia"), "etíope" to listOf("Etiópia"),
+)
+private val RULE_WORDS = Regex("""(ocupação|ocupada|ocupado|protetorado|mandato|administração|condomínio)( [a-zà-ú-]+)?( pel[ao]s?)? ([^),;]+)""")
+private val PAREN_ABBR = mapOf("EUA" to "Estados Unidos")
+
+/** names of the countries that rule [u] (empty when it is sovereign) */
+private fun rulersOf(u: YearUnit): List<String> {
+    val out = ArrayList<String>()
+    val o = u.owner
+    if (o != null && o.isNotEmpty() && !o.first().isLowerCase()) out += o
+    val text = u.name + " " + (o ?: "")
+    for (m in RULE_WORDS.findAll(text)) {
+        for (w in m.groupValues[4].split(" e ", ", ")) {
+            val adj = w.trim().split(" ").firstOrNull() ?: continue
+            RULER_ADJ[adj]?.let { out += it }
+            if (w.trim().firstOrNull()?.isUpperCase() == true) out += w.trim()   // "ocupada pela Alemanha"
+        }
+    }
+    // "Havaí (EUA)", "Coreia (Japão)": a country in brackets
+    Regex("""\(([^()]+)\)$""").find(u.name)?.groupValues?.get(1)?.let { p -> if (p.first().isUpperCase() && " " !in p.trim() || p in PAREN_ABBR) out += PAREN_ABBR[p] ?: p }
+    return out
+}
+
+/** true when the sovereign country named [ruler] (a unit of the same year) rules [u] */
+private fun rules(ruler: YearUnit, u: YearUnit): Boolean {
+    if (ruler === u || ruler.owner != null || ruler.name.isEmpty() || "ocupa" in ruler.name) return false
+    val n = ruler.name
+    return rulersOf(u).any { t -> n == t || n.endsWith(" $t") || n.startsWith("$t (") }
+}
 private const val MISSED = 0xFFE58F7E.toInt()
 
 class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
@@ -171,7 +217,11 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
 
     // ---------- tap in the History tab ----------
     /** What the History map shows at a point in the current year. */
-    class Picked(val name: String, val flag: String, val owner: String?, val code: Int, val pieces: Set<Int>)
+    class Picked(val name: String, val flag: String, val owner: String?, val code: Int, val pieces: Set<Int>) {
+        val known get() = name.isNotEmpty() && name != UNKNOWN
+        /** second line of the title: the period of the name, or when an unknown place first shows up */
+        var period: String? = null
+    }
 
     private var pickCacheKey: Pair<Int, Int>? = null
     private var pickCache: List<Pair<DoubleArray, Picked>> = emptyList()
@@ -184,20 +234,22 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
         val out = ArrayList<Pair<DoubleArray, Picked>>()
         for (p in picks) {
             val pk = unitAt(p[0], p[1], p[2].toInt()) ?: continue
-            if (out.none { it.second.code == pk.code && it.second.name == pk.name }) out += p to pk
+            if (out.none { it.second.code == pk.code && it.second.name == pk.name }) { pk.period = periodText(p, pk); out += p to pk }
         }
         pickCache = out
         return out
     }
 
-    private fun unitAt(lon: Double, lat: Double, piece: Int): Picked? {
-        val info = data.yearInfo(year)
+    private fun unitAt(lon: Double, lat: Double, piece: Int): Picked? = unitAt(lon, lat, piece, year)
+
+    private fun unitAt(lon: Double, lat: Double, piece: Int, y: Int): Picked? {
+        val info = data.yearInfo(y)
         if (info.snap >= 0) {
             val su = data.fill(info.snap).unitAt(lon, lat)
             if (su < 0) return null
             val code = info.snapMap!!.getOrElse(su) { -1 }
             val u = info.units.getOrNull(code)
-            return if (u == null || u.name.isEmpty()) Picked("Sem informação neste mapa", "blank", null, code, emptySet())
+            return if (u == null || u.name.isEmpty()) Picked(UNKNOWN, "blank", null, code, emptySet())
             else Picked(u.name, u.flag, u.owner, code, emptySet())
         }
         if (piece < 0) return null
@@ -205,6 +257,44 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
         val u = info.units.getOrNull(code) ?: return null
         val pieces = info.unitOfPiece.indices.filter { info.unitOfPiece[it] == code }.toSet()
         return Picked(u.name, u.flag, u.owner, code, pieces)
+    }
+
+    /** Years of the History ruler grouped in steps that show the same map: one per era before 1946, one per year after. */
+    private val steps: List<IntRange> by lazy {
+        val out = ArrayList<IntRange>()
+        for (e in data.eras) {
+            val a = maxOf(e.y0, data.histFrom); val b = minOf(e.y1, data.modernFrom - 1, data.histTo)
+            if (a <= b) out += a..b
+        }
+        for (y in maxOf(data.modernFrom, data.histFrom)..data.histTo) out += y..y
+        out
+    }
+    /** name at a point → the years it keeps that name, so moving the ruler does not search again */
+    private val periodCache = HashMap<String, IntRange>()
+
+    private fun nameAt(p: DoubleArray, y: Int): String = unitAt(p[0], p[1], p[2].toInt(), y)?.takeIf { it.known }?.name ?: ""
+
+    private fun periodText(p: DoubleArray, pk: Picked): String? {
+        val i0 = steps.indexOfFirst { year in it }
+        if (i0 < 0) return null
+        if (!pk.known) {
+            // an unknown place: the first later year in which the map shows something there
+            for (i in i0 + 1 until steps.size) if (nameAt(p, steps[i].first).isNotEmpty()) return "Aparece no mapa em ${steps[i].first}"
+            return null
+        }
+        val key = "${p[0]},${p[1]}|${pk.name}"
+        val r = periodCache[key]?.takeIf { year in it } ?: run {
+            var a = i0; var b = i0
+            while (a > 0 && nameAt(p, steps[a - 1].first) == pk.name) a--
+            while (b < steps.size - 1 && nameAt(p, steps[b + 1].first) == pk.name) b++
+            (steps[a].first..steps[b].last).also { periodCache[key] = it }
+        }
+        val from = if (r.first <= data.histFrom) "antes de ${data.histFrom}" else "${r.first}"
+        return when {
+            r.last >= data.histTo -> "desde $from"
+            r.first == r.last -> "só em ${r.first}"
+            else -> "de $from a ${r.last}"
+        }.replaceFirstChar { it.uppercaseChar() }
     }
 
     /** Tap in the History tab: select the land under the finger (or the closest small island), tap again to clear. */
@@ -259,10 +349,17 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
         val info = if (mode == Mode.HISTORY) data.yearInfo(year) else null
         val pks = if (mode == Mode.HISTORY) picked().map { it.second } else emptyList()
         val pickPieces = HashSet<Int>().also { set -> pks.forEach { set.addAll(it.pieces) } }
+        // colonies and occupied land of the selected countries get a softer yellow
+        val pickCodes0 = pks.map { it.code }.filter { it >= 0 }.toSet()
+        val subCodes = if (info == null || pickCodes0.isEmpty()) emptySet() else {
+            val rulers = pickCodes0.mapNotNull { info.units.getOrNull(it) }
+            info.units.indices.filter { i -> i !in pickCodes0 && info.units[i].name.isNotEmpty() && rulers.any { r -> rules(r, info.units[i]) } }.toSet()
+        }
+        val subPieces = if (info != null && info.snap < 0 && subCodes.isNotEmpty()) info.unitOfPiece.indices.filter { info.unitOfPiece[it] in subCodes }.toSet() else emptySet()
         val snapUnits = info?.snapMap?.let { m -> ByteArray(m.size * 4).also { b -> for (i in m.indices) GlobeRenderer.putCode(b, i, m[i]) } }
         for (p in 0 until n) {
             val o = data.pieceOwner[p]
-            val c = if (p in pickPieces) FOUND else if (o >= 0) colorOf(data.entities[o]) else LAND
+            val c = if (p in pickPieces) FOUND else if (p in subPieces) SUB else if (o >= 0) colorOf(data.entities[o]) else LAND
             pal[p * 4] = ((c shr 16) and 0xFF).toByte(); pal[p * 4 + 1] = ((c shr 8) and 0xFF).toByte()
             pal[p * 4 + 2] = (c and 0xFF).toByte(); pal[p * 4 + 3] = 0xFF.toByte()
             val code = info?.unitOfPiece?.getOrNull(p) ?: if (o >= 0) o else 100000 + p
@@ -270,7 +367,8 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
         }
         val dots = FloatArray(dotEntities.size * 4)
         for ((k, ei) in dotEntities.withIndex()) {
-            val c = if (data.firstPieceOf[ei] in pickPieces) FOUND else colorOf(data.entities[ei])
+            val fp = data.firstPieceOf[ei]
+            val c = if (fp in pickPieces) FOUND else if (fp in subPieces) SUB else colorOf(data.entities[ei])
             dots[k * 4] = ((c shr 16) and 0xFF) / 255f; dots[k * 4 + 1] = ((c shr 8) and 0xFF) / 255f
             dots[k * 4 + 2] = (c and 0xFF) / 255f
             // alpha 0.5 = draw the dot with a strong ring (tapped, not found yet)
@@ -279,7 +377,8 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
         val sm = info?.snapMap
         val pickCodes = pks.map { it.code }.filter { it >= 0 }.toSet()
         val pickUnits = if (sm != null && pickCodes.isNotEmpty()) sm.indices.filter { sm[it] in pickCodes }.toSet() else emptySet()
-        return Style(pal, units, mode == Mode.HISTORY, dots, info?.snap ?: -1, snapUnits, pickUnits,
+        val subUnits = if (sm != null && subCodes.isNotEmpty()) sm.indices.filter { sm[it] in subCodes }.toSet() else emptySet()
+        return Style(pal, units, mode == Mode.HISTORY, dots, info?.snap ?: -1, snapUnits, pickUnits, subUnits,
             if (mode == Mode.GAME) outline else null)
     }
 
@@ -299,8 +398,9 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
                 val pks = picked()
                 // a selected unit's title moves to where it was tapped (and comes back when it is unselected)
                 pks.forEachIndexed { i, (p, pk) ->
+                    val own = pk.owner?.let { if (it.first().isLowerCase()) it.replaceFirstChar { c -> c.uppercaseChar() } else "pertence a $it" }
                     out += LabelItem("pick$i", pk.name, pk.flag, p[0], p[1], 0.0, true, top = true, missed = false,
-                        sub = pk.owner?.let { if (it.first().isLowerCase()) it.replaceFirstChar { c -> c.uppercaseChar() } else "pertence a $it" })
+                        sub = listOfNotNull(own, pk.period).joinToString("\n").ifEmpty { null })
                 }
                 val pickedCodes = pks.map { it.second.code }.toSet()
                 info.units.filterIndexed { i, u -> u.name.isNotEmpty() && i !in pickedCodes }

@@ -390,10 +390,11 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
                 if (px < min && !dotOk && !(mode == 2 && it.missed && px > 25 * d2)) continue
             }
             val sub = it.sub
+            val subs = sub?.split('\n') ?: emptyList()   // the second line may hold several lines
             val bmp = flag(it.flag)
             val fwE = if (bmp != null) fw + gap else 0f   // no flag: only the name
-            val h = if (sub != null) fh + 2 * pad + subText.textSize + 3 * d else fh + 2 * pad
-            val w = pad + fwE + max(text.measureText(it.name), if (sub != null) subText.measureText(sub) else 0f) + pad * 1.4f
+            val h = if (sub != null) fh + 2 * pad + subs.size * (subText.textSize + 3 * d) else fh + 2 * pad
+            val w = pad + fwE + max(text.measureText(it.name), subs.maxOfOrNull { l -> subText.measureText(l) } ?: 0f) + pad * 1.4f
             val rpx = sqrt(it.sr / PI) * R
             // a label wider than its country sits above it, with a pointer to the right place
             val above = it.dot || rpx * 2.2 < w
@@ -421,7 +422,7 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
             if (sub == null) canvas.drawText(it.name, tx, y + h / 2 - (text.descent() + text.ascent()) / 2, text)
             else {
                 canvas.drawText(it.name, tx, y + pad + fh / 2 - (text.descent() + text.ascent()) / 2, text)
-                canvas.drawText(sub, tx, y + pad + fh + 3 * d - subText.ascent(), subText)
+                subs.forEachIndexed { k, l -> canvas.drawText(l, tx, y + pad + fh + 3 * d + k * (subText.textSize + 3 * d) - subText.ascent(), subText) }
             }
         }
     }

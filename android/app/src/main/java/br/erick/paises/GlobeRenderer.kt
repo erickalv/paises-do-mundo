@@ -29,6 +29,7 @@ class Style(
     val snap: Int = -1,            // before 1946: index of the historical map whose borders are drawn
     val snapUnits: ByteArray? = null, // RGBA-encoded unit code per unit of that map
     val pickUnits: Set<Int> = emptySet(), // before 1946: units of the historical map painted yellow (the tapped one)
+    val subUnits: Set<Int> = emptySet(),  // before 1946: units painted a softer yellow (colonies and occupied land of the tapped one)
     val outline: FloatArray? = null, // game: segments (ax ay az bx by bz) of the outline drawn strong
 )
 
@@ -113,9 +114,10 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
         glEnable(GL_STENCIL_TEST)
         glStencilFunc(GL_ALWAYS, 1, 0xFF); glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE)
         glDrawElements(GL_TRIANGLES, landCount, GL_UNSIGNED_INT, 0)
-        if (st.snap >= 0 && st.pickUnits.isNotEmpty()) {
+        if (st.snap >= 0 && (st.pickUnits.isNotEmpty() || st.subUnits.isNotEmpty())) {
             glStencilFunc(GL_EQUAL, 1, 0xFF); glStencilOp(GL_KEEP, GL_KEEP, GL_KEEP)
-            drawFill(v, st.snap, st.pickUnits)
+            if (st.subUnits.isNotEmpty()) drawFill(v, st.snap, st.subUnits, SUB_RGB)
+            if (st.pickUnits.isNotEmpty()) drawFill(v, st.snap, st.pickUnits, PICK_RGB)
         }
         glDisable(GL_STENCIL_TEST)
         // borders
@@ -152,7 +154,7 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
     }
 
     /** Yellow fill of the tapped unit of a historical map: only the chunks of that unit are drawn. */
-    private fun drawFill(v: View3D, snap: Int, units: Set<Int>) {
+    private fun drawFill(v: View3D, snap: Int, units: Set<Int>, rgb: FloatArray) {
         val m = data.fill(snap)
         if (fillSnap != snap) {
             if (fillVao != 0) { glDeleteVertexArrays(1, intArrayOf(fillVao), 0); glDeleteBuffers(2, fillBufs, 0); fillVao = 0 }
@@ -170,6 +172,7 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
         }
         glUseProgram(progFill)
         common(progFill, v)
+        glUniform3fv(glGetUniformLocation(progFill, "uColor"), 1, rgb, 0)
         glBindVertexArray(fillVao)
         glBindBuffer(GL_ARRAY_BUFFER, fillBufs[0])
         for (c in m.chunkUnit.indices) {
@@ -542,7 +545,10 @@ void main() {
         const val FS_FILL = """#version 300 es
 precision mediump float;
 in float vZ; out vec4 o;
-void main() { if (vZ < 0.0) discard; o = vec4(230.0 / 255.0, 198.0 / 255.0, 110.0 / 255.0, 1.0); }"""
+uniform vec3 uColor;
+void main() { if (vZ < 0.0) discard; o = vec4(uColor, 1.0); }"""
+        val PICK_RGB = floatArrayOf(230 / 255f, 198 / 255f, 110 / 255f)  // same yellow as FOUND in AppModel
+        val SUB_RGB = floatArrayOf(232 / 255f, 216 / 255f, 166 / 255f)  // same as SUB in AppModel
 
         const val VS_DOT = "#version 300 es\n" + PROJ + """
 layout(location = 0) in vec3 aPos;
