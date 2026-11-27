@@ -145,7 +145,7 @@ export function powerFlag(p, y) {
     case "RU": return y < 1918 ? "x:ru" : "h:su";
     case "SU": return "h:su";
     case "JP": return "x:jp";
-    case "US": return y >= 1877 && y < 1890 ? "h:us38" : y === 1890 ? "h:us43" : y >= 1891 && y < 1896 ? "h:us44" : y >= 1896 && y < 1908 ? "h:us45" : y >= 1908 && y < 1912 ? "h:us46" : y >= 1912 && y < 1959 ? "h:us48" : y === 1959 ? "h:us49" : "x:us"; // antes de 1877: pendente
+    case "US": return y >= 1867 && y < 1877 ? "h:us37" : y >= 1877 && y < 1890 ? "h:us38" : y === 1890 ? "h:us43" : y >= 1891 && y < 1896 ? "h:us44" : y >= 1896 && y < 1908 ? "h:us45" : y >= 1908 && y < 1912 ? "h:us46" : y >= 1912 && y < 1959 ? "h:us48" : y === 1959 ? "h:us49" : "x:us"; // antes de 1867: pendente
     case "TR": return y < 1793 ? "h:ottoman_old" : "x:tr";
     case "AT": return y < 1919 ? "h:at_hab" : "x:at";
     case "DKN": return "h:dk_norway";
@@ -245,7 +245,7 @@ export function flagFor(name, subj, y) {
 const POWER_OF_FLAG = {
   "x:gb": "GB", "h:gb1707": "GB", "h:england": "GB", "x:fr": "FR", "h:fr_bourbon": "FR", "x:es": "ES", "h:es_burgundy": "ES", "h:es_rep": "ES", "x:pt": "PT", "h:pt_mon": "PT",
   "x:nl": "NL", "h:nl_prince": "NL", "x:be": "BE", "h:de_emp": "DE", "x:de": "DE", "h:it_sav": "IT", "x:it": "IT", "x:dk": "DK", "h:dk_norway": "DK", "x:ru": "RU", "h:su": "SU",
-  "x:jp": "JP", "x:us": "US", "h:us48": "US", "h:us49": "US", "h:us38": "US", "h:us43": "US", "h:us44": "US", "h:us45": "US", "h:us46": "US", "h:za_red": "ZA", "h:es45": "ES", "h:es36": "ES", "x:tr": "TR", "h:ottoman_old": "TR", "h:at_hab": "AT", "h:za_old": "ZA", "x:au": "AU", "x:nz": "NZ", "h:cn_qing": "CN", "h:cn_5": "CN", "x:tw": "CN",
+  "x:jp": "JP", "x:us": "US", "h:us48": "US", "h:us49": "US", "h:us37": "US", "h:us38": "US", "h:us43": "US", "h:us44": "US", "h:us45": "US", "h:us46": "US", "h:za_red": "ZA", "h:es45": "ES", "h:es36": "ES", "x:tr": "TR", "h:ottoman_old": "TR", "h:at_hab": "AT", "h:za_old": "ZA", "x:au": "AU", "x:nz": "NZ", "h:cn_qing": "CN", "h:cn_5": "CN", "x:tw": "CN",
   "h:prussia": "PR", "h:de_nazi": "DE", "x:id": "ID", "h:hk_brit": "GB",
 };
 export function powerName(p, y) {

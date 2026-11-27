@@ -2789,7 +2789,7 @@
    }
   },
   {
-   "key": "Canada",
+   "key": "Prince Edward Island",
    "iso": [
     "CA-PE"
    ]
@@ -2799,6 +2799,136 @@
    "iso": [
     "FJ-R"
    ]
+  },
+  {
+   "key": "Serbia 1878 gains",
+   "take": {
+    "from": [
+     "Serbia",
+     "Ottoman Empire"
+    ],
+    "iso": [
+     "RS-20",
+     "RS-21",
+     "RS-22",
+     "RS-23",
+     "RS-24"
+    ]
+   }
+  },
+  {
+   "key": "Niksic",
+   "take": {
+    "from": "Montenegro",
+    "iso": [
+     "ME-12"
+    ]
+   }
+  },
+  {
+   "key": "Montenegro 1878 gains",
+   "take": {
+    "from": "Montenegro",
+    "iso": [
+     "ME-09",
+     "ME-16",
+     "ME-02"
+    ]
+   }
+  },
+  {
+   "key": "Ulcinj",
+   "take": {
+    "from": "Montenegro",
+    "iso": [
+     "ME-20"
+    ]
+   }
+  },
+  {
+   "key": "Northern Dobruja",
+   "take": {
+    "from": "Romania",
+    "iso": [
+     "RO-CT",
+     "RO-TL"
+    ]
+   }
+  },
+  {
+   "key": "Southern Bessarabia",
+   "take": {
+    "from": "Bessarabia",
+    "iso": [
+     "MD-CA",
+     "MD-CT",
+     "MD-TA"
+    ]
+   }
+  },
+  {
+   "key": "Adjara",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "GE-AJ"
+    ]
+   }
+  },
+  {
+   "key": "Xinjiang",
+   "take": {
+    "from": "Manchu Empire",
+    "iso": [
+     "CN-XJ"
+    ]
+   }
+  },
+  {
+   "key": "Kokand",
+   "take": {
+    "from": [
+     "Russian Empire",
+     "central Asian khanates"
+    ],
+    "iso": [
+     "UZ-FA",
+     "UZ-NG",
+     "UZ-AN",
+     "KG-O",
+     "KG-J",
+     "KG-B"
+    ]
+   }
+  },
+  {
+   "key": "Khiva",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "UZ-XO",
+     "UZ-QR",
+     "TM-D"
+    ]
+   }
+  },
+  {
+   "key": "Aceh",
+   "take": {
+    "from": "Netherlands Indies",
+    "iso": [
+     "ID-AC"
+    ]
+   }
+  },
+  {
+   "key": "Gabon",
+   "take": {
+    "from": "French Congo",
+    "adm0": [
+     "GAB"
+    ]
+   }
   }
  ]
 }
