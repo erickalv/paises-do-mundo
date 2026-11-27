@@ -4904,6 +4904,19 @@
    }
   },
   {
+   "key": "Banat",
+   "take": {
+    "from": "Austria Hungary",
+    "iso": [
+     "RO-TM",
+     "RO-CS",
+     "RS-02",
+     "RS-03",
+     "RS-04"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
