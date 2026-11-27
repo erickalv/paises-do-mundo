@@ -382,6 +382,14 @@ F.om70 = svg(inner("om").replace("M174.6-35.4h564.9v190h-565z", "M213-35.4h564.9
 F.lc67 = svg(`<path fill="#65cfff" d="M0 0h640v480H0z"/><path fill="#fff" d="M320 50L505 438H135z"/><path fill="#000001" d="M320 105L475 438H165z"/><path fill="#ffce00" d="M320 300L475 438H165z"/>`);
 // Cidade Livre de Danzig 1920–39: vermelha com duas cruzes brancas e coroa dourada
 F.danzig = svg(`<rect width="640" height="480" fill="#D21034"/><g fill="#fff"><path d="M150 205h40v-30h20v30h40v20h-40v30h-20v-30h-40z"/><path d="M150 335h40v-30h20v30h40v20h-40v30h-20v-30h-40z"/></g><path d="M150 150l15-50 25 30 10-40 10 40 25-30 15 50z" fill="#FFD700"/>`);
+// EUA 4/jul/1891 a 3/jul/1896: 44 estrelas em fileiras 8-7-7-7-7-8
+F.us44 = usRows([8, 7, 7, 7, 7, 8]);
+// Noruega 1844–1898: com a marca da união no cantão (simplificada; lei de 10/dez/1898 a retirou, bandeira "pura" desde 1899)
+{
+  const w = 180, h = 180, cx = w / 2, cy = h / 2;
+  F.no_union = svg(`${inner("no")}<rect width="${w}" height="${h}" fill="#D21034"/><rect x="${cx - 22}" width="44" height="${h}" fill="#fff"/><rect x="${cx - 12}" width="24" height="${h}" fill="#00205B"/>` +
+    `<path d="M0 0L${cx} ${cy}L0 ${h}Z M${w} 0L${cx} ${cy}L${w} ${h}Z" fill="#005293"/><path d="M0 ${cy - 12}H${cx - 12}L${cx} ${cy}L${cx - 12} ${cy + 12}H0Z M${w} ${cy - 12}H${cx + 12}L${cx} ${cy}L${cx + 12} ${cy + 12}H${w}Z" fill="#FECB00"/>`);
+}
 fs.writeFileSync("data/flags-hist.json", JSON.stringify(F));
 console.log("hist flags", Object.keys(F).length, Math.round(JSON.stringify(F).length / 1024), "KB");
 // preview sheet

@@ -13,7 +13,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__)) + "/.."
 A = ROOT + "/android/app/src/main/assets/"
 hist = json.load(open(A + "history.json"))
 ents = {e["id"]: e for e in json.load(open(A + "entities.json"))}
-Y0, Y1 = 1900, hist["to"]
+Y0, Y1 = hist["open"], hist["to"]
 
 def clean(s):
     s = re.sub(r"\s*\((acting|interim|f|\d+(st|nd|rd|th) time)\)", "", s)
@@ -98,7 +98,11 @@ def ttype(name, own, y):
     return "País independente"
 
 out = {}
+REGNAL = {"Alexander": "Alexandre", "Charles": "Carlos", "Constantine": "Constantino", "Farouk": "Faruk"}
 def add(name, y, nm):
+    # monarcas no formato da DBpedia ("Carol II of Romania"): tira o país e traduz o nome
+    m = re.match(r"^(\S+)((?: [IVX]+)?) of [A-Z][\w ]+$", nm)
+    if m: nm = REGNAL.get(m.group(1), m.group(1)) + m.group(2)
     lst = out.setdefault(name, [])
     if lst and lst[-1][2] == nm and lst[-1][1] == y - 1: lst[-1][1] = y
     else: lst.append([y, y, nm])
