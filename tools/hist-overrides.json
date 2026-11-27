@@ -5075,6 +5075,44 @@
    }
   },
   {
+   "key": "Dutch East",
+   "take": {
+    "from": "Netherlands",
+    "iso": [
+     "NL-UT",
+     "NL-GE",
+     "NL-OV"
+    ]
+   }
+  },
+  {
+   "key": "French Flanders",
+   "take": {
+    "from": "France",
+    "iso": [
+     "FR-59"
+    ]
+   }
+  },
+  {
+   "key": "Artois",
+   "take": {
+    "from": "France",
+    "iso": [
+     "FR-62"
+    ]
+   }
+  },
+  {
+   "key": "Roussillon",
+   "take": {
+    "from": "France",
+    "iso": [
+     "FR-66"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
