@@ -5064,6 +5064,17 @@
    }
   },
   {
+   "key": "Franche-Comte",
+   "take": {
+    "from": "France",
+    "iso": [
+     "FR-25",
+     "FR-39",
+     "FR-70"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
