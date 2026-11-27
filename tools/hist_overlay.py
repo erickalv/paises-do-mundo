@@ -124,9 +124,9 @@ for year in YEARS:
     for o in OVR.get(str(year), []):
         if "take" in o:
             t = o["take"]
-            src, (x0, y0, x1, y1) = key_index[t["from"]], t.get("bbox", [-180, -90, 180, 90])
+            src, (x0, y0, x1, y1) = {key_index[k] for k in ([t["from"]] if isinstance(t["from"], str) else t["from"]) if k in key_index}, t.get("bbox", [-180, -90, 180, 90])
             for k, (g, u, a3, iso) in enumerate(out):
-                if u != src or ("adm0" in t and a3 not in t["adm0"]) or ("iso" in t and iso not in t["iso"]) or ("region" in t and REGION.get(iso) not in t["region"]):
+                if u not in src or ("adm0" in t and a3 not in t["adm0"]) or ("iso" in t and iso not in t["iso"]) or ("region" in t and REGION.get(iso) not in t["region"]):
                     continue
                 c = g.representative_point()
                 if x0 <= c.x <= x1 and y0 <= c.y <= y1:

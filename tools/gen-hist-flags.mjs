@@ -258,6 +258,33 @@ F.bn06 = svg(`<rect width="640" height="480" fill="#F7E017"/><path d="M0 70L640 
 F.ck73 = svg(`<rect width="640" height="480" fill="#007A3D"/>` + [...Array(15)].map((_, i) => { const a = (2 * Math.PI * i) / 15; return star(320 + 150 * Math.sin(a), 240 - 150 * Math.cos(a), 22, "#FCD116"); }).join("")); // Ilhas Cook 1974–1979
 F.kg92 = svg(`<rect width="640" height="480" fill="#E8112D"/>` + [...Array(40)].map((_, i) => { const a = (2 * Math.PI * i) / 40; return `<path d="M${320 + 70 * Math.sin(a)} ${240 - 70 * Math.cos(a)}Q${320 + 115 * Math.sin(a + 0.08)} ${240 - 115 * Math.cos(a + 0.08)} ${320 + 150 * Math.sin(a)} ${240 - 150 * Math.cos(a)}" stroke="#FFEF00" stroke-width="7" fill="none"/>`; }).join("") + `<circle cx="320" cy="240" r="75" fill="#FFEF00"/><circle cx="320" cy="240" r="52" fill="#E8112D"/><path d="M272 225q48-30 96 0M272 255q48-30 96 0M300 195v90M340 195v90" stroke="#FFEF00" stroke-width="8" fill="none"/>`); // Quirguistão 1992–2023 (raios ondulados)
 F.hn26 = svg(H("#0F2D69", "#fff", "#0F2D69") + [[320, 240], [220, 195], [420, 195], [220, 285], [420, 285]].map(([x, y]) => star(x, y, 26, "#0F2D69")).join("")); // Honduras: azul-marinho desde 27/jan/2026
+// 1900–1934 (revisão de 1934 a 1900)
+const usRows = (rows) => {
+  let b = `<rect width="640" height="480" fill="#fff"/>`;
+  for (let i = 0; i < 13; i += 2) b += `<rect y="${(480 / 13) * i}" width="640" height="${480 / 13 + 0.5}" fill="#B22234"/>`;
+  b += `<rect width="290" height="${(480 / 13) * 7}" fill="#3C3B6E"/>`;
+  rows.forEach((n, r) => { const dx = 250 / 7, x0 = 22 + (8 - n) * dx / 2; for (let c = 0; c < n; c++) b += star(x0 + c * dx, 20 + r * (220 / (rows.length - 1)), 9, "#fff"); });
+  return svg(b);
+};
+F.us45 = usRows([8, 7, 8, 7, 8, 7]); // 4/jul/1896 a 3/jul/1908
+F.us46 = usRows([8, 8, 7, 8, 7, 8]); // 4/jul/1908 a 3/jul/1912
+// RSFSR 1918–1937: vermelha com "РСФСР" dourado no canto superior
+F.rsfsr = svg(`<rect width="640" height="480" fill="#CC0000"/><text x="30" y="110" font-family="DejaVu Serif, serif" font-size="92" font-weight="bold" fill="#FFD700">РСФСР</text>`);
+// Quedivato (1826–1914) e Sultanato do Egito (1914–1922): vermelha com três crescentes e estrelas brancos
+{
+  const cs = [[230, 150], [410, 150], [320, 320]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="62" fill="#fff"/><circle cx="${x + 22}" cy="${y}" r="52" fill="#E8112D"/>` + star(x + 30, y, 26, "#fff")).join("");
+  F.eg_khed = svg(`<rect width="640" height="480" fill="#E8112D"/>` + cs);
+}
+// Sérvia (reino 1882–1918) e Montenegro 1905–1918 (bandeira civil): vermelho, azul, branco
+F.rs_old = svg(H("#C6363C", "#0C4076", "#fff"));
+// Tchecoslováquia 1918–1920: branco sobre vermelho
+F.cz18 = svg(H("#fff", "#D7141A"));
+// Hejaz 1916–1925 (bandeira da Revolta Árabe): faixas preta, verde e branca com triângulo vermelho
+F.hejaz = svg(H("#000", "#007A3D", "#fff") + `<polygon points="0,0 250,240 0,480" fill="#CE1126"/>`);
+// Afeganistão 1897–1927: preta com emblema branco (mesquita), simplificado
+F.af_black = svg(`<rect width="640" height="480" fill="#000"/><g fill="#fff"><circle cx="320" cy="240" r="105" fill="none" stroke="#fff" stroke-width="10"/><rect x="270" y="230" width="100" height="60"/><path d="M285 230q35-60 70 0z"/><rect x="250" y="200" width="12" height="90"/><rect x="378" y="200" width="12" height="90"/></g>`);
+// União Sul-Africana 1910–1928: Red Ensign com o escudo sul-africano num disco branco (simplificado)
+F.za_red = svg(`<rect width="640" height="480" fill="#C8102E"/>${nest("gb", 0, 0, 320, 240)}<circle cx="470" cy="300" r="80" fill="#fff"/>` + shield(470, 300, 1.1, "#7A9A3A"));
 // Espanha nacionalista 1936–1938: bicolor vermelho-amarelo-vermelho (decreto de 29/ago/1936)
 F.es36 = svg(`<rect width="640" height="480" fill="#AA151B"/><rect y="120" width="640" height="240" fill="#F1BF00"/>`);
 // Alemanha 1935–1945: vermelha com disco branco e suástica preta inclinada 45°

@@ -23,7 +23,7 @@ const inPoly = (pt, poly) => inRing(pt, poly[0]) && !poly.slice(1).some((h) => i
 
 export const SNAPS = [
   [1600, 1600, 1649], [1650, 1650, 1699], [1700, 1700, 1714], [1715, 1715, 1782], [1783, 1783, 1799],
-  [1800, 1800, 1814], [1815, 1815, 1879], [1880, 1880, 1899], [1900, 1900, 1913], [1914, 1914, 1919],
+  [1800, 1800, 1814], [1815, 1815, 1879], [1880, 1880, 1899], [1900, 1900, 1912], [1914, 1913, 1919],
   [1920, 1920, 1929], [1930, 1930, 1937], [1938, 1938, 1944], [1945, 1945, 1945],
 ];
 
@@ -36,6 +36,10 @@ const ITALY = ["Kingdom of Sardinia", "Tuscany", "Kingdom of the Two Sicilies", 
 // r: rename {key: name}, f: flag {key: flag}, m: merge [newName, flag, [keys]] (keys may be earlier merges' first key),
 // o: owner text {key: text or null}; y1: last year the event applies (default: to the end of the snapshot)
 const KONGO = { "Congo": "Reino do Congo" };
+const RU14 = ["Russian Empire", "Congress Poland", "Vilnius region", "Lithuania (RU)", "Latvia (RU)", "Estonia (RU)", "West Belarus", "Ukraine (RU)", "Bessarabia",
+  "Georgia", "Armenia", "Azerbaijan", "Sakhalin (RU)"];
+const AH14 = ["Austro-Hungarian Empire", "Littoral", "Trentino", "West Galicia", "East Galicia", "Bukovina", "Carpathian Ruthenia", "Bohemia", "Slovakia", "Austria",
+  "Hungary", "Transylvania", "South Slav lands"];
 export const EVENTS = {
   1600: [
     { y: 1600, r: { ...KONGO, "Portugal": "Portugal (União Ibérica)" } },
@@ -83,26 +87,360 @@ export const EVENTS = {
     { y: 1899, r: { "Philippines": "Filipinas (EUA)" } },
   ],
   1900: [
-    { y: 1900, r: { "Philippines": "Filipinas (EUA)", "Kingdom of Hawaii": "Havaí (EUA)" }, f: { "Philippines": "x:us", "Kingdom of Hawaii": "x:us", "Kingdom of Brazil": "x:br" } },
-    { y: 1902, r: { "Transvaal": "Colônia do Transvaal", "Orange Free State": "Colônia do Rio Orange" }, f: { "Transvaal": "x:gb", "Orange Free State": "x:gb" } },
-    { y: 1905, r: { "Sweden–Norway": "Suécia e Noruega" } },
-    { y: 1908, r: { "Bosnia-Herzegovina": "Bósnia e Herzegovina (Áustria-Hungria)" }, f: { "Bosnia-Herzegovina": "h:at_hab" } },
-    { y: 1910, r: { "Korea": "Coreia (Japão)" }, f: { "Korea": "x:jp" } },
-    { y: 1910, m: ["União Sul-Africana", "h:za_old", ["Cape Colony", "Natal", "Transvaal", "Orange Free State"]] },
-    { y: 1912, r: { "Manchu Empire": "República da China", "Morocco": "Marrocos (protetorado francês)" }, f: { "Manchu Empire": "h:cn_5", "Morocco": "x:fr" } },
+    // revisão 1900–1912 (situação em 31/dez); 1913 usa o mapa de 1914. Unidades novas vêm de hist-overrides.json.
+    // Américas e Pacífico
+    { y: 1900, r: { "Kingdom of Brazil": "Brasil", "Kingdom of Hawaii": "Havaí (EUA)", "Puerto Rico": "Porto Rico (EUA)", "Guam": "Guam", "American Samoa": "Samoa Americana",
+      "Philippines": "Filipinas (EUA)", "United States Virgin Islands": "Índias Ocidentais Dinamarquesas", "Samoa": "Samoa Alemã", "Micronesia": "Micronésia Alemã",
+      "Papua New Guinea": "Nova Guiné Alemã", "Tonga": "Tonga (protetorado britânico)", "Wallis and Futuna Islands": "Wallis e Futuna", "Rapa Nui": "Rapa Nui (Chile)",
+      "Guadeloupe": "Guadalupe", "Netherlands Antilles": "Curaçao e dependências", "Canada": "Canadá", "United States of America": "Estados Unidos" },
+      f: { "Kingdom of Brazil": "h:br21", "United States Virgin Islands": "x:dk", "Samoa": "h:de_emp", "Micronesia": "h:de_emp", "Papua New Guinea": "h:de_emp", "Tonga": "x:to",
+      "Wallis and Futuna Islands": "x:fr", "Rapa Nui": "x:cl", "Guadeloupe": "x:fr", "Martinique": "x:fr", "Netherlands Antilles": "x:nl", "Dominica": "x:gb",
+      "Antigua and Barbuda": "x:gb", "Saint Kitts and Nevis": "x:gb", "Montserrat": "x:gb", "Anguilla": "x:gb",
+      "Saint Martin": "x:fr", "Saint Barthelemy": "x:fr" },
+      o: { "Kingdom of Brazil": null, "Kingdom of Hawaii": "Estados Unidos", "Puerto Rico": "Estados Unidos", "Guam": "Estados Unidos", "American Samoa": "Estados Unidos",
+      "United States Virgin Islands": "Dinamarca", "Samoa": "Império Alemão", "Micronesia": "Império Alemão", "Papua New Guinea": "Império Alemão" } },
+    { y: 1900, y1: 1907, f: { "Kingdom of Hawaii": "h:us45", "Puerto Rico": "h:us45", "Guam": "h:us45", "American Samoa": "h:us45", "Philippines": "h:us45" } }, // 45 estrelas até 4/jul/1908
+    { y: 1908, y1: 1911, f: { "Kingdom of Hawaii": "h:us46", "Puerto Rico": "h:us46", "Guam": "h:us46", "American Samoa": "h:us46", "Philippines": "h:us46" } },
+    { y: 1912, f: { "Kingdom of Hawaii": "h:us48", "Puerto Rico": "h:us48", "Guam": "h:us48", "American Samoa": "h:us48", "Philippines": "h:us48" } },
+    { y: 1900, r: { "Cuba": "Cuba", "British West Indies": "Índias Ocidentais Britânicas", "Martinique": "Martinica" }, f: { "Cuba": "x:cu", "British West Indies": "x:gb", "Martinique": "x:fr" },
+      o: { "Cuba": null, "British West Indies": "Reino Unido", "Martinique": "França" } },
+    { y: 1900, y1: 1901, r: { "Cuba": "Cuba (ocupação americana)" }, f: { "Cuba": "h:us45" }, o: { "Cuba": null } }, // até 20/mai/1902
+    { y: 1906, y1: 1907, r: { "Cuba": "Cuba (ocupação americana)" }, f: { "Cuba": "h:us45" }, o: { "Cuba": null } }, // set/1906 a jan/1909
+    { y: 1908, y1: 1908, r: { "Cuba": "Cuba (ocupação americana)" }, f: { "Cuba": "h:us46" }, o: { "Cuba": null } },
+    { y: 1900, y1: 1902, m: ["Colômbia", "x:co", ["Colombia", "Panama"]] },
+    { y: 1903, r: { "Panama": "Panamá" }, f: { "Panama": "x:pa" }, o: { "Panama": null } }, // 3/nov/1903
+    { y: 1900, y1: 1906, r: { "Newfoundland": "Terra Nova" }, f: { "Newfoundland": "x:gb" }, o: { "Newfoundland": "Reino Unido" } },
+    { y: 1907, r: { "Newfoundland": "Domínio da Terra Nova" }, f: { "Newfoundland": "x:gb" }, o: { "Newfoundland": null } }, // 26/set/1907
+    { y: 1900, y1: 1900, f: { "Niue": "x:gb" }, o: { "Niue": "Reino Unido" } },
+    { y: 1901, f: { "Niue": "x:nz" }, o: { "Niue": "Nova Zelândia" } }, // anexada pela Nova Zelândia em 1901
+    // Austrália, Nova Zelândia e Papua
+    { y: 1900, y1: 1900, m: ["Austrália Meridional (britânica)", "x:gb", ["South Australia (UK)", "Northern Territory (UK)"]] },
+    { y: 1900, y1: 1900, r: { "_null_150": "Tasmânia (britânica)" }, f: { "_null_150": "x:gb" }, o: { "_null_150": "Reino Unido" } },
+    { y: 1901, m: ["Austrália", "x:au", ["Western Australia (UK)", "Queensland (UK)", "Northern Territory (UK)", "South Australia (UK)", "New South Wales (UK)", "Victoria (UK)", "_null_150"]], o: { "Western Australia (UK)": null } }, // federação em 1/jan/1901
+    { y: 1900, y1: 1901, r: { "New Zealand": "Nova Zelândia" }, f: { "New Zealand": "x:gb" }, o: { "New Zealand": "Reino Unido" } },
+    { y: 1902, y1: 1906, r: { "New Zealand": "Nova Zelândia" }, f: { "New Zealand": "x:nz" }, o: { "New Zealand": "Reino Unido" } }, // bandeira de 1902
+    { y: 1907, r: { "New Zealand": "Domínio da Nova Zelândia" }, f: { "New Zealand": "x:nz" }, o: { "New Zealand": null } }, // 26/set/1907
+    { y: 1900, y1: 1905, r: { "Papua": "Nova Guiné Britânica" }, f: { "Papua": "x:gb" }, o: { "Papua": "Reino Unido" } },
+    { y: 1906, r: { "Papua": "Território de Papua (Austrália)" }, f: { "Papua": "x:au" }, o: { "Papua": "Austrália" } }, // 1/set/1906
+    // Ásia
+    { y: 1900, m: ["Império do Japão", "x:jp", ["Imperial Japan", "_null_185", "_null_186", "_null_187", "_null_188", "_null_189", "_null_190", "_null_191", "_null_192", "_null_193", "_null_194", "_null_195", "_null_196", "_null_197", "_null_198", "_null_199", "_null_200", "_null_201"]] },
+    { y: 1900, r: { "Taiwan": "Taiwan (Japão)", "Bhutan": "Butão", "Goa": "Goa (Índia Portuguesa)", "French India": "Índia Francesa", "Portuguese Timor": "Timor Português",
+      "Macau": "Macau", "Maldives": "Maldivas (protetorado britânico)", "Rattanakosin Kingdom": "Sião" },
+      f: { "Taiwan": "x:jp", "Bhutan": "blank", "Afghanistan": "h:af_black", "French India": "x:fr", "Maldives": "x:gb" }, o: { "Taiwan": "Japão" } },
+    { y: 1900, m: ["Índia Britânica", "x:gb", ["British Raj", "India"]] },
+    { y: 1900, y1: 1905, f: { "Brunei": "blank" } },
+    { y: 1906, f: { "Brunei": "h:bn06" } },
+    { y: 1900, y1: 1904, r: { "Korea": "Império Coreano" }, f: { "Korea": "blank" }, o: { "Korea": null } },
+    { y: 1905, y1: 1909, r: { "Korea": "Império Coreano (protetorado japonês)" }, f: { "Korea": "blank" }, o: { "Korea": null } }, // nov/1905
+    { y: 1910, r: { "Korea": "Coreia (Japão)" }, f: { "Korea": "x:jp" }, o: { "Korea": "Japão" } }, // 29/ago/1910
+    { y: 1900, y1: 1910, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Mongolia", "Tibet", "Tuva"]] },
+    { y: 1911, y1: 1911, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Tibet", "Tuva"]] },
+    { y: 1911, r: { "Mongolia": "Mongólia (Canato de Bogd)" }, f: { "Mongolia": "blank" }, o: { "Mongolia": null } }, // dez/1911
+    { y: 1912, r: { "Manchu Empire": "República da China", "Tibet": "Tibete", "Tuva": null }, f: { "Manchu Empire": "h:cn_5", "Tibet": "blank" }, o: { "Manchu Empire": null, "Tibet": null } },
+    { y: 1900, m: ["Império Russo", "x:ru", ["Russian Empire", "central Asian khanates"]] },
+    // Oriente Médio
+    { y: 1900, y1: 1910, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Lebanon", "Hejaz", "Hasa", "North Yemen", "Libya", "Albania", "Kosovo and Macedonia", "Ottoman Sandzak", "Ottoman Macedonia", "Epirus", "Western Thrace", "East Thrace", "Aegean Islands", "_null_159", "Asir"]] },
+    { y: 1911, y1: 1911, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Lebanon", "Hejaz", "Hasa", "North Yemen", "Albania", "Kosovo and Macedonia", "Ottoman Sandzak", "Ottoman Macedonia", "Epirus", "Western Thrace", "East Thrace", "Aegean Islands", "_null_159"]] },
+    { y: 1912, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Lebanon", "Hejaz", "Hasa", "North Yemen", "Epirus"]] }, // Janina cercada até mar/1913
+    { y: 1911, r: { "Asir": "Emirado Idríssida de Asir" }, f: { "Asir": "blank" }, o: { "Asir": null } },
+    { y: 1900, y1: 1901, m: ["Emirado de Jabal Shammar", "blank", ["Hail", "Riyadh", "Qassim"]] },
+    { y: 1902, y1: 1903, m: ["Emirado de Jabal Shammar", "blank", ["Hail", "Qassim"]] }, // Riad tomada por Ibn Saud em jan/1902
+    { y: 1902, y1: 1903, r: { "Riyadh": "Emirado de Riad" }, f: { "Riyadh": "blank" } },
+    { y: 1904, r: { "Hail": "Emirado de Jabal Shammar" }, f: { "Hail": "blank" } },
+    { y: 1904, m: ["Emirado de Riad", "blank", ["Riyadh", "Qassim"]] }, // Qassim em 1904–1906
+    { y: 1900, r: { "Arabia": null, "Kuwait": "Kuwait", "Bahrain": "Bahrein (protetorado britânico)", "Qatar": "Catar", "Trucial Oman": "Estados da Trégua (protetorado britânico)",
+      "Oman": "Mascate e Omã", "Aden": "Áden e protetorados (britânicos)", "Cyprus": "Chipre (administração britânica)", "Malta": "Malta", "Gibraltar": "Gibraltar" },
+      f: { "Kuwait": "blank", "Bahrain": "x:gb", "Qatar": "blank", "Trucial Oman": "blank", "Oman": "h:om_red", "Aden": "x:gb", "Cyprus": "x:gb", "Malta": "x:gb", "Gibraltar": "x:gb" },
+      o: { "Kuwait": null, "Qatar": null, "Trucial Oman": null, "Oman": null, "Cyprus": null } },
+    // Europa
+    { y: 1900, r: { "Germany": "Império Alemão", "Italy": "Reino da Itália", "Austria Hungary": "Áustria-Hungria", "Faroe Islands": "Ilhas Faroé", "Channel Islands": "Ilhas do Canal",
+      "Finland": "Grão-Ducado da Finlândia" },
+      f: { "Faroe Islands": "x:dk", "Channel Islands": "x:gb", "Finland": "x:ru" }, o: { "Finland": "Império Russo" } },
+    { y: 1900, m: ["Reino Unido", "x:gb", ["United Kingdom of Great Britain and Ireland", "_null_164", "_null_165", "_null_166", "_null_167", "_null_168", "_null_169", "_null_170", "_null_171", "_null_172", "_null_173", "_null_174", "_null_175", "_null_176", "_null_177", "_null_178", "_null_179", "_null_180", "_null_181", "_null_182", "_null_184"]] },
+    { y: 1900, m: ["Suécia", "x:se", ["Sweden–Norway", "_null_149"]] },
+    { y: 1900, y1: 1904, r: { "Sweden–Norway": "Suécia (em união com a Noruega)", "Norway": "Noruega (em união com a Suécia)" }, f: { "Sweden–Norway": "blank", "Norway": "blank" }, o: { "Norway": null } }, // marca da união na bandeira
+    { y: 1905, r: { "Sweden–Norway": "Suécia", "Norway": "Noruega" }, f: { "Sweden–Norway": "x:se", "Norway": "x:no" }, o: { "Norway": null } }, // jun–out/1905
+    { y: 1900, y1: 1909, r: { "Portugal": "Reino de Portugal" } },
+    { y: 1900, y1: 1909, f: { "Portuguese East Africa": "h:pt_mon", "Portuguese Guinea": "h:pt_mon", "Cape Verde": "h:pt_mon", "Sao Tome": "h:pt_mon", "Goa": "h:pt_mon", "Macau": "h:pt_mon", "Portuguese Timor": "h:pt_mon", "Angola": "h:pt_mon" } },
+    { y: 1910, f: { "Portuguese East Africa": "x:pt", "Portuguese Guinea": "x:pt", "Cape Verde": "x:pt", "Sao Tome": "x:pt", "Goa": "x:pt", "Macau": "x:pt", "Portuguese Timor": "x:pt", "Angola": "x:pt" } }, // república em 5/out/1910
+    { y: 1900, y1: 1907, r: { "Bosnia-Herzegovina": "Bósnia e Herzegovina (ocupação austro-húngara)" }, f: { "Bosnia-Herzegovina": "h:at_hab" }, o: { "Bosnia-Herzegovina": null } },
+    { y: 1908, m: ["Áustria-Hungria", "h:at_hab", ["Austria Hungary", "Bosnia-Herzegovina", "_null_154"]] }, // anexada em out/1908
+    { y: 1900, y1: 1907, m: ["Áustria-Hungria", "h:at_hab", ["Austria Hungary", "_null_154"]] },
+    { y: 1900, y1: 1907, r: { "Bulgaria": "Principado da Bulgária" }, f: { "Bulgaria": "x:bg" } },
+    { y: 1908, r: { "Bulgaria": "Bulgária" }, f: { "Bulgaria": "x:bg" } }, // independência em 5/out/1908
+    { y: 1900, y1: 1909, r: { "Montenegro": "Principado de Montenegro" } },
+    { y: 1910, r: { "Montenegro": "Reino de Montenegro" } }, // 28/ago/1910
+    { y: 1900, y1: 1911, r: { "Crete": "Estado de Creta" }, f: { "Crete": "blank" }, o: { "Crete": null } },
+    // Guerra dos Bálcãs (31/dez/1912)
+    { y: 1912, m: ["Grécia", "h:gr_cross", ["Greece", "Crete", "Aegean Islands", "Ottoman Macedonia"]] },
+    { y: 1912, m: ["Sérvia", "h:rs_old", ["Serbia", "Kosovo and Macedonia"]] },
+    { y: 1912, m: ["Reino de Montenegro", "h:rs_old", ["Montenegro", "Ottoman Sandzak"]] },
+    { y: 1912, m: ["Bulgária", "x:bg", ["Bulgaria", "Western Thrace"]] },
+    { y: 1912, r: { "East Thrace": "Trácia Oriental (ocupação búlgara)", "Albania": "Albânia (ocupada na Guerra dos Bálcãs)", "_null_159": "Dodecaneso (ocupação italiana)" },
+      f: { "East Thrace": "x:bg", "Albania": "blank", "_null_159": "h:it_sav" }, o: { "East Thrace": null, "Albania": null, "_null_159": null } }, // Albânia declarada em 28/nov/1912
+    // África
+    { y: 1911, y1: 1911, r: { "Libya": "Líbia (guerra ítalo-turca)" }, f: { "Libya": "blank" }, o: { "Libya": null } },
+    { y: 1912, r: { "Libya": "Líbia Italiana" }, f: { "Libya": "h:it_sav" }, o: { "Libya": "Itália" } }, // Tratado de Ouchy, out/1912
+    { y: 1900, r: { "Egypt": "Quedivato do Egito", "Darfur": "Sultanato de Darfur", "Anglo-Egyptian Sudan": "Sudão Anglo-Egípcio", "Algeria": "Argélia", "Tunisia": "Tunísia",
+      "Rio de Oro": "Rio de Oro (Espanha)", "French West Africa": "África Ocidental Francesa", "Gambia": "Gâmbia", "Sierra Leone": "Serra Leoa", "Portuguese Guinea": "Guiné Portuguesa",
+      "Liberia": "Libéria", "Gold Coast": "Costa do Ouro", "Togoland": "Togolândia", "Nigeria": "Nigéria", "Kamerun": "Camarões Alemão", "Spanish Guinea": "Guiné Espanhola",
+      "Angola": "Angola", "German South-West Africa": "Sudoeste Africano Alemão", "Cape Colony": "Colônia do Cabo", "Natal": "Colônia de Natal", "Basutoland": "Basutolândia",
+      "Bechuanaland": "Bechuanalândia", "Rhodesia": "Rodésia", "Portuguese East Africa": "Moçambique", "German East Africa": "África Oriental Alemã",
+      "British East Africa": "África Oriental Britânica", "Uganda": "Uganda", "Zanzibar": "Zanzibar (protetorado britânico)", "Ethiopia": "Abissínia", "Eritrea": "Eritreia",
+      "French Somaliland": "Somalilândia Francesa", "British Somaliland": "Somalilândia Britânica", "Italian Somaliland": "Somália Italiana", "Madagascar": "Madagascar (França)",
+      "Comoros": "Comores", "Reunion": "Reunião", "Mauritius": "Maurício", "Seychelles": "Seicheles", "Cape Verde": "Cabo Verde", "Sao Tome": "São Tomé e Príncipe" },
+      f: { "Egypt": "h:eg_khed", "Darfur": "blank", "Anglo-Egyptian Sudan": "x:gb", "Algeria": "x:fr", "Tunisia": "x:fr", "Rio de Oro": "x:es", "French West Africa": "x:fr",
+      "Gambia": "x:gb", "Sierra Leone": "x:gb", "Liberia": "x:lr", "Gold Coast": "x:gb", "Togoland": "h:de_emp", "Nigeria": "x:gb", "Kamerun": "h:de_emp", "Spanish Guinea": "x:es",
+      "German South-West Africa": "h:de_emp", "Cape Colony": "x:gb", "Natal": "x:gb", "Basutoland": "x:gb", "Bechuanaland": "x:gb", "Rhodesia": "x:gb",
+      "German East Africa": "h:de_emp", "British East Africa": "x:gb", "Uganda": "x:gb", "Zanzibar": "x:gb", "Ethiopia": "blank", "Eritrea": "h:it_sav",
+      "French Somaliland": "x:fr", "British Somaliland": "x:gb", "Italian Somaliland": "h:it_sav", "Madagascar": "x:fr", "Comoros": "x:fr", "Reunion": "x:fr",
+      "Mauritius": "x:gb", "Seychelles": "x:gb" },
+      o: { "Egypt": "ocupação britânica", "Darfur": null, "Anglo-Egyptian Sudan": "Reino Unido", "Algeria": "França", "Tunisia": "França", "Rio de Oro": "Espanha",
+      "French West Africa": "França", "Gambia": "Reino Unido", "Sierra Leone": "Reino Unido", "Portuguese Guinea": "Portugal", "Liberia": null, "Gold Coast": "Reino Unido",
+      "Togoland": "Império Alemão", "Nigeria": "Reino Unido", "Kamerun": "Império Alemão", "Spanish Guinea": "Espanha", "Angola": "Portugal",
+      "German South-West Africa": "Império Alemão", "Cape Colony": "Reino Unido", "Natal": "Reino Unido", "Basutoland": "Reino Unido", "Bechuanaland": "Reino Unido",
+      "Rhodesia": "Reino Unido", "Portuguese East Africa": "Portugal", "German East Africa": "Império Alemão", "British East Africa": "Reino Unido", "Uganda": "Reino Unido",
+      "Zanzibar": "Reino Unido", "Ethiopia": null, "Eritrea": "Itália", "French Somaliland": "França", "British Somaliland": "Reino Unido", "Italian Somaliland": "Itália",
+      "Madagascar": "França", "Comoros": "França", "Reunion": "França", "Mauritius": "Reino Unido", "Seychelles": "Reino Unido", "Cape Verde": "Portugal", "Sao Tome": "Portugal" } },
+    { y: 1900, y1: 1911, r: { "Morocco": "Marrocos" }, f: { "Morocco": "h:ma_red" }, o: { "Morocco": null } },
+    { y: 1912, r: { "Morocco": "Marrocos (protetorado francês)" }, f: { "Morocco": "x:fr" }, o: { "Morocco": "França" } }, // 30/mar/1912
+    { y: 1900, y1: 1902, r: { "Mauritania": null } }, // emirados mouros (pendente)
+    { y: 1903, m: ["África Ocidental Francesa", "x:fr", ["French West Africa", "Mauritania"]] }, // protetorado em 1903
+    { y: 1900, y1: 1909, r: { "French Congo": "Congo Francês" }, f: { "French Congo": "x:fr" }, o: { "French Congo": "França" } },
+    { y: 1910, r: { "French Congo": "África Equatorial Francesa" }, f: { "French Congo": "x:fr" }, o: { "French Congo": "França" } }, // jan/1910
+    { y: 1900, y1: 1907, r: { "Congo Free State": "Estado Livre do Congo" }, f: { "Congo Free State": "blank" }, o: { "Congo Free State": null } },
+    { y: 1908, r: { "Congo Free State": "Congo Belga" }, f: { "Congo Free State": "x:be" }, o: { "Congo Free State": "Bélgica" } }, // 15/nov/1908
+    { y: 1900, y1: 1901, r: { "Transvaal": "Transvaal (Guerra dos Bôeres)", "Orange Free State": "Estado Livre de Orange (Guerra dos Bôeres)" },
+      f: { "Transvaal": "blank", "Orange Free State": "blank" }, o: { "Transvaal": null, "Orange Free State": null } }, // anexados em 1900; guerra até 31/mai/1902
+    { y: 1902, y1: 1909, r: { "Transvaal": "Colônia do Transvaal", "Orange Free State": "Colônia do Rio Orange" }, f: { "Transvaal": "x:gb", "Orange Free State": "x:gb" },
+      o: { "Transvaal": "Reino Unido", "Orange Free State": "Reino Unido" } },
+    { y: 1910, m: ["União Sul-Africana", "h:za_red", ["Cape Colony", "Natal", "Transvaal", "Orange Free State"]], o: { "Cape Colony": null } }, // 31/mai/1910
+    { y: 1900, y1: 1902, r: { "Swaziland": "Suazilândia" }, f: { "Swaziland": "blank" }, o: { "Swaziland": null } },
+    { y: 1903, r: { "Swaziland": "Suazilândia (protetorado britânico)" }, f: { "Swaziland": "x:gb" }, o: { "Swaziland": null } },
+    { y: 1900, y1: 1906, r: { "British Central Africa": "África Central Britânica" }, f: { "British Central Africa": "x:gb" }, o: { "British Central Africa": "Reino Unido" } },
+    { y: 1907, r: { "British Central Africa": "Niassalândia" }, f: { "British Central Africa": "x:gb" }, o: { "British Central Africa": "Reino Unido" } },
   ],
   1914: [
-    { y: 1917, r: { "Grand Duchy of Finland": "Finlândia" }, f: { "Grand Duchy of Finland": "x:fi" } },
-    { y: 1918, r: { "Russian Empire": "Rússia Soviética", "Austro-Hungarian Empire": "Áustria-Hungria (em dissolução)" }, f: { "Russian Empire": "h:su" } },
+    // revisão 1914–1919 (situação em 31/dez). Unidades novas vêm de hist-overrides.json.
+    // Rússia
+    { y: 1913, y1: 1914, m: ["Império Russo", "x:ru", RU14] },
+    { y: 1915, y1: 1916, m: ["Império Russo", "x:ru", ["Russian Empire", "West Belarus", "Estonia (RU)", "Ukraine (RU)", "Bessarabia", "Georgia", "Armenia", "Azerbaijan", "Sakhalin (RU)"]] },
+    { y: 1915, y1: 1917, m: ["Polônia russa (ocupação alemã e austro-húngara)", "blank", ["Congress Poland"]] }, // ago/1915
+    { y: 1915, y1: 1917, m: ["Lituânia (ocupação alemã)", "h:de_emp", ["Lithuania (RU)", "Vilnius region"]], o: { "Lithuania (RU)": null } }, // set/1915
+    { y: 1915, y1: 1916, r: { "Latvia (RU)": "Letônia (parcialmente ocupada pela Alemanha)" }, f: { "Latvia (RU)": "x:ru" }, o: { "Latvia (RU)": null } }, // Curlândia em 1915
+    { y: 1917, y1: 1917, r: { "Latvia (RU)": "Letônia (parcialmente ocupada pela Alemanha)" }, f: { "Latvia (RU)": "blank" }, o: { "Latvia (RU)": null } }, // Riga em set/1917
+    { y: 1917, y1: 1917, m: ["Rússia Soviética", "blank", ["Russian Empire", "West Belarus", "Estonia (RU)", "Sakhalin (RU)"]] }, // revolução de out/1917
+    { y: 1917, y1: 1917, r: { "Ukraine (RU)": "República Popular Ucraniana", "Bessarabia": "República Democrática Moldava" },
+      f: { "Ukraine (RU)": "blank", "Bessarabia": "blank" }, o: { "Ukraine (RU)": null, "Bessarabia": null } }, // nov/1917 e dez/1917
+    { y: 1917, y1: 1917, m: ["Transcaucásia (Comissariado Transcaucasiano)", "blank", ["Georgia", "Armenia", "Azerbaijan"]] }, // nov/1917
+    { y: 1913, y1: 1916, r: { "Grand Duchy of Finland": "Grão-Ducado da Finlândia" } },
+    { y: 1917, y1: 1917, r: { "Grand Duchy of Finland": "Finlândia" }, f: { "Grand Duchy of Finland": "blank" }, o: { "Grand Duchy of Finland": null } }, // 6/dez/1917; cruz azul só em mai/1918
+    { y: 1918, r: { "Grand Duchy of Finland": "Finlândia" }, f: { "Grand Duchy of Finland": "x:fi" }, o: { "Grand Duchy of Finland": null } },
+    { y: 1918, y1: 1918, m: ["Rússia (guerra civil)", "blank", ["Russian Empire", "West Belarus", "Sakhalin (RU)"]] },
+    { y: 1919, m: ["Rússia (guerra civil)", "blank", ["Russian Empire", "Sakhalin (RU)"]] },
+    { y: 1919, r: { "West Belarus": "Bielorrússia ocidental (ocupação polonesa)" }, f: { "West Belarus": "x:pl" }, o: { "West Belarus": null } }, // Minsk em ago/1919
+    { y: 1918, m: ["Polônia", "x:pl", ["Congress Poland", "West Galicia"]] }, // 11/nov/1918
+    { y: 1919, m: ["Polônia", "x:pl", ["Congress Poland", "West Galicia", "East Galicia", "Posen", "Vilnius region"]] }, // Galícia Oriental até jul/1919; Vilnius em abr/1919
+    { y: 1918, y1: 1918, m: ["Lituânia", "x:lt", ["Lithuania (RU)", "Vilnius region"]] },
+    { y: 1919, r: { "Lithuania (RU)": "Lituânia" }, f: { "Lithuania (RU)": "x:lt" }, o: { "Lithuania (RU)": null } },
+    { y: 1918, r: { "Latvia (RU)": "Letônia", "Estonia (RU)": "Estônia" }, f: { "Latvia (RU)": "x:lv", "Estonia (RU)": "x:ee" }, o: { "Latvia (RU)": null, "Estonia (RU)": null } },
+    { y: 1918, y1: 1918, r: { "Ukraine (RU)": "República Popular Ucraniana", "East Galicia": "República Popular da Ucrânia Ocidental" },
+      f: { "Ukraine (RU)": "x:ua", "East Galicia": "blank" }, o: { "Ukraine (RU)": null, "East Galicia": null } },
+    { y: 1919, r: { "Ukraine (RU)": "Ucrânia (guerra civil)" }, f: { "Ukraine (RU)": "blank" }, o: { "Ukraine (RU)": null } },
+    { y: 1918, r: { "Georgia": "Geórgia", "Armenia": "Armênia", "Azerbaijan": "Azerbaijão" }, f: { "Georgia": "h:ge90", "Armenia": "x:am", "Azerbaijan": "x:az" },
+      o: { "Georgia": null, "Armenia": null, "Azerbaijan": null } }, // mai/1918
+    { y: 1914, y1: 1917, r: { "Tuva": "Uriankhai (protetorado russo)" }, f: { "Tuva": "x:ru" }, o: { "Tuva": null } }, // abr/1914
+    { y: 1918, r: { "Tuva": null } }, // 1918–1919: guerra civil (pendente)
+    // Áustria-Hungria
+    { y: 1913, y1: 1917, m: ["Áustria-Hungria", "h:at_hab", AH14] },
+    { y: 1917, y1: 1917, r: { "Friuli": "Friul e Vêneto (ocupação austro-húngara)" }, f: { "Friuli": "h:at_hab" }, o: { "Friuli": null } }, // Caporetto, nov/1917
+    { y: 1913, y1: 1916, m: ["Reino da Itália", "h:it_sav", ["Kingdom of Italy", "Friuli"]] },
+    { y: 1918, m: ["Reino da Itália", "h:it_sav", ["Kingdom of Italy", "Friuli"]] },
+    { y: 1918, m: ["Trentino e Litoral Austríaco (ocupação italiana)", "h:it_sav", ["Trentino", "Littoral"]], o: { "Trentino": null } }, // nov/1918; anexados em 1920
+    { y: 1918, y1: 1918, r: { "Austria": "Áustria Alemã", "Transylvania": "Transilvânia (em disputa)" }, f: { "Austria": "x:at", "Transylvania": "blank" }, o: { "Austria": null, "Transylvania": null } },
+    { y: 1919, r: { "Austria": "Áustria" }, f: { "Austria": "x:at" }, o: { "Austria": null } }, // República da Áustria em out/1919
+    { y: 1918, y1: 1918, m: ["Hungria", "x:hu", ["Hungary", "Carpathian Ruthenia"]] },
+    { y: 1919, r: { "Hungary": "Hungria" }, f: { "Hungary": "x:hu" }, o: { "Hungary": null } },
+    { y: 1918, y1: 1918, m: ["Tchecoslováquia", "h:cz18", ["Bohemia", "Slovakia"]] }, // 28/out/1918
+    { y: 1919, m: ["Tchecoslováquia", "h:cz18", ["Bohemia", "Slovakia", "Carpathian Ruthenia"]] },
+    { y: 1918, y1: 1918, m: ["Romênia", "x:ro", ["Romania", "Bessarabia", "Bukovina"]] },
+    { y: 1919, m: ["Romênia", "x:ro", ["Romania", "Bessarabia", "Bukovina", "Transylvania"]] },
+    { y: 1918, m: ["Reino dos Sérvios, Croatas e Eslovenos", "h:yu_fr", ["Serbia", "Montenegro", "South Slav lands", "Austro-Hungarian Empire"]] }, // 1/dez/1918
+    // Alemanha, França e Bélgica
+    { y: 1913, y1: 1917, m: ["Império Alemão", "h:de_emp", ["German Empire", "Posen", "Alsace-Lorraine"]] },
+    { y: 1918, y1: 1918, m: ["Alemanha", "h:de_emp", ["German Empire", "Posen"]] }, // república em 9/nov/1918; bandeira nova em ago/1919
     { y: 1919, r: { "German Empire": "Alemanha (República de Weimar)" }, f: { "German Empire": "x:de" } },
+    { y: 1914, y1: 1917, r: { "Occupied France": "Norte da França (ocupação alemã)", "Belgium": "Bélgica (ocupação alemã)", "Luxembourg": "Luxemburgo (ocupação alemã)" },
+      f: { "Occupied France": "h:de_emp", "Belgium": "h:de_emp", "Luxembourg": "h:de_emp" }, o: { "Occupied France": null, "Belgium": null, "Luxembourg": null } },
+    { y: 1918, m: ["França", "x:fr", ["France", "Occupied France", "Alsace-Lorraine"]] },
+    // Bálcãs
+    { y: 1915, y1: 1917, r: { "Serbia": "Sérvia (ocupação austro-húngara e búlgara)" }, f: { "Serbia": "blank" }, o: { "Serbia": null } }, // fim de 1915
+    { y: 1916, y1: 1917, r: { "Montenegro": "Montenegro (ocupação austro-húngara)" }, f: { "Montenegro": "blank" }, o: { "Montenegro": null } }, // jan/1916
+    { y: 1916, y1: 1917, r: { "Romania": "Romênia (parcialmente ocupada)" } }, // Bucareste em dez/1916
+    { y: 1914, y1: 1914, r: { "Albania": "Principado da Albânia" }, f: { "Albania": "blank" } },
+    { y: 1915, y1: 1917, r: { "Albania": "Albânia (ocupação estrangeira)" }, f: { "Albania": "blank" }, o: { "Albania": null } },
+    { y: 1918, r: { "Albania": "Albânia (ocupação italiana)" }, f: { "Albania": "h:it_sav" }, o: { "Albania": null } },
+    { y: 1913, m: ["Grécia", "h:gr_cross", ["Greece", "_null_158", "_null_159", "_null_160", "_null_161", "_null_162", "_null_163", "_null_164", "_null_165", "_null_166", "_null_167"]] }, // Creta grega desde 1913; ilhas do Egeu desde 1912
+    { y: 1913, m: ["Reino Unido", "x:gb", ["United Kingdom of Great Britain and Ireland", "_null_133", "_null_134", "_null_135", "_null_136", "_null_137", "_null_138", "_null_139", "_null_140", "_null_141", "_null_142", "_null_143", "_null_144", "_null_145", "_null_146", "_null_147", "_null_148", "_null_149", "_null_150", "_null_151"]] },
+    { y: 1913, r: { "_null_153": "Ilha de Man" }, f: { "_null_153": "x:gb" }, o: { "_null_153": "Reino Unido" } },
+    { y: 1913, r: { "_null_130": "Dodecaneso (ocupação italiana)" }, f: { "_null_130": "h:it_sav" }, o: { "_null_130": null } }, // desde 1912
+    // Império Otomano e Arábia
+    { y: 1914, y1: 1915, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Syria", "Lebanon", "Palestine", "Jordan", "Hejaz", "North Yemen"]] },
+    { y: 1916, y1: 1916, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Syria", "Lebanon", "Palestine", "Jordan", "North Yemen"]] },
+    { y: 1917, y1: 1917, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Syria", "Lebanon", "Jordan", "North Yemen"]] },
+    { y: 1917, y1: 1917, r: { "Palestine": "Palestina (parcialmente ocupada pelos britânicos)" }, f: { "Palestine": "blank" }, o: { "Palestine": null } }, // Jerusalém em dez/1917
+    { y: 1914, y1: 1916, r: { "Mesopotamia": "Mesopotâmia (parcialmente ocupada pelos britânicos)" }, f: { "Mesopotamia": "x:tr" }, o: { "Mesopotamia": null } }, // Baçorá em nov/1914
+    { y: 1917, y1: 1917, r: { "Mesopotamia": "Mesopotâmia (parcialmente ocupada pelos britânicos)" }, f: { "Mesopotamia": "blank" }, o: { "Mesopotamia": null } }, // Bagdá em mar/1917
+    { y: 1918, r: { "Ottoman Empire": "Império Otomano", "Mesopotamia": "Mesopotâmia (ocupação britânica)", "Palestine": "Palestina (ocupação britânica)", "Lebanon": "Líbano (ocupação francesa)" },
+      f: { "Mesopotamia": "x:gb", "Palestine": "x:gb", "Lebanon": "x:fr" }, o: { "Mesopotamia": null, "Palestine": null, "Lebanon": null } },
+    { y: 1918, m: ["Síria (governo árabe de Faiçal)", "h:hejaz", ["Syria", "Jordan"]] }, // Damasco em out/1918
+    { y: 1916, r: { "Hejaz": "Reino de Hejaz" }, f: { "Hejaz": "h:hejaz" }, o: { "Hejaz": null } }, // jun/1916
+    { y: 1918, r: { "North Yemen": "Reino Mutawakkilita do Iêmen" }, f: { "North Yemen": "h:yem_k" }, o: { "North Yemen": null } }, // 30/out/1918
+    { y: 1913, r: { "Asir": "Emirado Idríssida de Asir", "Hail": "Emirado de Jabal Shammar", "Arabia (Nejd)": "Emirado de Négede e Hasa", "Kuwait": "Kuwait (protetorado britânico)",
+      "Bahrain": "Bahrein (protetorado britânico)", "Trucial States": "Estados da Trégua (protetorado britânico)", "Aden": "Áden e protetorados (britânicos)", "Muscat and Oman": "Mascate e Omã",
+      "Cyprus": "Chipre", "Malta": "Malta", "Gibraltar": "Gibraltar" },
+      f: { "Asir": "blank", "Hail": "blank", "Arabia (Nejd)": "blank", "Kuwait": "x:gb", "Bahrain": "x:gb", "Trucial States": "blank", "Aden": "x:gb", "Muscat and Oman": "h:om_red",
+      "Cyprus": "x:gb", "Malta": "x:gb", "Gibraltar": "x:gb" },
+      o: { "Asir": null, "Hail": null, "Arabia (Nejd)": null, "Muscat and Oman": null, "Trucial States": null } },
+    { y: 1913, r: { "British Protectorate": null } }, // sobra no Rub al-Khali, sem fronteira definida
+    { y: 1913, y1: 1915, r: { "Qatar": "Catar" }, f: { "Qatar": "blank" }, o: { "Qatar": null } }, // guarnição otomana até 1915
+    { y: 1916, r: { "Qatar": "Catar (protetorado britânico)" }, f: { "Qatar": "blank" }, o: { "Qatar": null } }, // tratado de 1916
+    // África
+    { y: 1914, r: { "Egypt": "Sultanato do Egito" }, f: { "Egypt": "h:eg_khed" }, o: { "Egypt": "protetorado britânico" } }, // dez/1914
+    { y: 1914, r: { "Togoland": "Togolândia (ocupação francesa e britânica)" }, f: { "Togoland": "blank" }, o: { "Togoland": null } }, // ago/1914
+    { y: 1916, r: { "Kamerun": "Camarões (ocupação francesa e britânica)" }, f: { "Kamerun": "blank" }, o: { "Kamerun": null } }, // fev/1916
+    { y: 1915, r: { "German South-West Africa": "Sudoeste Africano (ocupação sul-africana)" }, f: { "German South-West Africa": "h:za_red" }, o: { "German South-West Africa": null } }, // jul/1915
+    { y: 1913, y1: 1915, m: ["África Oriental Alemã", "h:de_emp", ["German E. Africa (Tanganyika)", "Rwanda", "Burundi"]] },
+    { y: 1916, y1: 1916, r: { "German E. Africa (Tanganyika)": "África Oriental Alemã (parcialmente ocupada)" }, f: { "German E. Africa (Tanganyika)": "blank" }, o: { "German E. Africa (Tanganyika)": null } },
+    { y: 1917, r: { "German E. Africa (Tanganyika)": "África Oriental Alemã (ocupação britânica)" }, f: { "German E. Africa (Tanganyika)": "x:gb" }, o: { "German E. Africa (Tanganyika)": null } }, // nov/1917
+    { y: 1916, m: ["Ruanda-Urundi (ocupação belga)", "x:be", ["Rwanda", "Burundi"]] },
+    { y: 1913, r: { "South Africa": "União Sul-Africana", "Cape Verde": "Cabo Verde", "Sao Tome": "São Tomé e Príncipe", "Mauritius": "Maurício", "Seychelles": "Seicheles",
+      "Reunion": "Reunião", "Comoros": "Comores", "Zanzibar": "Zanzibar (protetorado britânico)" },
+      f: { "Cape Verde": "x:pt", "Sao Tome": "x:pt", "Mauritius": "x:gb", "Seychelles": "x:gb", "Reunion": "x:fr", "Comoros": "x:fr", "Zanzibar": "x:gb" }, o: { "South Africa": null } },
+    // Ásia e Pacífico
+    { y: 1913, r: { "Manchu Empire": "República da China" }, f: { "Manchu Empire": "h:cn_5" }, o: { "Manchu Empire": null } }, // desde 1912
+    { y: 1913, y1: 1918, r: { "Mongolia": "Mongólia (Canato de Bogd)" }, f: { "Mongolia": "blank" } },
+    { y: 1919, r: { "Mongolia": "Mongólia (ocupação chinesa)" }, f: { "Mongolia": "h:cn_5" }, o: { "Mongolia": null } }, // out/1919
+    { y: 1913, y1: 1915, f: { "Tibet": "blank" } }, // bandeira tibetana desde 1916
+    { y: 1913, f: { "Afghanistan": "h:af_black" } },
+    { y: 1913, r: { "Korea": "Coreia (Japão)", "Taiwan": "Taiwan (Japão)", "Bhutan": "Butão", "Philippines": "Filipinas (EUA)", "Micronesia": "Micronésia (ocupação japonesa)", "Guam": "Guam",
+      "Papua New Guinea": "Papua e Nova Guiné (Austrália)", "Samoa": "Samoa (ocupação neozelandesa)", "Goa": "Goa (Índia Portuguesa)", "French India": "Índia Francesa",
+      "Portuguese Timor": "Timor Português", "Macau": "Macau", "Maldives": "Maldivas (protetorado britânico)" },
+      f: { "Korea": "x:jp", "Taiwan": "x:jp", "Bhutan": "blank", "Brunei": "h:bn06", "Micronesia": "x:jp", "Guam": "h:us48", "Papua New Guinea": "x:au", "Samoa": "x:nz",
+      "Goa": "x:pt", "French India": "x:fr", "Portuguese Timor": "x:pt", "Macau": "x:pt", "Maldives": "x:gb" },
+      o: { "Taiwan": "Japão", "Micronesia": null, "Samoa": null } }, // Nova Guiné Alemã, Samoa e Micronésia tomadas em 1914
+    // Europa do Norte
+    { y: 1918, r: { "Iceland": "Reino da Islândia" }, f: { "Iceland": "x:is" }, o: { "Iceland": null } }, // 1/dez/1918
+    { y: 1913, r: { "Greenland": "Groenlândia", "Faroe Islands": "Ilhas Faroé", "Channel Islands": "Ilhas do Canal" }, f: { "Greenland": "x:dk", "Faroe Islands": "x:dk", "Channel Islands": "x:gb" } },
+    // Américas
+    { y: 1913, r: { "Newfoundland": "Domínio da Terra Nova" }, f: { "Newfoundland": "x:gb" }, o: { "Newfoundland": null } },
+    { y: 1913, y1: 1916, r: { "Danish West Indies": "Índias Ocidentais Dinamarquesas" }, f: { "Danish West Indies": "x:dk" }, o: { "Danish West Indies": "Dinamarca" } },
+    { y: 1917, r: { "Danish West Indies": "Ilhas Virgens Americanas" }, f: { "Danish West Indies": "h:us48" }, o: { "Danish West Indies": "Estados Unidos" } }, // 31/mar/1917
+    { y: 1915, r: { "Haiti": "Haiti (ocupação americana)" } }, // jul/1915
+    { y: 1916, r: { "Dominican Republic": "República Dominicana (ocupação americana)" }, f: { "Dominican Republic": "h:us48" }, o: { "Dominican Republic": null } }, // mai/1916
+    { y: 1913, r: { "Guadeloupe": "Guadalupe", "Martinique": "Martinica", "Netherlands Antilles": "Curaçao e dependências", "Tonga": "Tonga (protetorado britânico)",
+      "American Samoa": "Samoa Americana", "Wallis and Futuna Islands": "Wallis e Futuna", "United States Virgin Islands": null, "Rapa Nui": "Rapa Nui (Chile)" },
+      f: { "Guadeloupe": "x:fr", "Martinique": "x:fr", "Netherlands Antilles": "x:nl", "Tonga": "x:to", "American Samoa": "h:us48", "Niue": "x:nz",
+      "Wallis and Futuna Islands": "x:fr", "Rapa Nui": "x:cl", "Dominica": "x:gb", "Saint Lucia": "x:gb", "Antigua and Barbuda": "x:gb",
+      "Saint Vincent and the Grenadines": "x:gb", "Grenada": "x:gb", "Saint Kitts and Nevis": "x:gb", "Montserrat": "x:gb", "Anguilla": "x:gb", "Saint Martin": "x:fr", "Saint Barthelemy": "x:fr" } },
+    // 1913 (mapa de 1914, antes da guerra)
+    { y: 1913, y1: 1913, r: { "Tuva": null, "Albania": "Albânia", "Kuwait": "Kuwait", "Cyprus": "Chipre (administração britânica)", "Egypt": "Quedivato do Egito",
+      "Micronesia": "Micronésia Alemã", "Samoa": "Samoa Alemã", "Papua New Guinea": "Nova Guiné Alemã", "Abyssinia": "Abissínia" },
+      f: { "Albania": "blank", "Kuwait": "blank", "Egypt": "h:eg_khed", "Micronesia": "h:de_emp", "Samoa": "h:de_emp", "Papua New Guinea": "h:de_emp", "Abyssinia": "blank" },
+      o: { "Albania": null, "Kuwait": null, "Cyprus": null, "Egypt": "ocupação britânica", "Micronesia": "Império Alemão", "Samoa": "Império Alemão", "Papua New Guinea": "Império Alemão" } },
+    { y: 1913, y1: 1913, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Syria", "Lebanon", "Palestine", "Jordan", "Hejaz", "North Yemen", "Mesopotamia"]] },
+    { y: 1913, y1: 1913, r: { "Papua": "Território de Papua (Austrália)" }, f: { "Papua": "x:au" }, o: { "Papua": "Austrália" } },
+    { y: 1913, y1: 1913, m: ["França", "x:fr", ["France", "Occupied France"]] },
+    { y: 1914, m: ["Papua e Nova Guiné (Austrália)", "x:au", ["Papua New Guinea", "Papua"]], o: { "Papua New Guinea": "Austrália" } },
+    { y: 1913, y1: 1915, r: { "Darfur": "Sultanato de Darfur" }, f: { "Darfur": "blank" }, o: { "Darfur": null } },
+    { y: 1916, m: ["Sudão Anglo-Egípcio", "x:gb", ["Anglo-Egyptian Sudan", "Darfur"]] }, // anexado em 1916
   ],
   1920: [
+    // revisão 1920–1929 (situação em 31/dez). Unidades novas vêm de hist-overrides.json.
     { y: 1920, f: { "Mandatory Palestine (GB)": "x:gb" } },
-    { y: 1922, r: { "Egypt": "Reino do Egito" }, f: { "Egypt": "h:eg_k" } },
-    { y: 1922, m: ["União Soviética", "h:su", ["USSR", "Ukraine", "Georgia", "Armenia", "Azerbaijan", "Far Eastern SSR", "White Russia", "South Russia"]] },
-    { y: 1923, r: { "Ottoman Sultanate": "Turquia" } },
-    { y: 1926, r: { "Hejaz": "Reino de Hejaz e Négede" }, f: { "Hejaz": "x:sa" } },
-    { y: 1928, r: { "Chinese Warlords": "República da China" }, f: { "Chinese Warlords": "x:tw" } },
+    { y: 1920, m: ["Índia Britânica", "x:gb", ["British Raj", "Burma"]] }, // Birmânia separada só em 1937
+    // Rússia e vizinhos: União Soviética formada em 30/dez/1922; bandeira da foice e martelo desde 12/nov/1923
+    { y: 1920, y1: 1921, m: ["Rússia Soviética", "h:rsfsr", ["USSR", "White Russia", "South Russia", "Crimea"]] },
+    { y: 1920, y1: 1921, r: { "Far Eastern SSR": "República do Extremo Oriente", "Ukraine": "Ucrânia soviética", "Belarus": "Bielorrússia soviética",
+      "Armenia": "Armênia soviética", "Azerbaijan": "Azerbaijão soviético" },
+      f: { "Far Eastern SSR": "blank", "Ukraine": "blank", "Belarus": "blank", "Armenia": "blank", "Azerbaijan": "blank" },
+      o: { "Far Eastern SSR": null, "Ukraine": null, "Belarus": null, "Armenia": null, "Azerbaijan": null } },
+    { y: 1920, y1: 1920, r: { "Georgia": "Geórgia" }, f: { "Georgia": "h:ge90" }, o: { "Georgia": null } }, // ocupação soviética em fev/1921
+    { y: 1921, y1: 1921, r: { "Georgia": "Geórgia soviética" }, f: { "Georgia": "blank" }, o: { "Georgia": null } },
+    { y: 1922, y1: 1922, m: ["União Soviética", "blank", ["USSR", "White Russia", "South Russia", "Crimea", "Far Eastern SSR", "Ukraine", "Belarus", "Georgia", "Armenia", "Azerbaijan"]] },
+    { y: 1923, m: ["União Soviética", "h:su", ["USSR", "White Russia", "South Russia", "Crimea", "Far Eastern SSR", "Ukraine", "Belarus", "Georgia", "Armenia", "Azerbaijan"]] },
+    { y: 1920, y1: 1924, r: { "North Sakhalin": "Sacalina do Norte (ocupação japonesa)" }, f: { "North Sakhalin": "x:jp" }, o: { "North Sakhalin": null } },
+    { y: 1925, m: ["União Soviética", "h:su", ["USSR", "North Sakhalin"]] },
+    { y: 1920, y1: 1920, r: { "Tuva": null } }, // 1920: disputada (pendente)
+    { y: 1921, r: { "Tuva": "República Popular de Tuva" }, f: { "Tuva": "blank" } }, // 14/ago/1921
+    { y: 1920, y1: 1920, r: { "Mongolia": "Mongólia (ocupação chinesa)" }, f: { "Mongolia": "h:cn_5" }, o: { "Mongolia": null } },
+    { y: 1921, y1: 1923, r: { "Mongolia": "Mongólia (Canato de Bogd)" }, f: { "Mongolia": "blank" } },
+    { y: 1924, r: { "Mongolia": "República Popular da Mongólia" }, f: { "Mongolia": "blank" } }, // 26/nov/1924
+    // China
+    { y: 1920, y1: 1927, m: ["República da China (governo de Beiyang)", "h:cn_5", ["Chinese Warlords", "Manchuria"]] },
+    { y: 1928, m: ["República da China", "x:tw", ["Chinese Warlords", "Manchuria"]] }, // a Manchúria aderiu em 29/dez/1928
+    { y: 1928, f: { "Xinjiang": "x:tw" } },
+    { y: 1920, r: { "Korea": "Coreia (Japão)", "Taiwan": "Taiwan (Japão)", "Rattanakosin Kingdom": "Sião", "Bhutan": "Butão", "Philippines": "Filipinas (EUA)",
+      "South Seas Mandate": "Mandato do Pacífico Sul (Japão)", "Guam": "Guam", "Papua New Guinea": "Papua e Nova Guiné (Austrália)", "Iran": "Pérsia", "Italy": "Reino da Itália",
+      "Goa": "Goa (Índia Portuguesa)", "French India": "Índia Francesa", "Portuguese Timor": "Timor Português", "Macau": "Macau", "Maldives": "Maldivas (protetorado britânico)" },
+      f: { "Korea": "x:jp", "Taiwan": "x:jp", "Bhutan": "blank", "Brunei": "h:bn06", "South Seas Mandate": "x:jp", "Guam": "h:us48", "Papua New Guinea": "x:au", "Hungary": "h:hu_k",
+      "Goa": "x:pt", "French India": "x:fr", "Portuguese Timor": "x:pt", "Macau": "x:pt", "Maldives": "x:gb" },
+      o: { "Taiwan": "Japão" } },
+    { y: 1920, y1: 1927, f: { "Afghanistan": "h:af_black" } },
+    { y: 1928, f: { "Afghanistan": "blank" } }, // 1928–1929: várias bandeiras em poucos meses (pendente)
+    // Oriente Médio
+    { y: 1920, r: { "Lebanon": "Líbano (mandato francês)", "Jordan": "Transjordânia (mandato britânico)", "Kuwait": "Kuwait (protetorado britânico)",
+      "Bahrain": "Bahrein (protetorado britânico)", "Qatar": "Catar (protetorado britânico)", "Aden": "Áden e protetorados (britânicos)", "Muscat and Oman": "Mascate e Omã",
+      "Cyprus": "Chipre", "Malta": "Malta", "Gibraltar": "Gibraltar" },
+      f: { "Lebanon": "x:fr", "Jordan": "x:gb", "Kuwait": "x:gb", "Bahrain": "x:gb", "Aden": "x:gb", "Muscat and Oman": "h:om_red", "Cyprus": "x:gb", "Malta": "x:gb", "Gibraltar": "x:gb" },
+      o: { "Muscat and Oman": null } },
+    { y: 1920, y1: 1920, r: { "Mesopotamia (GB)": "Mesopotâmia (mandato britânico)" } },
+    { y: 1921, r: { "Mesopotamia (GB)": "Reino do Iraque (mandato britânico)" } }, // Faiçal coroado em 23/ago/1921
+    { y: 1920, m: ["Reino Mutawakkilita do Iêmen", "h:yem_k", ["North Yemen", "Yemen"]] }, // independente desde 30/out/1918
+    { y: 1920, y1: 1929, r: { "Asir": "Emirado Idríssida de Asir" }, f: { "Asir": "blank" } },
+    { y: 1920, y1: 1924, r: { "Hejaz": "Reino de Hejaz" }, f: { "Hejaz": "h:hejaz" } },
+    { y: 1920, y1: 1920, r: { "Hail": "Emirado de Jabal Shammar", "Emirate of Bin Shal'an": "Emirado de Négede e Hasa" }, f: { "Hail": "blank", "Emirate of Bin Shal'an": "blank" } },
+    { y: 1920, y1: 1920, m: ["Emirado de Jabal Shammar", "blank", ["Hail", "_null_153"]] },
+    { y: 1921, y1: 1924, m: ["Sultanato de Négede", "blank", ["Emirate of Bin Shal'an", "Hail", "_null_153"]] }, // Hail tomado em 2/nov/1921
+    { y: 1925, y1: 1925, m: ["Sultanato de Négede", "blank", ["Emirate of Bin Shal'an", "Hail", "_null_153", "Hejaz"]] }, // Hejaz conquistado em dez/1925
+    { y: 1926, m: ["Reino de Hejaz e Négede", "x:sa", ["Hejaz", "Emirate of Bin Shal'an", "Hail", "_null_153"]] }, // 8/jan/1926
+    // Turquia
+    { y: 1920, y1: 1922, r: { "Ottoman Sultanate": "Turquia (governo de Ancara)", "_null_152": "Constantinopla (ocupação aliada)" }, f: { "_null_152": "blank" } },
+    { y: 1920, y1: 1921, r: { "Smyrna zone": "Esmirna e Trácia Oriental (ocupação grega)" }, f: { "Smyrna zone": "h:gr_cross" }, o: { "Smyrna zone": null } },
+    { y: 1920, y1: 1921, m: ["Turquia (governo de Ancara)", "x:tr", ["Ottoman Sultanate", "Italian Anatolia"]] },
+    { y: 1922, y1: 1922, m: ["Turquia (governo de Ancara)", "x:tr", ["Ottoman Sultanate", "Italian Anatolia", "Smyrna zone"]] }, // Esmirna retomada em set/1922
+    { y: 1923, m: ["Turquia", "x:tr", ["Ottoman Sultanate", "Italian Anatolia", "Smyrna zone", "_null_152"]] }, // república em 29/out/1923
+    // África
+    { y: 1920, y1: 1921, r: { "Egypt": "Sultanato do Egito" }, f: { "Egypt": "h:eg_khed" }, o: { "Egypt": "protetorado britânico" } },
+    { y: 1922, r: { "Egypt": "Reino do Egito" }, f: { "Egypt": "h:eg_k" }, o: { "Egypt": null } }, // 28/fev/1922
+    { y: 1920, r: { "South West Africa": "Sudoeste Africano", "Cape Verde": "Cabo Verde", "Sao Tome": "São Tomé e Príncipe", "Mauritius": "Maurício", "Seychelles": "Seicheles",
+      "Reunion": "Reunião", "Comoros": "Comores", "Zanzibar": "Zanzibar (protetorado britânico)" },
+      f: { "South West Africa": "h:za_red", "Cape Verde": "x:pt", "Sao Tome": "x:pt", "Mauritius": "x:gb", "Seychelles": "x:gb", "Reunion": "x:fr", "Comoros": "x:fr", "Zanzibar": "x:gb" } },
+    { y: 1928, f: { "South West Africa": "h:za_old" } }, // bandeira sul-africana nova em 31/mai/1928
+    { y: 1920, m: ["Ruanda-Urundi", "x:be", ["Rwanda (Belgium)", "Burundi"]] },
+    // Europa
+    { y: 1920, m: ["França", "x:fr", ["France", "Alsace-Moselle"]] },
+    { y: 1920, m: ["Alemanha", "x:de", ["Germany", "East Prussia"]] },
+    { y: 1920, r: { "Saar": "Território da Bacia do Sarre (Liga das Nações)" }, f: { "Saar": "blank" } },
+    { y: 1920, y1: 1922, r: { "Memel": "Território de Memel (Liga das Nações)" }, f: { "Memel": "blank" } },
+    { y: 1923, m: ["Lituânia", "x:lt", ["Lithuania", "Memel"]] }, // jan/1923
+    { y: 1920, y1: 1921, r: { "Central Lithuania": "Lituânia Central" }, f: { "Central Lithuania": "blank" } }, // 12/out/1920
+    { y: 1922, m: ["Polônia", "x:pl", ["Poland", "Central Lithuania"]] }, // anexada em 1922
+    { y: 1920, y1: 1921, m: ["Reino Unido", "x:gb", ["United Kingdom of Great Britain and Ireland", "Ireland"]] },
+    { y: 1922, r: { "Ireland": "Estado Livre Irlandês" }, f: { "Ireland": "x:ie" }, o: { "Ireland": null } }, // 6/dez/1922
+    { y: 1920, y1: 1928, r: { "Yugoslavia": "Reino dos Sérvios, Croatas e Eslovenos" } },
+    { y: 1929, r: { "Yugoslavia": "Iugoslávia" } }, // 3/out/1929
+    { y: 1920, r: { "Iceland": "Reino da Islândia", "Greenland": "Groenlândia", "Faroe Islands": "Ilhas Faroé", "Channel Islands": "Ilhas do Canal" },
+      f: { "Iceland": "x:is", "Greenland": "x:dk", "Faroe Islands": "x:dk", "Channel Islands": "x:gb" } },
+    // Américas e Pacífico
+    { y: 1920, y1: 1923, r: { "Dominican Republic": "República Dominicana (ocupação americana)" }, f: { "Dominican Republic": "h:us48" }, o: { "Dominican Republic": null } }, // até 27/dez/1924... governo militar até jul/1924
+    { y: 1920, r: { "Haiti": "Haiti (ocupação americana)" } }, // 1915–1934
+    { y: 1920, r: { "Guadeloupe": "Guadalupe", "Martinique": "Martinica", "Netherlands Antilles": "Curaçao e dependências", "Samoa": "Samoa Ocidental (mandato da Nova Zelândia)",
+      "Tonga": "Tonga (protetorado britânico)", "American Samoa": "Samoa Americana", "Wallis and Futuna Islands": "Wallis e Futuna", "United States Virgin Islands": "Ilhas Virgens Americanas",
+      "Rapa Nui": "Rapa Nui (Chile)" },
+      f: { "Guadeloupe": "x:fr", "Martinique": "x:fr", "Netherlands Antilles": "x:nl", "Samoa": "x:nz", "Tonga": "x:to", "American Samoa": "h:us48", "Niue": "x:nz",
+      "Wallis and Futuna Islands": "x:fr", "United States Virgin Islands": "h:us48", "Rapa Nui": "x:cl", "Dominica": "x:gb", "Saint Lucia": "x:gb", "Antigua and Barbuda": "x:gb",
+      "Saint Vincent and the Grenadines": "x:gb", "Grenada": "x:gb", "Saint Kitts and Nevis": "x:gb", "Montserrat": "x:gb", "Anguilla": "x:gb", "Saint Martin": "x:fr", "Saint Barthelemy": "x:fr" } },
   ],
   1930: [
     // revisão 1935–1937 (situação em 31/dez); vale também para 1930–1934, ainda não revisados. Unidades novas vêm de hist-overrides.json.
@@ -114,7 +452,7 @@ export const EVENTS = {
     { y: 1930, y1: 1934, r: { "Saar": "Território da Bacia do Sarre (Liga das Nações)" }, f: { "Saar": "blank" } },
     { y: 1930, r: { "Chinese Warlords": "República da China", "Korea": "Coreia (Japão)", "Taiwan": "Taiwan (Japão)",
       "Lebanon": "Líbano (mandato francês)", "Tuva": "República Popular de Tuva", "Iceland": "Reino da Islândia", "Egypt": "Reino do Egito", "Jordan": "Transjordânia (mandato britânico)",
-      "Mesopotamia (GB)": "Iraque (mandato britânico)", "Kuwait": "Kuwait (protetorado britânico)", "Bahrain": "Bahrein (protetorado britânico)", "Qatar": "Catar (protetorado britânico)",
+      "Mesopotamia (GB)": "Reino do Iraque (mandato britânico)", "Kuwait": "Kuwait (protetorado britânico)", "Bahrain": "Bahrein (protetorado britânico)", "Qatar": "Catar (protetorado britânico)",
       "Aden": "Áden e protetorados (britânicos)", "Muscat and Oman": "Mascate e Omã", "Cyprus": "Chipre", "Malta": "Malta", "Gibraltar": "Gibraltar", "Macau": "Macau",
       "Goa": "Goa (Índia Portuguesa)", "French India": "Índia Francesa", "Portuguese Timor": "Timor Português", "Maldives": "Maldivas (protetorado britânico)",
       "Rattanakosin Kingdom": "Sião", "Bhutan": "Butão", "Philippines": "Filipinas (EUA)", "South Seas Mandate": "Mandato do Pacífico Sul (Japão)", "Guam": "Guam",
@@ -132,7 +470,9 @@ export const EVENTS = {
     { y: 1932, r: { "Mesopotamia (GB)": "Reino do Iraque" }, f: { "Mesopotamia (GB)": "h:iq_k" }, o: { "Mesopotamia (GB)": null } }, // 3/out/1932
     { y: 1930, y1: 1931, m: ["Reino de Hejaz e Négede", "x:sa", ["Hejaz", "Emirate of Bin Shal'an", "Hail", "_null_44"]] },
     { y: 1932, m: ["Arábia Saudita", "x:sa", ["Hejaz", "Emirate of Bin Shal'an", "Hail", "_null_44"]] }, // 23/set/1932
-    { y: 1935, r: { "Iran": "Irã" } },
+    { y: 1930, y1: 1934, r: { "Iran": "Pérsia" } },
+    { y: 1930, y1: 1933, r: { "Haiti": "Haiti (ocupação americana)" } }, // até 1/ago/1934
+    { y: 1935, r: { "Iran": "Irã" } }, // 21/mar/1935
     { y: 1935, r: { "Philippines": "Filipinas (Commonwealth, EUA)" } }, // 15/nov/1935
     { y: 1936, r: { "Ethiopia": "Etiópia (ocupada pela Itália)" }, f: { "Ethiopia": "h:it_sav" } },
     { y: 1936, y1: 1937, r: { "Spain": "Espanha (guerra civil)" }, f: { "Spain": "blank" } }, // 17/jul/1936 a 1/abr/1939
@@ -145,7 +485,7 @@ export const EVENTS = {
       f: { "South West Africa": "h:za_old", "Cape Verde": "x:pt", "Sao Tome": "x:pt", "Mauritius": "x:gb", "Seychelles": "x:gb", "Reunion": "x:fr", "Comoros": "x:fr", "Zanzibar": "x:gb",
       "Greenland": "x:dk", "Faroe Islands": "x:dk", "Channel Islands": "x:gb", "Guadeloupe": "x:fr", "Martinique": "x:fr", "Netherlands Antilles": "x:nl", "Samoa": "x:nz", "Tonga": "x:to",
       "American Samoa": "h:us48", "Niue": "x:nz", "Wallis and Futuna Islands": "x:fr", "United States Virgin Islands": "h:us48", "Rapa Nui": "x:cl", "Dominica": "x:gb", "Saint Lucia": "x:gb",
-      "Antigua and Barbuda": "x:gb", "Saint Vincent and the Grenadines": "x:gb", "Grenada": "x:gb", "Saint Kitts and Nevis": "x:gb", "Montserrat": "x:gb", "Anguilla": "x:gb",
+      "Antigua and Barbuda": "x:gb", "Saint Kitts and Nevis": "x:gb", "Montserrat": "x:gb", "Anguilla": "x:gb",
       "Saint Martin": "x:fr", "Saint Barthelemy": "x:fr" } },
     { y: 1930, m: ["Ruanda-Urundi", "x:be", ["Rwanda (Belgium)", "Burundi"]] },
     { y: 1930, r: { "Danzig": null } }, // a Cidade Livre de Danzig não tem província própria hoje (fica na Polônia; pendente)
@@ -488,7 +828,8 @@ export function buildEras(snaps) {
         const big = members.reduce((a, b) => (sn.units[b].sr > sn.units[a].sr ? b : a));
         const sr = members.reduce((s, i) => s + sn.units[i].sr, 0);
         const ll = sn.units[big].ll.map((v) => +v.toFixed(2));
-        return [name[r], flag[r], ll[0], ll[1], +sr.toPrecision(4), !name[r] ? null : own[r] !== undefined ? own[r] : ownerFor(sn.units[r].key, name[r], flag[r], y)];
+        const nm = sr > 0 ? name[r] : null; // a unit left with no land (all of it given to other units) is hidden
+        return [nm, flag[r], ll[0], ll[1], +sr.toPrecision(4), !nm ? null : own[r] !== undefined ? own[r] : ownerFor(sn.units[r].key, nm, flag[r], y)];
       });
       const map = sn.units.map((_, i) => code.get(root(i)));
       const sig = JSON.stringify([units, map]);

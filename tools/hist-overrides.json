@@ -706,5 +706,1652 @@
     53.2
    ]
   }
- }
+ },
+ "1920": [
+  {
+   "key": "Korea",
+   "adm0": [
+    "KOR",
+    "PRK"
+   ]
+  },
+  {
+   "key": "Taiwan",
+   "adm0": [
+    "TWN"
+   ]
+  },
+  {
+   "key": "Lebanon",
+   "adm0": [
+    "LBN"
+   ]
+  },
+  {
+   "key": "Burma",
+   "adm0": [
+    "MMR"
+   ]
+  },
+  {
+   "key": "Tuva",
+   "iso": [
+    "RU-TY"
+   ]
+  },
+  {
+   "key": "South West Africa",
+   "adm0": [
+    "NAM"
+   ]
+  },
+  {
+   "key": "Greenland",
+   "adm0": [
+    "GRL"
+   ]
+  },
+  {
+   "key": "Faroe Islands",
+   "adm0": [
+    "FRO"
+   ]
+  },
+  {
+   "key": "Jordan",
+   "adm0": [
+    "JOR"
+   ]
+  },
+  {
+   "key": "Kuwait",
+   "adm0": [
+    "KWT"
+   ]
+  },
+  {
+   "key": "Bahrain",
+   "adm0": [
+    "BHR"
+   ]
+  },
+  {
+   "key": "Cyprus",
+   "adm0": [
+    "CYP",
+    "CYN",
+    "ESB",
+    "WSB"
+   ]
+  },
+  {
+   "key": "Malta",
+   "adm0": [
+    "MLT"
+   ]
+  },
+  {
+   "key": "Gibraltar",
+   "adm0": [
+    "GIB"
+   ]
+  },
+  {
+   "key": "Macau",
+   "adm0": [
+    "MAC"
+   ]
+  },
+  {
+   "key": "Goa",
+   "iso": [
+    "IN-GA"
+   ]
+  },
+  {
+   "key": "French India",
+   "iso": [
+    "IN-PY"
+   ]
+  },
+  {
+   "key": "Portuguese Timor",
+   "adm0": [
+    "TLS"
+   ]
+  },
+  {
+   "key": "Cape Verde",
+   "adm0": [
+    "CPV"
+   ]
+  },
+  {
+   "key": "Sao Tome",
+   "adm0": [
+    "STP"
+   ]
+  },
+  {
+   "key": "Mauritius",
+   "adm0": [
+    "MUS"
+   ]
+  },
+  {
+   "key": "Seychelles",
+   "adm0": [
+    "SYC"
+   ]
+  },
+  {
+   "key": "Reunion",
+   "iso": [
+    "FR-RE"
+   ]
+  },
+  {
+   "key": "Comoros",
+   "adm0": [
+    "COM"
+   ],
+   "iso": [
+    "FR-YT"
+   ]
+  },
+  {
+   "key": "Zanzibar",
+   "iso": [
+    "TZ-06",
+    "TZ-07",
+    "TZ-10",
+    "TZ-11",
+    "TZ-15"
+   ]
+  },
+  {
+   "key": "Maldives",
+   "adm0": [
+    "MDV"
+   ]
+  },
+  {
+   "key": "Channel Islands",
+   "adm0": [
+    "GGY",
+    "JEY"
+   ]
+  },
+  {
+   "key": "Aden",
+   "iso": [
+    "YE-HD",
+    "YE-MR",
+    "YE-LA",
+    "YE-AD",
+    "YE-AB",
+    "YE-SH",
+    "YE-DA"
+   ]
+  },
+  {
+   "key": "North Yemen",
+   "adm0": [
+    "YEM"
+   ]
+  },
+  {
+   "key": "Asir",
+   "iso": [
+    "SA-14",
+    "SA-09"
+   ]
+  },
+  {
+   "key": "South Seas Mandate",
+   "adm0": [
+    "MNP",
+    "PLW",
+    "FSM",
+    "MHL"
+   ]
+  },
+  {
+   "key": "Guam",
+   "adm0": [
+    "GUM"
+   ]
+  },
+  {
+   "key": "Ireland",
+   "adm0": [
+    "IRL"
+   ]
+  },
+  {
+   "key": "Georgia",
+   "adm0": [
+    "GEO"
+   ]
+  },
+  {
+   "key": "Armenia",
+   "adm0": [
+    "ARM"
+   ]
+  },
+  {
+   "key": "Azerbaijan",
+   "adm0": [
+    "AZE"
+   ]
+  },
+  {
+   "key": "Saar",
+   "take": {
+    "from": "Germany",
+    "iso": [
+     "DE-SL"
+    ]
+   }
+  },
+  {
+   "key": "Alsace-Moselle",
+   "take": {
+    "from": "Germany",
+    "iso": [
+     "FR-67",
+     "FR-68",
+     "FR-57"
+    ]
+   }
+  },
+  {
+   "key": "Czechoslovakia",
+   "take": {
+    "from": "Austria",
+    "adm0": [
+     "SVK"
+    ]
+   }
+  },
+  {
+   "key": "Ukraine",
+   "take": {
+    "from": [
+     "USSR",
+     "South Russia",
+     "White Russia"
+    ],
+    "adm0": [
+     "UKR"
+    ]
+   }
+  },
+  {
+   "key": "Crimea",
+   "take": {
+    "from": [
+     "USSR",
+     "South Russia",
+     "Ukraine"
+    ],
+    "iso": [
+     "UA-43",
+     "UA-40"
+    ]
+   }
+  },
+  {
+   "key": "Belarus",
+   "take": {
+    "from": [
+     "USSR",
+     "White Russia"
+    ],
+    "adm0": [
+     "BLR"
+    ]
+   }
+  },
+  {
+   "key": "North Sakhalin",
+   "take": {
+    "from": "USSR",
+    "iso": [
+     "RU-SAK"
+    ]
+   }
+  },
+  {
+   "key": "Central Lithuania",
+   "take": {
+    "from": "Lithuania",
+    "iso": [
+     "LT-VL"
+    ]
+   }
+  },
+  {
+   "key": "Memel",
+   "take": {
+    "from": "Lithuania",
+    "iso": [
+     "LT-KL"
+    ]
+   }
+  },
+  {
+   "key": "Smyrna zone",
+   "take": {
+    "from": "Greece",
+    "adm0": [
+     "TUR"
+    ]
+   }
+  },
+  {
+   "key": "Italian Anatolia",
+   "take": {
+    "from": "Italy",
+    "adm0": [
+     "TUR"
+    ]
+   }
+  }
+ ],
+ "1914": [
+  {
+   "key": "Papua",
+   "iso": [
+    "PG-WPD",
+    "PG-GPK",
+    "PG-CPM",
+    "PG-NCD",
+    "PG-MBA",
+    "PG-NPP",
+    "PG-SHM"
+   ]
+  },
+  {
+   "key": "Darfur",
+   "iso": [
+    "SD-DE",
+    "SD-DN",
+    "SD-DS",
+    "SD-DW"
+   ]
+  },
+  {
+   "key": "Korea",
+   "adm0": [
+    "KOR",
+    "PRK"
+   ]
+  },
+  {
+   "key": "Taiwan",
+   "adm0": [
+    "TWN"
+   ]
+  },
+  {
+   "key": "Lebanon",
+   "adm0": [
+    "LBN"
+   ]
+  },
+  {
+   "key": "Tuva",
+   "iso": [
+    "RU-TY"
+   ]
+  },
+  {
+   "key": "Greenland",
+   "adm0": [
+    "GRL"
+   ]
+  },
+  {
+   "key": "Faroe Islands",
+   "adm0": [
+    "FRO"
+   ]
+  },
+  {
+   "key": "Jordan",
+   "adm0": [
+    "JOR"
+   ]
+  },
+  {
+   "key": "Kuwait",
+   "adm0": [
+    "KWT"
+   ]
+  },
+  {
+   "key": "Bahrain",
+   "adm0": [
+    "BHR"
+   ]
+  },
+  {
+   "key": "Cyprus",
+   "adm0": [
+    "CYP",
+    "CYN",
+    "ESB",
+    "WSB"
+   ]
+  },
+  {
+   "key": "Malta",
+   "adm0": [
+    "MLT"
+   ]
+  },
+  {
+   "key": "Gibraltar",
+   "adm0": [
+    "GIB"
+   ]
+  },
+  {
+   "key": "Macau",
+   "adm0": [
+    "MAC"
+   ]
+  },
+  {
+   "key": "Goa",
+   "iso": [
+    "IN-GA"
+   ]
+  },
+  {
+   "key": "French India",
+   "iso": [
+    "IN-PY"
+   ]
+  },
+  {
+   "key": "Portuguese Timor",
+   "adm0": [
+    "TLS"
+   ]
+  },
+  {
+   "key": "Cape Verde",
+   "adm0": [
+    "CPV"
+   ]
+  },
+  {
+   "key": "Sao Tome",
+   "adm0": [
+    "STP"
+   ]
+  },
+  {
+   "key": "Mauritius",
+   "adm0": [
+    "MUS"
+   ]
+  },
+  {
+   "key": "Seychelles",
+   "adm0": [
+    "SYC"
+   ]
+  },
+  {
+   "key": "Reunion",
+   "iso": [
+    "FR-RE"
+   ]
+  },
+  {
+   "key": "Comoros",
+   "adm0": [
+    "COM"
+   ],
+   "iso": [
+    "FR-YT"
+   ]
+  },
+  {
+   "key": "Zanzibar",
+   "iso": [
+    "TZ-06",
+    "TZ-07",
+    "TZ-10",
+    "TZ-11",
+    "TZ-15"
+   ]
+  },
+  {
+   "key": "Maldives",
+   "adm0": [
+    "MDV"
+   ]
+  },
+  {
+   "key": "Channel Islands",
+   "adm0": [
+    "GGY",
+    "JEY"
+   ]
+  },
+  {
+   "key": "Aden",
+   "iso": [
+    "YE-HD",
+    "YE-MR",
+    "YE-LA",
+    "YE-AD",
+    "YE-AB",
+    "YE-SH",
+    "YE-DA"
+   ]
+  },
+  {
+   "key": "North Yemen",
+   "adm0": [
+    "YEM"
+   ]
+  },
+  {
+   "key": "Asir",
+   "iso": [
+    "SA-14",
+    "SA-09"
+   ]
+  },
+  {
+   "key": "Guam",
+   "adm0": [
+    "GUM"
+   ]
+  },
+  {
+   "key": "Micronesia",
+   "adm0": [
+    "MNP",
+    "PLW",
+    "FSM",
+    "MHL"
+   ]
+  },
+  {
+   "key": "Qatar",
+   "adm0": [
+    "QAT"
+   ]
+  },
+  {
+   "key": "Trucial States",
+   "adm0": [
+    "ARE"
+   ]
+  },
+  {
+   "key": "Muscat and Oman",
+   "adm0": [
+    "OMN"
+   ]
+  },
+  {
+   "key": "Hejaz",
+   "iso": [
+    "SA-02",
+    "SA-03",
+    "SA-07",
+    "SA-11"
+   ]
+  },
+  {
+   "key": "Hail",
+   "iso": [
+    "SA-06",
+    "SA-08",
+    "SA-12"
+   ]
+  },
+  {
+   "key": "Mesopotamia",
+   "adm0": [
+    "IRQ"
+   ]
+  },
+  {
+   "key": "Syria",
+   "adm0": [
+    "SYR"
+   ]
+  },
+  {
+   "key": "Palestine",
+   "adm0": [
+    "ISR",
+    "PSX"
+   ]
+  },
+  {
+   "key": "Newfoundland",
+   "iso": [
+    "CA-NL"
+   ]
+  },
+  {
+   "key": "Danish West Indies",
+   "adm0": [
+    "VIR"
+   ]
+  },
+  {
+   "key": "Rwanda",
+   "adm0": [
+    "RWA"
+   ]
+  },
+  {
+   "key": "Burundi",
+   "adm0": [
+    "BDI"
+   ]
+  },
+  {
+   "key": "Kamerun",
+   "adm0": [
+    "CMR"
+   ]
+  },
+  {
+   "key": "French Equatorial Africa",
+   "adm0": [
+    "GAB",
+    "COG",
+    "CAF",
+    "TCD"
+   ]
+  },
+  {
+   "key": "French West Africa",
+   "adm0": [
+    "GIN"
+   ]
+  },
+  {
+   "key": "Ottoman Empire",
+   "take": {
+    "from": "Bulgaria",
+    "adm0": [
+     "TUR"
+    ]
+   }
+  },
+  {
+   "key": "Vilnius region",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "LT-VL"
+    ]
+   }
+  },
+  {
+   "key": "Congress Poland",
+   "take": {
+    "from": "Russian Empire",
+    "adm0": [
+     "POL"
+    ]
+   }
+  },
+  {
+   "key": "Lithuania (RU)",
+   "take": {
+    "from": "Russian Empire",
+    "adm0": [
+     "LTU"
+    ]
+   }
+  },
+  {
+   "key": "Latvia (RU)",
+   "take": {
+    "from": "Russian Empire",
+    "adm0": [
+     "LVA"
+    ]
+   }
+  },
+  {
+   "key": "Estonia (RU)",
+   "take": {
+    "from": "Russian Empire",
+    "adm0": [
+     "EST"
+    ]
+   }
+  },
+  {
+   "key": "West Belarus",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "BY-BR",
+     "BY-HR",
+     "BY-MI",
+     "BY-HM"
+    ]
+   }
+  },
+  {
+   "key": "Bessarabia",
+   "take": {
+    "from": [
+     "Russian Empire",
+     "Romania"
+    ],
+    "adm0": [
+     "MDA"
+    ]
+   }
+  },
+  {
+   "key": "Ukraine (RU)",
+   "take": {
+    "from": "Russian Empire",
+    "adm0": [
+     "UKR"
+    ]
+   }
+  },
+  {
+   "key": "Ukraine (RU)",
+   "take": {
+    "from": "Bessarabia",
+    "iso": [
+     "MD-SN",
+     "MD-CAM",
+     "MD-GRI"
+    ]
+   }
+  },
+  {
+   "key": "Littoral",
+   "take": {
+    "from": [
+     "Austro-Hungarian Empire",
+     "Kingdom of Italy"
+    ],
+    "iso": [
+     "IT-TS",
+     "IT-GO",
+     "HR-18"
+    ]
+   }
+  },
+  {
+   "key": "Littoral",
+   "take": {
+    "from": "Austro-Hungarian Empire",
+    "region": [
+     "SVN/Goriška",
+     "SVN/Obalno-kraška",
+     "SVN/Notranjsko-kraška"
+    ]
+   }
+  },
+  {
+   "key": "Trentino",
+   "take": {
+    "from": "Austro-Hungarian Empire",
+    "iso": [
+     "IT-TN",
+     "IT-BZ"
+    ]
+   }
+  },
+  {
+   "key": "West Galicia",
+   "take": {
+    "from": "Austro-Hungarian Empire",
+    "adm0": [
+     "POL"
+    ]
+   }
+  },
+  {
+   "key": "East Galicia",
+   "take": {
+    "from": "Austro-Hungarian Empire",
+    "iso": [
+     "UA-46",
+     "UA-26",
+     "UA-61"
+    ]
+   }
+  },
+  {
+   "key": "Bukovina",
+   "take": {
+    "from": "Austro-Hungarian Empire",
+    "iso": [
+     "UA-77",
+     "RO-SV"
+    ]
+   }
+  },
+  {
+   "key": "Carpathian Ruthenia",
+   "take": {
+    "from": "Austro-Hungarian Empire",
+    "iso": [
+     "UA-21"
+    ]
+   }
+  },
+  {
+   "key": "Bohemia",
+   "take": {
+    "from": "Austro-Hungarian Empire",
+    "adm0": [
+     "CZE"
+    ]
+   }
+  },
+  {
+   "key": "Slovakia",
+   "take": {
+    "from": "Austro-Hungarian Empire",
+    "adm0": [
+     "SVK"
+    ]
+   }
+  },
+  {
+   "key": "Austria",
+   "take": {
+    "from": "Austro-Hungarian Empire",
+    "adm0": [
+     "AUT"
+    ]
+   }
+  },
+  {
+   "key": "Hungary",
+   "take": {
+    "from": "Austro-Hungarian Empire",
+    "adm0": [
+     "HUN"
+    ]
+   }
+  },
+  {
+   "key": "Transylvania",
+   "take": {
+    "from": "Austro-Hungarian Empire",
+    "adm0": [
+     "ROU"
+    ]
+   }
+  },
+  {
+   "key": "South Slav lands",
+   "take": {
+    "from": "Austro-Hungarian Empire",
+    "adm0": [
+     "HRV",
+     "BIH",
+     "SVN",
+     "SRB"
+    ]
+   }
+  },
+  {
+   "key": "Posen",
+   "take": {
+    "from": "German Empire",
+    "iso": [
+     "PL-WP"
+    ]
+   }
+  },
+  {
+   "key": "Alsace-Lorraine",
+   "take": {
+    "from": "German Empire",
+    "iso": [
+     "FR-67",
+     "FR-68",
+     "FR-57"
+    ]
+   }
+  },
+  {
+   "key": "Occupied France",
+   "take": {
+    "from": "France",
+    "iso": [
+     "FR-59",
+     "FR-08",
+     "FR-02"
+    ]
+   }
+  },
+  {
+   "key": "Friuli",
+   "take": {
+    "from": "Kingdom of Italy",
+    "iso": [
+     "IT-UD",
+     "IT-PN",
+     "IT-BL"
+    ]
+   }
+  }
+ ],
+ "1900": [
+  {
+   "key": "Lebanon",
+   "adm0": [
+    "LBN"
+   ]
+  },
+  {
+   "key": "Goa",
+   "iso": [
+    "IN-GA"
+   ]
+  },
+  {
+   "key": "French India",
+   "iso": [
+    "IN-PY"
+   ]
+  },
+  {
+   "key": "Portuguese Timor",
+   "adm0": [
+    "TLS"
+   ]
+  },
+  {
+   "key": "Cape Verde",
+   "adm0": [
+    "CPV"
+   ]
+  },
+  {
+   "key": "Sao Tome",
+   "adm0": [
+    "STP"
+   ]
+  },
+  {
+   "key": "Mauritius",
+   "adm0": [
+    "MUS"
+   ]
+  },
+  {
+   "key": "Seychelles",
+   "adm0": [
+    "SYC"
+   ]
+  },
+  {
+   "key": "Reunion",
+   "iso": [
+    "FR-RE"
+   ]
+  },
+  {
+   "key": "Comoros",
+   "adm0": [
+    "COM"
+   ],
+   "iso": [
+    "FR-YT"
+   ]
+  },
+  {
+   "key": "Zanzibar",
+   "iso": [
+    "TZ-06",
+    "TZ-07",
+    "TZ-10",
+    "TZ-11",
+    "TZ-15"
+   ]
+  },
+  {
+   "key": "Maldives",
+   "adm0": [
+    "MDV"
+   ]
+  },
+  {
+   "key": "Channel Islands",
+   "adm0": [
+    "GGY",
+    "JEY"
+   ]
+  },
+  {
+   "key": "Aden",
+   "iso": [
+    "YE-HD",
+    "YE-MR",
+    "YE-LA",
+    "YE-AD",
+    "YE-AB",
+    "YE-SH",
+    "YE-DA"
+   ]
+  },
+  {
+   "key": "North Yemen",
+   "adm0": [
+    "YEM"
+   ]
+  },
+  {
+   "key": "Asir",
+   "iso": [
+    "SA-14",
+    "SA-09"
+   ]
+  },
+  {
+   "key": "Guam",
+   "adm0": [
+    "GUM"
+   ]
+  },
+  {
+   "key": "Malta",
+   "adm0": [
+    "MLT"
+   ]
+  },
+  {
+   "key": "Gibraltar",
+   "adm0": [
+    "GIB"
+   ]
+  },
+  {
+   "key": "Macau",
+   "adm0": [
+    "MAC"
+   ]
+  },
+  {
+   "key": "Cyprus",
+   "adm0": [
+    "CYP",
+    "CYN",
+    "ESB",
+    "WSB"
+   ]
+  },
+  {
+   "key": "Kuwait",
+   "adm0": [
+    "KWT"
+   ]
+  },
+  {
+   "key": "Bahrain",
+   "adm0": [
+    "BHR"
+   ]
+  },
+  {
+   "key": "Ottoman Empire",
+   "adm0": [
+    "IRQ",
+    "SYR",
+    "LBN",
+    "ISR",
+    "PSX",
+    "JOR"
+   ]
+  },
+  {
+   "key": "Hejaz",
+   "iso": [
+    "SA-02",
+    "SA-03",
+    "SA-07",
+    "SA-11"
+   ]
+  },
+  {
+   "key": "Hasa",
+   "iso": [
+    "SA-04"
+   ]
+  },
+  {
+   "key": "Riyadh",
+   "iso": [
+    "SA-01"
+   ]
+  },
+  {
+   "key": "Qassim",
+   "iso": [
+    "SA-05"
+   ]
+  },
+  {
+   "key": "Hail",
+   "iso": [
+    "SA-06",
+    "SA-08",
+    "SA-12"
+   ]
+  },
+  {
+   "key": "Qatar",
+   "adm0": [
+    "QAT"
+   ]
+  },
+  {
+   "key": "Trucial Oman",
+   "adm0": [
+    "ARE"
+   ]
+  },
+  {
+   "key": "Oman",
+   "adm0": [
+    "OMN"
+   ]
+  },
+  {
+   "key": "Mongolia",
+   "adm0": [
+    "MNG"
+   ]
+  },
+  {
+   "key": "Tibet",
+   "iso": [
+    "CN-XZ"
+   ]
+  },
+  {
+   "key": "Tuva",
+   "iso": [
+    "RU-TY"
+   ]
+  },
+  {
+   "key": "Taiwan",
+   "adm0": [
+    "TWN"
+   ]
+  },
+  {
+   "key": "Finland",
+   "adm0": [
+    "FIN",
+    "ALD"
+   ]
+  },
+  {
+   "key": "Norway",
+   "adm0": [
+    "NOR"
+   ]
+  },
+  {
+   "key": "Faroe Islands",
+   "adm0": [
+    "FRO"
+   ]
+  },
+  {
+   "key": "Newfoundland",
+   "iso": [
+    "CA-NL"
+   ]
+  },
+  {
+   "key": "Puerto Rico",
+   "adm0": [
+    "PRI"
+   ]
+  },
+  {
+   "key": "Panama",
+   "adm0": [
+    "PAN"
+   ]
+  },
+  {
+   "key": "Micronesia",
+   "adm0": [
+    "MNP",
+    "PLW",
+    "FSM",
+    "MHL"
+   ]
+  },
+  {
+   "key": "Papua",
+   "iso": [
+    "PG-WPD",
+    "PG-GPK",
+    "PG-CPM",
+    "PG-NCD",
+    "PG-MBA",
+    "PG-NPP",
+    "PG-SHM"
+   ]
+  },
+  {
+   "key": "Papua New Guinea",
+   "adm0": [
+    "PNG"
+   ]
+  },
+  {
+   "key": "New Zealand",
+   "adm0": [
+    "NZL"
+   ]
+  },
+  {
+   "key": "Crete",
+   "iso": [
+    "GR-M"
+   ]
+  },
+  {
+   "key": "Aegean Islands",
+   "iso": [
+    "GR-K"
+   ]
+  },
+  {
+   "key": "Ottoman Macedonia",
+   "iso": [
+    "GR-B",
+    "GR-C",
+    "GR-69"
+   ]
+  },
+  {
+   "key": "Epirus",
+   "iso": [
+    "GR-D"
+   ]
+  },
+  {
+   "key": "Western Thrace",
+   "iso": [
+    "GR-A",
+    "BG-01",
+    "BG-09",
+    "BG-21"
+   ]
+  },
+  {
+   "key": "Greece",
+   "iso": [
+    "GR-A1",
+    "GR-J",
+    "GR-G",
+    "GR-H",
+    "GR-E",
+    "GR-F"
+   ]
+  },
+  {
+   "key": "Bulgaria",
+   "adm0": [
+    "BGR"
+   ]
+  },
+  {
+   "key": "East Thrace",
+   "iso": [
+    "TR-22",
+    "TR-39",
+    "TR-59"
+   ]
+  },
+  {
+   "key": "Albania",
+   "adm0": [
+    "ALB"
+   ]
+  },
+  {
+   "key": "Kosovo and Macedonia",
+   "adm0": [
+    "KOS",
+    "MKD"
+   ]
+  },
+  {
+   "key": "Ottoman Sandzak",
+   "iso": [
+    "ME-14",
+    "ME-04",
+    "ME-03",
+    "ME-17",
+    "ME-13"
+   ]
+  },
+  {
+   "key": "Libya",
+   "adm0": [
+    "LBY"
+   ]
+  },
+  {
+   "key": "Egypt",
+   "adm0": [
+    "EGY"
+   ]
+  },
+  {
+   "key": "Darfur",
+   "iso": [
+    "SD-DE",
+    "SD-DN",
+    "SD-DS",
+    "SD-DW"
+   ]
+  },
+  {
+   "key": "Anglo-Egyptian Sudan",
+   "adm0": [
+    "SDN",
+    "SDS"
+   ]
+  },
+  {
+   "key": "Algeria",
+   "adm0": [
+    "DZA"
+   ]
+  },
+  {
+   "key": "Tunisia",
+   "adm0": [
+    "TUN"
+   ]
+  },
+  {
+   "key": "Morocco",
+   "adm0": [
+    "MAR"
+   ]
+  },
+  {
+   "key": "Rio de Oro",
+   "adm0": [
+    "SAH"
+   ]
+  },
+  {
+   "key": "Mauritania",
+   "adm0": [
+    "MRT"
+   ]
+  },
+  {
+   "key": "French West Africa",
+   "adm0": [
+    "SEN",
+    "MLI",
+    "GIN",
+    "CIV",
+    "BEN",
+    "BFA",
+    "NER"
+   ]
+  },
+  {
+   "key": "Gambia",
+   "adm0": [
+    "GMB"
+   ]
+  },
+  {
+   "key": "Sierra Leone",
+   "adm0": [
+    "SLE"
+   ]
+  },
+  {
+   "key": "Portuguese Guinea",
+   "adm0": [
+    "GNB"
+   ]
+  },
+  {
+   "key": "Liberia",
+   "adm0": [
+    "LBR"
+   ]
+  },
+  {
+   "key": "Gold Coast",
+   "adm0": [
+    "GHA"
+   ]
+  },
+  {
+   "key": "Togoland",
+   "adm0": [
+    "TGO"
+   ]
+  },
+  {
+   "key": "Nigeria",
+   "adm0": [
+    "NGA"
+   ]
+  },
+  {
+   "key": "Kamerun",
+   "adm0": [
+    "CMR"
+   ]
+  },
+  {
+   "key": "Spanish Guinea",
+   "adm0": [
+    "GNQ"
+   ]
+  },
+  {
+   "key": "French Congo",
+   "adm0": [
+    "GAB",
+    "COG",
+    "CAF",
+    "TCD"
+   ]
+  },
+  {
+   "key": "Congo Free State",
+   "adm0": [
+    "COD"
+   ]
+  },
+  {
+   "key": "Angola",
+   "adm0": [
+    "AGO"
+   ]
+  },
+  {
+   "key": "German South-West Africa",
+   "adm0": [
+    "NAM"
+   ]
+  },
+  {
+   "key": "Cape Colony",
+   "iso": [
+    "ZA-WC",
+    "ZA-EC",
+    "ZA-NC"
+   ]
+  },
+  {
+   "key": "Natal",
+   "iso": [
+    "ZA-NL"
+   ]
+  },
+  {
+   "key": "Transvaal",
+   "iso": [
+    "ZA-GT",
+    "ZA-MP",
+    "ZA-LP",
+    "ZA-NW"
+   ]
+  },
+  {
+   "key": "Orange Free State",
+   "iso": [
+    "ZA-FS"
+   ]
+  },
+  {
+   "key": "Basutoland",
+   "adm0": [
+    "LSO"
+   ]
+  },
+  {
+   "key": "Swaziland",
+   "adm0": [
+    "SWZ"
+   ]
+  },
+  {
+   "key": "Bechuanaland",
+   "adm0": [
+    "BWA"
+   ]
+  },
+  {
+   "key": "Rhodesia",
+   "adm0": [
+    "ZMB",
+    "ZWE"
+   ]
+  },
+  {
+   "key": "British Central Africa",
+   "adm0": [
+    "MWI"
+   ]
+  },
+  {
+   "key": "Portuguese East Africa",
+   "adm0": [
+    "MOZ"
+   ]
+  },
+  {
+   "key": "German East Africa",
+   "adm0": [
+    "TZA",
+    "RWA",
+    "BDI"
+   ]
+  },
+  {
+   "key": "British East Africa",
+   "adm0": [
+    "KEN"
+   ]
+  },
+  {
+   "key": "Uganda",
+   "adm0": [
+    "UGA"
+   ]
+  },
+  {
+   "key": "Ethiopia",
+   "adm0": [
+    "ETH"
+   ]
+  },
+  {
+   "key": "Eritrea",
+   "adm0": [
+    "ERI"
+   ]
+  },
+  {
+   "key": "French Somaliland",
+   "adm0": [
+    "DJI"
+   ]
+  },
+  {
+   "key": "British Somaliland",
+   "adm0": [
+    "SOL"
+   ]
+  },
+  {
+   "key": "Italian Somaliland",
+   "adm0": [
+    "SOM"
+   ]
+  },
+  {
+   "key": "Madagascar",
+   "adm0": [
+    "MDG"
+   ]
+  },
+  {
+   "key": "Cuba",
+   "adm0": [
+    "CUB"
+   ]
+  },
+  {
+   "key": "Martinique",
+   "iso": [
+    "FR-MQ"
+   ]
+  },
+  {
+   "key": "British West Indies",
+   "adm0": [
+    "JAM",
+    "BHS",
+    "TTO",
+    "BRB",
+    "LCA",
+    "VCT",
+    "GRD",
+    "CYM",
+    "TCA",
+    "VGB"
+   ]
+  }
+ ]
 }
