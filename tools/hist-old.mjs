@@ -573,6 +573,9 @@ export const EVENTS = {
     { y: 1939, r: { "Czechoslovakia": "Protetorado da Boêmia e Morávia", "Slovakia": "Eslováquia (Estado cliente da Alemanha)" }, f: { "Czechoslovakia": "h:de_nazi", "Slovakia": "h:sk39" } }, // 14–15/mar/1939
     { y: 1939, m: ["Hungria", "h:hu_k", ["Hungary", "Carpathian Ruthenia"]] }, // mar/1939
     { y: 1938, y1: 1938, m: ["Lituânia", "x:lt", ["Lithuania", "Memel"]] },
+    // China ocupada: províncias atribuídas aos governos fantoches (Provisório de Pequim: Hebei, Shandong, Shanxi, Henan, Jiangsu; Reformado de Nanquim: Jiangsu, Zhejiang, Anhui, Nanquim, Xangai)
+    { y: 1938, y1: 1939, r: { "Occupied China": "China ocupada pelo Japão (governos fantoches)" }, f: { "Occupied China": "h:cn_5" }, o: { "Occupied China": null } }, // ambos usavam a bandeira de cinco cores
+    { y: 1940, y1: 1944, r: { "Occupied China": "China ocupada pelo Japão (governo de Wang Jingwei, Estado fantoche)" }, f: { "Occupied China": "x:tw" }, o: { "Occupied China": null } }, // 30/mar/1940; bandeira da República da China (flâmula amarela só ao ar livre, retirada em fev/1943)
     { y: 1938, y1: 1938, r: { "Danzig": "Cidade Livre de Danzig (Liga das Nações)" }, f: { "Danzig": "h:danzig" }, o: { "Danzig": null } }, // anexada em 1/set/1939
     { y: 1939, m: ["Alemanha", "h:de_nazi", ["Germany", "Memel", "Danzig"]] }, // 23/mar/1939
     { y: 1938, y1: 1938, m: ["Polônia", "x:pl", ["Poland", "Vilnius region", "Eastern Poland", "Eastern Poland 1944"]] },

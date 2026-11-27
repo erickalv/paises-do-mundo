@@ -727,6 +727,24 @@
     "map": 1930,
     "name": "Danzig"
    }
+  },
+  {
+   "key": "Occupied China",
+   "take": {
+    "from": "Chinese warlords",
+    "iso": [
+     "CN-BJ",
+     "CN-TJ",
+     "CN-HE",
+     "CN-SD",
+     "CN-SX",
+     "CN-HA",
+     "CN-JS",
+     "CN-ZJ",
+     "CN-AH",
+     "CN-SH"
+    ]
+   }
   }
  ],
  "labels": {
