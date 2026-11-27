@@ -527,7 +527,9 @@ export const EVENTS = {
     { y: 1754, y1: 1862, r: { "Cambodia": "Camboja (vassalo do Sião)" }, f: { "Cambodia": "blank" }, o: { "Cambodia": null } }, // protetorado francês em 11/ago/1863
     { y: 1754, y1: 1862, r: { "Herat": "Emirado de Herat" }, f: { "Herat": "blank" }, o: { "Herat": null } }, // tomado pelos Barakzai em 27/mai/1863
     { y: 1863, m: ["Afeganistão", "blank", ["Afghanistan", "Herat"]] },
-    { y: 1754, y1: 1863, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Xinjiang"]] }, // Yettishar desde 12/nov/1864
+    { y: 1759, y1: 1863, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Xinjiang"]] }, // Bacia do Tarim pacificada em 1759
+    { y: 1755, y1: 1758, r: { "Xinjiang": "Zungária e Bacia do Tarim (guerra Qing–Zungar)" }, f: { "Xinjiang": "blank" }, o: { "Xinjiang": null } }, // Ili tomada em 1755; revolta de Amursana; batalhas de 1758
+    { y: 1754, y1: 1754, r: { "Xinjiang": "Canato Zungar" }, f: { "Xinjiang": "blank" }, o: { "Xinjiang": null } }, // Bacia do Tarim conquistada pelos zungares em 1680–1688 // Yettishar desde 12/nov/1864
     // erros do mapa de 1900 corrigidos para 1878–1912
     { y: 1815, y1: 1827, m: ["Império Russo", "x:ru", ["Russian Empire", "Russian Caucasus", "Bessarabia", "Congress Poland"]] },
     { y: 1828, y1: 1829, m: ["Império Russo", "x:ru", ["Russian Empire", "Russian Caucasus", "Bessarabia", "Erivan", "Congress Poland"]] }, // Turkmenchay, 2/fev/1828
