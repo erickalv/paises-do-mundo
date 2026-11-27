@@ -5113,6 +5113,25 @@
    }
   },
   {
+   "key": "New Netherland",
+   "take": {
+    "from": "United States of America",
+    "iso": [
+     "US-NY",
+     "US-NJ"
+    ]
+   }
+  },
+  {
+   "key": "New Sweden",
+   "take": {
+    "from": "United States of America",
+    "iso": [
+     "US-DE"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
