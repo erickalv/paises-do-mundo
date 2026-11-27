@@ -4599,6 +4599,48 @@
    }
   },
   {
+   "key": "Habsburg Serbia",
+   "take": {
+    "from": "Serbia",
+    "iso": [
+     "RS-00",
+     "RS-08",
+     "RS-09",
+     "RS-10",
+     "RS-11",
+     "RS-12",
+     "RS-13"
+    ]
+   }
+  },
+  {
+   "key": "Oltenia",
+   "take": {
+    "from": [
+     "Wallachia",
+     "Romania"
+    ],
+    "iso": [
+     "RO-DJ",
+     "RO-GJ",
+     "RO-MH",
+     "RO-OT",
+     "RO-VL"
+    ]
+   }
+  },
+  {
+   "key": "Lorraine",
+   "take": {
+    "from": "France",
+    "iso": [
+     "FR-54",
+     "FR-55",
+     "FR-88"
+    ]
+   }
+  },
+  {
    "key": "Kymmene",
    "take": {
     "from": "Finland",
