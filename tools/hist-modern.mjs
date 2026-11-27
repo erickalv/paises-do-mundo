@@ -132,7 +132,8 @@ export const ROWS = [
   ["PDRY", "Iêmen do Sul", "h:yem_s", 1967, 1989, ["YEM~S"], [48.6, 15.4]],
   ["MUSC", "Mascate e Omã", "h:om_red", 1946, 1969, ["OMN"]],
   ["TRUC", "Estados da Trégua (britânicos)", G, 1946, 1970, ["ARE"]],
-  ["QAT0", "Catar (protetorado britânico)", G, 1946, 1970, ["QAT"]],
+  ["QAT0", "Catar (protetorado britânico)", "h:qa36", 1946, 1948, ["QAT"]], // grená com faixa serrilhada
+  ["QAT49", "Catar (protetorado britânico)", "x:qa", 1949, 1970, ["QAT"]], // 1949: com losangos e nome (simplificada)
   ["BHR0", "Bahrein (protetorado britânico)", "h:bh_old", 1946, 1970, ["BHR"]],
   ["BHR1", null, "h:bh_old", 1971, 2001, ["BHR"]],
   ["KWT0", "Kuwait (protetorado britânico)", "h:kw21", 1946, 1960, ["KWT"]],

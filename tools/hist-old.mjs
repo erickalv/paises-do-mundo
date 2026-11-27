@@ -130,8 +130,8 @@ export const EVENTS = {
     { y: 1900, m: ["Índia Britânica", "x:gb", ["British Raj", "India"]] },
     { y: 1900, y1: 1905, f: { "Brunei": "h:bn_y" } }, // amarela lisa até 1906
     { y: 1906, f: { "Brunei": "h:bn06" } },
-    { y: 1900, y1: 1904, r: { "Korea": "Império Coreano" }, f: { "Korea": "blank" }, o: { "Korea": null } },
-    { y: 1905, y1: 1909, r: { "Korea": "Império Coreano (protetorado japonês)" }, f: { "Korea": "blank" }, o: { "Korea": null } }, // nov/1905
+    { y: 1900, y1: 1904, r: { "Korea": "Império Coreano" }, f: { "Korea": "x:kr" }, o: { "Korea": null } },
+    { y: 1905, y1: 1909, r: { "Korea": "Império Coreano (protetorado japonês)" }, f: { "Korea": "x:kr" }, o: { "Korea": null } }, // nov/1905
     { y: 1910, r: { "Korea": "Coreia (Japão)" }, f: { "Korea": "x:jp" }, o: { "Korea": "Japão" } }, // 29/ago/1910
     { y: 1900, y1: 1910, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Mongolia", "Tibet", "Tuva"]] },
     { y: 1911, y1: 1911, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Tibet", "Tuva"]] },
@@ -145,9 +145,9 @@ export const EVENTS = {
     { y: 1911, r: { "Asir": "Emirado Idríssida de Asir" }, f: { "Asir": "blank" }, o: { "Asir": null } },
     { y: 1900, y1: 1901, m: ["Emirado de Jabal Shammar", "blank", ["Hail", "Riyadh", "Qassim"]] },
     { y: 1902, y1: 1903, m: ["Emirado de Jabal Shammar", "blank", ["Hail", "Qassim"]] }, // Riad tomada por Ibn Saud em jan/1902
-    { y: 1902, y1: 1903, r: { "Riyadh": "Emirado de Riad" }, f: { "Riyadh": "blank" } },
+    { y: 1902, y1: 1903, r: { "Riyadh": "Emirado de Riad" }, f: { "Riyadh": "x:sa" } },
     { y: 1904, r: { "Hail": "Emirado de Jabal Shammar" }, f: { "Hail": "blank" } },
-    { y: 1904, m: ["Emirado de Riad", "blank", ["Riyadh", "Qassim"]] }, // Qassim em 1904–1906
+    { y: 1904, m: ["Emirado de Riad", "x:sa", ["Riyadh", "Qassim"]] }, // Qassim em 1904–1906
     { y: 1900, r: { "Arabia": null, "Kuwait": "Kuwait", "Bahrain": "Bahrein (protetorado britânico)", "Qatar": "Catar", "Trucial Oman": "Estados da Trégua (protetorado britânico)",
       "Oman": "Mascate e Omã", "Aden": "Áden e protetorados (britânicos)", "Cyprus": "Chipre (administração britânica)", "Malta": "Malta", "Gibraltar": "Gibraltar" },
       f: { "Kuwait": "x:tr", "Bahrain": "x:gb", "Qatar": "blank", "Trucial Oman": "h:trucial", "Oman": "h:om_red", "Aden": "x:gb", "Cyprus": "x:gb", "Malta": "x:gb", "Gibraltar": "x:gb" },
@@ -245,7 +245,7 @@ export const EVENTS = {
     { y: 1919, r: { "Lithuania (RU)": "Lituânia" }, f: { "Lithuania (RU)": "x:lt" }, o: { "Lithuania (RU)": null } },
     { y: 1918, r: { "Latvia (RU)": "Letônia", "Estonia (RU)": "Estônia" }, f: { "Latvia (RU)": "x:lv", "Estonia (RU)": "x:ee" }, o: { "Latvia (RU)": null, "Estonia (RU)": null } },
     { y: 1918, y1: 1918, r: { "Ukraine (RU)": "República Popular Ucraniana", "East Galicia": "República Popular da Ucrânia Ocidental" },
-      f: { "Ukraine (RU)": "x:ua", "East Galicia": "blank" }, o: { "Ukraine (RU)": null, "East Galicia": null } },
+      f: { "Ukraine (RU)": "x:ua", "East Galicia": "x:ua" }, o: { "Ukraine (RU)": null, "East Galicia": null } },
     { y: 1919, r: { "Ukraine (RU)": "Ucrânia (guerra civil)" }, f: { "Ukraine (RU)": "blank" }, o: { "Ukraine (RU)": null } },
     { y: 1918, r: { "Georgia": "Geórgia", "Armenia": "Armênia", "Azerbaijan": "Azerbaijão" }, f: { "Georgia": "h:ge90", "Armenia": "x:am", "Azerbaijan": "x:az" },
       o: { "Georgia": null, "Armenia": null, "Azerbaijan": null } }, // mai/1918
@@ -301,7 +301,7 @@ export const EVENTS = {
     { y: 1913, r: { "Asir": "Emirado Idríssida de Asir", "Hail": "Emirado de Jabal Shammar", "Arabia (Nejd)": "Emirado de Négede e Hasa", "Kuwait": "Kuwait (protetorado britânico)",
       "Bahrain": "Bahrein (protetorado britânico)", "Trucial States": "Estados da Trégua (protetorado britânico)", "Aden": "Áden e protetorados (britânicos)", "Muscat and Oman": "Mascate e Omã",
       "Cyprus": "Chipre", "Malta": "Malta", "Gibraltar": "Gibraltar" },
-      f: { "Asir": "blank", "Hail": "blank", "Arabia (Nejd)": "blank", "Kuwait": "h:kw14", "Bahrain": "x:gb", "Trucial States": "h:trucial", "Aden": "x:gb", "Muscat and Oman": "h:om_red",
+      f: { "Asir": "blank", "Hail": "blank", "Arabia (Nejd)": "x:sa", "Kuwait": "h:kw14", "Bahrain": "x:gb", "Trucial States": "h:trucial", "Aden": "x:gb", "Muscat and Oman": "h:om_red",
       "Cyprus": "x:gb", "Malta": "x:gb", "Gibraltar": "x:gb" },
       o: { "Asir": null, "Hail": null, "Arabia (Nejd)": null, "Muscat and Oman": null, "Trucial States": null } },
     { y: 1913, r: { "British Protectorate": null } }, // sobra no Rub al-Khali, sem fronteira definida
@@ -402,10 +402,10 @@ export const EVENTS = {
     { y: 1920, m: ["Reino Mutawakkilita do Iêmen", "h:yem_k", ["North Yemen", "Yemen"]] }, // independente desde 30/out/1918
     { y: 1920, y1: 1929, r: { "Asir": "Emirado Idríssida de Asir" }, f: { "Asir": "blank" } },
     { y: 1920, y1: 1924, r: { "Hejaz": "Reino de Hejaz" }, f: { "Hejaz": "h:hejaz" } },
-    { y: 1920, y1: 1920, r: { "Hail": "Emirado de Jabal Shammar", "Emirate of Bin Shal'an": "Emirado de Négede e Hasa" }, f: { "Hail": "blank", "Emirate of Bin Shal'an": "blank" } },
+    { y: 1920, y1: 1920, r: { "Hail": "Emirado de Jabal Shammar", "Emirate of Bin Shal'an": "Emirado de Négede e Hasa" }, f: { "Hail": "blank", "Emirate of Bin Shal'an": "x:sa" } },
     { y: 1920, y1: 1920, m: ["Emirado de Jabal Shammar", "blank", ["Hail", "_null_153"]] },
-    { y: 1921, y1: 1924, m: ["Sultanato de Négede", "blank", ["Emirate of Bin Shal'an", "Hail", "_null_153"]] }, // Hail tomado em 2/nov/1921
-    { y: 1925, y1: 1925, m: ["Sultanato de Négede", "blank", ["Emirate of Bin Shal'an", "Hail", "_null_153", "Hejaz"]] }, // Hejaz conquistado em dez/1925
+    { y: 1921, y1: 1924, m: ["Sultanato de Négede", "x:sa", ["Emirate of Bin Shal'an", "Hail", "_null_153"]] }, // Hail tomado em 2/nov/1921
+    { y: 1925, y1: 1925, m: ["Sultanato de Négede", "x:sa", ["Emirate of Bin Shal'an", "Hail", "_null_153", "Hejaz"]] }, // Hejaz conquistado em dez/1925
     { y: 1926, m: ["Reino de Hejaz e Négede", "x:sa", ["Hejaz", "Emirate of Bin Shal'an", "Hail", "_null_153"]] }, // 8/jan/1926
     // Turquia
     { y: 1920, y1: 1922, r: { "Ottoman Sultanate": "Turquia (governo de Ancara)", "_null_152": "Constantinopla (ocupação aliada)" }, f: { "_null_152": "blank" } },
@@ -470,6 +470,7 @@ export const EVENTS = {
     { y: 1932, r: { "Manchuria": "Manchukuo (Estado fantoche do Japão)" }, f: { "Manchuria": "h:manchukuo" } }, // 1/mar/1932
     { y: 1930, y1: 1936, m: ["Índia Britânica", "x:gb", ["British Raj", "Burma"]] },
     { y: 1937, r: { "Burma": "Birmânia (britânica)" }, f: { "Burma": "x:gb" } }, // separada da Índia em 1/abr/1937
+    { y: 1936, f: { "Qatar": "h:qa36" } },
     { y: 1932, r: { "Mesopotamia (GB)": "Reino do Iraque" }, f: { "Mesopotamia (GB)": "h:iq_k" }, o: { "Mesopotamia (GB)": null } }, // 3/out/1932
     { y: 1930, y1: 1931, m: ["Reino de Hejaz e Négede", "x:sa", ["Hejaz", "Emirate of Bin Shal'an", "Hail", "_null_44"]] },
     { y: 1932, m: ["Arábia Saudita", "x:sa", ["Hejaz", "Emirate of Bin Shal'an", "Hail", "_null_44"]] }, // 23/set/1932
@@ -514,7 +515,7 @@ export const EVENTS = {
       "Gibraltar": "x:gb", "Macau": "x:pt", "Goa": "x:pt", "French India": "x:fr", "Portuguese Timor": "x:pt", "Maldives": "x:gb", "Andaman and Nicobar": "x:gb", "Burma": "x:gb",
       "Bhutan": "blank", "Brunei": "h:bn06" } },
     { y: 1940, f: { "Mongolia": "blank" } }, // bandeira de 1940 com o cavaleiro: não desenhada
-    { y: 1938, y1: 1938, r: { "Hatay": "Estado de Hatay" }, f: { "Hatay": "blank" } }, // 2/set/1938 a jun/1939
+    { y: 1938, y1: 1938, r: { "Hatay": "Estado de Hatay" }, f: { "Hatay": "h:hatay" } }, // 2/set/1938 a jun/1939
     { y: 1939, m: ["Turquia", "x:tr", ["Turkey", "Hatay"]] },
     { y: 1938, m: ["Palestina (mandato britânico)", "x:gb", ["Mandatory Palestine (GB)", "Israel"]] },
     { y: 1938, m: ["Arábia Saudita", "x:sa", ["Saudi Arabia", "Hejaz", "Emirate of Bin Shal'an", "Hail", "_null_154"]] }, // Hail conquistado em 1921, reino unificado em 1932
@@ -525,6 +526,8 @@ export const EVENTS = {
     { y: 1944, r: { "Syria (France)": "Síria" }, f: { "Syria (France)": "x:sy" }, o: { "Syria (France)": null } }, // reconhecida independente em 1/jan/1944
     { y: 1944, r: { "Iceland": "Islândia" } }, // república em 17/jun/1944
     { y: 1944, m: ["União Soviética", "h:su", ["USSR", "Tuva"]] }, // 11/out/1944
+    { y: 1938, f: { "Qatar": "h:qa36" } }, // grená com faixa branca serrilhada (1936–1949)
+    { y: 1941, y1: 1942, f: { "Tuva": "h:tuva41" } }, { y: 1943, y1: 1943, f: { "Tuva": "h:tuva43" } },
     // guerra no Pacífico (Japão)
     { y: 1941, y1: 1943, r: { "Guam": "Guam (ocupação japonesa)" }, f: { "Guam": "x:jp" }, o: { "Guam": null } }, // 10/dez/1941 a ago/1944
     { y: 1941, r: { "Hong Kong": "Hong Kong (ocupação japonesa)", "Brunei": "Brunei (ocupação japonesa)" }, f: { "Hong Kong": "x:jp", "Brunei": "x:jp" }, o: { "Hong Kong": null, "Brunei": null } },
@@ -536,7 +539,7 @@ export const EVENTS = {
       o: { "Malaysia": null, "Dutch East Indies": null, "Portuguese Timor": null, "Andaman and Nicobar": null } },
     { y: 1942, y1: 1942, r: { "Philippines": "Filipinas (ocupação japonesa)", "Burma": "Birmânia (ocupação japonesa)" }, f: { "Philippines": "x:jp", "Burma": "x:jp" }, o: { "Philippines": null, "Burma": null } },
     { y: 1943, r: { "Philippines": "Segunda República das Filipinas (Estado fantoche do Japão)", "Burma": "Estado da Birmânia (Estado fantoche do Japão)" },
-      f: { "Philippines": "blank", "Burma": "blank" }, o: { "Philippines": null, "Burma": null } }, // 14/out/1943 e 1/ago/1943; bandeiras não descritas
+      f: { "Philippines": "blank", "Burma": "h:mm43" }, o: { "Philippines": null, "Burma": null } }, // 14/out/1943 e 1/ago/1943; bandeiras não descritas
     // África
     { y: 1938, r: { "South West Africa": "Sudoeste Africano", "Cape Verde": "Cabo Verde", "Sao Tome": "São Tomé e Príncipe", "Mauritius": "Maurício", "Seychelles": "Seicheles",
       "Reunion": "Reunião", "Comoros": "Comores", "Zanzibar": "Zanzibar (protetorado britânico)", "New Hebrides": "Novas Hébridas" },
@@ -564,7 +567,7 @@ export const EVENTS = {
     { y: 1938, y1: 1938, r: { "Spain": "Espanha (guerra civil)" }, f: { "Spain": "blank" } }, // a guerra acabou em 1/abr/1939
     { y: 1938, f: { "Hungary": "h:hu_k" } },
     { y: 1938, y1: 1938, m: ["Tchecoslováquia", "x:cz", ["Czechoslovakia", "Slovakia", "Carpathian Ruthenia"]] }, // Sudetos (out/1938) e sul da Eslováquia (nov/1938) já fora
-    { y: 1939, r: { "Czechoslovakia": "Protetorado da Boêmia e Morávia", "Slovakia": "Eslováquia (Estado cliente da Alemanha)" }, f: { "Czechoslovakia": "h:de_nazi", "Slovakia": "blank" } }, // 14–15/mar/1939
+    { y: 1939, r: { "Czechoslovakia": "Protetorado da Boêmia e Morávia", "Slovakia": "Eslováquia (Estado cliente da Alemanha)" }, f: { "Czechoslovakia": "h:de_nazi", "Slovakia": "h:sk39" } }, // 14–15/mar/1939
     { y: 1939, m: ["Hungria", "h:hu_k", ["Hungary", "Carpathian Ruthenia"]] }, // mar/1939
     { y: 1938, y1: 1938, m: ["Lituânia", "x:lt", ["Lithuania", "Memel"]] },
     { y: 1939, m: ["Alemanha", "h:de_nazi", ["Germany", "Memel"]] }, // 23/mar/1939
@@ -625,7 +628,7 @@ export const EVENTS = {
       f: { "Yugoslavia": "h:de_nazi", "Montenegro": "h:it_sav", "Vardar Macedonia": "x:bg", "Greece": "blank", "Western Thrace": "x:bg" },
       o: { "Yugoslavia": null, "Montenegro": null, "Vardar Macedonia": null, "Greece": null, "Western Thrace": null } }, // abr/1941
     { y: 1941, r: { "Croatia": "Estado Independente da Croácia (fantoche do Eixo)", "Slovenia": "Eslovênia (dividida entre Alemanha e Itália)" },
-      f: { "Croatia": "blank", "Slovenia": "blank" }, o: { "Croatia": null, "Slovenia": null } }, // 10/abr/1941; bandeira da Croácia não descrita
+      f: { "Croatia": "h:hr41", "Slovenia": "blank" }, o: { "Croatia": null, "Slovenia": null } }, // 10/abr/1941; bandeira da Croácia não descrita
     { y: 1941, y1: 1942, m: ["Albânia (ocupada pela Itália)", "h:it_sav", ["Albania", "Kosovo"]] },
     { y: 1943, y1: 1943, m: ["Albânia (ocupada pela Alemanha)", "h:de_nazi", ["Albania", "Kosovo"]] },
     { y: 1943, r: { "Montenegro": "Montenegro (ocupação alemã)", "Slovenia": "Eslovênia (ocupada pela Alemanha)" }, f: { "Montenegro": "h:de_nazi", "Slovenia": "h:de_nazi" } }, // set/1943

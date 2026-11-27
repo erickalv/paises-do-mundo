@@ -314,6 +314,19 @@ F.bt56 = svg(btDragon("#D2232A", "#fff"));
 F.mn24 = svg(`<rect width="640" height="480" fill="#DA2032"/><svg x="213.3" y="0" width="213.3" height="480" viewBox="0 0 213.3 480" preserveAspectRatio="none"><g fill="#FFD900">${inner("mn")}</g></svg>`);
 // Etiópia 1897–1913: tricolor vermelho, amarelo e verde (a letra de Menelik no amarelo não é desenhada)
 F.eth97 = svg(H("#DA121A", "#FCDD09", "#078930"));
+// Eslováquia 1939–45: tricolor branca, azul e vermelha
+F.sk39 = svg(H("#fff", "#0B4EA2", "#EE1C25"));
+// Croácia NDH 1941–45: tricolor com o escudo xadrez no centro e o "U" no canto
+F.hr41 = svg(H("#FF0000", "#fff", "#171796") + `<rect x="283" y="168" width="74" height="74" fill="#fff" stroke="#171796" stroke-width="4"/><rect x="285" y="170" width="14" height="14" fill="#E30A17"/><rect x="299" y="170" width="14" height="14" fill="#fff"/><rect x="313" y="170" width="14" height="14" fill="#E30A17"/><rect x="327" y="170" width="14" height="14" fill="#fff"/><rect x="341" y="170" width="14" height="14" fill="#E30A17"/><rect x="285" y="184" width="14" height="14" fill="#fff"/><rect x="299" y="184" width="14" height="14" fill="#E30A17"/><rect x="313" y="184" width="14" height="14" fill="#fff"/><rect x="327" y="184" width="14" height="14" fill="#E30A17"/><rect x="341" y="184" width="14" height="14" fill="#fff"/><rect x="285" y="198" width="14" height="14" fill="#E30A17"/><rect x="299" y="198" width="14" height="14" fill="#fff"/><rect x="313" y="198" width="14" height="14" fill="#E30A17"/><rect x="327" y="198" width="14" height="14" fill="#fff"/><rect x="341" y="198" width="14" height="14" fill="#E30A17"/><rect x="285" y="212" width="14" height="14" fill="#fff"/><rect x="299" y="212" width="14" height="14" fill="#E30A17"/><rect x="313" y="212" width="14" height="14" fill="#fff"/><rect x="327" y="212" width="14" height="14" fill="#E30A17"/><rect x="341" y="212" width="14" height="14" fill="#fff"/><rect x="285" y="226" width="14" height="14" fill="#E30A17"/><rect x="299" y="226" width="14" height="14" fill="#fff"/><rect x="313" y="226" width="14" height="14" fill="#E30A17"/><rect x="327" y="226" width="14" height="14" fill="#fff"/><rect x="341" y="226" width="14" height="14" fill="#E30A17"/><rect x="30" y="20" width="110" height="120" fill="#fff"/><text x="85" y="128" font-family="DejaVu Sans" font-weight="bold" font-size="130" fill="#171796" text-anchor="middle">U</text>`);
+// Hatay 1938: bandeira turca com estrela vermelha dentro da branca
+F.hatay = svg(`<rect width="640" height="480" fill="#E30A17"/><circle cx="240" cy="240" r="120" fill="#fff"/><circle cx="270" cy="240" r="96" fill="#E30A17"/>${star(390, 240, 75, "#fff")}${star(390, 240, 50, "#E30A17")}`);
+// Estado da Birmânia 1943–45: amarela, verde e vermelha com pavão num disco branco (simplificado)
+F.mm43 = svg(H("#FECB00", "#34B233", "#EA2839") + `<circle cx="320" cy="240" r="110" fill="#fff"/><ellipse cx="320" cy="285" rx="70" ry="35" fill="#34B233"/><ellipse cx="320" cy="250" rx="28" ry="45" fill="#1E4FA0"/><circle cx="320" cy="190" r="18" fill="#1E4FA0"/>`);
+// Tuva 1941–43: vermelha com "TAR" (1941–42) e "ТАР" (1943) em dourado no canto
+F.tuva41 = svg(`<rect width="640" height="480" fill="#D52B1E"/><text x="40" y="130" font-family="DejaVu Sans" font-weight="bold" font-size="110" fill="#FFD700">TAR</text>`);
+F.tuva43 = svg(`<rect width="640" height="480" fill="#D52B1E"/><text x="40" y="130" font-family="DejaVu Sans" font-weight="bold" font-size="110" fill="#FFD700">ТАР</text>`);
+// Catar 1936–49: grená com faixa branca serrilhada (sem os losangos e o nome)
+F.qa36 = svg(`<rect width="640" height="480" fill="#8A1538"/><path d="M0 0H200${Array.from({length: 9}, (_, i) => `L270 ${(i + 0.5) * 480 / 9}L200 ${(i + 1) * 480 / 9}`).join("")}H0Z" fill="#fff"/>`);
 fs.writeFileSync("data/flags-hist.json", JSON.stringify(F));
 console.log("hist flags", Object.keys(F).length, Math.round(JSON.stringify(F).length / 1024), "KB");
 // preview sheet

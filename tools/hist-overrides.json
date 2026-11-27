@@ -447,6 +447,15 @@
    }
   },
   {
+   "key": "Slovakia",
+   "take": {
+    "from": "Czechoslovakia",
+    "adm0": [
+     "SVK"
+    ]
+   }
+  },
+  {
    "key": "Carpathian Ruthenia",
    "take": {
     "from": "Hungary",
