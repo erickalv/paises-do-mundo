@@ -3,6 +3,9 @@
 export const ISLES = {
   1900: [
     {"y": 1770, "y1": 1912, "r": {"Falkland Islands": null}},
+    {"y": 1770, "y1": 1770, "r": {"Falkland Islands": "Ilhas Malvinas (Espanha)"}, "f": {"Falkland Islands": "x:es"}, "o": {"Falkland Islands": "Espanha"}},
+    {"y": 1771, "y1": 1775, "r": {"Falkland Islands": "Ilhas Malvinas (disputadas entre Espanha e Grã-Bretanha)"}, "f": {"Falkland Islands": "blank"}, "o": {"Falkland Islands": null}},
+    {"y": 1776, "y1": 1810, "r": {"Falkland Islands": "Ilhas Malvinas (Espanha)"}, "f": {"Falkland Islands": "x:es"}, "o": {"Falkland Islands": "Espanha"}},
     {"y": 1832, "y1": 1832, "r": {"Falkland Islands": "Ilhas Malvinas (guarnição de Buenos Aires)"}, "f": {"Falkland Islands": "blank"}, "o": {"Falkland Islands": null}},
     {"y": 1833, "y1": 1912, "r": {"Falkland Islands": "Ilhas Malvinas (britânicas)"}, "f": {"Falkland Islands": "x:gb"}, "o": {"Falkland Islands": "Reino Unido"}},
     {"y": 1770, "y1": 1912, "r": {"New Caledonia": null}},
