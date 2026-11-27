@@ -902,6 +902,15 @@ export const EVENTS = {
     ...perYear(1807, 1820, { r: { "British Columbia": "Nova Caledônia (postos de peles britânicos)" } }), // postos de Simon Fraser desde 1805; fusão com a Cia. da Baía de Hudson em 1821
     ...perYear(1807, 1807, { r: { "Two Sicilies": "Reino de Nápoles (José Bonaparte)" } }), // 30/mar/1806 a 6/jun/1808; Murat desde 1/ago/1808
     ...perYear(1807, 1809, { r: { "Seychelles": "Seicheles (França)" }, f: { "Seychelles": "x:fr" }, o: { "Seychelles": "França" } }), // britânicas desde dez/1810
+    ...perYear(1807, 1813, { r: { "British Guiana": "Demerara-Essequibo e Berbice (ocupação britânica)" }, f: { "British Guiana": "x:gb" }, o: { "British Guiana": null } }), // colônias holandesas tomadas em 1803; cedidas em 1814
+    ...perYear(1814, 1830, { r: { "British Guiana": "Demerara-Essequibo e Berbice (britânicas)" } }), // Guiana Britânica em 21/jul/1831
+    ...perYear(1807, 1813, { r: { "Saint Pierre and Miquelon": "Saint-Pierre e Miquelon (ocupação britânica)" }, f: { "Saint Pierre and Miquelon": "x:gb" }, o: { "Saint Pierre and Miquelon": null } }), // retomadas em 1803; devolvidas pelo Tratado de Paris de 1814
+    ...perYear(1807, 1815, { r: { "French India": "Índia Francesa (ocupação britânica)" }, f: { "French India": "x:gb" }, o: { "French India": null } }), // ago/1803 a 26/set/1816
+    ...perYear(1807, 1814, { r: { "Gambia": null } }), // presença britânica desde 1815–1816
+    ...perYear(1807, 1861, { r: { "Belize": "Assentamento de Belize (britânico)" } }), // colônia de Honduras Britânica em 12/mai/1862
+    ...perYear(1807, 1814, { r: { "Mecklenburg-Schwerin": "Ducado de Mecklemburgo-Schwerin", "Mecklenburg-Strelitz": "Ducado de Mecklemburgo-Strelitz" } }), // grão-ducados no Congresso de Viena (1815)
+    ...perYear(1807, 1838, { r: { "French Indochina": "Vietnã (dinastia Nguyễn)" } }), // nome Việt Nam desde 1804; Đại Nam em 1839
+    ...perYear(1807, 1841, { r: { "Siamese Malay States": "Kedah, Kelantan e Terengganu (tributários do Sião)" } }), // Perlis separado de Kedah em 1842
     ...perYear(1807, 1807, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Finlandesa a partir de fev/1808
     ...perYear(1807, 1808, { m: ["Reino da Baviera", "blank", ["Kingdom of Bavaria", "Tyrol", "Trentino"]] }),
     ...perYear(1807, 1808, { m: ["Império Austríaco", "h:at_hab", ["Austria Hungary", "Hungary", "Salzburg", "Tarnopol", "Illyria", "Gorizia"]] }), // aprox.: a Ístria veneziana era do Reino da Itália
