@@ -136,7 +136,7 @@ export function powerFlag(p, y) {
     case "GB": return y < 1707 ? "h:england" : y < 1801 ? "h:gb1707" : "x:gb";
     case "FR": return y < 1790 || (y >= 1815 && y < 1830) ? "h:fr_bourbon" : "x:fr";
     case "ES": return y < 1785 ? "h:es_burgundy" : y >= 1931 && y < 1936 ? "h:es_rep" : y >= 1936 && y < 1939 ? "h:es36" : y >= 1939 && y < 1981 ? "h:es45" : "x:es";
-    case "PT": return y < 1910 ? "h:pt_mon" : "x:pt"; // bandeira republicana apresentada em 1/dez/1910
+    case "PT": return y < 1834 ? "blank" : y < 1910 ? "h:pt_mon" : "x:pt"; // azul e branca hasteada em Lisboa após a vitória liberal de 1834 // bandeira republicana apresentada em 1/dez/1910
     case "NL": return y < 1660 ? "h:nl_prince" : "x:nl";
     case "BE": return "x:be";
     case "DE": return y < 1919 || (y >= 1933 && y < 1935) ? "h:de_emp" : y >= 1935 && y < 1946 ? "h:de_nazi" : "x:de";
@@ -168,7 +168,7 @@ const OWN = {
   "Chinese Warlords": () => "h:cn_5", "Chinese warlords": () => "h:cn_5", "Persia": () => "h:ir_old", "Iran": () => "h:ir_old", "Siam": (y) => (y < 1917 ? "h:th_el" : "x:th"), "Rattanakosin Kingdom": (y) => (y < 1917 ? "h:th_el" : "x:th"),
   "Thailand": () => "x:th", "Korea": () => "x:kr", "Afghanistan": () => "h:af_old", "Ethiopia": (y) => ethFlag(y), "Abyssinia": (y) => ethFlag(y), "Liberia": () => "x:lr", "Egypt": (y) => (y >= 1922 ? "h:eg_k" : "blank"),
   "Brazil": (y) => brFlag(y), "Kingdom of Brazil": (y) => (y < 1889 ? "h:br_emp" : brFlag(y)), "Argentina": () => "x:ar", "Chile": () => "x:cl", "Peru": () => "x:pe", "Bolivia": (y) => (y < 1851 ? "blank" : "x:bo"), "Colombia": () => "x:co", "Venezuela": (y) => (y < 1863 ? "blank" : y < 1905 ? "h:ve_hex" : y < 1930 ? "h:ve_circ" : "h:ve7"),
-  "Ecuador": (y) => (y < 1860 ? "blank" : "x:ec"), "Paraguay": (y) => (y < 1842 ? "blank" : "x:py"), "Uruguay": () => "x:uy", "Mexico": () => "x:mx", "Guatemala": (y) => (y < 1871 ? "blank" : "x:gt"), "Honduras": (y) => (y < 1866 ? "blank" : "x:hn"), "El Salvador": (y) => (y < 1912 ? "blank" : "x:sv"), "Nicaragua": (y) => (y < 1908 ? "blank" : "x:ni"),
+  "Ecuador": (y) => (y < 1860 ? "blank" : "x:ec"), "Paraguay": (y) => (y < 1842 ? "blank" : "x:py"), "Uruguay": (y) => (y < 1830 ? "blank" : "x:uy"), "Mexico": () => "x:mx", "Guatemala": (y) => (y < 1871 ? "blank" : "x:gt"), "Honduras": (y) => (y < 1866 ? "blank" : "x:hn"), "El Salvador": (y) => (y < 1912 ? "blank" : "x:sv"), "Nicaragua": (y) => (y < 1908 ? "blank" : "x:ni"),
   "Costa Rica": (y) => (y < 1848 ? "blank" : "x:cr"), "Panama": () => "x:pa", "Cuba": () => "x:cu", "Haiti": (y) => (y >= 1849 && y < 1859 ? "blank" : "x:ht"), "Dominican Republic": () => "x:do", "Canada": (y) => (y < 1868 ? powerFlag("GB", y) : "h:ca_red"),
   "Australia": () => "x:au", "New Zealand": () => "x:nz", "Union of South Africa": (y) => (y < 1928 ? "h:za_red" : "h:za_old"), "Transvaal": () => "h:transvaal", "Orange Free State": () => "h:ofs", "Kingdom of Hawaii": () => "h:hawaii",
   "Saudi Arabia": () => "x:sa", "Nejd": () => "x:sa", "Arabia (Nejd)": () => "x:sa", "Hejaz": () => "x:sa", "Iraq": () => "h:iq_k", "Yemen": () => "h:yem_k", "Oman": () => "h:om_red", "Muscat and Oman": () => "h:om_red",

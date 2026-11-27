@@ -4231,6 +4231,37 @@
    }
   },
   {
+   "key": "Erivan",
+   "take": {
+    "from": "Russian Caucasus",
+    "adm0": [
+     "ARM"
+    ]
+   }
+  },
+  {
+   "key": "Erivan",
+   "take": {
+    "from": "Russian Caucasus",
+    "iso": [
+     "AZ-NX"
+    ]
+   }
+  },
+  {
+   "key": "Congress Poland",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "PL-MZ",
+     "PL-LD",
+     "PL-LU",
+     "PL-SK",
+     "PL-PD"
+    ]
+   }
+  },
+  {
    "key": "Falkland Islands",
    "take": {
     "from": "_none",
@@ -4422,6 +4453,89 @@
     "from": "Venetia",
     "iso": [
      "IT-VE"
+    ]
+   }
+  },
+  {
+   "key": "Senegal FR",
+   "cut": {
+    "map": 1880,
+    "name": "Senegal (FR)",
+    "adm0": [
+     "SEN",
+     "MLI",
+     "MRT",
+     "GIN"
+    ]
+   }
+  },
+  {
+   "key": "Angola PT",
+   "cut": {
+    "map": 1880,
+    "name": "Angola (Portugal)",
+    "adm0": [
+     "AGO"
+    ]
+   }
+  },
+  {
+   "key": "Mozambique PT",
+   "cut": {
+    "map": 1880,
+    "name": "Mozambique",
+    "adm0": [
+     "MOZ"
+    ]
+   }
+  },
+  {
+   "key": "Portuguese Guinea PT",
+   "cut": {
+    "map": 1880,
+    "name": "Portuguese Guinea",
+    "adm0": [
+     "GNB"
+    ]
+   }
+  },
+  {
+   "key": "Gabon FR",
+   "cut": {
+    "map": 1880,
+    "name": "Gabon",
+    "adm0": [
+     "GAB"
+    ]
+   }
+  },
+  {
+   "key": "Algeria FR",
+   "cut": {
+    "map": 1880,
+    "name": "Algeria (FR)",
+    "adm0": [
+     "DZA"
+    ]
+   }
+  },
+  {
+   "key": "Gold Coast GB",
+   "cut": {
+    "map": 1880,
+    "name": "Gold Coast (GB)",
+    "adm0": [
+     "GHA"
+    ]
+   }
+  },
+  {
+   "key": "Sierra Leone GB",
+   "cut": {
+    "map": 1880,
+    "name": "Sierra Leone",
+    "adm0": [
+     "SLE"
     ]
    }
   }
