@@ -4503,7 +4503,15 @@
      "IT-CN",
      "IT-TO",
      "IT-VC",
-     "IT-AO",
+     "IT-AO"
+    ]
+   }
+  },
+  {
+   "key": "Liguria",
+   "take": {
+    "from": "Italy",
+    "iso": [
      "IT-GE",
      "IT-IM",
      "IT-SP",

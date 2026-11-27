@@ -112,6 +112,7 @@ F.ve_hex = svg(H("#FFCC00", "#00247D", "#CF142B") + [0, 1, 2, 3, 4, 5].map((i) =
 F.ve_circ = svg(H("#FFCC00", "#00247D", "#CF142B") + [0, 1, 2, 3, 4, 5, 6].map((i) => { const a = (2 * Math.PI * i) / 7 - Math.PI / 2; return star(320 + 55 * Math.cos(a), 240 + 55 * Math.sin(a), 14, "#fff"); }).join(""));
 F.ve7 = svg(H("#FFCC00", "#00247D", "#CF142B") + [0, 1, 2, 3, 4, 5, 6].map((i) => { const a = Math.PI * (0.18 + (0.64 * i) / 6); return star(320 - 120 * Math.cos(a), 300 - 120 * Math.sin(a), 18, "#fff"); }).join(""));
 // --- Europe ---
+F.genoa = svg(`<rect width="640" height="480" fill="#fff"/><rect x="270" width="100" height="480" fill="#CE1126"/><rect y="190" width="640" height="100" fill="#CE1126"/>`); // República Lígure (cruz de São Jorge)
 F.gr_cross = svg(`<rect width="640" height="480" fill="#0D5EAF"/><rect x="270" width="100" height="480" fill="#fff"/><rect y="190" width="640" height="100" fill="#fff"/>`);
 F.ro_old = svg(V("#002B7F", "#FCD116", "#CE1126") + `<circle cx="320" cy="235" r="62" fill="#3C9" stroke="#C49A2C" stroke-width="12"/><path d="M270 240l50-40 50 40v20h-100z" fill="#2266AA"/>` + star(320, 180, 14, "#CE1126"));
 F.bg_old = svg(H("#fff", "#00966E", "#D62612") + `<circle cx="110" cy="110" r="62" fill="none" stroke="#C49A2C" stroke-width="12"/><circle cx="110" cy="115" r="42" fill="#D62612"/><path d="M90 130l15-35 15 10 10-8-5 33z" fill="#FFD700"/>` + star(110, 52, 14, "#D62612"));
