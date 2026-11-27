@@ -4312,6 +4312,24 @@
    }
   },
   {
+   "key": "Ireland",
+   "take": {
+    "from": "United Kingdom of Great Britain and Ireland",
+    "adm0": [
+     "IRL"
+    ]
+   }
+  },
+  {
+   "key": "Ireland",
+   "take": {
+    "from": "United Kingdom of Great Britain and Ireland",
+    "region": [
+     "GBR/Northern Ireland"
+    ]
+   }
+  },
+  {
    "key": "Louisiana N",
    "take": {
     "from": "United States of America",
