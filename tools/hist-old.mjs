@@ -427,6 +427,32 @@ export const EVENTS = {
     { y: 1873, m: ["Canadá", "h:ca_red", ["Canada", "Prince Edward Island"]] },
     { y: 1864, y1: 1876, r: { "Xinjiang": "Yettishar (Emirado de Kashgar)" }, f: { "Xinjiang": "blank" }, o: { "Xinjiang": null } }, // Kashgar retomada pelos Qing em 18/dez/1877
     { y: 1877, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Xinjiang"]] },
+    { y: 1721, y1: 1722, m: ["Canatos cazaques", "blank", ["Kazakh Middle", "Kazakh Junior", "Lower Syr", "Syr", "Tashkent"]], o: { "Kazakh Middle": null } }, // Tashkent cazaque 1598–1723
+    { y: 1723, y1: 1730, m: ["Canatos cazaques", "blank", ["Kazakh Middle", "Kazakh Junior", "Lower Syr"]], o: { "Kazakh Middle": null } },
+    { y: 1731, y1: 1821, m: ["Canatos cazaques (sob proteção russa)", "blank", ["Kazakh Middle", "Kazakh Junior", "Lower Syr"]], o: { "Kazakh Middle": null } }, // zhuzes Júnior (out/1731) e Médio (dez/1731) juram lealdade à Rússia
+    { y: 1822, y1: 1823, m: ["Zhuz Júnior cazaque (sob proteção russa)", "blank", ["Kazakh Junior", "Lower Syr"]], o: { "Kazakh Junior": null } },
+    { y: 1822, m: [null, null, ["Russian Empire", "Kazakh Middle"]] }, // Regulamento dos quirguizes siberianos (1822)
+    { y: 1824, m: [null, null, ["Russian Empire", "Kazakh Junior"]] }, // Carta dos quirguizes de Orenburg (1824)
+    { y: 1824, y1: 1852, r: { "Lower Syr": "Baixo Syr Darya (disputado entre cazaques, Khiva e Kokand)" }, f: { "Lower Syr": "blank" }, o: { "Lower Syr": null } },
+    { y: 1853, m: [null, null, ["Russian Empire", "Lower Syr"]] }, // Ak-Mechet tomada em 1853
+    { y: 1721, y1: 1745, m: [null, null, ["Xinjiang", "Semirechye", "North Kyrgyz"]] }, // zungares controlaram Jetisu e Tashkent até 1745
+    { y: 1723, y1: 1745, m: [null, null, ["Xinjiang", "Tashkent", "Syr"]] },
+    { y: 1746, y1: 1846, r: { "Semirechye": "Zhuz Sênior cazaque" }, f: { "Semirechye": "blank" }, o: { "Semirechye": null } }, // só plenamente sujeito à Rússia em 1846
+    { y: 1847, m: [null, null, ["Russian Empire", "Semirechye"]] }, // Kopal fundada em 1847; Verny em 1854
+    { y: 1746, y1: 1861, r: { "North Kyrgyz": "Quirguizes do norte (vale do Chu e Issyk-Kul)" }, f: { "North Kyrgyz": "blank" }, o: { "North Kyrgyz": null } }, // fortes de Kokand (Pishpek, Tokmak) sem data checada
+    { y: 1862, m: [null, null, ["Russian Empire", "North Kyrgyz"]] }, // Tokmak e Pishpek tomadas em 1862
+    { y: 1746, y1: 1863, r: { "Syr": "Médio Syr Darya (disputado entre cazaques e Kokand)" }, f: { "Syr": "blank" }, o: { "Syr": null } },
+    { y: 1864, m: [null, null, ["Russian Empire", "Syr"]] }, // Turquestão, Chimkent e Aulie-Ata tomadas em 1864
+    { y: 1746, y1: 1783, r: { "Tashkent": "Tashkent (disputado entre cazaques e Kokand)" }, f: { "Tashkent": "blank" }, o: { "Tashkent": null } },
+    { y: 1784, y1: 1808, r: { "Tashkent": "Estado de Tashkent" }, f: { "Tashkent": "blank" }, o: { "Tashkent": null } }, // Yunus Khoja, 1784
+    { y: 1809, y1: 1864, m: [null, null, ["Kokand", "Tashkent"]] }, // anexada a Kokand em 1809
+    { y: 1865, m: [null, null, ["Russian Empire", "Tashkent"]] }, // tomada em mai/1865
+    { y: 1721, y1: 1865, m: [null, null, ["Kokand", "Khujand"]] },
+    { y: 1866, m: [null, null, ["Russian Empire", "Khujand"]] },
+    { y: 1721, y1: 1894, r: { "Pamir": null } }, // acordo anglo-russo do Pamir, 1895
+    { y: 1895, m: [null, null, ["Russian Empire", "Pamir"]] },
+    { y: 1721, y1: 1868, r: { "Balkan": null } }, // Krasnovodsk fundada em 1869
+    { y: 1869, m: [null, null, ["Russian Empire", "Balkan"]] },
     { y: 1721, y1: 1875, r: { "Kokand": "Canato de Kokand" }, f: { "Kokand": "blank" }, o: { "Kokand": null } }, // abolido pela Rússia em 1876
     { y: 1876, m: ["Império Russo", "x:ru", ["Russian Empire", "Kokand"]] },
     { y: 1721, y1: 1872, r: { "Khiva": "Canato de Khiva" }, f: { "Khiva": "blank" }, o: { "Khiva": null } }, // protetorado russo em 12/ago/1873
@@ -503,6 +529,7 @@ export const EVENTS = {
     { y: 1908, y1: 1911, m: ["Estados Unidos", "h:us46", ["United States of America", "Confederate States", "Louisiana N", "Louisiana S"]] },
     { y: 1912, y1: 1912, m: ["Estados Unidos", "h:us48", ["United States of America", "Confederate States", "Louisiana N", "Louisiana S"]] },
     { y: 1721, y1: 1866, r: { "Russian America": "América Russa" }, f: { "Russian America": "x:ru" }, o: { "Russian America": "Império Russo" } }, // transferida aos EUA em 18/out/1867
+    { y: 1721, y1: 1783, r: { "Russian America": null } }, // primeiro assentamento permanente em Three Saints Bay, 1784
     { y: 1867, y1: 1876, m: ["Estados Unidos", "h:us37", ["United States of America", "Russian America"]] },
     { y: 1877, y1: 1889, m: ["Estados Unidos", "h:us38", ["United States of America", "Russian America"]] },
     { y: 1890, y1: 1890, m: ["Estados Unidos", "h:us43", ["United States of America", "Russian America"]] },

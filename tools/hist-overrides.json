@@ -3492,7 +3492,8 @@
    "take": {
     "from": "Russian Empire",
     "iso": [
-     "UZ-SA"
+     "UZ-SA",
+     "UZ-JI"
     ]
    }
   },
@@ -4742,6 +4743,152 @@
     "from": "British Raj",
     "iso": [
      "IN-KL"
+    ]
+   }
+  },
+  {
+   "key": "Kazakh Middle",
+   "take": {
+    "from": [
+     "Russian Empire",
+     "central Asian khanates",
+     "Manchu Empire"
+    ],
+    "iso": [
+     "KZ-SEV",
+     "KZ-AKM",
+     "KZ-AST",
+     "KZ-KAR",
+     "KZ-PAV",
+     "KZ-VOS"
+    ]
+   }
+  },
+  {
+   "key": "Kazakh Junior",
+   "take": {
+    "from": [
+     "Russian Empire",
+     "central Asian khanates",
+     "Manchu Empire"
+    ],
+    "iso": [
+     "KZ-ZAP",
+     "KZ-ATY",
+     "KZ-AKT",
+     "KZ-KUS",
+     "KZ-MAN"
+    ]
+   }
+  },
+  {
+   "key": "Lower Syr",
+   "take": {
+    "from": [
+     "Russian Empire",
+     "central Asian khanates",
+     "Manchu Empire"
+    ],
+    "iso": [
+     "KZ-KZY"
+    ]
+   }
+  },
+  {
+   "key": "Syr",
+   "take": {
+    "from": [
+     "Russian Empire",
+     "central Asian khanates",
+     "Manchu Empire"
+    ],
+    "iso": [
+     "KZ-ZHA",
+     "KZ-YUZ",
+     "KG-T"
+    ]
+   }
+  },
+  {
+   "key": "Semirechye",
+   "take": {
+    "from": [
+     "Russian Empire",
+     "central Asian khanates",
+     "Manchu Empire"
+    ],
+    "iso": [
+     "KZ-ALA"
+    ]
+   }
+  },
+  {
+   "key": "North Kyrgyz",
+   "take": {
+    "from": [
+     "Russian Empire",
+     "central Asian khanates",
+     "Manchu Empire"
+    ],
+    "iso": [
+     "KG-C",
+     "KG-GB",
+     "KG-Y",
+     "KG-N"
+    ]
+   }
+  },
+  {
+   "key": "Tashkent",
+   "take": {
+    "from": [
+     "Russian Empire",
+     "central Asian khanates",
+     "Manchu Empire"
+    ],
+    "iso": [
+     "UZ-TO",
+     "UZ-TK",
+     "UZ-SI"
+    ]
+   }
+  },
+  {
+   "key": "Khujand",
+   "take": {
+    "from": [
+     "Russian Empire",
+     "central Asian khanates",
+     "Manchu Empire"
+    ],
+    "iso": [
+     "TJ-SU"
+    ]
+   }
+  },
+  {
+   "key": "Pamir",
+   "take": {
+    "from": [
+     "Russian Empire",
+     "central Asian khanates",
+     "Manchu Empire"
+    ],
+    "iso": [
+     "TJ-GB"
+    ]
+   }
+  },
+  {
+   "key": "Balkan",
+   "take": {
+    "from": [
+     "Russian Empire",
+     "central Asian khanates",
+     "Manchu Empire"
+    ],
+    "iso": [
+     "TM-B"
     ]
    }
   },
