@@ -4652,6 +4652,19 @@
    }
   },
   {
+   "key": "West Persia",
+   "take": {
+    "from": "Persia",
+    "iso": [
+     "IR-01",
+     "IR-02",
+     "IR-16",
+     "IR-17",
+     "IR-24"
+    ]
+   }
+  },
+  {
    "key": "Kymmene",
    "take": {
     "from": "Finland",
