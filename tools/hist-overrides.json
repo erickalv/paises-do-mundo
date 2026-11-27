@@ -4191,6 +4191,112 @@
      "GRL"
     ]
    }
+  },
+  {
+   "key": "Lucca",
+   "take": {
+    "from": "Tuscany",
+    "iso": [
+     "IT-LU"
+    ]
+   }
+  },
+  {
+   "key": "Alta California",
+   "take": {
+    "from": "United States of America",
+    "iso": [
+     "US-CA"
+    ]
+   }
+  },
+  {
+   "key": "New Mexico",
+   "take": {
+    "from": "United States of America",
+    "iso": [
+     "US-NM",
+     "US-AZ"
+    ]
+   }
+  },
+  {
+   "key": "Mexican Cession",
+   "take": {
+    "from": "United States of America",
+    "iso": [
+     "US-NV",
+     "US-UT",
+     "US-CO"
+    ]
+   }
+  },
+  {
+   "key": "Yucatan",
+   "take": {
+    "from": "Mexico",
+    "iso": [
+     "MX-YUC",
+     "MX-CAM",
+     "MX-ROO"
+    ]
+   }
+  },
+  {
+   "key": "Mosquito Coast",
+   "take": {
+    "from": "Nicaragua",
+    "iso": [
+     "NI-AN",
+     "NI-AS"
+    ]
+   }
+  },
+  {
+   "key": "Punjab",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "PK-PB",
+     "PK-IS",
+     "PK-KP"
+    ]
+   }
+  },
+  {
+   "key": "Hungary",
+   "take": {
+    "from": "Austria Hungary",
+    "adm0": [
+     "HUN"
+    ]
+   }
+  },
+  {
+   "key": "Sicily",
+   "take": {
+    "from": "Two Sicilies",
+    "iso": [
+     "IT-AG",
+     "IT-CL",
+     "IT-CT",
+     "IT-EN",
+     "IT-ME",
+     "IT-PA",
+     "IT-RG",
+     "IT-SR",
+     "IT-TP"
+    ]
+   }
+  },
+  {
+   "key": "Venice",
+   "take": {
+    "from": "Venetia",
+    "iso": [
+     "IT-VE"
+    ]
+   }
   }
  ],
  "1945": [

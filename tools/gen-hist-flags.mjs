@@ -392,6 +392,9 @@ F.us43 = usRows([8, 7, 7, 7, 7, 7]);
 // EUA 4/jul/1877 a 3/jul/1890: 38 estrelas em fileiras 7-8-8-8-7 (uma das disposições da tabela do Wikipedia)
 F.us38 = usRows([7, 8, 8, 8, 7]);
 F.us37 = usRows([8, 7, 7, 7, 8]);
+F.us28 = usRows([7, 7, 7, 7]); // 4/jul/1846 a 3/jul/1847 (sem arranjo oficial das estrelas)
+F.us29 = usRows([6, 6, 6, 6, 5]); // 4/jul/1847 a 3/jul/1848 (sem arranjo oficial)
+F.us30 = usRows([6, 6, 6, 6, 6]); // 4/jul/1848 a 3/jul/1851 (sem arranjo oficial)
 F.us31 = usRows([7, 6, 6, 6, 6]); // 4/jul/1851 a 3/jul/1858 (sem arranjo oficial das estrelas)
 F.us32 = usRows([7, 6, 6, 7, 6]); // 4/jul/1858 a 3/jul/1859 (sem arranjo oficial)
 F.us33 = usRows([7, 7, 5, 7, 7]); // 4/jul/1859 a 3/jul/1861 (sem arranjo oficial)
