@@ -3066,6 +3066,298 @@
      "DEU"
     ]
    }
+  },
+  {
+   "key": "Kingdom of Hanover",
+   "cut": {
+    "map": 1815,
+    "name": "Hanover",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Electorate of Hesse",
+   "cut": {
+    "map": 1815,
+    "name": "Electoral Hesse",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Duchy of Nassau",
+   "cut": {
+    "map": 1815,
+    "name": "Nassau",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Kingdom of Saxony",
+   "cut": {
+    "map": 1815,
+    "name": "Saxony",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Mecklenburg-Schwerin",
+   "cut": {
+    "map": 1815,
+    "name": "Mecklenburg-Schwerin",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Mecklenburg-Strelitz",
+   "cut": {
+    "map": 1815,
+    "name": "Mecklenburg-Strelitz",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Grand Duchy of Oldenburg",
+   "cut": {
+    "map": 1815,
+    "name": "Oldenburg",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Duchy of Brunswick",
+   "cut": {
+    "map": 1815,
+    "name": "Brunswick",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Thuringian states",
+   "cut": {
+    "map": 1815,
+    "name": "Thuringia",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Anhalt",
+   "cut": {
+    "map": 1815,
+    "name": "Anhalt",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Lippe",
+   "cut": {
+    "map": 1815,
+    "name": "Lippe-Detmold",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Schaumburg-Lippe",
+   "cut": {
+    "map": 1815,
+    "name": "Schaumburg-Lippe",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Waldeck",
+   "cut": {
+    "map": 1815,
+    "name": "Waldeck",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Free City of Hamburg",
+   "cut": {
+    "map": 1815,
+    "name": "Hamburg",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Free City of Hamburg",
+   "cut": {
+    "map": 1815,
+    "name": "Cuxhaven",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Free City of Bremen",
+   "cut": {
+    "map": 1815,
+    "name": "Bremen",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Free City of Lübeck",
+   "cut": {
+    "map": 1815,
+    "name": "Lübeck",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Duchy of Holstein",
+   "cut": {
+    "map": 1815,
+    "name": "Holstein",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Duchy of Schleswig",
+   "cut": {
+    "map": 1815,
+    "name": "Schleswig",
+    "adm0": [
+     "DEU",
+     "DNK"
+    ]
+   }
+  },
+  {
+   "key": "Venetia",
+   "take": {
+    "from": "Italy",
+    "iso": [
+     "IT-VR",
+     "IT-VI",
+     "IT-PD",
+     "IT-VE",
+     "IT-TV",
+     "IT-BL",
+     "IT-RO",
+     "IT-UD",
+     "IT-PN",
+     "IT-MN"
+    ]
+   }
+  },
+  {
+   "key": "Ionian Islands",
+   "take": {
+    "from": "Greece",
+    "iso": [
+     "GR-F"
+    ]
+   }
+  },
+  {
+   "key": "Confederate States",
+   "take": {
+    "from": "United States of America",
+    "iso": [
+     "US-SC",
+     "US-MS",
+     "US-FL",
+     "US-AL",
+     "US-GA",
+     "US-LA",
+     "US-TX",
+     "US-VA",
+     "US-AR",
+     "US-TN",
+     "US-NC"
+    ]
+   }
+  },
+  {
+   "key": "Russian America",
+   "take": {
+    "from": "United States of America",
+    "iso": [
+     "US-AK"
+    ]
+   }
+  },
+  {
+   "key": "Nova Scotia",
+   "take": {
+    "from": "Canada",
+    "iso": [
+     "CA-NS"
+    ]
+   }
+  },
+  {
+   "key": "New Brunswick",
+   "take": {
+    "from": "Canada",
+    "iso": [
+     "CA-NB"
+    ]
+   }
+  },
+  {
+   "key": "Western Cochinchina",
+   "take": {
+    "from": "Cochinchina",
+    "iso": [
+     "VN-49",
+     "VN-51",
+     "VN-50",
+     "VN-44",
+     "VN-45",
+     "VN-47",
+     "VN-52",
+     "VN-55",
+     "VN-59",
+     "VN-CT",
+     "VN-73"
+    ]
+   }
+  },
+  {
+   "key": "Herat",
+   "take": {
+    "from": "Afghanistan",
+    "iso": [
+     "AF-HER"
+    ]
+   }
   }
  ]
 }

@@ -388,7 +388,12 @@ F.us44 = usRows([8, 7, 7, 7, 7, 8]);
 F.us43 = usRows([8, 7, 7, 7, 7, 7]);
 // EUA 4/jul/1877 a 3/jul/1890: 38 estrelas em fileiras 7-8-8-8-7 (uma das disposições da tabela do Wikipedia)
 F.us38 = usRows([7, 8, 8, 8, 7]);
-F.us37 = usRows([8, 7, 7, 7, 8]); // 4/jul/1867 a 3/jul/1877 (sem arranjo oficial)
+F.us37 = usRows([8, 7, 7, 7, 8]);
+F.us34 = usRows([7, 7, 6, 7, 7]); // 4/jul/1861 a 3/jul/1863
+F.us35 = usRows([7, 7, 7, 7, 7]); // 4/jul/1863 a 3/jul/1865
+F.us36 = usRows([8, 7, 6, 7, 8]); // 4/jul/1865 a 3/jul/1867
+// Principados Unidos 1859–1866: horizontal vermelho, amarelo, azul
+F.ro_up = svg(H("#CE1126", "#FCD116", "#002B7F")); // 4/jul/1867 a 3/jul/1877 (sem arranjo oficial)
 // Noruega 1844–1898: com a marca da união no cantão (simplificada; lei de 10/dez/1898 a retirou, bandeira "pura" desde 1899)
 {
   const w = 180, h = 180, cx = w / 2, cy = h / 2;
