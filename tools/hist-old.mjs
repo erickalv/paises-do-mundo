@@ -968,6 +968,7 @@ export const EVENTS = {
     ...perYear(1803, 1803, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Serbia"]] }), // Primeira Revolta Sérvia em 14/fev/1804
     ...perYear(1803, 1803, { r: { "France": "República Francesa (Consulado)", "Austria Hungary": "Monarquia de Habsburgo", "Dutch Guiana": "Suriname (República Batava)" },
       f: { "Dutch Guiana": "blank" }, o: { "Dutch Guiana": "República Batava" } }), // Império Francês em 18/mai/1804; Império Austríaco em 11/ago/1804; Suriname britânico de 1804 a 1816
+    ...perYear(1803, 1817, { r: { "Oudh": "Awadh (nababos)" } }), // Ghazi-ud-Din Haidar rei (badshah) em out/1818–1819
     // Qing: sem bandeira oficial antes de 1862; a triangular (1862) não é descrita em detalhe; retangular promulgada em 1888 (um evento por ano para vencer as fusões)
     ...Array.from({ length: 85 }, (_, i) => ({ y: 1803 + i, y1: 1803 + i, f: { "Manchu Empire": "blank" } })),
   ],
