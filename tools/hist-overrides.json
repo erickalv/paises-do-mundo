@@ -4571,6 +4571,78 @@
    }
   },
   {
+   "key": "Bengal Subah",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "IN-WB",
+     "IN-BR",
+     "IN-JH",
+     "BD-A",
+     "BD-B",
+     "BD-C",
+     "BD-D",
+     "BD-E",
+     "BD-F",
+     "BD-G"
+    ]
+   }
+  },
+  {
+   "key": "Orissa",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "IN-OR"
+    ]
+   }
+  },
+  {
+   "key": "Hyderabad",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "IN-TG"
+    ]
+   }
+  },
+  {
+   "key": "Andhra",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "IN-AP"
+    ]
+   }
+  },
+  {
+   "key": "Mysore",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "IN-KA"
+    ]
+   }
+  },
+  {
+   "key": "Carnatic",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "IN-TN"
+    ]
+   }
+  },
+  {
+   "key": "Travancore",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "IN-KL"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",

@@ -565,7 +565,22 @@ export const EVENTS = {
     { y: 1858, y1: 1860, r: { "Colombia": "Confederação Granadina" }, f: { "Colombia": "blank" } }, // constituição de 22/mai/1858; bandeira atual em 26/nov/1861
     { y: 1831, y1: 1860, r: { "Argentina": "Confederação Argentina", "State of Buenos Aires": "Estado de Buenos Aires" }, f: { "State of Buenos Aires": "blank" }, o: { "State of Buenos Aires": null } }, // separado desde 11/set/1852
     // Ásia
-    { y: 1751, y1: 1857, r: { "British Raj": "Índia (Companhia Britânica das Índias Orientais)" }, f: { "British Raj": "blank" }, o: { "British Raj": "Reino Unido" } }, // Coroa assume em 1/nov/1858
+    { y: 1803, y1: 1857, r: { "British Raj": "Índia (Companhia Britânica das Índias Orientais)" }, f: { "British Raj": "blank" }, o: { "British Raj": "Reino Unido" } }, // Coroa assume em 1/nov/1858
+    { y: 1751, y1: 1802, r: { "British Raj": "Império Mogol" }, f: { "British Raj": "blank" }, o: { "British Raj": null } }, // Delhi tomada pelos britânicos em 11/set/1803
+    { y: 1751, y1: 1756, r: { "Bengal Subah": "Nababado de Bengala" }, f: { "Bengal Subah": "blank" }, o: { "Bengal Subah": null } }, // nababos hereditários desde 1717; Plassey, 23/jun/1757
+    { y: 1757, y1: 1802, /*fixo*/ r: { "Bengal Subah": "Índia (Companhia Britânica das Índias Orientais)" }, f: { "Bengal Subah": "blank" }, o: { "Bengal Subah": "Reino Unido" } },
+    { y: 1803, m: [null, null, ["British Raj", "Bengal Subah", "Orissa", "Andhra", "Hyderabad", "Mysore", "Carnatic", "Travancore"]] },
+    { y: 1751, y1: 1802, /*fixo*/ m: [null, null, ["Maratha", "Orissa"]] }, // controle marata de fato; incorporada formalmente em 1752
+    { y: 1751, y1: 1797, r: { "Hyderabad": "Estado de Hyderabad (Nizam)" }, f: { "Hyderabad": "blank" }, o: { "Hyderabad": null } }, // fundado em 31/jul/1724
+    { y: 1751, y1: 1767, m: [null, null, ["Hyderabad", "Andhra"]] }, // Circars do Norte cedidos aos britânicos em 1768 (Tratado de Masulipatam)
+    { y: 1768, y1: 1802, m: [null, null, ["Bengal Subah", "Andhra"]] },
+    { y: 1798, y1: 1802, m: [null, null, ["Bengal Subah", "Hyderabad"]] }, // aliança subsidiária
+    { y: 1751, y1: 1798, r: { "Mysore": "Reino de Mysore" }, f: { "Mysore": "blank" }, o: { "Mysore": null } }, // Tipu morto em 1799; aliança subsidiária
+    { y: 1799, y1: 1802, m: [null, null, ["Bengal Subah", "Mysore"]] },
+    { y: 1751, y1: 1800, r: { "Carnatic": "Nababado do Carnático (Arcot)" }, f: { "Carnatic": "blank" }, o: { "Carnatic": null } }, // independente desde 1710; Tratado do Carnático, 26/jul/1801
+    { y: 1801, y1: 1802, m: [null, null, ["Bengal Subah", "Carnatic"]] },
+    { y: 1751, y1: 1794, r: { "Travancore": "Reino de Travancore" }, f: { "Travancore": "blank" }, o: { "Travancore": null } }, // fundado c. 1729; aliança subsidiária em 1795
+    { y: 1795, y1: 1802, m: [null, null, ["Bengal Subah", "Travancore"]] },
     { y: 1856, y1: 1856, r: { "Herat": "Herat (ocupação persa)" }, f: { "Herat": "h:ir_old" }, o: { "Herat": "Pérsia" } }, // tomada em out/1856; devolvida pelo Tratado de Paris (mar/1857)
     { y: 1751, y1: 1860, m: ["Đại Nam (Vietnã)", "blank", ["French Indochina", "Western Cochinchina", "Cochinchina"]] }, // franceses só em Saigon (1859–1860)
     // Oceania
@@ -589,11 +604,12 @@ export const EVENTS = {
     { y: 1841, y1: 1842, r: { "Yucatan": "República de Yucatán" }, f: { "Yucatan": "blank" }, o: { "Yucatan": null } }, // independência em 16/mar e 1/out/1841
     { y: 1822, y1: 1843, m: ["Haiti", "x:ht", ["Haiti", "Dominican Republic"]] }, // independência dominicana em 27/fev/1844
     { y: 1751, y1: 1842, r: { "Natal": "República de Natália" }, f: { "Natal": "blank" }, o: { "Natal": null } }, // anexada pelos britânicos em 12/mai/1843
-    { y: 1751, y1: 1842, r: { "Sind": "Amirados do Sind (Talpur)" }, f: { "Sind": "blank" }, o: { "Sind": null } }, // Miani e Hyderabad, fev–mar/1843
+    { y: 1783, y1: 1842, r: { "Sind": "Amirados do Sind (Talpur)" }, f: { "Sind": "blank" }, o: { "Sind": null } }, // Miani e Hyderabad, fev–mar/1843
+    { y: 1751, y1: 1782, r: { "Sind": "Sind (dinastia Kalhora)" }, f: { "Sind": "blank" }, o: { "Sind": null } }, // vassala do Império Durrani desde 1748–1750; Talpur desde 1783
     { y: 1843, y1: 1845, m: ["Índia (Companhia Britânica das Índias Orientais)", "blank", ["British Raj", "Sind"]] },
     { y: 1846, y1: 1848, m: ["Índia (Companhia Britânica das Índias Orientais)", "blank", ["British Raj", "Sind", "Kashmir"]] }, // Caxemira a Gulab Singh, 16/mar/1846
     { y: 1819, y1: 1833, m: ["Império Sikh", "blank", ["Punjab", "Kashmir"]] }, // Shopian, 3/jul/1819
-    { y: 1751, y1: 1818, m: ["Império Sikh", "blank", ["Punjab"]] },
+    { y: 1761, y1: 1818, m: ["Império Sikh", "blank", ["Punjab"]] },
     { y: 1834, y1: 1845, m: ["Império Sikh", "blank", ["Punjab", "Kashmir", "Peshawar"]] }, // Peshawar anexada em 6/mai/1834
     { y: 1841, y1: 1841, r: { "Afghanistan": "Afeganistão (Primeira Guerra Anglo-Afegã)" }, o: { "Afghanistan": null } },
     { y: 1841, y1: 1841, r: { "Hong Kong": "Hong Kong (Primeira Guerra do Ópio)" }, f: { "Hong Kong": "blank" }, o: { "Hong Kong": null } }, // cedida pelo Tratado de Nanquim, 29/ago/1842
@@ -704,7 +720,7 @@ export const EVENTS = {
     { y: 1751, y1: 1819, r: { "Zululand": null } }, // Shaka desde 1816; Mhlatuze em 1820
     { y: 1751, y1: 1817, m: ["Emirado de Diriyah (Primeiro Estado Saudita)", "blank", ["Riyadh", "Qassim", "Hail", "Hasa"]], o: { "Riyadh": null } }, // Diriyah rende-se em 1818
     { y: 1818, y1: 1819, m: ["Négede (ocupação egípcia)", "h:eg_khed", ["Riyadh", "Qassim"]], o: { "Riyadh": null } }, // Ibrahim Paxá volta ao Egito em dez/1819
-    { y: 1751, y1: 1818, r: { "Kashmir": "Caxemira (Império Durrani)" }, f: { "Kashmir": "blank" }, o: { "Kashmir": null } },
+    { y: 1752, y1: 1818, /*fixo*/ r: { "Kashmir": "Caxemira (Império Durrani)" }, f: { "Kashmir": "blank" }, o: { "Kashmir": null } },
     { y: 1751, y1: 1816, r: { "Maratha": "Confederação Maratha" }, f: { "Maratha": "blank" }, o: { "Maratha": null } },
     { y: 1817, y1: 1817, r: { "Maratha": "Confederação Maratha (Terceira Guerra Anglo-Maratha)" }, f: { "Maratha": "blank" }, o: { "Maratha": null } }, // 5/nov/1817 a 9/abr/1819
     { y: 1818, m: ["Índia (Companhia Britânica das Índias Orientais)", "blank", ["British Raj", "Maratha"]] }, // Baji Rao II rende-se em 3/jun/1818
@@ -842,7 +858,7 @@ export const EVENTS = {
     { y: 1847, y1: 1847, r: { "Mexico": "México (capital ocupada pelos EUA)" } }, // Cidade do México tomada em set/1847
     { y: 1846, y1: 1847, r: { "Yucatan": "República de Yucatán" }, f: { "Yucatan": "blank" }, o: { "Yucatan": null } }, // independente desde 1/jan/1846
     { y: 1751, y1: 1859, r: { "Mosquito Coast": "Costa dos Mosquitos (protetorado britânico)" }, f: { "Mosquito Coast": "blank" }, o: { "Mosquito Coast": "Reino Unido" } }, // protetorado de 1844 a 1860
-    { y: 1751, y1: 1848, r: { "Punjab": "Império Sikh" }, f: { "Punjab": "blank" }, o: { "Punjab": null } }, // sob regência britânica desde 1846 (Tratado de Lahore)
+    { y: 1761, y1: 1848, r: { "Punjab": "Império Sikh" }, f: { "Punjab": "blank" }, o: { "Punjab": null } }, // sob regência britânica desde 1846 (Tratado de Lahore)
     { y: 1848, y1: 1848, r: { "Hungary": "Reino da Hungria (revolução de 1848)", "Sicily": "Reino da Sicília (revolução de 1848)", "Venice": "República de San Marco" }, f: { "Hungary": "blank", "Sicily": "blank", "Venice": "blank" }, o: { "Hungary": null, "Sicily": null, "Venice": null } }, // Pest tomada em 5/jan/1849
     { y: 1848, y1: 1848, r: { "Papal States": "Estados Papais (papa refugiado em Gaeta)" } },
     { y: 1751, y1: 1846, r: { "Lucca": "Ducado de Lucca" }, f: { "Lucca": "blank" }, o: { "Lucca": null } },
@@ -1044,7 +1060,7 @@ export const EVENTS = {
       "Dutch Guiana": "Suriname (República Batava)", "Punjab": "Confederação Sikh", "Tonga": "Tonga" },
       f: { "Malta": "blank", "Ionian Islands": "x:fr", "Lucca": "blank", "Tuscany": "blank", "Dutch Guiana": "blank", "Punjab": "blank" },
       o: { "Malta": null, "Ionian Islands": "França", "Lucca": null, "Tuscany": null, "Dutch Guiana": "República Batava", "Punjab": null } }), // cerco desde 2/set/1798; domínio francês nas Jônicas de jun/1797 a mar/1799; franceses em Lucca em 22/jan/1799; Suriname britânico em ago/1799; Império Sikh em 1799
-    ...perYear(1751, 1817, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir"]], o: { "Afghanistan": null } }), // Peshawar capital durrani (1776–1823)
+    ...perYear(1752, 1817, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir"]], o: { "Afghanistan": null } }), // Peshawar capital durrani (1776–1823)
     ...perYear(1818, 1818, { m: ["Império Durrani", "blank", ["Afghanistan", "Kashmir"]], o: { "Afghanistan": null } }), // Caxemira perdida para os sikhs em Shopian (1819)
     ...perYear(1819, 1822, { r: { "Afghanistan": "Império Durrani" } }), // queda de Cabul em mar/1823
     ...perYear(1751, 1801, { r: { "French Indochina": "Vietnã (guerra entre Tây Sơn e Nguyễn)" } }), // Nguyễn Ánh toma Đông Kinh em 18/jun/1802
@@ -2497,7 +2513,7 @@ export const EVENTS = {
     ...perYear(1764, 1764, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
       "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
       "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
-      "Punjab": "Confederação Sikh", "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Punjab": "Punjab (disputado entre a Confederação Sikh e o Império Durrani)", "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
       "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
       f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
         "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Punjab": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
@@ -2572,7 +2588,7 @@ export const EVENTS = {
     ...perYear(1763, 1763, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
       "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
       "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
-      "Punjab": "Confederação Sikh", "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Punjab": "Punjab (disputado entre a Confederação Sikh e o Império Durrani)", "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
       "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
       f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
         "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Punjab": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
@@ -2648,7 +2664,7 @@ export const EVENTS = {
     ...perYear(1762, 1762, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
       "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
       "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
-      "Punjab": "Confederação Sikh", "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Punjab": "Punjab (disputado entre a Confederação Sikh e o Império Durrani)", "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
       "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
       f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
         "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Punjab": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
@@ -2729,7 +2745,7 @@ export const EVENTS = {
     ...perYear(1761, 1761, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
       "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
       "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
-      "Punjab": "Confederação Sikh", "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Punjab": "Punjab (disputado entre a Confederação Sikh e o Império Durrani)", "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
       "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
       f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
         "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Punjab": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
@@ -2800,7 +2816,7 @@ export const EVENTS = {
     ...perYear(1760, 1760, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
     ...perYear(1760, 1760, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
     ...perYear(1760, 1760, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
-    ...perYear(1760, 1760, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
+    ...perYear(1760, 1760, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
     ...perYear(1760, 1760, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
     ...perYear(1760, 1760, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
     ...perYear(1760, 1760, { m: ["Reino da Sardenha", "h:it_sav", ["Italy", "Piedmont", "Novara", "Savoy and Nice"]], o: { "Italy": null } }), // Saboia e Nice tomadas pela França em 1792
@@ -2809,14 +2825,14 @@ export const EVENTS = {
     ...perYear(1760, 1760, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
       "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
       "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
-      "Punjab": "Confederação Sikh", "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
       "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
       f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
-        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Punjab": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
         "Martinique": "x:fr", "Saint Lucia": "x:fr" },
       o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
         "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
-        "Punjab": null, "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
     ...perYear(1760, 1760, { r: { "Canada": "Canadá (ocupação britânica)" }, f: { "Canada": "x:gb" }, o: { "Canada": null } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
     ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
     ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
@@ -2881,7 +2897,7 @@ export const EVENTS = {
     ...perYear(1759, 1759, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
     ...perYear(1759, 1759, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
     ...perYear(1759, 1759, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
-    ...perYear(1759, 1759, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
+    ...perYear(1759, 1759, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
     ...perYear(1759, 1759, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
     ...perYear(1759, 1759, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
     ...perYear(1759, 1759, { m: ["Reino da Sardenha", "h:it_sav", ["Italy", "Piedmont", "Novara", "Savoy and Nice"]], o: { "Italy": null } }), // Saboia e Nice tomadas pela França em 1792
@@ -2890,14 +2906,14 @@ export const EVENTS = {
     ...perYear(1759, 1759, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
       "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
       "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
-      "Punjab": "Confederação Sikh", "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
       "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
       f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
-        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Punjab": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
         "Martinique": "x:fr", "Saint Lucia": "x:fr" },
       o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
         "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
-        "Punjab": null, "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
     ...perYear(1759, 1759, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
     ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
     ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
@@ -2962,7 +2978,7 @@ export const EVENTS = {
     ...perYear(1758, 1758, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
     ...perYear(1758, 1758, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
     ...perYear(1758, 1758, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
-    ...perYear(1758, 1758, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
+    ...perYear(1758, 1758, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
     ...perYear(1758, 1758, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
     ...perYear(1758, 1758, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
     ...perYear(1758, 1758, { m: ["Reino da Sardenha", "h:it_sav", ["Italy", "Piedmont", "Novara", "Savoy and Nice"]], o: { "Italy": null } }), // Saboia e Nice tomadas pela França em 1792
@@ -2971,14 +2987,14 @@ export const EVENTS = {
     ...perYear(1758, 1758, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
       "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
       "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
-      "Punjab": "Confederação Sikh", "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
       "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
       f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
-        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Punjab": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
         "Martinique": "x:fr", "Saint Lucia": "x:fr" },
       o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
         "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
-        "Punjab": null, "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
     ...perYear(1758, 1758, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
     ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
     ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
@@ -3043,7 +3059,7 @@ export const EVENTS = {
     ...perYear(1757, 1757, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
     ...perYear(1757, 1757, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
     ...perYear(1757, 1757, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
-    ...perYear(1757, 1757, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
+    ...perYear(1757, 1757, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
     ...perYear(1757, 1757, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
     ...perYear(1757, 1757, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
     ...perYear(1757, 1757, { m: ["Reino da Sardenha", "h:it_sav", ["Italy", "Piedmont", "Novara", "Savoy and Nice"]], o: { "Italy": null } }), // Saboia e Nice tomadas pela França em 1792
@@ -3052,14 +3068,14 @@ export const EVENTS = {
     ...perYear(1757, 1757, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
       "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
       "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
-      "Punjab": "Confederação Sikh", "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
       "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
       f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
-        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Punjab": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
         "Martinique": "x:fr", "Saint Lucia": "x:fr" },
       o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
         "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
-        "Punjab": null, "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
     ...perYear(1757, 1757, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
     ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
     ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
@@ -3127,7 +3143,7 @@ export const EVENTS = {
     ...perYear(1756, 1756, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
     ...perYear(1756, 1756, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
     ...perYear(1756, 1756, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
-    ...perYear(1756, 1756, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
+    ...perYear(1756, 1756, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
     ...perYear(1756, 1756, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
     ...perYear(1756, 1756, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
     ...perYear(1756, 1756, { m: ["Reino da Sardenha", "h:it_sav", ["Italy", "Piedmont", "Novara", "Savoy and Nice"]], o: { "Italy": null } }), // Saboia e Nice tomadas pela França em 1792
@@ -3136,14 +3152,14 @@ export const EVENTS = {
     ...perYear(1756, 1756, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
       "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
       "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
-      "Punjab": "Confederação Sikh", "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
       "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
       f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
-        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Punjab": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
         "Martinique": "x:fr", "Saint Lucia": "x:fr" },
       o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
         "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
-        "Punjab": null, "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
     ...perYear(1756, 1756, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
     ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
     ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
@@ -3210,7 +3226,7 @@ export const EVENTS = {
     ...perYear(1755, 1755, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
     ...perYear(1755, 1755, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
     ...perYear(1755, 1755, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
-    ...perYear(1755, 1755, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
+    ...perYear(1755, 1755, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
     ...perYear(1755, 1755, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
     ...perYear(1755, 1755, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
     ...perYear(1755, 1755, { m: ["Reino da Sardenha", "h:it_sav", ["Italy", "Piedmont", "Novara", "Savoy and Nice"]], o: { "Italy": null } }), // Saboia e Nice tomadas pela França em 1792
@@ -3219,14 +3235,14 @@ export const EVENTS = {
     ...perYear(1755, 1755, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
       "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
       "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
-      "Punjab": "Confederação Sikh", "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
       "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
       f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
-        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Punjab": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
         "Martinique": "x:fr", "Saint Lucia": "x:fr" },
       o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
         "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
-        "Punjab": null, "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
     ...perYear(1755, 1755, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
     ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
     ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
@@ -3293,7 +3309,7 @@ export const EVENTS = {
     ...perYear(1754, 1754, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
     ...perYear(1754, 1754, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
     ...perYear(1754, 1754, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
-    ...perYear(1754, 1754, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
+    ...perYear(1754, 1754, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
     ...perYear(1754, 1754, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
     ...perYear(1754, 1754, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
     ...perYear(1754, 1754, { m: ["Reino da Sardenha", "h:it_sav", ["Italy", "Piedmont", "Novara", "Savoy and Nice"]], o: { "Italy": null } }), // Saboia e Nice tomadas pela França em 1792
@@ -3302,14 +3318,14 @@ export const EVENTS = {
     ...perYear(1754, 1754, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
       "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
       "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
-      "Punjab": "Confederação Sikh", "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
       "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
       f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
-        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Punjab": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
         "Martinique": "x:fr", "Saint Lucia": "x:fr" },
       o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
         "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
-        "Punjab": null, "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
     ...perYear(1754, 1754, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
     ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
     ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
@@ -3376,7 +3392,7 @@ export const EVENTS = {
     ...perYear(1753, 1753, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
     ...perYear(1753, 1753, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
     ...perYear(1753, 1753, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
-    ...perYear(1753, 1753, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
+    ...perYear(1753, 1753, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
     ...perYear(1753, 1753, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
     ...perYear(1753, 1753, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
     ...perYear(1753, 1753, { m: ["Reino da Sardenha", "h:it_sav", ["Italy", "Piedmont", "Novara", "Savoy and Nice"]], o: { "Italy": null } }), // Saboia e Nice tomadas pela França em 1792
@@ -3385,14 +3401,14 @@ export const EVENTS = {
     ...perYear(1753, 1753, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
       "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
       "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
-      "Punjab": "Confederação Sikh", "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
       "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
       f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
-        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Punjab": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
         "Martinique": "x:fr", "Saint Lucia": "x:fr" },
       o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
         "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
-        "Punjab": null, "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
     ...perYear(1753, 1753, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
     ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
     ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
@@ -3459,7 +3475,7 @@ export const EVENTS = {
     ...perYear(1752, 1752, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
     ...perYear(1752, 1752, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
     ...perYear(1752, 1752, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
-    ...perYear(1752, 1752, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
+    ...perYear(1752, 1752, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
     ...perYear(1752, 1752, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
     ...perYear(1752, 1752, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
     ...perYear(1752, 1752, { m: ["Reino da Sardenha", "h:it_sav", ["Italy", "Piedmont", "Novara", "Savoy and Nice"]], o: { "Italy": null } }), // Saboia e Nice tomadas pela França em 1792
@@ -3468,14 +3484,14 @@ export const EVENTS = {
     ...perYear(1752, 1752, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
       "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
       "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
-      "Punjab": "Confederação Sikh", "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
       "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
       f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
-        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Punjab": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
         "Martinique": "x:fr", "Saint Lucia": "x:fr" },
       o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
         "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
-        "Punjab": null, "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
     ...perYear(1752, 1752, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
     ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
     ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
@@ -3542,7 +3558,8 @@ export const EVENTS = {
     ...perYear(1751, 1751, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
     ...perYear(1751, 1751, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
     ...perYear(1751, 1751, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
-    ...perYear(1751, 1751, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
+    ...perYear(1751, 1751, { m: [null, null, ["British Raj", "Kashmir"]] }), // Caxemira durrani em 1752
+    ...perYear(1751, 1751, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
     ...perYear(1751, 1751, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
     ...perYear(1751, 1751, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
     ...perYear(1751, 1751, { m: ["Reino da Sardenha", "h:it_sav", ["Italy", "Piedmont", "Novara", "Savoy and Nice"]], o: { "Italy": null } }), // Saboia e Nice tomadas pela França em 1792
@@ -3551,14 +3568,14 @@ export const EVENTS = {
     ...perYear(1751, 1751, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
       "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
       "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
-      "Punjab": "Confederação Sikh", "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
       "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
       f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
-        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Punjab": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
         "Martinique": "x:fr", "Saint Lucia": "x:fr" },
       o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
         "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
-        "Punjab": null, "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
     ...perYear(1751, 1751, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
     ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
     ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
