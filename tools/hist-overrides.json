@@ -4448,6 +4448,15 @@
    }
   },
   {
+   "key": "Vermont",
+   "take": {
+    "from": "United States of America",
+    "iso": [
+     "US-VT"
+    ]
+   }
+  },
+  {
    "key": "Congress Poland",
    "take": {
     "from": "Russian Empire",
