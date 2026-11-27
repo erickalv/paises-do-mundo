@@ -5132,6 +5132,28 @@
    }
   },
   {
+   "key": "Three Feudatories",
+   "take": {
+    "from": "Manchu Empire",
+    "iso": [
+     "CN-YN"
+    ]
+   }
+  },
+  {
+   "key": "Feudatories Hunan",
+   "take": {
+    "from": "Manchu Empire",
+    "iso": [
+     "CN-HN",
+     "CN-SC",
+     "CN-CQ",
+     "CN-GZ",
+     "CN-GX"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",

@@ -299,7 +299,7 @@ export const EVENTS = {
     { y: 1893, y1: 1893, r: { "Kingdom of Hawaii": "Havaí (Governo Provisório)" }, f: { "Kingdom of Hawaii": "h:hawaii" }, o: { "Kingdom of Hawaii": null } }, // monarquia derrubada em 17/jan/1893
     { y: 1670, y1: 1894, r: { "Madagascar": "Reino Merina (protetorado reivindicado pela França)" }, f: { "Madagascar": "blank" }, o: { "Madagascar": null } }, // protetorado desde 1882 (Wikipedia); monarquia até 1897
     { y: 1670, y1: 1893, r: { "Swaziland": "Suazilândia" }, f: { "Swaziland": "blank" }, o: { "Swaziland": null } }, // convenção de dez/1894 a pôs sob o Transvaal
-    { y: 1670, y1: 1894, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Taiwan"]] }, // Tratado de Shimonoseki, 17/abr/1895
+    { y: 1683, y1: 1894, /*fixo*/ m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Taiwan"]] }, // Tungning rende-se em 5/set/1683 // Tratado de Shimonoseki, 17/abr/1895
     { y: 1891, y1: 1892, r: { "Uganda": "Uganda (Cia. Imperial Britânica da África Oriental)" } }, // tratado de 1891 // a companhia saiu em 31/mar/1893; protetorado em 18/jun/1894
     { y: 1670, y1: 1894, r: { "British East Africa": "África Oriental Britânica (Cia. Imperial Britânica da África Oriental)" } }, // protetorado em 1/jul/1895
     { y: 1670, y1: 1894, r: { "French West Africa": "Colônias francesas da África Ocidental" } }, // federação criada em 27/out/1895
@@ -1035,6 +1035,7 @@ export const EVENTS = {
     { y: 1678, /*fixo*/ m: [null, null, ["France", "French Flanders"]] }, // Cambrai, Valenciennes e Maubeuge cedidas em Nijmegen (17/set/1678)
     { y: 1659, /*fixo*/ m: [null, null, ["France", "Artois", "Roussillon"]] }, // Tratado dos Pireneus (7/nov/1659)
     { y: 1674, /*fixo*/ m: [null, null, ["United States of America", "New Netherland", "New Sweden"]] }, // Nova Holanda devolvida à Inglaterra pelo Tratado de Westminster (19/fev/1674)
+    { y: 1681, /*fixo*/ m: [null, null, ["Manchu Empire", "Three Feudatories", "Feudatories Hunan"]] }, // Kunming tomada em out/1681; Wu Shifan morre em dez/1681
     { y: 1718, /*fixo*/ m: [null, null, ["Austria Hungary", "Banat"]] }, // Banato de Temesvár: conquistado em out/1716, reconhecido em Passarowitz (21/jul/1718)
     { y: 1739, /*fixo*/ m: [null, null, ["Serbia", "Habsburg Serbia"]] }, // Reino da Sérvia habsburgo (1718–1739) devolvido em Belgrado, 18/set/1739
     { y: 1737, /*fixo*/ m: [null, null, ["Wallachia", "Oltenia"]] }, // Banato de Craiova reconquistado no fim de 1737; volta à Valáquia em 1739
@@ -12221,6 +12222,16 @@ export const EVENTS = {
     // Qing: sem bandeira oficial antes de 1862; a triangular (1862) não é descrita em detalhe; retangular promulgada em 1888 (um evento por ano para vencer as fusões)
     ...Array.from({ length: 218 }, (_, i) => ({ y: 1670 + i, y1: 1670 + i, f: { "Manchu Empire": "blank" } })),
     // correções de anacronismos (aplicadas por último; fontes: Wikipedia)
+    ...perYear(1600, 1623, { r: { "Taiwan": null } }), /*fixo*/ // Forte Zeelandia em 1624
+    ...perYear(1624, 1661, { r: { "Taiwan": "Formosa Holandesa" }, f: { "Taiwan": "blank" }, o: { "Taiwan": "República das Sete Províncias Unidas" } }), /*fixo*/ // feitoria holandesa no sudoeste de 1624 a 1662
+    ...perYear(1662, 1682, { r: { "Taiwan": "Reino de Tungning (Taiwan)" }, f: { "Taiwan": "blank" }, o: { "Taiwan": null } }), /*fixo*/ // estabelecido em 1/fev/1662; rende-se aos Qing em 5/set/1683
+    ...perYear(1600, 1672, { m: [null, null, ["Manchu Empire", "Three Feudatories", "Feudatories Hunan"]] }), /*fixo*/
+    ...perYear(1673, 1677, { r: { "Three Feudatories": "Revolta dos Três Feudatários (Wu Sangui)" }, f: { "Three Feudatories": "blank" }, o: { "Three Feudatories": null } }), /*fixo*/ // revolta em dez/1673; Hunan e Sichuan tomados; Guangxi com Sun Yanling
+    ...perYear(1678, 1679, { r: { "Three Feudatories": "Grande Zhou (Wu Sangui e Wu Shifan)" }, f: { "Three Feudatories": "blank" }, o: { "Three Feudatories": null } }), /*fixo*/ // Wu Sangui imperador em Hengzhou (1678)
+    ...perYear(1673, 1673, { m: [null, null, ["Manchu Empire", "Feudatories Hunan"]] }), /*fixo*/ // Hunan e Sichuan tomados depois do início da revolta
+    ...perYear(1674, 1679, { m: [null, null, ["Three Feudatories", "Feudatories Hunan"]] }), /*fixo*/
+    ...perYear(1680, 1680, { m: ["Grande Zhou (Wu Shifan, Yunnan)", "blank", ["Three Feudatories"]], o: { "Three Feudatories": null } }), /*fixo*/ // Hunan, Guizhou, Guangxi e Sichuan retomados pelos Qing em 1680
+    ...perYear(1680, 1680, { m: [null, null, ["Manchu Empire", "Feudatories Hunan"]] }), /*fixo*/
     ...perYear(1664, 1672, { m: [null, null, ["United States of America", "New Netherland", "New Sweden"]] }), /*fixo*/ // Nova Amsterdã tomada pelos ingleses em 27/ago/1664
     ...perYear(1600, 1637, { m: [null, null, ["New Netherland", "New Sweden"]] }), /*fixo*/
     ...perYear(1655, 1663, { m: [null, null, ["New Netherland", "New Sweden"]] }), /*fixo*/ // Nova Suécia conquistada pelos holandeses (Fort Christina, 15/set/1655)
