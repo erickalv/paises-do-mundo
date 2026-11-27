@@ -4406,6 +4406,39 @@
    }
   },
   {
+   "key": "Right-bank Ukraine",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "UA-56",
+     "UA-18",
+     "UA-68",
+     "UA-05",
+     "UA-32",
+     "UA-71"
+    ]
+   }
+  },
+  {
+   "key": "Minsk region",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "BY-MI",
+     "BY-HM"
+    ]
+   }
+  },
+  {
+   "key": "West Volhynia",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "UA-07"
+    ]
+   }
+  },
+  {
    "key": "Congress Poland",
    "take": {
     "from": "Russian Empire",
