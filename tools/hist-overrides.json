@@ -4893,6 +4893,17 @@
    }
   },
   {
+   "key": "Swedish Baltic",
+   "take": {
+    "from": "Russian Empire",
+    "region": [
+     "EST/",
+     "LVA/Vidzeme",
+     "LVA/Riga"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
