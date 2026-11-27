@@ -4641,6 +4641,17 @@
    }
   },
   {
+   "key": "Persian Caspian",
+   "take": {
+    "from": "Persia",
+    "iso": [
+     "IR-19",
+     "IR-21",
+     "IR-27"
+    ]
+   }
+  },
+  {
    "key": "Kymmene",
    "take": {
     "from": "Finland",
