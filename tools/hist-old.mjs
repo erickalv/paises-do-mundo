@@ -708,7 +708,12 @@ export const EVENTS = {
     { y: 1754, y1: 1816, r: { "Maratha": "Confederação Maratha" }, f: { "Maratha": "blank" }, o: { "Maratha": null } },
     { y: 1817, y1: 1817, r: { "Maratha": "Confederação Maratha (Terceira Guerra Anglo-Maratha)" }, f: { "Maratha": "blank" }, o: { "Maratha": null } }, // 5/nov/1817 a 9/abr/1819
     { y: 1818, m: ["Índia (Companhia Britânica das Índias Orientais)", "blank", ["British Raj", "Maratha"]] }, // Baji Rao II rende-se em 3/jun/1818
-    { y: 1754, y1: 1818, m: ["Reino da Birmânia", "blank", ["Upper Burma", "Pegu", "Arakan", "Tenasserim"]] },
+    { y: 1785, y1: 1818, m: ["Reino da Birmânia", "blank", ["Upper Burma", "Pegu", "Arakan", "Tenasserim"]] }, // Mrauk-U conquistada em 2/jan/1785
+    { y: 1760, y1: 1784, m: ["Reino da Birmânia", "blank", ["Upper Burma", "Pegu", "Tenasserim"]] }, // Tavoy tomada em dez/1759; litoral inteiro até 1765
+    { y: 1757, y1: 1759, m: ["Reino da Birmânia", "blank", ["Upper Burma", "Pegu"]] }, // Pegu cai em 6/mai/1757
+    { y: 1754, y1: 1759, m: [null, null, ["Rattanakosin Kingdom", "Tenasserim"]] }, // Mergui e o sul de Tenasserim siameses até 1759–1760
+    { y: 1754, y1: 1784, r: { "Arakan": "Reino de Mrauk-U (Arracão)" }, f: { "Arakan": "blank" }, o: { "Arakan": null } }, // independente desde 1437 (vassalo de Bengala até 1531)
+    { y: 1754, y1: 1756, r: { "Upper Burma": "Reino de Konbaung (Birmânia)", "Pegu": "Reino de Hanthawaddy Restaurado" }, f: { "Upper Burma": "blank", "Pegu": "blank" }, o: { "Upper Burma": null, "Pegu": null } }, // Konbaung domina a Alta Birmânia em dez/1753
     { y: 1819, y1: 1820, m: ["Reino da Birmânia", "blank", ["Upper Burma", "Pegu", "Arakan", "Tenasserim", "Manipur"]] }, // Manipur conquistado em 1819
     { y: 1754, y1: 1818, r: { "Manipur": "Reino de Manipur" }, f: { "Manipur": "blank" }, o: { "Manipur": null } },
     { y: 1754, y1: 1820, r: { "Assam": "Reino Ahom (Assam)" }, f: { "Assam": "blank" }, o: { "Assam": null } }, // invasões birmanesas em 1817 e 1819; controle birmanês de 1821 a 1825
@@ -861,7 +866,7 @@ export const EVENTS = {
     { y: 1838, y1: 1851, r: { "Transvaal": "Transvaal (bôeres, independência não reconhecida)" }, f: { "Transvaal": "blank" }, o: { "Transvaal": null } }, // Convenção do Rio Sand, 17/jan/1852
     { y: 1851, y1: 1851, m: ["Confederação Argentina (guerra civil)", "blank", ["Argentina", "State of Buenos Aires", "Liga Federal"]] },
     { y: 1852, y1: 1860, m: ["Confederação Argentina", "x:ar", ["Argentina", "Liga Federal"]] }, // Entre Ríos e Corrientes contra Rosas; Caseros em 3/fev/1852
-    { y: 1754, y1: 1851, m: ["Reino da Birmânia", "blank", ["Upper Burma", "Pegu"]] },
+    { y: 1757, y1: 1851, m: ["Reino da Birmânia", "blank", ["Upper Burma", "Pegu"]] }, /*fixo*/
     { y: 1852, y1: 1852, r: { "Pegu": "Pegu (ocupação britânica)" }, f: { "Pegu": "x:gb" }, o: { "Pegu": null } }, // tomada em 3/jun/1852
     { y: 1754, y1: 1855, r: { "Oudh": "Reino de Awadh" }, f: { "Oudh": "blank" }, o: { "Oudh": null } },
     // bandeiras e situações fixas do mapa de 1900 corrigidas para 1816–1899 (fontes: Wikipedia)
@@ -2255,8 +2260,10 @@ export const EVENTS = {
     ...perYear(1768, 1768, { r: { "Corsica": "Córsega (disputada entre a República Corsa e a França)" }, f: { "Corsica": "blank" }, o: { "Corsica": null } }), // Gênova cede seus direitos à França (15/mai/1768); Borgo (out/1768); Ponte Novu em mai/1769
     ...perYear(1768, 1768, { r: { "Louisiana N": "Luisiana (governo interino de Aubry após a revolta de 1768)" }, f: { "Louisiana N": "blank" }, o: { "Louisiana N": null } }), // Ulloa expulso em 1/nov/1768; O'Reilly toma posse em 18/ago/1769
     { y: 1775, m: [null, null, ["Rattanakosin Kingdom", "Lan Na"]] }, // Chiang Mai tomada pelos siameses em 15/jan/1775
-    { y: 1754, y1: 1774, r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // quarto período de domínio birmanês, 1763–1774
-    { y: 1754, y1: 1769, r: { "Rattanakosin Kingdom": "Sião (Thonburi e regimes rivais)" } }, // Ayutthaya cai em abr/1767; Taksin coroado em Thonburi em 28/dez/1767; reunificação em 1770
+    { y: 1763, y1: 1774, /*fixo*/ r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // quarto período de domínio birmanês, 1763–1774
+    { y: 1767, y1: 1769, /*fixo*/ r: { "Rattanakosin Kingdom": "Sião (Thonburi e regimes rivais)" } },
+    { y: 1754, y1: 1766, r: { "Rattanakosin Kingdom": "Reino de Ayutthaya (Sião)" } }, // Ayutthaya cai em abr/1767
+    { y: 1754, y1: 1762, r: { "Lan Na": "Lan Na (Chiang Mai)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // fora do domínio birmanês entre 1727 e 1763 // Ayutthaya cai em abr/1767; Taksin coroado em Thonburi em 28/dez/1767; reunificação em 1770
     { y: 1770, y1: 1778, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } },
     { y: 1779, y1: 1781, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } }, // depois da fusão de 1779 (Laos)
     // revisão 1767 (situação em 31/dez; fontes: Wikipedia)
