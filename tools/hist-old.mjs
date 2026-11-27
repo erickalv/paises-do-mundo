@@ -339,7 +339,9 @@ export const EVENTS = {
     { y: 1768, y1: 1884, r: { "Cochinchina": "Cochinchina Francesa", "Cambodia": "Camboja (protetorado francês)" }, f: { "Cochinchina": "x:fr", "Cambodia": "x:fr" }, o: { "Cochinchina": "França", "Cambodia": "França" } },
     { y: 1885, y1: 1886, m: ["Cochinchina, Aname, Tonquim e Camboja (França)", "x:fr", ["French Indochina", "Cochinchina", "Western Cochinchina", "Cambodia"]], o: { "French Indochina": "França" } },
     { y: 1887, m: ["Indochina Francesa", "x:fr", ["French Indochina", "Cochinchina", "Western Cochinchina", "Cambodia"]], o: { "French Indochina": "França" } },
-    { y: 1768, y1: 1892, m: ["Sião", "h:th_el", ["Rattanakosin Kingdom", "Siamese Laos", "Sainyabuli", "Inner Cambodia"]] }, // margem leste do Mekong cedida em 3/out/1893
+    { y: 1768, y1: 1778, m: ["Sião", "h:th_el", ["Rattanakosin Kingdom", "Inner Cambodia"]] }, // Vientiane, Luang Prabang e Champasak vassalos do Sião só em 1778–1779
+    { y: 1768, y1: 1778, m: ["Reinos laosianos (Luang Prabang, Vientiane e Champasak)", "blank", ["Siamese Laos", "Sainyabuli"]] }, // Vientiane e Luang Prabang vassalos da Birmânia desde 1765; Champasak independente
+    { y: 1779, y1: 1892, m: ["Sião", "h:th_el", ["Rattanakosin Kingdom", "Siamese Laos", "Sainyabuli", "Inner Cambodia"]] }, // margem leste do Mekong cedida em 3/out/1893
     { y: 1893, m: ["Indochina Francesa", "x:fr", ["French Indochina", "Siamese Laos"]] },
     { y: 1893, y1: 1903, m: ["Sião", "h:th_el", ["Rattanakosin Kingdom", "Sainyabuli", "Inner Cambodia"]] }, // margem direita cedida pelo tratado de 13/fev/1904
     { y: 1904, m: ["Indochina Francesa", "x:fr", ["French Indochina", "Sainyabuli"]] },
@@ -2250,6 +2252,11 @@ export const EVENTS = {
     ...perYear(1770, 1773, { r: { "Romania": "Principado da Moldávia (ocupação russa)", "Wallachia": "Principado da Valáquia (ocupação russa)" }, f: { "Romania": "x:ru", "Wallachia": "x:ru" }, o: { "Romania": null, "Wallachia": null } }), // Iași tomada em 7/out/1769, Bucareste em 17/nov/1769; devolvidas pelo Tratado de Küçük Kaynarca (21/jul/1774)
     ...perYear(1768, 1768, { r: { "Corsica": "Córsega (disputada entre a República Corsa e a França)" }, f: { "Corsica": "blank" }, o: { "Corsica": null } }), // Gênova cede seus direitos à França (15/mai/1768); Borgo (out/1768); Ponte Novu em mai/1769
     ...perYear(1768, 1768, { r: { "Louisiana N": "Luisiana (governo interino de Aubry após a revolta de 1768)" }, f: { "Louisiana N": "blank" }, o: { "Louisiana N": null } }), // Ulloa expulso em 1/nov/1768; O'Reilly toma posse em 18/ago/1769
+    { y: 1775, m: [null, null, ["Rattanakosin Kingdom", "Lan Na"]] }, // Chiang Mai tomada pelos siameses em 15/jan/1775
+    { y: 1768, y1: 1774, r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // quarto período de domínio birmanês, 1763–1774
+    { y: 1768, y1: 1769, r: { "Rattanakosin Kingdom": "Sião (Thonburi e regimes rivais)" } }, // Ayutthaya cai em abr/1767; Taksin coroado em Thonburi em 28/dez/1767; reunificação em 1770
+    { y: 1770, y1: 1778, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } },
+    { y: 1779, y1: 1781, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } }, // depois da fusão de 1779 (Laos)
     // Qing: sem bandeira oficial antes de 1862; a triangular (1862) não é descrita em detalhe; retangular promulgada em 1888 (um evento por ano para vencer as fusões)
     ...Array.from({ length: 120 }, (_, i) => ({ y: 1768 + i, y1: 1768 + i, f: { "Manchu Empire": "blank" } })),
   ],
