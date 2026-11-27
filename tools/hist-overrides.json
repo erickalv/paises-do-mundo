@@ -5026,6 +5026,26 @@
    }
   },
   {
+   "key": "Transylvania",
+   "take": {
+    "from": "Austria Hungary",
+    "iso": [
+     "RO-AB",
+     "RO-BN",
+     "RO-BV",
+     "RO-CJ",
+     "RO-CV",
+     "RO-HD",
+     "RO-HR",
+     "RO-MS",
+     "RO-SB",
+     "RO-SJ",
+     "RO-MM",
+     "RO-SM"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
