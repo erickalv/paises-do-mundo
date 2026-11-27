@@ -61,7 +61,8 @@ export const ROWS = [
   ["INDBR", "Índia Britânica", G, 1946, 1946, ["IND", "PAK", "BGD"]],
   ["PAK1", "Paquistão", "x:pk", 1947, 1970, ["PAK", "BGD"]],
   ["BGD71", null, "h:bd71", 1971, 1971, ["BGD"]], // mapa tirado em 13/jan/1972
-  ["SKM", "Sikkim", "blank", 1946, 1974, ["IND~SK"]],
+  ["SKM", "Sikkim", "h:sik_old", 1946, 1966, ["IND~SK"]], // branca com borda tripla e roda vermelha (simplificada)
+  ["SKM67", "Sikkim", "h:sik67", 1967, 1974, ["IND~SK"]], // borda vermelha e chakra amarelo
   ["GOA", "Goa (Portugal)", P, 1946, 1960, ["IND~GA"]],
   ["LKA0", "Ceilão (britânico)", G, 1946, 1947, ["LKA"]],
   ["LKA48", "Ceilão", "h:lk48", 1948, 1950, ["LKA"]],
@@ -92,6 +93,7 @@ export const ROWS = [
   ["KHM1", "Kampuchea Democrática", "h:kh76", 1976, 1978, ["KHM"]],
   ["KHM2", "Kampuchea", "h:kh79", 1979, 1988, ["KHM"]],
   ["KHM3", "Camboja", "h:kh89", 1989, 1992, ["KHM"]],
+  ["THA46", "Sião", "x:th", 1946, 1948, ["THA"]], // nome voltou a Sião em 7/set/1946; Tailândia de novo em 1949
   ["HKG1", "Hong Kong (britânico)", "h:hk_brit", 1946, 1996, ["HKG"]],
   ["MAC1", "Macau (português)", P, 1946, 1998, ["MAC"]],
   ["BRN0", "Brunei (protetorado britânico)", "h:bn06", 1946, 1958, ["BRN"]], // emblema vermelho só em 29/set/1959
@@ -109,7 +111,8 @@ export const ROWS = [
   ["AFGT2", null, "h:af21", 1997, 2000, ["AFG"]],
   ["AFG4B", null, "h:af92", 2001, 2001, ["AFG"]], // Talibã caiu em nov/2001; bandeira do Estado Islâmico até 27/jan/2002
   ["AFG5", null, "h:af21", 2021, 2026, ["AFG"]], // bandeira do governo de fato (Emirado Islâmico) desde ago/2021
-  ["IRN1", null, "h:ir_old", 1946, 1979, ["IRN"]],
+  ["IRN1", null, "h:ir_old", 1946, 1978, ["IRN"]],
+  ["IRN79", null, "h:ir79", 1979, 1979, ["IRN"]], // leão e sol retirados em 1979; tricolor lisa até 29/jul/1980
   ["IRQK", "Reino do Iraque", "h:iq_k", 1946, 1958, ["IRQ"]],
   ["IRQ59", null, "h:iq59", 1959, 1962, ["IRQ"]],
   ["IRQ1", null, "h:iq63", 1963, 1990, ["IRQ"]],
@@ -191,8 +194,8 @@ export const ROWS = [
   ["COD1", "Zaire", "h:zaire", 1971, 1996, ["COD"]],
   ["COD2", null, "h:cd97", 1997, 2005, ["COD"]],
   ["RUR", "Ruanda-Urundi (Bélgica)", BE, 1946, 1961, ["RWA", "BDI"], [29.9, -2.6]],
-  ["BDI62", "Reino do Burundi", "blank", 1962, 1965, ["BDI"]], // bandeira de 1962 sem descrição no Wikipedia
-  ["BDI66", null, "blank", 1966, 1966, ["BDI"]], // monarquia abolida em nov/1966; bandeira atual desde 28/jun/1967
+  ["BDI62", "Reino do Burundi", "h:bi62", 1962, 1965, ["BDI"]], // tambor karyenda e sorgo (FOTW; simplificada)
+  ["BDI66", null, "h:bi66", 1966, 1966, ["BDI"]], // só o sorgo desde set/1966 // monarquia abolida em nov/1966; bandeira atual desde 28/jun/1967
   ["RWA1", null, "h:rw_old", 1962, 2000, ["RWA"]],
   ["AGO0", "Angola (Portugal)", P, 1946, 1974, ["AGO"]],
   ["MOZ0", "Moçambique (Portugal)", P, 1946, 1974, ["MOZ"]],

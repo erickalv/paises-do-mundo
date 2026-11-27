@@ -327,6 +327,49 @@ F.tuva41 = svg(`<rect width="640" height="480" fill="#D52B1E"/><text x="40" y="1
 F.tuva43 = svg(`<rect width="640" height="480" fill="#D52B1E"/><text x="40" y="130" font-family="DejaVu Sans" font-weight="bold" font-size="110" fill="#FFD700">ТАР</text>`);
 // Catar 1936–49: grená com faixa branca serrilhada (sem os losangos e o nome)
 F.qa36 = svg(`<rect width="640" height="480" fill="#8A1538"/><path d="M0 0H200${Array.from({length: 9}, (_, i) => `L270 ${(i + 0.5) * 480 / 9}L200 ${(i + 1) * 480 / 9}`).join("")}H0Z" fill="#fff"/>`);
+// Finlândia dez/1917–mai/1918: vermelha com leão dourado (leão simplificado, desenho aproximado)
+{
+  const lion = inner("lk");
+  F.fi_lion = svg(`<rect width="640" height="480" fill="#D21034"/><defs><clipPath id="fil"><rect x="280" y="130" width="300" height="270"/></clipPath></defs><g transform="translate(330 240) scale(1.35) translate(-427 -267)"><g clip-path="url(#fil)">${lion.replace(/#8d2029/g, "#D21034")}</g></g>`);
+}
+// Suécia 1844–1905: com a marca da união no cantão (simplificada)
+{
+  const w = 176, h = 192, cx = w / 2, cy = h / 2;
+  F.se_union = svg(`${inner("se")}<rect width="${w}" height="${h}" fill="#D21034"/><rect x="${cx - 22}" width="44" height="${h}" fill="#fff"/><rect x="${cx - 12}" width="24" height="${h}" fill="#00205B"/>` +
+    `<path d="M0 0L${cx} ${cy}L0 ${h}Z M${w} 0L${cx} ${cy}L${w} ${h}Z" fill="#005293"/><path d="M0 ${cy - 12}H${cx - 12}L${cx} ${cy}L${cx - 12} ${cy + 12}H0Z M${w} ${cy - 12}H${cx + 12}L${cx} ${cy}L${cx + 12} ${cy + 12}H${w}Z" fill="#FECB00"/>`);
+}
+// Estado de Creta 1898–1913: cruz branca em azul, cantão vermelho com estrela branca
+F.cretan = svg(`<rect width="640" height="480" fill="#0D5EAF"/><rect x="270" width="100" height="480" fill="#fff"/><rect y="190" width="640" height="100" fill="#fff"/><rect width="270" height="190" fill="#D21034"/>${star(135, 98, 62, "#fff")}`);
+// República Democrática Moldava 1917–18: azul, amarela e vermelha (sem brasão e nome)
+F.md17 = svg(H("#0046AE", "#FFD200", "#CC092F"));
+// Reino do Burundi 1962–66: tambor karyenda e sorgo no disco (simplificado); 1966: só o sorgo
+{
+  const base = `<path d="M0 0H640V480H0Z" fill="#CE1126"/><path d="M0 0L320 240L0 480Z M640 0L320 240L640 480Z" fill="#1EB53A"/><path d="M0 0L640 480M640 0L0 480" stroke="#fff" stroke-width="72"/><circle cx="320" cy="240" r="130" fill="#fff"/>`;
+  const sorgo = `<path d="M320 340V180" stroke="#1EB53A" stroke-width="8"/><ellipse cx="320" cy="165" rx="22" ry="40" fill="#C8102E"/><path d="M320 290q-40-10-60-50M320 260q40-10 60-50" stroke="#1EB53A" stroke-width="8" fill="none"/>`;
+  F.bi62 = svg(base + `<path d="M270 250h100l-15 80h-70z" fill="#8B2E16"/><ellipse cx="320" cy="250" rx="50" ry="14" fill="#C8875A"/>` + sorgo.replace("M320 340V180", "M320 250V180"));
+  F.bi66 = svg(base + sorgo);
+}
+// Irã 1979–80: tricolor lisa (leão e sol retirados)
+F.ir79 = svg(H("#239F40", "#fff", "#DA0000"));
+// Canato de Bogd 1911–24: amarela com o soyombo (sem o texto de oração; simplificada)
+F.mn_bogd = svg(`<rect width="640" height="480" fill="#FFD900"/><svg x="213.3" y="0" width="213.3" height="480" viewBox="0 0 213.3 480" preserveAspectRatio="none"><g fill="#C4272F">${inner("mn").replace('<path fill="#da2032" d="M0 0h640v480H0Z"/>', "").replace(/<path fill="#0066b3"[^>]*\/>/, "").replace(/#da2032/g, "#FFD900").replace(/#ffd900/g, "#C4272F")}</g></svg>`);
+// República Popular da Mongólia 1940–45: vermelha com o emblema no centro (emblema simplificado)
+const emblem = (fill) => `<circle cx="320" cy="240" r="110" fill="#FFD700"/><circle cx="320" cy="240" r="88" fill="${fill}"/><path d="M270 280l20-50 40-10 30 20 10 40h-15l-10-25-35 5-15 20z" fill="#FFD700"/>`;
+F.mn40 = svg(`<rect width="640" height="480" fill="#C4272F"/>${emblem("#0066B3")}`);
+// Tuva: 1926–29 e 1935–40 vermelha com brasão (simplificado); 1930–34 vermelha com "TAR"
+F.tuva_arms = svg(`<rect width="640" height="480" fill="#D52B1E"/><circle cx="320" cy="240" r="100" fill="#FFD700"/><circle cx="320" cy="240" r="78" fill="#D52B1E"/><circle cx="320" cy="240" r="40" fill="#FFD700"/>`);
+F.tuva30 = svg(`<rect width="640" height="480" fill="#D52B1E"/><text x="320" y="285" font-family="DejaVu Sans" font-weight="bold" font-size="130" fill="#FFD700" text-anchor="middle">TAR</text>`);
+// Sikkim: até 1966 branca com borda tripla (vermelha, branca, azul) e roda vermelha; 1967–75 borda vermelha e chakra amarelo
+const wheel = (r, fill, rim) => `<circle cx="320" cy="240" r="${r}" fill="none" stroke="${fill}" stroke-width="${r / 6}"${rim ? "" : ""}/>` + Array.from({ length: 8 }, (_, i) => { const a = (Math.PI / 4) * i; return `<path d="M320 240L${(320 + r * Math.cos(a)).toFixed(1)} ${(240 + r * Math.sin(a)).toFixed(1)}" stroke="${fill}" stroke-width="${r / 10}"/>`; }).join("") + `<circle cx="320" cy="240" r="${r / 4}" fill="${fill}"/>`;
+F.sik_old = svg(`<rect width="640" height="480" fill="#D21034"/><rect x="24" y="24" width="592" height="432" fill="#fff"/><rect x="44" y="44" width="552" height="392" fill="#0033A0"/><rect x="64" y="64" width="512" height="352" fill="#fff"/>${wheel(110, "#D21034")}`);
+F.sik67 = svg(`<rect width="640" height="480" fill="#D21034"/><rect x="40" y="40" width="560" height="400" fill="#fff"/><g stroke-linecap="round">${wheel(124, "#D21034")}${wheel(112, "#FFC72C")}</g>`);
+// Asir (idríssidas): 1909–27 verde com borda branca serrilhada e inscrição branca; 1927–30 sem a borda
+{
+  const txt = `<text x="320" y="225" font-family="DejaVu Sans" font-size="52" fill="#fff" text-anchor="middle">لا إله إلا الله</text><text x="320" y="300" font-family="DejaVu Sans" font-size="52" fill="#fff" text-anchor="middle">محمد رسول الله</text>`;
+  const teeth = (n, x0, y0, dx, dy, ox, oy) => Array.from({ length: n }, (_, i) => `<path d="M${x0 + dx * i} ${y0 + dy * i}l${dx / 2 + ox} ${dy / 2 + oy}l${dx / 2 - ox} ${dy / 2 - oy}z" fill="#fff"/>`).join("");
+  F.asir09 = svg(`<rect width="640" height="480" fill="#fff"/><rect x="30" y="30" width="580" height="420" fill="#006C35"/>` + teeth(12, 30, 30, 48.3, 0, 0, 28) + teeth(12, 30, 450, 48.3, 0, 0, -28) + teeth(9, 30, 30, 0, 46.7, 28, 0) + teeth(9, 610, 30, 0, 46.7, -28, 0) + txt);
+  F.asir27 = svg(`<rect width="640" height="480" fill="#006C35"/>` + txt);
+}
 fs.writeFileSync("data/flags-hist.json", JSON.stringify(F));
 console.log("hist flags", Object.keys(F).length, Math.round(JSON.stringify(F).length / 1024), "KB");
 // preview sheet
