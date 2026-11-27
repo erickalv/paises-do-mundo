@@ -150,12 +150,16 @@ for year in YEARS:
                 c = g.representative_point()
                 if x0 <= c.x <= x1 and y0 <= c.y <= y1:
                     out[k] = (g, key_index[o["key"]], a3, iso)
-    # a unit smaller than today's provinces, cut out with its shape from one of the old maps ("cut": {"map": year, "name": NAME, "adm0": [only these countries of today], "iso_not": [provinces left alone]})
+    # a unit smaller than today's provinces, cut out with its shape from one of the old maps ("cut": {"map": year, "name": NAME} or {"bbox": [x0, y0, x1, y1]}, "adm0": [only these countries of today], "iso_not": [provinces left alone]})
     for o in OVR.get(str(year), []):
         if "cut" in o:
             c = o["cut"]
-            src = json.load(open(f"dl/hb/world_{c['map']}.geojson"))
-            shp = unary_union([shape(f["geometry"]).buffer(0) for f in src["features"] if f["properties"].get("NAME") == c["name"]]).buffer(0)
+            if "bbox" in c:
+                from shapely.geometry import box
+                shp = box(*c["bbox"])
+            else:
+              src = json.load(open(f"dl/hb/world_{c['map']}.geojson"))
+              shp = unary_union([shape(f["geometry"]).buffer(0) for f in src["features"] if f["properties"].get("NAME") == c["name"]]).buffer(0)
             new = []
             for g, u, a3, iso in out:
                 if ("adm0" in c and a3 not in c["adm0"]) or iso in c.get("iso_not", []) or not g.intersects(shp):

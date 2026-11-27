@@ -4547,6 +4547,13 @@
    }
   },
   {
+   "key": "Minorca",
+   "cut": {
+    "bbox": [3.75, 39.75, 4.4, 40.15],
+    "adm0": ["ESP"]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",

@@ -2466,6 +2466,11 @@ export const EVENTS = {
     { y: 1770, y1: 1778, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } },
     { y: 1779, y1: 1781, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } }, // depois da fusão de 1779 (Laos)
     ...perYear(1765, 1765, { m: ["Luisiana (França)", "x:fr", ["Louisiana N", "Louisiana S"]], o: { "Louisiana N": "França" } }), // cedida em segredo à Espanha (Fontainebleau, 1762); ainda sob administração francesa
+    ...perYear(1782, 1797, { m: [null, null, ["Spain", "Minorca"]] }), // tomada por franceses e espanhóis em 1782; cedida à Espanha em 1783
+    ...perYear(1802, 1912, { m: [null, null, ["Spain", "Minorca"]] }), // devolvida pela Paz de Amiens (1802)
+    ...perYear(1798, 1801, { r: { "Minorca": "Minorca (ocupação britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": null } }), // tomada pelos britânicos em 1798
+    ...perYear(1781, 1781, { r: { "Minorca": "Minorca (sítio franco-espanhol)" }, f: { "Minorca": "blank" }, o: { "Minorca": null } }), // invasão em 1781; Fort St. Philip rende-se em 1782
+    ...perYear(1765, 1780, { r: { "Minorca": "Minorca (britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": "Reino Unido" } }), // devolvida à Grã-Bretanha pela Paz de Paris (1763)
     // Qing: sem bandeira oficial antes de 1862; a triangular (1862) não é descrita em detalhe; retangular promulgada em 1888 (um evento por ano para vencer as fusões)
     ...Array.from({ length: 123 }, (_, i) => ({ y: 1765 + i, y1: 1765 + i, f: { "Manchu Empire": "blank" } })),
   ],
