@@ -895,6 +895,13 @@ export const EVENTS = {
     ...perYear(1807, 1807, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria"]], o: { "Papal States": null } }), // bandeira amarela e vermelha sem descrição exata
     ...perYear(1807, 1807, { m: ["Espanha", "x:es", ["Spain", "Catalonia"]] }), // aliada da França até 1808
     ...perYear(1807, 1807, { r: { "Sierra Leone GB": "Serra Leoa (assentamento de Freetown)" }, f: { "Sierra Leone GB": "blank" }, o: { "Sierra Leone GB": null } }), // colônia da Coroa em 1/jan/1808
+    // nomes anacrônicos corrigidos (fontes: Wikipedia)
+    ...perYear(1807, 1844, { r: { "Tonga": "Tonga (guerra civil)" } }), // guerra civil desde 1799; reino unificado em 1845
+    ...perYear(1807, 1821, { r: { "Basutoland": null } }), // Moshoeshoe rei em 1822
+    ...perYear(1807, 1817, { r: { "Peshawar": "Peshawar" } }), // sardares barakzais só depois de 1818 (pendente)
+    ...perYear(1807, 1820, { r: { "British Columbia": "Nova Caledônia (postos de peles britânicos)" } }), // postos de Simon Fraser desde 1805; fusão com a Cia. da Baía de Hudson em 1821
+    ...perYear(1807, 1807, { r: { "Two Sicilies": "Reino de Nápoles (José Bonaparte)" } }), // 30/mar/1806 a 6/jun/1808; Murat desde 1/ago/1808
+    ...perYear(1807, 1809, { r: { "Seychelles": "Seicheles (França)" }, f: { "Seychelles": "x:fr" }, o: { "Seychelles": "França" } }), // britânicas desde dez/1810
     ...perYear(1807, 1807, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Finlandesa a partir de fev/1808
     ...perYear(1807, 1808, { m: ["Reino da Baviera", "blank", ["Kingdom of Bavaria", "Tyrol", "Trentino"]] }),
     ...perYear(1807, 1808, { m: ["Império Austríaco", "h:at_hab", ["Austria Hungary", "Hungary", "Salzburg", "Tarnopol", "Illyria", "Gorizia"]] }), // aprox.: a Ístria veneziana era do Reino da Itália
