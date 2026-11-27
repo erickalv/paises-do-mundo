@@ -991,6 +991,12 @@
   }
  ],
  "labels": {
+  "1900": {
+   "United States of America": [
+    -79.0,
+    40.5
+   ]
+  },
   "1938": {
    "Empire of Japan": [
     138.5,
@@ -4453,6 +4459,19 @@
     "from": "United States of America",
     "iso": [
      "US-VT"
+    ]
+   }
+  },
+  {
+   "key": "Old Northwest",
+   "take": {
+    "from": "United States of America",
+    "iso": [
+     "US-OH",
+     "US-IN",
+     "US-IL",
+     "US-MI",
+     "US-WI"
     ]
    }
   },

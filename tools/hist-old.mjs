@@ -1759,6 +1759,9 @@ export const EVENTS = {
     ...perYear(1776, 1776, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // Pondicherry tomada pelos britânicos em out/1778
     ...perYear(1776, 1776, { r: { "Spanish Guinea": "Fernando Pó e Ano-Bom (Portugal)" }, f: { "Spanish Guinea": "blank" }, o: { "Spanish Guinea": "Portugal" } }), // cedidas à Espanha pelo Tratado de El Pardo (11/mar/1778)
     ...perYear(1776, 1776, { m: [null, null, ["United States of America", "Vermont"]] }), // Concessões de New Hampshire, parte da revolta; Vermont independente em 15/jan/1777
+    ...perYear(1783, 1912, { m: [null, null, ["United States of America", "Old Northwest"]] }), // cedido aos EUA pelo Tratado de Paris (1783); fortes britânicos até 1796 (pendente)
+    ...perYear(1776, 1777, { m: [null, null, ["Canada", "Old Northwest"]] }), // Ato de Quebec (1774): região ao norte do Ohio anexada à Província de Quebec
+    ...perYear(1778, 1782, { r: { "Old Northwest": "Região do Noroeste (disputada entre Grã-Bretanha e Virgínia)" }, f: { "Old Northwest": "blank" }, o: { "Old Northwest": null } }), // Condado de Illinois (Virgínia) de 4/jul/1778 a jan/1782, só nos povoados de Vincennes, Cahokia e Kaskaskia
     // Qing: sem bandeira oficial antes de 1862; a triangular (1862) não é descrita em detalhe; retangular promulgada em 1888 (um evento por ano para vencer as fusões)
     ...Array.from({ length: 112 }, (_, i) => ({ y: 1776 + i, y1: 1776 + i, f: { "Manchu Empire": "blank" } })),
   ],
