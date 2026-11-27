@@ -911,6 +911,10 @@ export const EVENTS = {
     ...perYear(1807, 1814, { r: { "Mecklenburg-Schwerin": "Ducado de Mecklemburgo-Schwerin", "Mecklenburg-Strelitz": "Ducado de Mecklemburgo-Strelitz" } }), // grão-ducados no Congresso de Viena (1815)
     ...perYear(1807, 1838, { r: { "French Indochina": "Vietnã (dinastia Nguyễn)" } }), // nome Việt Nam desde 1804; Đại Nam em 1839
     ...perYear(1807, 1841, { r: { "Siamese Malay States": "Kedah, Kelantan e Terengganu (tributários do Sião)" } }), // Perlis separado de Kedah em 1842
+    ...perYear(1818, 1835, { r: { "Hail": "Ha'il" } }), // Emirado de Jabal Shammar fundado em 1836
+    ...perYear(1820, 1823, { r: { "Riyadh": "Négede (ocupação egípcia)" }, f: { "Riyadh": "h:eg_khed" } }), // Turki retoma Riad das forças otomano-egípcias em 1824
+    ...perYear(1838, 1840, { r: { "Riyadh": "Négede (ocupação egípcia; Khalid bin Saud)" }, f: { "Riyadh": "h:eg_khed" } }), // Faisal preso em 1838; retirada após a Convenção de Londres (1840)
+    ...perYear(1829, 1831, { r: { "Western Australia (UK)": "Colônia do Rio Swan (britânica)" } }), // 17/jun/1829; Austrália Ocidental em 6/fev/1832
     ...perYear(1807, 1807, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Finlandesa a partir de fev/1808
     ...perYear(1807, 1808, { m: ["Reino da Baviera", "blank", ["Kingdom of Bavaria", "Tyrol", "Trentino"]] }),
     ...perYear(1807, 1808, { m: ["Império Austríaco", "h:at_hab", ["Austria Hungary", "Hungary", "Salzburg", "Tarnopol", "Illyria", "Gorizia"]] }), // aprox.: a Ístria veneziana era do Reino da Itália
