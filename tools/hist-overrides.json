@@ -4571,6 +4571,34 @@
    }
   },
   {
+   "key": "Silesia",
+   "take": {
+    "from": "Germany",
+    "iso": [
+     "PL-DS",
+     "PL-OP"
+    ]
+   }
+  },
+  {
+   "key": "Bohemia",
+   "take": {
+    "from": "Austria Hungary",
+    "iso": [
+     "CZ-PR",
+     "CZ-ST",
+     "CZ-JC",
+     "CZ-PL",
+     "CZ-KA",
+     "CZ-US",
+     "CZ-LI",
+     "CZ-KR",
+     "CZ-PA",
+     "CZ-VY"
+    ]
+   }
+  },
+  {
    "key": "Kymmene",
    "take": {
     "from": "Finland",
