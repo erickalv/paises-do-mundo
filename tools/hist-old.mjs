@@ -7218,6 +7218,12 @@ export const EVENTS = {
     ...perYear(1600, 1809, { r: { "Madagascar": "Reinos de Madagascar (merinas, sakalavas e outros)" }, f: { "Madagascar": "blank" }, o: { "Madagascar": null } }), /*fixo*/ // Andrianampoinimerina desde 1787; Radama I (1810–1828) quase unificou a ilha
     ...perYear(1667, 1773, { r: { "Grand Duchy of Oldenburg": "Condados de Oldemburgo e Delmenhorst (Dinamarca)" }, f: { "Grand Duchy of Oldenburg": "x:dk" }, o: { "Grand Duchy of Oldenburg": "Dinamarca" } }), /*fixo*/ // união pessoal 1667–1773; ducado em 1774
     ...perYear(1714, 1772, { r: { "Duchy of Holstein": "Ducado de Holstein (partes ducal de Gottorp e real dinamarquesa)" }, f: { "Duchy of Holstein": "blank" }, o: { "Duchy of Holstein": null } }), /*fixo*/ // Tratado de Tsarskoye Selo (1773)
+    ...perYear(1714, 1726, { r: { "Dominica": "Dominica (neutra; colonos franceses)" }, f: { "Dominica": "blank" }, o: { "Dominica": null } }), /*fixo*/ // neutra pelo tratado de 1660; colonos franceses desde 1690; colônia francesa formal em 1727
+    ...perYear(1714, 1718, { r: { "Saint Vincent": "São Vicente (caribes)" }, f: { "Saint Vincent": "blank" }, o: { "Saint Vincent": null } }), /*fixo*/ // franceses em Barrouallie em 1719
+    ...perYear(1600, 1849, { r: { "Gold Coast GB": "Costa do Ouro (fortes holandeses, britânicos e dinamarqueses)" }, f: { "Gold Coast GB": "blank" }, o: { "Gold Coast GB": null } }), /*fixo*/ // Costa do Ouro Holandesa 1598–1872; dinamarquesa 1658–1850
+    ...perYear(1850, 1871, { r: { "Gold Coast GB": "Costa do Ouro (fortes holandeses e britânicos)" }, f: { "Gold Coast GB": "blank" }, o: { "Gold Coast GB": null } }), /*fixo*/ // fortes holandeses comprados pelos britânicos em 1871–1872
+    ...perYear(1600, 1720, { r: { "Greenland": "Groenlândia (inuítes; reivindicada pela Dinamarca-Noruega)" }, f: { "Greenland": "blank" }, o: { "Greenland": null } }), /*fixo*/ // colonização de Hans Egede em 1721
+    ...perYear(1600, 1879, { r: { "Malaya": "Sultanatos malaios (Johor, Perak, Pahang e outros)" } }), /*fixo*/
   ],
   1914: [
     ...ISLES[1914],
