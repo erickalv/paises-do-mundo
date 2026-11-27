@@ -134,6 +134,7 @@ export const ROWS = [
   ["ADEN", "Áden e protetorados (britânicos)", G, 1946, 1966, ["YEM~S"]],
   ["PDRY", "Iêmen do Sul", "h:yem_s", 1967, 1989, ["YEM~S"], [48.6, 15.4]],
   ["MUSC", "Mascate e Omã", "h:om_red", 1946, 1969, ["OMN"]],
+  ["OMN70", null, "h:om70", 1970, 1994, ["OMN"]], // 17/dez/1970: faixas 2:1:2; faixas iguais desde 25/abr/1995
   ["TRUC", "Estados da Trégua (britânicos)", G, 1946, 1970, ["ARE"]],
   ["QAT0", "Catar (protetorado britânico)", "h:qa36", 1946, 1948, ["QAT"]], // grená com faixa serrilhada
   ["QAT49", "Catar (protetorado britânico)", "x:qa", 1949, 1970, ["QAT"]], // 1949: com losangos e nome (simplificada)
@@ -188,6 +189,8 @@ export const ROWS = [
   ["COG1", null, "h:cg_old", 1970, 1990, ["COG"]],
   ["GAB0", "Gabão (França)", F, 1946, 1959, ["GAB"]],
   ["GNQ0", "Guiné Espanhola", ES, 1946, 1967, ["GNQ"]],
+  ["GNQ68", null, "h:gq68", 1968, 1968, ["GNQ"]], // 12/out/1968: sem o brasão
+  ["GNQ73", null, "h:gq73", 1973, 1978, ["GNQ"]], // emblema de Macías Nguema (1972/73–21/ago/1979; fontes divergem no início)
   ["COD0", "Congo Belga", BE, 1946, 1959, ["COD"]],
   ["COD60", "Congo-Léopoldville", "h:cd97", 1960, 1962, ["COD"]],
   ["COD63", "Congo-Léopoldville", "h:cd63", 1963, 1970, ["COD"]],
@@ -260,7 +263,7 @@ export const ROWS = [
   ["GRD0", "Granada (britânica)", G, 1946, 1973, ["GRD"]],
   ["DMA1", "Dominica (britânica)", "h:brit_blue", 1946, 1977, ["DMA"]],
   ["LCA0", "Santa Lúcia (britânica)", "h:brit_blue", 1946, 1966, ["LCA"]],
-  ["LCA1", "Santa Lúcia (britânica)", "x:lc", 1967, 1978, ["LCA"]], // bandeira atual desde 1/mar/1967
+  ["LCA1", "Santa Lúcia (britânica)", "h:lc67", 1967, 1978, ["LCA"]], // 1/mar/1967: triângulo amarelo menor; aumentado em 22/fev/1979
   ["VCT1", "São Vicente (britânico)", "h:vct_old", 1946, 1978, ["VCT"]],
   ["VCT2", null, "h:vct_old", 1979, 1984, ["VCT"]],
   ["ATG0", "Antígua (britânica)", "h:brit_blue", 1946, 1966, ["ATG"]],

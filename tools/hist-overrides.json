@@ -225,6 +225,13 @@
    "adm0": [
     "IRL"
    ]
+  },
+  {
+   "key": "Danzig",
+   "cut": {
+    "map": 1930,
+    "name": "Danzig"
+   }
   }
  ],
  "1938": [
@@ -713,6 +720,13 @@
      "NL-LI"
     ]
    }
+  },
+  {
+   "key": "Danzig",
+   "cut": {
+    "map": 1930,
+    "name": "Danzig"
+   }
   }
  ],
  "labels": {
@@ -1083,6 +1097,13 @@
     "adm0": [
      "TUR"
     ]
+   }
+  },
+  {
+   "key": "Danzig",
+   "cut": {
+    "map": 1930,
+    "name": "Danzig"
    }
   }
  ],

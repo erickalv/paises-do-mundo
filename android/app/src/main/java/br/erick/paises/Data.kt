@@ -22,8 +22,11 @@ class Entity(
     val sovereign: String?,       // dependent territories: the country they belong to
 ) {
     /** Reference to the flag image: "x:<iso2>" for today's flags, "blank" when there is none. */
-    val flag: String get() = if (c2 != null) "x:" + c2.lowercase(Locale.ROOT) else "blank"
+    val flag: String get() = TODAY_FLAG[id] ?: if (c2 != null) "x:" + c2.lowercase(Locale.ROOT) else "blank"
 }
+
+/** Today's flags that differ from flag-icons: Afghanistan under the Taliban (since 2021), Honduras back to navy blue (2026). */
+private val TODAY_FLAG = mapOf("AFG" to "h:af21", "HND" to "h:hn26")
 
 /** A political unit of a given year in the History tab, rows of history.json. */
 class HistRow(val key: String, val name: String?, val flag: String, val y0: Int, val y1: Int, val members: List<String>, val ll: DoubleArray?, val owner: String?)
@@ -134,6 +137,21 @@ class GeoData(ctx: Context) {
     val modernFrom: Int
     val snapYears: IntArray
     val eras: List<Era>
+    /** leaders.json: per unit name, the effective leader ("l") and the kind of territory ("t") on 31 Dec, as [year0, year1, text] */
+    private val yearTexts: Pair<Map<String, List<Triple<Int, Int, String>>>, Map<String, List<Triple<Int, Int, String>>>> by lazy {
+        val j = org.json.JSONObject(appCtx.assets.open("leaders.json").bufferedReader().readText())
+        fun read(o: org.json.JSONObject): Map<String, List<Triple<Int, Int, String>>> {
+            val m = HashMap<String, List<Triple<Int, Int, String>>>()
+            for (k in o.keys()) {
+                val a = o.getJSONArray(k)
+                m[k] = List(a.length()) { i -> a.getJSONArray(i).let { Triple(it.getInt(0), it.getInt(1), it.getString(2)) } }
+            }
+            return m
+        }
+        read(j.getJSONObject("l")) to read(j.getJSONObject("t"))
+    }
+    fun leaderOf(name: String, y: Int): String? = yearTexts.first[name]?.firstOrNull { y >= it.first && y <= it.second }?.third
+    fun kindOf(name: String, y: Int): String? = yearTexts.second[name]?.firstOrNull { y >= it.first && y <= it.second }?.third
     private val lookup = HashMap<String, String>()
     private val lookupStripped = HashMap<String, String>()
 

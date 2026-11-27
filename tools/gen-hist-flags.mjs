@@ -370,6 +370,18 @@ F.sik67 = svg(`<rect width="640" height="480" fill="#D21034"/><rect x="40" y="40
   F.asir09 = svg(`<rect width="640" height="480" fill="#fff"/><rect x="30" y="30" width="580" height="420" fill="#006C35"/>` + teeth(12, 30, 30, 48.3, 0, 0, 28) + teeth(12, 30, 450, 48.3, 0, 0, -28) + teeth(9, 30, 30, 0, 46.7, 28, 0) + teeth(9, 610, 30, 0, 46.7, -28, 0) + txt);
   F.asir27 = svg(`<rect width="640" height="480" fill="#006C35"/>` + txt);
 }
+// Omã 1970–95: faixas 2:1:2 e faixa vermelha da tralha com 1/3 do comprimento
+F.om70 = svg(inner("om").replace("M174.6-35.4h564.9v190h-565z", "M213-35.4h564.9v227.4h-565z").replace("M174.6 317.3h535.7V525H174.6z", "M213 288h535.7V525H213z"));
+// Guiné Equatorial: 1968 sem o brasão; 1973–79 com o emblema de Macías Nguema (ferramentas e galo, simplificado)
+{
+  const base = `<path fill="#e32118" d="M0 0h640v480H0z"/><path fill="#fff" d="M0 0h640v320H0z"/><path fill="#3e9a00" d="M0 0h640v160H0z"/><path fill="#0073ce" d="M0 0v480l180-240z"/>`;
+  F.gq68 = svg(base);
+  F.gq73 = svg(base + `<g stroke="#555" stroke-width="7"><path d="M285 285L355 180M355 285L285 180M320 290V175"/></g><ellipse cx="322" cy="210" rx="24" ry="18" fill="#8B4513"/><circle cx="342" cy="190" r="10" fill="#8B4513"/><path d="M336 178l6-10 6 10z" fill="#e32118"/><path d="M300 206l-14-14 4 20z" fill="#3e9a00"/>`);
+}
+// Santa Lúcia 1967–79: ponta de flecha mais larga e triângulo amarelo menor
+F.lc67 = svg(`<path fill="#65cfff" d="M0 0h640v480H0z"/><path fill="#fff" d="M320 50L505 438H135z"/><path fill="#000001" d="M320 105L475 438H165z"/><path fill="#ffce00" d="M320 300L475 438H165z"/>`);
+// Cidade Livre de Danzig 1920–39: vermelha com duas cruzes brancas e coroa dourada
+F.danzig = svg(`<rect width="640" height="480" fill="#D21034"/><g fill="#fff"><path d="M150 205h40v-30h20v30h40v20h-40v30h-20v-30h-40z"/><path d="M150 335h40v-30h20v30h40v20h-40v30h-20v-30h-40z"/></g><path d="M150 150l15-50 25 30 10-40 10 40 25-30 15 50z" fill="#FFD700"/>`);
 fs.writeFileSync("data/flags-hist.json", JSON.stringify(F));
 console.log("hist flags", Object.keys(F).length, Math.round(JSON.stringify(F).length / 1024), "KB");
 // preview sheet

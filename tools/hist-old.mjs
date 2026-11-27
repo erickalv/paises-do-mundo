@@ -358,6 +358,7 @@ export const EVENTS = {
     { y: 1916, m: ["Sudão Anglo-Egípcio", "x:gb", ["Anglo-Egyptian Sudan", "Darfur"]] }, // anexado em 1916
   ],
   1920: [
+    { y: 1920, r: { "Danzig": "Cidade Livre de Danzig (Liga das Nações)" }, f: { "Danzig": "h:danzig" }, o: { "Danzig": null } }, // 15/nov/1920 (forma do mapa de 1930)
     // revisão 1920–1929 (situação em 31/dez). Unidades novas vêm de hist-overrides.json.
     { y: 1920, f: { "Mandatory Palestine (GB)": "x:gb" } },
     { y: 1920, m: ["Índia Britânica", "x:gb", ["British Raj", "Burma"]] }, // Birmânia separada só em 1937
@@ -494,7 +495,7 @@ export const EVENTS = {
       "Antigua and Barbuda": "x:gb", "Saint Kitts and Nevis": "x:gb", "Montserrat": "x:gb", "Anguilla": "x:gb",
       "Saint Martin": "x:fr", "Saint Barthelemy": "x:fr" } },
     { y: 1930, m: ["Ruanda-Urundi", "x:be", ["Rwanda (Belgium)", "Burundi"]] },
-    { y: 1930, r: { "Danzig": null } }, // a Cidade Livre de Danzig não tem província própria hoje (fica na Polônia; pendente)
+    { y: 1930, r: { "Danzig": "Cidade Livre de Danzig (Liga das Nações)" }, f: { "Danzig": "h:danzig" }, o: { "Danzig": null } }, // forma do mapa de 1930
     { y: 1930, r: { "Ireland": "Estado Livre Irlandês", "Italy": "Reino da Itália" }, f: { "Ireland": "x:ie", "Hungary": "h:hu_k" }, o: { "Ireland": null } },
     { y: 1937, r: { "Ireland": "Irlanda" } }, // constituição de 29/dez/1937
   ],
@@ -572,7 +573,8 @@ export const EVENTS = {
     { y: 1939, r: { "Czechoslovakia": "Protetorado da Boêmia e Morávia", "Slovakia": "Eslováquia (Estado cliente da Alemanha)" }, f: { "Czechoslovakia": "h:de_nazi", "Slovakia": "h:sk39" } }, // 14–15/mar/1939
     { y: 1939, m: ["Hungria", "h:hu_k", ["Hungary", "Carpathian Ruthenia"]] }, // mar/1939
     { y: 1938, y1: 1938, m: ["Lituânia", "x:lt", ["Lithuania", "Memel"]] },
-    { y: 1939, m: ["Alemanha", "h:de_nazi", ["Germany", "Memel"]] }, // 23/mar/1939
+    { y: 1938, y1: 1938, r: { "Danzig": "Cidade Livre de Danzig (Liga das Nações)" }, f: { "Danzig": "h:danzig" }, o: { "Danzig": null } }, // anexada em 1/set/1939
+    { y: 1939, m: ["Alemanha", "h:de_nazi", ["Germany", "Memel", "Danzig"]] }, // 23/mar/1939
     { y: 1938, y1: 1938, m: ["Polônia", "x:pl", ["Poland", "Vilnius region", "Eastern Poland", "Eastern Poland 1944"]] },
     { y: 1939, y1: 1943, m: ["Polônia (ocupada pela Alemanha)", "h:de_nazi", ["Poland", "Eastern Poland 1944"]] },
     { y: 1939, o: { "Poland": null } },

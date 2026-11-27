@@ -109,6 +109,7 @@ class MainActivity : ComponentActivity() {
         host.listener = object : GlobeListener {
             override fun labels() = model.labels()
             override fun labelMode() = model.labelMode()
+            override fun onInfo(item: LabelItem) { if (model.mode == Mode.HISTORY) model.info = item }
             override fun onTap(lon: Double, lat: Double, sx: Float, sy: Float) {
                 if (model.mode == Mode.HISTORY) { model.historyTap(sx, sy, host); host.redraw(); return }
                 val id = model.tapTarget(lon, lat, sx, sy, host)
@@ -137,6 +138,8 @@ fun App(model: AppModel, host: GlobeHost) {
     var bottomY by remember { mutableFloatStateOf(0f) }
     val scope = rememberCoroutineScope()
 
+    LaunchedEffect(model.mode, model.year) { model.info = null }
+    LaunchedEffect(model.histLabels) { host.redraw() }
     LaunchedEffect(model.styleVersion, model.mode, model.selected, model.revealed, model.year) {
         host.autoRotate = model.mode == Mode.START
         host.applyStyle(model.style(host.renderer.dotEntities))
@@ -148,6 +151,7 @@ fun App(model: AppModel, host: GlobeHost) {
     BackHandler(enabled = model.mode != Mode.START || model.dialog != null) {
         when {
             model.dialog != null -> model.dialog = null
+            model.info != null -> model.info = null
             model.mode == Mode.GAME -> model.requestQuit()
             else -> model.mode = Mode.START
         }
@@ -158,17 +162,28 @@ fun App(model: AppModel, host: GlobeHost) {
 
         if (model.mode == Mode.START || model.mode == Mode.HISTORY) {
             Column(
-                Modifier.statusBarsPadding().padding(horizontal = 20.dp).padding(top = 20.dp)
+                Modifier.fillMaxWidth().statusBarsPadding().padding(horizontal = 20.dp).padding(top = 20.dp)
                     .onGloballyPositioned { topY = it.boundsInRoot().bottom }
             ) {
                 Text("Países do Mundo", color = TextC, fontSize = 26.sp, fontWeight = FontWeight.Medium)
                 Spacer(Modifier.height(14.dp))
-                Row(
-                    Modifier.clip(RoundedCornerShape(22.dp)).background(Surface).border(1.dp, Color(0xFF232B3D), RoundedCornerShape(22.dp)).padding(4.dp),
-                    horizontalArrangement = Arrangement.spacedBy(4.dp),
-                ) {
-                    TabButton("Jogar", model.mode == Mode.START) { model.mode = Mode.START; model.clearPicks(); model.styleVersion++ }
-                    TabButton("História", model.mode == Mode.HISTORY) { model.mode = Mode.HISTORY; model.styleVersion++ }
+                Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                    Row(
+                        Modifier.clip(RoundedCornerShape(22.dp)).background(Surface).border(1.dp, Color(0xFF232B3D), RoundedCornerShape(22.dp)).padding(4.dp),
+                        horizontalArrangement = Arrangement.spacedBy(4.dp),
+                    ) {
+                        TabButton("Jogar", model.mode == Mode.START) { model.mode = Mode.START; model.clearPicks(); model.styleVersion++ }
+                        TabButton("História", model.mode == Mode.HISTORY) { model.mode = Mode.HISTORY; model.styleVersion++ }
+                    }
+                    Spacer(Modifier.weight(1f))
+                    if (model.mode == Mode.HISTORY) {
+                        val on = model.histLabels
+                        Box(
+                            Modifier.size(44.dp).clip(CircleShape).background(Surface).border(1.dp, if (on) Gold else Color(0xFF232B3D), CircleShape)
+                                .clickable { model.toggleHistLabels() },
+                            contentAlignment = Alignment.Center,
+                        ) { if (on) Ico(22.dp, Gold) { s -> eyeOpen(s) } else Ico(22.dp, Color(0xFFC9D1E0)) { s -> eyeClosed(s) } }
+                    }
                 }
             }
             Box(Modifier.align(Alignment.BottomCenter).onGloballyPositioned { bottomY = it.boundsInRoot().top }) {
@@ -181,7 +196,31 @@ fun App(model: AppModel, host: GlobeHost) {
             }
         }
 
+        model.info?.let { InfoOverlay(model, it) }
         model.dialog?.let { d -> DialogOverlay(model, d) }
+    }
+}
+
+/** History: the list behind the small (i) button of a tapped place. */
+@Composable
+private fun InfoOverlay(model: AppModel, item: LabelItem) {
+    Box(
+        Modifier.fillMaxSize().background(Color(0x66000000)).clickable(interactionSource = remember { MutableInteractionSource() }, indication = null) { model.info = null },
+        contentAlignment = Alignment.Center,
+    ) {
+        Column(
+            Modifier.padding(24.dp).widthIn(max = 360.dp).fillMaxWidth().clip(RoundedCornerShape(20.dp)).background(Color(0xFF141B2A))
+                .border(1.dp, Line, RoundedCornerShape(20.dp)).clickable(interactionSource = remember { MutableInteractionSource() }, indication = null) {}
+                .padding(start = 20.dp, end = 20.dp, top = 18.dp, bottom = 18.dp),
+        ) {
+            Text(item.name, color = TextC, fontSize = 18.sp, fontWeight = FontWeight.Bold)
+            Text("${model.year}", color = Muted, fontSize = 13.sp)
+            for ((k, v) in item.info.orEmpty()) {
+                Spacer(Modifier.height(12.dp))
+                Text(k, color = Muted, fontSize = 12.sp, fontWeight = FontWeight.Medium)
+                Text(v, color = Color(0xFFE2E6EE), fontSize = 15.sp)
+            }
+        }
     }
 }
 

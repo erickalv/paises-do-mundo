@@ -77,6 +77,11 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
     private val foundSet = HashSet<String>()
     var practice by mutableStateOf(false)
     var revealed by mutableStateOf(false)
+    /** History tab: eye open = every name on the map; closed = only the places the user taps */
+    var histLabels by mutableStateOf(prefs.getBoolean("histLabels", true))
+    fun toggleHistLabels() { histLabels = !histLabels; prefs.edit().putBoolean("histLabels", histLabels).apply() }
+    /** History tab: the info list open for a tapped place */
+    var info by mutableStateOf<LabelItem?>(null)
     var finished by mutableStateOf(false)
     var year by mutableIntStateOf(data.histTo)
     var toast by mutableStateOf<ToastMsg?>(null)
@@ -399,11 +404,18 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
                 // a selected unit's title moves to where it was tapped (and comes back when it is unselected)
                 pks.forEachIndexed { i, (p, pk) ->
                     val own = pk.owner?.let { if (it.first().isLowerCase()) it.replaceFirstChar { c -> c.uppercaseChar() } else "pertence a $it" }
+                    val rows = listOfNotNull(
+                        data.kindOf(pk.name, year)?.let { "Tipo" to it },
+                        pk.owner?.let { if (it.first().isLowerCase()) "Situação" to it.replaceFirstChar { c -> c.uppercaseChar() } else "Pertence a" to it },
+                        data.leaderOf(pk.name, year)?.let { "Líder" to it },
+                        pk.period?.let { "Período" to it },
+                    )
                     out += LabelItem("pick$i", pk.name, pk.flag, p[0], p[1], 0.0, true, top = true, missed = false,
-                        sub = listOfNotNull(own, pk.period).joinToString("\n").ifEmpty { null })
+                        sub = listOfNotNull(own, pk.period).joinToString("\n").ifEmpty { null },
+                        info = rows.ifEmpty { null })
                 }
                 val pickedCodes = pks.map { it.second.code }.toSet()
-                info.units.filterIndexed { i, u -> u.name.isNotEmpty() && i !in pickedCodes }
+                if (histLabels) info.units.filterIndexed { i, u -> u.name.isNotEmpty() && i !in pickedCodes }
                     .sortedWith(compareByDescending<YearUnit> { it.historical }.thenByDescending { it.sr })
                     .forEach { out += LabelItem(it.key, it.name, it.flag, it.lon, it.lat, it.sr, it.dot, top = false, missed = it.historical) }
                 return out

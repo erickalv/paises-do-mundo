@@ -109,12 +109,14 @@ class LabelItem(
     val key: String, val name: String, val flag: String, val lon: Double, val lat: Double,
     val sr: Double, val dot: Boolean, val top: Boolean, val missed: Boolean,
     val sub: String? = null,      // second line (History: who the place belongs to)
+    val info: List<Pair<String, String>>? = null,   // History: rows of the info list behind the small (i) button
 )
 
 interface GlobeListener {
     fun labels(): List<LabelItem>
     fun labelMode(): Int                    // 0 game, 1 revealed (practice), 2 history
     fun onTap(lon: Double, lat: Double, sx: Float, sy: Float)
+    fun onInfo(item: LabelItem) {}
 }
 
 @SuppressLint("ViewConstructor")
@@ -294,6 +296,7 @@ class GlobeHost(context: Context, val data: GeoData) : FrameLayout(context) {
             return true
         }
         override fun onSingleTapConfirmed(e: MotionEvent): Boolean {
+            labelsView.infoAt(e.x, e.y)?.let { listener?.onInfo(it); return true }
             val ll = cam.unproject(e.x.toDouble(), e.y.toDouble())
             if (ll != null) listener?.onTap(ll[0], ll[1], e.x, e.y)
             return true
@@ -359,6 +362,15 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
     private val tmp = DoubleArray(3)
     private val rect = RectF()
     private val arrow = Path()
+    private val infoRing = Paint(Paint.ANTI_ALIAS_FLAG).apply { style = Paint.Style.STROKE; strokeWidth = 1.3f * d; color = Color.parseColor("#8F96A6") }
+    private val infoText = Paint(Paint.ANTI_ALIAS_FLAG).apply {
+        color = Color.parseColor("#AEB4C2"); textSize = 11f * d; textAlign = Paint.Align.CENTER
+        typeface = Typeface.create(Typeface.SERIF, Typeface.BOLD_ITALIC)
+    }
+    /** where the (i) buttons were drawn in the last frame */
+    private val infoHits = ArrayList<Pair<RectF, LabelItem>>()
+
+    fun infoAt(x: Float, y: Float): LabelItem? = infoHits.lastOrNull { it.first.contains(x, y) }?.second
 
     private fun flag(ref: String): Bitmap? {
         if (ref == "blank") return null
@@ -372,6 +384,7 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
     override fun onDraw(canvas: Canvas) {
         val l = host.listener ?: return
         val cam = host.cam
+        infoHits.clear()
         val items = l.labels()
         if (items.isEmpty()) return
         val mode = l.labelMode()
@@ -394,7 +407,9 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
             val bmp = flag(it.flag)
             val fwE = if (bmp != null) fw + gap else 0f   // no flag: only the name
             val h = if (sub != null) fh + 2 * pad + subs.size * (subText.textSize + 3 * d) else fh + 2 * pad
-            val w = pad + fwE + max(text.measureText(it.name), subs.maxOfOrNull { l -> subText.measureText(l) } ?: 0f) + pad * 1.4f
+            val iw = if (it.info.isNullOrEmpty()) 0f else 22 * d   // room for the (i) button
+            val nameW = text.measureText(it.name) + iw
+            val w = pad + fwE + max(nameW, subs.maxOfOrNull { l -> subText.measureText(l) } ?: 0f) + pad * 1.4f
             val rpx = sqrt(it.sr / PI) * R
             // a label wider than its country sits above it, with a pointer to the right place
             val above = it.dot || rpx * 2.2 < w
@@ -423,6 +438,13 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
             else {
                 canvas.drawText(it.name, tx, y + pad + fh / 2 - (text.descent() + text.ascent()) / 2, text)
                 subs.forEachIndexed { k, l -> canvas.drawText(l, tx, y + pad + fh + 3 * d + k * (subText.textSize + 3 * d) - subText.ascent(), subText) }
+            }
+            if (iw > 0) {
+                val cx = x + w - pad * 0.9f - 8 * d
+                val cy = if (sub == null) y + h / 2 else y + pad + fh / 2
+                canvas.drawCircle(cx, cy, 7.5f * d, infoRing)
+                canvas.drawText("i", cx, cy - (infoText.descent() + infoText.ascent()) / 2, infoText)
+                infoHits += RectF(cx - 20 * d, cy - 20 * d, cx + 20 * d, cy + 20 * d) to it
             }
         }
     }

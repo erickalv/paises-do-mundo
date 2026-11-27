@@ -131,6 +131,20 @@ for year in YEARS:
                 c = g.representative_point()
                 if x0 <= c.x <= x1 and y0 <= c.y <= y1:
                     out[k] = (g, key_index[o["key"]], a3, iso)
+    # a unit smaller than today's provinces, cut out with its shape from one of the old maps ("cut": {"map": year, "name": NAME})
+    for o in OVR.get(str(year), []):
+        if "cut" in o:
+            c = o["cut"]
+            src = json.load(open(f"dl/hb/world_{c['map']}.geojson"))
+            shp = unary_union([shape(f["geometry"]) for f in src["features"] if f["properties"].get("NAME") == c["name"]]).buffer(0)
+            new = []
+            for g, u, a3, iso in out:
+                if not g.intersects(shp):
+                    new.append((g, u, a3, iso)); continue
+                inside = polys_only(g.intersection(shp)); rest = polys_only(g.difference(shp))
+                if inside is not None: new.append((inside, key_index[o["key"]], a3, iso))
+                if rest is not None: new.append((rest, u, a3, iso))
+            out = new
     if any(u == NONE for _, u, _, _ in out):
         keys.append("_none")
     feats = [{"type": "Feature", "properties": {"u": u}, "geometry": mapping(g)} for g, u, _, _ in out]
