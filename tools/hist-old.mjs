@@ -7100,7 +7100,6 @@ export const EVENTS = {
     ...perYear(1715, 1715, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1715, 1715, { r: { "Finland": "Finlândia (ocupação russa)", "Swedish Baltic": "Estônia e Livônia (ocupação russa)" }, f: { "Finland": "x:ru", "Swedish Baltic": "x:ru" }, o: { "Finland": null, "Swedish Baltic": null } }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
     ...perYear(1715, 1715, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
-    ...perYear(1715, 1715, { r: { "Banat": "Banato de Temesvár (ocupação austríaca)" }, f: { "Banat": "h:at_hab" }, o: { "Banat": null } }), // Temesvár tomada em 12/out/1716; Belgrado em 21/ago/1717; cessão em Passarowitz (21/jul/1718)
     ...perYear(1715, 1715, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
     ...perYear(1715, 1715, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
     // revisão 1714 (situação em 31/dez; fontes: Wikipedia)
@@ -7201,7 +7200,6 @@ export const EVENTS = {
     ...perYear(1714, 1714, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1714, 1714, { r: { "Finland": "Finlândia (ocupação russa)", "Swedish Baltic": "Estônia e Livônia (ocupação russa)" }, f: { "Finland": "x:ru", "Swedish Baltic": "x:ru" }, o: { "Finland": null, "Swedish Baltic": null } }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
     ...perYear(1714, 1714, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
-    ...perYear(1714, 1714, { r: { "Banat": "Banato de Temesvár (ocupação austríaca)" }, f: { "Banat": "h:at_hab" }, o: { "Banat": null } }), // Temesvár tomada em 12/out/1716; Belgrado em 21/ago/1717; cessão em Passarowitz (21/jul/1718)
     ...perYear(1714, 1714, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
     ...perYear(1714, 1714, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
     // revisão 1713 (situação em 31/dez; fontes: Wikipedia)
@@ -7302,7 +7300,6 @@ export const EVENTS = {
     ...perYear(1713, 1713, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1713, 1713, { r: { "Finland": "Finlândia (disputada entre Suécia e Rússia)", "Swedish Baltic": "Estônia e Livônia (ocupação russa)" }, f: { "Finland": "blank", "Swedish Baltic": "x:ru" }, o: { "Finland": null, "Swedish Baltic": null } }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
     ...perYear(1713, 1713, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
-    ...perYear(1713, 1713, { r: { "Banat": "Banato de Temesvár (ocupação austríaca)" }, f: { "Banat": "h:at_hab" }, o: { "Banat": null } }), // Temesvár tomada em 12/out/1716; Belgrado em 21/ago/1717; cessão em Passarowitz (21/jul/1718)
     ...perYear(1713, 1713, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
     ...perYear(1713, 1713, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
     ...perYear(1713, 1713, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
@@ -7405,7 +7402,6 @@ export const EVENTS = {
     ...perYear(1712, 1712, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1712, 1712, { r: { "Swedish Baltic": "Estônia e Livônia (ocupação russa)" }, f: { "Swedish Baltic": "x:ru" }, o: { "Swedish Baltic": null } }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
     ...perYear(1712, 1712, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
-    ...perYear(1712, 1712, { r: { "Banat": "Banato de Temesvár (ocupação austríaca)" }, f: { "Banat": "h:at_hab" }, o: { "Banat": null } }), // Temesvár tomada em 12/out/1716; Belgrado em 21/ago/1717; cessão em Passarowitz (21/jul/1718)
     ...perYear(1712, 1712, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
     ...perYear(1712, 1712, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
     ...perYear(1712, 1712, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
@@ -7512,7 +7508,6 @@ export const EVENTS = {
     ...perYear(1711, 1711, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1711, 1711, { r: { "Swedish Baltic": "Estônia e Livônia (ocupação russa)" }, f: { "Swedish Baltic": "x:ru" }, o: { "Swedish Baltic": null } }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
     ...perYear(1711, 1711, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
-    ...perYear(1711, 1711, { r: { "Banat": "Banato de Temesvár (ocupação austríaca)" }, f: { "Banat": "h:at_hab" }, o: { "Banat": null } }), // Temesvár tomada em 12/out/1716; Belgrado em 21/ago/1717; cessão em Passarowitz (21/jul/1718)
     ...perYear(1711, 1711, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
     ...perYear(1711, 1711, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
     ...perYear(1711, 1711, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
@@ -7619,7 +7614,6 @@ export const EVENTS = {
     ...perYear(1710, 1710, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1710, 1710, { r: { "Swedish Baltic": "Estônia e Livônia (ocupação russa)" }, f: { "Swedish Baltic": "x:ru" }, o: { "Swedish Baltic": null } }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
     ...perYear(1710, 1710, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
-    ...perYear(1710, 1710, { r: { "Banat": "Banato de Temesvár (ocupação austríaca)" }, f: { "Banat": "h:at_hab" }, o: { "Banat": null } }), // Temesvár tomada em 12/out/1716; Belgrado em 21/ago/1717; cessão em Passarowitz (21/jul/1718)
     ...perYear(1710, 1710, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
     ...perYear(1710, 1710, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
     ...perYear(1710, 1710, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
@@ -7726,7 +7720,6 @@ export const EVENTS = {
     ...perYear(1709, 1709, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1709, 1709, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
     ...perYear(1709, 1709, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
-    ...perYear(1709, 1709, { r: { "Banat": "Banato de Temesvár (ocupação austríaca)" }, f: { "Banat": "h:at_hab" }, o: { "Banat": null } }), // Temesvár tomada em 12/out/1716; Belgrado em 21/ago/1717; cessão em Passarowitz (21/jul/1718)
     ...perYear(1709, 1709, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
     ...perYear(1709, 1709, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
     ...perYear(1709, 1709, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
@@ -7833,7 +7826,6 @@ export const EVENTS = {
     ...perYear(1708, 1708, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1708, 1708, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
     ...perYear(1708, 1708, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
-    ...perYear(1708, 1708, { r: { "Banat": "Banato de Temesvár (ocupação austríaca)" }, f: { "Banat": "h:at_hab" }, o: { "Banat": null } }), // Temesvár tomada em 12/out/1716; Belgrado em 21/ago/1717; cessão em Passarowitz (21/jul/1718)
     ...perYear(1708, 1708, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
     ...perYear(1708, 1708, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
     ...perYear(1708, 1708, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
@@ -7941,7 +7933,6 @@ export const EVENTS = {
     ...perYear(1707, 1707, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1707, 1707, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
     ...perYear(1707, 1707, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
-    ...perYear(1707, 1707, { r: { "Banat": "Banato de Temesvár (ocupação austríaca)" }, f: { "Banat": "h:at_hab" }, o: { "Banat": null } }), // Temesvár tomada em 12/out/1716; Belgrado em 21/ago/1717; cessão em Passarowitz (21/jul/1718)
     ...perYear(1707, 1707, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
     ...perYear(1707, 1707, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
     ...perYear(1707, 1707, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
@@ -8050,7 +8041,6 @@ export const EVENTS = {
     ...perYear(1706, 1706, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1706, 1706, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
     ...perYear(1706, 1706, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
-    ...perYear(1706, 1706, { r: { "Banat": "Banato de Temesvár (ocupação austríaca)" }, f: { "Banat": "h:at_hab" }, o: { "Banat": null } }), // Temesvár tomada em 12/out/1716; Belgrado em 21/ago/1717; cessão em Passarowitz (21/jul/1718)
     ...perYear(1706, 1706, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
     ...perYear(1706, 1706, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
     ...perYear(1706, 1706, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
@@ -8163,7 +8153,6 @@ export const EVENTS = {
     ...perYear(1705, 1705, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1705, 1705, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
     ...perYear(1705, 1705, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
-    ...perYear(1705, 1705, { r: { "Banat": "Banato de Temesvár (ocupação austríaca)" }, f: { "Banat": "h:at_hab" }, o: { "Banat": null } }), // Temesvár tomada em 12/out/1716; Belgrado em 21/ago/1717; cessão em Passarowitz (21/jul/1718)
     ...perYear(1705, 1705, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
     ...perYear(1705, 1705, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
     ...perYear(1705, 1705, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
@@ -8277,7 +8266,6 @@ export const EVENTS = {
     ...perYear(1704, 1704, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1704, 1704, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
     ...perYear(1704, 1704, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
-    ...perYear(1704, 1704, { r: { "Banat": "Banato de Temesvár (ocupação austríaca)" }, f: { "Banat": "h:at_hab" }, o: { "Banat": null } }), // Temesvár tomada em 12/out/1716; Belgrado em 21/ago/1717; cessão em Passarowitz (21/jul/1718)
     ...perYear(1704, 1704, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
     ...perYear(1704, 1704, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
     ...perYear(1704, 1704, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
@@ -8391,7 +8379,6 @@ export const EVENTS = {
     ...perYear(1703, 1703, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1703, 1703, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
     ...perYear(1703, 1703, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
-    ...perYear(1703, 1703, { r: { "Banat": "Banato de Temesvár (ocupação austríaca)" }, f: { "Banat": "h:at_hab" }, o: { "Banat": null } }), // Temesvár tomada em 12/out/1716; Belgrado em 21/ago/1717; cessão em Passarowitz (21/jul/1718)
     ...perYear(1703, 1703, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
     ...perYear(1703, 1703, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
     ...perYear(1703, 1703, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
@@ -8411,6 +8398,7 @@ export const EVENTS = {
     // Qing: sem bandeira oficial antes de 1862; a triangular (1862) não é descrita em detalhe; retangular promulgada em 1888 (um evento por ano para vencer as fusões)
     ...Array.from({ length: 185 }, (_, i) => ({ y: 1703 + i, y1: 1703 + i, f: { "Manchu Empire": "blank" } })),
     // correções de anacronismos (aplicadas por último; fontes: Wikipedia)
+    ...perYear(1600, 1715, { m: [null, null, ["Ottoman Empire", "Banat"]] }), /*fixo*/ // eialete otomano de Temesvár até a conquista austríaca (out/1716)
     ...perYear(1705, 1705, { r: { "Nice": "Condado de Nice (sitiado pela França)" }, f: { "Nice": "blank" }, o: { "Nice": null } }), /*fixo*/ // sítio de 15/mar/1705 a 4/jan/1706
     ...perYear(1600, 1704, { m: [null, null, ["Spain", "Valencia"]] }), /*fixo*/ // Valência tomada pelos aliados em 1705
     ...perYear(1600, 1710, { r: { "Libya": "Tripolitânia otomana" }, f: { "Libya": "blank" }, o: { "Libya": "Império Otomano" } }), /*fixo*/ // golpe de Ahmed Caramanli em 1711
@@ -9106,7 +9094,8 @@ export function buildEras(snaps) {
         const big = members.reduce((a, b) => (sn.units[b].sr > sn.units[a].sr ? b : a));
         const sr = members.reduce((s, i) => s + sn.units[i].sr, 0);
         const ll = sn.units[big].ll.map((v) => +v.toFixed(2));
-        const nm = sr > 0 ? name[r] : null; // a unit left with no land (all of it given to other units) is hidden
+        let nm = sr > 0 ? name[r] : null; // a unit left with no land (all of it given to other units) is hidden
+        if (nm && y < 1707) nm = nm.replace(/Grã-Bretanha/g, "Inglaterra").replace(/Britânicas/g, "Inglesas").replace(/britânicas/g, "inglesas").replace(/britânicos/g, "ingleses").replace(/britânica/g, "inglesa").replace(/britânico/g, "inglês"); // antes do Ato de União (1/mai/1707)
         const fl = y < 1707 && (flag[r] === "x:gb" || flag[r] === "h:gb1707") ? "h:england" : y < 1801 && flag[r] === "x:gb" ? "h:gb1707" : y < 1785 && flag[r] === "x:es" ? "blank" : y < 1790 && flag[r] === "x:fr" ? "h:fr_bourbon" : y < 1794 && flag[r] === "x:fr" ? "h:fr1790" : flag[r]; // tricolor invertida até 15/fev/1794; Espanha: bicolor naval de 28/mai/1785 (antes, branca com as armas reais) // Union Jack sem a cruz de São Patrício antes de 1/jan/1801
         let ow = !nm ? null : own[r] !== undefined ? own[r] : ownerFor(sn.units[r].key, nm, flag[r], y);
         if (y < 1801 && (ow === "Reino Unido" || ow === "Grã-Bretanha")) ow = "Reino da Grã-Bretanha";
