@@ -1003,6 +1003,27 @@ export const EVENTS = {
     ...perYear(1799, 1799, { r: { "Papal States": "Estados Papais (ocupação napolitana)", "Malta": "Malta (cerco de Valletta)", "Ionian Islands": "Ilhas Jônicas (ocupação russo-otomana)", "Lucca": "Lucca (ocupação austríaca)", "Tuscany": "Grão-Ducado da Toscana" },
       f: { "Papal States": "blank", "Malta": "blank", "Ionian Islands": "blank", "Lucca": "h:at_hab", "Tuscany": "blank" },
       o: { "Papal States": null, "Malta": null, "Ionian Islands": null, "Lucca": null, "Tuscany": null } }), // invasão napolitana em 30/set/1799; Valletta francesa sitiada (2/set/1798 a 4/set/1800); Corfu tomada em 4/mar/1799, República Septinsular em 2/abr/1800; Lucca ocupada em 17/jul/1799
+    // revisão Cáucaso (fontes: Wikipedia — Kingdom of Kartli-Kakheti, Kingdom of Imereti, Principality of Mingrelia, Principality of Guria, Principality of Abkhazia, Treaty of Gulistan, Treaty of Turkmenchay, Treaty of Adrianople, canatos)
+    ...perYear(1799, 1800, { r: { "Kartli-Kakheti": "Reino de Kartli-Kakheti" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": null } }),
+    ...perYear(1801, 1912, { m: ["Império Russo", "x:ru", ["Russian Empire", "Kartli-Kakheti"]] }), // decreto de anexação em 18/dez/1800, confirmado em 12/set/1801
+    ...perYear(1799, 1803, { r: { "Imereti": "Reino de Imereti" }, f: { "Imereti": "blank" }, o: { "Imereti": null } }),
+    ...perYear(1804, 1809, { r: { "Imereti": "Reino de Imereti (vassalo russo)" }, f: { "Imereti": "blank" }, o: { "Imereti": null } }),
+    ...perYear(1810, 1912, { m: ["Império Russo", "x:ru", ["Russian Empire", "Imereti"]] }), // vassalo em 25/abr/1804; anexado em 20/fev/1810
+    ...perYear(1799, 1802, { r: { "Mingrelia": "Principado da Mingrélia" }, f: { "Mingrelia": "blank" }, o: { "Mingrelia": null } }),
+    ...perYear(1803, 1866, { r: { "Mingrelia": "Principado da Mingrélia (vassalo russo)" }, f: { "Mingrelia": "blank" }, o: { "Mingrelia": null } }),
+    ...perYear(1867, 1912, { m: ["Império Russo", "x:ru", ["Russian Empire", "Mingrelia"]] }), // vassalo em 1803; anexado em 4/jan/1867
+    ...perYear(1799, 1809, { r: { "Guria": "Principado da Gúria" }, f: { "Guria": "blank" }, o: { "Guria": null } }),
+    ...perYear(1810, 1828, { r: { "Guria": "Principado da Gúria (vassalo russo)" }, f: { "Guria": "blank" }, o: { "Guria": null } }),
+    ...perYear(1829, 1912, { m: ["Império Russo", "x:ru", ["Russian Empire", "Guria"]] }), // suserania russa em 19/jun/1810; anexado em 2/set/1829
+    ...perYear(1799, 1809, { r: { "Abkhazia": "Principado da Abecásia" }, f: { "Abkhazia": "blank" }, o: { "Abkhazia": null } }),
+    ...perYear(1810, 1863, { r: { "Abkhazia": "Principado da Abecásia (vassalo russo)" }, f: { "Abkhazia": "blank" }, o: { "Abkhazia": null } }),
+    ...perYear(1864, 1912, { m: ["Império Russo", "x:ru", ["Russian Empire", "Abkhazia"]] }), // Sukhum tomada em 2/jul/1810; absorvido em 1864
+    ...perYear(1799, 1828, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Samtskhe"]] }),
+    ...perYear(1829, 1912, { m: ["Império Russo", "x:ru", ["Russian Empire", "Samtskhe"]] }), // Akhaltsikhe e Akhalkalaki cedidas em Adrianópolis (14/set/1829)
+    ...perYear(1799, 1803, { r: { "Azerbaijani khanates": "Canatos do Azerbaijão" }, f: { "Azerbaijani khanates": "blank" }, o: { "Azerbaijani khanates": null } }),
+    ...perYear(1804, 1805, { r: { "Azerbaijani khanates": "Canatos do Azerbaijão (guerra russo-persa)" }, f: { "Azerbaijani khanates": "blank" }, o: { "Azerbaijani khanates": null } }),
+    ...perYear(1806, 1812, { r: { "Azerbaijani khanates": "Canatos do Azerbaijão (disputados, controlados pela Rússia)" }, f: { "Azerbaijani khanates": "blank" }, o: { "Azerbaijani khanates": null } }),
+    ...perYear(1813, 1912, { m: ["Império Russo", "x:ru", ["Russian Empire", "Azerbaijani khanates"]] }), // Ganja tomada em jan/1804; Karabakh (1805), Shirvan, Quba e Baku (1806); Gulistão em 24/out/1813
     // Qing: sem bandeira oficial antes de 1862; a triangular (1862) não é descrita em detalhe; retangular promulgada em 1888 (um evento por ano para vencer as fusões)
     ...Array.from({ length: 89 }, (_, i) => ({ y: 1799 + i, y1: 1799 + i, f: { "Manchu Empire": "blank" } })),
   ],

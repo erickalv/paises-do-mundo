@@ -4252,6 +4252,90 @@
    }
   },
   {
+   "key": "Erivan",
+   "take": {
+    "from": "Russian Caucasus",
+    "iso": [
+     "AZ-BAB",
+     "AZ-CUL",
+     "AZ-KAN",
+     "AZ-ORD",
+     "AZ-SAD",
+     "AZ-SAH",
+     "AZ-SAR",
+     "TR-76"
+    ]
+   }
+  },
+  {
+   "key": "Kartli-Kakheti",
+   "take": {
+    "from": "Russian Caucasus",
+    "iso": [
+     "GE-SK",
+     "GE-MM",
+     "GE-KA",
+     "GE-KK",
+     "GE-TB"
+    ]
+   }
+  },
+  {
+   "key": "Samtskhe",
+   "take": {
+    "from": "Russian Caucasus",
+    "iso": [
+     "GE-SJ"
+    ]
+   }
+  },
+  {
+   "key": "Azerbaijani khanates",
+   "take": {
+    "from": "Russian Caucasus",
+    "adm0": [
+     "AZE"
+    ]
+   }
+  },
+  {
+   "key": "Imereti",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "GE-IM",
+     "GE-RL"
+    ]
+   }
+  },
+  {
+   "key": "Mingrelia",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "GE-SZ"
+    ]
+   }
+  },
+  {
+   "key": "Guria",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "GE-GU"
+    ]
+   }
+  },
+  {
+   "key": "Abkhazia",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "GE-AB"
+    ]
+   }
+  },
+  {
    "key": "Congress Poland",
    "take": {
     "from": "Russian Empire",
