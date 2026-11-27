@@ -293,6 +293,27 @@ F.es36 = svg(`<rect width="640" height="480" fill="#AA151B"/><rect y="120" width
   F.de_nazi = svg(`<rect width="640" height="480" fill="#DD0000"/><circle cx="320" cy="240" r="170" fill="#fff"/><g fill="#000" transform="rotate(45 320 240)">` +
     o(2, 0, 1, 5) + o(0, 2, 5, 1) + o(3, 0, 2, 1) + o(4, 3, 1, 2) + o(0, 4, 2, 1) + o(0, 0, 1, 2) + `</g>`);
 }
+// Comores 1975–1978 (Ali Soilih): 2/3 vermelho sobre 1/3 verde, crescente branco com quatro estrelas em losango junto à tralha (Wikipedia + FOTW km_1975)
+F.km75 = svg(`<rect width="640" height="480" fill="#C8102E"/><rect y="320" width="640" height="160" fill="#00A651"/><circle cx="150" cy="150" r="95" fill="#fff"/><circle cx="185" cy="120" r="88" fill="#C8102E"/>` +
+  star(215, 115, 17, "#fff") + star(250, 150, 17, "#fff") + star(215, 185, 17, "#fff") + star(180, 150, 17, "#fff"));
+// Estado Livre do Congo 1885–1908: azul com estrela amarela de cinco pontas
+F.cfs = svg(`<rect width="640" height="480" fill="#0B4EA2"/>` + star(320, 240, 120, "#FFD100"));
+// Kuwait: 1914–1920 vermelha com "Kuwait" em árabe; 1921–1961 com a shahada acima (garra de 1940 não desenhada)
+F.kw14 = svg(`<rect width="640" height="480" fill="#CE1126"/><text x="320" y="300" font-family="DejaVu Sans" font-size="170" fill="#fff" text-anchor="middle">كويت</text>`);
+F.kw21 = svg(`<rect width="640" height="480" fill="#CE1126"/><text x="320" y="190" font-family="DejaVu Sans" font-size="46" fill="#fff" text-anchor="middle">لا إله إلا الله محمد رسول الله</text><text x="320" y="370" font-family="DejaVu Sans" font-size="140" fill="#fff" text-anchor="middle">كويت</text>`);
+// Estados da Trégua: bandeira do tratado de 1820 (vermelho com borda branca)
+F.trucial = svg(`<rect width="640" height="480" fill="#fff"/><rect x="110" y="100" width="420" height="280" fill="#CE1126"/>`);
+// Brunei até 1906: amarela lisa
+F.bn_y = svg(`<rect width="640" height="480" fill="#F7E017"/>`);
+// Butão 1949–1968: amarelo e vermelho na diagonal com o dragão (verde até 1955, branco depois); dragão do desenho atual
+const btDragon = (red, dragon) => FI("bt").replace(/^[\s\S]*?<svg[^>]*>/, "").replace(/<\/svg>\s*$/, "").replace(/id="/g, 'id="bt' + dragon.slice(1) + '-').replace(/href="#/g, 'href="#bt' + dragon.slice(1) + '-')
+  .replace(/#ff4e12/gi, red).replace(/#fff(fff)?\b/gi, dragon);
+F.bt49 = svg(btDragon("#D2232A", "#2E8B3A"));
+F.bt56 = svg(btDragon("#D2232A", "#fff"));
+// Mongólia 1924–1939: vermelha com o soyombo no centro (soyombo do desenho atual)
+F.mn24 = svg(`<rect width="640" height="480" fill="#DA2032"/><svg x="213.3" y="0" width="213.3" height="480" viewBox="0 0 213.3 480" preserveAspectRatio="none"><g fill="#FFD900">${inner("mn")}</g></svg>`);
+// Etiópia 1897–1913: tricolor vermelho, amarelo e verde (a letra de Menelik no amarelo não é desenhada)
+F.eth97 = svg(H("#DA121A", "#FCDD09", "#078930"));
 fs.writeFileSync("data/flags-hist.json", JSON.stringify(F));
 console.log("hist flags", Object.keys(F).length, Math.round(JSON.stringify(F).length / 1024), "KB");
 // preview sheet

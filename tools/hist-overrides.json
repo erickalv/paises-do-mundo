@@ -687,6 +687,23 @@
      "GR-A"
     ]
    }
+  },
+  {
+   "key": "Crete",
+   "iso": [
+    "GR-M"
+   ]
+  },
+  {
+   "key": "South Netherlands",
+   "take": {
+    "from": "Netherlands",
+    "iso": [
+     "NL-ZE",
+     "NL-NB",
+     "NL-LI"
+    ]
+   }
   }
  ],
  "labels": {
@@ -1651,6 +1668,15 @@
      "IT-UD",
      "IT-PN",
      "IT-BL"
+    ]
+   }
+  },
+  {
+   "key": "Smyrna",
+   "take": {
+    "from": "Ottoman Empire",
+    "iso": [
+     "TR-35"
     ]
    }
   }

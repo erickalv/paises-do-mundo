@@ -128,7 +128,7 @@ export const EVENTS = {
       "Macau": "Macau", "Maldives": "Maldivas (protetorado britânico)", "Rattanakosin Kingdom": "Sião" },
       f: { "Taiwan": "x:jp", "Bhutan": "blank", "Afghanistan": "h:af_black", "French India": "x:fr", "Maldives": "x:gb" }, o: { "Taiwan": "Japão" } },
     { y: 1900, m: ["Índia Britânica", "x:gb", ["British Raj", "India"]] },
-    { y: 1900, y1: 1905, f: { "Brunei": "blank" } },
+    { y: 1900, y1: 1905, f: { "Brunei": "h:bn_y" } }, // amarela lisa até 1906
     { y: 1906, f: { "Brunei": "h:bn06" } },
     { y: 1900, y1: 1904, r: { "Korea": "Império Coreano" }, f: { "Korea": "blank" }, o: { "Korea": null } },
     { y: 1905, y1: 1909, r: { "Korea": "Império Coreano (protetorado japonês)" }, f: { "Korea": "blank" }, o: { "Korea": null } }, // nov/1905
@@ -150,7 +150,7 @@ export const EVENTS = {
     { y: 1904, m: ["Emirado de Riad", "blank", ["Riyadh", "Qassim"]] }, // Qassim em 1904–1906
     { y: 1900, r: { "Arabia": null, "Kuwait": "Kuwait", "Bahrain": "Bahrein (protetorado britânico)", "Qatar": "Catar", "Trucial Oman": "Estados da Trégua (protetorado britânico)",
       "Oman": "Mascate e Omã", "Aden": "Áden e protetorados (britânicos)", "Cyprus": "Chipre (administração britânica)", "Malta": "Malta", "Gibraltar": "Gibraltar" },
-      f: { "Kuwait": "blank", "Bahrain": "x:gb", "Qatar": "blank", "Trucial Oman": "blank", "Oman": "h:om_red", "Aden": "x:gb", "Cyprus": "x:gb", "Malta": "x:gb", "Gibraltar": "x:gb" },
+      f: { "Kuwait": "x:tr", "Bahrain": "x:gb", "Qatar": "blank", "Trucial Oman": "h:trucial", "Oman": "h:om_red", "Aden": "x:gb", "Cyprus": "x:gb", "Malta": "x:gb", "Gibraltar": "x:gb" },
       o: { "Kuwait": null, "Qatar": null, "Trucial Oman": null, "Oman": null, "Cyprus": null } },
     // Europa
     { y: 1900, r: { "Germany": "Império Alemão", "Italy": "Reino da Itália", "Austria Hungary": "Áustria-Hungria", "Faroe Islands": "Ilhas Faroé", "Channel Islands": "Ilhas do Canal",
@@ -192,7 +192,7 @@ export const EVENTS = {
       f: { "Egypt": "h:eg_khed", "Darfur": "blank", "Anglo-Egyptian Sudan": "x:gb", "Algeria": "x:fr", "Tunisia": "x:fr", "Rio de Oro": "x:es", "French West Africa": "x:fr",
       "Gambia": "x:gb", "Sierra Leone": "x:gb", "Liberia": "x:lr", "Gold Coast": "x:gb", "Togoland": "h:de_emp", "Nigeria": "x:gb", "Kamerun": "h:de_emp", "Spanish Guinea": "x:es",
       "German South-West Africa": "h:de_emp", "Cape Colony": "x:gb", "Natal": "x:gb", "Basutoland": "x:gb", "Bechuanaland": "x:gb", "Rhodesia": "x:gb",
-      "German East Africa": "h:de_emp", "British East Africa": "x:gb", "Uganda": "x:gb", "Zanzibar": "x:gb", "Ethiopia": "blank", "Eritrea": "h:it_sav",
+      "German East Africa": "h:de_emp", "British East Africa": "x:gb", "Uganda": "x:gb", "Zanzibar": "x:gb", "Ethiopia": "h:eth97", "Eritrea": "h:it_sav",
       "French Somaliland": "x:fr", "British Somaliland": "x:gb", "Italian Somaliland": "h:it_sav", "Madagascar": "x:fr", "Comoros": "x:fr", "Reunion": "x:fr",
       "Mauritius": "x:gb", "Seychelles": "x:gb" },
       o: { "Egypt": "ocupação britânica", "Darfur": null, "Anglo-Egyptian Sudan": "Reino Unido", "Algeria": "França", "Tunisia": "França", "Rio de Oro": "Espanha",
@@ -208,7 +208,7 @@ export const EVENTS = {
     { y: 1903, m: ["África Ocidental Francesa", "x:fr", ["French West Africa", "Mauritania"]] }, // protetorado em 1903
     { y: 1900, y1: 1909, r: { "French Congo": "Congo Francês" }, f: { "French Congo": "x:fr" }, o: { "French Congo": "França" } },
     { y: 1910, r: { "French Congo": "África Equatorial Francesa" }, f: { "French Congo": "x:fr" }, o: { "French Congo": "França" } }, // jan/1910
-    { y: 1900, y1: 1907, r: { "Congo Free State": "Estado Livre do Congo" }, f: { "Congo Free State": "blank" }, o: { "Congo Free State": null } },
+    { y: 1900, y1: 1907, r: { "Congo Free State": "Estado Livre do Congo" }, f: { "Congo Free State": "h:cfs" }, o: { "Congo Free State": null } },
     { y: 1908, r: { "Congo Free State": "Congo Belga" }, f: { "Congo Free State": "x:be" }, o: { "Congo Free State": "Bélgica" } }, // 15/nov/1908
     { y: 1900, y1: 1901, r: { "Transvaal": "Transvaal (Guerra dos Bôeres)", "Orange Free State": "Estado Livre de Orange (Guerra dos Bôeres)" },
       f: { "Transvaal": "blank", "Orange Free State": "blank" }, o: { "Transvaal": null, "Orange Free State": null } }, // anexados em 1900; guerra até 31/mai/1902
@@ -277,7 +277,7 @@ export const EVENTS = {
     { y: 1915, y1: 1917, r: { "Serbia": "Sérvia (ocupação austro-húngara e búlgara)" }, f: { "Serbia": "blank" }, o: { "Serbia": null } }, // fim de 1915
     { y: 1916, y1: 1917, r: { "Montenegro": "Montenegro (ocupação austro-húngara)" }, f: { "Montenegro": "blank" }, o: { "Montenegro": null } }, // jan/1916
     { y: 1916, y1: 1917, r: { "Romania": "Romênia (parcialmente ocupada)" } }, // Bucareste em dez/1916
-    { y: 1914, y1: 1914, r: { "Albania": "Principado da Albânia" }, f: { "Albania": "blank" } },
+    { y: 1914, y1: 1914, r: { "Albania": "Principado da Albânia" }, f: { "Albania": "x:al" } }, // vermelha com a águia negra de duas cabeças
     { y: 1915, y1: 1917, r: { "Albania": "Albânia (ocupação estrangeira)" }, f: { "Albania": "blank" }, o: { "Albania": null } },
     { y: 1918, r: { "Albania": "Albânia (ocupação italiana)" }, f: { "Albania": "h:it_sav" }, o: { "Albania": null } },
     { y: 1913, m: ["Grécia", "h:gr_cross", ["Greece", "_null_158", "_null_159", "_null_160", "_null_161", "_null_162", "_null_163", "_null_164", "_null_165", "_null_166", "_null_167"]] }, // Creta grega desde 1913; ilhas do Egeu desde 1912
@@ -291,6 +291,8 @@ export const EVENTS = {
     { y: 1917, y1: 1917, r: { "Palestine": "Palestina (parcialmente ocupada pelos britânicos)" }, f: { "Palestine": "blank" }, o: { "Palestine": null } }, // Jerusalém em dez/1917
     { y: 1914, y1: 1916, r: { "Mesopotamia": "Mesopotâmia (parcialmente ocupada pelos britânicos)" }, f: { "Mesopotamia": "x:tr" }, o: { "Mesopotamia": null } }, // Baçorá em nov/1914
     { y: 1917, y1: 1917, r: { "Mesopotamia": "Mesopotâmia (parcialmente ocupada pelos britânicos)" }, f: { "Mesopotamia": "blank" }, o: { "Mesopotamia": null } }, // Bagdá em mar/1917
+    { y: 1913, y1: 1918, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Smyrna"]] },
+    { y: 1919, r: { "Smyrna": "Esmirna (ocupação grega)" }, f: { "Smyrna": "h:gr_cross" }, o: { "Smyrna": null } }, // desembarque grego em mai/1919
     { y: 1918, r: { "Ottoman Empire": "Império Otomano", "Mesopotamia": "Mesopotâmia (ocupação britânica)", "Palestine": "Palestina (ocupação britânica)", "Lebanon": "Líbano (ocupação francesa)" },
       f: { "Mesopotamia": "x:gb", "Palestine": "x:gb", "Lebanon": "x:fr" }, o: { "Mesopotamia": null, "Palestine": null, "Lebanon": null } },
     { y: 1918, m: ["Síria (governo árabe de Faiçal)", "h:hejaz", ["Syria", "Jordan"]] }, // Damasco em out/1918
@@ -299,7 +301,7 @@ export const EVENTS = {
     { y: 1913, r: { "Asir": "Emirado Idríssida de Asir", "Hail": "Emirado de Jabal Shammar", "Arabia (Nejd)": "Emirado de Négede e Hasa", "Kuwait": "Kuwait (protetorado britânico)",
       "Bahrain": "Bahrein (protetorado britânico)", "Trucial States": "Estados da Trégua (protetorado britânico)", "Aden": "Áden e protetorados (britânicos)", "Muscat and Oman": "Mascate e Omã",
       "Cyprus": "Chipre", "Malta": "Malta", "Gibraltar": "Gibraltar" },
-      f: { "Asir": "blank", "Hail": "blank", "Arabia (Nejd)": "blank", "Kuwait": "x:gb", "Bahrain": "x:gb", "Trucial States": "blank", "Aden": "x:gb", "Muscat and Oman": "h:om_red",
+      f: { "Asir": "blank", "Hail": "blank", "Arabia (Nejd)": "blank", "Kuwait": "h:kw14", "Bahrain": "x:gb", "Trucial States": "h:trucial", "Aden": "x:gb", "Muscat and Oman": "h:om_red",
       "Cyprus": "x:gb", "Malta": "x:gb", "Gibraltar": "x:gb" },
       o: { "Asir": null, "Hail": null, "Arabia (Nejd)": null, "Muscat and Oman": null, "Trucial States": null } },
     { y: 1913, r: { "British Protectorate": null } }, // sobra no Rub al-Khali, sem fronteira definida
@@ -346,7 +348,7 @@ export const EVENTS = {
     // 1913 (mapa de 1914, antes da guerra)
     { y: 1913, y1: 1913, r: { "Tuva": null, "Albania": "Albânia", "Kuwait": "Kuwait", "Cyprus": "Chipre (administração britânica)", "Egypt": "Quedivato do Egito",
       "Micronesia": "Micronésia Alemã", "Samoa": "Samoa Alemã", "Papua New Guinea": "Nova Guiné Alemã", "Abyssinia": "Abissínia" },
-      f: { "Albania": "blank", "Kuwait": "blank", "Egypt": "h:eg_khed", "Micronesia": "h:de_emp", "Samoa": "h:de_emp", "Papua New Guinea": "h:de_emp", "Abyssinia": "blank" },
+      f: { "Albania": "blank", "Kuwait": "blank", "Egypt": "h:eg_khed", "Micronesia": "h:de_emp", "Samoa": "h:de_emp", "Papua New Guinea": "h:de_emp", "Abyssinia": "h:eth97" },
       o: { "Albania": null, "Kuwait": null, "Cyprus": null, "Egypt": "ocupação britânica", "Micronesia": "Império Alemão", "Samoa": "Império Alemão", "Papua New Guinea": "Império Alemão" } },
     { y: 1913, y1: 1913, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Syria", "Lebanon", "Palestine", "Jordan", "Hejaz", "North Yemen", "Mesopotamia"]] },
     { y: 1913, y1: 1913, r: { "Papua": "Território de Papua (Austrália)" }, f: { "Papua": "x:au" }, o: { "Papua": "Austrália" } },
@@ -374,8 +376,9 @@ export const EVENTS = {
     { y: 1920, y1: 1920, r: { "Tuva": null } }, // 1920: disputada (pendente)
     { y: 1921, r: { "Tuva": "República Popular de Tuva" }, f: { "Tuva": "blank" } }, // 14/ago/1921
     { y: 1920, y1: 1920, r: { "Mongolia": "Mongólia (ocupação chinesa)" }, f: { "Mongolia": "h:cn_5" }, o: { "Mongolia": null } },
+    { y: 1921, f: { "Kuwait": "h:kw21" } }, // shahada acrescentada em 1921
     { y: 1921, y1: 1923, r: { "Mongolia": "Mongólia (Canato de Bogd)" }, f: { "Mongolia": "blank" } },
-    { y: 1924, r: { "Mongolia": "República Popular da Mongólia" }, f: { "Mongolia": "blank" } }, // 26/nov/1924
+    { y: 1924, r: { "Mongolia": "República Popular da Mongólia" }, f: { "Mongolia": "h:mn24" } }, // 26/nov/1924
     // China
     { y: 1920, y1: 1927, m: ["República da China (governo de Beiyang)", "h:cn_5", ["Chinese Warlords", "Manchuria"]] },
     { y: 1928, m: ["República da China", "x:tw", ["Chinese Warlords", "Manchuria"]] }, // a Manchúria aderiu em 29/dez/1928
@@ -392,7 +395,7 @@ export const EVENTS = {
     { y: 1920, r: { "Lebanon": "Líbano (mandato francês)", "Jordan": "Transjordânia (mandato britânico)", "Kuwait": "Kuwait (protetorado britânico)",
       "Bahrain": "Bahrein (protetorado britânico)", "Qatar": "Catar (protetorado britânico)", "Aden": "Áden e protetorados (britânicos)", "Muscat and Oman": "Mascate e Omã",
       "Cyprus": "Chipre", "Malta": "Malta", "Gibraltar": "Gibraltar" },
-      f: { "Lebanon": "x:fr", "Jordan": "x:gb", "Kuwait": "x:gb", "Bahrain": "x:gb", "Aden": "x:gb", "Muscat and Oman": "h:om_red", "Cyprus": "x:gb", "Malta": "x:gb", "Gibraltar": "x:gb" },
+      f: { "Lebanon": "x:fr", "Jordan": "x:gb", "Kuwait": "h:kw14", "Bahrain": "x:gb", "Aden": "x:gb", "Muscat and Oman": "h:om_red", "Cyprus": "x:gb", "Malta": "x:gb", "Gibraltar": "x:gb" },
       o: { "Muscat and Oman": null } },
     { y: 1920, y1: 1920, r: { "Mesopotamia (GB)": "Mesopotâmia (mandato britânico)" } },
     { y: 1921, r: { "Mesopotamia (GB)": "Reino do Iraque (mandato britânico)" } }, // Faiçal coroado em 23/ago/1921
@@ -457,8 +460,8 @@ export const EVENTS = {
       "Goa": "Goa (Índia Portuguesa)", "French India": "Índia Francesa", "Portuguese Timor": "Timor Português", "Maldives": "Maldivas (protetorado britânico)",
       "Rattanakosin Kingdom": "Sião", "Bhutan": "Butão", "Philippines": "Filipinas (EUA)", "South Seas Mandate": "Mandato do Pacífico Sul (Japão)", "Guam": "Guam",
       "Papua New Guinea": "Papua e Nova Guiné (Austrália)", "Dodecanese Islands": "Dodecaneso (Itália)" },
-      f: { "Chinese Warlords": "x:tw", "Xinjiang": "x:tw", "Mongolia": "blank", "Korea": "x:jp", "Taiwan": "x:jp", "Lebanon": "x:fr", "Tuva": "blank", "Iceland": "x:is",
-      "Egypt": "h:eg_k", "Jordan": "x:gb", "Kuwait": "x:gb", "Bahrain": "x:gb", "Aden": "x:gb", "Muscat and Oman": "h:om_red", "Cyprus": "x:gb", "Malta": "x:gb", "Gibraltar": "x:gb",
+      f: { "Chinese Warlords": "x:tw", "Xinjiang": "x:tw", "Mongolia": "h:mn24", "Korea": "x:jp", "Taiwan": "x:jp", "Lebanon": "x:fr", "Tuva": "blank", "Iceland": "x:is",
+      "Egypt": "h:eg_k", "Jordan": "x:gb", "Kuwait": "h:kw21", "Bahrain": "x:gb", "Aden": "x:gb", "Muscat and Oman": "h:om_red", "Cyprus": "x:gb", "Malta": "x:gb", "Gibraltar": "x:gb",
       "Macau": "x:pt", "Goa": "x:pt", "French India": "x:fr", "Portuguese Timor": "x:pt", "Maldives": "x:gb", "Rattanakosin Kingdom": "x:th", "Bhutan": "blank", "Brunei": "h:bn06",
       "South Seas Mandate": "x:jp", "Guam": "h:us48", "Papua New Guinea": "x:au" },
       o: { "Taiwan": "Japão", "Egypt": null, "Muscat and Oman": null } },
@@ -506,10 +509,11 @@ export const EVENTS = {
       "Andaman and Nicobar": "Ilhas Andamão e Nicobar", "Burma": "Birmânia (britânica)", "Siam": "Sião", "Bhutan": "Butão", "Philippines": "Filipinas (Commonwealth, EUA)",
       "Hong Kong": "Hong Kong", "Guam": "Guam", "Malaysia": "Malásia Britânica" },
       o: { "Taiwan": "Japão" },
-      f: { "Mesopotamia (GB)": "h:iq_k", "Egypt": "h:eg_k", "Chinese warlords": "x:tw", "Xinjiang": "x:tw", "Mongolia": "blank", "Korea": "x:jp", "Taiwan": "x:jp",
-      "Manchukuo": "h:manchukuo", "Tuva": "blank", "Iceland": "x:is", "Lebanon": "x:fr", "Jordan": "x:gb", "Kuwait": "x:gb", "Bahrain": "x:gb", "Cyprus": "x:gb", "Malta": "x:gb",
+      f: { "Mesopotamia (GB)": "h:iq_k", "Egypt": "h:eg_k", "Chinese warlords": "x:tw", "Xinjiang": "x:tw", "Mongolia": "h:mn24", "Korea": "x:jp", "Taiwan": "x:jp",
+      "Manchukuo": "h:manchukuo", "Tuva": "blank", "Iceland": "x:is", "Lebanon": "x:fr", "Jordan": "x:gb", "Kuwait": "h:kw21", "Bahrain": "x:gb", "Cyprus": "x:gb", "Malta": "x:gb",
       "Gibraltar": "x:gb", "Macau": "x:pt", "Goa": "x:pt", "French India": "x:fr", "Portuguese Timor": "x:pt", "Maldives": "x:gb", "Andaman and Nicobar": "x:gb", "Burma": "x:gb",
       "Bhutan": "blank", "Brunei": "h:bn06" } },
+    { y: 1940, f: { "Mongolia": "blank" } }, // bandeira de 1940 com o cavaleiro: não desenhada
     { y: 1938, y1: 1938, r: { "Hatay": "Estado de Hatay" }, f: { "Hatay": "blank" } }, // 2/set/1938 a jun/1939
     { y: 1939, m: ["Turquia", "x:tr", ["Turkey", "Hatay"]] },
     { y: 1938, m: ["Palestina (mandato britânico)", "x:gb", ["Mandatory Palestine (GB)", "Israel"]] },
@@ -611,7 +615,12 @@ export const EVENTS = {
     { y: 1943, r: { "Albania": "Albânia (ocupada pela Alemanha)" }, f: { "Albania": "h:de_nazi" }, o: { "Albania": null } },
     { y: 1944, r: { "Albania": "Albânia" }, f: { "Albania": "x:al" } }, // libertada em nov/1944; desenho da bandeira de 1944 não descrito (pendente)
     { y: 1938, y1: 1940, m: ["Iugoslávia", "h:yu_fr", ["Yugoslavia", "Croatia", "Slovenia", "Montenegro", "Vardar Macedonia", "Kosovo"]] },
+    { y: 1938, y1: 1943, m: ["Grécia", "h:gr_cross", ["Greece", "Crete"]] },
     { y: 1938, y1: 1940, m: ["Grécia", "h:gr_cross", ["Greece", "Western Thrace"]] },
+    { y: 1944, r: { "Crete": "Creta (ocupação alemã)" }, f: { "Crete": "h:de_nazi" }, o: { "Crete": null } }, // até mai/1945
+    { y: 1938, y1: 1943, m: ["Países Baixos", "x:nl", ["Netherlands", "South Netherlands"]] },
+    { y: 1944, r: { "South Netherlands": "Sul dos Países Baixos (libertado)" }, f: { "South Netherlands": "x:nl" }, o: { "South Netherlands": null } }, // set–nov/1944
+    { y: 1940, y1: 1944, r: { "Faroe Islands": "Ilhas Faroé (ocupação britânica)" }, f: { "Faroe Islands": "x:gb" }, o: { "Faroe Islands": null } }, // abr/1940 a set/1945
     { y: 1941, y1: 1943, r: { "Yugoslavia": "Sérvia (ocupação alemã)", "Montenegro": "Montenegro (ocupação italiana)", "Vardar Macedonia": "Macedônia (ocupação búlgara)", "Greece": "Grécia (ocupada pelo Eixo)", "Western Thrace": "Trácia Ocidental (ocupação búlgara)" },
       f: { "Yugoslavia": "h:de_nazi", "Montenegro": "h:it_sav", "Vardar Macedonia": "x:bg", "Greece": "blank", "Western Thrace": "x:bg" },
       o: { "Yugoslavia": null, "Montenegro": null, "Vardar Macedonia": null, "Greece": null, "Western Thrace": null } }, // abr/1941

@@ -44,7 +44,9 @@ export const ROWS = [
   ["MKD1", "Macedônia", "h:mk92", 1991, 1994, ["MKD"]],
   ["MKD2", "Macedônia", "x:mk", 1995, 2018, ["MKD"]],
   ["ESP39", null, "h:es45", 1946, 1980, ["ESP"]], // brasão atual desde out–dez/1981
-  ["BTN0", null, "blank", 1946, 1968, ["BTN"]], // primeira bandeira em 1949 (desenho não descrito no Wikipedia); a atual é de 1969
+  ["BTN0", null, "blank", 1946, 1948, ["BTN"]],
+  ["BTN49", null, "h:bt49", 1949, 1955, ["BTN"]], // 1949: amarelo e vermelho com dragão verde
+  ["BTN56", null, "h:bt56", 1956, 1968, ["BTN"]], // dragão branco desde 1956; laranja só em 1968–69
   ["HUN46", null, "h:hu_k", 1946, 1948, ["HUN"]],
   ["HUN49", null, "h:hu49", 1949, 1955, ["HUN"]],
   ["HUN56", null, "h:hu_k", 1956, 1956, ["HUN"]], // tricolor sem brasão oficial desde 23/mai/1957
@@ -133,7 +135,7 @@ export const ROWS = [
   ["QAT0", "Catar (protetorado britânico)", G, 1946, 1970, ["QAT"]],
   ["BHR0", "Bahrein (protetorado britânico)", "h:bh_old", 1946, 1970, ["BHR"]],
   ["BHR1", null, "h:bh_old", 1971, 2001, ["BHR"]],
-  ["KWT0", "Kuwait (protetorado britânico)", G, 1946, 1960, ["KWT"]],
+  ["KWT0", "Kuwait (protetorado britânico)", "h:kw21", 1946, 1960, ["KWT"]],
   // ---------------- Africa
   ["EGYK", "Reino do Egito", "h:eg_k", 1946, 1952, ["EGY"]],
   ["EGY53", "Egito", "h:eg_k", 1953, 1957, ["EGY"]], // a bandeira do reino seguiu oficial até 1958
@@ -214,7 +216,7 @@ export const ROWS = [
   ["MDG0", "Madagascar (França)", F, 1946, 1959, ["MDG"]],
   ["COM0", "Comores (França)", F, 1946, 1974, ["COM"]],
   // Comores: bandeira de 1975–1978 (Ali Soilih) sem descrição completa no Wikipedia, fica sem bandeira
-  ["COM1", null, "blank", 1975, 1977, ["COM"]],
+  ["COM1", null, "h:km75", 1975, 1977, ["COM"]], // Ali Soilih (FOTW km_1975)
   ["COM78", null, "h:km78", 1978, 1991, ["COM"]],
   ["COM92", null, "h:km92", 1992, 1995, ["COM"]],
   ["COM96", null, "h:km96", 1996, 2000, ["COM"]], // bandeira atual desde 23/dez/2001
