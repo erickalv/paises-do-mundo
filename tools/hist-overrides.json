@@ -4377,6 +4377,35 @@
    }
   },
   {
+   "key": "Lithuania GD",
+   "take": {
+    "from": "Russian Empire",
+    "adm0": [
+     "LTU"
+    ]
+   }
+  },
+  {
+   "key": "Lithuania GD",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "BY-HR",
+     "BY-BR"
+    ]
+   }
+  },
+  {
+   "key": "Courland",
+   "take": {
+    "from": "Russian Empire",
+    "region": [
+     "LVA/Kurzeme",
+     "LVA/Zemgale"
+    ]
+   }
+  },
+  {
    "key": "Congress Poland",
    "take": {
     "from": "Russian Empire",
