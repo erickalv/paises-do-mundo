@@ -2708,6 +2708,24 @@
      "PE-LMA"
     ]
    }
+  },
+  {
+   "key": "French Polynesia",
+   "adm0": [
+    "PYF"
+   ]
+  },
+  {
+   "key": "Ryukyu",
+   "take": {
+    "from": [
+     "_null_185",
+     "Imperial Japan"
+    ],
+    "iso": [
+     "JP-47"
+    ]
+   }
   }
  ]
 }
