@@ -4175,6 +4175,53 @@
    }
   },
   {
+   "key": "Egyptian Syria",
+   "take": {
+    "from": "Ottoman Empire",
+    "adm0": [
+     "SYR",
+     "ISR",
+     "PSE"
+    ]
+   }
+  },
+  {
+   "key": "Egyptian Syria",
+   "take": {
+    "from": "Ottoman Empire",
+    "iso": [
+     "TR-01",
+     "TR-33",
+     "TR-80",
+     "TR-31"
+    ]
+   }
+  },
+  {
+   "key": "South Arabia",
+   "take": {
+    "from": "Aden",
+    "iso": [
+     "YE-AB",
+     "YE-DA",
+     "YE-HD",
+     "YE-LA",
+     "YE-MR",
+     "YE-SH"
+    ]
+   }
+  },
+  {
+   "key": "Zululand",
+   "cut": {
+    "map": 1880,
+    "name": "Zululand",
+    "adm0": [
+     "ZAF"
+    ]
+   }
+  },
+  {
    "key": "Falkland Islands",
    "take": {
     "from": "_none",

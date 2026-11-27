@@ -394,6 +394,7 @@ F.us38 = usRows([7, 8, 8, 8, 7]);
 F.us37 = usRows([8, 7, 7, 7, 8]);
 F.us28 = usRows([7, 7, 7, 7]); // 4/jul/1846 a 3/jul/1847 (sem arranjo oficial das estrelas)
 F.us29 = usRows([6, 6, 6, 6, 5]); // 4/jul/1847 a 3/jul/1848 (sem arranjo oficial)
+F.us25 = usRows([5, 5, 5, 5, 5]); // 4/jul/1836 a 3/jul/1837 (sem arranjo oficial)
 F.us26 = usRows([6, 5, 5, 5, 5]); // 4/jul/1837 a 3/jul/1845 (sem arranjo oficial)
 F.us27 = usRows([6, 5, 6, 5, 5]); // 4/jul/1845 a 3/jul/1846
 F.us30 = usRows([6, 6, 6, 6, 6]); // 4/jul/1848 a 3/jul/1851 (sem arranjo oficial)
