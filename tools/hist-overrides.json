@@ -2472,6 +2472,242 @@
      "GH-BA"
     ]
    }
+  },
+  {
+   "key": "Eastern Rumelia",
+   "take": {
+    "from": "Bulgaria",
+    "iso": [
+     "BG-16",
+     "BG-13",
+     "BG-24",
+     "BG-26",
+     "BG-20",
+     "BG-28",
+     "BG-02"
+    ]
+   }
+  },
+  {
+   "key": "Thessaly",
+   "take": {
+    "from": "Greece",
+    "iso": [
+     "GR-E"
+    ]
+   }
+  },
+  {
+   "key": "Upper Burma",
+   "take": {
+    "from": [
+     "British Raj",
+     "Rattanakosin Kingdom"
+    ],
+    "iso": [
+     "MM-01",
+     "MM-03",
+     "MM-04",
+     "MM-11"
+    ]
+   }
+  },
+  {
+   "key": "Shan States",
+   "take": {
+    "from": [
+     "British Raj",
+     "Rattanakosin Kingdom"
+    ],
+    "iso": [
+     "MM-17"
+    ]
+   }
+  },
+  {
+   "key": "Karenni",
+   "take": {
+    "from": [
+     "British Raj",
+     "Rattanakosin Kingdom"
+    ],
+    "iso": [
+     "MM-12"
+    ]
+   }
+  },
+  {
+   "key": "Cochinchina",
+   "take": {
+    "from": "French Indochina",
+    "iso": [
+     "VN-SG",
+     "VN-39",
+     "VN-41",
+     "VN-43",
+     "VN-44",
+     "VN-45",
+     "VN-46",
+     "VN-47",
+     "VN-49",
+     "VN-50",
+     "VN-51",
+     "VN-52",
+     "VN-55",
+     "VN-57",
+     "VN-58",
+     "VN-59",
+     "VN-73",
+     "VN-CT",
+     "VN-37"
+    ]
+   }
+  },
+  {
+   "key": "Cambodia",
+   "take": {
+    "from": "French Indochina",
+    "adm0": [
+     "KHM"
+    ]
+   }
+  },
+  {
+   "key": "Inner Cambodia",
+   "take": {
+    "from": "Cambodia",
+    "iso": [
+     "KH-2",
+     "KH-17",
+     "KH-1",
+     "KH-22",
+     "KH-24"
+    ]
+   }
+  },
+  {
+   "key": "Siamese Laos",
+   "take": {
+    "from": "French Indochina",
+    "adm0": [
+     "LAO"
+    ]
+   }
+  },
+  {
+   "key": "Sainyabuli",
+   "take": {
+    "from": "Siamese Laos",
+    "iso": [
+     "LA-XA"
+    ]
+   }
+  },
+  {
+   "key": "Siamese Malay States",
+   "take": {
+    "from": [
+     "Malaya",
+     "Rattanakosin Kingdom"
+    ],
+    "iso": [
+     "MY-02",
+     "MY-03",
+     "MY-11",
+     "MY-09"
+    ]
+   }
+  },
+  {
+   "key": "Sarawak",
+   "take": {
+    "from": "Malaya",
+    "iso": [
+     "MY-13"
+    ]
+   }
+  },
+  {
+   "key": "North Borneo",
+   "take": {
+    "from": "Malaya",
+    "iso": [
+     "MY-12"
+    ]
+   }
+  },
+  {
+   "key": "Ahal",
+   "take": {
+    "from": "central Asian khanates",
+    "iso": [
+     "TM-A"
+    ]
+   }
+  },
+  {
+   "key": "Merv",
+   "take": {
+    "from": "central Asian khanates",
+    "iso": [
+     "TM-M"
+    ]
+   }
+  },
+  {
+   "key": "Tacna and Arica",
+   "take": {
+    "from": [
+     "Peru",
+     "Chile"
+    ],
+    "iso": [
+     "PE-TAC",
+     "CL-AP"
+    ]
+   }
+  },
+  {
+   "key": "Tarapaca",
+   "take": {
+    "from": [
+     "Peru",
+     "Bolivia",
+     "Chile"
+    ],
+    "iso": [
+     "CL-TA"
+    ]
+   }
+  },
+  {
+   "key": "Bolivian Litoral",
+   "take": {
+    "from": [
+     "Peru",
+     "Bolivia",
+     "Chile"
+    ],
+    "iso": [
+     "CL-AN"
+    ]
+   }
+  },
+  {
+   "key": "Lima",
+   "iso": [
+    "PE-CAL"
+   ]
+  },
+  {
+   "key": "Lima",
+   "take": {
+    "from": "Peru",
+    "iso": [
+     "PE-LIM",
+     "PE-LMA"
+    ]
+   }
   }
  ]
 }
