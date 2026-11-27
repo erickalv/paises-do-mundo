@@ -4940,6 +4940,41 @@
    }
   },
   {
+   "key": "Balkh",
+   "take": {
+    "from": "Afghanistan",
+    "iso": [
+     "AF-BAL",
+     "AF-JOW",
+     "AF-SAR",
+     "AF-FYB",
+     "AF-SAM",
+     "AF-KDZ",
+     "AF-BGL",
+     "AF-TAK",
+     "AF-BDS"
+    ]
+   }
+  },
+  {
+   "key": "Kabul",
+   "take": {
+    "from": "Afghanistan",
+    "iso": [
+     "AF-KAB",
+     "AF-KAP",
+     "AF-PAR",
+     "AF-WAR",
+     "AF-LOG",
+     "AF-NAN",
+     "AF-LAG",
+     "AF-KNR",
+     "AF-NUR",
+     "AF-PAN"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
