@@ -4975,6 +4975,57 @@
    }
   },
   {
+   "key": "Scotland",
+   "take": {
+    "from": "United Kingdom of Great Britain and Ireland",
+    "iso": [
+     "GB-SCB",
+     "GB-DGY",
+     "GB-CLK",
+     "GB-STG",
+     "GB-FAL",
+     "GB-WLN",
+     "GB-EDH",
+     "GB-MLN",
+     "GB-ELN",
+     "GB-SAY",
+     "GB-NAY",
+     "GB-IVC",
+     "GB-RFW",
+     "GB-WDU",
+     "GB-AGB",
+     "GB-HLD",
+     "GB-MRY",
+     "GB-ABD",
+     "GB-ABE",
+     "GB-ANS",
+     "GB-DND",
+     "GB-PKN",
+     "GB-FIF",
+     "GB-ELS",
+     "GB-ORK",
+     "GB-ZET",
+     "GB-NLK",
+     "GB-EDU",
+     "GB-GLG",
+     "GB-ERW",
+     "GB-EAY",
+     "GB-SLK"
+    ]
+   }
+  },
+  {
+   "key": "Valencia",
+   "take": {
+    "from": "Spain",
+    "iso": [
+     "ES-V",
+     "ES-CS",
+     "ES-A"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
