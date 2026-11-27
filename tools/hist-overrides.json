@@ -4347,6 +4347,34 @@
    }
   },
   {
+   "key": "Posen",
+   "take": {
+    "from": "Germany",
+    "iso": [
+     "PL-WP",
+     "PL-KP"
+    ]
+   }
+  },
+  {
+   "key": "Kandy",
+   "take": {
+    "from": "Ceylon",
+    "iso": [
+     "LK-21",
+     "LK-22",
+     "LK-23",
+     "LK-81",
+     "LK-82",
+     "LK-91",
+     "LK-92",
+     "LK-71",
+     "LK-72",
+     "LK-61"
+    ]
+   }
+  },
+  {
    "key": "Falkland Islands",
    "take": {
     "from": "_none",
