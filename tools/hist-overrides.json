@@ -4926,6 +4926,20 @@
    }
   },
   {
+   "key": "Maranhao",
+   "take": {
+    "from": "Kingdom of Brazil",
+    "iso": [
+     "BR-AM",
+     "BR-RR",
+     "BR-PA",
+     "BR-AP",
+     "BR-MA",
+     "BR-PI"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",

@@ -1012,6 +1012,7 @@ export const EVENTS = {
     { y: 1742, /*fixo*/ m: [null, null, ["Germany", "Silesia"]] }, // Silésia e Glatz cedidas pela Áustria em Breslau, 11/jun/1742
     { y: 1742, /*fixo*/ m: [null, null, ["Austria Hungary", "Bohemia"]] }, // Praga retomada pela Áustria em dez/1742
     { y: 1715, /*fixo*/ m: [null, null, ["Greece", "Morea", "Achaea", "Tinos"]] }, // Moreia retomada pelos otomanos em 1715 (Náuplia 20/jul/1715); Tinos e Egina no mesmo ano
+    { y: 1775, /*fixo*/ m: [null, null, ["Kingdom of Brazil", "Maranhao"]] }, // Estados do Brasil, Maranhão e Grão-Pará unificados em 1775
     { y: 1718, /*fixo*/ m: [null, null, ["Austria Hungary", "Banat"]] }, // Banato de Temesvár: conquistado em out/1716, reconhecido em Passarowitz (21/jul/1718)
     { y: 1739, /*fixo*/ m: [null, null, ["Serbia", "Habsburg Serbia"]] }, // Reino da Sérvia habsburgo (1718–1739) devolvido em Belgrado, 18/set/1739
     { y: 1737, /*fixo*/ m: [null, null, ["Wallachia", "Oltenia"]] }, // Banato de Craiova reconquistado no fim de 1737; volta à Valáquia em 1739
@@ -7224,6 +7225,9 @@ export const EVENTS = {
     ...perYear(1850, 1871, { r: { "Gold Coast GB": "Costa do Ouro (fortes holandeses e britânicos)" }, f: { "Gold Coast GB": "blank" }, o: { "Gold Coast GB": null } }), /*fixo*/ // fortes holandeses comprados pelos britânicos em 1871–1872
     ...perYear(1600, 1720, { r: { "Greenland": "Groenlândia (inuítes; reivindicada pela Dinamarca-Noruega)" }, f: { "Greenland": "blank" }, o: { "Greenland": null } }), /*fixo*/ // colonização de Hans Egede em 1721
     ...perYear(1600, 1879, { r: { "Malaya": "Sultanatos malaios (Johor, Perak, Pahang e outros)" } }), /*fixo*/
+    ...perYear(1621, 1750, { r: { "Maranhao": "Estado do Maranhão (Portugal)" }, f: { "Maranhao": "blank" }, o: { "Maranhao": "Portugal" } }), /*fixo*/ // criado em 1621, capital São Luís
+    ...perYear(1751, 1771, { r: { "Maranhao": "Estado do Grão-Pará e Maranhão (Portugal)" }, f: { "Maranhao": "blank" }, o: { "Maranhao": "Portugal" } }), /*fixo*/ // 31/jul/1751, capital Belém
+    ...perYear(1772, 1774, { r: { "Maranhao": "Estados do Grão-Pará e Rio Negro e do Maranhão e Piauí (Portugal)" }, f: { "Maranhao": "blank" }, o: { "Maranhao": "Portugal" } }), /*fixo*/ // divisão de 1772
   ],
   1914: [
     ...ISLES[1914],
