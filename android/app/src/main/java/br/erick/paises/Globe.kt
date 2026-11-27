@@ -109,7 +109,7 @@ class LabelItem(
     val key: String, val name: String, val flag: String, val lon: Double, val lat: Double,
     val sr: Double, val dot: Boolean, val top: Boolean, val missed: Boolean,
     val sub: String? = null,      // second line (History: who the place belongs to)
-    val info: List<Pair<String, String>>? = null,   // History: rows of the info list behind the small (i) button
+    val info: List<Pair<String, String>>? = null,   // History: rows shown when the label's arrow is opened
 )
 
 interface GlobeListener {
@@ -296,7 +296,8 @@ class GlobeHost(context: Context, val data: GeoData) : FrameLayout(context) {
             return true
         }
         override fun onSingleTapConfirmed(e: MotionEvent): Boolean {
-            labelsView.infoAt(e.x, e.y)?.let { listener?.onInfo(it); return true }
+            labelsView.infoAt(e.x, e.y)?.let { labelsView.toggle(it); return true }
+            if (labelsView.inPanel(e.x, e.y)) return true
             val ll = cam.unproject(e.x.toDouble(), e.y.toDouble())
             if (ll != null) listener?.onTap(ll[0], ll[1], e.x, e.y)
             return true
@@ -371,6 +372,29 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
     private val infoHits = ArrayList<Pair<RectF, LabelItem>>()
 
     fun infoAt(x: Float, y: Float): LabelItem? = infoHits.lastOrNull { it.first.contains(x, y) }?.second
+    /** key of the label whose info rows are open (it stays open while the globe turns or the year changes) */
+    private var openKey: String? = null
+    private val panelHits = ArrayList<RectF>()
+    fun toggle(item: LabelItem) { openKey = if (openKey == item.key) null else item.key; invalidate() }
+    fun inPanel(x: Float, y: Float) = panelHits.any { it.contains(x, y) }
+    private val rowKey = Paint(Paint.ANTI_ALIAS_FLAG).apply { color = Color.parseColor("#8F96A6"); textSize = 11f * d; typeface = Typeface.create(Typeface.DEFAULT, Typeface.BOLD) }
+    private val rowVal = Paint(Paint.ANTI_ALIAS_FLAG).apply { color = Color.parseColor("#E2E6EE"); textSize = 13f * d }
+    private val sep = Paint().apply { color = Color.parseColor("#2C313C") }
+    private val chevron = Paint(Paint.ANTI_ALIAS_FLAG).apply { color = Color.parseColor("#AEB4C2") }
+    private val chevPath = Path()
+
+    private fun wrap(t: String, p: Paint, maxW: Float): List<String> {
+        val out = ArrayList<String>()
+        for (para in t.split('\n')) {
+            var line = ""
+            for (word in para.split(' ')) {
+                val tryL = if (line.isEmpty()) word else "$line $word"
+                if (line.isNotEmpty() && p.measureText(tryL) > maxW) { out += line; line = word } else line = tryL
+            }
+            out += line
+        }
+        return out
+    }
 
     private fun flag(ref: String): Bitmap? {
         if (ref == "blank") return null
@@ -384,10 +408,11 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
     override fun onDraw(canvas: Canvas) {
         val l = host.listener ?: return
         val cam = host.cam
-        infoHits.clear()
+        infoHits.clear(); panelHits.clear()
         val items = l.labels()
         if (items.isEmpty()) return
         val mode = l.labelMode()
+        if (mode != 2) openKey = null
         val R = cam.r
         val d2 = d * d
         val placed = ArrayList<FloatArray>()
@@ -409,18 +434,27 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
             val h = if (sub != null) fh + 2 * pad + subs.size * (subText.textSize + 3 * d) else fh + 2 * pad
             val iw = if (it.info.isNullOrEmpty()) 0f else 22 * d   // room for the (i) button
             val nameW = text.measureText(it.name) + iw
-            val w = pad + fwE + max(nameW, subs.maxOfOrNull { l -> subText.measureText(l) } ?: 0f) + pad * 1.4f
+            var w = pad + fwE + max(nameW, subs.maxOfOrNull { l -> subText.measureText(l) } ?: 0f) + pad * 1.4f
+            val open = !it.info.isNullOrEmpty() && it.key == openKey
+            // open label: the info rows hang below the name, inside the same shape
+            val maxW = min(280 * d, width - 24 * d)
+            val rows = if (!open) emptyList() else it.info!!.map { (k, v) -> k to wrap(v, rowVal, maxW - 2 * pad) }
+            if (open) w = max(w, min(maxW, rows.maxOf { (k, ls) -> max(rowKey.measureText(k), ls.maxOf { l -> rowVal.measureText(l) }) } + 2 * pad))
+            val lineV = rowVal.textSize + 3 * d; val lineK = rowKey.textSize + 4 * d
+            val extra = if (!open) 0f else 6 * d + rows.sumOf { (_, ls) -> (lineK + ls.size * lineV + 8 * d).toDouble() }.toFloat()
             val rpx = sqrt(it.sr / PI) * R
             // a label wider than its country sits above it, with a pointer to the right place
             val above = it.dot || rpx * 2.2 < w
-            val x = (tmp[0] - w / 2).toFloat()
+            var x = (tmp[0] - w / 2).toFloat()
+            if (open) x = x.coerceIn(6 * d, max(6 * d, width - w - 6 * d))
             val y = if (above) (tmp[1] - h - max(12.0 * d, if (it.dot) 12.0 * d else rpx * 0.9 + 8 * d)).toFloat() else (tmp[1] - h / 2).toFloat()
-            val box = floatArrayOf(x - 3 * d, y - 3 * d, x + w + 3 * d, y + h + 3 * d)
+            val box = floatArrayOf(x - 3 * d, y - 3 * d, x + w + 3 * d, y + h + extra + 3 * d)
             if (!it.top && placed.any { b -> box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1] }) continue
             placed += box
-            rect.set(x, y, x + w, y + h)
+            rect.set(x, y, x + w, y + h + extra)
             canvas.drawRoundRect(rect, 10 * d, 10 * d, bg)
-            if (above) {
+            if (open) panelHits += RectF(rect)
+            if (above && !open) {
                 arrow.reset()
                 arrow.moveTo(tmp[0].toFloat() - 6 * d, y + h - 0.5f)
                 arrow.lineTo(tmp[0].toFloat() + 6 * d, y + h - 0.5f)
@@ -440,11 +474,26 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
                 subs.forEachIndexed { k, l -> canvas.drawText(l, tx, y + pad + fh + 3 * d + k * (subText.textSize + 3 * d) - subText.ascent(), subText) }
             }
             if (iw > 0) {
+                // small arrow: pointing left when closed, down when open
                 val cx = x + w - pad * 0.9f - 8 * d
                 val cy = if (sub == null) y + h / 2 else y + pad + fh / 2
-                canvas.drawCircle(cx, cy, 7.5f * d, infoRing)
-                canvas.drawText("i", cx, cy - (infoText.descent() + infoText.ascent()) / 2, infoText)
+                val a = 4.5f * d
+                chevPath.reset()
+                if (open) { chevPath.moveTo(cx - a, cy - a * 0.6f); chevPath.lineTo(cx + a, cy - a * 0.6f); chevPath.lineTo(cx, cy + a * 0.7f) }
+                else { chevPath.moveTo(cx + a * 0.6f, cy - a); chevPath.lineTo(cx + a * 0.6f, cy + a); chevPath.lineTo(cx - a * 0.7f, cy) }
+                chevPath.close()
+                canvas.drawPath(chevPath, chevron)
                 infoHits += RectF(cx - 20 * d, cy - 20 * d, cx + 20 * d, cy + 20 * d) to it
+            }
+            if (open) {
+                var yy = y + h
+                canvas.drawRect(x + pad, yy, x + w - pad, yy + d, sep)
+                yy += 6 * d
+                for ((k, ls) in rows) {
+                    canvas.drawText(k, x + pad, yy - rowKey.ascent(), rowKey); yy += lineK
+                    for (ln in ls) { canvas.drawText(ln, x + pad, yy - rowVal.ascent(), rowVal); yy += lineV }
+                    yy += 8 * d
+                }
             }
         }
     }

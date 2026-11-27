@@ -196,31 +196,7 @@ fun App(model: AppModel, host: GlobeHost) {
             }
         }
 
-        model.info?.let { InfoOverlay(model, it) }
         model.dialog?.let { d -> DialogOverlay(model, d) }
-    }
-}
-
-/** History: the list behind the small (i) button of a tapped place. */
-@Composable
-private fun InfoOverlay(model: AppModel, item: LabelItem) {
-    Box(
-        Modifier.fillMaxSize().background(Color(0x66000000)).clickable(interactionSource = remember { MutableInteractionSource() }, indication = null) { model.info = null },
-        contentAlignment = Alignment.Center,
-    ) {
-        Column(
-            Modifier.padding(24.dp).widthIn(max = 360.dp).fillMaxWidth().clip(RoundedCornerShape(20.dp)).background(Color(0xFF141B2A))
-                .border(1.dp, Line, RoundedCornerShape(20.dp)).clickable(interactionSource = remember { MutableInteractionSource() }, indication = null) {}
-                .padding(start = 20.dp, end = 20.dp, top = 18.dp, bottom = 18.dp),
-        ) {
-            Text(item.name, color = TextC, fontSize = 18.sp, fontWeight = FontWeight.Bold)
-            Text("${model.year}", color = Muted, fontSize = 13.sp)
-            for ((k, v) in item.info.orEmpty()) {
-                Spacer(Modifier.height(12.dp))
-                Text(k, color = Muted, fontSize = 12.sp, fontWeight = FontWeight.Medium)
-                Text(v, color = Color(0xFFE2E6EE), fontSize = 15.sp)
-            }
-        }
     }
 }
 
