@@ -4561,6 +4561,16 @@
    }
   },
   {
+   "key": "East Prussia",
+   "take": {
+    "from": "Germany",
+    "iso": [
+     "RU-KGD",
+     "PL-WN"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
