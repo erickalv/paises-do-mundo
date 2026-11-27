@@ -4439,6 +4439,15 @@
    }
   },
   {
+   "key": "Yedisan",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "UA-51"
+    ]
+   }
+  },
+  {
    "key": "Congress Poland",
    "take": {
     "from": "Russian Empire",
