@@ -107,6 +107,9 @@ F.syc77 = svg(`<rect width="640" height="480" fill="#007A3D"/><rect width="640" 
 F.ht_old = svg(V("#000", "#D21034") + `<rect x="245" y="165" width="150" height="150" fill="#fff"/><rect x="316" y="205" width="8" height="80" fill="#016A16"/><circle cx="320" cy="200" r="28" fill="#016A16"/>`);
 F.vct_old = svg(`<rect width="640" height="480" fill="#0072C6"/><rect x="160" width="320" height="480" fill="#FCD116"/><rect x="480" width="160" height="480" fill="#009E60"/><path d="M320 140q90 60 0 200q-90-140 0-200z" fill="#009E60"/><rect x="295" y="215" width="50" height="60" rx="8" fill="#fff" stroke="#0072C6" stroke-width="5"/>`);
 // --- Americas ---
+// Venezuela: sete estrelas brancas na faixa azul em hexágono (1863–1905) e em círculo (1905–1930); arco desde 1930 (List of flags of Venezuela)
+F.ve_hex = svg(H("#FFCC00", "#00247D", "#CF142B") + [0, 1, 2, 3, 4, 5].map((i) => { const a = (Math.PI * i) / 3 - Math.PI / 2; return star(320 + 52 * Math.cos(a), 240 + 52 * Math.sin(a), 15, "#fff"); }).join("") + star(320, 240, 15, "#fff"));
+F.ve_circ = svg(H("#FFCC00", "#00247D", "#CF142B") + [0, 1, 2, 3, 4, 5, 6].map((i) => { const a = (2 * Math.PI * i) / 7 - Math.PI / 2; return star(320 + 55 * Math.cos(a), 240 + 55 * Math.sin(a), 14, "#fff"); }).join(""));
 F.ve7 = svg(H("#FFCC00", "#00247D", "#CF142B") + [0, 1, 2, 3, 4, 5, 6].map((i) => { const a = Math.PI * (0.18 + (0.64 * i) / 6); return star(320 - 120 * Math.cos(a), 300 - 120 * Math.sin(a), 18, "#fff"); }).join(""));
 // --- Europe ---
 F.gr_cross = svg(`<rect width="640" height="480" fill="#0D5EAF"/><rect x="270" width="100" height="480" fill="#fff"/><rect y="190" width="640" height="100" fill="#fff"/>`);
@@ -389,11 +392,14 @@ F.us43 = usRows([8, 7, 7, 7, 7, 7]);
 // EUA 4/jul/1877 a 3/jul/1890: 38 estrelas em fileiras 7-8-8-8-7 (uma das disposições da tabela do Wikipedia)
 F.us38 = usRows([7, 8, 8, 8, 7]);
 F.us37 = usRows([8, 7, 7, 7, 8]);
+F.us31 = usRows([7, 6, 6, 6, 6]); // 4/jul/1851 a 3/jul/1858 (sem arranjo oficial das estrelas)
+F.us32 = usRows([7, 6, 6, 7, 6]); // 4/jul/1858 a 3/jul/1859 (sem arranjo oficial)
+F.us33 = usRows([7, 7, 5, 7, 7]); // 4/jul/1859 a 3/jul/1861 (sem arranjo oficial)
 F.us34 = usRows([7, 7, 6, 7, 7]); // 4/jul/1861 a 3/jul/1863
 F.us35 = usRows([7, 7, 7, 7, 7]); // 4/jul/1863 a 3/jul/1865
 F.us36 = usRows([8, 7, 6, 7, 8]); // 4/jul/1865 a 3/jul/1867
 // Principados Unidos 1859–1866: horizontal vermelho, amarelo, azul
-F.ro_up = svg(H("#CE1126", "#FCD116", "#002B7F")); // 4/jul/1867 a 3/jul/1877 (sem arranjo oficial)
+F.ro_up = svg(H("#CE1126", "#FCD116", "#002B7F")); // Principados Unidos, tricolor horizontal até 1866
 // Noruega 1844–1898: com a marca da união no cantão (simplificada; lei de 10/dez/1898 a retirou, bandeira "pura" desde 1899)
 {
   const w = 180, h = 180, cx = w / 2, cy = h / 2;

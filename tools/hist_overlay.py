@@ -124,14 +124,14 @@ for year in YEARS:
     for o in OVR.get(str(year), []):
         if "take" in o:
             t = o["take"]
-            src, (x0, y0, x1, y1) = {key_index[k] for k in ([t["from"]] if isinstance(t["from"], str) else t["from"]) if k in key_index}, t.get("bbox", [-180, -90, 180, 90])
+            src, (x0, y0, x1, y1) = {NONE if k == "_none" else key_index[k] for k in ([t["from"]] if isinstance(t["from"], str) else t["from"]) if k in key_index or k == "_none"}, t.get("bbox", [-180, -90, 180, 90])
             for k, (g, u, a3, iso) in enumerate(out):
                 if u not in src or ("adm0" in t and a3 not in t["adm0"]) or ("iso" in t and iso not in t["iso"]) or ("region" in t and REGION.get(iso) not in t["region"]):
                     continue
                 c = g.representative_point()
                 if x0 <= c.x <= x1 and y0 <= c.y <= y1:
                     out[k] = (g, key_index[o["key"]], a3, iso)
-    # a unit smaller than today's provinces, cut out with its shape from one of the old maps ("cut": {"map": year, "name": NAME, "adm0": [only these countries of today]})
+    # a unit smaller than today's provinces, cut out with its shape from one of the old maps ("cut": {"map": year, "name": NAME, "adm0": [only these countries of today], "iso_not": [provinces left alone]})
     for o in OVR.get(str(year), []):
         if "cut" in o:
             c = o["cut"]
@@ -139,7 +139,7 @@ for year in YEARS:
             shp = unary_union([shape(f["geometry"]) for f in src["features"] if f["properties"].get("NAME") == c["name"]]).buffer(0)
             new = []
             for g, u, a3, iso in out:
-                if not g.intersects(shp) or ("adm0" in c and a3 not in c["adm0"]):
+                if not g.intersects(shp) or ("adm0" in c and a3 not in c["adm0"]) or iso in c.get("iso_not", []):
                     new.append((g, u, a3, iso)); continue
                 inside = polys_only(g.intersection(shp)); rest = polys_only(g.difference(shp))
                 if inside is not None: new.append((inside, key_index[o["key"]], a3, iso))

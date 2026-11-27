@@ -1754,6 +1754,18 @@
      "TR-35"
     ]
    }
+  },
+  {
+   "key": "Transylvania",
+   "take": {
+    "from": "Romania",
+    "iso": [
+     "RO-HD",
+     "RO-CV",
+     "RO-BV",
+     "RO-SB"
+    ]
+   }
   }
  ],
  "1900": [
@@ -3356,6 +3368,246 @@
     "from": "Afghanistan",
     "iso": [
      "AF-HER"
+    ]
+   }
+  },
+  {
+   "key": "Austria Hungary",
+   "take": {
+    "from": "Romania",
+    "iso": [
+     "RO-HD",
+     "RO-CV",
+     "RO-BV",
+     "RO-SB"
+    ]
+   }
+  },
+  {
+   "key": "Lombardy",
+   "take": {
+    "from": "Italy",
+    "iso": [
+     "IT-BG",
+     "IT-BS",
+     "IT-CO",
+     "IT-CR",
+     "IT-LC",
+     "IT-LO",
+     "IT-MB",
+     "IT-MI",
+     "IT-SO",
+     "IT-VA"
+    ]
+   }
+  },
+  {
+   "key": "Duchy of Parma",
+   "take": {
+    "from": "Italy",
+    "iso": [
+     "IT-PR",
+     "IT-PC"
+    ]
+   }
+  },
+  {
+   "key": "Duchy of Modena",
+   "take": {
+    "from": "Italy",
+    "iso": [
+     "IT-MO",
+     "IT-RE",
+     "IT-MS"
+    ]
+   }
+  },
+  {
+   "key": "Tuscany",
+   "take": {
+    "from": "Italy",
+    "iso": [
+     "IT-AR",
+     "IT-FI",
+     "IT-GR",
+     "IT-LI",
+     "IT-LU",
+     "IT-PI",
+     "IT-PO",
+     "IT-PT",
+     "IT-SI"
+    ]
+   }
+  },
+  {
+   "key": "Romagna",
+   "take": {
+    "from": "Italy",
+    "iso": [
+     "IT-BO",
+     "IT-FE",
+     "IT-RA",
+     "IT-FC",
+     "IT-RN"
+    ]
+   }
+  },
+  {
+   "key": "Marche and Umbria",
+   "take": {
+    "from": "Italy",
+    "iso": [
+     "IT-AN",
+     "IT-AP",
+     "IT-FM",
+     "IT-MC",
+     "IT-PU",
+     "IT-PG",
+     "IT-TR"
+    ]
+   }
+  },
+  {
+   "key": "Two Sicilies",
+   "take": {
+    "from": "Italy",
+    "iso": [
+     "IT-AQ",
+     "IT-CH",
+     "IT-PE",
+     "IT-TE",
+     "IT-BA",
+     "IT-BR",
+     "IT-BT",
+     "IT-FG",
+     "IT-LE",
+     "IT-TA",
+     "IT-MT",
+     "IT-PZ",
+     "IT-CS",
+     "IT-CZ",
+     "IT-KR",
+     "IT-RC",
+     "IT-VV",
+     "IT-AV",
+     "IT-BN",
+     "IT-CE",
+     "IT-NA",
+     "IT-SA",
+     "IT-CB",
+     "IT-IS",
+     "IT-AG",
+     "IT-CL",
+     "IT-CT",
+     "IT-EN",
+     "IT-ME",
+     "IT-PA",
+     "IT-RG",
+     "IT-SR",
+     "IT-TP"
+    ]
+   }
+  },
+  {
+   "key": "Savoy and Nice",
+   "take": {
+    "from": "France",
+    "iso": [
+     "FR-73",
+     "FR-74",
+     "FR-06"
+    ]
+   }
+  },
+  {
+   "key": "Wallachia",
+   "take": {
+    "from": "Romania",
+    "iso": [
+     "RO-MH",
+     "RO-DJ",
+     "RO-CL",
+     "RO-TR",
+     "RO-GR",
+     "RO-OT",
+     "RO-DB",
+     "RO-IF",
+     "RO-AG",
+     "RO-GJ",
+     "RO-VL",
+     "RO-PH",
+     "RO-BZ",
+     "RO-IL",
+     "RO-B",
+     "RO-BR"
+    ]
+   }
+  },
+  {
+   "key": "Ussuri",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "RU-PRI"
+    ]
+   }
+  },
+  {
+   "key": "Sakhalin",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "RU-SAK"
+    ],
+    "bbox": [
+     141,
+     45.8,
+     145.5,
+     54.5
+    ]
+   }
+  },
+  {
+   "key": "North Kurils",
+   "take": {
+    "from": "Imperial Japan",
+    "bbox": [
+     149,
+     45.5,
+     157.5,
+     51
+    ]
+   }
+  },
+  {
+   "key": "Ezo",
+   "take": {
+    "from": "_none",
+    "bbox": [
+     139,
+     41,
+     149,
+     46
+    ]
+   }
+  },
+  {
+   "key": "State of Buenos Aires",
+   "take": {
+    "from": "Argentina",
+    "iso": [
+     "AR-B",
+     "AR-C"
+    ]
+   }
+  },
+  {
+   "key": "Amur",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "RU-AMU",
+     "RU-YEV"
     ]
    }
   }
