@@ -262,10 +262,10 @@ F.ck73 = svg(`<rect width="640" height="480" fill="#007A3D"/>` + [...Array(15)].
 F.kg92 = svg(`<rect width="640" height="480" fill="#E8112D"/>` + [...Array(40)].map((_, i) => { const a = (2 * Math.PI * i) / 40; return `<path d="M${320 + 70 * Math.sin(a)} ${240 - 70 * Math.cos(a)}Q${320 + 115 * Math.sin(a + 0.08)} ${240 - 115 * Math.cos(a + 0.08)} ${320 + 150 * Math.sin(a)} ${240 - 150 * Math.cos(a)}" stroke="#FFEF00" stroke-width="7" fill="none"/>`; }).join("") + `<circle cx="320" cy="240" r="75" fill="#FFEF00"/><circle cx="320" cy="240" r="52" fill="#E8112D"/><path d="M272 225q48-30 96 0M272 255q48-30 96 0M300 195v90M340 195v90" stroke="#FFEF00" stroke-width="8" fill="none"/>`); // Quirguistão 1992–2023 (raios ondulados)
 F.hn26 = svg(H("#0F2D69", "#fff", "#0F2D69") + [[320, 240], [220, 195], [420, 195], [220, 285], [420, 285]].map(([x, y]) => star(x, y, 26, "#0F2D69")).join("")); // Honduras: azul-marinho desde 27/jan/2026
 // 1900–1934 (revisão de 1934 a 1900)
-const usRows = (rows) => {
+const usRows = (rows, ns = 13, nc = 7) => {
   let b = `<rect width="640" height="480" fill="#fff"/>`;
-  for (let i = 0; i < 13; i += 2) b += `<rect y="${(480 / 13) * i}" width="640" height="${480 / 13 + 0.5}" fill="#B22234"/>`;
-  b += `<rect width="290" height="${(480 / 13) * 7}" fill="#3C3B6E"/>`;
+  for (let i = 0; i < ns; i += 2) b += `<rect y="${(480 / ns) * i}" width="640" height="${480 / ns + 0.5}" fill="#B22234"/>`;
+  b += `<rect width="290" height="${(480 / ns) * nc}" fill="#3C3B6E"/>`;
   rows.forEach((n, r) => { const dx = 250 / 7, x0 = 22 + (8 - n) * dx / 2; for (let c = 0; c < n; c++) b += star(x0 + c * dx, 20 + r * (220 / (rows.length - 1)), 9, "#fff"); });
   return svg(b);
 };
@@ -394,6 +394,10 @@ F.us38 = usRows([7, 8, 8, 8, 7]);
 F.us37 = usRows([8, 7, 7, 7, 8]);
 F.us28 = usRows([7, 7, 7, 7]); // 4/jul/1846 a 3/jul/1847 (sem arranjo oficial das estrelas)
 F.us29 = usRows([6, 6, 6, 6, 5]); // 4/jul/1847 a 3/jul/1848 (sem arranjo oficial)
+F.ar_ns = svg(`<rect width="640" height="480" fill="#74ACDF"/><rect y="160" width="640" height="160" fill="#fff"/>`); // Argentina 1816–1817, sem o sol
+F.us15 = usRows([3, 3, 3, 3, 3], 15, 8); // 15 estrelas e 15 listras, 1/mai/1795 a 3/jul/1818
+F.us20 = usRows([5, 5, 5, 5]); // 4/jul/1818 a 3/jul/1819 (sem arranjo oficial)
+F.us21 = usRows([5, 6, 5, 5]); // 4/jul/1819 a 3/jul/1820 (sem arranjo oficial)
 F.us23 = usRows([6, 6, 6, 5]); // 4/jul/1820 a 3/jul/1822 (sem arranjo oficial)
 F.us24 = usRows([6, 6, 6, 6]); // 4/jul/1822 a 3/jul/1836 (sem arranjo oficial)
 F.us25 = usRows([5, 5, 5, 5, 5]); // 4/jul/1836 a 3/jul/1837 (sem arranjo oficial)

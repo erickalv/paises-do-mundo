@@ -4300,6 +4300,38 @@
    }
   },
   {
+   "key": "Florida",
+   "take": {
+    "from": "Confederate States",
+    "iso": [
+     "US-FL"
+    ]
+   }
+  },
+  {
+   "key": "Kingdom of Haiti",
+   "take": {
+    "from": "Haiti",
+    "iso": [
+     "HT-ND",
+     "HT-NE",
+     "HT-NO",
+     "HT-AR"
+    ]
+   }
+  },
+  {
+   "key": "Maratha",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "IN-MH",
+     "IN-MP",
+     "IN-CT"
+    ]
+   }
+  },
+  {
    "key": "Falkland Islands",
    "take": {
     "from": "_none",
