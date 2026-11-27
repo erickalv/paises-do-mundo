@@ -4222,6 +4222,15 @@
    }
   },
   {
+   "key": "Peshawar",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "PK-KP"
+    ]
+   }
+  },
+  {
    "key": "Falkland Islands",
    "take": {
     "from": "_none",
@@ -4377,8 +4386,7 @@
     "from": "British Raj",
     "iso": [
      "PK-PB",
-     "PK-IS",
-     "PK-KP"
+     "PK-IS"
     ]
    }
   },
