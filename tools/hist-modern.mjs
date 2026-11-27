@@ -3,7 +3,7 @@
 const G = "x:gb", F = "x:fr", P = "x:pt", BE = "x:be", NL = "x:nl", ES = "h:es45"; // Espanha franquista até 1981
 export const MODERN_FROM = 1946;
 // primeiro ano liberado na régua do app: vai descendo conforme a revisão ano a ano avança
-export const OPEN_FROM = 1741;
+export const OPEN_FROM = 1740;
 export const ROWS = [
   // ---------------- Europe
   ["GEROCC", "Alemanha (ocupada pelos Aliados)", "blank", 1946, 1948, ["DEU", "DEU~E"]],
