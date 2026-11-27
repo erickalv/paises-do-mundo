@@ -751,7 +751,8 @@ export const EVENTS = {
     { y: 1714, y1: 1820, r: { "Anglo-Egyptian Sudan": null } }, // invasão egípcia a partir de jul/1820; Sennar em 14/jun/1821
     { y: 1809, y1: 1816, r: { "Senegal FR": "Senegal (britânico)" }, f: { "Senegal FR": "x:gb" }, o: { "Senegal FR": "Reino Unido" } }, // devolvido à França em 1817
     { y: 1714, y1: 1819, r: { "Zululand": null } }, // Shaka desde 1816; Mhlatuze em 1820
-    { y: 1714, y1: 1817, m: ["Emirado de Diriyah (Primeiro Estado Saudita)", "blank", ["Riyadh", "Qassim", "Hail", "Hasa"]], o: { "Riyadh": null } }, // Diriyah rende-se em 1818
+    { y: 1796, y1: 1817, /*fixo*/ m: ["Emirado de Diriyah (Primeiro Estado Saudita)", "blank", ["Riyadh", "Qassim", "Hail", "Hasa"]], o: { "Riyadh": null } }, // fim do emirado de Bani Khalid em 1796
+    { y: 1744, y1: 1795, /*fixo*/ m: ["Emirado de Diriyah (Primeiro Estado Saudita)", "blank", ["Riyadh", "Qassim", "Hail"]], o: { "Riyadh": null } }, // fundado em 1744 (Qassim e Hail sem data checada) // Diriyah rende-se em 1818
     { y: 1818, y1: 1819, m: ["Négede (ocupação egípcia)", "h:eg_khed", ["Riyadh", "Qassim"]], o: { "Riyadh": null } }, // Ibrahim Paxá volta ao Egito em dez/1819
     { y: 1752, y1: 1818, /*fixo*/ r: { "Kashmir": "Caxemira (Império Durrani)" }, f: { "Kashmir": "blank" }, o: { "Kashmir": null } },
     { y: 1714, y1: 1816, r: { "Maratha": "Confederação Maratha" }, f: { "Maratha": "blank" }, o: { "Maratha": null } },
@@ -4657,7 +4658,7 @@ export const EVENTS = {
     ...perYear(1740, 1740, { m: [null, null, ["Finland", "Kymmene"]] }),
     ...perYear(1740, 1740, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Russo-Sueca desde ago/1741; Finlândia ocupada em 1742
     ...perYear(1740, 1740, { r: { "Silesia": "Silésia (ocupação prussiana)" }, f: { "Silesia": "blank" }, o: { "Silesia": null } }), // invadida em 16/dez/1740; cedida em Breslau (1742)
-    ...perYear(1740, 1740, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1740, 1740, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     // revisão 1739 (situação em 31/dez; fontes: Wikipedia)
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1739, 1739, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
@@ -4746,7 +4747,7 @@ export const EVENTS = {
     ...perYear(1739, 1739, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1739, 1739, { m: [null, null, ["Finland", "Kymmene"]] }),
     ...perYear(1739, 1739, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Russo-Sueca desde ago/1741; Finlândia ocupada em 1742
-    ...perYear(1739, 1739, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1739, 1739, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1739, 1739, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     // revisão 1738 (situação em 31/dez; fontes: Wikipedia)
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
@@ -4836,7 +4837,7 @@ export const EVENTS = {
     ...perYear(1738, 1738, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1738, 1738, { m: [null, null, ["Finland", "Kymmene"]] }),
     ...perYear(1738, 1738, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Russo-Sueca desde ago/1741; Finlândia ocupada em 1742
-    ...perYear(1738, 1738, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1738, 1738, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1738, 1738, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1738, 1738, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     // revisão 1737 (situação em 31/dez; fontes: Wikipedia)
@@ -4928,7 +4929,7 @@ export const EVENTS = {
     ...perYear(1737, 1737, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1737, 1737, { m: [null, null, ["Finland", "Kymmene"]] }),
     ...perYear(1737, 1737, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Russo-Sueca desde ago/1741; Finlândia ocupada em 1742
-    ...perYear(1737, 1737, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1737, 1737, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1737, 1737, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1737, 1737, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     ...perYear(1737, 1737, { r: { "Afghanistan": "Kandahar (dinastia Hotak)" }, f: { "Afghanistan": "blank" }, o: { "Afghanistan": null } }), // Kandahar cai diante de Nader Xá em 24/mar/1738
@@ -5021,7 +5022,7 @@ export const EVENTS = {
     ...perYear(1736, 1736, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1736, 1736, { m: [null, null, ["Finland", "Kymmene"]] }),
     ...perYear(1736, 1736, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Russo-Sueca desde ago/1741; Finlândia ocupada em 1742
-    ...perYear(1736, 1736, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1736, 1736, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1736, 1736, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1736, 1736, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     ...perYear(1736, 1736, { r: { "Afghanistan": "Kandahar (dinastia Hotak)" }, f: { "Afghanistan": "blank" }, o: { "Afghanistan": null } }), // Kandahar cai diante de Nader Xá em 24/mar/1738
@@ -5115,7 +5116,7 @@ export const EVENTS = {
     ...perYear(1735, 1735, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1735, 1735, { m: [null, null, ["Finland", "Kymmene"]] }),
     ...perYear(1735, 1735, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Russo-Sueca desde ago/1741; Finlândia ocupada em 1742
-    ...perYear(1735, 1735, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1735, 1735, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1735, 1735, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1735, 1735, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     ...perYear(1735, 1735, { r: { "Afghanistan": "Kandahar (dinastia Hotak)" }, f: { "Afghanistan": "blank" }, o: { "Afghanistan": null } }), // Kandahar cai diante de Nader Xá em 24/mar/1738
@@ -5209,7 +5210,7 @@ export const EVENTS = {
     ...perYear(1734, 1734, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1734, 1734, { m: [null, null, ["Finland", "Kymmene"]] }),
     ...perYear(1734, 1734, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Russo-Sueca desde ago/1741; Finlândia ocupada em 1742
-    ...perYear(1734, 1734, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1734, 1734, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1734, 1734, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1734, 1734, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     ...perYear(1734, 1734, { r: { "Afghanistan": "Kandahar (dinastia Hotak)" }, f: { "Afghanistan": "blank" }, o: { "Afghanistan": null } }), // Kandahar cai diante de Nader Xá em 24/mar/1738
@@ -5306,7 +5307,7 @@ export const EVENTS = {
     ...perYear(1733, 1733, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1733, 1733, { m: [null, null, ["Finland", "Kymmene"]] }),
     ...perYear(1733, 1733, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Russo-Sueca desde ago/1741; Finlândia ocupada em 1742
-    ...perYear(1733, 1733, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1733, 1733, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1733, 1733, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1733, 1733, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     ...perYear(1733, 1733, { r: { "Afghanistan": "Kandahar (dinastia Hotak)" }, f: { "Afghanistan": "blank" }, o: { "Afghanistan": null } }), // Kandahar cai diante de Nader Xá em 24/mar/1738
@@ -5403,7 +5404,7 @@ export const EVENTS = {
     ...perYear(1732, 1732, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1732, 1732, { m: [null, null, ["Finland", "Kymmene"]] }),
     ...perYear(1732, 1732, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Russo-Sueca desde ago/1741; Finlândia ocupada em 1742
-    ...perYear(1732, 1732, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1732, 1732, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1732, 1732, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1732, 1732, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     ...perYear(1732, 1732, { r: { "Afghanistan": "Kandahar (dinastia Hotak)" }, f: { "Afghanistan": "blank" }, o: { "Afghanistan": null } }), // Kandahar cai diante de Nader Xá em 24/mar/1738
@@ -5500,7 +5501,7 @@ export const EVENTS = {
     ...perYear(1731, 1731, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1731, 1731, { m: [null, null, ["Finland", "Kymmene"]] }),
     ...perYear(1731, 1731, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Russo-Sueca desde ago/1741; Finlândia ocupada em 1742
-    ...perYear(1731, 1731, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1731, 1731, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1731, 1731, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1731, 1731, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     ...perYear(1731, 1731, { r: { "Afghanistan": "Kandahar (dinastia Hotak)" }, f: { "Afghanistan": "blank" }, o: { "Afghanistan": null } }), // Kandahar cai diante de Nader Xá em 24/mar/1738
@@ -5597,7 +5598,7 @@ export const EVENTS = {
     ...perYear(1730, 1730, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1730, 1730, { m: [null, null, ["Finland", "Kymmene"]] }),
     ...perYear(1730, 1730, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Russo-Sueca desde ago/1741; Finlândia ocupada em 1742
-    ...perYear(1730, 1730, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1730, 1730, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1730, 1730, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1730, 1730, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     ...perYear(1730, 1730, { r: { "Afghanistan": "Kandahar (dinastia Hotak)" }, f: { "Afghanistan": "blank" }, o: { "Afghanistan": null } }), // Kandahar cai diante de Nader Xá em 24/mar/1738
@@ -5694,7 +5695,7 @@ export const EVENTS = {
     ...perYear(1729, 1729, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1729, 1729, { m: [null, null, ["Finland", "Kymmene"]] }),
     ...perYear(1729, 1729, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Russo-Sueca desde ago/1741; Finlândia ocupada em 1742
-    ...perYear(1729, 1729, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1729, 1729, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1729, 1729, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1729, 1729, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     ...perYear(1729, 1729, { r: { "Afghanistan": "Kandahar (dinastia Hotak)" }, f: { "Afghanistan": "blank" }, o: { "Afghanistan": null } }), // Kandahar cai diante de Nader Xá em 24/mar/1738
@@ -5790,7 +5791,7 @@ export const EVENTS = {
     ...perYear(1728, 1728, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1728, 1728, { m: [null, null, ["Finland", "Kymmene"]] }),
     ...perYear(1728, 1728, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Russo-Sueca desde ago/1741; Finlândia ocupada em 1742
-    ...perYear(1728, 1728, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1728, 1728, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1728, 1728, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1728, 1728, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     ...perYear(1728, 1728, { m: [null, null, ["Austria Hungary", "Oltenia"]] }), // Banato de Craiova habsburgo desde Passarowitz (1718)
@@ -5887,7 +5888,7 @@ export const EVENTS = {
     ...perYear(1727, 1727, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1727, 1727, { m: [null, null, ["Finland", "Kymmene"]] }),
     ...perYear(1727, 1727, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Russo-Sueca desde ago/1741; Finlândia ocupada em 1742
-    ...perYear(1727, 1727, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1727, 1727, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1727, 1727, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1727, 1727, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     ...perYear(1727, 1727, { m: [null, null, ["Austria Hungary", "Oltenia"]] }), // Banato de Craiova habsburgo desde Passarowitz (1718)
@@ -5984,7 +5985,7 @@ export const EVENTS = {
     ...perYear(1726, 1726, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1726, 1726, { m: [null, null, ["Finland", "Kymmene"]] }),
     ...perYear(1726, 1726, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Russo-Sueca desde ago/1741; Finlândia ocupada em 1742
-    ...perYear(1726, 1726, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1726, 1726, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1726, 1726, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1726, 1726, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     ...perYear(1726, 1726, { m: [null, null, ["Austria Hungary", "Oltenia"]] }), // Banato de Craiova habsburgo desde Passarowitz (1718)
@@ -6081,7 +6082,7 @@ export const EVENTS = {
     ...perYear(1725, 1725, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1725, 1725, { m: [null, null, ["Finland", "Kymmene"]] }),
     ...perYear(1725, 1725, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Russo-Sueca desde ago/1741; Finlândia ocupada em 1742
-    ...perYear(1725, 1725, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1725, 1725, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1725, 1725, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1725, 1725, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     ...perYear(1725, 1725, { m: [null, null, ["Austria Hungary", "Oltenia"]] }), // Banato de Craiova habsburgo desde Passarowitz (1718)
@@ -6178,7 +6179,7 @@ export const EVENTS = {
     ...perYear(1724, 1724, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1724, 1724, { m: [null, null, ["Finland", "Kymmene"]] }),
     ...perYear(1724, 1724, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Russo-Sueca desde ago/1741; Finlândia ocupada em 1742
-    ...perYear(1724, 1724, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1724, 1724, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1724, 1724, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1724, 1724, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     ...perYear(1724, 1724, { m: [null, null, ["Austria Hungary", "Oltenia"]] }), // Banato de Craiova habsburgo desde Passarowitz (1718)
@@ -6275,7 +6276,7 @@ export const EVENTS = {
     ...perYear(1723, 1723, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1723, 1723, { m: [null, null, ["Finland", "Kymmene"]] }),
     ...perYear(1723, 1723, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Russo-Sueca desde ago/1741; Finlândia ocupada em 1742
-    ...perYear(1723, 1723, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1723, 1723, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1723, 1723, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1723, 1723, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     ...perYear(1723, 1723, { m: [null, null, ["Austria Hungary", "Oltenia"]] }), // Banato de Craiova habsburgo desde Passarowitz (1718)
@@ -6373,7 +6374,7 @@ export const EVENTS = {
     ...perYear(1722, 1722, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1722, 1722, { m: [null, null, ["Finland", "Kymmene"]] }),
     ...perYear(1722, 1722, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Russo-Sueca desde ago/1741; Finlândia ocupada em 1742
-    ...perYear(1722, 1722, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1722, 1722, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1722, 1722, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1722, 1722, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     ...perYear(1722, 1722, { m: [null, null, ["Austria Hungary", "Oltenia"]] }), // Banato de Craiova habsburgo desde Passarowitz (1718)
@@ -6471,7 +6472,7 @@ export const EVENTS = {
     ...perYear(1721, 1721, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1721, 1721, { m: [null, null, ["Finland", "Kymmene"]] }),
     ...perYear(1721, 1721, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // Guerra Russo-Sueca desde ago/1741; Finlândia ocupada em 1742
-    ...perYear(1721, 1721, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1721, 1721, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1721, 1721, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1721, 1721, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     ...perYear(1721, 1721, { m: [null, null, ["Austria Hungary", "Oltenia"]] }), // Banato de Craiova habsburgo desde Passarowitz (1718)
@@ -6569,7 +6570,7 @@ export const EVENTS = {
     ...perYear(1720, 1720, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
     ...perYear(1720, 1720, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1720, 1720, { m: [null, null, ["Finland", "Kymmene"]] }),
-    ...perYear(1720, 1720, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1720, 1720, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1720, 1720, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1720, 1720, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     ...perYear(1720, 1720, { m: [null, null, ["Austria Hungary", "Oltenia"]] }), // Banato de Craiova habsburgo desde Passarowitz (1718)
@@ -6669,7 +6670,7 @@ export const EVENTS = {
     ...perYear(1719, 1719, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
     ...perYear(1719, 1719, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1719, 1719, { m: [null, null, ["Finland", "Kymmene"]] }),
-    ...perYear(1719, 1719, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1719, 1719, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1719, 1719, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1719, 1719, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     ...perYear(1719, 1719, { m: [null, null, ["Austria Hungary", "Oltenia"]] }), // Banato de Craiova habsburgo desde Passarowitz (1718)
@@ -6770,7 +6771,7 @@ export const EVENTS = {
     ...perYear(1718, 1718, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
     ...perYear(1718, 1718, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1718, 1718, { m: [null, null, ["Finland", "Kymmene"]] }),
-    ...perYear(1718, 1718, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1718, 1718, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1718, 1718, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1718, 1718, { m: [null, null, ["Austria Hungary", "Habsburg Serbia"]] }), // Reino da Sérvia habsburgo desde Passarowitz (21/jul/1718)
     ...perYear(1718, 1718, { m: [null, null, ["Austria Hungary", "Oltenia"]] }), // Banato de Craiova habsburgo desde Passarowitz (1718)
@@ -6871,7 +6872,7 @@ export const EVENTS = {
     ...perYear(1717, 1717, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
     ...perYear(1717, 1717, { m: [null, null, ["Bengal Subah", "Orissa"]] }), // Orissa sob os nababos de Bengala; invasões maratas de 1742 a 1751
     ...perYear(1717, 1717, { m: [null, null, ["Finland", "Kymmene"]] }),
-    ...perYear(1717, 1717, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1717, 1717, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1717, 1717, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1717, 1717, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1717, 1717, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
@@ -6972,7 +6973,7 @@ export const EVENTS = {
     ...perYear(1716, 1716, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
     ...perYear(1716, 1716, { m: [null, null, ["British Raj", "Bengal Subah", "Orissa"]] }), // Bengala e Orissa ainda províncias mogóis; Murshid Quli Khan nababo de 1717
     ...perYear(1716, 1716, { m: [null, null, ["Finland", "Kymmene"]] }),
-    ...perYear(1716, 1716, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1716, 1716, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1716, 1716, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1716, 1716, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1716, 1716, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
@@ -7073,7 +7074,7 @@ export const EVENTS = {
     ...perYear(1715, 1715, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
     ...perYear(1715, 1715, { m: [null, null, ["British Raj", "Bengal Subah", "Orissa"]] }), // Bengala e Orissa ainda províncias mogóis; Murshid Quli Khan nababo de 1717
     ...perYear(1715, 1715, { m: [null, null, ["Finland", "Kymmene"]] }),
-    ...perYear(1715, 1715, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1715, 1715, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1715, 1715, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1715, 1715, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1715, 1715, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
@@ -7174,7 +7175,7 @@ export const EVENTS = {
     ...perYear(1714, 1714, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
     ...perYear(1714, 1714, { m: [null, null, ["British Raj", "Bengal Subah", "Orissa"]] }), // Bengala e Orissa ainda províncias mogóis; Murshid Quli Khan nababo de 1717
     ...perYear(1714, 1714, { m: [null, null, ["Finland", "Kymmene"]] }),
-    ...perYear(1714, 1714, { r: { "Bohemia": "Boêmia (parcialmente ocupada pela França e pela Baviera)" }, f: { "Bohemia": "h:at_hab" }, o: { "Bohemia": null } }), // Praga tomada em 26/nov/1741; retomada em dez/1742
+    ...perYear(1714, 1714, { m: [null, null, ["Austria Hungary", "Bohemia"]] }),
     ...perYear(1714, 1714, { m: [null, null, ["Austria Hungary", "Silesia"]] }), // Silésia habsburga até a invasão prussiana (16/dez/1740)
     ...perYear(1714, 1714, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1714, 1714, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
@@ -7190,6 +7191,33 @@ export const EVENTS = {
     ...perYear(1714, 1714, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
     // Qing: sem bandeira oficial antes de 1862; a triangular (1862) não é descrita em detalhe; retangular promulgada em 1888 (um evento por ano para vencer as fusões)
     ...Array.from({ length: 174 }, (_, i) => ({ y: 1714 + i, y1: 1714 + i, f: { "Manchu Empire": "blank" } })),
+    // correções de anacronismos (aplicadas por último; fontes: Wikipedia)
+    ...perYear(1600, 1755, { r: { "Seychelles": null } }), /*fixo*/ // posse francesa em 1756
+    ...perYear(1710, 1714, { r: { "Mauritius": null } }), /*fixo*/ // holandeses saíram em 1710; posse francesa em 20/set/1715
+    ...perYear(1713, 1762, { r: { "Saint Pierre and Miquelon": "Saint-Pierre e Miquelon (britânica)" }, f: { "Saint Pierre and Miquelon": "x:gb" }, o: { "Saint Pierre and Miquelon": "Reino da Grã-Bretanha" } }), /*fixo*/ // cedidas em Utrecht (1713); devolvidas em 1763
+    ...perYear(1600, 1787, { r: { "French Polynesia": "Taiti e ilhas da Polinésia (chefias rivais)" }, f: { "French Polynesia": "blank" }, o: { "French Polynesia": null } }), /*fixo*/ // Reino do Taiti fundado por Pōmare I em 1788/91
+    ...perYear(1600, 1767, { r: { "Nepal": "Reinos do Nepal (Malla, Gorkha e outros)" }, f: { "Nepal": "blank" }, o: { "Nepal": null } }), /*fixo*/ // unificação por Prithvi Narayan Shah em 25/set/1768
+    ...perYear(1631, 1726, { r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }), /*fixo*/ // Chiang Mai revoltou-se em 1727
+    ...perYear(1714, 1770, { r: { "French Indochina": "Đại Việt (dinastia Lê; senhores Trịnh no norte e Nguyễn no sul)" }, f: { "French Indochina": "blank" }, o: { "French Indochina": null } }), /*fixo*/ // revolta Tây Sơn em 1771
+    ...perYear(1600, 1743, { r: { "Riyadh": null, "Qassim": null, "Hail": null } }), /*fixo*/ // Emirado de Diriyah desde 1744
+    ...perYear(1669, 1795, { r: { "Hasa": "Emirado de Bani Khalid (Hasa e Qatif)" }, f: { "Hasa": "blank" }, o: { "Hasa": null } }), /*fixo*/ // 1669–1796
+    ...perYear(1669, 1751, { m: [null, null, ["Hasa", "Kuwait"]] }), /*fixo*/ // xeques de Bani Khalid; Al Sabah desde 1752
+    ...perYear(1602, 1716, { m: [null, null, ["Persia", "Bahrain"]] }), /*fixo*/ // Bahrein safávida de 1602 a 1717
+    ...perYear(1717, 1735, { r: { "Bahrain": "Bahrein (disputado entre Omã, Pérsia e os huwala)" }, f: { "Bahrain": "blank" }, o: { "Bahrain": null } }), /*fixo*/ // invasão omani de 1717
+    ...perYear(1736, 1782, { m: [null, null, ["Persia", "Bahrain"]] }), /*fixo*/ // reconquista persa em 1736; Bani Utbah em 28/jul/1783
+    ...perYear(1624, 1743, { r: { "Oman": "Imamato de Omã (iarubidas)" }, f: { "Oman": "blank" }, o: { "Oman": null } }), /*fixo*/ // Ahmad bin Said eleito imã em 1744
+    ...perYear(1600, 1776, { r: { "Venezuela": "Províncias da Venezuela (Espanha)" }, f: { "Venezuela": "x:es" }, o: { "Venezuela": "Espanha" } }), /*fixo*/ // Capitania-Geral criada em 8/set/1777
+    ...perYear(1739, 1776, { m: [null, null, ["Colombia", "Venezuela"]] }), /*fixo*/ // províncias separadas do Vice-Reino em 1777
+    ...perYear(1600, 1716, { m: [null, null, ["Peru", "Colombia", "Panama", "Ecuador"]] }), /*fixo*/ // Vice-Reino de Nova Granada criado em 27/mai/1717
+    ...perYear(1724, 1738, { m: [null, null, ["Peru", "Colombia", "Panama", "Ecuador"]] }), /*fixo*/ // suprimido em 5/nov/1723; restabelecido em 20/ago/1739
+    ...perYear(1714, 1731, { r: { "United States of America": "Colônias britânicas da América do Norte" } }), /*fixo*/ // Geórgia (13ª colônia) em 1732
+    ...perYear(1600, 1744, { r: { "Swaziland": null } }), /*fixo*/ // reino suazi fundado em meados do séc. XVIII (Ngwane III)
+    ...perYear(1600, 1799, { r: { "Orange Free State": null } }), /*fixo*/ // Klaarwater/Griquatown no início do séc. XIX
+    ...perYear(1600, 1788, { r: { "Oregon": null } }), /*fixo*/ // disputa a partir da crise de Nootka (1789–1794)
+    ...perYear(1600, 1854, { r: { "Sakhalin": null } }), /*fixo*/ // condomínio russo-japonês só no Tratado de Shimoda (1855)
+    ...perYear(1600, 1809, { r: { "Madagascar": "Reinos de Madagascar (merinas, sakalavas e outros)" }, f: { "Madagascar": "blank" }, o: { "Madagascar": null } }), /*fixo*/ // Andrianampoinimerina desde 1787; Radama I (1810–1828) quase unificou a ilha
+    ...perYear(1667, 1773, { r: { "Grand Duchy of Oldenburg": "Condados de Oldemburgo e Delmenhorst (Dinamarca)" }, f: { "Grand Duchy of Oldenburg": "x:dk" }, o: { "Grand Duchy of Oldenburg": "Dinamarca" } }), /*fixo*/ // união pessoal 1667–1773; ducado em 1774
+    ...perYear(1714, 1772, { r: { "Duchy of Holstein": "Ducado de Holstein (partes ducal de Gottorp e real dinamarquesa)" }, f: { "Duchy of Holstein": "blank" }, o: { "Duchy of Holstein": null } }), /*fixo*/ // Tratado de Tsarskoye Selo (1773)
   ],
   1914: [
     ...ISLES[1914],
