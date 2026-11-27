@@ -4336,6 +4336,47 @@
    }
   },
   {
+   "key": "Corsica",
+   "take": {
+    "from": "France",
+    "iso": [
+     "FR-2A",
+     "FR-2B"
+    ]
+   }
+  },
+  {
+   "key": "Trinidad",
+   "take": {
+    "from": "British West Indies",
+    "iso": [
+     "TT-TUP",
+     "TT-SJL",
+     "TT-DMN",
+     "TT-POS",
+     "TT-CHA",
+     "TT-CTT",
+     "TT-SFO",
+     "TT-PED",
+     "TT-SIP",
+     "TT-PTF",
+     "TT-PRT",
+     "TT-RCM",
+     "TT-SGE",
+     "TT-ARI"
+    ]
+   }
+  },
+  {
+   "key": "Saint Lucia",
+   "take": {
+    "from": "British West Indies",
+    "adm0": [
+     "LCA"
+    ]
+   }
+  },
+  {
    "key": "Congress Poland",
    "take": {
     "from": "Russian Empire",
@@ -4345,6 +4386,16 @@
      "PL-LU",
      "PL-SK",
      "PL-PD"
+    ]
+   }
+  },
+  {
+   "key": "West Galicia",
+   "take": {
+    "from": "Congress Poland",
+    "iso": [
+     "PL-LU",
+     "PL-SK"
     ]
    }
   },
