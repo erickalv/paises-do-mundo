@@ -4917,6 +4917,15 @@
    }
   },
   {
+   "key": "Morea",
+   "take": {
+    "from": "Greece",
+    "iso": [
+     "GR-J"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
@@ -5634,6 +5643,45 @@
     "name": "Sierra Leone",
     "adm0": [
      "SLE"
+    ]
+   }
+  },
+  {
+   "key": "Achaea",
+   "cut": {
+    "bbox": [
+     20.9,
+     37.55,
+     22.6,
+     38.31
+    ],
+    "adm0": [
+     "GRC"
+    ],
+    "iso_not": [
+     "GR-J",
+     "GR-F",
+     "GR-A1",
+     "GR-H",
+     "GR-D",
+     "GR-E",
+     "GR-L",
+     "GR-M",
+     "GR-K"
+    ]
+   }
+  },
+  {
+   "key": "Tinos",
+   "cut": {
+    "bbox": [
+     24.95,
+     37.5,
+     25.3,
+     37.7
+    ],
+    "adm0": [
+     "GRC"
     ]
    }
   }
