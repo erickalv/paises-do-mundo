@@ -4457,6 +4457,53 @@
    }
   },
   {
+   "key": "Crimea",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "UA-43",
+     "UA-40"
+    ]
+   }
+  },
+  {
+   "key": "Grenada",
+   "take": {
+    "from": "British West Indies",
+    "adm0": [
+     "GRD"
+    ]
+   }
+  },
+  {
+   "key": "Saint Vincent",
+   "take": {
+    "from": "British West Indies",
+    "adm0": [
+     "VCT"
+    ]
+   }
+  },
+  {
+   "key": "Tobago",
+   "take": {
+    "from": "British West Indies",
+    "iso": [
+     "TT-ETO",
+     "TT-WTO"
+    ]
+   }
+  },
+  {
+   "key": "Bahamas",
+   "take": {
+    "from": "British West Indies",
+    "adm0": [
+     "BHS"
+    ]
+   }
+  },
+  {
    "key": "Congress Poland",
    "take": {
     "from": "Russian Empire",
