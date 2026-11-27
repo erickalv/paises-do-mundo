@@ -495,6 +495,7 @@ export const EVENTS = {
       "Antigua and Barbuda": "x:gb", "Saint Kitts and Nevis": "x:gb", "Montserrat": "x:gb", "Anguilla": "x:gb",
       "Saint Martin": "x:fr", "Saint Barthelemy": "x:fr" } },
     { y: 1930, m: ["Ruanda-Urundi", "x:be", ["Rwanda (Belgium)", "Burundi"]] },
+    { y: 1930, r: { "Mongolia": "República Popular da Mongólia" } },
     { y: 1930, r: { "Danzig": "Cidade Livre de Danzig (Liga das Nações)" }, f: { "Danzig": "h:danzig" }, o: { "Danzig": null } }, // forma do mapa de 1930
     { y: 1930, r: { "Ireland": "Estado Livre Irlandês", "Italy": "Reino da Itália" }, f: { "Ireland": "x:ie", "Hungary": "h:hu_k" }, o: { "Ireland": null } },
     { y: 1937, r: { "Ireland": "Irlanda" } }, // constituição de 29/dez/1937
@@ -517,6 +518,7 @@ export const EVENTS = {
       "Manchukuo": "h:manchukuo", "Tuva": "blank", "Iceland": "x:is", "Lebanon": "x:fr", "Jordan": "x:gb", "Kuwait": "h:kw21", "Bahrain": "x:gb", "Cyprus": "x:gb", "Malta": "x:gb",
       "Gibraltar": "x:gb", "Macau": "x:pt", "Goa": "x:pt", "French India": "x:fr", "Portuguese Timor": "x:pt", "Maldives": "x:gb", "Andaman and Nicobar": "x:gb", "Burma": "x:gb",
       "Bhutan": "blank", "Brunei": "h:bn06" } },
+    { y: 1938, y1: 1944, r: { "Mongolia": "República Popular da Mongólia" } },
     { y: 1940, y1: 1944, f: { "Mongolia": "h:mn40" } }, { y: 1945, f: { "Mongolia": "h:mn_old" } }, // 1940: vermelha com emblema (simplificado); nova em 10/jul/1945
     { y: 1938, y1: 1938, r: { "Hatay": "Estado de Hatay" }, f: { "Hatay": "h:hatay" } }, // 2/set/1938 a jun/1939
     { y: 1939, m: ["Turquia", "x:tr", ["Turkey", "Hatay"]] },
@@ -652,7 +654,7 @@ export const EVENTS = {
     { y: 1945, f: { "Burma": "x:gb" } },
     { y: 1945, m: ["Índia Britânica", "x:gb", ["India", "Pakistan", "Bangladesh"]] },
     // revisão 1945 (situação em 31/dez/1945)
-    { y: 1945, r: { "Egypt": "Reino do Egito", "Ethiopia": "Império da Etiópia", "Manchuria": "Manchúria (ocupação soviética)", "Somalia": "Somália (adm. britânica)",
+    { y: 1945, r: { "Mongolia": "República Popular da Mongólia", "Egypt": "Reino do Egito", "Ethiopia": "Império da Etiópia", "Manchuria": "Manchúria (ocupação soviética)", "Somalia": "Somália (adm. britânica)",
       "Saar Protectorate": "Sarre (ocupação francesa)", "Rhodesia": "Rodésia do Sul", "Guyana": "Guiana Britânica", "Dutch Guinea": "Nova Guiné Holandesa",
       "Papua New Guinea": "Papua e Nova Guiné (Austrália)", "American Samoa": "Samoa Americana", "Samoa": "Samoa Ocidental (tutela da Nova Zelândia)",
       "Tonga": "Tonga (protetorado britânico)", "Wallis and Futuna Islands": "Wallis e Futuna", "Turks and Caicos Islands": "Ilhas Turks e Caicos",
