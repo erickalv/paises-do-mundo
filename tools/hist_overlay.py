@@ -155,10 +155,10 @@ for year in YEARS:
         if "cut" in o:
             c = o["cut"]
             src = json.load(open(f"dl/hb/world_{c['map']}.geojson"))
-            shp = unary_union([shape(f["geometry"]) for f in src["features"] if f["properties"].get("NAME") == c["name"]]).buffer(0)
+            shp = unary_union([shape(f["geometry"]).buffer(0) for f in src["features"] if f["properties"].get("NAME") == c["name"]]).buffer(0)
             new = []
             for g, u, a3, iso in out:
-                if not g.intersects(shp) or ("adm0" in c and a3 not in c["adm0"]) or iso in c.get("iso_not", []):
+                if ("adm0" in c and a3 not in c["adm0"]) or iso in c.get("iso_not", []) or not g.intersects(shp):
                     new.append((g, u, a3, iso)); continue
                 inside = polys_only(g.intersection(shp)); rest = polys_only(g.difference(shp))
                 if inside is not None: new.append((inside, key_index[o["key"]], a3, iso))

@@ -4473,6 +4473,64 @@
    }
   },
   {
+   "key": "Galicia 1772",
+   "take": {
+    "from": "Austria Hungary",
+    "iso": [
+     "UA-46",
+     "UA-26",
+     "PL-PK",
+     "PL-MA"
+    ]
+   }
+  },
+  {
+   "key": "Polish Livonia",
+   "take": {
+    "from": "Russian Empire",
+    "region": [
+     "LVA/Latgale"
+    ]
+   }
+  },
+  {
+   "key": "East Belarus",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "BY-VI",
+     "BY-MA",
+     "BY-HO"
+    ]
+   }
+  },
+  {
+   "key": "Royal Prussia",
+   "cut": {
+    "map": 1715,
+    "name": "Polish–Lithuanian Commonwealth",
+    "adm0": [
+     "POL"
+    ],
+    "iso_not": [
+     "PL-DS",
+     "PL-KP",
+     "PL-LU",
+     "PL-LB",
+     "PL-LD",
+     "PL-MA",
+     "PL-MZ",
+     "PL-OP",
+     "PL-PK",
+     "PL-PD",
+     "PL-SL",
+     "PL-SK",
+     "PL-WP",
+     "PL-ZP"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
