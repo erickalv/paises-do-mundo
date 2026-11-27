@@ -585,7 +585,7 @@ export const EVENTS = {
     { y: 1939, y1: 1940, m: ["União Soviética", "h:su", ["USSR", "Eastern Poland"]] },
     { y: 1944, r: { "Poland": "Polônia (ocupada pela Alemanha)", "Eastern Poland 1944": "Polônia (Governo Provisório)" }, f: { "Poland": "h:de_nazi", "Eastern Poland 1944": "x:pl" } },
     { y: 1941, y1: 1943, r: { "Eastern Poland": "Leste da Polônia de 1939 (ocupado pela Alemanha)" }, f: { "Eastern Poland": "h:de_nazi" }, o: { "Eastern Poland": null } },
-    { y: 1940, y1: 1940, m: ["União Soviética", "h:su", ["USSR", "Estonia", "Latvia", "Lithuania", "Vilnius region", "Bessarabia", "Finnish Karelia"]] },
+    { y: 1940, y1: 1940, m: ["União Soviética", "h:su", ["USSR", "Estonia", "Latvia", "Courland", "Lithuania", "Vilnius region", "Bessarabia", "Finnish Karelia"]] },
     { y: 1941, y1: 1943, r: { "Estonia": "Estônia (ocupada pela Alemanha)", "Latvia": "Letônia (ocupada pela Alemanha)", "Lithuania": "Lituânia (ocupada pela Alemanha)",
       "Belarusian SSR": "Bielorrússia soviética (ocupada pela Alemanha)" },
       f: { "Estonia": "h:de_nazi", "Latvia": "h:de_nazi", "Lithuania": "h:de_nazi", "Belarusian SSR": "h:de_nazi" },
@@ -594,10 +594,14 @@ export const EVENTS = {
     { y: 1941, y1: 1942, m: ["Ucrânia soviética (ocupada pela Alemanha)", "h:de_nazi", ["Ukrainian SSR", "Ukrainian SSR east", "Crimea"]] },
     { y: 1943, y1: 1943, m: ["Ucrânia soviética (ocupada pela Alemanha)", "h:de_nazi", ["Ukrainian SSR", "Crimea"]] }, // margem esquerda do Dnieper e Kiev retomadas em 1943
     { y: 1941, y1: 1943, o: { "Ukrainian SSR": null } },
-    { y: 1938, y1: 1940, m: ["União Soviética", "h:su", ["USSR", "Belarusian SSR", "Ukrainian SSR", "Ukrainian SSR east", "Crimea"]] },
+    { y: 1938, y1: 1940, m: ["União Soviética", "h:su", ["USSR", "Belarusian SSR", "Ukrainian SSR", "Ukrainian SSR east", "Crimea", "Transnistria"]] },
     { y: 1941, y1: 1942, m: ["União Soviética", "h:su", ["USSR"]] },
     { y: 1943, y1: 1943, m: ["União Soviética", "h:su", ["USSR", "Ukrainian SSR east"]] },
-    { y: 1944, m: ["União Soviética", "h:su", ["USSR", "Estonia", "Latvia", "Lithuania", "Vilnius region", "Eastern Poland", "Belarusian SSR", "Ukrainian SSR", "Ukrainian SSR east", "Crimea", "Bessarabia", "Finnish Karelia"]] },
+    { y: 1944, m: ["União Soviética", "h:su", ["USSR", "Estonia", "Latvia", "Lithuania", "Vilnius region", "Eastern Poland", "Belarusian SSR", "Ukrainian SSR", "Ukrainian SSR east", "Crimea", "Bessarabia", "Finnish Karelia", "Transnistria"]] },
+    { y: 1938, y1: 1939, m: ["Letônia", "x:lv", ["Latvia", "Courland"]] },
+    { y: 1941, y1: 1943, m: ["Letônia (ocupada pela Alemanha)", "h:de_nazi", ["Latvia", "Courland"]] },
+    { y: 1944, r: { "Courland": "Bolsão da Curlândia (ocupado pela Alemanha)" }, f: { "Courland": "h:de_nazi" }, o: { "Courland": null } }, // out/1944 a mai/1945; aproximado pela região de Kurzeme
+    { y: 1941, y1: 1943, r: { "Transnistria": "Transnístria (ocupada pela Romênia)" }, f: { "Transnistria": "x:ro" }, o: { "Transnistria": null } }, // 19/ago/1941 a abr/1944 (Odessa retomada em 10/abr/1944); aproximada pela região de Odessa e margem esquerda do Dniestre
     { y: 1938, y1: 1939, m: ["Romênia", "x:ro", ["Romania", "Bessarabia", "Southern Dobruja", "Northern Transylvania"]] },
     { y: 1940, y1: 1940, m: ["Romênia", "x:ro", ["Romania"]] },
     { y: 1941, y1: 1943, m: ["Romênia", "x:ro", ["Romania", "Bessarabia"]] }, // jul/1941
@@ -714,7 +718,11 @@ export function buildSnapshots(OUT) {
     }
     if (frag.keys.length !== keys.length || frag.keys.some((k, i) => k !== keys[i])) throw new Error("unit order differs in " + sy);
     const landSr = new Array(keys.length).fill(0);
-    for (const f of frag.features) { const a = geoArea(f); landSr[f.properties.u] += Math.min(a, 4 * Math.PI - a); }
+    // area per polygon: a multipolygon whose parts wind differently would otherwise come out wrong
+    for (const f of frag.features) {
+      const ps = f.geometry.type === "Polygon" ? [f.geometry.coordinates] : f.geometry.coordinates;
+      for (const p of ps) { const a = geoArea({ type: "Polygon", coordinates: p }); landSr[f.properties.u] += Math.min(a, 4 * Math.PI - a); }
+    }
     units.forEach((u, i) => { u.sr = landSr[i]; });
     if (ovr.length) {
       // a label point left on land given to another unit moves into the unit's biggest piece

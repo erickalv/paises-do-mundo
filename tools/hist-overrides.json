@@ -745,6 +745,33 @@
      "CN-SH"
     ]
    }
+  },
+  {
+   "key": "Courland",
+   "take": {
+    "from": "Latvia",
+    "region": [
+     "LVA/Kurzeme"
+    ]
+   }
+  },
+  {
+   "key": "Transnistria",
+   "take": {
+    "from": "Ukrainian SSR",
+    "iso": [
+     "UA-51"
+    ]
+   }
+  },
+  {
+   "key": "Transnistria",
+   "take": {
+    "from": "USSR",
+    "iso": [
+     "MD-SN"
+    ]
+   }
   }
  ],
  "labels": {
