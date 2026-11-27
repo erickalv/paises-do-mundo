@@ -23,7 +23,7 @@ const inPoly = (pt, poly) => inRing(pt, poly[0]) && !poly.slice(1).some((h) => i
 
 export const SNAPS = [
   [1600, 1600, 1649], [1650, 1650, 1699], [1700, 1700, 1714], [1715, 1715, 1782], [1783, 1783, 1799],
-  [1800, 1800, 1814], [1815, 1815, 1870], [1900, 1871, 1912], [1914, 1913, 1919],
+  [1800, 1800, 1814], [1815, 1815, 1866], [1900, 1867, 1912], [1914, 1913, 1919],
   [1920, 1920, 1929], [1930, 1930, 1937], [1938, 1938, 1944], [1945, 1945, 1945],
 ];
 
@@ -80,9 +80,9 @@ export const EVENTS = {
     { y: 1858, r: { "British East India Company": "Índia Britânica" } },
   ],
   1900: [
-    // revisão 1871–1912 (situação em 31/dez); 1871–1899 usam o mapa de 1900 com os eventos abaixo; 1913 usa o mapa de 1914. Unidades novas vêm de hist-overrides.json.
+    // revisão 1867–1912 (situação em 31/dez); 1867–1899 usam o mapa de 1900 com os eventos abaixo; 1913 usa o mapa de 1914. Unidades novas vêm de hist-overrides.json.
     // Américas e Pacífico
-    { y: 1871, r: { "Kingdom of Brazil": "Brasil", "Kingdom of Hawaii": "Havaí (EUA)", "Puerto Rico": "Porto Rico (EUA)", "Guam": "Guam", "American Samoa": "Samoa Americana",
+    { y: 1867, r: { "Kingdom of Brazil": "Brasil", "Kingdom of Hawaii": "Havaí (EUA)", "Puerto Rico": "Porto Rico (EUA)", "Guam": "Guam", "American Samoa": "Samoa Americana",
       "Philippines": "Filipinas (EUA)", "United States Virgin Islands": "Índias Ocidentais Dinamarquesas", "Samoa": "Samoa Alemã", "Micronesia": "Micronésia Alemã",
       "Papua New Guinea": "Nova Guiné Alemã", "Tonga": "Tonga (protetorado britânico)", "Wallis and Futuna Islands": "Wallis e Futuna", "Rapa Nui": "Rapa Nui (Chile)",
       "Guadeloupe": "Guadalupe", "Netherlands Antilles": "Curaçao e dependências", "Canada": "Canadá", "United States of America": "Estados Unidos" },
@@ -92,47 +92,47 @@ export const EVENTS = {
       "Saint Martin": "x:fr", "Saint Barthelemy": "x:fr" },
       o: { "Kingdom of Brazil": null, "Kingdom of Hawaii": "Estados Unidos", "Puerto Rico": "Estados Unidos", "Guam": "Estados Unidos", "American Samoa": "Estados Unidos",
       "United States Virgin Islands": "Dinamarca", "Samoa": "Império Alemão", "Micronesia": "Império Alemão", "Papua New Guinea": "Império Alemão" } },
-    { y: 1871, y1: 1907, f: { "Kingdom of Hawaii": "h:us45", "Puerto Rico": "h:us45", "Guam": "h:us45", "American Samoa": "h:us45", "Philippines": "h:us45" } }, // 45 estrelas até 4/jul/1908
+    { y: 1867, y1: 1907, f: { "Kingdom of Hawaii": "h:us45", "Puerto Rico": "h:us45", "Guam": "h:us45", "American Samoa": "h:us45", "Philippines": "h:us45" } }, // 45 estrelas até 4/jul/1908
     { y: 1908, y1: 1911, f: { "Kingdom of Hawaii": "h:us46", "Puerto Rico": "h:us46", "Guam": "h:us46", "American Samoa": "h:us46", "Philippines": "h:us46" } },
     { y: 1912, f: { "Kingdom of Hawaii": "h:us48", "Puerto Rico": "h:us48", "Guam": "h:us48", "American Samoa": "h:us48", "Philippines": "h:us48" } },
-    { y: 1871, r: { "Cuba": "Cuba", "British West Indies": "Índias Ocidentais Britânicas", "Martinique": "Martinica" }, f: { "Cuba": "x:cu", "British West Indies": "x:gb", "Martinique": "x:fr" },
+    { y: 1867, r: { "Cuba": "Cuba", "British West Indies": "Índias Ocidentais Britânicas", "Martinique": "Martinica" }, f: { "Cuba": "x:cu", "British West Indies": "x:gb", "Martinique": "x:fr" },
       o: { "Cuba": null, "British West Indies": "Reino Unido", "Martinique": "França" } },
-    { y: 1871, y1: 1901, r: { "Cuba": "Cuba (ocupação americana)" }, f: { "Cuba": "h:us45" }, o: { "Cuba": null } }, // até 20/mai/1902
+    { y: 1867, y1: 1901, r: { "Cuba": "Cuba (ocupação americana)" }, f: { "Cuba": "h:us45" }, o: { "Cuba": null } }, // até 20/mai/1902
     { y: 1906, y1: 1907, r: { "Cuba": "Cuba (ocupação americana)" }, f: { "Cuba": "h:us45" }, o: { "Cuba": null } }, // set/1906 a jan/1909
     { y: 1908, y1: 1908, r: { "Cuba": "Cuba (ocupação americana)" }, f: { "Cuba": "h:us46" }, o: { "Cuba": null } },
-    { y: 1871, y1: 1902, m: ["Colômbia", "x:co", ["Colombia", "Panama"]] },
+    { y: 1867, y1: 1902, m: ["Colômbia", "x:co", ["Colombia", "Panama"]] },
     { y: 1903, r: { "Panama": "Panamá" }, f: { "Panama": "x:pa" }, o: { "Panama": null } }, // 3/nov/1903
-    { y: 1871, y1: 1906, r: { "Newfoundland": "Terra Nova" }, f: { "Newfoundland": "x:gb" }, o: { "Newfoundland": "Reino Unido" } },
+    { y: 1867, y1: 1906, r: { "Newfoundland": "Terra Nova" }, f: { "Newfoundland": "x:gb" }, o: { "Newfoundland": "Reino Unido" } },
     { y: 1907, r: { "Newfoundland": "Domínio da Terra Nova" }, f: { "Newfoundland": "x:gb" }, o: { "Newfoundland": null } }, // 26/set/1907
-    { y: 1871, y1: 1900, f: { "Niue": "x:gb" }, o: { "Niue": "Reino Unido" } },
+    { y: 1867, y1: 1900, f: { "Niue": "x:gb" }, o: { "Niue": "Reino Unido" } },
     { y: 1901, f: { "Niue": "x:nz" }, o: { "Niue": "Nova Zelândia" } }, // anexada pela Nova Zelândia em 1901
     // Austrália, Nova Zelândia e Papua
-    { y: 1871, y1: 1900, m: ["Austrália Meridional (britânica)", "x:gb", ["South Australia (UK)", "Northern Territory (UK)"]] },
-    { y: 1871, y1: 1900, r: { "_null_150": "Tasmânia (britânica)" }, f: { "_null_150": "x:gb" }, o: { "_null_150": "Reino Unido" } },
+    { y: 1867, y1: 1900, m: ["Austrália Meridional (britânica)", "x:gb", ["South Australia (UK)", "Northern Territory (UK)"]] },
+    { y: 1867, y1: 1900, r: { "_null_150": "Tasmânia (britânica)" }, f: { "_null_150": "x:gb" }, o: { "_null_150": "Reino Unido" } },
     { y: 1901, m: ["Austrália", "x:au", ["Western Australia (UK)", "Queensland (UK)", "Northern Territory (UK)", "South Australia (UK)", "New South Wales (UK)", "Victoria (UK)", "_null_150"]], o: { "Western Australia (UK)": null } }, // federação em 1/jan/1901
-    { y: 1871, y1: 1901, r: { "New Zealand": "Nova Zelândia" }, f: { "New Zealand": "x:gb" }, o: { "New Zealand": "Reino Unido" } },
+    { y: 1867, y1: 1901, r: { "New Zealand": "Nova Zelândia" }, f: { "New Zealand": "x:gb" }, o: { "New Zealand": "Reino Unido" } },
     { y: 1902, y1: 1906, r: { "New Zealand": "Nova Zelândia" }, f: { "New Zealand": "x:nz" }, o: { "New Zealand": "Reino Unido" } }, // bandeira de 1902
     { y: 1907, r: { "New Zealand": "Domínio da Nova Zelândia" }, f: { "New Zealand": "x:nz" }, o: { "New Zealand": null } }, // 26/set/1907
-    { y: 1871, y1: 1905, r: { "Papua": "Nova Guiné Britânica" }, f: { "Papua": "x:gb" }, o: { "Papua": "Reino Unido" } },
+    { y: 1867, y1: 1905, r: { "Papua": "Nova Guiné Britânica" }, f: { "Papua": "x:gb" }, o: { "Papua": "Reino Unido" } },
     { y: 1906, r: { "Papua": "Território de Papua (Austrália)" }, f: { "Papua": "x:au" }, o: { "Papua": "Austrália" } }, // 1/set/1906
     // Ásia
-    { y: 1871, m: ["Império do Japão", "x:jp", ["Imperial Japan", "_null_185", "_null_186", "_null_187", "_null_188", "_null_189", "_null_190", "_null_191", "_null_192", "_null_193", "_null_194", "_null_195", "_null_196", "_null_197", "_null_198", "_null_199", "_null_200", "_null_201"]] },
-    { y: 1871, r: { "Taiwan": "Taiwan (Japão)", "Bhutan": "Butão", "Goa": "Goa (Índia Portuguesa)", "French India": "Índia Francesa", "Portuguese Timor": "Timor Português",
+    { y: 1867, m: ["Império do Japão", "x:jp", ["Imperial Japan", "_null_185", "_null_186", "_null_187", "_null_188", "_null_189", "_null_190", "_null_191", "_null_192", "_null_193", "_null_194", "_null_195", "_null_196", "_null_197", "_null_198", "_null_199", "_null_200", "_null_201"]] },
+    { y: 1867, r: { "Taiwan": "Taiwan (Japão)", "Bhutan": "Butão", "Goa": "Goa (Índia Portuguesa)", "French India": "Índia Francesa", "Portuguese Timor": "Timor Português",
       "Macau": "Macau", "Maldives": "Maldivas (protetorado britânico)", "Rattanakosin Kingdom": "Sião" },
       f: { "Taiwan": "x:jp", "Bhutan": "blank", "Afghanistan": "h:af_black", "French India": "x:fr", "Maldives": "x:gb" }, o: { "Taiwan": "Japão" } },
-    { y: 1871, m: ["Índia Britânica", "x:gb", ["British Raj", "India"]] },
-    { y: 1871, y1: 1905, f: { "Brunei": "h:bn_y" } }, // amarela lisa até 1906
+    { y: 1867, m: ["Índia Britânica", "x:gb", ["British Raj", "India"]] },
+    { y: 1867, y1: 1905, f: { "Brunei": "h:bn_y" } }, // amarela lisa até 1906
     { y: 1906, f: { "Brunei": "h:bn06" } },
-    { y: 1871, y1: 1904, r: { "Korea": "Império Coreano" }, f: { "Korea": "x:kr" }, o: { "Korea": null } },
+    { y: 1867, y1: 1904, r: { "Korea": "Império Coreano" }, f: { "Korea": "x:kr" }, o: { "Korea": null } },
     { y: 1905, y1: 1909, r: { "Korea": "Império Coreano (protetorado japonês)" }, f: { "Korea": "x:kr" }, o: { "Korea": null } }, // nov/1905
     { y: 1910, r: { "Korea": "Coreia (Japão)" }, f: { "Korea": "x:jp" }, o: { "Korea": "Japão" } }, // 29/ago/1910
-    { y: 1871, y1: 1910, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Mongolia", "Tibet", "Tuva"]] },
+    { y: 1867, y1: 1910, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Mongolia", "Tibet", "Tuva"]] },
     { y: 1911, y1: 1911, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Tibet", "Tuva"]] },
     { y: 1911, r: { "Mongolia": "Mongólia (Canato de Bogd)" }, f: { "Mongolia": "h:mn_bogd" }, o: { "Mongolia": null } }, // dez/1911
     { y: 1912, r: { "Manchu Empire": "República da China", "Tibet": "Tibete", "Tuva": null }, f: { "Manchu Empire": "h:cn_5", "Tibet": "blank" }, o: { "Manchu Empire": null, "Tibet": null } },
-    { y: 1871, m: ["Império Russo", "x:ru", ["Russian Empire", "central Asian khanates"]] },
+    { y: 1867, m: ["Império Russo", "x:ru", ["Russian Empire", "central Asian khanates"]] },
     // Oriente Médio
-    { y: 1871, y1: 1910, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Lebanon", "Hejaz", "Hasa", "North Yemen", "Libya", "Albania", "Kosovo and Macedonia", "Ottoman Sandzak", "Ottoman Macedonia", "Epirus", "Western Thrace", "East Thrace", "Aegean Islands", "_null_159", "Asir"]] },
+    { y: 1867, y1: 1910, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Lebanon", "Hejaz", "Hasa", "North Yemen", "Libya", "Albania", "Kosovo and Macedonia", "Ottoman Sandzak", "Ottoman Macedonia", "Epirus", "Western Thrace", "East Thrace", "Aegean Islands", "_null_159", "Asir"]] },
     { y: 1911, y1: 1911, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Lebanon", "Hejaz", "Hasa", "North Yemen", "Albania", "Kosovo and Macedonia", "Ottoman Sandzak", "Ottoman Macedonia", "Epirus", "Western Thrace", "East Thrace", "Aegean Islands", "_null_159"]] },
     { y: 1912, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Lebanon", "Hejaz", "Hasa", "North Yemen", "Epirus"]] }, // Janina cercada até mar/1913
     { y: 1911, r: { "Asir": "Emirado Idríssida de Asir" }, f: { "Asir": "h:asir09" }, o: { "Asir": null } },
@@ -141,29 +141,29 @@ export const EVENTS = {
     { y: 1902, y1: 1903, r: { "Riyadh": "Emirado de Riad" }, f: { "Riyadh": "x:sa" } },
     { y: 1904, r: { "Hail": "Emirado de Jabal Shammar" }, f: { "Hail": "blank" } },
     { y: 1904, m: ["Emirado de Riad", "x:sa", ["Riyadh", "Qassim"]] }, // Qassim em 1904–1906
-    { y: 1871, r: { "Arabia": null, "Kuwait": "Kuwait", "Bahrain": "Bahrein (protetorado britânico)", "Qatar": "Catar", "Trucial Oman": "Estados da Trégua (protetorado britânico)",
+    { y: 1867, r: { "Arabia": null, "Kuwait": "Kuwait", "Bahrain": "Bahrein (protetorado britânico)", "Qatar": "Catar", "Trucial Oman": "Estados da Trégua (protetorado britânico)",
       "Oman": "Mascate e Omã", "Aden": "Áden e protetorados (britânicos)", "Cyprus": "Chipre (administração britânica)", "Malta": "Malta", "Gibraltar": "Gibraltar" },
       f: { "Kuwait": "x:tr", "Bahrain": "x:gb", "Qatar": "blank", "Trucial Oman": "h:trucial", "Oman": "h:om_red", "Aden": "x:gb", "Cyprus": "x:gb", "Malta": "x:gb", "Gibraltar": "x:gb" },
       o: { "Kuwait": null, "Qatar": null, "Trucial Oman": null, "Oman": null, "Cyprus": null } },
     // Europa
-    { y: 1871, r: { "Germany": "Império Alemão", "Italy": "Reino da Itália", "Austria Hungary": "Áustria-Hungria", "Faroe Islands": "Ilhas Faroé", "Channel Islands": "Ilhas do Canal",
+    { y: 1867, r: { "Germany": "Império Alemão", "Italy": "Reino da Itália", "Austria Hungary": "Áustria-Hungria", "Faroe Islands": "Ilhas Faroé", "Channel Islands": "Ilhas do Canal",
       "Finland": "Grão-Ducado da Finlândia" },
       f: { "Faroe Islands": "x:dk", "Channel Islands": "x:gb", "Finland": "x:ru" }, o: { "Finland": "Império Russo" } },
-    { y: 1871, m: ["Reino Unido", "x:gb", ["United Kingdom of Great Britain and Ireland", "_null_164", "_null_165", "_null_166", "_null_167", "_null_168", "_null_169", "_null_170", "_null_171", "_null_172", "_null_173", "_null_174", "_null_175", "_null_176", "_null_177", "_null_178", "_null_179", "_null_180", "_null_181", "_null_182", "_null_184"]] },
-    { y: 1871, m: ["Suécia", "x:se", ["Sweden–Norway", "_null_149"]] },
-    { y: 1871, y1: 1904, r: { "Sweden–Norway": "Suécia (em união com a Noruega)", "Norway": "Noruega (em união com a Suécia)" }, f: { "Sweden–Norway": "h:se_union", "Norway": "x:no" }, o: { "Norway": null } }, // Noruega tirou a marca da união da bandeira em 1899; a Suécia manteve até 1905
+    { y: 1867, m: ["Reino Unido", "x:gb", ["United Kingdom of Great Britain and Ireland", "_null_164", "_null_165", "_null_166", "_null_167", "_null_168", "_null_169", "_null_170", "_null_171", "_null_172", "_null_173", "_null_174", "_null_175", "_null_176", "_null_177", "_null_178", "_null_179", "_null_180", "_null_181", "_null_182", "_null_184"]] },
+    { y: 1867, m: ["Suécia", "x:se", ["Sweden–Norway", "_null_149"]] },
+    { y: 1867, y1: 1904, r: { "Sweden–Norway": "Suécia (em união com a Noruega)", "Norway": "Noruega (em união com a Suécia)" }, f: { "Sweden–Norway": "h:se_union", "Norway": "x:no" }, o: { "Norway": null } }, // Noruega tirou a marca da união da bandeira em 1899; a Suécia manteve até 1905
     { y: 1905, r: { "Sweden–Norway": "Suécia", "Norway": "Noruega" }, f: { "Sweden–Norway": "x:se", "Norway": "x:no" }, o: { "Norway": null } }, // jun–out/1905
-    { y: 1871, y1: 1909, r: { "Portugal": "Reino de Portugal" } },
-    { y: 1871, y1: 1909, f: { "Portuguese East Africa": "h:pt_mon", "Portuguese Guinea": "h:pt_mon", "Cape Verde": "h:pt_mon", "Sao Tome": "h:pt_mon", "Goa": "h:pt_mon", "Macau": "h:pt_mon", "Portuguese Timor": "h:pt_mon", "Angola": "h:pt_mon" } },
+    { y: 1867, y1: 1909, r: { "Portugal": "Reino de Portugal" } },
+    { y: 1867, y1: 1909, f: { "Portuguese East Africa": "h:pt_mon", "Portuguese Guinea": "h:pt_mon", "Cape Verde": "h:pt_mon", "Sao Tome": "h:pt_mon", "Goa": "h:pt_mon", "Macau": "h:pt_mon", "Portuguese Timor": "h:pt_mon", "Angola": "h:pt_mon" } },
     { y: 1910, f: { "Portuguese East Africa": "x:pt", "Portuguese Guinea": "x:pt", "Cape Verde": "x:pt", "Sao Tome": "x:pt", "Goa": "x:pt", "Macau": "x:pt", "Portuguese Timor": "x:pt", "Angola": "x:pt" } }, // república em 5/out/1910
     { y: 1878, y1: 1907, r: { "Bosnia-Herzegovina": "Bósnia e Herzegovina (ocupação austro-húngara)" }, f: { "Bosnia-Herzegovina": "h:at_hab" }, o: { "Bosnia-Herzegovina": null } },
     { y: 1908, m: ["Áustria-Hungria", "h:at_hab", ["Austria Hungary", "Bosnia-Herzegovina", "_null_154"]] }, // anexada em out/1908
-    { y: 1871, y1: 1907, m: ["Áustria-Hungria", "h:at_hab", ["Austria Hungary", "_null_154"]] },
+    { y: 1867, y1: 1907, m: ["Áustria-Hungria", "h:at_hab", ["Austria Hungary", "_null_154"]] },
     { y: 1878, y1: 1907, r: { "Bulgaria": "Principado da Bulgária" }, f: { "Bulgaria": "x:bg" } },
     { y: 1908, r: { "Bulgaria": "Bulgária" }, f: { "Bulgaria": "x:bg" } }, // independência em 5/out/1908
-    { y: 1871, y1: 1909, r: { "Montenegro": "Principado de Montenegro" } },
+    { y: 1867, y1: 1909, r: { "Montenegro": "Principado de Montenegro" } },
     { y: 1910, r: { "Montenegro": "Reino de Montenegro" } }, // 28/ago/1910
-    { y: 1871, y1: 1911, r: { "Crete": "Estado de Creta" }, f: { "Crete": "h:cretan" }, o: { "Crete": null } },
+    { y: 1867, y1: 1911, r: { "Crete": "Estado de Creta" }, f: { "Crete": "h:cretan" }, o: { "Crete": null } },
     // Guerra dos Bálcãs (31/dez/1912)
     { y: 1912, m: ["Grécia", "h:gr_cross", ["Greece", "Crete", "Aegean Islands", "Ottoman Macedonia"]] },
     { y: 1912, m: ["Sérvia", "h:rs_old", ["Serbia", "Kosovo and Macedonia"]] },
@@ -174,7 +174,7 @@ export const EVENTS = {
     // África
     { y: 1911, y1: 1911, r: { "Libya": "Líbia (guerra ítalo-turca)" }, f: { "Libya": "blank" }, o: { "Libya": null } },
     { y: 1912, r: { "Libya": "Líbia Italiana" }, f: { "Libya": "h:it_sav" }, o: { "Libya": "Itália" } }, // Tratado de Ouchy, out/1912
-    { y: 1871, r: { "Egypt": "Quedivato do Egito", "Darfur": "Sultanato de Darfur", "Anglo-Egyptian Sudan": "Sudão Anglo-Egípcio", "Algeria": "Argélia", "Tunisia": "Tunísia",
+    { y: 1867, r: { "Egypt": "Quedivato do Egito", "Darfur": "Sultanato de Darfur", "Anglo-Egyptian Sudan": "Sudão Anglo-Egípcio", "Algeria": "Argélia", "Tunisia": "Tunísia",
       "Rio de Oro": "Rio de Oro (Espanha)", "French West Africa": "África Ocidental Francesa", "Gambia": "Gâmbia", "Sierra Leone": "Serra Leoa", "Portuguese Guinea": "Guiné Portuguesa",
       "Liberia": "Libéria", "Gold Coast": "Costa do Ouro", "Togoland": "Togolândia", "Nigeria": "Nigéria", "Kamerun": "Camarões Alemão", "Spanish Guinea": "Guiné Espanhola",
       "Angola": "Angola", "German South-West Africa": "Sudoeste Africano Alemão", "Cape Colony": "Colônia do Cabo", "Natal": "Colônia de Natal", "Basutoland": "Basutolândia",
@@ -195,186 +195,212 @@ export const EVENTS = {
       "Rhodesia": "Reino Unido", "Portuguese East Africa": "Portugal", "German East Africa": "Império Alemão", "British East Africa": "Reino Unido", "Uganda": "Reino Unido",
       "Zanzibar": "Reino Unido", "Ethiopia": null, "Eritrea": "Itália", "French Somaliland": "França", "British Somaliland": "Reino Unido", "Italian Somaliland": "Itália",
       "Madagascar": "França", "Comoros": "França", "Reunion": "França", "Mauritius": "Reino Unido", "Seychelles": "Reino Unido", "Cape Verde": "Portugal", "Sao Tome": "Portugal" } },
-    { y: 1871, y1: 1911, r: { "Morocco": "Marrocos" }, f: { "Morocco": "h:ma_red" }, o: { "Morocco": null } },
+    { y: 1867, y1: 1911, r: { "Morocco": "Marrocos" }, f: { "Morocco": "h:ma_red" }, o: { "Morocco": null } },
     { y: 1912, r: { "Morocco": "Marrocos (protetorado francês)" }, f: { "Morocco": "x:fr" }, o: { "Morocco": "França" } }, // 30/mar/1912
-    { y: 1871, y1: 1902, r: { "Mauritania": null } }, // emirados mouros (pendente)
+    { y: 1867, y1: 1902, r: { "Mauritania": null } }, // emirados mouros (pendente)
     { y: 1903, m: ["África Ocidental Francesa", "x:fr", ["French West Africa", "Mauritania"]] }, // protetorado em 1903
-    { y: 1871, y1: 1909, r: { "French Congo": "Congo Francês" }, f: { "French Congo": "x:fr" }, o: { "French Congo": "França" } },
+    { y: 1867, y1: 1909, r: { "French Congo": "Congo Francês" }, f: { "French Congo": "x:fr" }, o: { "French Congo": "França" } },
     { y: 1910, r: { "French Congo": "África Equatorial Francesa" }, f: { "French Congo": "x:fr" }, o: { "French Congo": "França" } }, // jan/1910
-    { y: 1871, y1: 1907, r: { "Congo Free State": "Estado Livre do Congo" }, f: { "Congo Free State": "h:cfs" }, o: { "Congo Free State": null } },
+    { y: 1867, y1: 1907, r: { "Congo Free State": "Estado Livre do Congo" }, f: { "Congo Free State": "h:cfs" }, o: { "Congo Free State": null } },
     { y: 1908, r: { "Congo Free State": "Congo Belga" }, f: { "Congo Free State": "x:be" }, o: { "Congo Free State": "Bélgica" } }, // 15/nov/1908
-    { y: 1871, y1: 1901, r: { "Transvaal": "Transvaal (Guerra dos Bôeres)", "Orange Free State": "Estado Livre de Orange (Guerra dos Bôeres)" },
+    { y: 1867, y1: 1901, r: { "Transvaal": "Transvaal (Guerra dos Bôeres)", "Orange Free State": "Estado Livre de Orange (Guerra dos Bôeres)" },
       f: { "Transvaal": "blank", "Orange Free State": "blank" }, o: { "Transvaal": null, "Orange Free State": null } }, // anexados em 1900; guerra até 31/mai/1902
     { y: 1902, y1: 1909, r: { "Transvaal": "Colônia do Transvaal", "Orange Free State": "Colônia do Rio Orange" }, f: { "Transvaal": "x:gb", "Orange Free State": "x:gb" },
       o: { "Transvaal": "Reino Unido", "Orange Free State": "Reino Unido" } },
     { y: 1910, m: ["União Sul-Africana", "h:za_red", ["Cape Colony", "Natal", "Transvaal", "Orange Free State"]], o: { "Cape Colony": null } }, // 31/mai/1910
-    { y: 1871, y1: 1902, r: { "Swaziland": "Suazilândia" }, f: { "Swaziland": "blank" }, o: { "Swaziland": null } },
+    { y: 1867, y1: 1902, r: { "Swaziland": "Suazilândia" }, f: { "Swaziland": "blank" }, o: { "Swaziland": null } },
     { y: 1903, r: { "Swaziland": "Suazilândia (protetorado britânico)" }, f: { "Swaziland": "x:gb" }, o: { "Swaziland": null } },
-    { y: 1871, y1: 1906, r: { "British Central Africa": "África Central Britânica" }, f: { "British Central Africa": "x:gb" }, o: { "British Central Africa": "Reino Unido" } },
+    { y: 1867, y1: 1906, r: { "British Central Africa": "África Central Britânica" }, f: { "British Central Africa": "x:gb" }, o: { "British Central Africa": "Reino Unido" } },
     { y: 1907, r: { "British Central Africa": "Niassalândia" }, f: { "British Central Africa": "x:gb" }, o: { "British Central Africa": "Reino Unido" } },
     // revisão 1885–1899 (situação em 31/dez; fontes: Wikipedia)
     { y: 1894, y1: 1897, r: { "Kingdom of Hawaii": "República do Havaí" }, f: { "Kingdom of Hawaii": "h:hawaii" }, o: { "Kingdom of Hawaii": null } }, // 4/jul/1894 a 12/ago/1898; manteve a bandeira do reino
-    { y: 1871, y1: 1897, r: { "Guam": "Guam (Espanha)", "Puerto Rico": "Porto Rico (Espanha)", "Cuba": "Cuba (Espanha)", "Philippines": "Filipinas (Espanha)" },
+    { y: 1867, y1: 1897, r: { "Guam": "Guam (Espanha)", "Puerto Rico": "Porto Rico (Espanha)", "Cuba": "Cuba (Espanha)", "Philippines": "Filipinas (Espanha)" },
       f: { "Guam": "x:es", "Puerto Rico": "x:es", "Cuba": "x:es", "Philippines": "x:es" }, o: { "Guam": "Espanha", "Puerto Rico": "Espanha", "Cuba": "Espanha", "Philippines": "Espanha" } },
     { y: 1898, y1: 1898, r: { "Puerto Rico": "Porto Rico (ocupação americana)", "Cuba": "Cuba (Guerra Hispano-Americana)", "Philippines": "Filipinas (Revolução Filipina)" },
       f: { "Puerto Rico": "h:us45", "Cuba": "blank", "Philippines": "blank" }, o: { "Puerto Rico": null, "Cuba": null, "Philippines": null } }, // Tratado de Paris assinado em 10/dez/1898, em vigor em 11/abr/1899
     { y: 1898, y1: 1898, r: { "Guam": "Guam (ocupação americana)" }, o: { "Guam": null } }, // rendeu-se em 20/jun/1898
-    { y: 1871, y1: 1898, r: { "Micronesia": "Carolinas e Marianas (Espanha)" }, f: { "Micronesia": "x:es" }, o: { "Micronesia": "Espanha" } }, // vendidas à Alemanha pelo tratado de 12/fev/1899
-    { y: 1871, y1: 1899, m: ["Samoa", "blank", ["Samoa", "American Samoa"]], o: { "Samoa": null } }, // partilha só em 1900
-    { y: 1871, y1: 1899, r: { "Niue": "Niue", "Tonga": "Reino de Tonga" }, f: { "Niue": "blank", "Tonga": "x:to" }, o: { "Niue": null, "Tonga": null } }, // protetorados britânicos em 1900
-    { y: 1871, y1: 1896, r: { "Korea": "Reino de Joseon" }, f: { "Korea": "x:kr" }, o: { "Korea": null } }, // Império Coreano em 13/out/1897; taegukgi oficial desde 1883
-    { y: 1871, y1: 1897, f: { "Norway": "h:no_union", "Sweden–Norway": "h:se_union" } },
+    { y: 1867, y1: 1898, r: { "Micronesia": "Carolinas e Marianas (Espanha)" }, f: { "Micronesia": "x:es" }, o: { "Micronesia": "Espanha" } }, // vendidas à Alemanha pelo tratado de 12/fev/1899
+    { y: 1867, y1: 1899, m: ["Samoa", "blank", ["Samoa", "American Samoa"]], o: { "Samoa": null } }, // partilha só em 1900
+    { y: 1867, y1: 1899, r: { "Niue": "Niue", "Tonga": "Reino de Tonga" }, f: { "Niue": "blank", "Tonga": "x:to" }, o: { "Niue": null, "Tonga": null } }, // protetorados britânicos em 1900
+    { y: 1867, y1: 1896, r: { "Korea": "Reino de Joseon" }, f: { "Korea": "x:kr" }, o: { "Korea": null } }, // Império Coreano em 13/out/1897; taegukgi oficial desde 1883
+    { y: 1867, y1: 1897, f: { "Norway": "h:no_union", "Sweden–Norway": "h:se_union" } },
     { y: 1898, y1: 1898, f: { "Norway": "h:no_union" } }, // lei de 10/dez/1898; a bandeira "pura" foi hasteada a partir de 1899
-    { y: 1871, y1: 1896, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Crete"]] },
+    { y: 1867, y1: 1896, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Crete"]] },
     { y: 1897, y1: 1897, r: { "Crete": "Creta (ocupação das Grandes Potências)" }, f: { "Crete": "blank" }, o: { "Crete": null } }, // revolta e ocupação em mar–abr/1897; Estado de Creta proclamado em 9/dez/1898
     { y: 1883, y1: 1897, m: ["Estado Mahdista", "blank", ["Anglo-Egyptian Sudan", "Darfur"]], o: { "Anglo-Egyptian Sudan": null } },
     { y: 1898, y1: 1898, r: { "Anglo-Egyptian Sudan": "Sudão (ocupação anglo-egípcia)" }, f: { "Anglo-Egyptian Sudan": "x:gb" }, o: { "Anglo-Egyptian Sudan": null } }, // Omdurman 2/set/1898; convenção de 18/jan/1899
-    { y: 1871, y1: 1896, f: { "Ethiopia": "blank" } }, // primeira bandeira oficial em 11/out/1897
+    { y: 1867, y1: 1896, f: { "Ethiopia": "blank" } }, // primeira bandeira oficial em 11/out/1897
     { y: 1895, y1: 1895, r: { "Madagascar": "Reino Merina (invasão francesa)" }, f: { "Madagascar": "blank" }, o: { "Madagascar": null } },
     { y: 1896, y1: 1896, r: { "Madagascar": "Madagascar (protetorado francês)" } }, // anexada em 1897
-    { y: 1871, y1: 1899, r: { "Nigeria": "Costa do Níger, Lagos e Cia. Real do Níger (britânicos)" } }, // protetorados da Nigéria em 1/jan/1900
-    { y: 1871, y1: 1899, r: { "Transvaal": "Transvaal (República Sul-Africana)", "Orange Free State": "Estado Livre de Orange" },
+    { y: 1867, y1: 1899, r: { "Nigeria": "Costa do Níger, Lagos e Cia. Real do Níger (britânicos)" } }, // protetorados da Nigéria em 1/jan/1900
+    { y: 1867, y1: 1899, r: { "Transvaal": "Transvaal (República Sul-Africana)", "Orange Free State": "Estado Livre de Orange" },
       f: { "Transvaal": "h:transvaal", "Orange Free State": "h:ofs" }, o: { "Transvaal": null, "Orange Free State": null } }, // Guerra dos Bôeres desde 11/out/1899; anexados em 1900
     { y: 1894, y1: 1898, r: { "Swaziland": "Suazilândia (protetorado do Transvaal)" }, f: { "Swaziland": "blank" }, o: { "Swaziland": "Transvaal (República Sul-Africana)" } }, // convenção de 1894 até out/1899
-    { y: 1871, y1: 1892, r: { "Kingdom of Hawaii": "Reino do Havaí" }, f: { "Kingdom of Hawaii": "h:hawaii" }, o: { "Kingdom of Hawaii": null } },
+    { y: 1867, y1: 1892, r: { "Kingdom of Hawaii": "Reino do Havaí" }, f: { "Kingdom of Hawaii": "h:hawaii" }, o: { "Kingdom of Hawaii": null } },
     { y: 1893, y1: 1893, r: { "Kingdom of Hawaii": "Havaí (Governo Provisório)" }, f: { "Kingdom of Hawaii": "h:hawaii" }, o: { "Kingdom of Hawaii": null } }, // monarquia derrubada em 17/jan/1893
-    { y: 1871, y1: 1894, r: { "Madagascar": "Reino Merina (protetorado reivindicado pela França)" }, f: { "Madagascar": "blank" }, o: { "Madagascar": null } }, // protetorado desde 1882 (Wikipedia); monarquia até 1897
-    { y: 1871, y1: 1893, r: { "Swaziland": "Suazilândia" }, f: { "Swaziland": "blank" }, o: { "Swaziland": null } }, // convenção de dez/1894 a pôs sob o Transvaal
-    { y: 1871, y1: 1894, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Taiwan"]] }, // Tratado de Shimonoseki, 17/abr/1895
+    { y: 1867, y1: 1894, r: { "Madagascar": "Reino Merina (protetorado reivindicado pela França)" }, f: { "Madagascar": "blank" }, o: { "Madagascar": null } }, // protetorado desde 1882 (Wikipedia); monarquia até 1897
+    { y: 1867, y1: 1893, r: { "Swaziland": "Suazilândia" }, f: { "Swaziland": "blank" }, o: { "Swaziland": null } }, // convenção de dez/1894 a pôs sob o Transvaal
+    { y: 1867, y1: 1894, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Taiwan"]] }, // Tratado de Shimonoseki, 17/abr/1895
     { y: 1891, y1: 1892, r: { "Uganda": "Uganda (Cia. Imperial Britânica da África Oriental)" } }, // tratado de 1891 // a companhia saiu em 31/mar/1893; protetorado em 18/jun/1894
-    { y: 1871, y1: 1894, r: { "British East Africa": "África Oriental Britânica (Cia. Imperial Britânica da África Oriental)" } }, // protetorado em 1/jul/1895
-    { y: 1871, y1: 1894, r: { "French West Africa": "Colônias francesas da África Ocidental" } }, // federação criada em 27/out/1895
-    { y: 1871, y1: 1894, r: { "Rhodesia": "Territórios da Companhia Britânica da África do Sul" } }, // nome Rodésia adotado em 1895
-    { y: 1871, y1: 1898, r: { "Marshall Islands": "Ilhas Marshall (protetorado alemão)" }, f: { "Marshall Islands": "h:de_emp" }, o: { "Marshall Islands": "Império Alemão" } }, // 1885
+    { y: 1867, y1: 1894, r: { "British East Africa": "África Oriental Britânica (Cia. Imperial Britânica da África Oriental)" } }, // protetorado em 1/jul/1895
+    { y: 1867, y1: 1894, r: { "French West Africa": "Colônias francesas da África Ocidental" } }, // federação criada em 27/out/1895
+    { y: 1867, y1: 1894, r: { "Rhodesia": "Territórios da Companhia Britânica da África do Sul" } }, // nome Rodésia adotado em 1895
+    { y: 1867, y1: 1898, r: { "Marshall Islands": "Ilhas Marshall (protetorado alemão)" }, f: { "Marshall Islands": "h:de_emp" }, o: { "Marshall Islands": "Império Alemão" } }, // 1885
     { y: 1899, m: ["Micronésia Alemã", "h:de_emp", ["Micronesia", "Marshall Islands"]] },
     // Axanti: império até a ocupação britânica de jan/1896, protetorado em 1897, colônia anexada à Costa do Ouro em 1/jan/1902
-    { y: 1871, y1: 1895, r: { "Ashanti": "Império Axanti" }, f: { "Ashanti": "blank" }, o: { "Ashanti": null } },
+    { y: 1867, y1: 1895, r: { "Ashanti": "Império Axanti" }, f: { "Ashanti": "blank" }, o: { "Ashanti": null } },
     { y: 1896, y1: 1901, r: { "Ashanti": "Axanti (protetorado britânico)" }, f: { "Ashanti": "x:gb" }, o: { "Ashanti": "Reino Unido" } },
     { y: 1902, m: ["Costa do Ouro", "x:gb", ["Gold Coast", "Ashanti"]] },
     // 1885–1889
-    { y: 1871, y1: 1890, r: { "Hail": "Emirado de Jabal Shammar", "Riyadh": "Emirado de Négede", "Qassim": null }, f: { "Hail": "blank", "Riyadh": "blank" }, o: { "Hail": null, "Riyadh": null } },
-    { y: 1871, y1: 1888, r: { "Kingdom of Brazil": "Império do Brasil" }, f: { "Kingdom of Brazil": "h:br_emp" }, o: { "Kingdom of Brazil": null } }, // república em 15/nov/1889, bandeira em 19/nov/1889
-    { y: 1871, y1: 1885, r: { "Colombia": "Estados Unidos da Colômbia" } }, // República da Colômbia em 1886
-    { y: 1871, y1: 1886, r: { "French Indochina": "Cochinchina, Aname, Tonquim e Camboja (França)" } }, // União Indochinesa em 17/out/1887
-    { y: 1871, y1: 1886, r: { "Wallis and Futuna Islands": "Wallis e Futuna" }, f: { "Wallis and Futuna Islands": "blank" }, o: { "Wallis and Futuna Islands": null } }, // protetorado em 5/abr/1887
-    { y: 1871, y1: 1889, r: { "Zanzibar": "Sultanato de Zanzibar" }, f: { "Zanzibar": "h:zanzibar" }, o: { "Zanzibar": null } }, // protetorado britânico em 1890
-    { y: 1871, y1: 1889, r: { "Eritrea": "Possessões italianas do Mar Vermelho" } }, // colônia da Eritreia em 1/jan/1890
-    { y: 1871, y1: 1888, r: { "Italian Somaliland": null } }, // protetorados de 1889
-    { y: 1871, y1: 1888, r: { "Rhodesia": null, "British Central Africa": null } }, // carta da BSAC em 20/dez/1889; protetorado proclamado em 1889
-    { y: 1871, y1: 1887, r: { "British East Africa": null } }, // carta da IBEAC em 6/set/1888
-    { y: 1871, y1: 1890, r: { "Uganda": null } },
-    { y: 1871, y1: 1892, r: { "Nigeria": "Rios do Petróleo, Lagos e Cia. do Níger (britânicos)" } }, // Costa do Níger desde 12/mai/1893
+    { y: 1867, y1: 1890, r: { "Hail": "Emirado de Jabal Shammar", "Riyadh": "Emirado de Négede", "Qassim": null }, f: { "Hail": "blank", "Riyadh": "blank" }, o: { "Hail": null, "Riyadh": null } },
+    { y: 1867, y1: 1888, r: { "Kingdom of Brazil": "Império do Brasil" }, f: { "Kingdom of Brazil": "h:br_emp" }, o: { "Kingdom of Brazil": null } }, // república em 15/nov/1889, bandeira em 19/nov/1889
+    { y: 1867, y1: 1885, r: { "Colombia": "Estados Unidos da Colômbia" } }, // República da Colômbia em 1886
+    { y: 1867, y1: 1886, r: { "French Indochina": "Cochinchina, Aname, Tonquim e Camboja (França)" } }, // União Indochinesa em 17/out/1887
+    { y: 1867, y1: 1886, r: { "Wallis and Futuna Islands": "Wallis e Futuna" }, f: { "Wallis and Futuna Islands": "blank" }, o: { "Wallis and Futuna Islands": null } }, // protetorado em 5/abr/1887
+    { y: 1867, y1: 1889, r: { "Zanzibar": "Sultanato de Zanzibar" }, f: { "Zanzibar": "h:zanzibar" }, o: { "Zanzibar": null } }, // protetorado britânico em 1890
+    { y: 1867, y1: 1889, r: { "Eritrea": "Possessões italianas do Mar Vermelho" } }, // colônia da Eritreia em 1/jan/1890
+    { y: 1867, y1: 1888, r: { "Italian Somaliland": null } }, // protetorados de 1889
+    { y: 1867, y1: 1888, r: { "Rhodesia": null, "British Central Africa": null } }, // carta da BSAC em 20/dez/1889; protetorado proclamado em 1889
+    { y: 1867, y1: 1887, r: { "British East Africa": null } }, // carta da IBEAC em 6/set/1888
+    { y: 1867, y1: 1890, r: { "Uganda": null } },
+    { y: 1867, y1: 1892, r: { "Nigeria": "Rios do Petróleo, Lagos e Cia. do Níger (britânicos)" } }, // Costa do Níger desde 12/mai/1893
     // revisão 1880–1884 (mapa de 1900; situação em 31/dez; fontes: Wikipedia). Unidades novas em hist-overrides.json.
     // Bálcãs
     { y: 1878, y1: 1884, r: { "Eastern Rumelia": "Rumélia Oriental (província autônoma otomana)" }, f: { "Eastern Rumelia": "blank" }, o: { "Eastern Rumelia": "Império Otomano" } }, // Tratado de Berlim, 13/jul/1878
     { y: 1885, y1: 1907, m: ["Principado da Bulgária", "x:bg", ["Bulgaria", "Eastern Rumelia"]] }, // união de fato em 6/set/1885
     { y: 1908, m: ["Bulgária", "x:bg", ["Bulgaria", "Eastern Rumelia"]] },
-    { y: 1871, y1: 1880, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Thessaly"]] }, // Convenção de Constantinopla, 2/jul/1881
+    { y: 1867, y1: 1880, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Thessaly"]] }, // Convenção de Constantinopla, 2/jul/1881
     { y: 1881, m: ["Grécia", "h:gr_cross", ["Greece", "Thessaly"]] },
     // Birmânia
-    { y: 1871, y1: 1884, r: { "Upper Burma": "Reino da Birmânia", "Shan States": "Estados Shan" }, f: { "Upper Burma": "blank", "Shan States": "blank" }, o: { "Upper Burma": null, "Shan States": null } }, // anexado em 29/nov/1885
+    { y: 1867, y1: 1884, r: { "Upper Burma": "Reino da Birmânia", "Shan States": "Estados Shan" }, f: { "Upper Burma": "blank", "Shan States": "blank" }, o: { "Upper Burma": null, "Shan States": null } }, // anexado em 29/nov/1885
     { y: 1885, m: ["Índia Britânica", "x:gb", ["British Raj", "Upper Burma", "Shan States"]] },
-    { y: 1871, y1: 1891, r: { "Karenni": "Estados Karenni" }, f: { "Karenni": "blank" }, o: { "Karenni": null } }, // independência garantida em 1875; tributários da Birmânia Britânica em 1892
+    { y: 1867, y1: 1891, r: { "Karenni": "Estados Karenni" }, f: { "Karenni": "blank" }, o: { "Karenni": null } }, // independência garantida em 1875; tributários da Birmânia Britânica em 1892
     { y: 1892, m: ["Índia Britânica", "x:gb", ["British Raj", "Karenni"]] },
     // Indochina e Sião
-    { y: 1871, y1: 1882, r: { "French Indochina": "Đại Nam (Vietnã)" }, f: { "French Indochina": "blank" }, o: { "French Indochina": null } },
+    { y: 1867, y1: 1882, r: { "French Indochina": "Đại Nam (Vietnã)" }, f: { "French Indochina": "blank" }, o: { "French Indochina": null } },
     { y: 1883, y1: 1884, r: { "French Indochina": "Aname e Tonquim (protetorado francês)" }, f: { "French Indochina": "x:fr" }, o: { "French Indochina": "França" } }, // Tratado Harmand, 25/ago/1883; Patenôtre, 6/jun/1884
-    { y: 1871, y1: 1884, r: { "Cochinchina": "Cochinchina Francesa", "Cambodia": "Camboja (protetorado francês)" }, f: { "Cochinchina": "x:fr", "Cambodia": "x:fr" }, o: { "Cochinchina": "França", "Cambodia": "França" } },
+    { y: 1867, y1: 1884, r: { "Cochinchina": "Cochinchina Francesa", "Cambodia": "Camboja (protetorado francês)" }, f: { "Cochinchina": "x:fr", "Cambodia": "x:fr" }, o: { "Cochinchina": "França", "Cambodia": "França" } },
     { y: 1885, y1: 1886, m: ["Cochinchina, Aname, Tonquim e Camboja (França)", "x:fr", ["French Indochina", "Cochinchina", "Cambodia"]], o: { "French Indochina": "França" } },
     { y: 1887, m: ["Indochina Francesa", "x:fr", ["French Indochina", "Cochinchina", "Cambodia"]], o: { "French Indochina": "França" } },
-    { y: 1871, y1: 1892, m: ["Sião", "h:th_el", ["Rattanakosin Kingdom", "Siamese Laos", "Sainyabuli", "Inner Cambodia"]] }, // margem leste do Mekong cedida em 3/out/1893
+    { y: 1867, y1: 1892, m: ["Sião", "h:th_el", ["Rattanakosin Kingdom", "Siamese Laos", "Sainyabuli", "Inner Cambodia"]] }, // margem leste do Mekong cedida em 3/out/1893
     { y: 1893, m: ["Indochina Francesa", "x:fr", ["French Indochina", "Siamese Laos"]] },
     { y: 1893, y1: 1903, m: ["Sião", "h:th_el", ["Rattanakosin Kingdom", "Sainyabuli", "Inner Cambodia"]] }, // margem direita cedida pelo tratado de 13/fev/1904
     { y: 1904, m: ["Indochina Francesa", "x:fr", ["French Indochina", "Sainyabuli"]] },
     { y: 1904, y1: 1906, m: ["Sião", "h:th_el", ["Rattanakosin Kingdom", "Inner Cambodia"]] }, // Battambang, Siem Reap e Sisophon cedidas em 23/mar/1907
     { y: 1907, m: ["Indochina Francesa", "x:fr", ["French Indochina", "Inner Cambodia"]] },
     // Malásia e Bornéu
-    { y: 1871, y1: 1908, r: { "Siamese Malay States": "Kedah, Perlis, Kelantan e Terengganu (tributários do Sião)" }, f: { "Siamese Malay States": "blank" }, o: { "Siamese Malay States": null } }, // Tratado Anglo-Siamês, 10/mar/1909
+    { y: 1867, y1: 1908, r: { "Siamese Malay States": "Kedah, Perlis, Kelantan e Terengganu (tributários do Sião)" }, f: { "Siamese Malay States": "blank" }, o: { "Siamese Malay States": null } }, // Tratado Anglo-Siamês, 10/mar/1909
     { y: 1909, m: ["Malaia", "x:gb", ["Malaya", "Siamese Malay States"]] },
-    { y: 1871, y1: 1887, r: { "Sarawak": "Raj de Sarawak" }, f: { "Sarawak": "blank" }, o: { "Sarawak": null } },
+    { y: 1867, y1: 1887, r: { "Sarawak": "Raj de Sarawak" }, f: { "Sarawak": "blank" }, o: { "Sarawak": null } },
     { y: 1888, r: { "Sarawak": "Sarawak (protetorado britânico)" }, f: { "Sarawak": "blank" }, o: { "Sarawak": null } }, // 14/jun/1888
-    { y: 1871, y1: 1880, r: { "North Borneo": null } }, // carta régia de 1/nov/1881
+    { y: 1867, y1: 1880, r: { "North Borneo": null } }, // carta régia de 1/nov/1881
     { y: 1881, y1: 1887, r: { "North Borneo": "Bornéu do Norte (Cia. Britânica de Bornéu do Norte)" }, f: { "North Borneo": "blank" }, o: { "North Borneo": null } },
     { y: 1888, r: { "North Borneo": "Bornéu do Norte (protetorado britânico)" }, f: { "North Borneo": "blank" }, o: { "North Borneo": null } }, // 12/mai/1888
     // Ásia Central
-    { y: 1871, y1: 1880, r: { "Ahal": null } }, // Geok Tepe tomada em 1881
+    { y: 1867, y1: 1880, r: { "Ahal": null } }, // Geok Tepe tomada em 1881
     { y: 1881, m: ["Império Russo", "x:ru", ["Russian Empire", "Ahal"]] },
-    { y: 1871, y1: 1883, r: { "Merv": null } }, // oásis ocupado em 1884
+    { y: 1867, y1: 1883, r: { "Merv": null } }, // oásis ocupado em 1884
     { y: 1884, m: ["Império Russo", "x:ru", ["Russian Empire", "Merv"]] },
-    { y: 1871, y1: 1882, f: { "Korea": "blank" } }, // taegukgi promulgada em 27/jan/1883
+    { y: 1867, y1: 1882, f: { "Korea": "blank" } }, // taegukgi promulgada em 27/jan/1883
     // Guerra do Pacífico
-    { y: 1871, y1: 1883, r: { "Tacna and Arica": "Tacna e Arica (ocupadas pelo Chile)", "Tarapaca": "Tarapacá (ocupada pelo Chile)" }, f: { "Tacna and Arica": "x:cl", "Tarapaca": "x:cl" }, o: { "Tacna and Arica": null, "Tarapaca": null } },
+    { y: 1867, y1: 1883, r: { "Tacna and Arica": "Tacna e Arica (ocupadas pelo Chile)", "Tarapaca": "Tarapacá (ocupada pelo Chile)" }, f: { "Tacna and Arica": "x:cl", "Tarapaca": "x:cl" }, o: { "Tacna and Arica": null, "Tarapaca": null } },
     { y: 1884, r: { "Tacna and Arica": "Tacna e Arica (administração chilena)" }, f: { "Tacna and Arica": "x:cl" }, o: { "Tacna and Arica": null } }, // Tratado de Ancón (20/out/1883, ratificado em 1884); Tacna voltou ao Peru em 1929
     { y: 1884, m: ["Chile", "x:cl", ["Chile", "Tarapaca"]] },
-    { y: 1871, y1: 1883, r: { "Bolivian Litoral": "Litoral boliviano (ocupado pelo Chile)" }, f: { "Bolivian Litoral": "x:cl" }, o: { "Bolivian Litoral": null } },
+    { y: 1867, y1: 1883, r: { "Bolivian Litoral": "Litoral boliviano (ocupado pelo Chile)" }, f: { "Bolivian Litoral": "x:cl" }, o: { "Bolivian Litoral": null } },
     { y: 1884, y1: 1904, r: { "Bolivian Litoral": "Litoral boliviano (administração chilena)" }, f: { "Bolivian Litoral": "x:cl" }, o: { "Bolivian Litoral": null } }, // trégua de Valparaíso, 4/abr/1884; tratado de 20/out/1904, ratificado em 10/mar/1905
     { y: 1905, m: ["Chile", "x:cl", ["Chile", "Bolivian Litoral"]] },
     { y: 1881, y1: 1882, r: { "Lima": "Lima (ocupada pelo Chile)" }, f: { "Lima": "x:cl" }, o: { "Lima": null } }, // 17/jan/1881 a 23/out/1883
-    { y: 1871, y1: 1880, m: ["Peru", "x:pe", ["Peru", "Lima"]] },
+    { y: 1867, y1: 1880, m: ["Peru", "x:pe", ["Peru", "Lima"]] },
     { y: 1883, m: ["Peru", "x:pe", ["Peru", "Lima"]] },
     // África
-    { y: 1871, y1: 1881, o: { "Egypt": null } }, // ocupação britânica em set/1882
+    { y: 1867, y1: 1881, o: { "Egypt": null } }, // ocupação britânica em set/1882
     { y: 1874, y1: 1882, m: ["Sudão Egípcio", "h:eg_khed", ["Anglo-Egyptian Sudan", "Darfur"]], o: { "Anglo-Egyptian Sudan": "Quedivato do Egito" } },
     { y: 1883, y1: 1884, m: ["Sudão (Guerra Mahdista)", "blank", ["Anglo-Egyptian Sudan", "Darfur"]], o: { "Anglo-Egyptian Sudan": null } }, // Hicks destruído em nov/1883; Cartum caiu em 26/jan/1885
-    { y: 1871, y1: 1880, r: { "Tunisia": "Beilhique de Túnis" }, f: { "Tunisia": "x:tn" }, o: { "Tunisia": null } }, // Tratado do Bardo, 12/mai/1881
-    { y: 1871, y1: 1880, r: { "Transvaal": "Transvaal (Primeira Guerra dos Bôeres)" }, f: { "Transvaal": "blank" }, o: { "Transvaal": null } }, // anexado em 1877; guerra desde 16/dez/1880
+    { y: 1867, y1: 1880, r: { "Tunisia": "Beilhique de Túnis" }, f: { "Tunisia": "x:tn" }, o: { "Tunisia": null } }, // Tratado do Bardo, 12/mai/1881
+    { y: 1867, y1: 1880, r: { "Transvaal": "Transvaal (Primeira Guerra dos Bôeres)" }, f: { "Transvaal": "blank" }, o: { "Transvaal": null } }, // anexado em 1877; guerra desde 16/dez/1880
     { y: 1881, y1: 1883, r: { "Transvaal": "Transvaal (República Sul-Africana, suserania britânica)" }, f: { "Transvaal": "h:transvaal" }, o: { "Transvaal": null } }, // Convenção de Pretória, 3/ago/1881; de Londres, 1884
+    { y: 1867, y1: 1867, r: { "Basutoland": "Reino Basoto" }, f: { "Basutoland": "blank" }, o: { "Basutoland": null } },
+    { y: 1868, y1: 1870, r: { "Basutoland": "Basutolândia (protetorado britânico)" }, f: { "Basutoland": "x:gb" }, o: { "Basutoland": "Reino Unido" } }, // proclamação de 12/mar/1868
     { y: 1871, y1: 1883, r: { "Basutoland": "Basutolândia (Colônia do Cabo)" }, f: { "Basutoland": "x:gb" }, o: { "Basutoland": "Colônia do Cabo" } }, // colônia da coroa em 18/mar/1884
-    { y: 1871, y1: 1884, r: { "Bechuanaland": null } }, // protetorado em 31/mar/1885
-    { y: 1871, y1: 1882, r: { "Madagascar": "Reino Merina" }, f: { "Madagascar": "blank" }, o: { "Madagascar": null } },
+    { y: 1867, y1: 1884, r: { "Bechuanaland": null } }, // protetorado em 31/mar/1885
+    { y: 1867, y1: 1882, r: { "Madagascar": "Reino Merina" }, f: { "Madagascar": "blank" }, o: { "Madagascar": null } },
     { y: 1883, y1: 1884, r: { "Madagascar": "Reino Merina (Guerra Franco-Hova)" }, f: { "Madagascar": "blank" }, o: { "Madagascar": null } }, // dez/1883 a 17/dez/1885
-    { y: 1871, y1: 1883, r: { "Togoland": null, "Kamerun": null, "German South-West Africa": null, "Papua New Guinea": null, "Papua": null, "British Somaliland": null, "Rio de Oro": null, "Nigeria": null, "Congo Free State": null } }, // protetorados de 1884
+    { y: 1867, y1: 1883, r: { "Togoland": null, "Kamerun": null, "German South-West Africa": null, "Papua New Guinea": null, "Papua": null, "British Somaliland": null, "Rio de Oro": null, "Nigeria": null, "Congo Free State": null } }, // protetorados de 1884
     { y: 1884, y1: 1884, r: { "Congo Free State": "Associação Internacional do Congo" }, f: { "Congo Free State": "blank" }, o: { "Congo Free State": null } }, // reconhecida pela Alemanha em 8/nov/1884; Estado Livre em 1885
-    { y: 1871, y1: 1884, r: { "German East Africa": null, "Marshall Islands": null, "Eritrea": null } }, // 1885 (Assab italiana e Massaua egípcia até 1885)
-    { y: 1871, y1: 1883, r: { "French Somaliland": "Obock (França)" } }, // colônia estabelecida em 20/mai/1884
+    { y: 1867, y1: 1884, r: { "German East Africa": null, "Marshall Islands": null, "Eritrea": null } }, // 1885 (Assab italiana e Massaua egípcia até 1885)
+    { y: 1867, y1: 1883, r: { "French Somaliland": "Obock (França)" } }, // colônia estabelecida em 20/mai/1884
     // revisão 1878–1879 (após o Congresso de Berlim, 13/jul/1878)
-    { y: 1871, y1: 1878, r: { "Bulgaria": "Principado da Bulgária (administração provisória russa)", "Eastern Rumelia": "Rumélia Oriental (administração provisória russa)" },
+    { y: 1867, y1: 1878, r: { "Bulgaria": "Principado da Bulgária (administração provisória russa)", "Eastern Rumelia": "Rumélia Oriental (administração provisória russa)" },
       f: { "Bulgaria": "blank", "Eastern Rumelia": "blank" }, o: { "Bulgaria": null, "Eastern Rumelia": null } }, // até jun/1879; bandeira de 1879
     { y: 1877, y1: 1879, r: { "Transvaal": "Transvaal (anexado pelo Reino Unido)" }, f: { "Transvaal": "x:gb" }, o: { "Transvaal": "Reino Unido" } }, // 12/abr/1877; Vierkleur suspensa até ago/1881
     { y: 1872, y1: 1878, r: { "Ryukyu": "Domínio de Ryukyu" }, f: { "Ryukyu": "blank" }, o: { "Ryukyu": "Império do Japão" } }, // domínio desde 1872; Prefeitura de Okinawa em 1879
     { y: 1879, m: ["Império do Japão", "x:jp", ["Imperial Japan", "Ryukyu"]] },
-    { y: 1871, y1: 1879, r: { "French Polynesia": "Reino do Taiti (protetorado francês)" }, f: { "French Polynesia": "blank" }, o: { "French Polynesia": "França" } }, // anexado em 29/jun/1880
+    { y: 1867, y1: 1879, r: { "French Polynesia": "Reino do Taiti (protetorado francês)" }, f: { "French Polynesia": "blank" }, o: { "French Polynesia": "França" } }, // anexado em 29/jun/1880
     { y: 1880, r: { "French Polynesia": "Estabelecimentos Franceses da Oceania" }, f: { "French Polynesia": "x:fr" }, o: { "French Polynesia": "França" } },
     { y: 1878, y1: 1879, r: { "Afghanistan": "Afeganistão (Segunda Guerra Anglo-Afegã)" }, o: { "Afghanistan": null } }, // nov/1878 a 1881; Cabul ocupada em out/1879
-    { y: 1871, y1: 1896, f: { "Afghanistan": "blank" } }, // bandeira negra com emblema introduzida em 1897
-    { y: 1871, y1: 1879, m: ["Peru", "x:pe", ["Peru", "Tacna and Arica"]] },
-    { y: 1871, y1: 1878, m: ["Peru", "x:pe", ["Peru", "Tarapaca"]] }, // campanha de Tarapacá, nov–dez/1879
-    { y: 1871, y1: 1878, m: ["Bolívia", "x:bo", ["Bolivia", "Bolivian Litoral"]] }, // Antofagasta ocupada em 14/fev/1879
+    { y: 1867, y1: 1896, f: { "Afghanistan": "blank" } }, // bandeira negra com emblema introduzida em 1897
+    { y: 1867, y1: 1879, m: ["Peru", "x:pe", ["Peru", "Tacna and Arica"]] },
+    { y: 1867, y1: 1878, m: ["Peru", "x:pe", ["Peru", "Tarapaca"]] }, // campanha de Tarapacá, nov–dez/1879
+    { y: 1867, y1: 1878, m: ["Bolívia", "x:bo", ["Bolivia", "Bolivian Litoral"]] }, // Antofagasta ocupada em 14/fev/1879
     // revisão 1871–1877 (antes do Congresso de Berlim; fontes: Wikipedia)
-    { y: 1871, y1: 1876, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Bulgaria", "Eastern Rumelia", "Bosnia-Herzegovina", "Cyprus", "Serbia 1878 gains", "Montenegro 1878 gains", "Niksic", "Northern Dobruja", "Kars Oblast", "Adjara"]] },
+    { y: 1867, y1: 1876, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Bulgaria", "Eastern Rumelia", "Bosnia-Herzegovina", "Cyprus", "Serbia 1878 gains", "Montenegro 1878 gains", "Niksic", "Northern Dobruja", "Kars Oblast", "Adjara"]] },
     { y: 1877, y1: 1877, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Bosnia-Herzegovina", "Cyprus", "Serbia 1878 gains", "Montenegro 1878 gains", "Northern Dobruja", "Adjara"]] }, // Guerra Russo-Turca desde 24/abr/1877
     { y: 1877, y1: 1877, m: ["Bulgária (Guerra Russo-Turca)", "blank", ["Bulgaria", "Eastern Rumelia"]], o: { "Bulgaria": null } }, // Plevna caiu em 10/dez/1877
     { y: 1877, y1: 1877, r: { "Kars Oblast": "Kars e Ardahan (ocupados pela Rússia)" }, f: { "Kars Oblast": "x:ru" }, o: { "Kars Oblast": null } }, // Kars caiu em 18/nov/1877
     { y: 1877, y1: 1877, m: ["Principado de Montenegro", "blank", ["Montenegro", "Niksic"]] }, // Nikšić tomada em 24/set/1877
     { y: 1878, m: ["Principado de Montenegro", "blank", ["Montenegro", "Niksic", "Montenegro 1878 gains"]] }, // Nikšić, Kolašin, Podgorica, Bar etc.
-    { y: 1871, y1: 1879, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Ulcinj"]] }, // Ulcinj entregue a Montenegro em nov/1880
+    { y: 1867, y1: 1879, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Ulcinj"]] }, // Ulcinj entregue a Montenegro em nov/1880
     { y: 1880, m: ["Principado de Montenegro", "blank", ["Montenegro", "Ulcinj"]] },
     { y: 1878, m: ["Sérvia", "h:rs_old", ["Serbia", "Serbia 1878 gains"]] }, // distritos de Niš, Pirot, Toplica e Vranje
-    { y: 1871, y1: 1877, f: { "Serbia": "blank" } }, // tricolor com brasão e quatro estrelas (suserania otomana) até 1878
+    { y: 1867, y1: 1877, f: { "Serbia": "blank" } }, // tricolor com brasão e quatro estrelas (suserania otomana) até 1878
     { y: 1878, m: ["Romênia", "x:ro", ["Romania", "Northern Dobruja"]] },
-    { y: 1871, y1: 1877, m: ["Romênia", "x:ro", ["Romania", "Southern Bessarabia"]] }, // sul da Bessarábia moldava/romena de 1856 a 1878
+    { y: 1867, y1: 1877, m: ["Romênia", "x:ro", ["Romania", "Southern Bessarabia"]] }, // sul da Bessarábia moldava/romena de 1856 a 1878
     { y: 1878, m: ["Império Russo", "x:ru", ["Russian Empire", "Adjara"]] },
-    { y: 1871, y1: 1876, r: { "Transvaal": "Transvaal (República Sul-Africana)" }, f: { "Transvaal": "h:transvaal" }, o: { "Transvaal": null } },
+    { y: 1867, y1: 1876, r: { "Transvaal": "Transvaal (República Sul-Africana)" }, f: { "Transvaal": "h:transvaal" }, o: { "Transvaal": null } },
     { y: 1874, y1: 1874, f: { "Transvaal": "blank" } }, // bandeira de Burgers, 24/out/1874 a 10/mai/1875
-    { y: 1871, y1: 1871, r: { "Ryukyu": "Reino de Ryukyu" }, f: { "Ryukyu": "blank" }, o: { "Ryukyu": null } }, // tributário da China e vassalo de Satsuma; domínio em 16/out/1872
+    { y: 1867, y1: 1871, r: { "Ryukyu": "Reino de Ryukyu" }, f: { "Ryukyu": "blank" }, o: { "Ryukyu": null } }, // tributário da China e vassalo de Satsuma; domínio em 16/out/1872
+    { y: 1867, y1: 1870, r: { "Fiji": null } },
     { y: 1871, y1: 1873, r: { "Fiji": "Reino de Fiji" }, f: { "Fiji": "blank" }, o: { "Fiji": null } }, // 5/jun/1871 a 10/out/1874
-    { y: 1871, y1: 1872, r: { "Prince Edward Island": "Ilha do Príncipe Eduardo" }, f: { "Prince Edward Island": "x:gb" }, o: { "Prince Edward Island": "Reino Unido" } }, // Confederação em 1/jul/1873
+    { y: 1867, y1: 1872, r: { "Prince Edward Island": "Ilha do Príncipe Eduardo" }, f: { "Prince Edward Island": "x:gb" }, o: { "Prince Edward Island": "Reino Unido" } }, // Confederação em 1/jul/1873
     { y: 1873, m: ["Canadá", "h:ca_red", ["Canada", "Prince Edward Island"]] },
-    { y: 1871, y1: 1876, r: { "Xinjiang": "Yettishar (Emirado de Kashgar)" }, f: { "Xinjiang": "blank" }, o: { "Xinjiang": null } }, // Kashgar retomada pelos Qing em 18/dez/1877
+    { y: 1867, y1: 1876, r: { "Xinjiang": "Yettishar (Emirado de Kashgar)" }, f: { "Xinjiang": "blank" }, o: { "Xinjiang": null } }, // Kashgar retomada pelos Qing em 18/dez/1877
     { y: 1877, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Xinjiang"]] },
-    { y: 1871, y1: 1875, r: { "Kokand": "Canato de Kokand" }, f: { "Kokand": "blank" }, o: { "Kokand": null } }, // abolido pela Rússia em 1876
+    { y: 1867, y1: 1875, r: { "Kokand": "Canato de Kokand" }, f: { "Kokand": "blank" }, o: { "Kokand": null } }, // abolido pela Rússia em 1876
     { y: 1876, m: ["Império Russo", "x:ru", ["Russian Empire", "Kokand"]] },
-    { y: 1871, y1: 1872, r: { "Khiva": "Canato de Khiva" }, f: { "Khiva": "blank" }, o: { "Khiva": null } }, // protetorado russo em 12/ago/1873
-    { y: 1873, m: ["Império Russo", "x:ru", ["Russian Empire", "Khiva"]] },
-    { y: 1871, y1: 1873, r: { "Aceh": "Sultanato de Aceh" }, f: { "Aceh": "blank" }, o: { "Aceh": null } }, // Banda Aceh tomada em jan/1874
+    { y: 1867, y1: 1872, r: { "Khiva": "Canato de Khiva" }, f: { "Khiva": "blank" }, o: { "Khiva": null } }, // protetorado russo em 12/ago/1873
+    { y: 1873, r: { "Khiva": "Canato de Khiva (protetorado russo)" }, f: { "Khiva": "blank" }, o: { "Khiva": null } },
+    { y: 1867, y1: 1873, r: { "Aceh": "Sultanato de Aceh" }, f: { "Aceh": "blank" }, o: { "Aceh": null } }, // Banda Aceh tomada em jan/1874
     { y: 1874, m: ["Índias Orientais Holandesas", "x:nl", ["Netherlands Indies", "Aceh"]] },
-    { y: 1871, y1: 1873, r: { "Anglo-Egyptian Sudan": "Sudão Egípcio" }, f: { "Anglo-Egyptian Sudan": "h:eg_khed" }, o: { "Anglo-Egyptian Sudan": "Quedivato do Egito" } }, // Darfur conquistado em 1874
-    { y: 1871, y1: 1879, r: { "French Congo": null, "Gabon": "Gabão (França)" }, f: { "Gabon": "x:fr" }, o: { "Gabon": "França" } }, // protetorado do Congo em 10/set/1880
+    { y: 1867, y1: 1873, r: { "Anglo-Egyptian Sudan": "Sudão Egípcio" }, f: { "Anglo-Egyptian Sudan": "h:eg_khed" }, o: { "Anglo-Egyptian Sudan": "Quedivato do Egito" } }, // Darfur conquistado em 1874
+    { y: 1867, y1: 1879, r: { "French Congo": null, "Gabon": "Gabão (França)" }, f: { "Gabon": "x:fr" }, o: { "Gabon": "França" } }, // protetorado do Congo em 10/set/1880
     { y: 1880, m: ["Congo Francês", "x:fr", ["French Congo", "Gabon"]] },
+    // revisão 1867–1870
+    { y: 1867, y1: 1870, r: { "Germany": "Confederação da Alemanha do Norte" }, f: { "Germany": "blank" }, o: { "Germany": null } }, // 1/jul/1867 a 31/dez/1870
+    { y: 1867, y1: 1870, r: { "Kingdom of Bavaria": "Reino da Baviera", "Kingdom of Württemberg": "Reino de Württemberg", "Grand Duchy of Baden": "Grão-Ducado de Baden", "Grand Duchy of Hesse": "Grão-Ducado de Hesse" },
+      f: { "Kingdom of Bavaria": "blank", "Kingdom of Württemberg": "blank", "Grand Duchy of Baden": "blank", "Grand Duchy of Hesse": "blank" },
+      o: { "Kingdom of Bavaria": null, "Kingdom of Württemberg": null, "Grand Duchy of Baden": null, "Grand Duchy of Hesse": null } }, // Tratados de Novembro de 1870, em vigor em 1/jan/1871; o Alto Hesse já era da Confederação
+    { y: 1871, m: ["Império Alemão", "h:de_emp", ["Germany", "Kingdom of Bavaria", "Kingdom of Württemberg", "Grand Duchy of Baden", "Grand Duchy of Hesse", "Alsace-Lorraine"]] }, // Tratado de Frankfurt, 10/mai/1871
+    { y: 1867, y1: 1869, m: ["França", "x:fr", ["France", "Alsace-Lorraine"]] },
+    { y: 1870, y1: 1870, r: { "Alsace-Lorraine": "Alsácia-Lorena (Guerra Franco-Prussiana)" }, f: { "Alsace-Lorraine": "blank" }, o: { "Alsace-Lorraine": null } },
+    { y: 1867, y1: 1869, r: { "Papal States": "Estados Papais" }, f: { "Papal States": "blank" }, o: { "Papal States": null } }, // Roma tomada em 20/set/1870
+    { y: 1870, m: ["Reino da Itália", "h:it_sav", ["Italy", "Papal States"]] },
+    { y: 1867, y1: 1869, r: { "Rupert's Land": "Terra de Rupert (Cia. da Baía de Hudson)" }, f: { "Rupert's Land": "x:gb" }, o: { "Rupert's Land": "Reino Unido" } }, // transferida ao Canadá em 15/jul/1870
+    { y: 1870, m: ["Canadá", "h:ca_red", ["Canada", "Rupert's Land"]] },
+    { y: 1867, y1: 1870, r: { "British Columbia": "Colônia da Colúmbia Britânica" }, f: { "British Columbia": "x:gb" }, o: { "British Columbia": "Reino Unido" } }, // província em 20/jul/1871
+    { y: 1871, m: ["Canadá", "h:ca_red", ["Canada", "British Columbia"]] },
+    { y: 1867, y1: 1868, r: { "Paraguay": "Paraguai (Guerra do Paraguai)" } },
+    { y: 1869, y1: 1869, r: { "Paraguay": "Paraguai (Guerra do Paraguai, Assunção ocupada)" } }, // Assunção ocupada em 1/jan/1869; López morto em 1/mar/1870
+    { y: 1867, y1: 1867, m: ["Império do Japão", "x:jp", ["Imperial Japan", "Ezo"]] },
+    { y: 1868, y1: 1868, r: { "Ezo": "Ezo (forças do antigo xogunato)" }, f: { "Ezo": "blank" }, o: { "Ezo": null } }, // Hakodate tomada em dez/1868; República de Ezo de jan a jun/1869
+    { y: 1869, m: ["Império do Japão", "x:jp", ["Imperial Japan", "Ezo"]] },
+    { y: 1867, y1: 1872, r: { "Bukhara": "Emirado de Bukhara" }, f: { "Bukhara": "blank" }, o: { "Bukhara": null } },
+    { y: 1873, r: { "Bukhara": "Emirado de Bukhara (protetorado russo)" }, f: { "Bukhara": "blank" }, o: { "Bukhara": null } }, // 1873
+    { y: 1867, y1: 1867, m: ["Emirado de Bukhara", "blank", ["Bukhara", "Samarkand"]] },
+    { y: 1868, m: ["Império Russo", "x:ru", ["Russian Empire", "Samarkand"]] }, // Samarcanda anexada em 1868
     // erros do mapa de 1900 corrigidos para 1878–1912
-    { y: 1871, m: ["Império Russo", "x:ru", ["Russian Empire", "Russian Caucasus", "Bessarabia"]] },
+    { y: 1867, m: ["Império Russo", "x:ru", ["Russian Empire", "Russian Caucasus", "Bessarabia"]] },
     { y: 1878, m: ["Império Russo", "x:ru", ["Russian Empire", "Kars Oblast", "Southern Bessarabia"]] }, // Cáucaso russo desde Gulistão (1813) e Turkmenchay (1828); Kars e Ardahan pelo Tratado de Berlim; Bessarábia desde 1812
-    { y: 1871, m: ["Áustria-Hungria", "h:at_hab", ["Austria Hungary", "Bay of Kotor"]] }, // Boca de Kotor na Dalmácia austríaca até 1918
+    { y: 1867, m: ["Áustria-Hungria", "h:at_hab", ["Austria Hungary", "Bay of Kotor"]] }, // Boca de Kotor na Dalmácia austríaca até 1918
   ],
   1914: [
     // revisão 1914–1919 (situação em 31/dez). Unidades novas vêm de hist-overrides.json.

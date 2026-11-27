@@ -2929,6 +2929,143 @@
      "GAB"
     ]
    }
+  },
+  {
+   "key": "Alsace-Lorraine",
+   "take": {
+    "from": [
+     "Germany",
+     "France"
+    ],
+    "iso": [
+     "FR-67",
+     "FR-68",
+     "FR-57"
+    ]
+   }
+  },
+  {
+   "key": "Papal States",
+   "take": {
+    "from": "Italy",
+    "iso": [
+     "IT-RM",
+     "IT-VT",
+     "IT-FR",
+     "IT-LT",
+     "IT-RI"
+    ]
+   }
+  },
+  {
+   "key": "Rupert's Land",
+   "take": {
+    "from": "Canada",
+    "iso": [
+     "CA-MB",
+     "CA-SK",
+     "CA-AB",
+     "CA-NT",
+     "CA-NU",
+     "CA-YT"
+    ]
+   }
+  },
+  {
+   "key": "British Columbia",
+   "take": {
+    "from": "Canada",
+    "iso": [
+     "CA-BC"
+    ]
+   }
+  },
+  {
+   "key": "Ezo",
+   "take": {
+    "from": "Imperial Japan",
+    "iso": [
+     "JP-01"
+    ]
+   }
+  },
+  {
+   "key": "Bukhara",
+   "take": {
+    "from": [
+     "Russian Empire",
+     "central Asian khanates"
+    ],
+    "iso": [
+     "UZ-BU",
+     "UZ-NW",
+     "UZ-QA",
+     "UZ-SU",
+     "TM-L",
+     "TJ-KT",
+     "TJ-DU",
+     "TJ-X01~"
+    ]
+   }
+  },
+  {
+   "key": "Samarkand",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "UZ-SA"
+    ]
+   }
+  },
+  {
+   "key": "Kingdom of Bavaria",
+   "cut": {
+    "map": 1815,
+    "name": "Bavaria",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Kingdom of Bavaria",
+   "cut": {
+    "map": 1815,
+    "name": "Palatinate",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Kingdom of Württemberg",
+   "cut": {
+    "map": 1815,
+    "name": "Württemberg",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Grand Duchy of Baden",
+   "cut": {
+    "map": 1815,
+    "name": "Baden",
+    "adm0": [
+     "DEU"
+    ]
+   }
+  },
+  {
+   "key": "Grand Duchy of Hesse",
+   "cut": {
+    "map": 1815,
+    "name": "Grand Duchy of Hesse",
+    "adm0": [
+     "DEU"
+    ]
+   }
   }
  ]
 }
