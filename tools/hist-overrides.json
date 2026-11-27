@@ -4467,7 +4467,15 @@
      "HR-18",
      "HR-08",
      "HR-09",
-     "HR-04",
+     "HR-04"
+    ]
+   }
+  },
+  {
+   "key": "Dalmatia",
+   "take": {
+    "from": "Austria Hungary",
+    "iso": [
      "HR-13",
      "HR-15",
      "HR-17"
