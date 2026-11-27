@@ -3501,7 +3501,7 @@
    }
   },
   {
-   "key": "Kingdom of Bavaria",
+   "key": "Palatinate",
    "cut": {
     "map": 1815,
     "name": "Palatinate",
@@ -3972,7 +3972,10 @@
   {
    "key": "Savoy and Nice",
    "take": {
-    "from": "France",
+    "from": [
+     "France",
+     "Italy"
+    ],
     "iso": [
      "FR-73",
      "FR-74",
@@ -4371,6 +4374,104 @@
      "LK-71",
      "LK-72",
      "LK-61"
+    ]
+   }
+  },
+  {
+   "key": "Gorizia",
+   "take": {
+    "from": "Italy",
+    "iso": [
+     "IT-GO"
+    ]
+   }
+  },
+  {
+   "key": "Rhine Left",
+   "take": {
+    "from": "Germany",
+    "iso": [
+     "DE-RP",
+     "DE-SL"
+    ]
+   }
+  },
+  {
+   "key": "Piedmont",
+   "take": {
+    "from": "Italy",
+    "iso": [
+     "IT-AL",
+     "IT-AT",
+     "IT-BI",
+     "IT-CN",
+     "IT-TO",
+     "IT-VC",
+     "IT-AO",
+     "IT-GE",
+     "IT-IM",
+     "IT-SP",
+     "IT-SV"
+    ]
+   }
+  },
+  {
+   "key": "Novara",
+   "take": {
+    "from": "Italy",
+    "iso": [
+     "IT-NO",
+     "IT-VB"
+    ]
+   }
+  },
+  {
+   "key": "Umbria",
+   "take": {
+    "from": "Marche and Umbria",
+    "iso": [
+     "IT-PG",
+     "IT-TR"
+    ]
+   }
+  },
+  {
+   "key": "Trentino",
+   "take": {
+    "from": "Austria Hungary",
+    "iso": [
+     "IT-BZ",
+     "IT-TN"
+    ]
+   }
+  },
+  {
+   "key": "Tyrol",
+   "take": {
+    "from": "Austria Hungary",
+    "iso": [
+     "AT-7"
+    ]
+   }
+  },
+  {
+   "key": "Salzburg",
+   "take": {
+    "from": "Austria Hungary",
+    "iso": [
+     "AT-5"
+    ]
+   }
+  },
+  {
+   "key": "Catalonia",
+   "take": {
+    "from": "Spain",
+    "iso": [
+     "ES-B",
+     "ES-GI",
+     "ES-L",
+     "ES-T"
     ]
    }
   },
