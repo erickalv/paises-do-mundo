@@ -384,6 +384,8 @@ F.lc67 = svg(`<path fill="#65cfff" d="M0 0h640v480H0z"/><path fill="#fff" d="M32
 F.danzig = svg(`<rect width="640" height="480" fill="#D21034"/><g fill="#fff"><path d="M150 205h40v-30h20v30h40v20h-40v30h-20v-30h-40z"/><path d="M150 335h40v-30h20v30h40v20h-40v30h-20v-30h-40z"/></g><path d="M150 150l15-50 25 30 10-40 10 40 25-30 15 50z" fill="#FFD700"/>`);
 // EUA 4/jul/1891 a 3/jul/1896: 44 estrelas em fileiras 8-7-7-7-7-8
 F.us44 = usRows([8, 7, 7, 7, 7, 8]);
+// EUA 4/jul/1890 a 3/jul/1891: 43 estrelas em fileiras 8-7-7-7-7-7 (tabela do Wikipedia)
+F.us43 = usRows([8, 7, 7, 7, 7, 7]);
 // Noruega 1844–1898: com a marca da união no cantão (simplificada; lei de 10/dez/1898 a retirou, bandeira "pura" desde 1899)
 {
   const w = 180, h = 180, cx = w / 2, cy = h / 2;

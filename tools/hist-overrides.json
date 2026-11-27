@@ -2453,6 +2453,25 @@
     "TCA",
     "VGB"
    ]
+  },
+  {
+   "key": "Marshall Islands",
+   "take": {
+    "from": "Micronesia",
+    "adm0": [
+     "MHL"
+    ]
+   }
+  },
+  {
+   "key": "Ashanti",
+   "take": {
+    "from": "Gold Coast",
+    "iso": [
+     "GH-AH",
+     "GH-BA"
+    ]
+   }
   }
  ]
 }

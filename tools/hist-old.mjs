@@ -23,7 +23,7 @@ const inPoly = (pt, poly) => inRing(pt, poly[0]) && !poly.slice(1).some((h) => i
 
 export const SNAPS = [
   [1600, 1600, 1649], [1650, 1650, 1699], [1700, 1700, 1714], [1715, 1715, 1782], [1783, 1783, 1799],
-  [1800, 1800, 1814], [1815, 1815, 1879], [1880, 1880, 1894], [1900, 1895, 1912], [1914, 1913, 1919],
+  [1800, 1800, 1814], [1815, 1815, 1879], [1880, 1880, 1889], [1900, 1890, 1912], [1914, 1913, 1919],
   [1920, 1920, 1929], [1930, 1930, 1937], [1938, 1938, 1944], [1945, 1945, 1945],
 ];
 
@@ -87,9 +87,9 @@ export const EVENTS = {
     { y: 1899, r: { "Philippines": "Filipinas (EUA)" } },
   ],
   1900: [
-    // revisão 1895–1912 (situação em 31/dez); 1895–1899 usam o mapa de 1900 com os eventos abaixo; 1913 usa o mapa de 1914. Unidades novas vêm de hist-overrides.json.
+    // revisão 1890–1912 (situação em 31/dez); 1890–1899 usam o mapa de 1900 com os eventos abaixo; 1913 usa o mapa de 1914. Unidades novas vêm de hist-overrides.json.
     // Américas e Pacífico
-    { y: 1895, r: { "Kingdom of Brazil": "Brasil", "Kingdom of Hawaii": "Havaí (EUA)", "Puerto Rico": "Porto Rico (EUA)", "Guam": "Guam", "American Samoa": "Samoa Americana",
+    { y: 1890, r: { "Kingdom of Brazil": "Brasil", "Kingdom of Hawaii": "Havaí (EUA)", "Puerto Rico": "Porto Rico (EUA)", "Guam": "Guam", "American Samoa": "Samoa Americana",
       "Philippines": "Filipinas (EUA)", "United States Virgin Islands": "Índias Ocidentais Dinamarquesas", "Samoa": "Samoa Alemã", "Micronesia": "Micronésia Alemã",
       "Papua New Guinea": "Nova Guiné Alemã", "Tonga": "Tonga (protetorado britânico)", "Wallis and Futuna Islands": "Wallis e Futuna", "Rapa Nui": "Rapa Nui (Chile)",
       "Guadeloupe": "Guadalupe", "Netherlands Antilles": "Curaçao e dependências", "Canada": "Canadá", "United States of America": "Estados Unidos" },
@@ -99,78 +99,78 @@ export const EVENTS = {
       "Saint Martin": "x:fr", "Saint Barthelemy": "x:fr" },
       o: { "Kingdom of Brazil": null, "Kingdom of Hawaii": "Estados Unidos", "Puerto Rico": "Estados Unidos", "Guam": "Estados Unidos", "American Samoa": "Estados Unidos",
       "United States Virgin Islands": "Dinamarca", "Samoa": "Império Alemão", "Micronesia": "Império Alemão", "Papua New Guinea": "Império Alemão" } },
-    { y: 1895, y1: 1907, f: { "Kingdom of Hawaii": "h:us45", "Puerto Rico": "h:us45", "Guam": "h:us45", "American Samoa": "h:us45", "Philippines": "h:us45" } }, // 45 estrelas até 4/jul/1908
+    { y: 1890, y1: 1907, f: { "Kingdom of Hawaii": "h:us45", "Puerto Rico": "h:us45", "Guam": "h:us45", "American Samoa": "h:us45", "Philippines": "h:us45" } }, // 45 estrelas até 4/jul/1908
     { y: 1908, y1: 1911, f: { "Kingdom of Hawaii": "h:us46", "Puerto Rico": "h:us46", "Guam": "h:us46", "American Samoa": "h:us46", "Philippines": "h:us46" } },
     { y: 1912, f: { "Kingdom of Hawaii": "h:us48", "Puerto Rico": "h:us48", "Guam": "h:us48", "American Samoa": "h:us48", "Philippines": "h:us48" } },
-    { y: 1895, r: { "Cuba": "Cuba", "British West Indies": "Índias Ocidentais Britânicas", "Martinique": "Martinica" }, f: { "Cuba": "x:cu", "British West Indies": "x:gb", "Martinique": "x:fr" },
+    { y: 1890, r: { "Cuba": "Cuba", "British West Indies": "Índias Ocidentais Britânicas", "Martinique": "Martinica" }, f: { "Cuba": "x:cu", "British West Indies": "x:gb", "Martinique": "x:fr" },
       o: { "Cuba": null, "British West Indies": "Reino Unido", "Martinique": "França" } },
-    { y: 1895, y1: 1901, r: { "Cuba": "Cuba (ocupação americana)" }, f: { "Cuba": "h:us45" }, o: { "Cuba": null } }, // até 20/mai/1902
+    { y: 1890, y1: 1901, r: { "Cuba": "Cuba (ocupação americana)" }, f: { "Cuba": "h:us45" }, o: { "Cuba": null } }, // até 20/mai/1902
     { y: 1906, y1: 1907, r: { "Cuba": "Cuba (ocupação americana)" }, f: { "Cuba": "h:us45" }, o: { "Cuba": null } }, // set/1906 a jan/1909
     { y: 1908, y1: 1908, r: { "Cuba": "Cuba (ocupação americana)" }, f: { "Cuba": "h:us46" }, o: { "Cuba": null } },
-    { y: 1895, y1: 1902, m: ["Colômbia", "x:co", ["Colombia", "Panama"]] },
+    { y: 1890, y1: 1902, m: ["Colômbia", "x:co", ["Colombia", "Panama"]] },
     { y: 1903, r: { "Panama": "Panamá" }, f: { "Panama": "x:pa" }, o: { "Panama": null } }, // 3/nov/1903
-    { y: 1895, y1: 1906, r: { "Newfoundland": "Terra Nova" }, f: { "Newfoundland": "x:gb" }, o: { "Newfoundland": "Reino Unido" } },
+    { y: 1890, y1: 1906, r: { "Newfoundland": "Terra Nova" }, f: { "Newfoundland": "x:gb" }, o: { "Newfoundland": "Reino Unido" } },
     { y: 1907, r: { "Newfoundland": "Domínio da Terra Nova" }, f: { "Newfoundland": "x:gb" }, o: { "Newfoundland": null } }, // 26/set/1907
-    { y: 1895, y1: 1900, f: { "Niue": "x:gb" }, o: { "Niue": "Reino Unido" } },
+    { y: 1890, y1: 1900, f: { "Niue": "x:gb" }, o: { "Niue": "Reino Unido" } },
     { y: 1901, f: { "Niue": "x:nz" }, o: { "Niue": "Nova Zelândia" } }, // anexada pela Nova Zelândia em 1901
     // Austrália, Nova Zelândia e Papua
-    { y: 1895, y1: 1900, m: ["Austrália Meridional (britânica)", "x:gb", ["South Australia (UK)", "Northern Territory (UK)"]] },
-    { y: 1895, y1: 1900, r: { "_null_150": "Tasmânia (britânica)" }, f: { "_null_150": "x:gb" }, o: { "_null_150": "Reino Unido" } },
+    { y: 1890, y1: 1900, m: ["Austrália Meridional (britânica)", "x:gb", ["South Australia (UK)", "Northern Territory (UK)"]] },
+    { y: 1890, y1: 1900, r: { "_null_150": "Tasmânia (britânica)" }, f: { "_null_150": "x:gb" }, o: { "_null_150": "Reino Unido" } },
     { y: 1901, m: ["Austrália", "x:au", ["Western Australia (UK)", "Queensland (UK)", "Northern Territory (UK)", "South Australia (UK)", "New South Wales (UK)", "Victoria (UK)", "_null_150"]], o: { "Western Australia (UK)": null } }, // federação em 1/jan/1901
-    { y: 1895, y1: 1901, r: { "New Zealand": "Nova Zelândia" }, f: { "New Zealand": "x:gb" }, o: { "New Zealand": "Reino Unido" } },
+    { y: 1890, y1: 1901, r: { "New Zealand": "Nova Zelândia" }, f: { "New Zealand": "x:gb" }, o: { "New Zealand": "Reino Unido" } },
     { y: 1902, y1: 1906, r: { "New Zealand": "Nova Zelândia" }, f: { "New Zealand": "x:nz" }, o: { "New Zealand": "Reino Unido" } }, // bandeira de 1902
     { y: 1907, r: { "New Zealand": "Domínio da Nova Zelândia" }, f: { "New Zealand": "x:nz" }, o: { "New Zealand": null } }, // 26/set/1907
-    { y: 1895, y1: 1905, r: { "Papua": "Nova Guiné Britânica" }, f: { "Papua": "x:gb" }, o: { "Papua": "Reino Unido" } },
+    { y: 1890, y1: 1905, r: { "Papua": "Nova Guiné Britânica" }, f: { "Papua": "x:gb" }, o: { "Papua": "Reino Unido" } },
     { y: 1906, r: { "Papua": "Território de Papua (Austrália)" }, f: { "Papua": "x:au" }, o: { "Papua": "Austrália" } }, // 1/set/1906
     // Ásia
-    { y: 1895, m: ["Império do Japão", "x:jp", ["Imperial Japan", "_null_185", "_null_186", "_null_187", "_null_188", "_null_189", "_null_190", "_null_191", "_null_192", "_null_193", "_null_194", "_null_195", "_null_196", "_null_197", "_null_198", "_null_199", "_null_200", "_null_201"]] },
-    { y: 1895, r: { "Taiwan": "Taiwan (Japão)", "Bhutan": "Butão", "Goa": "Goa (Índia Portuguesa)", "French India": "Índia Francesa", "Portuguese Timor": "Timor Português",
+    { y: 1890, m: ["Império do Japão", "x:jp", ["Imperial Japan", "_null_185", "_null_186", "_null_187", "_null_188", "_null_189", "_null_190", "_null_191", "_null_192", "_null_193", "_null_194", "_null_195", "_null_196", "_null_197", "_null_198", "_null_199", "_null_200", "_null_201"]] },
+    { y: 1890, r: { "Taiwan": "Taiwan (Japão)", "Bhutan": "Butão", "Goa": "Goa (Índia Portuguesa)", "French India": "Índia Francesa", "Portuguese Timor": "Timor Português",
       "Macau": "Macau", "Maldives": "Maldivas (protetorado britânico)", "Rattanakosin Kingdom": "Sião" },
       f: { "Taiwan": "x:jp", "Bhutan": "blank", "Afghanistan": "h:af_black", "French India": "x:fr", "Maldives": "x:gb" }, o: { "Taiwan": "Japão" } },
-    { y: 1895, m: ["Índia Britânica", "x:gb", ["British Raj", "India"]] },
-    { y: 1895, y1: 1905, f: { "Brunei": "h:bn_y" } }, // amarela lisa até 1906
+    { y: 1890, m: ["Índia Britânica", "x:gb", ["British Raj", "India"]] },
+    { y: 1890, y1: 1905, f: { "Brunei": "h:bn_y" } }, // amarela lisa até 1906
     { y: 1906, f: { "Brunei": "h:bn06" } },
-    { y: 1895, y1: 1904, r: { "Korea": "Império Coreano" }, f: { "Korea": "x:kr" }, o: { "Korea": null } },
+    { y: 1890, y1: 1904, r: { "Korea": "Império Coreano" }, f: { "Korea": "x:kr" }, o: { "Korea": null } },
     { y: 1905, y1: 1909, r: { "Korea": "Império Coreano (protetorado japonês)" }, f: { "Korea": "x:kr" }, o: { "Korea": null } }, // nov/1905
     { y: 1910, r: { "Korea": "Coreia (Japão)" }, f: { "Korea": "x:jp" }, o: { "Korea": "Japão" } }, // 29/ago/1910
-    { y: 1895, y1: 1910, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Mongolia", "Tibet", "Tuva"]] },
+    { y: 1890, y1: 1910, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Mongolia", "Tibet", "Tuva"]] },
     { y: 1911, y1: 1911, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Tibet", "Tuva"]] },
     { y: 1911, r: { "Mongolia": "Mongólia (Canato de Bogd)" }, f: { "Mongolia": "h:mn_bogd" }, o: { "Mongolia": null } }, // dez/1911
     { y: 1912, r: { "Manchu Empire": "República da China", "Tibet": "Tibete", "Tuva": null }, f: { "Manchu Empire": "h:cn_5", "Tibet": "blank" }, o: { "Manchu Empire": null, "Tibet": null } },
-    { y: 1895, m: ["Império Russo", "x:ru", ["Russian Empire", "central Asian khanates"]] },
+    { y: 1890, m: ["Império Russo", "x:ru", ["Russian Empire", "central Asian khanates"]] },
     // Oriente Médio
-    { y: 1895, y1: 1910, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Lebanon", "Hejaz", "Hasa", "North Yemen", "Libya", "Albania", "Kosovo and Macedonia", "Ottoman Sandzak", "Ottoman Macedonia", "Epirus", "Western Thrace", "East Thrace", "Aegean Islands", "_null_159", "Asir"]] },
+    { y: 1890, y1: 1910, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Lebanon", "Hejaz", "Hasa", "North Yemen", "Libya", "Albania", "Kosovo and Macedonia", "Ottoman Sandzak", "Ottoman Macedonia", "Epirus", "Western Thrace", "East Thrace", "Aegean Islands", "_null_159", "Asir"]] },
     { y: 1911, y1: 1911, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Lebanon", "Hejaz", "Hasa", "North Yemen", "Albania", "Kosovo and Macedonia", "Ottoman Sandzak", "Ottoman Macedonia", "Epirus", "Western Thrace", "East Thrace", "Aegean Islands", "_null_159"]] },
     { y: 1912, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Lebanon", "Hejaz", "Hasa", "North Yemen", "Epirus"]] }, // Janina cercada até mar/1913
     { y: 1911, r: { "Asir": "Emirado Idríssida de Asir" }, f: { "Asir": "h:asir09" }, o: { "Asir": null } },
-    { y: 1895, y1: 1901, m: ["Emirado de Jabal Shammar", "blank", ["Hail", "Riyadh", "Qassim"]] },
+    { y: 1890, y1: 1901, m: ["Emirado de Jabal Shammar", "blank", ["Hail", "Riyadh", "Qassim"]] },
     { y: 1902, y1: 1903, m: ["Emirado de Jabal Shammar", "blank", ["Hail", "Qassim"]] }, // Riad tomada por Ibn Saud em jan/1902
     { y: 1902, y1: 1903, r: { "Riyadh": "Emirado de Riad" }, f: { "Riyadh": "x:sa" } },
     { y: 1904, r: { "Hail": "Emirado de Jabal Shammar" }, f: { "Hail": "blank" } },
     { y: 1904, m: ["Emirado de Riad", "x:sa", ["Riyadh", "Qassim"]] }, // Qassim em 1904–1906
-    { y: 1895, r: { "Arabia": null, "Kuwait": "Kuwait", "Bahrain": "Bahrein (protetorado britânico)", "Qatar": "Catar", "Trucial Oman": "Estados da Trégua (protetorado britânico)",
+    { y: 1890, r: { "Arabia": null, "Kuwait": "Kuwait", "Bahrain": "Bahrein (protetorado britânico)", "Qatar": "Catar", "Trucial Oman": "Estados da Trégua (protetorado britânico)",
       "Oman": "Mascate e Omã", "Aden": "Áden e protetorados (britânicos)", "Cyprus": "Chipre (administração britânica)", "Malta": "Malta", "Gibraltar": "Gibraltar" },
       f: { "Kuwait": "x:tr", "Bahrain": "x:gb", "Qatar": "blank", "Trucial Oman": "h:trucial", "Oman": "h:om_red", "Aden": "x:gb", "Cyprus": "x:gb", "Malta": "x:gb", "Gibraltar": "x:gb" },
       o: { "Kuwait": null, "Qatar": null, "Trucial Oman": null, "Oman": null, "Cyprus": null } },
     // Europa
-    { y: 1895, r: { "Germany": "Império Alemão", "Italy": "Reino da Itália", "Austria Hungary": "Áustria-Hungria", "Faroe Islands": "Ilhas Faroé", "Channel Islands": "Ilhas do Canal",
+    { y: 1890, r: { "Germany": "Império Alemão", "Italy": "Reino da Itália", "Austria Hungary": "Áustria-Hungria", "Faroe Islands": "Ilhas Faroé", "Channel Islands": "Ilhas do Canal",
       "Finland": "Grão-Ducado da Finlândia" },
       f: { "Faroe Islands": "x:dk", "Channel Islands": "x:gb", "Finland": "x:ru" }, o: { "Finland": "Império Russo" } },
-    { y: 1895, m: ["Reino Unido", "x:gb", ["United Kingdom of Great Britain and Ireland", "_null_164", "_null_165", "_null_166", "_null_167", "_null_168", "_null_169", "_null_170", "_null_171", "_null_172", "_null_173", "_null_174", "_null_175", "_null_176", "_null_177", "_null_178", "_null_179", "_null_180", "_null_181", "_null_182", "_null_184"]] },
-    { y: 1895, m: ["Suécia", "x:se", ["Sweden–Norway", "_null_149"]] },
-    { y: 1895, y1: 1904, r: { "Sweden–Norway": "Suécia (em união com a Noruega)", "Norway": "Noruega (em união com a Suécia)" }, f: { "Sweden–Norway": "h:se_union", "Norway": "x:no" }, o: { "Norway": null } }, // Noruega tirou a marca da união da bandeira em 1899; a Suécia manteve até 1905
+    { y: 1890, m: ["Reino Unido", "x:gb", ["United Kingdom of Great Britain and Ireland", "_null_164", "_null_165", "_null_166", "_null_167", "_null_168", "_null_169", "_null_170", "_null_171", "_null_172", "_null_173", "_null_174", "_null_175", "_null_176", "_null_177", "_null_178", "_null_179", "_null_180", "_null_181", "_null_182", "_null_184"]] },
+    { y: 1890, m: ["Suécia", "x:se", ["Sweden–Norway", "_null_149"]] },
+    { y: 1890, y1: 1904, r: { "Sweden–Norway": "Suécia (em união com a Noruega)", "Norway": "Noruega (em união com a Suécia)" }, f: { "Sweden–Norway": "h:se_union", "Norway": "x:no" }, o: { "Norway": null } }, // Noruega tirou a marca da união da bandeira em 1899; a Suécia manteve até 1905
     { y: 1905, r: { "Sweden–Norway": "Suécia", "Norway": "Noruega" }, f: { "Sweden–Norway": "x:se", "Norway": "x:no" }, o: { "Norway": null } }, // jun–out/1905
-    { y: 1895, y1: 1909, r: { "Portugal": "Reino de Portugal" } },
-    { y: 1895, y1: 1909, f: { "Portuguese East Africa": "h:pt_mon", "Portuguese Guinea": "h:pt_mon", "Cape Verde": "h:pt_mon", "Sao Tome": "h:pt_mon", "Goa": "h:pt_mon", "Macau": "h:pt_mon", "Portuguese Timor": "h:pt_mon", "Angola": "h:pt_mon" } },
+    { y: 1890, y1: 1909, r: { "Portugal": "Reino de Portugal" } },
+    { y: 1890, y1: 1909, f: { "Portuguese East Africa": "h:pt_mon", "Portuguese Guinea": "h:pt_mon", "Cape Verde": "h:pt_mon", "Sao Tome": "h:pt_mon", "Goa": "h:pt_mon", "Macau": "h:pt_mon", "Portuguese Timor": "h:pt_mon", "Angola": "h:pt_mon" } },
     { y: 1910, f: { "Portuguese East Africa": "x:pt", "Portuguese Guinea": "x:pt", "Cape Verde": "x:pt", "Sao Tome": "x:pt", "Goa": "x:pt", "Macau": "x:pt", "Portuguese Timor": "x:pt", "Angola": "x:pt" } }, // república em 5/out/1910
-    { y: 1895, y1: 1907, r: { "Bosnia-Herzegovina": "Bósnia e Herzegovina (ocupação austro-húngara)" }, f: { "Bosnia-Herzegovina": "h:at_hab" }, o: { "Bosnia-Herzegovina": null } },
+    { y: 1890, y1: 1907, r: { "Bosnia-Herzegovina": "Bósnia e Herzegovina (ocupação austro-húngara)" }, f: { "Bosnia-Herzegovina": "h:at_hab" }, o: { "Bosnia-Herzegovina": null } },
     { y: 1908, m: ["Áustria-Hungria", "h:at_hab", ["Austria Hungary", "Bosnia-Herzegovina", "_null_154"]] }, // anexada em out/1908
-    { y: 1895, y1: 1907, m: ["Áustria-Hungria", "h:at_hab", ["Austria Hungary", "_null_154"]] },
-    { y: 1895, y1: 1907, r: { "Bulgaria": "Principado da Bulgária" }, f: { "Bulgaria": "x:bg" } },
+    { y: 1890, y1: 1907, m: ["Áustria-Hungria", "h:at_hab", ["Austria Hungary", "_null_154"]] },
+    { y: 1890, y1: 1907, r: { "Bulgaria": "Principado da Bulgária" }, f: { "Bulgaria": "x:bg" } },
     { y: 1908, r: { "Bulgaria": "Bulgária" }, f: { "Bulgaria": "x:bg" } }, // independência em 5/out/1908
-    { y: 1895, y1: 1909, r: { "Montenegro": "Principado de Montenegro" } },
+    { y: 1890, y1: 1909, r: { "Montenegro": "Principado de Montenegro" } },
     { y: 1910, r: { "Montenegro": "Reino de Montenegro" } }, // 28/ago/1910
-    { y: 1895, y1: 1911, r: { "Crete": "Estado de Creta" }, f: { "Crete": "h:cretan" }, o: { "Crete": null } },
+    { y: 1890, y1: 1911, r: { "Crete": "Estado de Creta" }, f: { "Crete": "h:cretan" }, o: { "Crete": null } },
     // Guerra dos Bálcãs (31/dez/1912)
     { y: 1912, m: ["Grécia", "h:gr_cross", ["Greece", "Crete", "Aegean Islands", "Ottoman Macedonia"]] },
     { y: 1912, m: ["Sérvia", "h:rs_old", ["Serbia", "Kosovo and Macedonia"]] },
@@ -181,7 +181,7 @@ export const EVENTS = {
     // África
     { y: 1911, y1: 1911, r: { "Libya": "Líbia (guerra ítalo-turca)" }, f: { "Libya": "blank" }, o: { "Libya": null } },
     { y: 1912, r: { "Libya": "Líbia Italiana" }, f: { "Libya": "h:it_sav" }, o: { "Libya": "Itália" } }, // Tratado de Ouchy, out/1912
-    { y: 1895, r: { "Egypt": "Quedivato do Egito", "Darfur": "Sultanato de Darfur", "Anglo-Egyptian Sudan": "Sudão Anglo-Egípcio", "Algeria": "Argélia", "Tunisia": "Tunísia",
+    { y: 1890, r: { "Egypt": "Quedivato do Egito", "Darfur": "Sultanato de Darfur", "Anglo-Egyptian Sudan": "Sudão Anglo-Egípcio", "Algeria": "Argélia", "Tunisia": "Tunísia",
       "Rio de Oro": "Rio de Oro (Espanha)", "French West Africa": "África Ocidental Francesa", "Gambia": "Gâmbia", "Sierra Leone": "Serra Leoa", "Portuguese Guinea": "Guiné Portuguesa",
       "Liberia": "Libéria", "Gold Coast": "Costa do Ouro", "Togoland": "Togolândia", "Nigeria": "Nigéria", "Kamerun": "Camarões Alemão", "Spanish Guinea": "Guiné Espanhola",
       "Angola": "Angola", "German South-West Africa": "Sudoeste Africano Alemão", "Cape Colony": "Colônia do Cabo", "Natal": "Colônia de Natal", "Basutoland": "Basutolândia",
@@ -202,47 +202,62 @@ export const EVENTS = {
       "Rhodesia": "Reino Unido", "Portuguese East Africa": "Portugal", "German East Africa": "Império Alemão", "British East Africa": "Reino Unido", "Uganda": "Reino Unido",
       "Zanzibar": "Reino Unido", "Ethiopia": null, "Eritrea": "Itália", "French Somaliland": "França", "British Somaliland": "Reino Unido", "Italian Somaliland": "Itália",
       "Madagascar": "França", "Comoros": "França", "Reunion": "França", "Mauritius": "Reino Unido", "Seychelles": "Reino Unido", "Cape Verde": "Portugal", "Sao Tome": "Portugal" } },
-    { y: 1895, y1: 1911, r: { "Morocco": "Marrocos" }, f: { "Morocco": "h:ma_red" }, o: { "Morocco": null } },
+    { y: 1890, y1: 1911, r: { "Morocco": "Marrocos" }, f: { "Morocco": "h:ma_red" }, o: { "Morocco": null } },
     { y: 1912, r: { "Morocco": "Marrocos (protetorado francês)" }, f: { "Morocco": "x:fr" }, o: { "Morocco": "França" } }, // 30/mar/1912
-    { y: 1895, y1: 1902, r: { "Mauritania": null } }, // emirados mouros (pendente)
+    { y: 1890, y1: 1902, r: { "Mauritania": null } }, // emirados mouros (pendente)
     { y: 1903, m: ["África Ocidental Francesa", "x:fr", ["French West Africa", "Mauritania"]] }, // protetorado em 1903
-    { y: 1895, y1: 1909, r: { "French Congo": "Congo Francês" }, f: { "French Congo": "x:fr" }, o: { "French Congo": "França" } },
+    { y: 1890, y1: 1909, r: { "French Congo": "Congo Francês" }, f: { "French Congo": "x:fr" }, o: { "French Congo": "França" } },
     { y: 1910, r: { "French Congo": "África Equatorial Francesa" }, f: { "French Congo": "x:fr" }, o: { "French Congo": "França" } }, // jan/1910
-    { y: 1895, y1: 1907, r: { "Congo Free State": "Estado Livre do Congo" }, f: { "Congo Free State": "h:cfs" }, o: { "Congo Free State": null } },
+    { y: 1890, y1: 1907, r: { "Congo Free State": "Estado Livre do Congo" }, f: { "Congo Free State": "h:cfs" }, o: { "Congo Free State": null } },
     { y: 1908, r: { "Congo Free State": "Congo Belga" }, f: { "Congo Free State": "x:be" }, o: { "Congo Free State": "Bélgica" } }, // 15/nov/1908
-    { y: 1895, y1: 1901, r: { "Transvaal": "Transvaal (Guerra dos Bôeres)", "Orange Free State": "Estado Livre de Orange (Guerra dos Bôeres)" },
+    { y: 1890, y1: 1901, r: { "Transvaal": "Transvaal (Guerra dos Bôeres)", "Orange Free State": "Estado Livre de Orange (Guerra dos Bôeres)" },
       f: { "Transvaal": "blank", "Orange Free State": "blank" }, o: { "Transvaal": null, "Orange Free State": null } }, // anexados em 1900; guerra até 31/mai/1902
     { y: 1902, y1: 1909, r: { "Transvaal": "Colônia do Transvaal", "Orange Free State": "Colônia do Rio Orange" }, f: { "Transvaal": "x:gb", "Orange Free State": "x:gb" },
       o: { "Transvaal": "Reino Unido", "Orange Free State": "Reino Unido" } },
     { y: 1910, m: ["União Sul-Africana", "h:za_red", ["Cape Colony", "Natal", "Transvaal", "Orange Free State"]], o: { "Cape Colony": null } }, // 31/mai/1910
-    { y: 1895, y1: 1902, r: { "Swaziland": "Suazilândia" }, f: { "Swaziland": "blank" }, o: { "Swaziland": null } },
+    { y: 1890, y1: 1902, r: { "Swaziland": "Suazilândia" }, f: { "Swaziland": "blank" }, o: { "Swaziland": null } },
     { y: 1903, r: { "Swaziland": "Suazilândia (protetorado britânico)" }, f: { "Swaziland": "x:gb" }, o: { "Swaziland": null } },
-    { y: 1895, y1: 1906, r: { "British Central Africa": "África Central Britânica" }, f: { "British Central Africa": "x:gb" }, o: { "British Central Africa": "Reino Unido" } },
+    { y: 1890, y1: 1906, r: { "British Central Africa": "África Central Britânica" }, f: { "British Central Africa": "x:gb" }, o: { "British Central Africa": "Reino Unido" } },
     { y: 1907, r: { "British Central Africa": "Niassalândia" }, f: { "British Central Africa": "x:gb" }, o: { "British Central Africa": "Reino Unido" } },
-    // revisão 1895–1899 (situação em 31/dez; fontes: Wikipedia)
-    { y: 1895, y1: 1897, r: { "Kingdom of Hawaii": "República do Havaí" }, f: { "Kingdom of Hawaii": "h:hawaii" }, o: { "Kingdom of Hawaii": null } }, // 4/jul/1894 a 12/ago/1898; manteve a bandeira do reino
-    { y: 1895, y1: 1897, r: { "Guam": "Guam (Espanha)", "Puerto Rico": "Porto Rico (Espanha)", "Cuba": "Cuba (Espanha)", "Philippines": "Filipinas (Espanha)" },
+    // revisão 1890–1899 (situação em 31/dez; fontes: Wikipedia)
+    { y: 1894, y1: 1897, r: { "Kingdom of Hawaii": "República do Havaí" }, f: { "Kingdom of Hawaii": "h:hawaii" }, o: { "Kingdom of Hawaii": null } }, // 4/jul/1894 a 12/ago/1898; manteve a bandeira do reino
+    { y: 1890, y1: 1897, r: { "Guam": "Guam (Espanha)", "Puerto Rico": "Porto Rico (Espanha)", "Cuba": "Cuba (Espanha)", "Philippines": "Filipinas (Espanha)" },
       f: { "Guam": "x:es", "Puerto Rico": "x:es", "Cuba": "x:es", "Philippines": "x:es" }, o: { "Guam": "Espanha", "Puerto Rico": "Espanha", "Cuba": "Espanha", "Philippines": "Espanha" } },
     { y: 1898, y1: 1898, r: { "Puerto Rico": "Porto Rico (ocupação americana)", "Cuba": "Cuba (Guerra Hispano-Americana)", "Philippines": "Filipinas (Revolução Filipina)" },
       f: { "Puerto Rico": "h:us45", "Cuba": "blank", "Philippines": "blank" }, o: { "Puerto Rico": null, "Cuba": null, "Philippines": null } }, // Tratado de Paris assinado em 10/dez/1898, em vigor em 11/abr/1899
     { y: 1898, y1: 1898, r: { "Guam": "Guam (ocupação americana)" }, o: { "Guam": null } }, // rendeu-se em 20/jun/1898
-    { y: 1895, y1: 1898, r: { "Micronesia": "Carolinas e Marianas (Espanha)" }, f: { "Micronesia": "x:es" }, o: { "Micronesia": "Espanha" } }, // vendidas à Alemanha pelo tratado de 12/fev/1899
-    { y: 1895, y1: 1899, m: ["Samoa", "blank", ["Samoa", "American Samoa"]], o: { "Samoa": null } }, // partilha só em 1900
-    { y: 1895, y1: 1899, r: { "Niue": "Niue", "Tonga": "Reino de Tonga" }, f: { "Niue": "blank", "Tonga": "x:to" }, o: { "Niue": null, "Tonga": null } }, // protetorados britânicos em 1900
-    { y: 1895, y1: 1896, r: { "Korea": "Reino de Joseon" }, f: { "Korea": "x:kr" }, o: { "Korea": null } }, // Império Coreano em 13/out/1897; taegukgi oficial desde 1883
-    { y: 1895, y1: 1897, f: { "Norway": "h:no_union", "Sweden–Norway": "h:se_union" } },
+    { y: 1890, y1: 1898, r: { "Micronesia": "Carolinas e Marianas (Espanha)" }, f: { "Micronesia": "x:es" }, o: { "Micronesia": "Espanha" } }, // vendidas à Alemanha pelo tratado de 12/fev/1899
+    { y: 1890, y1: 1899, m: ["Samoa", "blank", ["Samoa", "American Samoa"]], o: { "Samoa": null } }, // partilha só em 1900
+    { y: 1890, y1: 1899, r: { "Niue": "Niue", "Tonga": "Reino de Tonga" }, f: { "Niue": "blank", "Tonga": "x:to" }, o: { "Niue": null, "Tonga": null } }, // protetorados britânicos em 1900
+    { y: 1890, y1: 1896, r: { "Korea": "Reino de Joseon" }, f: { "Korea": "x:kr" }, o: { "Korea": null } }, // Império Coreano em 13/out/1897; taegukgi oficial desde 1883
+    { y: 1890, y1: 1897, f: { "Norway": "h:no_union", "Sweden–Norway": "h:se_union" } },
     { y: 1898, y1: 1898, f: { "Norway": "h:no_union" } }, // lei de 10/dez/1898; a bandeira "pura" foi hasteada a partir de 1899
-    { y: 1895, y1: 1896, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Crete"]] },
+    { y: 1890, y1: 1896, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Crete"]] },
     { y: 1897, y1: 1897, r: { "Crete": "Creta (ocupação das Grandes Potências)" }, f: { "Crete": "blank" }, o: { "Crete": null } }, // revolta e ocupação em mar–abr/1897; Estado de Creta proclamado em 9/dez/1898
-    { y: 1895, y1: 1897, m: ["Estado Mahdista", "blank", ["Anglo-Egyptian Sudan", "Darfur"]], o: { "Anglo-Egyptian Sudan": null } },
+    { y: 1890, y1: 1897, m: ["Estado Mahdista", "blank", ["Anglo-Egyptian Sudan", "Darfur"]], o: { "Anglo-Egyptian Sudan": null } },
     { y: 1898, y1: 1898, r: { "Anglo-Egyptian Sudan": "Sudão (ocupação anglo-egípcia)" }, f: { "Anglo-Egyptian Sudan": "x:gb" }, o: { "Anglo-Egyptian Sudan": null } }, // Omdurman 2/set/1898; convenção de 18/jan/1899
-    { y: 1895, y1: 1896, f: { "Ethiopia": "blank" } }, // primeira bandeira oficial em 11/out/1897
+    { y: 1890, y1: 1896, f: { "Ethiopia": "blank" } }, // primeira bandeira oficial em 11/out/1897
     { y: 1895, y1: 1895, r: { "Madagascar": "Reino Merina (invasão francesa)" }, f: { "Madagascar": "blank" }, o: { "Madagascar": null } },
     { y: 1896, y1: 1896, r: { "Madagascar": "Madagascar (protetorado francês)" } }, // anexada em 1897
-    { y: 1895, y1: 1899, r: { "Nigeria": "Costa do Níger, Lagos e Cia. Real do Níger (britânicos)" } }, // protetorados da Nigéria em 1/jan/1900
-    { y: 1895, y1: 1899, r: { "Transvaal": "Transvaal (República Sul-Africana)", "Orange Free State": "Estado Livre de Orange" },
+    { y: 1890, y1: 1899, r: { "Nigeria": "Costa do Níger, Lagos e Cia. Real do Níger (britânicos)" } }, // protetorados da Nigéria em 1/jan/1900
+    { y: 1890, y1: 1899, r: { "Transvaal": "Transvaal (República Sul-Africana)", "Orange Free State": "Estado Livre de Orange" },
       f: { "Transvaal": "h:transvaal", "Orange Free State": "h:ofs" }, o: { "Transvaal": null, "Orange Free State": null } }, // Guerra dos Bôeres desde 11/out/1899; anexados em 1900
-    { y: 1895, y1: 1898, r: { "Swaziland": "Suazilândia (protetorado do Transvaal)" }, f: { "Swaziland": "blank" }, o: { "Swaziland": "Transvaal (República Sul-Africana)" } }, // convenção de 1894 até out/1899
+    { y: 1894, y1: 1898, r: { "Swaziland": "Suazilândia (protetorado do Transvaal)" }, f: { "Swaziland": "blank" }, o: { "Swaziland": "Transvaal (República Sul-Africana)" } }, // convenção de 1894 até out/1899
+    { y: 1890, y1: 1892, r: { "Kingdom of Hawaii": "Reino do Havaí" }, f: { "Kingdom of Hawaii": "h:hawaii" }, o: { "Kingdom of Hawaii": null } },
+    { y: 1893, y1: 1893, r: { "Kingdom of Hawaii": "Havaí (Governo Provisório)" }, f: { "Kingdom of Hawaii": "h:hawaii" }, o: { "Kingdom of Hawaii": null } }, // monarquia derrubada em 17/jan/1893
+    { y: 1890, y1: 1894, r: { "Madagascar": "Reino Merina (protetorado francês)" }, f: { "Madagascar": "blank" }, o: { "Madagascar": null } }, // protetorado desde 1882 (Wikipedia); monarquia até 1897
+    { y: 1890, y1: 1893, r: { "Swaziland": "Suazilândia" }, f: { "Swaziland": "blank" }, o: { "Swaziland": null } }, // convenção de dez/1894 a pôs sob o Transvaal
+    { y: 1890, y1: 1894, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Taiwan"]] }, // Tratado de Shimonoseki, 17/abr/1895
+    { y: 1890, y1: 1892, r: { "Uganda": "Uganda (Cia. Imperial Britânica da África Oriental)" } }, // a companhia saiu em 31/mar/1893; protetorado em 18/jun/1894
+    { y: 1890, y1: 1894, r: { "British East Africa": "África Oriental Britânica (Cia. Imperial Britânica da África Oriental)" } }, // protetorado em 1/jul/1895
+    { y: 1890, y1: 1894, r: { "French West Africa": "Colônias francesas da África Ocidental" } }, // federação criada em 27/out/1895
+    { y: 1890, y1: 1894, r: { "Rhodesia": "Territórios da Companhia Britânica da África do Sul" } }, // nome Rodésia adotado em 1895
+    { y: 1890, y1: 1898, r: { "Marshall Islands": "Ilhas Marshall (protetorado alemão)" }, f: { "Marshall Islands": "h:de_emp" }, o: { "Marshall Islands": "Império Alemão" } }, // 1885
+    { y: 1899, m: ["Micronésia Alemã", "h:de_emp", ["Micronesia", "Marshall Islands"]] },
+    // Axanti: império até a ocupação britânica de jan/1896, protetorado em 1897, colônia anexada à Costa do Ouro em 1/jan/1902
+    { y: 1890, y1: 1895, r: { "Ashanti": "Império Axanti" }, f: { "Ashanti": "blank" }, o: { "Ashanti": null } },
+    { y: 1896, y1: 1901, r: { "Ashanti": "Axanti (protetorado britânico)" }, f: { "Ashanti": "x:gb" }, o: { "Ashanti": "Reino Unido" } },
+    { y: 1902, m: ["Costa do Ouro", "x:gb", ["Gold Coast", "Ashanti"]] },
   ],
   1914: [
     // revisão 1914–1919 (situação em 31/dez). Unidades novas vêm de hist-overrides.json.
