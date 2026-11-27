@@ -121,6 +121,25 @@ for year in YEARS:
         rest = polys_only(A.difference(taken)) if taken is not None else A
         if rest is not None:
             out.append((rest, big_u, a3, iso))
+    # land the old map leaves blank (mostly islands its coarse coastline missed) goes to the unit that holds
+    # most of the same province today, else most of the same country; Antarctica, Svalbard and the high Arctic stay blank
+    by_iso, by_a3 = {}, {}
+    for g, u, a3, iso in out:
+        if u != NONE:
+            by_iso.setdefault(iso, {}).setdefault(u, 0.0); by_iso[iso][u] += g.area
+            by_a3.setdefault(a3, {}).setdefault(u, 0.0); by_a3[a3][u] += g.area
+    for k, (g, u, a3, iso) in enumerate(out):
+        if u != NONE or a3 == "ATA":
+            continue
+        lat = g.representative_point().y
+        if (a3 == "RUS" and lat > 77.5) or (a3 == "CAN" and lat > 66) or (a3 == "NOR" and (lat > 74 or g.representative_point().x < 0)):
+            continue  # Svalbard and Jan Mayen were no-man's-land until the 1920s
+        pool = by_iso.get(iso)
+        if not pool:  # whole province blank: only when one unit clearly holds the country
+            pool = by_a3.get(a3)
+            if not pool or max(pool.values()) < 0.75 * sum(pool.values()):
+                continue
+        out[k] = (g, max(pool, key=pool.get), a3, iso)
     for o in OVR.get(str(year), []):
         if "take" in o:
             t = o["take"]

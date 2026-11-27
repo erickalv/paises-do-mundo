@@ -232,6 +232,141 @@
     "map": 1930,
     "name": "Danzig"
    }
+  },
+  {
+   "key": "Falkland Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "FLK"
+    ]
+   }
+  },
+  {
+   "key": "New Caledonia",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "NCL"
+    ]
+   }
+  },
+  {
+   "key": "French Polynesia",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "PYF"
+    ]
+   }
+  },
+  {
+   "key": "New Hebrides",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "VUT"
+    ]
+   }
+  },
+  {
+   "key": "Solomon Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SLB"
+    ]
+   }
+  },
+  {
+   "key": "South Georgia",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SGS"
+    ]
+   }
+  },
+  {
+   "key": "Kerguelen",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "ATF"
+    ]
+   }
+  },
+  {
+   "key": "Bahamas",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "BHS"
+    ]
+   }
+  },
+  {
+   "key": "Cayman Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "CYM"
+    ]
+   }
+  },
+  {
+   "key": "Turks and Caicos",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "TCA"
+    ]
+   }
+  },
+  {
+   "key": "Saint Pierre and Miquelon",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SPM"
+    ]
+   }
+  },
+  {
+   "key": "Saint Helena",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SHN"
+    ]
+   }
+  },
+  {
+   "key": "Gilbert Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "KIR"
+    ]
+   }
+  },
+  {
+   "key": "Aland",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "ALD"
+    ]
+   }
+  },
+  {
+   "key": "Svalbard",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "NOR"
+    ]
+   }
   }
  ],
  "1938": [
@@ -772,6 +907,87 @@
      "MD-SN"
     ]
    }
+  },
+  {
+   "key": "Falkland Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "FLK"
+    ]
+   }
+  },
+  {
+   "key": "French Polynesia",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "PYF"
+    ]
+   }
+  },
+  {
+   "key": "South Georgia",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SGS"
+    ]
+   }
+  },
+  {
+   "key": "Kerguelen",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "ATF"
+    ]
+   }
+  },
+  {
+   "key": "Cayman Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "CYM"
+    ]
+   }
+  },
+  {
+   "key": "Saint Pierre and Miquelon",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SPM"
+    ]
+   }
+  },
+  {
+   "key": "Saint Helena",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SHN"
+    ]
+   }
+  },
+  {
+   "key": "Aland",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "ALD"
+    ]
+   }
+  },
+  {
+   "key": "Svalbard",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "NOR"
+    ]
+   }
   }
  ],
  "labels": {
@@ -1149,6 +1365,132 @@
    "cut": {
     "map": 1930,
     "name": "Danzig"
+   }
+  },
+  {
+   "key": "Falkland Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "FLK"
+    ]
+   }
+  },
+  {
+   "key": "New Caledonia",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "NCL"
+    ]
+   }
+  },
+  {
+   "key": "French Polynesia",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "PYF"
+    ]
+   }
+  },
+  {
+   "key": "New Hebrides",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "VUT"
+    ]
+   }
+  },
+  {
+   "key": "Solomon Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SLB"
+    ]
+   }
+  },
+  {
+   "key": "South Georgia",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SGS"
+    ]
+   }
+  },
+  {
+   "key": "Kerguelen",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "ATF"
+    ]
+   }
+  },
+  {
+   "key": "Bahamas",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "BHS"
+    ]
+   }
+  },
+  {
+   "key": "Cayman Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "CYM"
+    ]
+   }
+  },
+  {
+   "key": "Turks and Caicos",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "TCA"
+    ]
+   }
+  },
+  {
+   "key": "Saint Pierre and Miquelon",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SPM"
+    ]
+   }
+  },
+  {
+   "key": "Saint Helena",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SHN"
+    ]
+   }
+  },
+  {
+   "key": "Gilbert Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "KIR"
+    ]
+   }
+  },
+  {
+   "key": "Aland",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "ALD"
+    ]
    }
   }
  ],
@@ -1764,6 +2106,125 @@
      "RO-CV",
      "RO-BV",
      "RO-SB"
+    ]
+   }
+  },
+  {
+   "key": "Falkland Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "FLK"
+    ]
+   }
+  },
+  {
+   "key": "New Caledonia",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "NCL"
+    ]
+   }
+  },
+  {
+   "key": "French Polynesia",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "PYF"
+    ]
+   }
+  },
+  {
+   "key": "New Hebrides",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "VUT"
+    ]
+   }
+  },
+  {
+   "key": "Solomon Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SLB"
+    ]
+   }
+  },
+  {
+   "key": "South Georgia",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SGS"
+    ]
+   }
+  },
+  {
+   "key": "Kerguelen",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "ATF"
+    ]
+   }
+  },
+  {
+   "key": "Cayman Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "CYM"
+    ]
+   }
+  },
+  {
+   "key": "Saint Pierre and Miquelon",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SPM"
+    ]
+   }
+  },
+  {
+   "key": "Saint Helena",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SHN"
+    ]
+   }
+  },
+  {
+   "key": "Gilbert Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "KIR"
+    ]
+   }
+  },
+  {
+   "key": "Aland",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "ALD"
+    ]
+   }
+  },
+  {
+   "key": "Papua New Guinea",
+   "take": {
+    "from": "_none",
+    "iso": [
+     "PG-NSB",
+     "PG-NIK",
+     "PG-MRL"
     ]
    }
   }
@@ -3608,6 +4069,344 @@
     "iso": [
      "RU-AMU",
      "RU-YEV"
+    ]
+   }
+  },
+  {
+   "key": "Upper Burma",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "MM-14"
+    ]
+   }
+  },
+  {
+   "key": "Pegu",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "MM-07",
+     "MM-06",
+     "MM-02"
+    ]
+   }
+  },
+  {
+   "key": "Oudh",
+   "cut": {
+    "map": 1815,
+    "name": "Oudh",
+    "adm0": [
+     "IND"
+    ]
+   }
+  },
+  {
+   "key": "Falkland Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "FLK"
+    ]
+   }
+  },
+  {
+   "key": "New Caledonia",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "NCL"
+    ]
+   }
+  },
+  {
+   "key": "New Hebrides",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "VUT"
+    ]
+   }
+  },
+  {
+   "key": "Solomon Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SLB"
+    ]
+   }
+  },
+  {
+   "key": "South Georgia",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SGS"
+    ]
+   }
+  },
+  {
+   "key": "Kerguelen",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "ATF"
+    ]
+   }
+  },
+  {
+   "key": "Saint Pierre and Miquelon",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SPM"
+    ]
+   }
+  },
+  {
+   "key": "Saint Helena",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SHN"
+    ]
+   }
+  },
+  {
+   "key": "Gilbert Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "KIR"
+    ]
+   }
+  },
+  {
+   "key": "Greenland",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "GRL"
+    ]
+   }
+  }
+ ],
+ "1945": [
+  {
+   "key": "Falkland Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "FLK"
+    ]
+   }
+  },
+  {
+   "key": "New Caledonia",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "NCL"
+    ]
+   }
+  },
+  {
+   "key": "French Polynesia",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "PYF"
+    ]
+   }
+  },
+  {
+   "key": "New Hebrides",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "VUT"
+    ]
+   }
+  },
+  {
+   "key": "Solomon Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SLB"
+    ]
+   }
+  },
+  {
+   "key": "South Georgia",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SGS"
+    ]
+   }
+  },
+  {
+   "key": "Kerguelen",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "ATF"
+    ]
+   }
+  },
+  {
+   "key": "Cayman Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "CYM"
+    ]
+   }
+  },
+  {
+   "key": "Saint Pierre and Miquelon",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SPM"
+    ]
+   }
+  },
+  {
+   "key": "Saint Helena",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SHN"
+    ]
+   }
+  },
+  {
+   "key": "Gilbert Islands",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "KIR"
+    ]
+   }
+  },
+  {
+   "key": "Aland",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "ALD"
+    ]
+   }
+  },
+  {
+   "key": "Svalbard",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "NOR"
+    ]
+   }
+  },
+  {
+   "key": "Seychelles",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "SYC"
+    ]
+   }
+  },
+  {
+   "key": "Mauritius",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "MUS"
+    ]
+   }
+  },
+  {
+   "key": "Malta",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "MLT"
+    ]
+   }
+  },
+  {
+   "key": "Bahrain",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "BHR"
+    ]
+   }
+  },
+  {
+   "key": "Comoros",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "COM"
+    ]
+   }
+  },
+  {
+   "key": "Cape Verde",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "CPV"
+    ]
+   }
+  },
+  {
+   "key": "Sao Tome",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "STP"
+    ]
+   }
+  },
+  {
+   "key": "Guam",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "GUM"
+    ]
+   }
+  },
+  {
+   "key": "Micronesia",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "FSM"
+    ]
+   }
+  },
+  {
+   "key": "Palau",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "PLW"
+    ]
+   }
+  },
+  {
+   "key": "Northern Marianas",
+   "take": {
+    "from": "_none",
+    "adm0": [
+     "MNP"
     ]
    }
   }
