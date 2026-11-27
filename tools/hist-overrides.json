@@ -4262,6 +4262,44 @@
    }
   },
   {
+   "key": "Assam",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "IN-AS"
+    ]
+   }
+  },
+  {
+   "key": "Manipur",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "IN-MN"
+    ]
+   }
+  },
+  {
+   "key": "Arakan",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "MM-16"
+    ]
+   }
+  },
+  {
+   "key": "Tenasserim",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "MM-05",
+     "MM-15",
+     "MM-13"
+    ]
+   }
+  },
+  {
    "key": "Falkland Islands",
    "take": {
     "from": "_none",
