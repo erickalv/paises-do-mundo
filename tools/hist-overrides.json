@@ -4332,6 +4332,21 @@
    }
   },
   {
+   "key": "Liga Federal",
+   "take": {
+    "from": [
+     "Argentina",
+     "State of Buenos Aires"
+    ],
+    "iso": [
+     "AR-E",
+     "AR-W",
+     "AR-N",
+     "AR-S"
+    ]
+   }
+  },
+  {
    "key": "Falkland Islands",
    "take": {
     "from": "_none",
