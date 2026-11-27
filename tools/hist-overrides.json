@@ -2726,6 +2726,79 @@
      "JP-47"
     ]
    }
+  },
+  {
+   "key": "Russian Caucasus",
+   "take": {
+    "from": "Persia",
+    "adm0": [
+     "GEO",
+     "ARM",
+     "AZE"
+    ]
+   }
+  },
+  {
+   "key": "Russian Caucasus",
+   "take": {
+    "from": "Ottoman Empire",
+    "iso": [
+     "TR-76"
+    ]
+   }
+  },
+  {
+   "key": "Kars Oblast",
+   "take": {
+    "from": "Ottoman Empire",
+    "iso": [
+     "TR-36",
+     "TR-75",
+     "TR-08"
+    ]
+   }
+  },
+  {
+   "key": "Bessarabia",
+   "take": {
+    "from": "Romania",
+    "adm0": [
+     "MDA"
+    ]
+   }
+  },
+  {
+   "key": "Bay of Kotor",
+   "take": {
+    "from": "Montenegro",
+    "iso": [
+     "ME-10",
+     "ME-08",
+     "ME-05",
+     "ME-19"
+    ]
+   }
+  },
+  {
+   "key": "Bosnia-Herzegovina",
+   "take": {
+    "from": "Montenegro",
+    "adm0": [
+     "BIH"
+    ]
+   }
+  },
+  {
+   "key": "Canada",
+   "iso": [
+    "CA-PE"
+   ]
+  },
+  {
+   "key": "Fiji",
+   "iso": [
+    "FJ-R"
+   ]
   }
  ]
 }

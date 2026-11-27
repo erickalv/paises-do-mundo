@@ -340,6 +340,9 @@ export const EVENTS = {
     { y: 1878, y1: 1879, m: ["Peru", "x:pe", ["Peru", "Tacna and Arica"]] },
     { y: 1878, y1: 1878, m: ["Peru", "x:pe", ["Peru", "Tarapaca"]] }, // campanha de Tarapacá, nov–dez/1879
     { y: 1878, y1: 1878, m: ["Bolívia", "x:bo", ["Bolivia", "Bolivian Litoral"]] }, // Antofagasta ocupada em 14/fev/1879
+    // erros do mapa de 1900 corrigidos para 1878–1912
+    { y: 1878, m: ["Império Russo", "x:ru", ["Russian Empire", "Russian Caucasus", "Kars Oblast", "Bessarabia"]] }, // Cáucaso russo desde Gulistão (1813) e Turkmenchay (1828); Kars e Ardahan pelo Tratado de Berlim; Bessarábia desde 1812
+    { y: 1878, m: ["Áustria-Hungria", "h:at_hab", ["Austria Hungary", "Bay of Kotor"]] }, // Boca de Kotor na Dalmácia austríaca até 1918
   ],
   1914: [
     // revisão 1914–1919 (situação em 31/dez). Unidades novas vêm de hist-overrides.json.
