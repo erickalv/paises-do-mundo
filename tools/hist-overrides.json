@@ -4463,6 +4463,16 @@
    }
   },
   {
+   "key": "Bukovina",
+   "take": {
+    "from": "Austria Hungary",
+    "iso": [
+     "UA-77",
+     "RO-SV"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
