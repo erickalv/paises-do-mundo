@@ -4103,6 +4103,78 @@
    }
   },
   {
+   "key": "Texas",
+   "take": {
+    "from": [
+     "United States of America",
+     "Confederate States"
+    ],
+    "iso": [
+     "US-TX"
+    ]
+   }
+  },
+  {
+   "key": "Oregon",
+   "take": {
+    "from": "United States of America",
+    "iso": [
+     "US-WA",
+     "US-OR",
+     "US-ID"
+    ]
+   }
+  },
+  {
+   "key": "Sind",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "PK-SD"
+    ]
+   }
+  },
+  {
+   "key": "Kashmir",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "IN-JK",
+     "PK-JK",
+     "IN-LA",
+     "PK-GB"
+    ]
+   }
+  },
+  {
+   "key": "Rio Grande do Sul",
+   "take": {
+    "from": "Kingdom of Brazil",
+    "iso": [
+     "BR-RS"
+    ]
+   }
+  },
+  {
+   "key": "Maryland",
+   "take": {
+    "from": "Liberia",
+    "iso": [
+     "LR-MY"
+    ]
+   }
+  },
+  {
+   "key": "Kraków",
+   "cut": {
+    "map": 1815,
+    "name": "Republic of Kraków",
+    "adm0": [
+     "POL"
+    ]
+   }
+  },
+  {
    "key": "Falkland Islands",
    "take": {
     "from": "_none",

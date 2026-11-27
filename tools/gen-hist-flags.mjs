@@ -394,6 +394,8 @@ F.us38 = usRows([7, 8, 8, 8, 7]);
 F.us37 = usRows([8, 7, 7, 7, 8]);
 F.us28 = usRows([7, 7, 7, 7]); // 4/jul/1846 a 3/jul/1847 (sem arranjo oficial das estrelas)
 F.us29 = usRows([6, 6, 6, 6, 5]); // 4/jul/1847 a 3/jul/1848 (sem arranjo oficial)
+F.us26 = usRows([6, 5, 5, 5, 5]); // 4/jul/1837 a 3/jul/1845 (sem arranjo oficial)
+F.us27 = usRows([6, 5, 6, 5, 5]); // 4/jul/1845 a 3/jul/1846
 F.us30 = usRows([6, 6, 6, 6, 6]); // 4/jul/1848 a 3/jul/1851 (sem arranjo oficial)
 F.us31 = usRows([7, 6, 6, 6, 6]); // 4/jul/1851 a 3/jul/1858 (sem arranjo oficial das estrelas)
 F.us32 = usRows([7, 6, 6, 7, 6]); // 4/jul/1858 a 3/jul/1859 (sem arranjo oficial)
@@ -402,6 +404,7 @@ F.us34 = usRows([7, 7, 6, 7, 7]); // 4/jul/1861 a 3/jul/1863
 F.us35 = usRows([7, 7, 7, 7, 7]); // 4/jul/1863 a 3/jul/1865
 F.us36 = usRows([8, 7, 6, 7, 8]); // 4/jul/1865 a 3/jul/1867
 // Principados Unidos 1859–1866: horizontal vermelho, amarelo, azul
+F.texas = svg(`<rect width="640" height="480" fill="#fff"/><rect y="240" width="640" height="240" fill="#BF0A30"/><rect width="213" height="480" fill="#002868"/>` + star(106.5, 240, 80, "#fff")); // Lone Star Flag, adotada em 1839 (proporção 2:3)
 F.ro_up = svg(H("#CE1126", "#FCD116", "#002B7F")); // Principados Unidos, tricolor horizontal até 1866
 // Noruega 1844–1898: com a marca da união no cantão (simplificada; lei de 10/dez/1898 a retirou, bandeira "pura" desde 1899)
 {
