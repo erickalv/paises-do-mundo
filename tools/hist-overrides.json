@@ -5805,6 +5805,17 @@
    }
   },
   {
+   "key": "ES Aragon",
+   "take": {
+    "from": "Spain",
+    "iso": [
+     "ES-HU",
+     "ES-Z",
+     "ES-TE"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
