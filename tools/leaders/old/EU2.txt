@@ -1,0 +1,16 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_kings_of_Greece ; https://en.wikipedia.org/wiki/List_of_Belgian_monarchs ; https://en.wikipedia.org/wiki/List_of_rulers_of_Baden
+GR|1832-05-07|1862-10-23|Oto|Rei da Grécia
+GR|1863-03-30|1913-03-18|Jorge I|Rei dos Helenos
+BE|1831-02-25|1831-07-21|Erasme-Louis Surlet de Chokier|Regente
+BE|1831-07-21|1865-12-10|Leopoldo I|Rei dos Belgas
+BE|1865-12-17|1909-12-17|Leopoldo II|Rei dos Belgas
+BA|1453-10-13|1475-02-24|Carlos I|Marquês de Baden
+BA|1475-02-24|1515|Cristóvão I|Marquês de Baden
+BA|1771-10-21|1803-04-27|Carlos Frederico|Marquês de Baden
+BA|1803-04-27|1806-07-25|Carlos Frederico|Eleitor de Baden
+BA|1806-07-25|1811-06-10|Carlos Frederico|Grão-duque de Baden
+BA|1811-06-10|1818-12-08|Carlos|Grão-duque de Baden
+BA|1818-12-08|1830-03-30|Luís I|Grão-duque de Baden
+BA|1830-03-30|1852-04-24|Leopoldo|Grão-duque de Baden
+BA|1852-04-24|1858-01-22|Luís II|Grão-duque de Baden
+BA|1858-01-22|1907-09-28|Frederico I|Grão-duque de Baden

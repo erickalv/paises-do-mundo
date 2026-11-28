@@ -100,3 +100,21 @@ CO|Colômbia \(Grã-Colômbia em dissolução\)|1830|1830
 CO|República de Nova Granada|1831|1857
 CO|Confederação Granadina|1858|1860
 CO|Estados Unidos da Colômbia|1861|1874
+HI|Reino do Havaí|1795|1874
+TO|Reino de Tonga|1845|1874
+KY|Reino de Kandy|1470|1814
+EG|Egito \(eialete otomano\)|1805|1866
+EG|Quedivato do Egito|1867|1874
+TN|Beilhique de Túnis|1613|1874
+VE|Venezuela|1830|1874
+EC|Equador|1830|1874
+BO|Bolívia|1825|1874
+PY|Paraguai( \(.*\))?|1811|1874
+UY|Uruguai( \(.*\))?|1830|1874
+UY|Estado Oriental do Uruguai|1828|1829
+GR|Grécia|1832|1874
+BE|Bélgica|1831|1874
+BA|Margraviato de Baden|1470|1514
+BA|Margraviato de Baden|1771|1802
+BA|Eleitorado de Baden|1803|1805
+BA|Grão-Ducado de Baden|1806|1874

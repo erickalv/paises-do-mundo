@@ -1,0 +1,25 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_monarchs_of_the_Muhammad_Ali_dynasty ; https://en.wikipedia.org/wiki/List_of_Beys_of_Tunis
+EG|1805-05-17|1848-04-15|Muhammad Ali|Uáli (vice-rei otomano)
+EG|1848-04-15|1848-11-10|Ibrahim Paxá|Uáli (vice-rei otomano)
+EG|1848-11-10|1854-07-13|Abbas I|Uáli (vice-rei otomano)
+EG|1854-07-13|1863-01-17|Said Paxá|Uáli (vice-rei otomano)
+EG|1863-01-19|1867-06-08|Ismail Paxá|Uáli (vice-rei otomano)
+EG|1867-06-08|1879-06-26|Ismail Paxá|Quediva
+TN|1613|1631|Murad I|Bei
+TN|1631|1666|Hammuda Paxá|Bei
+TN|1666|1675|Murad II|Bei
+TN|1675|1696-10-14|Mohamed El Mouradi|Bei
+TN|1696-10-14|1699-03-16|Ramadan|Bei
+TN|1699-03-16|1702-06-09|Murad III|Bei
+TN|1702-06-09|1705-07-15|Ibrahim Sharif|Bei
+TN|1705-07-15|1735-09-07|Husayn I ibn Ali|Bei
+TN|1735-09-07|1756-09-22|Ali I|Bei
+TN|1756-09-22|1759-02-12|Muhammad I ar-Rashid|Bei
+TN|1759-02-12|1782-05-26|Ali II|Bei
+TN|1782-05-26|1814-09-15|Hammuda ibn Ali|Bei
+TN|1814-12-20|1824-03-28|Mahmud|Bei
+TN|1824-03-28|1835-05-20|Husayn II|Bei
+TN|1835-05-20|1837-10-10|Mustafa|Bei
+TN|1837-10-10|1855-05-30|Ahmad I|Bei
+TN|1855-05-30|1859-09-22|Muhammad II|Bei
+TN|1859-09-22|1882-10-27|Muhammad III as-Sadiq|Bei

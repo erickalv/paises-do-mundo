@@ -1,0 +1,22 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_Hawaiian_monarchs ; https://en.wikipedia.org/wiki/List_of_monarchs_of_Tonga ; https://en.wikipedia.org/wiki/List_of_Kandyan_monarchs
+HI|1795|1819-05-08|Kamehameha I|Rei
+HI|1819-05-20|1824-07-14|Kamehameha II|Rei
+HI|1825-06-06|1854-12-15|Kamehameha III|Rei
+HI|1855-01-11|1863-11-30|Kamehameha IV|Rei
+HI|1863-11-30|1872-12-11|Kamehameha V|Rei
+HI|1873-01-08|1874-02-03|Lunalilo|Rei
+HI|1874-02-12|1891-01-20|Kalākaua|Rei
+TO|1845-12-04|1893-02-18|Jorge Tupou I|Rei
+KY|1469|1511|Senasammata Vikramabahu|Rei
+KY|1511|1552|Jayavira Bandara|Rei
+KY|1552|1582|Karalliyadde Bandara|Rei
+KY|1582|1590|Rajasinha I|Rei
+KY|1590|1604|Vimaladharmasuriya I|Rei
+KY|1604|1635|Senarat|Rei
+KY|1635|1687-11-25|Rajasinha II|Rei
+KY|1687-11-25|1707-06-04|Vimaladharmasuriya II|Rei
+KY|1707-06-04|1739-05-13|Vira Narendra Sinha|Rei
+KY|1739-05-13|1747-08-11|Sri Vijaya Rajasinha|Rei
+KY|1747-08-11|1782-01-02|Kirti Sri Rajasinha|Rei
+KY|1782-01-02|1798-07-26|Sri Rajadhi Rajasinha|Rei
+KY|1798-07-26|1815-03-05|Sri Vikrama Rajasinha|Rei

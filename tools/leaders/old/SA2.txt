@@ -1,0 +1,109 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_presidents_of_Venezuela ; https://en.wikipedia.org/wiki/List_of_presidents_of_Ecuador ; https://en.wikipedia.org/wiki/List_of_presidents_of_Bolivia ; https://en.wikipedia.org/wiki/List_of_heads_of_state_of_Paraguay ; https://en.wikipedia.org/wiki/List_of_presidents_of_Uruguay
+VE|1830-01-13|1835-01-20|José Antonio Páez|Presidente
+VE|1835-01-20|1835-02-09|Andrés Narvarte|Presidente interino
+VE|1835-02-09|1835-07-09|José María Vargas|Presidente
+VE|1835-07-09|1835-07-27|Santiago Mariño|Presidente interino
+VE|1835-07-27|1835-08-20|José María Carreño|Presidente interino
+VE|1835-08-20|1836-04-24|José María Vargas|Presidente
+VE|1836-04-24|1837-01-20|Andrés Narvarte|Presidente interino
+VE|1837-01-27|1837-03-11|José María Carreño|Presidente interino
+VE|1837-03-11|1839-02-01|Carlos Soublette|Presidente interino
+VE|1839-02-01|1843-01-28|José Antonio Páez|Presidente
+VE|1843-01-28|1847-01-20|Carlos Soublette|Presidente
+VE|1847-01-20|1847-03-01|Diego Bautista Urbaneja|Presidente interino
+VE|1847-03-01|1851-01-20|José Tadeo Monagas|Presidente
+VE|1851-01-20|1851-02-05|Antonio Leocadio Guzmán|Presidente interino
+VE|1851-02-05|1855-01-20|José Gregorio Monagas|Presidente
+VE|1855-01-20|1855-01-31|Joaquín Herrera|Presidente interino
+VE|1855-01-31|1858-03-15|José Tadeo Monagas|Presidente
+VE|1858-03-15|1858-03-18|Pedro Gual|Presidente interino
+VE|1858-03-18|1859-06-07|Julián Castro|Presidente
+VE|1859-06-07|1859-06-13|Manuel Felipe de Tovar|Presidente interino
+VE|1859-06-13|1859-08-02|Julián Castro|Presidente
+VE|1859-08-02|1859-09-29|Pedro Gual|Presidente interino
+VE|1859-09-29|1861-05-20|Manuel Felipe de Tovar|Presidente
+VE|1861-05-20|1861-08-29|Pedro Gual|Presidente interino
+VE|1861-08-29|1863-06-15|José Antonio Páez|Presidente
+VE|1863-06-15|1864-04-22|Juan Crisóstomo Falcón|Presidente provisório
+VE|1864-04-22|1868-04-25|Juan Crisóstomo Falcón|Presidente
+VE|1868-04-25|1868-06-28|Manuel Ezequiel Bruzual|Presidente interino
+VE|1868-06-28|1868-11-18|José Tadeo Monagas|Presidente de facto
+VE|1868-06-28|1869-02-20|Guillermo Tell Villegas|Presidente interino
+VE|1869-02-20|1870-04-16|José Ruperto Monagas|Presidente
+VE|1870-04-16|1870-04-27|Guillermo Tell Villegas|Presidente interino
+VE|1870-04-27|1877-02-27|Antonio Guzmán Blanco|Presidente
+EC|1830-05-03|1834-09-10|Juan José Flores|Presidente
+EC|1834-09-10|1839-01-31|Vicente Rocafuerte|Presidente
+EC|1839-02-01|1845-03-06|Juan José Flores|Presidente
+EC|1845-03-06|1845-12-08|José Joaquín de Olmedo|Presidente do Governo Provisório
+EC|1845-12-08|1849-10-15|Vicente Ramón Roca|Presidente
+EC|1849-10-15|1850-12-07|Manuel de Ascásubi|Presidente interino
+EC|1850-12-08|1851-07-24|Diego Noboa|Presidente
+EC|1851-07-24|1856-10-15|José María Urvina|Presidente
+EC|1856-10-16|1859-08-31|Francisco Robles|Presidente
+EC|1861-01-17|1865-08-30|Gabriel García Moreno|Presidente
+EC|1865-08-31|1865-09-07|Rafael Carvajal|Presidente interino
+EC|1865-09-07|1867-11-06|Jerónimo Carrión|Presidente
+EC|1867-11-07|1868-01-20|Pedro José de Arteta|Presidente interino
+EC|1868-01-20|1869-01-19|Javier Espinosa|Presidente
+EC|1869-01-19|1869-05-19|Gabriel García Moreno|Presidente interino
+EC|1869-05-19|1869-08-10|Manuel de Ascásubi|Presidente interino
+EC|1869-08-10|1875-08-06|Gabriel García Moreno|Presidente
+BO|1825-08-12|1825-12-29|Simón Bolívar|Presidente
+BO|1825-12-29|1828-04-18|Antonio José de Sucre|Presidente
+BO|1828-04-18|1828-08-02|José María Pérez de Urdininea|Presidente interino do Conselho de Ministros
+BO|1828-08-02|1828-12-18|José Miguel de Velasco|Presidente
+BO|1828-12-18|1828-12-26|José Ramón de Loayza|Presidente interino
+BO|1828-12-26|1829-01-01|Pedro Blanco Soto|Presidente provisório
+BO|1829-01-01|1829-05-24|José Miguel de Velasco|Presidente interino
+BO|1829-05-24|1839-02-17|Andrés de Santa Cruz|Presidente
+BO|1838-07-18|1839-02-17|Mariano Enrique Calvo|Presidente interino
+BO|1839-02-22|1841-06-10|José Miguel de Velasco|Presidente
+BO|1841-06-10|1841-07-09|Sebastián Ágreda|Presidente provisório
+BO|1841-07-09|1841-09-22|Mariano Enrique Calvo|Presidente interino
+BO|1841-09-27|1847-12-23|José Ballivián|Presidente
+BO|1847-12-23|1848-01-02|Eusebio Guilarte|Presidente interino
+BO|1848-01-18|1848-12-06|José Miguel de Velasco|Presidente
+BO|1848-12-06|1855-08-15|Manuel Isidoro Belzu|Presidente
+BO|1855-08-15|1857-09-09|Jorge Córdova|Presidente
+BO|1857-09-09|1861-01-14|José María Linares|Presidente provisório
+BO|1861-05-04|1864-12-28|José María de Achá|Presidente
+BO|1864-12-28|1871-01-15|Mariano Melgarejo|Presidente
+BO|1871-01-15|1872-11-27|Agustín Morales|Presidente
+BO|1872-11-28|1873-05-09|Tomás Frías|Presidente
+BO|1873-05-09|1874-02-14|Adolfo Ballivián|Presidente
+BO|1874-02-14|1876-05-04|Tomás Frías|Presidente
+PY|1811-06-17|1813-10-12|Fulgencio Yegros|Presidente da Junta Superior Governativa
+PY|1813-10-12|1814-02-12|José Gaspar Rodríguez de Francia|Cônsul
+PY|1814-02-12|1814-06-12|Fulgencio Yegros|Cônsul
+PY|1814-06-12|1814-10-03|José Gaspar Rodríguez de Francia|Cônsul
+PY|1814-10-03|1816-05-30|José Gaspar Rodríguez de Francia|Ditador Supremo
+PY|1816-05-30|1840-09-20|José Gaspar Rodríguez de Francia|Ditador Perpétuo
+PY|1840-09-20|1841-01-21|Manuel Antonio Ortiz|Presidente da Junta Provisória
+PY|1841-03-12|1844-03-13|Carlos Antonio López e Mariano Roque Alonso|Cônsules
+PY|1844-03-13|1862-09-10|Carlos Antonio López|Presidente
+PY|1862-09-10|1870-03-01|Francisco Solano López|Presidente
+PY|1870-09-01|1871-12-18|Cirilo Antonio Rivarola|Presidente
+PY|1871-12-18|1874-11-25|Salvador Jovellanos|Presidente
+PY|1874-11-25|1877-04-12|Juan Bautista Gill|Presidente
+UY|1828-08-27|1828-12-01|Luis Eduardo Pérez|Governador e Capitão-General provisório
+UY|1828-12-22|1830-04-17|José Rondeau|Governador e Capitão-General provisório
+UY|1830-04-17|1830-10-24|Juan Antonio Lavalleja|Governador e Capitão-General provisório
+UY|1830-11-06|1834-10-24|Fructuoso Rivera|Presidente
+UY|1834-10-24|1835-03-01|Carlos Anaya|Presidente do Senado no exercício do Executivo
+UY|1835-03-01|1838-10-24|Manuel Oribe|Presidente
+UY|1838-10-24|1839-03-01|Gabriel Antonio Pereira|Presidente do Senado no exercício do Executivo
+UY|1839-03-01|1843-03-01|Fructuoso Rivera|Presidente
+UY|1843-03-01|1852-02-15|Joaquín Suárez|Presidente do Senado no exercício do Executivo
+UY|1852-02-15|1852-03-01|Bernardo Prudencio Berro|Presidente do Senado no exercício do Executivo
+UY|1852-03-01|1853-09-25|Juan Francisco Giró|Presidente
+UY|1853-10-22|1854-01-13|Venancio Flores e Fructuoso Rivera|Triunvirato
+UY|1854-03-12|1855-09-10|Venancio Flores|Presidente
+UY|1855-09-10|1856-02-15|Manuel Basilio Bustamante|Presidente do Senado no exercício do Executivo
+UY|1856-03-01|1860-03-01|Gabriel Antonio Pereira|Presidente
+UY|1860-03-01|1864-03-01|Bernardo Prudencio Berro|Presidente
+UY|1864-03-01|1865-02-15|Atanasio Cruz Aguirre|Presidente do Senado no exercício do Executivo
+UY|1865-02-20|1868-02-15|Venancio Flores|Presidente de facto
+UY|1868-03-01|1872-03-01|Lorenzo Batlle|Presidente
+UY|1872-03-01|1873-03-01|Tomás Gomensoro Albín|Presidente do Senado no exercício do Executivo
+UY|1873-03-01|1875-01-22|José Eugenio Ellauri|Presidente
