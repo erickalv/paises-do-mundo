@@ -427,17 +427,22 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
                 val dotOk = it.dot && cam.zoom > 2.0
                 if (px < min && !dotOk && !(mode == 2 && it.missed && px > 25 * d2)) continue
             }
-            val sub = it.sub
-            val subs = sub?.split('\n') ?: emptyList()   // the second line may hold several lines
             val bmp = flag(it.flag)
             val fwE = if (bmp != null) fw + gap else 0f   // no flag: only the name
-            val h = if (sub != null) fh + 2 * pad + subs.size * (subText.textSize + 3 * d) else fh + 2 * pad
             val iw = if (it.info.isNullOrEmpty()) 0f else 22 * d   // room for the (i) button
-            val nameW = text.measureText(it.name) + iw
+            val maxW = min(280 * d, width - 24 * d)
+            val avail = maxW - pad * 2.4f - fwE
+            // long names and second lines wrap, so a label never runs off the screen
+            val names = wrap(it.name, text, avail - iw)
+            val sub = it.sub
+            val subs = if (sub == null) emptyList() else wrap(sub, subText, avail)
+            val lineN = text.textSize + 3 * d
+            val nameH = fh + (names.size - 1) * lineN
+            val h = nameH + 2 * pad + subs.size * (subText.textSize + 3 * d) + if (subs.isEmpty()) 0f else 3 * d
+            val nameW = names.maxOf { l -> text.measureText(l) } + iw
             var w = pad + fwE + max(nameW, subs.maxOfOrNull { l -> subText.measureText(l) } ?: 0f) + pad * 1.4f
             val open = !it.info.isNullOrEmpty() && it.key == openKey
             // open label: the info rows hang below the name, inside the same shape
-            val maxW = min(280 * d, width - 24 * d)
             val rows = if (!open) emptyList() else it.info!!.map { (k, v) -> wrap(k, rowKey, maxW - 2 * pad) to wrap(v, rowVal, maxW - 2 * pad) }
             if (open) w = max(w, min(maxW, rows.maxOf { (ks, ls) -> max(ks.maxOf { l -> rowKey.measureText(l) }, ls.maxOf { l -> rowVal.measureText(l) }) } + 2 * pad))
             val lineV = rowVal.textSize + 3 * d; val lineK = rowKey.textSize + 4 * d
@@ -446,7 +451,7 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
             // a label wider than its country sits above it, with a pointer to the right place
             val above = it.dot || rpx * 2.2 < w
             var x = (tmp[0] - w / 2).toFloat()
-            if (open) x = x.coerceIn(6 * d, max(6 * d, width - w - 6 * d))
+            x = x.coerceIn(6 * d, max(6 * d, width - w - 6 * d))
             val y = if (above) (tmp[1] - h - max(12.0 * d, if (it.dot) 12.0 * d else rpx * 0.9 + 8 * d)).toFloat() else (tmp[1] - h / 2).toFloat()
             val box = floatArrayOf(x - 3 * d, y - 3 * d, x + w + 3 * d, y + h + extra + 3 * d)
             if (!it.top && placed.any { b -> box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1] }) continue
@@ -455,10 +460,11 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
             canvas.drawRoundRect(rect, 10 * d, 10 * d, bg)
             if (open) panelHits += RectF(rect)
             if (above && !open) {
+                val ax = tmp[0].toFloat().coerceIn(x + 14 * d, max(x + 14 * d, x + w - 14 * d))
                 arrow.reset()
-                arrow.moveTo(tmp[0].toFloat() - 6 * d, y + h - 0.5f)
-                arrow.lineTo(tmp[0].toFloat() + 6 * d, y + h - 0.5f)
-                arrow.lineTo(tmp[0].toFloat(), y + h + 6 * d)
+                arrow.moveTo(ax - 6 * d, y + h - 0.5f)
+                arrow.lineTo(ax + 6 * d, y + h - 0.5f)
+                arrow.lineTo(ax, y + h + 6 * d)
                 arrow.close()
                 canvas.drawPath(arrow, bg)
             }
@@ -468,15 +474,12 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
                 canvas.drawBitmap(bmp, null, rect, bmpPaint)
             }
             val tx = x + pad + fwE
-            if (sub == null) canvas.drawText(it.name, tx, y + h / 2 - (text.descent() + text.ascent()) / 2, text)
-            else {
-                canvas.drawText(it.name, tx, y + pad + fh / 2 - (text.descent() + text.ascent()) / 2, text)
-                subs.forEachIndexed { k, l -> canvas.drawText(l, tx, y + pad + fh + 3 * d + k * (subText.textSize + 3 * d) - subText.ascent(), subText) }
-            }
+            names.forEachIndexed { k, l -> canvas.drawText(l, tx, y + pad + fh / 2 + k * lineN - (text.descent() + text.ascent()) / 2, text) }
+            subs.forEachIndexed { k, l -> canvas.drawText(l, tx, y + pad + nameH + 3 * d + k * (subText.textSize + 3 * d) - subText.ascent(), subText) }
             if (iw > 0) {
                 // small arrow: pointing left when closed, down when open
                 val cx = x + w - pad * 0.9f - 8 * d
-                val cy = if (sub == null) y + h / 2 else y + pad + fh / 2
+                val cy = y + pad + fh / 2
                 val a = 4.5f * d
                 chevPath.reset()
                 if (open) { chevPath.moveTo(cx - a, cy - a * 0.6f); chevPath.lineTo(cx + a, cy - a * 0.6f); chevPath.lineTo(cx, cy + a * 0.7f) }

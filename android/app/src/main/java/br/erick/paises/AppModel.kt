@@ -415,6 +415,13 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
         else -> 0
     }
 
+    // "Inglaterra (disputada; guerra civil)" shows as "Inglaterra" with "Disputada; guerra civil" on a line below
+    private fun splitName(n: String): Pair<String, String?> {
+        val i = n.indexOf(" (")
+        if (i <= 0 || !n.endsWith(")")) return n to null
+        return n.substring(0, i) to n.substring(i + 2, n.length - 1).replaceFirstChar { it.uppercaseChar() }
+    }
+
     fun labels(): List<LabelItem> {
         when (mode) {
             Mode.START -> return emptyList()
@@ -431,14 +438,15 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
                         data.leaderOf(pk.name, year)?.let { (data.titleOf(pk.name, year) ?: "Líder") to it },
                         pk.period?.let { "Período" to it },
                     )
-                    out += LabelItem("pick$i", pk.name, pk.flag, p[0], p[1], 0.0, true, top = true, missed = false,
-                        sub = listOfNotNull(own, pk.period).joinToString("\n").ifEmpty { null },
+                    val (base, note) = splitName(pk.name)
+                    out += LabelItem("pick$i", base, pk.flag, p[0], p[1], 0.0, true, top = true, missed = false,
+                        sub = listOfNotNull(note, own, pk.period).joinToString("\n").ifEmpty { null },
                         info = rows.ifEmpty { null })
                 }
                 val pickedCodes = pks.map { it.second.code }.toSet()
                 if (histLabels) info.units.filterIndexed { i, u -> u.name.isNotEmpty() && i !in pickedCodes }
                     .sortedWith(compareByDescending<YearUnit> { it.historical }.thenByDescending { it.sr })
-                    .forEach { out += LabelItem(it.key, it.name, it.flag, it.lon, it.lat, it.sr, it.dot, top = false, missed = it.historical) }
+                    .forEach { val (base, note) = splitName(it.name); out += LabelItem(it.key, base, it.flag, it.lon, it.lat, it.sr, it.dot, top = false, missed = it.historical, sub = note) }
                 return out
             }
             Mode.GAME -> {

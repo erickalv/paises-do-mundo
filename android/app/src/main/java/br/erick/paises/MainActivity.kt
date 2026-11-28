@@ -288,16 +288,20 @@ private fun HistoryPanel(model: AppModel) {
         }
     }
     fun go(y: Int) = scope.launch { state.animateScrollToItem((y - from).coerceIn(0, to - from)) }
+    fun jump(y: Int) = scope.launch { state.scrollToItem((y - from).coerceIn(0, to - from)) }   // no animation through 100 years
 
     Column(
         Modifier.fillMaxWidth().clip(RoundedCornerShape(topStart = 28.dp, topEnd = 28.dp)).background(Sheet)
             .navigationBarsPadding().padding(top = 14.dp, bottom = 16.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
-        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(22.dp)) {
+        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+            // double arrows jump 100 years, single arrows 1 year
+            RoundButton(double = true) { jump(model.year - 100) }
             RoundButton { go(model.year - 1) }
-            Text("${model.year}", color = TextC, fontSize = 40.sp, fontWeight = FontWeight.Bold, textAlign = TextAlign.Center, modifier = Modifier.widthIn(min = 124.dp))
+            Text("${model.year}", color = TextC, fontSize = 40.sp, fontWeight = FontWeight.Bold, textAlign = TextAlign.Center, modifier = Modifier.widthIn(min = 112.dp))
             RoundButton(right = true) { go(model.year + 1) }
+            RoundButton(right = true, double = true) { jump(model.year + 100) }
         }
         Spacer(Modifier.height(6.dp))
         BoxWithConstraints(Modifier.fillMaxWidth()) {
@@ -314,11 +318,11 @@ private fun HistoryPanel(model: AppModel) {
 }
 
 @Composable
-private fun RoundButton(right: Boolean = false, onClick: () -> Unit) {
+private fun RoundButton(right: Boolean = false, double: Boolean = false, onClick: () -> Unit) {
     Box(
-        Modifier.size(46.dp).clip(CircleShape).background(Surface).border(1.dp, Color(0xFF232B3D), CircleShape).clickable(onClick = onClick),
+        Modifier.size(if (double) 40.dp else 46.dp).clip(CircleShape).background(Surface).border(1.dp, Color(0xFF232B3D), CircleShape).clickable(onClick = onClick),
         contentAlignment = Alignment.Center,
-    ) { Ico(20.dp, Color(0xFFC9D1E0)) { s -> chevron(s, right) } }
+    ) { Ico(20.dp, Color(0xFFC9D1E0)) { s -> if (double) chevron2(s, right) else chevron(s, right) } }
 }
 
 @Composable
@@ -508,6 +512,10 @@ private fun close(s: Float) = pathOf(s) { m(6f, 6f, it); l(18f, 18f, it); m(18f,
 private fun play(s: Float) = pathOf(s) { m(5f, 3f, it); l(21f, 12f, it); l(5f, 21f, it); close() }
 private fun arrow(s: Float) = pathOf(s) { m(5f, 12f, it); l(19f, 12f, it); m(13f, 6f, it); l(19f, 12f, it); l(13f, 18f, it) }
 private fun chevron(s: Float, right: Boolean) = pathOf(s) { if (right) { m(9f, 5f, it); l(16f, 12f, it); l(9f, 19f, it) } else { m(15f, 5f, it); l(8f, 12f, it); l(15f, 19f, it) } }
+private fun chevron2(s: Float, right: Boolean) = pathOf(s) {
+    if (right) { m(5f, 5f, it); l(12f, 12f, it); l(5f, 19f, it); m(12f, 5f, it); l(19f, 12f, it); l(12f, 19f, it) }
+    else { m(19f, 5f, it); l(12f, 12f, it); l(19f, 19f, it); m(12f, 5f, it); l(5f, 12f, it); l(12f, 19f, it) }
+}
 private fun search(s: Float) = pathOf(s) { circle(10.5f, 10.5f, 6.5f, it); m(15.5f, 15.5f, it); l(21f, 21f, it) }
 private fun timer(s: Float) = pathOf(s) { circle(12f, 13.5f, 7.5f, it); m(12f, 13.5f, it); l(12f, 9f, it); m(9.5f, 2.5f, it); l(14.5f, 2.5f, it) }
 private fun book(s: Float) = pathOf(s) { m(4f, 19.5f, it); l(4f, 5f, it); quadraticBezierTo(4f * it, 3.5f * it, 5.5f * it, 3.5f * it); l(19f, 3.5f, it); l(19f, 18.5f, it); l(5.5f, 18.5f, it); quadraticBezierTo(4f * it, 18.5f * it, 4f * it, 20f * it); quadraticBezierTo(4f * it, 21.5f * it, 5.5f * it, 21.5f * it); l(19f, 21.5f, it) }
