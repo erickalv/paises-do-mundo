@@ -973,7 +973,7 @@ export const EVENTS = {
     ...perYear(1805, 1805, { m: ["Império Francês", "x:fr", ["France", "Belgium", "Luxembourg", "Rhine Left", "Palatinate", "Piedmont", "Liguria", "Savoy and Nice", "Duchy of Parma", "Geneva"]], o: { "France": null } }), // Ligúria anexada em 1805
     ...perYear(1805, 1805, { m: ["Reino da Itália (napoleônico)", "blank", ["Lombardy", "Venetia", "Venice", "Duchy of Modena", "Romagna", "Novara", "Dalmatia", "Bay of Kotor"]], o: { "Lombardy": null } }), // Vêneto, Ístria e Dalmácia pela Paz de Pressburgo (26/dez/1805)
     // revisão 1805 (situação em 31/dez; fontes: Wikipedia)
-    ...perYear(1795, 1805, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "Posen", "Congress Poland", "NRW"]], o: { "Germany": null } }), // aprox.: o NRW era quase todo prussiano (Berg bávaro até 15/mar/1806)
+    ...perYear(1795, 1805, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "Posen", "Congress Poland"]], o: { "Germany": null } }), // aprox.: o NRW era quase todo prussiano (Berg bávaro até 15/mar/1806)
     ...perYear(1734, 1758, { m: ["Reinos de Nápoles e Sicília (Carlos de Bourbon)", "blank", ["Two Sicilies", "Sicily"]], o: { "Two Sicilies": null } }), // conquistados por Carlos de Espanha em 1734; rei da Espanha em 1759
     ...perYear(1759, 1805, { m: ["Reinos de Nápoles e Sicília (Fernando IV)", "blank", ["Two Sicilies", "Sicily"]], o: { "Two Sicilies": null } }), // José Bonaparte rei em 30/mar/1806
     ...perYear(1804, 1805, { m: ["Império do Haiti (Jacques I)", "blank", ["Haiti", "Kingdom of Haiti"]], o: { "Haiti": null } }), // Dessalines morto em 17/out/1806
@@ -1157,7 +1157,7 @@ export const EVENTS = {
     ...perYear(1650, 1801, { r: { "French Indochina": "Vietnã (guerra entre Tây Sơn e Nguyễn)" } }), // Nguyễn Ánh toma Đông Kinh em 18/jun/1802
     // revisão 1797 (situação em 31/dez; fontes: Wikipedia)
     ...perYear(1797, 1797, { m: ["República Francesa (Diretório)", "x:fr", ["France", "Belgium", "Luxembourg", "Rhine Left", "Palatinate", "Savoy and Nice"]], o: { "France": null } }), // Genebra anexada em 15/abr/1798
-    ...perYear(1797, 1797, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Kraków", "Tyrol", "Trentino", "Dalmatia", "Bay of Kotor"]] }), // Campo Formio, 17/out/1797
+    ...perYear(1797, 1797, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Kraków", "Tyrol", "Dalmatia", "Bay of Kotor"]] }), // Campo Formio, 17/out/1797
     ...perYear(1797, 1797, { m: ["Veneza (ocupação francesa)", "x:fr", ["Venetia", "Venice"]], o: { "Venetia": null } }), // república abdicou em 12/mai/1797; austríacos em Veneza em 18/jan/1798
     ...perYear(1797, 1797, { m: ["República Cisalpina", "blank", ["Lombardy", "Duchy of Modena", "Romagna"]], o: { "Lombardy": null } }), // fundada em 29/jun/1797
     ...perYear(1797, 1797, { m: ["Reino da Sardenha", "h:it_sav", ["Italy", "Piedmont", "Novara"]], o: { "Italy": null } }), // Turim ocupada em 6/dez/1798
@@ -1174,7 +1174,7 @@ export const EVENTS = {
     ...perYear(1802, 1825, { f: { "Egypt": "blank" } }), // bandeira vermelha de Muhammad Ali datada de 1826 na Wikipedia
     // revisão 1796 (situação em 31/dez; fontes: Wikipedia)
     ...perYear(1796, 1796, { m: ["República Francesa (Diretório)", "x:fr", ["France", "Belgium", "Luxembourg", "Rhine Left", "Palatinate", "Savoy and Nice"]], o: { "France": null } }), // margem esquerda do Reno ocupada desde o fim de 1794; Córsega retomada em 19/out/1796
-    ...perYear(1796, 1796, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Kraków", "Tyrol", "Trentino"]] }),
+    ...perYear(1796, 1796, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Kraków", "Tyrol"]] }),
     ...perYear(1796, 1796, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }), // caiu em 12/mai/1797; franceses em Corfu em 28/jun/1797
     ...perYear(1796, 1796, { m: ["Lombardia (ocupação francesa)", "x:fr", ["Lombardy"]], o: { "Lombardy": null } }), // Lodi, 10/mai/1796; República Transpadana até jun/1797
     ...perYear(1796, 1796, { m: ["República Cispadana", "blank", ["Duchy of Modena", "Romagna"]], o: { "Duchy of Modena": null } }), // congresso de Módena em 16/out/1796; aprox.: Ravena e Forlì papais até 1797
@@ -1187,7 +1187,7 @@ export const EVENTS = {
       o: { "Malta": null, "Lucca": null, "Tuscany": null, "Dutch Guiana": "República Batava", "Punjab": null, "Geneva": null, "Egypt": "Império Otomano" } }),
     // revisão 1795 (situação em 31/dez; fontes: Wikipedia)
     ...perYear(1795, 1795, { m: ["República Francesa (Diretório)", "x:fr", ["France", "Belgium", "Luxembourg", "Rhine Left", "Palatinate", "Savoy and Nice"]], o: { "France": null } }), // Diretório desde 2/nov/1795
-    ...perYear(1795, 1795, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Kraków", "Tyrol", "Trentino", "Lombardy"]] }), // Lombardia ocupada pelos franceses após Lodi (10/mai/1796)
+    ...perYear(1795, 1795, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Kraków", "Tyrol", "Lombardy"]] }), // Lombardia ocupada pelos franceses após Lodi (10/mai/1796)
     ...perYear(1795, 1795, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
     ...perYear(1795, 1795, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }), // Legações ocupadas pelos franceses em 1796
     ...perYear(1795, 1795, { m: ["Reino da Sardenha", "h:it_sav", ["Italy", "Piedmont", "Novara"]], o: { "Italy": null } }),
@@ -1213,8 +1213,8 @@ export const EVENTS = {
     // revisão 1794 (situação em 31/dez; fontes: Wikipedia)
     ...perYear(1794, 1794, { m: ["República Francesa (Convenção Nacional)", "x:fr", ["France", "Rhine Left", "Palatinate", "Savoy and Nice"]], o: { "France": null } }), // Diretório em 3/nov/1795; margem esquerda do Reno ocupada no fim do outono de 1794
     ...perYear(1794, 1794, { m: ["Países Baixos Austríacos (ocupação francesa)", "x:fr", ["Belgium"]], o: { "Belgium": null } }), // tomados após Fleurus (1794); anexados em 1/out/1795
-    ...perYear(1794, 1794, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg"]] }),
-    ...perYear(1794, 1794, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "Posen", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1794, 1794, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg"]] }),
+    ...perYear(1794, 1794, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "Posen"]], o: { "Germany": null } }),
     ...perYear(1794, 1794, { m: ["República das Duas Nações (ocupação estrangeira)", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD"]], o: { "Congress Poland": null } }), // Revolta de Kościuszko termina em 16/nov/1794; Praga, 4/nov/1794
     ...perYear(1794, 1794, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
     ...perYear(1794, 1794, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
@@ -1236,8 +1236,8 @@ export const EVENTS = {
     // revisão 1793 (situação em 31/dez; fontes: Wikipedia)
     ...perYear(1793, 1793, { m: ["República Francesa (Convenção Nacional)", "x:fr", ["France", "Savoy and Nice"]], o: { "France": null } }),
     ...perYear(1793, 1793, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }), // Mainz capitula em 23/jul/1793; margem esquerda ocupada pela França no outono de 1794
-    ...perYear(1793, 1793, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Países Baixos Austríacos tomados pelos franceses em 1794
-    ...perYear(1793, 1793, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "Posen", "NRW"]], o: { "Germany": null } }), // Segunda Partição (23/jan/1793)
+    ...perYear(1793, 1793, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Países Baixos Austríacos tomados pelos franceses em 1794
+    ...perYear(1793, 1793, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "Posen"]], o: { "Germany": null } }), // Segunda Partição (23/jan/1793)
     ...perYear(1793, 1793, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD"]], o: { "Congress Poland": null } }), // Sejm de Grodno ratifica a partição em 1793
     ...perYear(1793, 1793, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
     ...perYear(1793, 1793, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
@@ -1261,8 +1261,8 @@ export const EVENTS = {
     ...perYear(1792, 1792, { m: ["República Francesa (Convenção Nacional)", "x:fr", ["France", "Savoy and Nice", "Corsica"]], o: { "France": null } }), // república em 21/set/1792; Nice ocupada em 29/set/1792; Saboia anexada em 1792
     ...perYear(1792, 1792, { m: ["Países Baixos Austríacos (ocupação francesa)", "x:fr", ["Belgium"]], o: { "Belgium": null } }), // Jemappes, 6/nov/1792; Neerwinden, 18/mar/1793
     ...perYear(1792, 1792, { m: ["Renânia e Palatinado (estados do Sacro Império; Mainz ocupada pela França)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }), // Mainz ocupada em 21/out/1792
-    ...perYear(1792, 1792, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg"]] }),
-    ...perYear(1792, 1792, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1792, 1792, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg"]] }),
+    ...perYear(1792, 1792, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1792, 1792, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), // tratado da Segunda Partição em 23/jan/1793; aprox.: Bydgoszcz (distrito do Netze, prussiano desde 1772) dentro
     ...perYear(1792, 1792, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }), // Herat separado em 1793, com a morte de Timur Shah
     ...perYear(1792, 1792, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -1286,8 +1286,8 @@ export const EVENTS = {
     ...perYear(1791, 1791, { r: { "Yedisan": "Yedisan (guerra russo-turca)" }, f: { "Yedisan": "blank" }, o: { "Yedisan": null } }),
     ...perYear(1791, 1791, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), // monarquia constitucional; república em 21/set/1792; Comtat Venaissin anexado em 14/set/1791
     ...perYear(1791, 1791, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1791, 1791, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }),
-    ...perYear(1791, 1791, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1791, 1791, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }),
+    ...perYear(1791, 1791, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1791, 1791, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), // Constituição de 3/mai/1791
     ...perYear(1791, 1791, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1791, 1791, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -1310,8 +1310,8 @@ export const EVENTS = {
     ...perYear(1788, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1790, 1790, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), // tricolor aprovada em 24/out/1790
     ...perYear(1790, 1790, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1790, 1790, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }),
-    ...perYear(1790, 1790, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1790, 1790, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }),
+    ...perYear(1790, 1790, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1790, 1790, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), 
     ...perYear(1790, 1790, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1790, 1790, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -1336,8 +1336,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1789, 1789, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), // bandeira real não única antes da tricolor de 24/out/1790
     ...perYear(1789, 1789, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1789, 1789, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg"]] }), // austríacos recuam para Luxemburgo em dez/1789
-    ...perYear(1789, 1789, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1789, 1789, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg"]] }), // austríacos recuam para Luxemburgo em dez/1789
+    ...perYear(1789, 1789, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1789, 1789, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), 
     ...perYear(1789, 1789, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1789, 1789, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -1364,8 +1364,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1788, 1788, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
     ...perYear(1788, 1788, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1788, 1788, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1788, 1788, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1788, 1788, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1788, 1788, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1788, 1788, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), 
     ...perYear(1788, 1788, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1788, 1788, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -1393,8 +1393,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1787, 1787, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
     ...perYear(1787, 1787, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1787, 1787, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1787, 1787, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1787, 1787, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1787, 1787, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1787, 1787, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), 
     ...perYear(1787, 1787, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1787, 1787, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -1423,8 +1423,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1786, 1786, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
     ...perYear(1786, 1786, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1786, 1786, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1786, 1786, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1786, 1786, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1786, 1786, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1786, 1786, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), 
     ...perYear(1786, 1786, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1786, 1786, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -1453,8 +1453,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1785, 1785, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
     ...perYear(1785, 1785, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1785, 1785, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1785, 1785, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1785, 1785, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1785, 1785, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1785, 1785, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), 
     ...perYear(1785, 1785, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1785, 1785, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -1483,8 +1483,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1784, 1784, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
     ...perYear(1784, 1784, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1784, 1784, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1784, 1784, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1784, 1784, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1784, 1784, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1784, 1784, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), 
     ...perYear(1784, 1784, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1784, 1784, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -1513,8 +1513,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1783, 1783, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
     ...perYear(1783, 1783, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1783, 1783, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1783, 1783, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1783, 1783, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1783, 1783, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1783, 1783, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), 
     ...perYear(1783, 1783, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1783, 1783, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -1547,8 +1547,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1782, 1782, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
     ...perYear(1782, 1782, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1782, 1782, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1782, 1782, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1782, 1782, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1782, 1782, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1782, 1782, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), 
     ...perYear(1782, 1782, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1782, 1782, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -1592,8 +1592,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1781, 1781, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
     ...perYear(1781, 1781, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1781, 1781, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1781, 1781, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1781, 1781, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1781, 1781, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1781, 1781, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), 
     ...perYear(1781, 1781, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1781, 1781, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -1636,8 +1636,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1780, 1780, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
     ...perYear(1780, 1780, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1780, 1780, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1780, 1780, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1780, 1780, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1780, 1780, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1780, 1780, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), 
     ...perYear(1780, 1780, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1780, 1780, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -1683,8 +1683,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1779, 1779, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
     ...perYear(1779, 1779, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1779, 1779, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1779, 1779, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1779, 1779, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1779, 1779, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1779, 1779, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), 
     ...perYear(1779, 1779, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1779, 1779, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -1730,8 +1730,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1778, 1778, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
     ...perYear(1778, 1778, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1778, 1778, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1778, 1778, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1778, 1778, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1778, 1778, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1778, 1778, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), 
     ...perYear(1778, 1778, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1778, 1778, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -1779,8 +1779,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1777, 1777, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
     ...perYear(1777, 1777, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1777, 1777, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1777, 1777, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1777, 1777, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1777, 1777, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1777, 1777, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), 
     ...perYear(1777, 1777, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1777, 1777, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -1829,8 +1829,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1776, 1776, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
     ...perYear(1776, 1776, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1776, 1776, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1776, 1776, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1776, 1776, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1776, 1776, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1776, 1776, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), 
     ...perYear(1776, 1776, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1776, 1776, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -1883,8 +1883,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1775, 1775, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
     ...perYear(1775, 1775, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1775, 1775, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1775, 1775, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1775, 1775, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1775, 1775, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1775, 1775, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), 
     ...perYear(1775, 1775, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1775, 1775, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -1939,8 +1939,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1774, 1774, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
     ...perYear(1774, 1774, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1774, 1774, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1774, 1774, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1774, 1774, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1774, 1774, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1774, 1774, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), 
     ...perYear(1774, 1774, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1774, 1774, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -1997,8 +1997,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1773, 1773, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
     ...perYear(1773, 1773, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1773, 1773, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1773, 1773, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1773, 1773, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1773, 1773, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1773, 1773, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), 
     ...perYear(1773, 1773, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1773, 1773, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -2056,8 +2056,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1772, 1772, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
     ...perYear(1772, 1772, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1772, 1772, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1772, 1772, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1772, 1772, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1772, 1772, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1772, 1772, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia"]], o: { "Congress Poland": null } }), 
     ...perYear(1772, 1772, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1772, 1772, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -2118,8 +2118,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1771, 1771, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
     ...perYear(1771, 1771, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1771, 1771, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1771, 1771, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1771, 1771, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1771, 1771, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1771, 1771, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1771, 1771, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1771, 1771, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -2180,8 +2180,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1770, 1770, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
     ...perYear(1770, 1770, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1770, 1770, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1770, 1770, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1770, 1770, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1770, 1770, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1770, 1770, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1770, 1770, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1770, 1770, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -2243,8 +2243,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1769, 1769, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
     ...perYear(1769, 1769, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1769, 1769, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1769, 1769, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1769, 1769, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1769, 1769, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1769, 1769, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1769, 1769, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1769, 1769, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -2306,8 +2306,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1768, 1768, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1768, 1768, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1768, 1768, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1768, 1768, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1768, 1768, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1768, 1768, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1768, 1768, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1768, 1768, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1768, 1768, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -2378,8 +2378,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1767, 1767, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1767, 1767, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1767, 1767, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1767, 1767, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1767, 1767, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1767, 1767, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1767, 1767, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1767, 1767, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1767, 1767, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -2447,8 +2447,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1766, 1766, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1766, 1766, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1766, 1766, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1766, 1766, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1766, 1766, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1766, 1766, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1766, 1766, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1766, 1766, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1766, 1766, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -2517,8 +2517,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1765, 1765, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1765, 1765, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1765, 1765, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1765, 1765, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1765, 1765, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1765, 1765, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1765, 1765, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1765, 1765, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1765, 1765, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -2592,8 +2592,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1764, 1764, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1764, 1764, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1764, 1764, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1764, 1764, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1764, 1764, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1764, 1764, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1764, 1764, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1764, 1764, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1764, 1764, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -2667,8 +2667,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1763, 1763, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1763, 1763, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1763, 1763, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1763, 1763, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1763, 1763, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1763, 1763, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1763, 1763, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1763, 1763, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1763, 1763, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -2743,8 +2743,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1762, 1762, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1762, 1762, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1762, 1762, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1762, 1762, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1762, 1762, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1762, 1762, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1762, 1762, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1762, 1762, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1762, 1762, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -2824,8 +2824,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1761, 1761, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1761, 1761, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1761, 1761, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1761, 1761, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1761, 1761, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1761, 1761, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1761, 1761, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1761, 1761, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat"]], o: { "Afghanistan": null } }),
     ...perYear(1761, 1761, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -2904,8 +2904,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1760, 1760, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1760, 1760, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1760, 1760, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1760, 1760, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1760, 1760, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1760, 1760, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1760, 1760, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1760, 1760, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
     ...perYear(1760, 1760, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -2985,8 +2985,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1759, 1759, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1759, 1759, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1759, 1759, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1759, 1759, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1759, 1759, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1759, 1759, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1759, 1759, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1759, 1759, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
     ...perYear(1759, 1759, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -3066,8 +3066,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1758, 1758, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1758, 1758, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1758, 1758, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1758, 1758, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1758, 1758, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1758, 1758, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1758, 1758, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1758, 1758, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
     ...perYear(1758, 1758, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -3147,8 +3147,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1757, 1757, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1757, 1757, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1757, 1757, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1757, 1757, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1757, 1757, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1757, 1757, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1757, 1757, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1757, 1757, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
     ...perYear(1757, 1757, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -3231,8 +3231,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1756, 1756, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1756, 1756, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1756, 1756, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1756, 1756, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1756, 1756, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1756, 1756, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1756, 1756, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1756, 1756, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
     ...perYear(1756, 1756, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -3314,8 +3314,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1755, 1755, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1755, 1755, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1755, 1755, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1755, 1755, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1755, 1755, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1755, 1755, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1755, 1755, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1755, 1755, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
     ...perYear(1755, 1755, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -3397,8 +3397,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1754, 1754, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1754, 1754, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1754, 1754, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1754, 1754, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1754, 1754, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1754, 1754, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1754, 1754, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1754, 1754, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
     ...perYear(1754, 1754, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -3480,8 +3480,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1753, 1753, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1753, 1753, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1753, 1753, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1753, 1753, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1753, 1753, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1753, 1753, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1753, 1753, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1753, 1753, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
     ...perYear(1753, 1753, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -3563,8 +3563,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1752, 1752, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1752, 1752, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1752, 1752, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1752, 1752, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1752, 1752, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1752, 1752, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1752, 1752, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1752, 1752, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
     ...perYear(1752, 1752, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands"]], o: { "Venetia": null } }),
@@ -3646,8 +3646,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1751, 1751, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1751, 1751, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1751, 1751, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1751, 1751, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1751, 1751, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1751, 1751, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1751, 1751, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1751, 1751, { m: [null, null, ["British Raj", "Kashmir"]] }), // Caxemira durrani em 1752
     ...perYear(1751, 1751, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
@@ -3730,8 +3730,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1750, 1750, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1750, 1750, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1750, 1750, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1750, 1750, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1750, 1750, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1750, 1750, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1750, 1750, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1750, 1750, { m: [null, null, ["British Raj", "Kashmir"]] }), // Caxemira durrani em 1752
     ...perYear(1750, 1750, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Herat", "Punjab"]], o: { "Afghanistan": null } }),
@@ -3815,8 +3815,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1749, 1749, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1749, 1749, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1749, 1749, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1749, 1749, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1749, 1749, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1749, 1749, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1749, 1749, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1749, 1749, { m: [null, null, ["British Raj", "Kashmir"]] }), // Caxemira durrani em 1752
     ...perYear(1749, 1749, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Punjab"]], o: { "Afghanistan": null } }),
@@ -3901,8 +3901,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1748, 1748, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1748, 1748, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1748, 1748, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
-    ...perYear(1748, 1748, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1748, 1748, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium"]] }), // Revolução de Brabante em 1789
+    ...perYear(1748, 1748, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1748, 1748, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1748, 1748, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1748, 1748, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar"]], o: { "Afghanistan": null } }),
@@ -3987,8 +3987,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1747, 1747, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1747, 1747, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1747, 1747, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Duchy of Parma"]] }), // Parma habsburga até Aix-la-Chapelle (1748)
-    ...perYear(1747, 1747, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1747, 1747, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Duchy of Parma"]] }), // Parma habsburga até Aix-la-Chapelle (1748)
+    ...perYear(1747, 1747, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1747, 1747, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1747, 1747, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1747, 1747, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar"]], o: { "Afghanistan": null } }),
@@ -4074,8 +4074,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1746, 1746, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1746, 1746, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1746, 1746, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Duchy of Parma"]] }), // Parma habsburga até Aix-la-Chapelle (1748)
-    ...perYear(1746, 1746, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1746, 1746, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Duchy of Parma"]] }), // Parma habsburga até Aix-la-Chapelle (1748)
+    ...perYear(1746, 1746, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1746, 1746, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1746, 1746, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1746, 1746, { m: [null, null, ["Persia", "Afghanistan", "Peshawar"]] }), // Império Durrani fundado em jul/1747; antes, Pérsia afsharida
@@ -4162,8 +4162,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1745, 1745, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1745, 1745, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1745, 1745, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Duchy of Parma"]] }), // Parma habsburga até Aix-la-Chapelle (1748)
-    ...perYear(1745, 1745, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1745, 1745, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Duchy of Parma"]] }), // Parma habsburga até Aix-la-Chapelle (1748)
+    ...perYear(1745, 1745, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1745, 1745, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1745, 1745, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1745, 1745, { m: [null, null, ["Persia", "Afghanistan", "Peshawar"]] }), // Império Durrani fundado em jul/1747; antes, Pérsia afsharida
@@ -4250,8 +4250,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1744, 1744, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1744, 1744, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1744, 1744, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Duchy of Parma"]] }), // Parma habsburga até Aix-la-Chapelle (1748)
-    ...perYear(1744, 1744, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1744, 1744, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Duchy of Parma"]] }), // Parma habsburga até Aix-la-Chapelle (1748)
+    ...perYear(1744, 1744, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1744, 1744, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1744, 1744, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1744, 1744, { m: [null, null, ["Persia", "Afghanistan", "Peshawar"]] }), // Império Durrani fundado em jul/1747; antes, Pérsia afsharida
@@ -4338,8 +4338,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1743, 1743, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1743, 1743, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1743, 1743, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Duchy of Parma", "Belgium"]] }), // Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1743, 1743, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1743, 1743, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Duchy of Parma", "Belgium"]] }), // Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1743, 1743, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1743, 1743, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1743, 1743, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1743, 1743, { m: [null, null, ["Persia", "Afghanistan", "Peshawar"]] }), // Império Durrani fundado em jul/1747; antes, Pérsia afsharida
@@ -4426,8 +4426,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1742, 1742, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1742, 1742, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1742, 1742, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Duchy of Parma", "Belgium"]] }), // Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1742, 1742, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1742, 1742, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Duchy of Parma", "Belgium"]] }), // Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1742, 1742, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1742, 1742, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1742, 1742, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1742, 1742, { m: [null, null, ["Persia", "Afghanistan", "Peshawar"]] }), // Império Durrani fundado em jul/1747; antes, Pérsia afsharida
@@ -4516,8 +4516,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1741, 1741, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1741, 1741, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1741, 1741, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Duchy of Parma", "Belgium"]] }), // Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1741, 1741, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1741, 1741, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Duchy of Parma", "Belgium"]] }), // Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1741, 1741, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1741, 1741, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1741, 1741, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1741, 1741, { m: [null, null, ["Persia", "Afghanistan", "Peshawar"]] }), // Império Durrani fundado em jul/1747; antes, Pérsia afsharida
@@ -4607,8 +4607,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1740, 1740, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1740, 1740, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1740, 1740, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Duchy of Parma", "Belgium"]] }), // Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1740, 1740, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1740, 1740, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Duchy of Parma", "Belgium"]] }), // Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1740, 1740, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1740, 1740, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1740, 1740, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1740, 1740, { m: [null, null, ["Persia", "Afghanistan", "Peshawar"]] }), // Império Durrani fundado em jul/1747; antes, Pérsia afsharida
@@ -4698,8 +4698,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1739, 1739, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1739, 1739, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1739, 1739, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Duchy of Parma", "Belgium"]] }), // Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1739, 1739, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1739, 1739, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Duchy of Parma", "Belgium"]] }), // Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1739, 1739, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1739, 1739, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1739, 1739, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1739, 1739, { m: [null, null, ["Persia", "Afghanistan", "Peshawar"]] }), // Império Durrani fundado em jul/1747; antes, Pérsia afsharida
@@ -4788,8 +4788,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1738, 1738, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1738, 1738, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1738, 1738, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Duchy of Parma", "Belgium"]] }), // Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1738, 1738, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1738, 1738, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Duchy of Parma", "Belgium"]] }), // Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1738, 1738, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1738, 1738, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1738, 1738, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1738, 1738, { m: [null, null, ["Persia", "Afghanistan", "Peshawar"]] }), // Império Durrani fundado em jul/1747; antes, Pérsia afsharida
@@ -4879,8 +4879,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1737, 1737, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1737, 1737, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1737, 1737, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Duchy of Parma", "Belgium"]] }), // Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1737, 1737, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1737, 1737, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Duchy of Parma", "Belgium"]] }), // Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1737, 1737, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1737, 1737, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1737, 1737, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1737, 1737, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -4972,8 +4972,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1736, 1736, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1736, 1736, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1736, 1736, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Duchy of Parma", "Belgium"]] }), // Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1736, 1736, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1736, 1736, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Duchy of Parma", "Belgium"]] }), // Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1736, 1736, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1736, 1736, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1736, 1736, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1736, 1736, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -5066,8 +5066,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1735, 1735, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1735, 1735, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1735, 1735, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Duchy of Parma", "Belgium"]] }), // Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1735, 1735, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1735, 1735, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Duchy of Parma", "Belgium"]] }), // Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1735, 1735, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1735, 1735, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1735, 1735, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1735, 1735, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -5160,8 +5160,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1734, 1734, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1734, 1734, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1734, 1734, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Luxembourg", "Belgium"]] }), // Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1734, 1734, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1734, 1734, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Luxembourg", "Belgium"]] }), // Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1734, 1734, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1734, 1734, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1734, 1734, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1734, 1734, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -5257,8 +5257,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1733, 1733, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1733, 1733, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1733, 1733, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1733, 1733, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1733, 1733, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1733, 1733, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1733, 1733, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1733, 1733, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1733, 1733, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -5354,8 +5354,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1732, 1732, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1732, 1732, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1732, 1732, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1732, 1732, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1732, 1732, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1732, 1732, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1732, 1732, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1732, 1732, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1732, 1732, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -5451,8 +5451,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1731, 1731, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1731, 1731, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1731, 1731, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1731, 1731, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1731, 1731, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1731, 1731, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1731, 1731, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1731, 1731, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1731, 1731, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -5548,8 +5548,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1730, 1730, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1730, 1730, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1730, 1730, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1730, 1730, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1730, 1730, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1730, 1730, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1730, 1730, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1730, 1730, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1730, 1730, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -5645,8 +5645,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1729, 1729, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1729, 1729, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1729, 1729, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1729, 1729, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1729, 1729, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1729, 1729, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1729, 1729, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1729, 1729, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1729, 1729, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -5742,8 +5742,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1728, 1728, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1728, 1728, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1728, 1728, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1728, 1728, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1728, 1728, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1728, 1728, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1728, 1728, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1728, 1728, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1728, 1728, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -5839,8 +5839,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1727, 1727, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1727, 1727, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1727, 1727, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1727, 1727, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1727, 1727, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1727, 1727, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1727, 1727, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1727, 1727, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1727, 1727, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -5936,8 +5936,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1726, 1726, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1726, 1726, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1726, 1726, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1726, 1726, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1726, 1726, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1726, 1726, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1726, 1726, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1726, 1726, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1726, 1726, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -6033,8 +6033,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1725, 1725, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1725, 1725, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1725, 1725, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1725, 1725, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1725, 1725, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1725, 1725, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1725, 1725, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1725, 1725, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1725, 1725, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -6130,8 +6130,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1724, 1724, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1724, 1724, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1724, 1724, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1724, 1724, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1724, 1724, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1724, 1724, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1724, 1724, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1724, 1724, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1724, 1724, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -6227,8 +6227,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1723, 1723, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1723, 1723, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1723, 1723, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1723, 1723, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1723, 1723, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1723, 1723, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1723, 1723, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1723, 1723, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1723, 1723, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -6325,8 +6325,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1722, 1722, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1722, 1722, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1722, 1722, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1722, 1722, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1722, 1722, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1722, 1722, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1722, 1722, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1722, 1722, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1722, 1722, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -6423,8 +6423,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1721, 1721, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1721, 1721, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1721, 1721, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1721, 1721, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1721, 1721, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1721, 1721, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1721, 1721, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1721, 1721, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1721, 1721, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -6522,8 +6522,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1720, 1720, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1720, 1720, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1720, 1720, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1720, 1720, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1720, 1720, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Sicily"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1720, 1720, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1720, 1720, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1720, 1720, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1720, 1720, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -6622,8 +6622,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1719, 1719, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1719, 1719, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1719, 1719, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1719, 1719, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1719, 1719, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1719, 1719, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1719, 1719, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1719, 1719, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1719, 1719, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -6723,8 +6723,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1718, 1718, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1718, 1718, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1718, 1718, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1718, 1718, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1718, 1718, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1718, 1718, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1718, 1718, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1718, 1718, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1718, 1718, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -6824,8 +6824,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1717, 1717, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1717, 1717, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1717, 1717, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1717, 1717, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1717, 1717, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1717, 1717, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1717, 1717, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1717, 1717, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1717, 1717, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -6925,8 +6925,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1716, 1716, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1716, 1716, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1716, 1716, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Italy"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1716, 1716, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1716, 1716, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Italy"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1716, 1716, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1716, 1716, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1716, 1716, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1716, 1716, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -7026,8 +7026,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1715, 1715, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1715, 1715, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1715, 1715, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Italy"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1715, 1715, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1715, 1715, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Italy"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1715, 1715, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1715, 1715, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1715, 1715, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1715, 1715, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -7126,8 +7126,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1714, 1714, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1714, 1714, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1714, 1714, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Italy"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1714, 1714, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1714, 1714, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Luxembourg", "Belgium", "Two Sicilies", "Italy"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1714, 1714, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1714, 1714, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1714, 1714, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1714, 1714, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -7226,8 +7226,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1713, 1713, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1713, 1713, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1713, 1713, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Two Sicilies", "Italy"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1713, 1713, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1713, 1713, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Two Sicilies", "Italy"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1713, 1713, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1713, 1713, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1713, 1713, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1713, 1713, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -7328,8 +7328,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1712, 1712, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1712, 1712, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1712, 1712, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Two Sicilies", "Italy"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1712, 1712, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1712, 1712, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Two Sicilies", "Italy"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1712, 1712, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1712, 1712, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1712, 1712, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1712, 1712, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -7434,8 +7434,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1711, 1711, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1711, 1711, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1711, 1711, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Two Sicilies", "Italy"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1711, 1711, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1711, 1711, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Two Sicilies", "Italy"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1711, 1711, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1711, 1711, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1711, 1711, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1711, 1711, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -7540,8 +7540,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1710, 1710, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1710, 1710, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1710, 1710, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Two Sicilies", "Italy"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1710, 1710, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1710, 1710, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Two Sicilies", "Italy"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1710, 1710, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1710, 1710, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1710, 1710, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1710, 1710, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -7646,8 +7646,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1709, 1709, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1709, 1709, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1709, 1709, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Two Sicilies", "Italy"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1709, 1709, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1709, 1709, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Two Sicilies", "Italy"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1709, 1709, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1709, 1709, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1709, 1709, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1709, 1709, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -7753,8 +7753,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1708, 1708, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1708, 1708, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1708, 1708, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Two Sicilies", "Italy"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1708, 1708, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1708, 1708, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Two Sicilies", "Italy"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1708, 1708, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1708, 1708, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1708, 1708, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1708, 1708, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -7860,8 +7860,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1707, 1707, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1707, 1707, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1707, 1707, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy", "Two Sicilies"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1707, 1707, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1707, 1707, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy", "Two Sicilies"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1707, 1707, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1707, 1707, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1707, 1707, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1707, 1707, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -7968,8 +7968,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1706, 1706, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1706, 1706, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1706, 1706, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino", "Lombardy"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1706, 1706, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1706, 1706, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Lombardy"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1706, 1706, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1706, 1706, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1706, 1706, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1706, 1706, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -8080,8 +8080,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1705, 1705, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1705, 1705, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1705, 1705, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1705, 1705, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1705, 1705, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1705, 1705, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1705, 1705, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1705, 1705, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1705, 1705, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -8193,8 +8193,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1704, 1704, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1704, 1704, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1704, 1704, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1704, 1704, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1704, 1704, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1704, 1704, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1704, 1704, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1704, 1704, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1704, 1704, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -8306,8 +8306,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1703, 1703, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1703, 1703, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1703, 1703, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1703, 1703, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1703, 1703, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1703, 1703, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1703, 1703, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1703, 1703, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1703, 1703, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -8419,8 +8419,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1702, 1702, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1702, 1702, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1702, 1702, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1702, 1702, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1702, 1702, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1702, 1702, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1702, 1702, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1702, 1702, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1702, 1702, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -8532,8 +8532,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1701, 1701, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1701, 1701, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1701, 1701, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1701, 1701, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1701, 1701, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1701, 1701, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1701, 1701, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1701, 1701, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1701, 1701, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -8645,8 +8645,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1700, 1700, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1700, 1700, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1700, 1700, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1700, 1700, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1700, 1700, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1700, 1700, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1700, 1700, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1700, 1700, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1700, 1700, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -8759,8 +8759,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1699, 1699, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1699, 1699, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1699, 1699, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1699, 1699, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1699, 1699, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1699, 1699, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1699, 1699, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1699, 1699, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1699, 1699, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -8873,8 +8873,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1698, 1698, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1698, 1698, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1698, 1698, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1698, 1698, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1698, 1698, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1698, 1698, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1698, 1698, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1698, 1698, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1698, 1698, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -8987,8 +8987,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1697, 1697, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1697, 1697, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1697, 1697, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1697, 1697, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1697, 1697, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1697, 1697, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1697, 1697, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1697, 1697, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1697, 1697, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -9101,8 +9101,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1696, 1696, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1696, 1696, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1696, 1696, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1696, 1696, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1696, 1696, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1696, 1696, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1696, 1696, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1696, 1696, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1696, 1696, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -9215,8 +9215,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1695, 1695, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1695, 1695, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1695, 1695, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1695, 1695, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1695, 1695, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1695, 1695, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1695, 1695, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1695, 1695, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1695, 1695, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -9329,8 +9329,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1694, 1694, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1694, 1694, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1694, 1694, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1694, 1694, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1694, 1694, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1694, 1694, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1694, 1694, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1694, 1694, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1694, 1694, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -9443,8 +9443,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1693, 1693, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1693, 1693, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1693, 1693, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1693, 1693, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1693, 1693, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1693, 1693, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1693, 1693, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1693, 1693, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1693, 1693, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -9557,8 +9557,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1692, 1692, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1692, 1692, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1692, 1692, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1692, 1692, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1692, 1692, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1692, 1692, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1692, 1692, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1692, 1692, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1692, 1692, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -9671,8 +9671,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1691, 1691, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1691, 1691, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1691, 1691, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1691, 1691, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1691, 1691, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1691, 1691, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1691, 1691, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1691, 1691, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1691, 1691, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -9785,8 +9785,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1690, 1690, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1690, 1690, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1690, 1690, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1690, 1690, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1690, 1690, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1690, 1690, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1690, 1690, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1690, 1690, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1690, 1690, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -9899,8 +9899,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1689, 1689, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1689, 1689, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1689, 1689, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1689, 1689, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1689, 1689, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1689, 1689, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1689, 1689, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1689, 1689, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1689, 1689, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -10015,8 +10015,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1688, 1688, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1688, 1688, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1688, 1688, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1688, 1688, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1688, 1688, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1688, 1688, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1688, 1688, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1688, 1688, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1688, 1688, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -10131,8 +10131,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1687, 1687, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1687, 1687, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1687, 1687, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1687, 1687, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1687, 1687, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1687, 1687, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1687, 1687, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1687, 1687, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1687, 1687, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -10246,8 +10246,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1686, 1686, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1686, 1686, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1686, 1686, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1686, 1686, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1686, 1686, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1686, 1686, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1686, 1686, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1686, 1686, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1686, 1686, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -10334,7 +10334,6 @@ export const EVENTS = {
     ...perYear(1686, 1686, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1686, 1686, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1686, 1686, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1686, 1686, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1686, 1686, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1686, 1686, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1686, 1686, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -10362,8 +10361,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1685, 1685, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1685, 1685, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1685, 1685, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1685, 1685, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1685, 1685, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1685, 1685, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1685, 1685, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1685, 1685, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1685, 1685, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -10450,7 +10449,6 @@ export const EVENTS = {
     ...perYear(1685, 1685, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1685, 1685, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1685, 1685, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1685, 1685, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1685, 1685, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1685, 1685, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1685, 1685, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -10479,8 +10477,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1684, 1684, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1684, 1684, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1684, 1684, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1684, 1684, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1684, 1684, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1684, 1684, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1684, 1684, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1684, 1684, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1684, 1684, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -10567,7 +10565,6 @@ export const EVENTS = {
     ...perYear(1684, 1684, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1684, 1684, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1684, 1684, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1684, 1684, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1684, 1684, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1684, 1684, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1684, 1684, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -10596,8 +10593,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1683, 1683, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1683, 1683, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1683, 1683, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1683, 1683, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1683, 1683, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1683, 1683, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1683, 1683, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1683, 1683, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1683, 1683, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -10684,7 +10681,6 @@ export const EVENTS = {
     ...perYear(1683, 1683, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1683, 1683, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1683, 1683, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1683, 1683, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1683, 1683, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1683, 1683, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1683, 1683, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -10713,8 +10709,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1682, 1682, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1682, 1682, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1682, 1682, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1682, 1682, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1682, 1682, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1682, 1682, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1682, 1682, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1682, 1682, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1682, 1682, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -10801,7 +10797,6 @@ export const EVENTS = {
     ...perYear(1682, 1682, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1682, 1682, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1682, 1682, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1682, 1682, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1682, 1682, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1682, 1682, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1682, 1682, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -10830,8 +10825,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1681, 1681, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1681, 1681, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1681, 1681, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1681, 1681, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1681, 1681, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1681, 1681, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1681, 1681, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1681, 1681, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1681, 1681, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -10918,7 +10913,6 @@ export const EVENTS = {
     ...perYear(1681, 1681, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1681, 1681, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1681, 1681, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1681, 1681, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1681, 1681, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1681, 1681, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1681, 1681, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -10947,8 +10941,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1680, 1680, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1680, 1680, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1680, 1680, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1680, 1680, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1680, 1680, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1680, 1680, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1680, 1680, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1680, 1680, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1680, 1680, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -11035,7 +11029,6 @@ export const EVENTS = {
     ...perYear(1680, 1680, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1680, 1680, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1680, 1680, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1680, 1680, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1680, 1680, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1680, 1680, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1680, 1680, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -11064,8 +11057,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1679, 1679, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1679, 1679, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1679, 1679, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1679, 1679, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1679, 1679, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1679, 1679, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1679, 1679, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1679, 1679, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1679, 1679, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -11152,7 +11145,6 @@ export const EVENTS = {
     ...perYear(1679, 1679, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1679, 1679, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1679, 1679, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1679, 1679, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1679, 1679, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1679, 1679, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1679, 1679, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -11181,8 +11173,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1678, 1678, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1678, 1678, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1678, 1678, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1678, 1678, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1678, 1678, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1678, 1678, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1678, 1678, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1678, 1678, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1678, 1678, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -11269,7 +11261,6 @@ export const EVENTS = {
     ...perYear(1678, 1678, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1678, 1678, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1678, 1678, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1678, 1678, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1678, 1678, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1678, 1678, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1678, 1678, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -11298,8 +11289,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1677, 1677, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1677, 1677, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1677, 1677, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1677, 1677, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1677, 1677, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1677, 1677, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1677, 1677, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1677, 1677, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1677, 1677, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -11386,7 +11377,6 @@ export const EVENTS = {
     ...perYear(1677, 1677, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1677, 1677, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1677, 1677, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1677, 1677, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1677, 1677, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1677, 1677, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1677, 1677, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -11415,8 +11405,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1676, 1676, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1676, 1676, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1676, 1676, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1676, 1676, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1676, 1676, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1676, 1676, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1676, 1676, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1676, 1676, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1676, 1676, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -11503,7 +11493,6 @@ export const EVENTS = {
     ...perYear(1676, 1676, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1676, 1676, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1676, 1676, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1676, 1676, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1676, 1676, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1676, 1676, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1676, 1676, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -11532,8 +11521,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1675, 1675, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1675, 1675, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1675, 1675, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1675, 1675, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1675, 1675, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1675, 1675, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1675, 1675, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1675, 1675, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1675, 1675, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -11620,7 +11609,6 @@ export const EVENTS = {
     ...perYear(1675, 1675, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1675, 1675, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1675, 1675, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1675, 1675, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1675, 1675, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1675, 1675, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1675, 1675, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -11649,8 +11637,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1674, 1674, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1674, 1674, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1674, 1674, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1674, 1674, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1674, 1674, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1674, 1674, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1674, 1674, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1674, 1674, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1674, 1674, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -11737,7 +11725,6 @@ export const EVENTS = {
     ...perYear(1674, 1674, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1674, 1674, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1674, 1674, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1674, 1674, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1674, 1674, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1674, 1674, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1674, 1674, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -11766,8 +11753,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1673, 1673, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1673, 1673, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1673, 1673, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1673, 1673, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1673, 1673, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1673, 1673, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1673, 1673, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1673, 1673, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1673, 1673, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -11854,7 +11841,6 @@ export const EVENTS = {
     ...perYear(1673, 1673, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1673, 1673, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1673, 1673, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1673, 1673, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1673, 1673, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1673, 1673, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1673, 1673, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -11883,8 +11869,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1672, 1672, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1672, 1672, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1672, 1672, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1672, 1672, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1672, 1672, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1672, 1672, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1672, 1672, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1672, 1672, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1672, 1672, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -11971,7 +11957,6 @@ export const EVENTS = {
     ...perYear(1672, 1672, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1672, 1672, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1672, 1672, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1672, 1672, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1672, 1672, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1672, 1672, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1672, 1672, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -12000,8 +11985,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1671, 1671, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1671, 1671, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1671, 1671, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1671, 1671, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1671, 1671, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1671, 1671, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1671, 1671, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1671, 1671, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1671, 1671, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -12088,7 +12073,6 @@ export const EVENTS = {
     ...perYear(1671, 1671, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1671, 1671, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1671, 1671, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1671, 1671, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1671, 1671, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1671, 1671, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1671, 1671, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -12117,8 +12101,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1670, 1670, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1670, 1670, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1670, 1670, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1670, 1670, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1670, 1670, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1670, 1670, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1670, 1670, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1670, 1670, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1670, 1670, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -12205,7 +12189,6 @@ export const EVENTS = {
     ...perYear(1670, 1670, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1670, 1670, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1670, 1670, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1670, 1670, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1670, 1670, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1670, 1670, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1670, 1670, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -12234,8 +12217,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1669, 1669, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1669, 1669, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1669, 1669, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1669, 1669, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1669, 1669, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1669, 1669, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1669, 1669, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1669, 1669, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1669, 1669, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -12322,7 +12305,6 @@ export const EVENTS = {
     ...perYear(1669, 1669, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1669, 1669, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1669, 1669, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1669, 1669, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1669, 1669, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1669, 1669, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1669, 1669, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -12351,8 +12333,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1668, 1668, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1668, 1668, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1668, 1668, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1668, 1668, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1668, 1668, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1668, 1668, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1668, 1668, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1668, 1668, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1668, 1668, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -12439,7 +12421,6 @@ export const EVENTS = {
     ...perYear(1668, 1668, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1668, 1668, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1668, 1668, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1668, 1668, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1668, 1668, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1668, 1668, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1668, 1668, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -12468,8 +12449,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1667, 1667, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1667, 1667, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1667, 1667, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1667, 1667, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1667, 1667, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1667, 1667, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1667, 1667, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1667, 1667, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1667, 1667, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -12556,7 +12537,6 @@ export const EVENTS = {
     ...perYear(1667, 1667, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1667, 1667, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1667, 1667, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1667, 1667, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1667, 1667, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1667, 1667, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1667, 1667, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -12585,8 +12565,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1666, 1666, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1666, 1666, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1666, 1666, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1666, 1666, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1666, 1666, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1666, 1666, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1666, 1666, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1666, 1666, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1666, 1666, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -12673,7 +12653,6 @@ export const EVENTS = {
     ...perYear(1666, 1666, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1666, 1666, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1666, 1666, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1666, 1666, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1666, 1666, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1666, 1666, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1666, 1666, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -12702,8 +12681,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1665, 1665, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1665, 1665, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1665, 1665, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1665, 1665, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1665, 1665, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1665, 1665, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1665, 1665, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1665, 1665, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1665, 1665, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -12790,7 +12769,6 @@ export const EVENTS = {
     ...perYear(1665, 1665, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1665, 1665, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1665, 1665, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1665, 1665, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1665, 1665, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1665, 1665, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1665, 1665, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -12819,8 +12797,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1664, 1664, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1664, 1664, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1664, 1664, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1664, 1664, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1664, 1664, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1664, 1664, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1664, 1664, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1664, 1664, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1664, 1664, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -12907,7 +12885,6 @@ export const EVENTS = {
     ...perYear(1664, 1664, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1664, 1664, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1664, 1664, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1664, 1664, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1664, 1664, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1664, 1664, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1664, 1664, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -12936,8 +12913,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1663, 1663, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1663, 1663, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1663, 1663, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1663, 1663, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1663, 1663, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1663, 1663, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1663, 1663, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1663, 1663, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1663, 1663, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -13024,7 +13001,6 @@ export const EVENTS = {
     ...perYear(1663, 1663, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1663, 1663, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1663, 1663, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1663, 1663, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1663, 1663, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1663, 1663, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1663, 1663, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -13053,8 +13029,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1662, 1662, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1662, 1662, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1662, 1662, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1662, 1662, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1662, 1662, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1662, 1662, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1662, 1662, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1662, 1662, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1662, 1662, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -13141,7 +13117,6 @@ export const EVENTS = {
     ...perYear(1662, 1662, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1662, 1662, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1662, 1662, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1662, 1662, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1662, 1662, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1662, 1662, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1662, 1662, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -13170,8 +13145,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1661, 1661, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1661, 1661, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1661, 1661, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1661, 1661, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1661, 1661, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1661, 1661, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1661, 1661, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1661, 1661, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1661, 1661, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -13258,7 +13233,6 @@ export const EVENTS = {
     ...perYear(1661, 1661, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1661, 1661, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1661, 1661, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1661, 1661, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1661, 1661, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1661, 1661, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1661, 1661, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -13287,8 +13261,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1660, 1660, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1660, 1660, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1660, 1660, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1660, 1660, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1660, 1660, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1660, 1660, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1660, 1660, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1660, 1660, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1660, 1660, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -13375,7 +13349,6 @@ export const EVENTS = {
     ...perYear(1660, 1660, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1660, 1660, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1660, 1660, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1660, 1660, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1660, 1660, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1660, 1660, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1660, 1660, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -13404,8 +13377,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1659, 1659, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1659, 1659, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1659, 1659, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1659, 1659, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1659, 1659, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1659, 1659, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1659, 1659, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Posen", "Right-bank Ukraine", "West Volhynia", "Galicia 1772", "Tarnopol", "Polish Livonia"]], o: { "Congress Poland": null } }), 
     ...perYear(1659, 1659, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1659, 1659, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -13492,7 +13465,6 @@ export const EVENTS = {
     ...perYear(1659, 1659, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1659, 1659, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1659, 1659, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1659, 1659, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1659, 1659, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1659, 1659, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1659, 1659, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -13523,8 +13495,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1658, 1658, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1658, 1658, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1658, 1658, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1658, 1658, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1658, 1658, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1658, 1658, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1658, 1658, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Posen", "Right-bank Ukraine", "West Volhynia", "Galicia 1772", "Tarnopol", "Polish Livonia"]], o: { "Congress Poland": null } }), 
     ...perYear(1658, 1658, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1658, 1658, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -13611,7 +13583,6 @@ export const EVENTS = {
     ...perYear(1658, 1658, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1658, 1658, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1658, 1658, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1658, 1658, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1658, 1658, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1658, 1658, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1658, 1658, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -13642,8 +13613,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1657, 1657, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1657, 1657, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1657, 1657, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1657, 1657, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1657, 1657, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1657, 1657, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1657, 1657, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Posen", "Right-bank Ukraine", "West Volhynia", "Galicia 1772", "Tarnopol", "Polish Livonia"]], o: { "Congress Poland": null } }), 
     ...perYear(1657, 1657, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1657, 1657, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -13730,7 +13701,6 @@ export const EVENTS = {
     ...perYear(1657, 1657, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1657, 1657, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1657, 1657, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1657, 1657, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1657, 1657, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1657, 1657, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1657, 1657, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -13761,8 +13731,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1656, 1656, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1656, 1656, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1656, 1656, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1656, 1656, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1656, 1656, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1656, 1656, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1656, 1656, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Posen", "Right-bank Ukraine", "West Volhynia", "Galicia 1772", "Tarnopol", "Polish Livonia"]], o: { "Congress Poland": null } }), 
     ...perYear(1656, 1656, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1656, 1656, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -13848,7 +13818,6 @@ export const EVENTS = {
     ...perYear(1656, 1656, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1656, 1656, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1656, 1656, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1656, 1656, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1656, 1656, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1656, 1656, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1656, 1656, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -13880,8 +13849,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1655, 1655, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1655, 1655, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1655, 1655, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1655, 1655, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1655, 1655, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1655, 1655, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1655, 1655, { m: ["Coroa da Polônia (em grande parte ocupada pela Suécia e pela Rússia)", "blank", ["Congress Poland", "West Galicia", "Kraków", "Posen", "Right-bank Ukraine", "West Volhynia", "Galicia 1772", "Tarnopol", "Polish Livonia"]], o: { "Congress Poland": null } }), 
     ...perYear(1655, 1655, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1655, 1655, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -13967,7 +13936,6 @@ export const EVENTS = {
     ...perYear(1655, 1655, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1655, 1655, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1655, 1655, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1655, 1655, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1655, 1655, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1655, 1655, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1655, 1655, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -13999,8 +13967,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1654, 1654, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1654, 1654, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1654, 1654, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1654, 1654, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1654, 1654, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1654, 1654, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1654, 1654, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1654, 1654, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1654, 1654, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -14086,7 +14054,6 @@ export const EVENTS = {
     ...perYear(1654, 1654, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1654, 1654, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1654, 1654, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1654, 1654, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1654, 1654, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1654, 1654, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1654, 1654, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -14116,8 +14083,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1653, 1653, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1653, 1653, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1653, 1653, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1653, 1653, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1653, 1653, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1653, 1653, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1653, 1653, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1653, 1653, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1653, 1653, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -14203,7 +14170,6 @@ export const EVENTS = {
     ...perYear(1653, 1653, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1653, 1653, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1653, 1653, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1653, 1653, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1653, 1653, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1653, 1653, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1653, 1653, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -14233,8 +14199,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1652, 1652, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1652, 1652, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1652, 1652, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1652, 1652, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1652, 1652, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1652, 1652, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1652, 1652, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1652, 1652, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1652, 1652, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -14320,7 +14286,6 @@ export const EVENTS = {
     ...perYear(1652, 1652, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1652, 1652, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1652, 1652, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1652, 1652, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1652, 1652, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1652, 1652, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1652, 1652, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -14350,8 +14315,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1651, 1651, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1651, 1651, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1651, 1651, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1651, 1651, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1651, 1651, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1651, 1651, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1651, 1651, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1651, 1651, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1651, 1651, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -14437,7 +14402,6 @@ export const EVENTS = {
     ...perYear(1651, 1651, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1651, 1651, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1651, 1651, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1651, 1651, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1651, 1651, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1651, 1651, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1651, 1651, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -14455,7 +14419,7 @@ export const EVENTS = {
     ...perYear(1651, 1651, { r: { "United Kingdom of Great Britain and Ireland": "Reino da Inglaterra", "Scotland": "Reino da Escócia" }, f: { "United Kingdom of Great Britain and Ireland": "h:england", "Scotland": "h:scotland" }, o: { "United Kingdom of Great Britain and Ireland": null, "Scotland": null } }), // Ato de União em 1/mai/1707
     ...perYear(1651, 1651, { m: [null, null, ["Spain", "Lombardy"]] }), // Milão tomado após a batalha de Turim (7/set/1706)
     ...perYear(1651, 1651, { m: [null, null, ["Spain", "Majorca"]] }), // data da adesão de Maiorca a Carlos III (1706) não checada
-    ...perYear(1651, 1651, { m: [null, null, ["Spain", "Catalonia", "Valencia"]] }), // Girona tomada pela França em 29/jun/1694; Barcelona em 10/ago/1697
+    ...perYear(1651, 1651, { m: [null, null, ["Spain", "Valencia"]] }), // Girona tomada pela França em 29/jun/1694; Barcelona em 10/ago/1697
     ...perYear(1651, 1651, { m: [null, null, ["Spain", "Gibraltar"]] }), // tomado pelos anglo-holandeses em ago/1704
     ...perYear(1651, 1651, { r: { "Germany": "Brandemburgo-Prússia", "Ashanti": "Estados axantis (vassalos de Denkyira)" }, f: { "Germany": "blank", "Ashanti": "blank" }, o: { "Germany": null, "Ashanti": null } }), // Frederico I rei na Prússia em 1701; Denkyira derrotado em Feyiase (1701)
     ...perYear(1651, 1651, { r: { "Transylvania": "Principado da Transilvânia" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), // domínio habsburgo imposto aos poucos depois de 1683; Diploma Leopoldino em 16/out/1690
@@ -14467,8 +14431,8 @@ export const EVENTS = {
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1650, 1650, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
     ...perYear(1650, 1650, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
-    ...perYear(1650, 1650, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol", "Trentino"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
-    ...perYear(1650, 1650, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark", "NRW"]], o: { "Germany": null } }),
+    ...perYear(1650, 1650, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1650, 1650, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
     ...perYear(1650, 1650, { m: ["República das Duas Nações", "blank", ["Congress Poland", "West Galicia", "Kraków", "Lithuania GD", "Posen", "Right-bank Ukraine", "Minsk region", "West Volhynia", "Galicia 1772", "Tarnopol", "Royal Prussia", "Polish Livonia", "East Belarus"]], o: { "Congress Poland": null } }), 
     ...perYear(1650, 1650, { m: [null, null, ["British Raj", "Kashmir", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
     ...perYear(1650, 1650, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
@@ -14554,7 +14518,6 @@ export const EVENTS = {
     ...perYear(1650, 1650, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
     ...perYear(1650, 1650, { m: [null, null, ["Persia", "Erivan", "West Persia", "Azerbaijani khanates"]] }), // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
     ...perYear(1650, 1650, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
-    ...perYear(1650, 1650, { m: [null, null, ["British Raj", "Hyderabad"]] }), // Asaf Jah I em Aurangabad desde 31/jul/1724
     ...perYear(1650, 1650, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
     ...perYear(1650, 1650, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
     ...perYear(1650, 1650, { m: [null, null, ["Sweden–Norway", "Swedish Baltic"]] }), // Finlândia ocupada 1714–1721; Estônia e Livônia capitularam em 1710; devolução/cessão em Nystad, 10/set/1721
@@ -14572,7 +14535,7 @@ export const EVENTS = {
     ...perYear(1650, 1650, { r: { "United Kingdom of Great Britain and Ireland": "Reino da Inglaterra", "Scotland": "Reino da Escócia" }, f: { "United Kingdom of Great Britain and Ireland": "h:england", "Scotland": "h:scotland" }, o: { "United Kingdom of Great Britain and Ireland": null, "Scotland": null } }), // Ato de União em 1/mai/1707
     ...perYear(1650, 1650, { m: [null, null, ["Spain", "Lombardy"]] }), // Milão tomado após a batalha de Turim (7/set/1706)
     ...perYear(1650, 1650, { m: [null, null, ["Spain", "Majorca"]] }), // data da adesão de Maiorca a Carlos III (1706) não checada
-    ...perYear(1650, 1650, { m: [null, null, ["Spain", "Catalonia", "Valencia"]] }), // Girona tomada pela França em 29/jun/1694; Barcelona em 10/ago/1697
+    ...perYear(1650, 1650, { m: [null, null, ["Spain", "Valencia"]] }), // Girona tomada pela França em 29/jun/1694; Barcelona em 10/ago/1697
     ...perYear(1650, 1650, { m: [null, null, ["Spain", "Gibraltar"]] }), // tomado pelos anglo-holandeses em ago/1704
     ...perYear(1650, 1650, { r: { "Germany": "Brandemburgo-Prússia", "Ashanti": "Estados axantis (vassalos de Denkyira)" }, f: { "Germany": "blank", "Ashanti": "blank" }, o: { "Germany": null, "Ashanti": null } }), // Frederico I rei na Prússia em 1701; Denkyira derrotado em Feyiase (1701)
     ...perYear(1650, 1650, { r: { "Transylvania": "Principado da Transilvânia" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), // domínio habsburgo imposto aos poucos depois de 1683; Diploma Leopoldino em 16/out/1690
@@ -14583,6 +14546,9 @@ export const EVENTS = {
     // Qing: sem bandeira oficial antes de 1862; a triangular (1862) não é descrita em detalhe; retangular promulgada em 1888 (um evento por ano para vencer as fusões)
     ...Array.from({ length: 238 }, (_, i) => ({ y: 1650 + i, y1: 1650 + i, f: { "Manchu Empire": "blank" } })),
     // correções de anacronismos (aplicadas por último; fontes: Wikipedia)
+    ...perYear(1600, 1805, { r: { "NRW": "Vestfália e Baixo Reno (estados do Sacro Império)" }, f: { "NRW": "blank" }, o: { "NRW": null } }), /*fixo*/ // Cleves, Mark e Ravensberg brandemburgueses (1614/1666); Renânia e Vestfália prussianas em 1815
+    ...perYear(1600, 1802, { r: { "Trentino": "Príncipe-Bispado de Trento" }, f: { "Trentino": "blank" }, o: { "Trentino": null } }), /*fixo*/ // secularizado e anexado à Áustria em 1803
+    ...perYear(1641, 1651, { r: { "Catalonia": "Catalunha (França)" }, f: { "Catalonia": "h:fr_bourbon" }, o: { "Catalonia": "França" } }), /*fixo*/ // revolta dos Segadores; Barcelona retomada em out/1652
     // Iêmen, Marrocos, Tobago, Acádia e outras colônias (fontes: Wikipedia — Qasimid State, Saadi Sultanate, Zawiya Dila'iya, History of Tobago, Danish West Indies, Brandenburger Gold Coast, Port-Royal, Isle Saint-Jean, English settling of Belize, Réunion)
     { y: 1849, y1: 1910, /*fixo*/ m: [null, null, ["Ottoman Empire", "North Yemen"]] }, // reincorporação otomana em 1849
     ...perYear(1636, 1802, { r: { "North Yemen": "Imamato Zaidita do Iêmen (qasímidas)" }, f: { "North Yemen": "blank" }, o: { "North Yemen": null } }), /*fixo*/ // otomanos expulsos por completo em 1636
