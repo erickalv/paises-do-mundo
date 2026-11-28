@@ -178,7 +178,12 @@ export const EVENTS = {
     { y: 1905, y1: 1909, r: { "Korea": "Império Coreano (protetorado japonês)" }, f: { "Korea": "x:kr" }, o: { "Korea": null } }, // nov/1905
     { y: 1910, r: { "Korea": "Coreia (Japão)" }, f: { "Korea": "x:jp" }, o: { "Korea": "Japão" } }, // 29/ago/1910
     { y: 1720, y1: 1910, /*fixo*/ m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Mongolia", "Tibet"]] }, // zungares expulsos do Tibete em 1720
-    { y: 1650, y1: 1719, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Mongolia"]] },
+    { y: 1691, y1: 1719, /*fixo*/ m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Mongolia"]] }, // Khalkha submetidos em Dolon Nor (1691)
+    { y: 1724, /*fixo*/ m: [null, null, ["Manchu Empire", "CN Kokonor"]] }, // revolta de Lubsan Danzan derrotada (1723)
+    { y: 1644, /*fixo*/ m: [null, null, ["Manchu Empire", "CN Manchuria", "CN Liaodong", "CN Inner Mongolia"]] },
+    { y: 1645, /*fixo*/ m: [null, null, ["Manchu Empire", "CN Shaanxi", "CN Jiangnan"]] }, // Xi'an abandonada por Li Zicheng em fev/1645; Nanquim em jun/1645
+    { y: 1646, /*fixo*/ m: [null, null, ["Manchu Empire", "CN Fujian"]] }, // Fuzhou em 17/out/1646
+    { y: 1650, /*fixo*/ m: [null, null, ["Manchu Empire", "CN Hubei", "CN Jiangxi", "CN Guangdong"]] }, // Huguang, Jiangxi e Cantão retomados em 1649–1650 (Cantão em 24/nov/1650)
     { y: 1758, y1: 1910, m: [null, null, ["Manchu Empire", "Tuva"]] }, // Tuva sob os Qing de 1758 a 1911
     { y: 1650, y1: 1757, m: [null, null, ["Xinjiang", "Tuva"]] }, // canatos Khotgoid e Zungar (1634–1758)
     { y: 1911, y1: 1911, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Tibet", "Tuva"]] },
@@ -582,7 +587,7 @@ export const EVENTS = {
     // Moldávia e Valáquia (vassalos otomanos); sul da Bessarábia moldavo pelo Tratado de Paris (1856)
     { y: 1650, y1: 1858, r: { "Romania": "Principado da Moldávia", "Wallachia": "Principado da Valáquia" }, f: { "Romania": "blank", "Wallachia": "blank" }, o: { "Romania": null, "Wallachia": null } },
     // Extremo Oriente
-    { y: 1650, y1: 1857, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Amur", "Ussuri"]] },
+    { y: 1644, y1: 1857, /*fixo*/ m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Amur", "Ussuri"]] },
     { y: 1858, y1: 1859, r: { "Ussuri": "Região do Ussuri (condomínio russo-chinês)" }, f: { "Ussuri": "blank" }, o: { "Ussuri": null } }, // Aigun: administração conjunta até a Convenção de Pequim
     { y: 1650, y1: 1874, r: { "Sakhalin": "Sacalina (indivisa entre Rússia e Japão)" }, f: { "Sakhalin": "blank" }, o: { "Sakhalin": null } }, // Shimoda (1855) não definiu Sacalina
     // Estados Unidos (bandeira de 31, 32 e 33 estrelas)
@@ -871,7 +876,7 @@ export const EVENTS = {
     { y: 1897, y1: 1909, m: ["Colônia de Natal", "x:gb", ["Natal", "Zululand"]] }, // unida a Natal em 1897
     { y: 1822, y1: 1838, r: { "Liberia": "Libéria (colônia da Sociedade Americana de Colonização)" }, f: { "Liberia": "blank" }, o: { "Liberia": null } }, // Commonwealth em 1839
     { y: 1839, y1: 1840, r: { "Afghanistan": "Afeganistão (Primeira Guerra Anglo-Afegã)" }, o: { "Afghanistan": null } }, // Cabul ocupada em ago/1839
-    { y: 1650, y1: 1840, m: ["Império Qing", "blank", ["Manchu Empire", "Hong Kong"]] },
+    { y: 1651, y1: 1840, /*fixo*/ m: ["Império Qing", "blank", ["Manchu Empire", "Hong Kong"]] },
     { y: 1650, y1: 1840, m: ["Brunei", "h:bn_y", ["Brunei", "Sarawak"]] }, // Sarawak a James Brooke em 24/set/1841
     { y: 1834, y1: 1840, r: { "Cambodia": "Camboja (província vietnamita de Trấn Tây)" }, f: { "Cambodia": "blank" }, o: { "Cambodia": "Đại Nam" } }, // 1835; retirada vietnamita em 1841
     { y: 1832, y1: 1839, m: ["Egito (eialete otomano)", "h:eg_khed", ["Egypt", "Egyptian Syria", "Lebanon", "Hejaz", "Crete"]] }, // Acre tomada em mai/1832
@@ -1035,7 +1040,7 @@ export const EVENTS = {
     { y: 1678, /*fixo*/ m: [null, null, ["France", "French Flanders"]] }, // Cambrai, Valenciennes e Maubeuge cedidas em Nijmegen (17/set/1678)
     { y: 1659, /*fixo*/ m: [null, null, ["France", "Artois", "Roussillon"]] }, // Tratado dos Pireneus (7/nov/1659)
     { y: 1674, /*fixo*/ m: [null, null, ["United States of America", "New Netherland", "New Sweden"]] }, // Nova Holanda devolvida à Inglaterra pelo Tratado de Westminster (19/fev/1674)
-    { y: 1681, /*fixo*/ m: [null, null, ["Manchu Empire", "Three Feudatories", "Feudatories Hunan"]] }, // Kunming tomada em out/1681; Wu Shifan morre em dez/1681
+    { y: 1681, /*fixo*/ m: [null, null, ["Manchu Empire", "Three Feudatories", "Feudatories Hunan", "CN Sichuan", "CN Hunan", "CN Guangxi"]] }, // Kunming tomada em out/1681; Wu Shifan morre em dez/1681
     { y: 1658, /*fixo*/ m: [null, null, ["Sweden–Norway", "Scania", "Halland"]] }, // Tratado de Roskilde (8/mar/1658)
     { y: 1660, /*fixo*/ m: [null, null, ["Norway", "Trondelag"]] }, // Trøndelag devolvido à Noruega pelo Tratado de Copenhague (1660)
     { y: 1654, /*fixo*/ m: [null, null, ["Russian Empire", "Smolensk"]] }, // Smolensk tomada pelos russos em set–out/1654; cedida em Andrusovo (1667)
@@ -14578,6 +14583,53 @@ export const EVENTS = {
     // Qing: sem bandeira oficial antes de 1862; a triangular (1862) não é descrita em detalhe; retangular promulgada em 1888 (um evento por ano para vencer as fusões)
     ...Array.from({ length: 238 }, (_, i) => ({ y: 1650 + i, y1: 1650 + i, f: { "Manchu Empire": "blank" } })),
     // correções de anacronismos (aplicadas por último; fontes: Wikipedia)
+    // China, Mongólia e Tibete 1600–1661 (fontes: Wikipedia — Southern Ming, Xi dynasty, Li Dingguo, Li Zicheng, Mongolia under Qing rule, Dzungar–Qing Wars, Khoshut Khanate, Upper Mongols)
+    ...perYear(1600, 1650, { m: [null, null, ["CN Guangdong", "Hong Kong"]] }), /*fixo*/
+    ...perYear(1600, 1643, { m: ["Dinastia Ming", "blank", ["Manchu Empire", "CN Shaanxi", "CN Hubei", "CN Jiangnan", "CN Fujian", "CN Jiangxi", "CN Guangdong", "CN Sichuan", "CN Hunan", "CN Guangxi", "Feudatories Hunan", "Three Feudatories"]], o: { "Manchu Empire": null } }), /*fixo*/
+    ...perYear(1621, 1643, { m: [null, null, ["CN Manchuria", "CN Liaodong"]] }), /*fixo*/ // Shenyang e Liaoyang tomadas em 1621
+    ...perYear(1635, 1643, { m: [null, null, ["CN Manchuria", "CN Inner Mongolia"]] }), /*fixo*/ // Ejei Khan rende-se a Hong Taiji em 1635
+    ...perYear(1600, 1615, { r: { "CN Manchuria": "Tribos jurchéns" }, f: { "CN Manchuria": "blank" }, o: { "CN Manchuria": null } }), /*fixo*/
+    ...perYear(1616, 1635, { r: { "CN Manchuria": "Jin Posterior" }, f: { "CN Manchuria": "blank" }, o: { "CN Manchuria": null } }), /*fixo*/ // Nurhaci, 1616; Qing desde 14/mai/1636
+    ...perYear(1636, 1643, { r: { "CN Manchuria": "Império Qing" }, f: { "CN Manchuria": "blank" }, o: { "CN Manchuria": null } }), /*fixo*/
+    ...perYear(1600, 1633, { r: { "CN Inner Mongolia": "Yuan do Norte (mongóis do sul)" }, f: { "CN Inner Mongolia": "blank" }, o: { "CN Inner Mongolia": null } }), /*fixo*/
+    ...perYear(1634, 1634, { r: { "CN Inner Mongolia": "Mongóis do sul (disputado; conquista do Jin Posterior)" }, f: { "CN Inner Mongolia": "blank" }, o: { "CN Inner Mongolia": null } }), /*fixo*/ // morte de Ligdan Khan em 1634
+    ...perYear(1600, 1643, { r: { "Amur": null, "Ussuri": null } }), /*fixo*/
+    ...perYear(1600, 1649, { f: { "Manchu Empire": "blank" }, o: { "Manchu Empire": null } }), /*fixo*/
+    ...perYear(1644, 1690, { r: { "Manchu Empire": "Império Qing" }, o: { "Manchu Empire": null } }), /*fixo*/ // Pequim tomada em 6/jun/1644
+    ...perYear(1644, 1644, { r: { "CN Shaanxi": "Dinastia Shun (Li Zicheng)" }, f: { "CN Shaanxi": "blank" }, o: { "CN Shaanxi": null } }), /*fixo*/ // entronizado em Xi'an em 8/fev/1644
+    ...perYear(1644, 1649, { r: { "CN Hubei": "Hubei (disputado)" }, f: { "CN Hubei": "blank" }, o: { "CN Hubei": null } }), /*fixo*/
+    ...perYear(1644, 1646, { r: { "CN Sichuan": "Grande Xi (Zhang Xianzhong)" }, f: { "CN Sichuan": "blank" }, o: { "CN Sichuan": null } }), /*fixo*/ // Chengdu desde 1644; fim em 1647
+    ...perYear(1647, 1658, { r: { "CN Sichuan": "Sichuan (disputado)" }, f: { "CN Sichuan": "blank" }, o: { "CN Sichuan": null } }), /*fixo*/ // Chongqing tomada pelos Qing em 1658
+    ...perYear(1644, 1644, { m: ["Ming do Sul (Hongguang)", "blank", ["CN Jiangnan", "CN Fujian", "CN Jiangxi", "CN Guangdong", "CN Hunan", "CN Guangxi", "Feudatories Hunan", "Three Feudatories"]], o: { "CN Jiangnan": null } }), /*fixo*/
+    ...perYear(1645, 1645, { m: ["Ming do Sul (Longwu)", "blank", ["CN Fujian", "CN Guangdong", "CN Hunan", "CN Guangxi", "Feudatories Hunan", "Three Feudatories"]], o: { "CN Fujian": null } }), /*fixo*/ // Longwu entronizado em Fuzhou em 18/ago/1645
+    ...perYear(1645, 1646, { r: { "CN Jiangxi": "Jiangxi (disputado)" }, f: { "CN Jiangxi": "blank" }, o: { "CN Jiangxi": null } }), /*fixo*/ // Ganzhou, último bastião Ming em Jiangxi, sitiada em mai/1646
+    ...perYear(1646, 1646, { m: ["Ming do Sul (Yongli; Shaowu em Cantão)", "blank", ["CN Guangdong", "CN Hunan", "CN Guangxi", "Feudatories Hunan", "Three Feudatories"]], o: { "CN Guangdong": null } }), /*fixo*/ // Shaowu em 11/dez e Yongli em 24/dez/1646
+    ...perYear(1647, 1647, { m: [null, null, ["Manchu Empire", "CN Guangdong", "CN Jiangxi"]] }), /*fixo*/ // Cantão tomada em 20/jan/1647
+    ...perYear(1647, 1647, { r: { "CN Hunan": "Hunan (disputado)" }, f: { "CN Hunan": "blank" }, o: { "CN Hunan": null } }), /*fixo*/
+    ...perYear(1647, 1647, { r: { "CN Guangxi": "Ming do Sul (Yongli)" }, f: { "CN Guangxi": "blank" }, o: { "CN Guangxi": null } }), /*fixo*/
+    ...perYear(1647, 1651, { m: ["Guizhou e Yunnan (Sun Kewang e Li Dingguo, ex-Grande Xi)", "blank", ["Feudatories Hunan", "Three Feudatories"]], o: { "Feudatories Hunan": null } }), /*fixo*/ // Guiyang tomada em 1647
+    ...perYear(1648, 1648, { m: ["Ming do Sul (Yongli)", "blank", ["CN Guangxi", "CN Guangdong", "CN Jiangxi", "CN Hunan"]], o: { "CN Guangxi": null } }), /*fixo*/ // Li Chengdong em mai/1648 e revolta em Jiangxi
+    ...perYear(1649, 1649, { m: ["Ming do Sul (Yongli)", "blank", ["CN Guangxi", "CN Guangdong"]], o: { "CN Guangxi": null } }), /*fixo*/ // Cantão retomada pelos Qing em 24/nov/1650, após cerco de dez meses
+    ...perYear(1649, 1649, { r: { "CN Jiangxi": "Jiangxi (disputado)" }, f: { "CN Jiangxi": "blank" }, o: { "CN Jiangxi": null } }), /*fixo*/
+    ...perYear(1649, 1649, { r: { "CN Hunan": "Hunan (disputado)" }, f: { "CN Hunan": "blank" }, o: { "CN Hunan": null } }), /*fixo*/
+    ...perYear(1650, 1651, { m: [null, null, ["Manchu Empire", "CN Hunan"]] }), /*fixo*/
+    ...perYear(1650, 1651, { r: { "CN Guangxi": "Guangxi (disputado)" }, f: { "CN Guangxi": "blank" }, o: { "CN Guangxi": null } }), /*fixo*/
+    ...perYear(1652, 1652, { m: ["Ming do Sul (Yongli, em Anlong)", "blank", ["Feudatories Hunan", "Three Feudatories", "CN Guangxi"]], o: { "Feudatories Hunan": null } }), /*fixo*/ // Guilin retomada por Li Dingguo em ago/1652
+    ...perYear(1652, 1652, { r: { "CN Hunan": "Hunan (disputado)" }, f: { "CN Hunan": "blank" }, o: { "CN Hunan": null } }), /*fixo*/ // Hengzhou ocupada por Li Dingguo em 1652
+    ...perYear(1653, 1658, { m: [null, null, ["Manchu Empire", "CN Hunan"]] }), /*fixo*/ // Hong Chengchou em Changsha (1653)
+    ...perYear(1653, 1658, { r: { "CN Guangxi": "Guangxi (disputado)" }, f: { "CN Guangxi": "blank" }, o: { "CN Guangxi": null } }), /*fixo*/ // Li Dingguo recua para o norte de Cantão (1653) e Nanning (1655)
+    ...perYear(1653, 1657, { m: ["Ming do Sul (Yongli)", "blank", ["Feudatories Hunan", "Three Feudatories"]], o: { "Feudatories Hunan": null } }), /*fixo*/ // Sun Kewang rende-se aos Qing em dez/1657
+    ...perYear(1658, 1658, { r: { "Feudatories Hunan": "Guizhou (disputado)" }, f: { "Feudatories Hunan": "blank" }, o: { "Feudatories Hunan": null } }), /*fixo*/ // Zunyi tomada em 1658; campanha Qing no fim de 1658
+    ...perYear(1658, 1658, { r: { "Three Feudatories": "Ming do Sul (Yongli)" }, f: { "Three Feudatories": "blank" }, o: { "Three Feudatories": null } }), /*fixo*/
+    ...perYear(1600, 1687, { r: { "Mongolia": "Mongóis Khalkha" }, f: { "Mongolia": "blank" }, o: { "Mongolia": null } }), /*fixo*/
+    ...perYear(1688, 1690, { r: { "Mongolia": "Khalkha (ocupação zungar)" }, f: { "Mongolia": "blank" }, o: { "Mongolia": null } }), /*fixo*/ // Olgoi Nor (1688); khans khalkhas refugiados em Hohhot
+    ...perYear(1600, 1633, { r: { "Xinjiang": "Oirates e Canato de Yarkent" }, f: { "Xinjiang": "blank" }, o: { "Xinjiang": null } }), /*fixo*/
+    ...perYear(1634, 1679, { r: { "Xinjiang": "Canato Zungar e Canato de Yarkent" }, f: { "Xinjiang": "blank" }, o: { "Xinjiang": null } }), /*fixo*/ // Bacia do Tarim conquistada pelos zungares a partir de 1680
+    ...perYear(1600, 1641, { r: { "Tibet": "Tibete (Tsangpa)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), /*fixo*/ // Güshi Khan proclamado cã do Tibete em 13/abr/1642
+    ...perYear(1600, 1636, { r: { "CN Kokonor": "Kokonor (mongóis)" }, f: { "CN Kokonor": "blank" }, o: { "CN Kokonor": null } }), /*fixo*/
+    ...perYear(1637, 1641, { r: { "CN Kokonor": "Kokonor (Khoshut, Güshi Khan)" }, f: { "CN Kokonor": "blank" }, o: { "CN Kokonor": null } }), /*fixo*/ // morte de Choghtu
+    ...perYear(1642, 1716, { m: [null, null, ["Tibet", "CN Kokonor"]] }), /*fixo*/ // Canato Khoshut (1642–1717)
+    ...perYear(1717, 1723, { r: { "CN Kokonor": "Kokonor (mongóis Khoshut)" }, f: { "CN Kokonor": "blank" }, o: { "CN Kokonor": null } }), /*fixo*/
     ...perYear(1600, 1629, { m: [null, null, ["Kingdom of Brazil", "Dutch Brazil"]] }), /*fixo*/
     ...perYear(1600, 1623, { m: [null, null, ["Kingdom of Brazil", "Bahia"]] }), /*fixo*/
     ...perYear(1625, 1653, { m: [null, null, ["Kingdom of Brazil", "Bahia"]] }), /*fixo*/
@@ -14617,13 +14669,13 @@ export const EVENTS = {
     ...perYear(1661, 1661, { r: { "Taiwan": "Formosa (disputada; Forte Zeelandia holandês sitiado por Koxinga)" }, f: { "Taiwan": "blank" }, o: { "Taiwan": null } }), /*fixo*/ // cerco de abr/1661 a fev/1662
     ...perYear(1624, 1660, { r: { "Taiwan": "Formosa Holandesa" }, f: { "Taiwan": "blank" }, o: { "Taiwan": "República das Sete Províncias Unidas" } }), /*fixo*/ // feitoria holandesa no sudoeste de 1624 a 1662
     ...perYear(1662, 1682, { r: { "Taiwan": "Reino de Tungning (Taiwan)" }, f: { "Taiwan": "blank" }, o: { "Taiwan": null } }), /*fixo*/ // estabelecido em 1/fev/1662; rende-se aos Qing em 5/set/1683
-    ...perYear(1600, 1672, { m: [null, null, ["Manchu Empire", "Three Feudatories", "Feudatories Hunan"]] }), /*fixo*/
+    ...perYear(1659, 1672, { m: [null, null, ["Manchu Empire", "Three Feudatories", "Feudatories Hunan", "CN Sichuan", "CN Hunan", "CN Guangxi"]] }), /*fixo*/ // capital de Yunnan tomada no fim de jan/1659
     ...perYear(1673, 1677, { r: { "Three Feudatories": "Revolta dos Três Feudatários (Wu Sangui)" }, f: { "Three Feudatories": "blank" }, o: { "Three Feudatories": null } }), /*fixo*/ // revolta em dez/1673; Hunan e Sichuan tomados; Guangxi com Sun Yanling
     ...perYear(1678, 1679, { r: { "Three Feudatories": "Grande Zhou (Wu Sangui e Wu Shifan)" }, f: { "Three Feudatories": "blank" }, o: { "Three Feudatories": null } }), /*fixo*/ // Wu Sangui imperador em Hengzhou (1678)
-    ...perYear(1673, 1673, { m: [null, null, ["Manchu Empire", "Feudatories Hunan"]] }), /*fixo*/ // Hunan e Sichuan tomados depois do início da revolta
-    ...perYear(1674, 1679, { m: [null, null, ["Three Feudatories", "Feudatories Hunan"]] }), /*fixo*/
+    ...perYear(1673, 1673, { m: [null, null, ["Manchu Empire", "Feudatories Hunan", "CN Sichuan", "CN Hunan", "CN Guangxi"]] }), /*fixo*/ // Hunan e Sichuan tomados depois do início da revolta
+    ...perYear(1674, 1679, { m: [null, null, ["Three Feudatories", "Feudatories Hunan", "CN Sichuan", "CN Hunan", "CN Guangxi"]] }), /*fixo*/
     ...perYear(1680, 1680, { m: ["Grande Zhou (Wu Shifan, Yunnan)", "blank", ["Three Feudatories"]], o: { "Three Feudatories": null } }), /*fixo*/ // Hunan, Guizhou, Guangxi e Sichuan retomados pelos Qing em 1680
-    ...perYear(1680, 1680, { m: [null, null, ["Manchu Empire", "Feudatories Hunan"]] }), /*fixo*/
+    ...perYear(1680, 1680, { m: [null, null, ["Manchu Empire", "Feudatories Hunan", "CN Sichuan", "CN Hunan", "CN Guangxi"]] }), /*fixo*/
     ...perYear(1664, 1672, { m: [null, null, ["United States of America", "New Netherland", "New Sweden"]] }), /*fixo*/ // Nova Amsterdã tomada pelos ingleses em 27/ago/1664
     ...perYear(1600, 1637, { m: [null, null, ["New Netherland", "New Sweden"]] }), /*fixo*/
     ...perYear(1655, 1663, { m: [null, null, ["New Netherland", "New Sweden"]] }), /*fixo*/ // Nova Suécia conquistada pelos holandeses (Fort Christina, 15/set/1655)

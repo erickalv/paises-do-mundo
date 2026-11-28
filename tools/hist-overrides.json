@@ -5145,11 +5145,7 @@
    "take": {
     "from": "Manchu Empire",
     "iso": [
-     "CN-HN",
-     "CN-SC",
-     "CN-CQ",
-     "CN-GZ",
-     "CN-GX"
+     "CN-GZ"
     ]
    }
   },
@@ -5239,6 +5235,131 @@
     "from": "Kingdom of Brazil",
     "iso": [
      "BR-BA"
+    ]
+   }
+  },
+  {
+   "key": "CN Sichuan",
+   "take": {
+    "from": "Manchu Empire",
+    "iso": [
+     "CN-SC",
+     "CN-CQ"
+    ]
+   }
+  },
+  {
+   "key": "CN Hunan",
+   "take": {
+    "from": "Manchu Empire",
+    "iso": [
+     "CN-HN"
+    ]
+   }
+  },
+  {
+   "key": "CN Guangxi",
+   "take": {
+    "from": "Manchu Empire",
+    "iso": [
+     "CN-GX"
+    ]
+   }
+  },
+  {
+   "key": "CN Manchuria",
+   "take": {
+    "from": "Manchu Empire",
+    "iso": [
+     "CN-JL",
+     "CN-HL"
+    ]
+   }
+  },
+  {
+   "key": "CN Liaodong",
+   "take": {
+    "from": "Manchu Empire",
+    "iso": [
+     "CN-LN"
+    ]
+   }
+  },
+  {
+   "key": "CN Inner Mongolia",
+   "take": {
+    "from": "Manchu Empire",
+    "iso": [
+     "CN-NM"
+    ]
+   }
+  },
+  {
+   "key": "CN Shaanxi",
+   "take": {
+    "from": "Manchu Empire",
+    "iso": [
+     "CN-SN",
+     "CN-GS",
+     "CN-NX"
+    ]
+   }
+  },
+  {
+   "key": "CN Hubei",
+   "take": {
+    "from": "Manchu Empire",
+    "iso": [
+     "CN-HB"
+    ]
+   }
+  },
+  {
+   "key": "CN Jiangnan",
+   "take": {
+    "from": "Manchu Empire",
+    "iso": [
+     "CN-JS",
+     "CN-AH",
+     "CN-SH",
+     "CN-ZJ"
+    ]
+   }
+  },
+  {
+   "key": "CN Fujian",
+   "take": {
+    "from": "Manchu Empire",
+    "iso": [
+     "CN-FJ"
+    ]
+   }
+  },
+  {
+   "key": "CN Jiangxi",
+   "take": {
+    "from": "Manchu Empire",
+    "iso": [
+     "CN-JX"
+    ]
+   }
+  },
+  {
+   "key": "CN Guangdong",
+   "take": {
+    "from": "Manchu Empire",
+    "iso": [
+     "CN-GD",
+     "CN-HI"
+    ]
+   }
+  },
+  {
+   "key": "CN Kokonor",
+   "take": {
+    "from": "Manchu Empire",
+    "iso": [
+     "CN-QH"
     ]
    }
   },
