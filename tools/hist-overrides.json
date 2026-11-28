@@ -5593,6 +5593,25 @@
    }
   },
   {
+   "key": "RU Ingria",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "RU-LEN",
+     "RU-SPE"
+    ]
+   }
+  },
+  {
+   "key": "RU Novgorod",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "RU-NGR"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
