@@ -5794,6 +5794,17 @@
    }
   },
   {
+   "key": "FR Provence",
+   "take": {
+    "from": "France",
+    "iso": [
+     "FR-13",
+     "FR-83",
+     "FR-04"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
