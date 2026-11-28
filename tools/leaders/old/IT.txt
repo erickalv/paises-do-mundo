@@ -1,0 +1,36 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_rulers_of_Savoy ; https://en.wikipedia.org/wiki/List_of_rulers_of_Tuscany
+SAV|1465-01-29|1472-03-30|Amadeu IX|Duque
+SAV|1472-03-30|1482-09-22|Filiberto I|Duque
+SAV|1482-09-22|1490-03-13|Carlos I|Duque
+SAV|1490-03-13|1496-04-16|Carlos II|Duque
+SAV|1496-04-16|1497-11-07|Filipe II|Duque
+SAV|1497-11-07|1504-09-10|Filiberto II|Duque
+SAV|1504-09-10|1553-08-17|Carlos III|Duque
+SAV|1553-08-17|1580-08-30|Emanuel Filiberto|Duque
+SAV|1580-08-30|1630-07-26|Carlos Emanuel I|Duque
+SAV|1630-07-26|1637-10-07|Vítor Amadeu I|Duque
+SAV|1637-10-07|1638-10-04|Francisco Jacinto|Duque
+SAV|1638-10-04|1675-06-12|Carlos Emanuel II|Duque
+SAV|1675-06-12|1720-02-17|Vítor Amadeu II|Duque
+SAV|1720-02-17|1730-09-03|Vítor Amadeu II|Rei
+SAV|1730-09-03|1773-02-20|Carlos Emanuel III|Rei
+SAV|1773-02-20|1796-10-16|Vítor Amadeu III|Rei
+SAV|1796-10-16|1802-06-04|Carlos Emanuel IV|Rei
+SAV|1802-06-04|1821-03-12|Vítor Emanuel I|Rei
+SAV|1821-03-12|1831-04-27|Carlos Félix|Rei
+SAV|1831-04-27|1849-03-23|Carlos Alberto|Rei
+SAV|1849-03-23|1878-01-09|Vítor Emanuel II|Rei
+TOS|1569-08-21|1574-04-21|Cosme I de Médici|Grão-Duque
+TOS|1574-04-21|1587-10-17|Francisco I de Médici|Grão-Duque
+TOS|1587-10-19|1609-02-07|Fernando I de Médici|Grão-Duque
+TOS|1609-02-17|1621-02-28|Cosme II de Médici|Grão-Duque
+TOS|1621-02-28|1670-05-23|Fernando II de Médici|Grão-Duque
+TOS|1670-05-23|1723-10-31|Cosme III de Médici|Grão-Duque
+TOS|1723-10-31|1737-07-09|João Gastão de Médici|Grão-Duque
+TOS|1737-07-12|1765-08-18|Francisco II Estêvão|Grão-Duque
+TOS|1765-08-18|1790-07-22|Leopoldo I|Grão-Duque
+TOS|1790-07-22|1801-03-21|Fernando III|Grão-Duque
+TOS|1801-03-21|1803-05-27|Luís I|Rei da Etrúria
+TOS|1803-05-27|1807-12-10|Luís II|Rei da Etrúria
+TOS|1814-04-27|1824-06-18|Fernando III|Grão-Duque
+TOS|1824-06-18|1859-07-21|Leopoldo II|Grão-Duque

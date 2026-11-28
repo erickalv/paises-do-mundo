@@ -43,4 +43,39 @@ PR|Reino da Prússia( \(.*\))?|1701|1866
 BR|Eleitorado de Brandemburgo|1470|1617
 SC|Reino da Escócia( \(.*\))?|1470|1706
 FR|República Francesa \(.*\)|1792|1803
-US|Estados Unidos|1776|1874
+US|Estados Unidos( \(Guerra de 1812\))?|1776|1874
+NL|Holanda e Zelândia \(revolta contra a Espanha\)|1572|1578
+NL|União de Utrecht \(revolta contra a Espanha\)|1579|1580
+NL|Províncias Unidas \(revolta contra a Espanha\)|1581|1587
+NL|República das Sete Províncias Unidas|1588|1794
+NL|Reino da Holanda|1806|1809
+NL|Principado Soberano dos Países Baixos Unidos|1813|1814
+NL|Reino Unido dos Países Baixos|1815|1829
+NL|Países Baixos|1830|1874
+MMA|Reino de Ava|1470|1526
+MMH|Reino de Hanthawaddy \(Pegu\)|1470|1533
+MM|Reino de Toungoo \((Birmânia|Ava)\)|1541|1751
+MMK|Reino de Konbaung \(Birmânia\)|1752|1756
+MMK|Reino da Birmânia( \(.*\))?|1757|1874
+SAV|Ducado de Saboia( \(.*\))?|1470|1712
+SAV|Reino da Sicília \(Casa de Saboia\)|1713|1719
+SAV|Reino da Sardenha|1720|1860
+SAV|Reino da Itália|1861|1874
+TOS|Grão-Ducado da Toscana|1569|1858
+TOS|Reino da Etrúria|1801|1806
+ET|Abissínia( \(.*\))?|1470|1874
+MX|Império Mexicano|1821|1822
+MXE|México \(intervenção francesa; Regência do Império\)|1863|1863
+MXE|Segundo Império Mexicano|1864|1866
+MX|México( \(.*\))?|1823|1874
+BR|Império do Brasil|1822|1874
+AR|Províncias Unidas do Rio da Prata|1810|1830
+AR|Confederação Argentina( \(.*\))?|1831|1860
+AR|Argentina|1861|1874
+BAY2|Ducados da Baviera \(Munique e Landshut\)|1470|1504
+BAY|Ducado da Baviera|1505|1622
+BAY|Eleitorado da Baviera|1623|1805
+BAY|Reino da Baviera|1806|1870
+SAX|Eleitorado da Saxônia( \(.*\))?|1470|1805
+SAX|Reino da Saxônia|1806|1874
+HU|Reino da Hungria|1470|1525

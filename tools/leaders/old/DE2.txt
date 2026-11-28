@@ -1,0 +1,45 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_rulers_of_Bavaria ; https://en.wikipedia.org/wiki/List_of_rulers_of_Saxony ; https://en.wikipedia.org/wiki/List_of_Hungarian_monarchs (anos)
+BAY2|1460|1479|Alberto IV (Munique) e Luís IX (Landshut)|Duques
+BAY2|1479|1503|Alberto IV (Munique) e Jorge, o Rico (Landshut)|Duques
+BAY2|1503|1508|Alberto IV|Duque
+BAY|1503|1508|Alberto IV|Duque
+BAY|1508|1516|Guilherme IV|Duque
+BAY|1516|1545|Guilherme IV e Luís X|Duques
+BAY|1545|1550|Guilherme IV|Duque
+BAY|1550|1579|Alberto V|Duque
+BAY|1579|1597|Guilherme V|Duque
+BAY|1597|1623|Maximiliano I|Duque
+BAY|1623|1651|Maximiliano I|Eleitor
+BAY|1651|1679|Fernando Maria|Eleitor
+BAY|1679|1726|Maximiliano II Emanuel|Eleitor
+BAY|1726|1745|Carlos Alberto|Eleitor
+BAY|1745|1777|Maximiliano III José|Eleitor
+BAY|1777|1799|Carlos Teodoro|Eleitor
+BAY|1799|1806|Maximiliano IV José|Eleitor
+BAY|1806-01-01|1825-10-13|Maximiliano I José|Rei
+BAY|1825-10-13|1848-03-20|Luís I|Rei
+BAY|1848-03-20|1864-03-10|Maximiliano II|Rei
+BAY|1864-03-10|1886-06-13|Luís II|Rei
+SAX|1464-09-07|1486-08-26|Ernesto|Eleitor
+SAX|1486-08-26|1525-05-05|Frederico III, o Sábio|Eleitor
+SAX|1525-05-05|1532-08-16|João, o Constante|Eleitor
+SAX|1532-08-16|1547-05-19|João Frederico I|Eleitor
+SAX|1547-06-04|1553-07-09|Maurício|Eleitor
+SAX|1553-07-09|1586-02-11|Augusto|Eleitor
+SAX|1586-02-11|1591-09-25|Cristiano I|Eleitor
+SAX|1591-09-25|1611-06-23|Cristiano II|Eleitor
+SAX|1611|1656|João Jorge I|Eleitor
+SAX|1656|1680|João Jorge II|Eleitor
+SAX|1680|1691|João Jorge III|Eleitor
+SAX|1691|1694|João Jorge IV|Eleitor
+SAX|1694|1733|Frederico Augusto I (Augusto, o Forte)|Eleitor
+SAX|1733|1763|Frederico Augusto II|Eleitor
+SAX|1763|1806|Frederico Augusto III|Eleitor
+SAX|1806|1827|Frederico Augusto I|Rei
+SAX|1827|1836|Antônio|Rei
+SAX|1836|1854|Frederico Augusto II|Rei
+SAX|1854|1873|João|Rei
+SAX|1873|1902|Alberto|Rei
+HU|1458-01-24|1490-04-06|Matias Corvino|Rei
+HU|1490-07-15|1516-03-13|Vladislau II|Rei
+HU|1516-03-13|1526-08-29|Luís II|Rei

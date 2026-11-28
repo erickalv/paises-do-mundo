@@ -1,0 +1,31 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_Burmese_monarchs
+MMA|1468-07-24|1480-08|Thihathura I|Rei
+MMA|1480-08|1501-04-07|Minkhaung II|Rei
+MMA|1501-04-07|1527-03-14|Narapati II|Rei
+MMH|1471|1492|Dhammazedi|Rei
+MMH|1454-01|1471|Shin Sawbu|Rainha
+MMH|1492|1526|Binnya Ran II|Rei
+MMH|1526|1539-01|Taka Yut Pi|Rei
+MM|1530-11-24|1550-04-30|Tabinshwehti|Rei
+MM|1550-04-30|1581-10-10|Bayinnaung|Rei
+MM|1581-10-10|1599-12-19|Nanda Bayin|Rei
+MM|1599-12-19|1605-11-05|Nyaungyan|Rei
+MM|1605-11-05|1628-07-09|Anaukpetlun|Rei
+MM|1628-07-09|1629-08-19|Minye Deibba|Rei
+MM|1629-08-19|1648-08-27|Thalun|Rei
+MM|1648-08-27|1661-06-03|Pindale|Rei
+MM|1661-06-03|1672-04-14|Pye|Rei
+MM|1672-04-14|1673-02-27|Narawara|Rei
+MM|1673-02-27|1698-05-04|Minye Kyawhtin|Rei
+MM|1698-05-04|1714-08-22|Sanay|Rei
+MM|1714-08-22|1733-11-14|Taninganway|Rei
+MM|1733-11-14|1752-03-22|Mahadhammaraza Dipadi|Rei
+MMK|1752-02-29|1760-05-11|Alaungpaya|Rei
+MMK|1760-05-11|1763-11-28|Naungdawgyi|Rei
+MMK|1763-11-28|1776-06-10|Hsinbyushin|Rei
+MMK|1776-06-10|1782-02-06|Singu|Rei
+MMK|1782-02-11|1819-06-05|Bodawpaya|Rei
+MMK|1819-06-05|1837-04-30|Bagyidaw|Rei
+MMK|1837-04-30|1846-11-17|Tharrawaddy|Rei
+MMK|1846-11-17|1853-02-18|Pagan|Rei
+MMK|1853-02-18|1878-10-01|Mindon|Rei

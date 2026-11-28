@@ -1,0 +1,55 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_heads_of_state_of_Mexico ; https://en.wikipedia.org/wiki/List_of_monarchs_of_Brazil ; https://en.wikipedia.org/wiki/List_of_heads_of_state_of_Argentina
+MX|1821-09-28|1822-05-19|Agustín de Iturbide|Presidente da Regência
+MX|1822-05-19|1823-03-19|Agustín I (Iturbide)|Imperador
+MX|1823-03-31|1824-10-10|Guadalupe Victoria e outros|Poder Executivo provisório (triunvirato)
+MX|1824-10-10|1829-03-31|Guadalupe Victoria|Presidente
+MX|1829-04-01|1829-12-17|Vicente Guerrero|Presidente
+MX|1829-12-23|1830-01-01|Pedro Vélez, Lucas Alamán e Luis Quintanar|Triunvirato
+MX|1830-01-01|1832-08-13|Anastasio Bustamante|Presidente
+MX|1832-12-24|1833-03-31|Manuel Gómez Pedraza|Presidente
+MX|1833-12-16|1834-04-24|Valentín Gómez Farías|Presidente
+MX|1834-04-24|1835-01-27|Antonio López de Santa Anna|Presidente
+MX|1835-01-28|1836-02-27|Miguel Barragán|Presidente interino
+MX|1836-02-27|1837-04-19|José Justo Corro|Presidente interino
+MX|1837-04-19|1839-03-18|Anastasio Bustamante|Presidente
+MX|1839-07-19|1841-09-22|Anastasio Bustamante|Presidente
+MX|1841-10-10|1842-10-26|Antonio López de Santa Anna|Presidente provisório
+MX|1842-10-26|1843-03-04|Nicolás Bravo|Presidente substituto
+MX|1843-10-04|1844-06-04|Valentín Canalizo|Presidente interino
+MX|1844-12-06|1845-12-30|José Joaquín de Herrera|Presidente
+MX|1845-12-31|1846-07-28|Mariano Paredes|Presidente
+MX|1846-12-23|1847-03-21|Valentín Gómez Farías|Vice-presidente em exercício
+MX|1847-11-13|1848-01-08|Pedro María de Anaya|Presidente interino
+MX|1848-06-03|1851-01-15|José Joaquín de Herrera|Presidente
+MX|1851-01-15|1853-01-05|Mariano Arista|Presidente
+MX|1853-04-20|1855-08-05|Antonio López de Santa Anna|Presidente
+MX|1855-12-11|1857-12-17|Ignacio Comonfort|Presidente
+MX|1857-12-18|1872-07-18|Benito Juárez|Presidente
+MX|1872-07-19|1876-11-20|Sebastián Lerdo de Tejada|Presidente
+MXE|1863-07-11|1864-04-10|Juan Nepomuceno Almonte e outros|Regência do Império
+MXE|1864-04-10|1867-06-19|Maximiliano I|Imperador
+BR|1822-10-12|1831-04-07|Pedro I|Imperador
+BR|1831-04-07|1889-11-15|Pedro II|Imperador
+AR|1810-05-25|1811-08-26|Cornelio Saavedra|Presidente da Junta
+AR|1811-09-23|1812-03-23|Feliciano Chiclana, Manuel de Sarratea e Juan José Paso|Primeiro Triunvirato
+AR|1814-01-31|1815-01-09|Gervasio Antonio de Posadas|Diretor Supremo
+AR|1815-04-21|1816-04-16|Ignacio Álvarez Thomas|Diretor Supremo interino
+AR|1816-07-09|1819-06-09|Juan Martín de Pueyrredón|Diretor Supremo
+AR|1819-06-09|1820-02-01|José Rondeau|Diretor Supremo
+AR|1820-09-20|1824-04-02|Martín Rodríguez|Governador de Buenos Aires
+AR|1824-04-02|1826-02-07|Juan Gregorio de las Heras|Governador de Buenos Aires
+AR|1826-02-08|1827-06-27|Bernardino Rivadavia|Presidente
+AR|1827-08-18|1828-12-01|Manuel Dorrego|Governador de Buenos Aires
+AR|1828-12-01|1829-06-26|Juan Lavalle|Governador de Buenos Aires
+AR|1829-12-06|1832-12-05|Juan Manuel de Rosas|Governador de Buenos Aires
+AR|1832-12-05|1833-11-04|Juan Ramón Balcarce|Governador de Buenos Aires
+AR|1833-11-04|1834-06-27|Juan José Viamonte|Governador de Buenos Aires
+AR|1834-06-27|1835-03-07|Manuel Vicente Maza|Governador de Buenos Aires
+AR|1835-03-07|1852-02-03|Juan Manuel de Rosas|Governador de Buenos Aires
+AR|1852-05-31|1854-03-05|Justo José de Urquiza|Diretor provisório da Confederação
+AR|1854-03-05|1860-03-05|Justo José de Urquiza|Presidente
+AR|1860-03-05|1861-11-05|Santiago Derqui|Presidente
+AR|1861-12-12|1862-10-12|Bartolomé Mitre|Encarregado do Executivo Nacional
+AR|1862-10-12|1868-10-12|Bartolomé Mitre|Presidente
+AR|1868-10-12|1874-10-12|Domingo Faustino Sarmiento|Presidente
+AR|1874-10-12|1880-10-12|Nicolás Avellaneda|Presidente

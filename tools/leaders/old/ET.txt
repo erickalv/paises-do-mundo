@@ -1,0 +1,26 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_emperors_of_Ethiopia (1769–1855, Era dos Príncipes, fica sem nome: imperadores fantoches)
+ET|1468-08-26|1478-11-08|Baeda Maryam I|Imperador
+ET|1478|1494-05-07|Eskender|Imperador
+ET|1494|1508-07-31|Na'od|Imperador
+ET|1508|1540-09-02|Dawit II (Lebna Dengel)|Imperador
+ET|1540-09-03|1559-03-23|Gelawdewos|Imperador
+ET|1559|1563-02-01|Menas|Imperador
+ET|1563|1597-10-04|Sarsa Dengel|Imperador
+ET|1597|1603-09|Yaqob|Imperador
+ET|1603-09|1604-10-24|Za Dengel|Imperador
+ET|1604-10-24|1606-03-10|Yaqob|Imperador
+ET|1606|1632-09-17|Susenyos I|Imperador
+ET|1632|1667-10-18|Fasilides|Imperador
+ET|1667-10-18|1682-07-19|Yohannes I|Imperador
+ET|1682-07-19|1706-10-13|Iyasu I, o Grande|Imperador
+ET|1706-10-13|1708-06-30|Tekle Haymanot I|Imperador
+ET|1708-07-01|1711-10-14|Tewoflos|Imperador
+ET|1711-10-14|1716-02-19|Yostos|Imperador
+ET|1716-02-19|1721-05-18|Dawit III|Imperador
+ET|1721-05-18|1730-09-19|Bakaffa|Imperador
+ET|1730-09-19|1755-06-27|Iyasu II|Imperador
+ET|1755-06-27|1769-05-07|Iyoas I|Imperador
+ET|1769-05-07|1855-02-11|NONE|-
+ET|1855-02-11|1868-04-13|Tewodros II|Imperador
+ET|1868-06-11|1871-07-11|Tekle Giyorgis II|Imperador
+ET|1871-07-11|1889-03-10|Yohannes IV|Imperador

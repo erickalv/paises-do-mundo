@@ -113,7 +113,7 @@ def oldlead(name, y):
             best = None
             for s0, e0, nm, t in OLDR.get(st, []):
                 if s0 <= dd < e0 and (best is None or s0 >= best[0]): best = (s0, nm, t)
-            return best[1:] if best else None
+            return best[1:] if best and best[1] != "NONE" else None
     return None
 OLDNAMES = set()
 OLDC = []  # (unidade, ano, cargo)
