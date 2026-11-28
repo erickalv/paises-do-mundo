@@ -1,0 +1,18 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_monarchs_of_Denmark
+DK|1448-09-01|1481-05-21|Cristiano I|Rei
+DK|1481-05-21|1513-02-20|João (Hans)|Rei
+DK|1513-07-22|1523-01-20|Cristiano II|Rei
+DK|1523-04-13|1533-04-10|Frederico I|Rei
+DK|1534-07-04|1559-01-01|Cristiano III|Rei
+DK|1559-01-01|1588-04-04|Frederico II|Rei
+DK|1588-04-04|1648-02-28|Cristiano IV|Rei
+DK|1648-07-06|1670-02-09|Frederico III|Rei
+DK|1670-02-09|1699-08-25|Cristiano V|Rei
+DK|1699-08-25|1730-10-12|Frederico IV|Rei
+DK|1730-10-12|1746-08-06|Cristiano VI|Rei
+DK|1746-08-06|1766-01-14|Frederico V|Rei
+DK|1766-01-14|1808-03-13|Cristiano VII|Rei
+DK|1808-03-13|1839-12-03|Frederico VI|Rei
+DK|1839-12-03|1848-01-20|Cristiano VIII|Rei
+DK|1848-01-20|1863-11-15|Frederico VII|Rei
+DK|1863-11-15|1906-01-29|Cristiano IX|Rei

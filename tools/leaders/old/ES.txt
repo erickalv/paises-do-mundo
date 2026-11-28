@@ -1,0 +1,28 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_Spanish_monarchs ; List_of_Castilian_monarchs ; List_of_Aragonese_monarchs
+CAS|1454-07-21|1474-12-11|Henrique IV|Rei
+CAS|1474-12-11|1504-11-26|Isabel I e Fernando V|Reis Católicos
+ARA|1458-06-27|1479-01-19|João II|Rei
+ES|1479-01-20|1504-11-26|Isabel I e Fernando II|Reis Católicos
+ES|1504-11-26|1516-01-23|Joana I (Fernando II regente em Castela)|Rainha
+ES|1516-03-14|1556-01-16|Carlos I (imperador Carlos V)|Rei
+ES|1556-01-16|1598-09-13|Filipe II|Rei
+ES|1598-09-13|1621-03-31|Filipe III|Rei
+ES|1621-03-31|1665-09-17|Filipe IV|Rei
+ES|1665-09-17|1700-11-01|Carlos II|Rei
+ES|1700-11-16|1724-01-14|Filipe V|Rei
+ES|1724-01-14|1724-08-31|Luís I|Rei
+ES|1724-09-06|1746-07-09|Filipe V|Rei
+ES|1746-07-09|1759-08-10|Fernando VI|Rei
+ES|1759-08-10|1788-12-14|Carlos III|Rei
+ES|1788-12-14|1808-03-19|Carlos IV|Rei
+ES|1808-06-06|1813-12-11|José I (José Bonaparte)|Rei
+ES|1813-12-11|1833-09-29|Fernando VII|Rei
+ES|1833-09-29|1868-09-30|Isabel II|Rainha
+ES|1868-10-08|1870-12-04|Francisco Serrano|Regente
+ES|1870-12-04|1873-02-11|Amadeu I|Rei
+ES|1873-02-12|1873-06-11|Estanislao Figueras|Presidente do Poder Executivo
+ES|1873-06-11|1873-07-18|Francesc Pi i Margall|Presidente do Poder Executivo
+ES|1873-07-18|1873-09-07|Nicolás Salmerón|Presidente do Poder Executivo
+ES|1873-09-07|1874-01-03|Emilio Castelar|Presidente do Poder Executivo
+ES|1874-01-03|1874-12-30|Francisco Serrano|Presidente do Poder Executivo
+ES|1874-12-30|1885-11-25|Afonso XII|Rei

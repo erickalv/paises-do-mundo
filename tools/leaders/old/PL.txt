@@ -1,0 +1,23 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_Polish_monarchs
+PL|1447-06-25|1492-06-07|Casimiro IV Jagelão|Rei
+PL|1492-08-27|1501-06-17|João I Alberto|Rei
+PL|1501-10-03|1506-08-19|Alexandre Jagelão|Rei
+PL|1506-12-08|1548-04-01|Sigismundo I, o Velho|Rei
+PL|1548-04-01|1572-07-07|Sigismundo II Augusto|Rei
+PL|1573-05-16|1575-05-12|Henrique de Valois|Rei
+PL|1575-12-15|1576-05-01|Ana Jagelão|Rainha
+PL|1576-05-01|1586-12-12|Estêvão Báthory e Ana Jagelão|Reis
+PL|1587-08-19|1632-04-30|Sigismundo III Vasa|Rei
+PL|1632-11-08|1648-05-20|Ladislau IV Vasa|Rei
+PL|1648-11-20|1668-09-16|João II Casimiro|Rei
+PL|1669-06-19|1673-11-10|Miguel Korybut Wiśniowiecki|Rei
+PL|1674-05-19|1696-06-17|João III Sobieski|Rei
+PL|1697-09-15|1704-07-12|Augusto II, o Forte|Rei
+PL|1704-07-12|1709-07-08|Estanislau I Leszczyński|Rei
+PL|1709-07-08|1733-02-01|Augusto II, o Forte|Rei
+PL|1733-10-05|1763-10-05|Augusto III|Rei
+PL|1764-09-07|1795-11-25|Estanislau Augusto Poniatowski|Rei
+LT|1440-06-29|1492-06-07|Casimiro IV Jagelão|Grão-Duque
+LT|1492-07-20|1506-08-19|Alexandre Jagelão|Grão-Duque
+LT|1506-12-08|1544-05-01|Sigismundo I, o Velho|Grão-Duque
+LT|1544-05-01|1572-07-07|Sigismundo II Augusto|Grão-Duque

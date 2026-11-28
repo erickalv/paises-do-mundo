@@ -1,0 +1,23 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_Portuguese_monarchs
+PT|1438-09-13|1481-08-28|Afonso V|Rei
+PT|1481-08-28|1495-10-25|João II|Rei
+PT|1495-10-25|1521-12-13|Manuel I|Rei
+PT|1521-12-13|1557-06-11|João III|Rei
+PT|1557-06-11|1578-08-04|Sebastião I|Rei
+PT|1578-08-04|1580-01-31|Henrique I|Rei
+PT|1580-09-12|1598-09-13|Filipe I (Filipe II da Espanha)|Rei
+PT|1598-09-13|1621-03-31|Filipe II (Filipe III da Espanha)|Rei
+PT|1621-03-31|1640-12-01|Filipe III (Filipe IV da Espanha)|Rei
+PT|1640-12-01|1656-11-06|João IV|Rei
+PT|1656-11-06|1683-09-12|Afonso VI|Rei
+PT|1683-09-12|1706-12-09|Pedro II|Rei
+PT|1706-12-09|1750-07-31|João V|Rei
+PT|1750-07-31|1777-02-24|José I|Rei
+PT|1777-02-24|1816-03-20|Maria I|Rainha
+PT|1816-03-20|1826-03-10|João VI|Rei
+PT|1826-03-10|1826-05-02|Pedro IV|Rei
+PT|1826-05-02|1828-06-23|Maria II|Rainha
+PT|1828-06-23|1834-05-26|Miguel I|Rei
+PT|1834-05-26|1853-11-15|Maria II|Rainha
+PT|1853-11-15|1861-11-11|Pedro V|Rei
+PT|1861-11-11|1889-10-19|Luís I|Rei

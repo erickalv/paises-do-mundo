@@ -35145,7 +35145,7 @@ export const EVENTS = {
     ...perYear(1450, 1799, { r: { "ID Papua": null }, f: { "ID Papua": "blank" }, o: { "ID Papua": null } }), /*fixo*/
     ...perYear(1450, 1805, { r: { "NRW": "Vestfália e Baixo Reno (estados do Sacro Império)" }, f: { "NRW": "blank" }, o: { "NRW": null } }), /*fixo*/ // Cleves, Mark e Ravensberg brandemburgueses (1614/1666); Renânia e Vestfália prussianas em 1815
     ...perYear(1450, 1802, { r: { "Trentino": "Príncipe-Bispado de Trento" }, f: { "Trentino": "blank" }, o: { "Trentino": null } }), /*fixo*/ // secularizado e anexado à Áustria em 1803
-    ...perYear(1450, 1639, { m: [null, null, ["Spain", "Catalonia"]] }), /*fixo*/
+    ...perYear(1479, 1639, { m: [null, null, ["Spain", "Catalonia"]] }), /*fixo*/
     ...perYear(1493, 1640, { m: [null, null, ["Spain", "Roussillon"]] }), /*fixo*/ // Tratado de Barcelona (jan/1493)
     ...perYear(1640, 1640, { r: { "Catalonia": "Catalunha (disputada; revolta dos Segadores)" }, f: { "Catalonia": "blank" }, o: { "Catalonia": null } }), /*fixo*/ // Corpus de Sangue em 7/jun/1640; República Catalã em jan/1641
     ...perYear(1641, 1651, { r: { "Catalonia": "Catalunha (França)" }, f: { "Catalonia": "h:fr_bourbon" }, o: { "Catalonia": "França" } }), /*fixo*/ // revolta dos Segadores; Barcelona retomada em out/1652
@@ -35396,7 +35396,7 @@ export const EVENTS = {
     ...perYear(1706, 1717, { r: { "Bahamas": "Bahamas (sem governo; república de corsários e piratas)" }, f: { "Bahamas": "blank" }, o: { "Bahamas": null } }), /*fixo*/ // Nassau saqueada em 1703 e 1706; governo restaurado por Woodes Rogers em jul/1718
     ...perYear(1552, 1715, { m: [null, null, ["Ottoman Empire", "Banat"]] }), /*fixo*/ // eialete otomano de Temesvár até a conquista austríaca (out/1716)
     ...perYear(1705, 1705, { r: { "Nice": "Condado de Nice (sitiado pela França)" }, f: { "Nice": "blank" }, o: { "Nice": null } }), /*fixo*/ // sítio de 15/mar/1705 a 4/jan/1706
-    ...perYear(1450, 1704, { m: [null, null, ["Spain", "Valencia"]] }), /*fixo*/ // Valência tomada pelos aliados em 1705
+    ...perYear(1479, 1704, { m: [null, null, ["Spain", "Valencia"]] }), /*fixo*/ // Valência tomada pelos aliados em 1705
     ...perYear(1551, 1710, { r: { "Libya": "Tripolitânia otomana" }, f: { "Libya": "blank" }, o: { "Libya": "Império Otomano" } }), /*fixo*/ // golpe de Ahmed Caramanli em 1711
     ...perYear(1505, 1708, { m: [null, null, ["Bukhara", "Kokand", "Khujand"]] }), /*fixo*/ // Shahrukh Biy funda o canato de Kokand em 1709
     ...perYear(1588, 1597, { m: [null, null, ["Bukhara", "Herat"]] }), /*fixo*/ // Herat uzbeque de 1588 até a batalha de 9/ago/1598

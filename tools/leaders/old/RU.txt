@@ -1,0 +1,26 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_Russian_monarchs
+RU|1462-04-05|1505-11-06|Ivan III|Grão-Príncipe
+RU|1505-11-06|1533-12-13|Basílio III|Grão-Príncipe
+RU|1533-12-13|1547-01-26|Ivan IV|Grão-Príncipe
+RU|1547-01-26|1584-03-28|Ivan IV, o Terrível|Czar
+RU|1584-03-28|1598-01-17|Teodoro I|Czar
+RU|1598-03-03|1605-04-23|Bóris Godunov|Czar
+RU|1605-06-20|1606-05-27|Falso Dmitri I|Czar
+RU|1606-05-27|1610-07-17|Basílio IV Shuisky|Czar
+RU|1613-07-26|1645-07-12|Miguel I|Czar
+RU|1645-07-12|1676-01-29|Aleixo I|Czar
+RU|1676-01-29|1682-05-07|Teodoro III|Czar
+RU|1682-05-07|1696-02-08|Ivan V e Pedro I|Czares
+RU|1696-02-08|1721-11-02|Pedro I|Czar
+RU|1721-11-02|1725-02-08|Pedro I, o Grande|Imperador
+RU|1725-02-08|1727-05-17|Catarina I|Imperatriz
+RU|1727-05-18|1730-01-30|Pedro II|Imperador
+RU|1730-02-13|1740-10-28|Ana|Imperatriz
+RU|1740-10-28|1741-12-06|Ivan VI|Imperador
+RU|1741-12-06|1762-01-05|Isabel|Imperatriz
+RU|1762-01-05|1762-07-09|Pedro III|Imperador
+RU|1762-07-09|1796-11-17|Catarina II, a Grande|Imperatriz
+RU|1796-11-17|1801-03-23|Paulo I|Imperador
+RU|1801-03-23|1825-12-01|Alexandre I|Imperador
+RU|1825-12-01|1855-03-02|Nicolau I|Imperador
+RU|1855-03-02|1881-03-13|Alexandre II|Imperador

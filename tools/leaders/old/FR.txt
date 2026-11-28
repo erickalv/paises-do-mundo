@@ -1,0 +1,44 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_French_monarchs ; https://en.wikipedia.org/wiki/List_of_English_monarchs ; https://en.wikipedia.org/wiki/List_of_British_monarchs
+FR|1461-07-22|1483-08-30|Luís XI|Rei
+FR|1483-08-30|1498-04-07|Carlos VIII|Rei
+FR|1498-04-07|1515-01-01|Luís XII|Rei
+FR|1515-01-01|1547-03-31|Francisco I|Rei
+FR|1547-03-31|1559-07-10|Henrique II|Rei
+FR|1559-07-10|1560-12-05|Francisco II|Rei
+FR|1560-12-05|1574-05-30|Carlos IX|Rei
+FR|1574-05-30|1589-08-02|Henrique III|Rei
+FR|1589-08-02|1610-05-14|Henrique IV|Rei
+FR|1610-05-14|1643-05-14|Luís XIII|Rei
+FR|1643-05-14|1715-09-01|Luís XIV|Rei
+FR|1715-09-01|1774-05-10|Luís XV|Rei
+FR|1774-05-10|1792-09-21|Luís XVI|Rei
+FR|1804-05-18|1814-04-02|Napoleão I|Imperador
+FR|1814-05-03|1815-03-20|Luís XVIII|Rei
+FR|1815-07-08|1824-09-16|Luís XVIII|Rei
+FR|1824-09-16|1830-08-02|Carlos X|Rei
+FR|1830-08-09|1848-02-24|Luís Filipe I|Rei dos Franceses
+FR|1852-12-02|1870-09-04|Napoleão III|Imperador
+EN|1471-04-11|1483-04-09|Eduardo IV|Rei
+EN|1470-10-03|1471-04-11|Henrique VI|Rei
+EN|1461-03-04|1470-10-03|Eduardo IV|Rei
+EN|1483-06-26|1485-08-22|Ricardo III|Rei
+EN|1485-08-22|1509-04-21|Henrique VII|Rei
+EN|1509-04-22|1547-01-28|Henrique VIII|Rei
+EN|1547-01-28|1553-07-06|Eduardo VI|Rei
+EN|1553-07-19|1558-11-17|Maria I|Rainha
+EN|1558-11-17|1603-03-24|Isabel I|Rainha
+EN|1603-03-24|1625-03-27|Jaime I|Rei
+EN|1625-03-27|1649-01-30|Carlos I|Rei
+EN|1653-12-16|1658-09-03|Oliver Cromwell|Lorde Protetor
+EN|1658-09-03|1659-05-07|Richard Cromwell|Lorde Protetor
+EN|1660-05-29|1685-02-06|Carlos II|Rei
+EN|1685-02-06|1688-12-23|Jaime II|Rei
+EN|1689-02-13|1694-12-28|Guilherme III e Maria II|Reis
+EN|1694-12-28|1702-03-08|Guilherme III|Rei
+EN|1702-03-08|1714-08-01|Ana|Rainha
+EN|1714-08-01|1727-06-11|Jorge I|Rei
+EN|1727-06-11|1760-10-25|Jorge II|Rei
+EN|1760-10-25|1820-01-29|Jorge III|Rei
+EN|1820-01-29|1830-06-26|Jorge IV|Rei
+EN|1830-06-26|1837-06-20|Guilherme IV|Rei
+EN|1837-06-20|1901-01-22|Vitória|Rainha

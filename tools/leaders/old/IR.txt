@@ -1,0 +1,27 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_Safavid_monarchs ; https://en.wikipedia.org/wiki/List_of_heads_of_state_of_Iran
+IR|1501-12-22|1524-05-23|Ismail I|Xá
+IR|1524-05-23|1576-05-25|Tahmasp I|Xá
+IR|1576-08-22|1577-11-24|Ismail II|Xá
+IR|1578-02-11|1587-10-01|Mohammad Khodabanda|Xá
+IR|1587-10-01|1629-01-19|Abbas I, o Grande|Xá
+IR|1629-01-28|1642-05-12|Safi I|Xá
+IR|1642-05-15|1666-10-26|Abbas II|Xá
+IR|1666-11-01|1694-07-29|Solimão I (Safi II)|Xá
+IR|1694-08-06|1722-10-21|Hussein|Xá
+IR|1722-10-23|1725-04-25|Mahmud Hotaki|Xá
+IR|1725-04-26|1729-11-13|Ashraf Hotaki|Xá
+IR|1729-11-13|1732-09-02|Tahmasp II|Xá
+IR|1732-09-02|1736-03-08|Abbas III (Nader regente)|Xá
+IR|1736-03-08|1747-06-20|Nader Xá|Xá
+IR|1747-07-06|1748-09-29|Adel Xá|Xá
+IR|1748-09-29|1749-05-01|Ebrahim Xá|Xá
+IR|1749-05-01|1750-01-13|Shahrokh Xá|Xá
+IR|1751-01-01|1779-03-01|Karim Khan Zand|Vakil (regente)
+IR|1779-08-22|1781-03-14|Sadeq Khan Zand|Vakil (regente)
+IR|1781-03-15|1785-02-11|Ali-Morad Khan Zand|Vakil (regente)
+IR|1785-02-18|1789-01-23|Jafar Khan Zand|Vakil (regente)
+IR|1789-05-10|1794-10-30|Lotf Ali Khan Zand|Xá
+IR|1796-05-14|1797-06-17|Agha Mohammad Khan Qajar|Xá
+IR|1797-06-17|1834-10-23|Fath-Ali Xá|Xá
+IR|1834-10-23|1848-09-05|Mohammad Xá|Xá
+IR|1848-09-05|1896-05-01|Naser al-Din Xá|Xá

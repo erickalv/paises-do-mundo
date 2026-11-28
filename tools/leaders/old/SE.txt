@@ -1,0 +1,30 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_monarchs_of_Sweden ; https://en.wikipedia.org/wiki/List_of_Kalmar_Union_monarchs
+SE|1467-11-12|1470-05-15|Carlos VIII|Rei
+SE|1470-05-16|1497-10-06|Sten Sture, o Velho|Regente
+SE|1497-10-06|1501-08-01|João II|Rei
+SE|1501-11-12|1503-12-14|Sten Sture, o Velho|Regente
+SE|1504-01-21|1512-01-02|Svante Nilsson|Regente
+SE|1512-07-23|1520-02-03|Sten Sture, o Jovem|Regente
+SE|1520-11-01|1521-08-23|Cristiano II|Rei
+SE|1521-08-23|1523-06-06|Gustavo Vasa|Regente
+SE|1523-06-06|1560-09-29|Gustavo I|Rei
+SE|1560-09-29|1569-01-26|Érico XIV|Rei
+SE|1569-01-26|1592-11-17|João III|Rei
+SE|1592-11-17|1599-07-24|Sigismundo|Rei
+SE|1599-07-24|1604-03-22|Duque Carlos|Regente
+SE|1604-03-22|1611-10-30|Carlos IX|Rei
+SE|1611-10-30|1632-11-06|Gustavo II Adolfo|Rei
+SE|1632-11-06|1654-06-06|Cristina|Rainha
+SE|1654-06-06|1660-02-13|Carlos X Gustavo|Rei
+SE|1660-02-13|1697-04-05|Carlos XI|Rei
+SE|1697-04-05|1718-11-30|Carlos XII|Rei
+SE|1718-11-30|1720-03-24|Ulrica Leonor|Rainha
+SE|1720-03-24|1751-03-25|Frederico I|Rei
+SE|1751-03-25|1771-02-12|Adolfo Frederico|Rei
+SE|1771-02-12|1792-03-29|Gustavo III|Rei
+SE|1792-03-29|1809-05-10|Gustavo IV Adolfo|Rei
+SE|1809-06-06|1818-02-05|Carlos XIII|Rei
+SE|1818-02-05|1844-03-08|Carlos XIV João|Rei
+SE|1844-03-08|1859-07-08|Óscar I|Rei
+SE|1859-07-08|1872-09-18|Carlos XV|Rei
+SE|1872-09-18|1907-12-08|Óscar II|Rei

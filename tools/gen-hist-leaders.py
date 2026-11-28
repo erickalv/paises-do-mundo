@@ -89,6 +89,35 @@ ROWCOW = {"SUN": "RUS", "YUG1": "YUG", "YUG2": "YUG", "YUG3": "YUG", "SCG": "YUG
 ERA = json.load(open(ROOT + "/tools/leaders/era-names.json"))
 BAD = re.compile(r"ocupa|protetorado|mandato|fantoche|colônia|Liga das Nações|guerra civil|em disputa|adm\.|anexad|dividida|libertado|Estado cliente|parcialmente|\((britânic|francês|frances|holandes|portugu|espanhol|belga|italian|japon|americ|dinamarq|EUA|Japão|Reino Unido|França)")
 
+# ---- antes de 1875: listas de governantes conferidas no Wikipedia (tools/leaders/old/*.txt) ----
+OLDDIR = ROOT + "/tools/leaders/old/"
+OLDR = {}  # STATE -> [(início, fim, nome, cargo)]
+for fn in sorted(os.listdir(OLDDIR)):
+    if not fn.endswith(".txt") or fn == "map.txt": continue
+    for ln in open(OLDDIR + fn, encoding="utf-8"):
+        ln = ln.strip()
+        if not ln or ln.startswith("#"): continue
+        st, a, b, nm, t = ln.split("|")
+        OLDR.setdefault(st, []).append((a, b or "9999", nm, t))
+OLDMAP = []
+for ln in open(OLDDIR + "map.txt", encoding="utf-8"):
+    ln = ln.strip()
+    if not ln or ln.startswith("#"): continue
+    st, rest = ln.split("|", 1); rx, a, b = rest.rsplit("|", 2)
+    OLDMAP.append((st, re.compile(rx + "$"), int(a), int(b)))
+def oldlead(name, y):
+    """quem governava em 31/dez/y, pelas listas antigas: (nome, cargo)"""
+    dd = "%d-12-31" % y
+    for st, rx, a, b in OLDMAP:
+        if a <= y <= b and rx.match(name):
+            best = None
+            for s0, e0, nm, t in OLDR.get(st, []):
+                if s0 <= dd < e0 and (best is None or s0 >= best[0]): best = (s0, nm, t)
+            return best[1:] if best else None
+    return None
+OLDNAMES = set()
+OLDC = []  # (unidade, ano, cargo)
+
 TYPES = []  # (name, own, y, cow, lon)
 TYPE_FIX = {"Antártida": None, "Bir Tawil": "Terra não reivindicada", "Palestina": "Estado parcialmente reconhecido",
             "Kosovo": "Estado parcialmente reconhecido", "Taiwan": "Estado parcialmente reconhecido", "Rapa Nui (Chile)": "Território dependente"}
@@ -122,6 +151,10 @@ FEMALE_REC = set(rec.get("_mulheres", [])) if isinstance(rec.get("_mulheres"), l
 CIN = []  # (unidade, ano, cow): o cargo é calculado depois, com o nome final do líder
 def addc(name, y, nm, c): CIN.append((name, y, c, nm in FEMALE or nm in FEMALE_REC))
 def mkcargo():
+    for name, y, t in OLDC:
+        lst = cargo.setdefault(name, [])
+        if lst and lst[-1][2] == t and lst[-1][1] == y - 1: lst[-1][1] = y
+        else: lst.append([y, y, t])
     for name, y, c, fem in CIN:
         nm = next((r[2] for r in out.get(name, []) if r[0] <= y <= r[1]), None)
         if not nm: continue
@@ -146,6 +179,10 @@ for y in range(Y0, Y1 + 1):
             name = u[0]
             if name: TYPES.append((name, u[5] if len(u) > 5 else None, y, ERA.get(name), (u[2], u[3])))
             if not name or (len(u) > 5 and u[5]): continue
+            if y < 1875:
+                o = oldlead(name, y)
+                if o:
+                    add(name, y, o[0]); OLDNAMES.add(o[0]); OLDC.append((name, y, o[1])); continue
             c = ERA.get(name)
             if not c: continue
             nm = leader(c, y)
@@ -175,7 +212,7 @@ for k, v in out.items():
         yk = [int(z.rsplit("|", 1)[1]) for z in FIX if z.startswith(key + "|") and int(z.rsplit("|", 1)[1]) <= r[0]]
         if yk: r[2] = FIX[key + "|" + str(max(yk))]
         elif key in FIX: r[2] = FIX[key]
-        elif r[2] not in FULL: todo.setdefault(key, []).append("%d-%d" % (r[0], r[1]))
+        elif r[2] not in FULL and r[2] not in OLDNAMES: todo.setdefault(key, []).append("%d-%d" % (r[0], r[1]))
 for k, v in list(out.items()):  # junta trechos que ficaram iguais
     m = []
     for r in v:
@@ -183,6 +220,7 @@ for k, v in list(out.items()):  # junta trechos que ficaram iguais
         else: m.append(r)
     out[k] = m
 mkcargo()
+for v in cargo.values(): v.sort()
 if len(sys.argv) > 4: open(sys.argv[4], "w").write("\n".join(k + " " + ",".join(v) for k, v in sorted(todo.items())))
 typ = {}
 COLONIAL = re.compile(r"^(Espanha|Portugal|França|Reino da França|Reino Unido|Reino da Grã-Bretanha|Reino da Inglaterra|Holanda|República das Sete Províncias Unidas|"

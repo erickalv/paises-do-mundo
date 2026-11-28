@@ -1,0 +1,26 @@
+# STATE|nome da unidade (regex, do início ao fim)|ano0|ano1 — líderes antes de 1875 (quando o Archigos começa)
+OT|Império Otomano|1470|1874
+SE|Suécia.*|1470|1874
+DK|Dinamarca(-Noruega)?( \(.*\))?|1470|1874
+CAS|Coroa de Castela|1470|1478
+ARA|Coroa de Aragão|1470|1478
+ES|Espanha( \(.*\))?|1479|1874
+PT|Reino de Portugal|1470|1874
+PT|Portugal \((União Ibérica|Guerras Liberais|reinado de D\. Miguel)\)|1580|1874
+PT|Reino Unido de Portugal, Brasil e Algarves|1815|1821
+RU|Grão-Principado de Moscou|1470|1546
+RU|Czarado da Rússia|1547|1720
+RU|Império Russo|1721|1874
+PL|Reino da Polônia|1470|1568
+PL|República das Duas Nações|1569|1795
+PL|Coroa da Polônia \(.*\)|1569|1795
+LT|Grão-Ducado da Lituânia( \(.*\))?|1470|1568
+FR|Reino da França|1470|1791
+FR|Império Francês|1804|1813
+FR|França|1814|1874
+EN|Reino da Inglaterra|1470|1706
+EN|Inglaterra \(disputada; guerra civil entre realistas e parlamentares\)|1642|1645
+EN|Commonwealth da Inglaterra, Escócia e Irlanda|1653|1659
+EN|Reino da Grã-Bretanha|1707|1800
+EN|Reino Unido|1801|1874
+IR|Pérsia|1501|1874
