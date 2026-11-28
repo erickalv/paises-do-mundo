@@ -5583,6 +5583,16 @@
    }
   },
   {
+   "key": "LV Livonia",
+   "take": {
+    "from": "Swedish Baltic",
+    "region": [
+     "LVA/Vidzeme",
+     "LVA/Riga"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
