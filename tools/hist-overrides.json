@@ -5547,6 +5547,42 @@
    }
   },
   {
+   "key": "JM Jamaica",
+   "take": {
+    "from": "British West Indies",
+    "adm0": [
+     "JAM"
+    ]
+   }
+  },
+  {
+   "key": "KY Cayman",
+   "take": {
+    "from": "British West Indies",
+    "adm0": [
+     "CYM"
+    ]
+   }
+  },
+  {
+   "key": "TC Turks",
+   "take": {
+    "from": "British West Indies",
+    "adm0": [
+     "TCA"
+    ]
+   }
+  },
+  {
+   "key": "VG Virgin",
+   "take": {
+    "from": "British West Indies",
+    "adm0": [
+     "VGB"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
