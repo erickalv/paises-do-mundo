@@ -5514,6 +5514,24 @@
    }
   },
   {
+   "key": "SE Gotland",
+   "take": {
+    "from": "Sweden–Norway",
+    "iso": [
+     "SE-I"
+    ]
+   }
+  },
+  {
+   "key": "SE Jamtland",
+   "take": {
+    "from": "Sweden–Norway",
+    "iso": [
+     "SE-Z"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
