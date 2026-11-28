@@ -40,6 +40,23 @@ private val RULER_ADJ = mapOf(
     "marroquina" to listOf("Marrocos"), "indonésia" to listOf("Indonésia"), "tailandesa" to listOf("Tailândia"), "egípcia" to listOf("Egito"),
     "jordaniana" to listOf("Jordânia"), "dinamarquesa" to listOf("Dinamarca"), "russa" to listOf("Rússia", "Império Russo"), "iraquiana" to listOf("Iraque"),
     "vietnamita" to listOf("Vietnã"), "indiana" to listOf("Índia"), "etíope" to listOf("Etiópia"),
+    "sueca" to listOf("Suécia"), "sueco" to listOf("Suécia"), "inglesa" to listOf("Inglaterra"), "inglês" to listOf("Inglaterra"),
+    "otomana" to listOf("Império Otomano"), "otomano" to listOf("Império Otomano"), "otomanos" to listOf("Império Otomano"),
+    "mogol" to listOf("Império Mogol"), "imperial" to listOf("Monarquia de Habsburgo"), "austríaca" to listOf("Monarquia de Habsburgo", "Império Austríaco", "Áustria"),
+    "austríaco" to listOf("Monarquia de Habsburgo", "Império Austríaco", "Áustria"), "prussiana" to listOf("Reino da Prússia", "Prússia"),
+    "zungar" to listOf("Canato Zungar"), "brandemburguesa" to listOf("Brandemburgo-Prússia"), "napolitana" to listOf("Reino de Nápoles"),
+)
+/** the same country under another name in older years: an owner "Dinamarca" is ruled by "Dinamarca-Noruega" */
+private val RULER_ALIAS = mapOf(
+    "Dinamarca" to listOf("Dinamarca-Noruega"), "França" to listOf("Reino da França", "República Francesa", "Império Francês", "França de Vichy"),
+    "Reino Unido" to listOf("Reino da Grã-Bretanha"), "Grã-Bretanha" to listOf("Reino da Grã-Bretanha"),
+    "Holanda" to listOf("República das Sete Províncias Unidas", "República Batava", "Reino da Holanda", "Principado Soberano dos Países Baixos Unidos"),
+    "Países Baixos" to listOf("República das Sete Províncias Unidas", "República Batava", "Reino da Holanda", "Principado Soberano dos Países Baixos Unidos"),
+    "Rússia" to listOf("Czarado da Rússia"), "Império Russo" to listOf("Czarado da Rússia"),
+    "Inglaterra" to listOf("Commonwealth da Inglaterra"), "Reino da Inglaterra" to listOf("Commonwealth da Inglaterra", "Inglaterra"),
+    "Polônia-Lituânia" to listOf("República das Duas Nações"), "Portugal" to listOf("Reino Unido de Portugal, Brasil e Algarves"),
+    "China" to listOf("República da China"), "África do Sul" to listOf("União Sul-Africana"),
+    "EUA" to listOf("Estados Unidos"), "Alemanha" to listOf("Império Alemão"), "Đại Nam" to listOf("Vietnã"),
 )
 private val RULE_WORDS = Regex("""(ocupação|ocupada|ocupado|protetorado|mandato|administração|condomínio)( [a-zà-ú-]+)?( pel[ao]s?)? ([^),;]+)""")
 private val PAREN_ABBR = mapOf("EUA" to "Estados Unidos")
@@ -64,9 +81,10 @@ private fun rulersOf(u: YearUnit): List<String> {
 
 /** true when the sovereign country named [ruler] (a unit of the same year) rules [u] */
 private fun rules(ruler: YearUnit, u: YearUnit): Boolean {
-    if (ruler === u || ruler.owner != null || ruler.name.isEmpty() || "ocupa" in ruler.name) return false
+    if (ruler === u || ruler.owner != null || ruler.name.isEmpty()) return false   // an occupied country still rules its colonies
     val n = ruler.name
-    return rulersOf(u).any { t -> n == t || n.endsWith(" $t") || n.startsWith("$t (") }
+    fun same(t: String) = n == t || n.endsWith(" $t") || n.startsWith("$t (")
+    return rulersOf(u).any { t -> same(t) || RULER_ALIAS[t]?.any { a -> same(a) || n.startsWith("$a,") } == true }
 }
 private const val MISSED = 0xFFE58F7E.toInt()
 

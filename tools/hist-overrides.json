@@ -5717,6 +5717,24 @@
    }
   },
   {
+   "key": "IN Gujarat",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "IN-GJ"
+    ]
+   }
+  },
+  {
+   "key": "IN Rajputana",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "IN-RJ"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
