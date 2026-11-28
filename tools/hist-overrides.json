@@ -5532,6 +5532,21 @@
    }
   },
   {
+   "key": "IQ Baghdad",
+   "take": {
+    "from": "Ottoman Empire",
+    "iso": [
+     "IQ-BG",
+     "IQ-NA",
+     "IQ-KA",
+     "IQ-BB",
+     "IQ-QA",
+     "IQ-WA",
+     "IQ-DI"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
