@@ -5222,6 +5222,27 @@
    }
   },
   {
+   "key": "Dutch Brazil",
+   "take": {
+    "from": "Kingdom of Brazil",
+    "iso": [
+     "BR-PE",
+     "BR-PB",
+     "BR-RN",
+     "BR-AL"
+    ]
+   }
+  },
+  {
+   "key": "Bahia",
+   "take": {
+    "from": "Kingdom of Brazil",
+    "iso": [
+     "BR-BA"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
