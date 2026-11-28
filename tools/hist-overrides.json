@@ -5612,6 +5612,111 @@
    }
   },
   {
+   "key": "RU Sibir",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "RU-TYU",
+     "RU-KHM",
+     "RU-YAN",
+     "RU-OMS",
+     "RU-KGN"
+    ]
+   }
+  },
+  {
+   "key": "RU Tomsk",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "RU-TOM",
+     "RU-NVS",
+     "RU-KEM"
+    ]
+   }
+  },
+  {
+   "key": "RU Yenisei",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "RU-KYA",
+     "RU-KK"
+    ]
+   }
+  },
+  {
+   "key": "RU Irkutsk",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "RU-IRK"
+    ]
+   }
+  },
+  {
+   "key": "RU Yakutia",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "RU-SA"
+    ]
+   }
+  },
+  {
+   "key": "RU Okhotsk",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "RU-KHA",
+     "RU-MAG"
+    ]
+   }
+  },
+  {
+   "key": "RU Kazan",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "RU-TA",
+     "RU-CU",
+     "RU-ME",
+     "RU-UD"
+    ]
+   }
+  },
+  {
+   "key": "RU Astrakhan",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "RU-AST"
+    ]
+   }
+  },
+  {
+   "key": "RU Bashkiria",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "RU-BA"
+    ]
+   }
+  },
+  {
+   "key": "RU Nogai",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "RU-KL",
+     "RU-ORE",
+     "RU-SAM",
+     "RU-SAR",
+     "RU-VGG"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
