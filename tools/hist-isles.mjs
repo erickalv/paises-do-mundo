@@ -181,7 +181,7 @@ export const ISLES = {
     {"y": 1945, "y1": 1945, "r": {"Sao Tome": null}},
     {"y": 1945, "y1": 1945, "r": {"Sao Tome": "São Tomé e Príncipe (Portugal)"}, "f": {"Sao Tome": "x:pt"}, "o": {"Sao Tome": "Portugal"}},
     {"y": 1945, "y1": 1945, "r": {"Guam": null}},
-    {"y": 1945, "y1": 1945, "r": {"Guam": "Guam (EUA)"}, "f": {"Guam": "h:us48"}, "o": {"Guam": "Estados Unidos"}},
+    {"y": 1945, "y1": 1945, "r": {"Guam": "Guam"}, "f": {"Guam": "h:us48"}, "o": {"Guam": "Estados Unidos"}},
     {"y": 1945, "y1": 1945, "r": {"Micronesia": null}},
     {"y": 1945, "y1": 1945, "r": {"Micronesia": "Micronésia (ocupação americana)"}, "f": {"Micronesia": "h:us48"}, "o": {"Micronesia": null}},
     {"y": 1945, "y1": 1945, "r": {"Palau": null}},

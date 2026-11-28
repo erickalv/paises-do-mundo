@@ -33968,7 +33968,7 @@ export const EVENTS = {
     // Alemanha, França e Bélgica
     { y: 1913, y1: 1917, m: ["Império Alemão", "h:de_emp", ["German Empire", "Posen", "Alsace-Lorraine"]] },
     { y: 1918, y1: 1918, m: ["Alemanha", "h:de_emp", ["German Empire", "Posen"]] }, // república em 9/nov/1918; bandeira nova em ago/1919
-    { y: 1919, r: { "German Empire": "Alemanha (República de Weimar)" }, f: { "German Empire": "x:de" } },
+    { y: 1919, r: { "German Empire": "Alemanha" }, f: { "German Empire": "x:de" } },
     { y: 1914, y1: 1917, r: { "Occupied France": "Norte da França (ocupação alemã)", "Belgium": "Bélgica (ocupação alemã)", "Luxembourg": "Luxemburgo (ocupação alemã)" },
       f: { "Occupied France": "h:de_emp", "Belgium": "h:de_emp", "Luxembourg": "h:de_emp" }, o: { "Occupied France": null, "Belgium": null, "Luxembourg": null } },
     { y: 1918, m: ["França", "x:fr", ["France", "Occupied France", "Alsace-Lorraine"]] },
