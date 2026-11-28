@@ -5382,6 +5382,138 @@
    }
   },
   {
+   "key": "RU Kamchatka",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "RU-KAM"
+    ]
+   }
+  },
+  {
+   "key": "RU Chukotka",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "RU-CHU"
+    ]
+   }
+  },
+  {
+   "key": "RU Transbaikal",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "RU-BU",
+     "RU-ZAB"
+    ]
+   }
+  },
+  {
+   "key": "Malacca",
+   "take": {
+    "from": "Malaya",
+    "iso": [
+     "MY-04"
+    ]
+   }
+  },
+  {
+   "key": "ID Java",
+   "take": {
+    "from": "Netherlands Indies",
+    "iso": [
+     "ID-JB",
+     "ID-BT",
+     "ID-JT",
+     "ID-YO",
+     "ID-JI"
+    ]
+   }
+  },
+  {
+   "key": "ID Maluku",
+   "take": {
+    "from": "Netherlands Indies",
+    "iso": [
+     "ID-MA",
+     "ID-MU"
+    ]
+   }
+  },
+  {
+   "key": "ID Sulawesi",
+   "take": {
+    "from": "Netherlands Indies",
+    "iso": [
+     "ID-SN",
+     "ID-GO",
+     "ID-ST",
+     "ID-SR",
+     "ID-SG",
+     "ID-SA"
+    ]
+   }
+  },
+  {
+   "key": "ID Sumatra",
+   "take": {
+    "from": "Netherlands Indies",
+    "iso": [
+     "ID-SU",
+     "ID-SB",
+     "ID-RI",
+     "ID-JA",
+     "ID-SS",
+     "ID-BB",
+     "ID-BE",
+     "ID-LA"
+    ]
+   }
+  },
+  {
+   "key": "ID Riau Islands",
+   "take": {
+    "from": "Netherlands Indies",
+    "iso": [
+     "ID-KR"
+    ]
+   }
+  },
+  {
+   "key": "ID Borneo",
+   "take": {
+    "from": "Netherlands Indies",
+    "iso": [
+     "ID-KB",
+     "ID-KT",
+     "ID-KS",
+     "ID-KI"
+    ]
+   }
+  },
+  {
+   "key": "ID Lesser Sundas",
+   "take": {
+    "from": "Netherlands Indies",
+    "iso": [
+     "ID-BA",
+     "ID-NB",
+     "ID-NT"
+    ]
+   }
+  },
+  {
+   "key": "ID Papua",
+   "take": {
+    "from": "Netherlands Indies",
+    "iso": [
+     "ID-PA",
+     "ID-PB"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",

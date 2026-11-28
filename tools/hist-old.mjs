@@ -14546,6 +14546,38 @@ export const EVENTS = {
     // Qing: sem bandeira oficial antes de 1862; a triangular (1862) não é descrita em detalhe; retangular promulgada em 1888 (um evento por ano para vencer as fusões)
     ...Array.from({ length: 238 }, (_, i) => ({ y: 1650 + i, y1: 1650 + i, f: { "Manchu Empire": "blank" } })),
     // correções de anacronismos (aplicadas por último; fontes: Wikipedia)
+    ...perYear(1600, 1696, { r: { "RU Kamchatka": null }, f: { "RU Kamchatka": "blank" }, o: { "RU Kamchatka": null } }), /*fixo*/
+    ...perYear(1697, 1755, { r: { "RU Kamchatka": "Kamchatka (conquista russa em curso)" }, f: { "RU Kamchatka": "blank" }, o: { "RU Kamchatka": null } }), /*fixo*/
+    { y: 1756, /*fixo*/ m: [null, null, ["Russian Empire", "RU Kamchatka"]] }, // conquista concluída em meados do séc. XVIII
+    ...perYear(1600, 1648, { r: { "RU Chukotka": null }, f: { "RU Chukotka": "blank" }, o: { "RU Chukotka": null } }), /*fixo*/
+    ...perYear(1649, 1777, { r: { "RU Chukotka": "Chukotka (tchuktchis independentes)" }, f: { "RU Chukotka": "blank" }, o: { "RU Chukotka": null } }), /*fixo*/
+    { y: 1778, /*fixo*/ m: [null, null, ["Russian Empire", "RU Chukotka"]] }, // tratado com os tchuktchis, 1778
+    ...perYear(1600, 1652, { r: { "RU Transbaikal": "Transbaikália (buriates e evenques)" }, f: { "RU Transbaikal": "blank" }, o: { "RU Transbaikal": null } }), /*fixo*/
+    { y: 1653, /*fixo*/ m: [null, null, ["Russian Empire", "RU Transbaikal"]] },
+    ...perYear(1600, 1640, { r: { "Malacca": "Malaca (Portugal)" }, f: { "Malacca": "blank" }, o: { "Malacca": "Portugal" } }), /*fixo*/
+    ...perYear(1641, 1794, { r: { "Malacca": "Malaca (Holanda)" }, f: { "Malacca": "blank" }, o: { "Malacca": "República das Sete Províncias Unidas" } }), /*fixo*/
+    ...perYear(1795, 1800, { r: { "Malacca": "Malaca (ocupação britânica)" }, f: { "Malacca": "h:gb1707" }, o: { "Malacca": null } }), /*fixo*/
+    ...perYear(1801, 1817, { r: { "Malacca": "Malaca (ocupação britânica)" }, f: { "Malacca": "x:gb" }, o: { "Malacca": null } }), /*fixo*/
+    ...perYear(1818, 1824, { r: { "Malacca": "Malaca (Holanda)" }, f: { "Malacca": "x:nl" }, o: { "Malacca": "Reino Unido dos Países Baixos" } }), /*fixo*/
+    ...perYear(1825, 1879, { r: { "Malacca": "Malaca (Reino Unido)" }, f: { "Malacca": "x:gb" }, o: { "Malacca": "Reino Unido" } }), /*fixo*/
+    { y: 1880, /*fixo*/ m: [null, null, ["Malaya", "Malacca"]] }, // holandesa 14/jan/1641; britânica ago/1795–set/1818 e desde 1825
+    ...perYear(1600, 1618, { m: [null, null, ["ID Java", "Netherlands Indies"]] }), /*fixo*/
+    { y: 1619, /*fixo*/ m: [null, null, ["Netherlands Indies", "ID Maluku"]] }, // Batávia em 30/mai/1619
+    { y: 1749, /*fixo*/ m: [null, null, ["Netherlands Indies", "ID Java"]] }, // Mataram cede a soberania em 11/dez/1749
+    ...perYear(1600, 1799, { m: [null, null, ["Malaya", "ID Riau Islands"]] }), /*fixo*/
+    { y: 1800, /*fixo*/ m: [null, null, ["Netherlands Indies", "ID Sulawesi", "ID Sumatra", "ID Riau Islands", "ID Borneo", "ID Lesser Sundas", "ID Papua"]] },
+    ...perYear(1600, 1618, { r: { "ID Java": "Java (Mataram, Banten e outros)" }, f: { "ID Java": "blank" }, o: { "ID Java": null } }), /*fixo*/
+    ...perYear(1619, 1679, { r: { "ID Java": "Java (Mataram, Banten e outros; Batávia holandesa)" }, f: { "ID Java": "blank" }, o: { "ID Java": null } }), /*fixo*/
+    ...perYear(1680, 1748, { r: { "ID Java": "Java (Mataram e Banten, sob influência da VOC)" }, f: { "ID Java": "blank" }, o: { "ID Java": null } }), /*fixo*/
+    ...perYear(1600, 1609, { r: { "ID Maluku": "Molucas (Ternate, Tidore e outros)" }, f: { "ID Maluku": "blank" }, o: { "ID Maluku": null } }), /*fixo*/
+    ...perYear(1610, 1618, { r: { "ID Maluku": "Molucas (sede da VOC em Ambon; Ternate, Tidore e outros)" }, f: { "ID Maluku": "blank" }, o: { "ID Maluku": null } }), /*fixo*/
+    ...perYear(1600, 1667, { r: { "ID Sulawesi": "Celebes (Gowa-Tallo e outros reinos)" }, f: { "ID Sulawesi": "blank" }, o: { "ID Sulawesi": null } }), /*fixo*/
+    ...perYear(1668, 1799, { r: { "ID Sulawesi": "Celebes (reinos locais; Makassar holandesa)" }, f: { "ID Sulawesi": "blank" }, o: { "ID Sulawesi": null } }), /*fixo*/
+    ...perYear(1600, 1659, { r: { "ID Sumatra": "Sumatra (reinos locais, como Jambi, Palembang e Minangkabau)" }, f: { "ID Sumatra": "blank" }, o: { "ID Sumatra": null } }), /*fixo*/
+    ...perYear(1660, 1799, { r: { "ID Sumatra": "Sumatra (reinos locais; portos da VOC)" }, f: { "ID Sumatra": "blank" }, o: { "ID Sumatra": null } }), /*fixo*/
+    ...perYear(1600, 1799, { r: { "ID Borneo": "Bornéu (sultanatos locais, como Banjarmasin e Kutai)" }, f: { "ID Borneo": "blank" }, o: { "ID Borneo": null } }), /*fixo*/
+    ...perYear(1600, 1799, { r: { "ID Lesser Sundas": "Pequenas Ilhas da Sonda (reinos locais)" }, f: { "ID Lesser Sundas": "blank" }, o: { "ID Lesser Sundas": null } }), /*fixo*/
+    ...perYear(1600, 1799, { r: { "ID Papua": null }, f: { "ID Papua": "blank" }, o: { "ID Papua": null } }), /*fixo*/
     ...perYear(1600, 1805, { r: { "NRW": "Vestfália e Baixo Reno (estados do Sacro Império)" }, f: { "NRW": "blank" }, o: { "NRW": null } }), /*fixo*/ // Cleves, Mark e Ravensberg brandemburgueses (1614/1666); Renânia e Vestfália prussianas em 1815
     ...perYear(1600, 1802, { r: { "Trentino": "Príncipe-Bispado de Trento" }, f: { "Trentino": "blank" }, o: { "Trentino": null } }), /*fixo*/ // secularizado e anexado à Áustria em 1803
     ...perYear(1641, 1651, { r: { "Catalonia": "Catalunha (França)" }, f: { "Catalonia": "h:fr_bourbon" }, o: { "Catalonia": "França" } }), /*fixo*/ // revolta dos Segadores; Barcelona retomada em out/1652
