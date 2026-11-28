@@ -1,0 +1,29 @@
+# fonte: https://en.wikipedia.org/wiki/Ashikaga_shogunate ; https://en.wikipedia.org/wiki/Tokugawa_shogunate ; https://en.wikipedia.org/wiki/Thai_royal_family (só anos)
+JPS|1449|1473|Ashikaga Yoshimasa|Xogum
+JPS|1474|1489|Ashikaga Yoshihisa|Xogum
+JPS|1490|1493|Ashikaga Yoshitane|Xogum
+JPS|1494|1508|Ashikaga Yoshizumi|Xogum
+JPS|1508|1521|Ashikaga Yoshitane|Xogum
+JPS|1521|1546|Ashikaga Yoshiharu|Xogum
+JPS|1546|1565|Ashikaga Yoshiteru|Xogum
+JPS|1568|1573|Ashikaga Yoshiaki|Xogum
+JPS|1603|1605|Tokugawa Ieyasu|Xogum
+JPS|1605|1623|Tokugawa Hidetada|Xogum
+JPS|1623|1651|Tokugawa Iemitsu|Xogum
+JPS|1651|1680|Tokugawa Ietsuna|Xogum
+JPS|1680|1709|Tokugawa Tsunayoshi|Xogum
+JPS|1709|1712|Tokugawa Ienobu|Xogum
+JPS|1713|1716|Tokugawa Ietsugu|Xogum
+JPS|1716|1745|Tokugawa Yoshimune|Xogum
+JPS|1745|1760|Tokugawa Ieshige|Xogum
+JPS|1760|1786|Tokugawa Ieharu|Xogum
+JPS|1787|1837|Tokugawa Ienari|Xogum
+JPS|1837|1853|Tokugawa Ieyoshi|Xogum
+JPS|1853|1858|Tokugawa Iesada|Xogum
+JPS|1858|1866|Tokugawa Iemochi|Xogum
+JPS|1866|1867|Tokugawa Yoshinobu|Xogum
+TH|1782|1809|Rama I|Rei
+TH|1809|1824|Rama II|Rei
+TH|1824|1851|Rama III|Rei
+TH|1851|1868|Rama IV (Mongkut)|Rei
+TH|1868|1910|Rama V (Chulalongkorn)|Rei

@@ -1,0 +1,81 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_rulers_of_Morocco ; https://en.wikipedia.org/wiki/List_of_Crimean_khans (só anos)
+MA|1472|1504|Muhammad al-Sheikh|Sultão
+MA|1504|1526|Muhammad al-Burtuqali|Sultão
+MA|1549|1557|Mohammed al-Shaykh|Sultão
+MA|1557|1574|Abdallah al-Ghalib|Sultão
+MA|1574|1576|Abu Abdallah Mohammed II|Sultão
+MA|1576|1578|Abd al-Malik I|Sultão
+MA|1578|1603|Ahmad al-Mansur|Sultão
+MA|1666|1672-04-09|Al-Rashid|Sultão
+MA|1672|1727-03-22|Ismail|Sultão
+MA|1727-03-22|1728-03|Ahmad bin Ismail|Sultão
+MA|1728-07|1729-03-05|Ahmad bin Ismail|Sultão
+MA|1729-03-05|1734-09-28|Abdallah bin Ismail|Sultão
+MA|1734-09-28|1736-02-14|Ali bin Ismail|Sultão
+MA|1736-08-08|1738-06-18|Muhammad II bin Ismail|Sultão
+MA|1738-06-18|1740-02|Al-Mostadi bin Ismail|Sultão
+MA|1742-02-03|1743-05|Al-Mostadi bin Ismail|Sultão
+MA|1743-05|1747-07|Abdallah bin Ismail|Sultão
+MA|1748-10|1757-11-10|Abdallah bin Ismail|Sultão
+MA|1757-11-10|1790-04-09|Muhammad III|Sultão
+MA|1790-04-09|1792-02-23|Yazid|Sultão
+MA|1792-02-23|1822-11-28|Sulayman|Sultão
+MA|1822-11-30|1859-08-28|Abd al-Rahman|Sultão
+MA|1859-08-28|1873-09-16|Muhammad IV|Sultão
+MA|1873-09-16|1894-06-09|Hassan I|Sultão
+CRI|1468|1474|Meñli I Giray|Cã
+CRI|1474|1475|Nur Devlet|Cã
+CRI|1475|1476|Meñli I Giray|Cã
+CRI|1478|1514|Meñli I Giray|Cã
+CRI|1514|1523|Mehmed I Giray|Cã
+CRI|1523|1524|Gazi I Giray|Cã
+CRI|1524|1532|Saadet I Giray|Cã
+CRI|1532|1551|Sahib I Giray|Cã
+CRI|1551|1577|Devlet I Giray|Cã
+CRI|1577|1584|Mehmed II Giray|Cã
+CRI|1584|1588|Islam II Giray|Cã
+CRI|1588|1596|Gazi II Giray|Cã
+CRI|1596|1607|Gazi II Giray|Cã
+CRI|1607|1608|Toqtamis Giray|Cã
+CRI|1608|1610|Selamet I Giray|Cã
+CRI|1610|1623|Canibek Giray|Cã
+CRI|1623|1628|Mehmed III Giray|Cã
+CRI|1628|1635|Canibek Giray|Cã
+CRI|1635|1637|Inayet Giray|Cã
+CRI|1637|1641|Bahadir I Giray|Cã
+CRI|1641|1644|Mehmed IV Giray|Cã
+CRI|1644|1654|Islam III Giray|Cã
+CRI|1654|1666|Mehmed IV Giray|Cã
+CRI|1666|1671|Adil Giray|Cã
+CRI|1671|1678|Selim I Giray|Cã
+CRI|1678|1683|Murad Giray|Cã
+CRI|1683|1684|Haci II Giray|Cã
+CRI|1684|1691|Selim I Giray|Cã
+CRI|1691|1692|Safa Giray|Cã
+CRI|1692|1699|Selim I Giray|Cã
+CRI|1699|1702|Devlet II Giray|Cã
+CRI|1702|1704|Selim I Giray|Cã
+CRI|1704|1707|Gazi III Giray|Cã
+CRI|1707|1708|Qaplan I Giray|Cã
+CRI|1709|1713|Devlet II Giray|Cã
+CRI|1713|1715|Qaplan I Giray|Cã
+CRI|1716|1717|Devlet III Giray|Cã
+CRI|1717|1724|Saadet IV Giray|Cã
+CRI|1724|1730|Meñli II Giray|Cã
+CRI|1730|1736|Qaplan I Giray|Cã
+CRI|1736|1737|Fetih II Giray|Cã
+CRI|1737|1740|Meñli II Giray|Cã
+CRI|1740|1743|Selamet II Giray|Cã
+CRI|1743|1748|Selim II Giray|Cã
+CRI|1748|1756|Arslan Giray|Cã
+CRI|1756|1758|Halim Giray|Cã
+CRI|1758|1764|Qirim Giray|Cã
+CRI|1765|1767|Selim III Giray|Cã
+CRI|1767|1768|Maqsud Giray|Cã
+CRI|1768|1769|Qirim Giray|Cã
+CRI|1769|1770|Devlet IV Giray|Cã
+CRI|1770|1771|Selim III Giray|Cã
+CRI|1771|1775|Sahib II Giray|Cã
+CRI|1775|1777|Devlet IV Giray|Cã
+CRI|1777|1782|Şahin Giray|Cã
+CRI|1782|1783|Şahin Giray|Cã

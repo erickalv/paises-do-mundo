@@ -79,3 +79,24 @@ BAY|Reino da Baviera|1806|1870
 SAX|Eleitorado da Saxônia( \(.*\))?|1470|1805
 SAX|Reino da Saxônia|1806|1874
 HU|Reino da Hungria|1470|1525
+MA|Sultanato Wattássida \(Marrocos\)|1472|1524
+MA|Sultanato Saadiano \(Marrocos\)|1549|1602
+MA|Marrocos|1668|1874
+CRI|Canato da Crimeia|1470|1782
+MD|Principado da Moldávia( \(.*\))?|1470|1858
+WA|Principado da Valáquia( \(.*\))?|1470|1858
+RO|Principados Unidos.*|1859|1865
+RO|Romênia|1856|1874
+JPS|Japão \(.*\)|1470|1867
+TH|Sião|1782|1874
+CL|Chile( \((Pátria Velha|governo patriota)\))?|1810|1874
+PE|Peru( \(.*\))?|1821|1874
+PE|Confederação Peru-Boliviana( \(.*\))?|1836|1838
+CO|Nova Granada \(juntas autônomas\)|1810|1810
+CO|Províncias Unidas de Nova Granada|1811|1815
+CO|República da Colômbia \(Nova Granada\)|1819|1820
+CO|Grã-Colômbia|1821|1829
+CO|Colômbia \(Grã-Colômbia em dissolução\)|1830|1830
+CO|República de Nova Granada|1831|1857
+CO|Confederação Granadina|1858|1860
+CO|Estados Unidos da Colômbia|1861|1874

@@ -1,0 +1,62 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_presidents_of_Chile ; https://en.wikipedia.org/wiki/List_of_presidents_of_Peru ; https://en.wikipedia.org/wiki/List_of_presidents_of_Colombia
+CL|1810-09-18|1811-02-26|Mateo de Toro y Zambrano|Presidente da Junta de Governo
+CL|1811-11-16|1812-04-08|José Miguel Carrera|Presidente da Junta de Governo
+CL|1812-12-06|1813-03-30|José Miguel Carrera|Presidente da Junta de Governo
+CL|1813-08-23|1814-01-11|José Miguel Infante|Presidente da Junta de Governo
+CL|1817-02-16|1823-01-28|Bernardo O'Higgins|Diretor Supremo
+CL|1823-04-04|1826-07-09|Ramón Freire|Diretor Supremo
+CL|1826-09-09|1827-01-25|Agustín Eyzaguirre|Presidente interino
+CL|1827-05-08|1829-11-02|Francisco Antonio Pinto|Presidente
+CL|1829-12-24|1830-02-18|José Tomás Ovalle|Presidente da Junta de Governo
+CL|1830-04-01|1831-03-08|José Tomás Ovalle|Vice-presidente em exercício
+CL|1831-09-18|1841-09-18|José Joaquín Prieto|Presidente
+CL|1841-09-18|1851-09-18|Manuel Bulnes|Presidente
+CL|1851-09-18|1861-09-18|Manuel Montt|Presidente
+CL|1861-09-18|1871-09-18|José Joaquín Pérez|Presidente
+CL|1871-09-18|1876-09-18|Federico Errázuriz Zañartu|Presidente
+PE|1821-08-03|1822-09-20|José de San Martín|Protetor do Peru
+PE|1822-09-21|1823-02-27|José de La Mar|Presidente da Junta Suprema
+PE|1823-08-16|1824-02-10|José Bernardo de Tagle|Presidente
+PE|1824-02-10|1827-01-27|Simón Bolívar|Ditador
+PE|1827-06-09|1829-06-06|José de La Mar|Presidente
+PE|1829-08-31|1833-12-19|Agustín Gamarra|Presidente
+PE|1834-01-29|1835-02-25|Luis José de Orbegoso|Presidente
+PE|1835-02-25|1836-02-07|Felipe Santiago Salaverry|Chefe Supremo
+PE|1836-10-28|1839-02-20|Andrés de Santa Cruz|Protetor Supremo
+PE|1839-08-15|1841-11-18|Agustín Gamarra|Presidente
+PE|1841-11-18|1842-08-16|Manuel Menéndez|Chefe de Estado interino
+PE|1842-10-17|1843-03-15|Juan Francisco de Vidal|Chefe de Estado interino
+PE|1843-03-20|1844-06-17|Manuel Ignacio de Vivanco|Diretor Supremo
+PE|1844-10-07|1845-04-20|Manuel Menéndez|Chefe de Estado interino
+PE|1845-04-20|1851-04-20|Ramón Castilla|Presidente
+PE|1851-04-20|1855-01-05|José Rufino Echenique|Presidente
+PE|1855-01-05|1862-10-24|Ramón Castilla|Presidente
+PE|1862-10-24|1863-04-03|Miguel de San Román|Presidente
+PE|1863-08-05|1865-11-08|Juan Antonio Pezet|Presidente
+PE|1865-11-28|1868-01-07|Mariano Ignacio Prado|Presidente
+PE|1868-08-01|1872-07-22|José Balta|Presidente
+PE|1872-08-02|1876-08-02|Manuel Pardo|Presidente
+CO|1810-07-25|1811-04-01|José Miguel Pey|Presidente da Junta Suprema
+CO|1812-10-27|1814-10-05|Camilo Torres Tenorio|Presidente do Congresso
+CO|1815-11-15|1816-03-12|Camilo Torres Tenorio|Presidente
+CO|1819-02-15|1821-12-13|Simón Bolívar|Presidente
+CO|1821-12-13|1826-11-14|Francisco de Paula Santander|Vice-presidente em exercício
+CO|1826-11-14|1830-05-04|Simón Bolívar|Presidente
+CO|1830-09-04|1831-04-30|Rafael Urdaneta|Presidente
+CO|1832-03-10|1837-04-01|Francisco de Paula Santander|Presidente
+CO|1837-04-01|1841-04-01|José Ignacio de Márquez|Presidente
+CO|1841-04-01|1845-04-01|Pedro Alcántara Herrán|Presidente
+CO|1845-04-01|1849-04-01|Tomás Cipriano de Mosquera|Presidente
+CO|1849-04-01|1853-04-01|José Hilario López|Presidente
+CO|1853-04-01|1854-04-17|José María Obando|Presidente
+CO|1855-04-01|1857-04-01|Manuel María Mallarino|Presidente em exercício
+CO|1857-04-01|1861-04-01|Mariano Ospina Rodríguez|Presidente
+CO|1861-07-18|1863-02-04|Tomás Cipriano de Mosquera|Presidente
+CO|1863-05-14|1864-04-01|Tomás Cipriano de Mosquera|Presidente
+CO|1864-04-01|1866-04-01|Manuel Murillo Toro|Presidente
+CO|1866-04-01|1867-05-23|Tomás Cipriano de Mosquera|Presidente
+CO|1867-05-23|1868-04-01|Santos Acosta|Presidente
+CO|1868-04-01|1870-04-01|Santos Gutiérrez|Presidente
+CO|1870-04-01|1872-04-01|Eustorgio Salgar|Presidente
+CO|1872-04-01|1874-04-01|Manuel Murillo Toro|Presidente
+CO|1874-04-01|1876-04-01|Santiago Pérez|Presidente
