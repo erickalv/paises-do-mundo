@@ -5735,6 +5735,55 @@
    }
   },
   {
+   "key": "ES Navarra",
+   "take": {
+    "from": "Spain",
+    "iso": [
+     "ES-NA"
+    ]
+   }
+  },
+  {
+   "key": "ES Granada",
+   "take": {
+    "from": "Spain",
+    "iso": [
+     "ES-GR"
+    ]
+   }
+  },
+  {
+   "key": "FR Bretagne",
+   "take": {
+    "from": "France",
+    "iso": [
+     "FR-29",
+     "FR-22",
+     "FR-35",
+     "FR-56",
+     "FR-44"
+    ]
+   }
+  },
+  {
+   "key": "ES Malaga",
+   "take": {
+    "from": "Spain",
+    "iso": [
+     "ES-MA"
+    ]
+   }
+  },
+  {
+   "key": "ES Almeria",
+   "take": {
+    "from": "Spain",
+    "iso": [
+     "ES-AL"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",

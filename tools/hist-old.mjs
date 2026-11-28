@@ -27,7 +27,7 @@ const inPoly = (pt, poly) => inRing(pt, poly[0]) && !poly.slice(1).some((h) => i
 
 const NORTH1866 = ["Anhalt", "Duchy of Brunswick", "Duchy of Holstein", "Duchy of Nassau", "Duchy of Schleswig", "Electorate of Hesse", "Free City of Bremen", "Free City of Hamburg", "Free City of Lübeck", "Grand Duchy of Oldenburg", "Kingdom of Hanover", "Kingdom of Saxony", "Lippe", "Mecklenburg-Schwerin", "Mecklenburg-Strelitz", "Schaumburg-Lippe", "Thuringian states", "Waldeck"];
 export const SNAPS = [
-  [1900, 1500, 1912], [1914, 1913, 1919],
+  [1900, 1485, 1912], [1914, 1913, 1919],
   [1920, 1920, 1929], [1930, 1930, 1937], [1938, 1938, 1944], [1945, 1945, 1945],
 ];
 
@@ -118,7 +118,7 @@ export const EVENTS = {
     { y: 1858, m: ["Império Russo", "x:ru", ["Russian Empire", "Amur"]] }, // Tratado de Aigun, 28/mai/1858
     { y: 1860, m: ["Império Russo", "x:ru", ["Russian Empire", "Ussuri"]] }, // Convenção de Pequim, 14/nov/1860
     { y: 1875, m: ["Império Russo", "x:ru", ["Russian Empire", "Sakhalin"]] }, // Tratado de São Petersburgo (1875): Sacalina russa, Curilas japonesas
-    { y: 1500, y1: 1874, m: ["Império Russo", "x:ru", ["Russian Empire", "North Kurils"]] }, // Tratado de Shimoda (1855): Urup e ao norte russas
+    { y: 1485, y1: 1874, m: ["Império Russo", "x:ru", ["Russian Empire", "North Kurils"]] }, // Tratado de Shimoda (1855): Urup e ao norte russas
     { y: 1875, m: ["Império do Japão", "x:jp", ["Imperial Japan", "North Kurils"]] },
     { y: 1849, y1: 1852, m: ["Índia (Companhia Britânica das Índias Orientais)", "blank", ["British Raj", "Punjab", "Peshawar", "Sind", "Kashmir"]] }, // Império Sikh anexado em 2/abr/1849
     { y: 1853, y1: 1855, m: ["Índia (Companhia Britânica das Índias Orientais)", "blank", ["British Raj", "Pegu", "Punjab", "Peshawar", "Sind", "Kashmir"]] }, // anexação de Pegu proclamada em 20/jan/1853
@@ -132,7 +132,7 @@ export const EVENTS = {
     { y: 1847, m: ["Grão-Ducado da Toscana", "blank", ["Tuscany", "Lucca"]] }, // Lucca unida à Toscana em 1847
     { y: 1848, m: ["México", "x:mx", ["Mexico", "Yucatan"]] }, // Yucatán volta ao México em 17/ago/1848
     // Américas e Pacífico
-    { y: 1500, r: { "Kingdom of Brazil": "Brasil", "Kingdom of Hawaii": "Havaí (EUA)", "Puerto Rico": "Porto Rico (EUA)", "Guam": "Guam", "American Samoa": "Samoa Americana",
+    { y: 1485, r: { "Kingdom of Brazil": "Brasil", "Kingdom of Hawaii": "Havaí (EUA)", "Puerto Rico": "Porto Rico (EUA)", "Guam": "Guam", "American Samoa": "Samoa Americana",
       "Philippines": "Filipinas (EUA)", "United States Virgin Islands": "Índias Ocidentais Dinamarquesas", "Samoa": "Samoa Alemã", "Micronesia": "Micronésia Alemã",
       "Papua New Guinea": "Nova Guiné Alemã", "Tonga": "Tonga (protetorado britânico)", "Wallis and Futuna Islands": "Wallis e Futuna", "Rapa Nui": "Rapa Nui (Chile)",
       "Guadeloupe": "Guadalupe", "Netherlands Antilles": "Curaçao e dependências", "Canada": "Canadá", "United States of America": "Estados Unidos" },
@@ -142,39 +142,39 @@ export const EVENTS = {
       "Saint Martin": "x:fr", "Saint Barthelemy": "x:fr" },
       o: { "Kingdom of Brazil": null, "Kingdom of Hawaii": "Estados Unidos", "Puerto Rico": "Estados Unidos", "Guam": "Estados Unidos", "American Samoa": "Estados Unidos",
       "United States Virgin Islands": "Dinamarca", "Samoa": "Império Alemão", "Micronesia": "Império Alemão", "Papua New Guinea": "Império Alemão" } },
-    { y: 1500, y1: 1907, f: { "Kingdom of Hawaii": "h:us45", "Puerto Rico": "h:us45", "Guam": "h:us45", "American Samoa": "h:us45", "Philippines": "h:us45" } }, // 45 estrelas até 4/jul/1908
+    { y: 1485, y1: 1907, f: { "Kingdom of Hawaii": "h:us45", "Puerto Rico": "h:us45", "Guam": "h:us45", "American Samoa": "h:us45", "Philippines": "h:us45" } }, // 45 estrelas até 4/jul/1908
     { y: 1908, y1: 1911, f: { "Kingdom of Hawaii": "h:us46", "Puerto Rico": "h:us46", "Guam": "h:us46", "American Samoa": "h:us46", "Philippines": "h:us46" } },
     { y: 1912, f: { "Kingdom of Hawaii": "h:us48", "Puerto Rico": "h:us48", "Guam": "h:us48", "American Samoa": "h:us48", "Philippines": "h:us48" } },
-    { y: 1500, r: { "Cuba": "Cuba", "British West Indies": "Índias Ocidentais Britânicas", "Martinique": "Martinica" }, f: { "Cuba": "x:cu", "British West Indies": "x:gb", "Martinique": "x:fr" },
+    { y: 1485, r: { "Cuba": "Cuba", "British West Indies": "Índias Ocidentais Britânicas", "Martinique": "Martinica" }, f: { "Cuba": "x:cu", "British West Indies": "x:gb", "Martinique": "x:fr" },
       o: { "Cuba": null, "British West Indies": "Reino Unido", "Martinique": "França" } },
-    { y: 1500, y1: 1901, r: { "Cuba": "Cuba (ocupação americana)" }, f: { "Cuba": "h:us45" }, o: { "Cuba": null } }, // até 20/mai/1902
+    { y: 1485, y1: 1901, r: { "Cuba": "Cuba (ocupação americana)" }, f: { "Cuba": "h:us45" }, o: { "Cuba": null } }, // até 20/mai/1902
     { y: 1906, y1: 1907, r: { "Cuba": "Cuba (ocupação americana)" }, f: { "Cuba": "h:us45" }, o: { "Cuba": null } }, // set/1906 a jan/1909
     { y: 1908, y1: 1908, r: { "Cuba": "Cuba (ocupação americana)" }, f: { "Cuba": "h:us46" }, o: { "Cuba": null } },
     { y: 1821, y1: 1902, m: ["Colômbia", "x:co", ["Colombia", "Panama"]] },
     { y: 1903, r: { "Panama": "Panamá" }, f: { "Panama": "x:pa" }, o: { "Panama": null } }, // 3/nov/1903
-    { y: 1500, y1: 1906, r: { "Newfoundland": "Terra Nova" }, f: { "Newfoundland": "x:gb" }, o: { "Newfoundland": "Reino Unido" } },
+    { y: 1485, y1: 1906, r: { "Newfoundland": "Terra Nova" }, f: { "Newfoundland": "x:gb" }, o: { "Newfoundland": "Reino Unido" } },
     { y: 1907, r: { "Newfoundland": "Domínio da Terra Nova" }, f: { "Newfoundland": "x:gb" }, o: { "Newfoundland": null } }, // 26/set/1907
-    { y: 1500, y1: 1900, f: { "Niue": "x:gb" }, o: { "Niue": "Reino Unido" } },
+    { y: 1485, y1: 1900, f: { "Niue": "x:gb" }, o: { "Niue": "Reino Unido" } },
     { y: 1901, f: { "Niue": "x:nz" }, o: { "Niue": "Nova Zelândia" } }, // anexada pela Nova Zelândia em 1901
     // Austrália, Nova Zelândia e Papua
-    { y: 1500, y1: 1862, m: ["Nova Gales do Sul (britânica)", "x:gb", ["New South Wales (UK)", "Northern Territory (UK)"]] }, // Território do Norte anexado à Austrália Meridional em jul/1863
+    { y: 1485, y1: 1862, m: ["Nova Gales do Sul (britânica)", "x:gb", ["New South Wales (UK)", "Northern Territory (UK)"]] }, // Território do Norte anexado à Austrália Meridional em jul/1863
     { y: 1863, y1: 1900, m: ["Austrália Meridional (britânica)", "x:gb", ["South Australia (UK)", "Northern Territory (UK)"]] },
     { y: 1856, y1: 1900, r: { "_null_150": "Tasmânia (britânica)" }, f: { "_null_150": "x:gb" }, o: { "_null_150": "Reino Unido" } },
     { y: 1901, m: ["Austrália", "x:au", ["Western Australia (UK)", "Queensland (UK)", "Northern Territory (UK)", "South Australia (UK)", "New South Wales (UK)", "Victoria (UK)", "_null_150"]], o: { "Western Australia (UK)": null } }, // federação em 1/jan/1901
-    { y: 1500, y1: 1901, r: { "New Zealand": "Nova Zelândia" }, f: { "New Zealand": "x:gb" }, o: { "New Zealand": "Reino Unido" } },
+    { y: 1485, y1: 1901, r: { "New Zealand": "Nova Zelândia" }, f: { "New Zealand": "x:gb" }, o: { "New Zealand": "Reino Unido" } },
     { y: 1902, y1: 1906, r: { "New Zealand": "Nova Zelândia" }, f: { "New Zealand": "x:nz" }, o: { "New Zealand": "Reino Unido" } }, // bandeira de 1902
     { y: 1907, r: { "New Zealand": "Domínio da Nova Zelândia" }, f: { "New Zealand": "x:nz" }, o: { "New Zealand": null } }, // 26/set/1907
-    { y: 1500, y1: 1905, r: { "Papua": "Nova Guiné Britânica" }, f: { "Papua": "x:gb" }, o: { "Papua": "Reino Unido" } },
+    { y: 1485, y1: 1905, r: { "Papua": "Nova Guiné Britânica" }, f: { "Papua": "x:gb" }, o: { "Papua": "Reino Unido" } },
     { y: 1906, r: { "Papua": "Território de Papua (Austrália)" }, f: { "Papua": "x:au" }, o: { "Papua": "Austrália" } }, // 1/set/1906
     // Ásia
-    { y: 1500, m: ["Império do Japão", "x:jp", ["Imperial Japan", "_null_185", "_null_186", "_null_187", "_null_188", "_null_189", "_null_190", "_null_191", "_null_192", "_null_193", "_null_194", "_null_195", "_null_196", "_null_197", "_null_198", "_null_199", "_null_200", "_null_201"]] },
-    { y: 1500, r: { "Taiwan": "Taiwan (Japão)", "Bhutan": "Butão", "Goa": "Goa (Índia Portuguesa)", "French India": "Índia Francesa", "Portuguese Timor": "Timor Português",
+    { y: 1485, m: ["Império do Japão", "x:jp", ["Imperial Japan", "_null_185", "_null_186", "_null_187", "_null_188", "_null_189", "_null_190", "_null_191", "_null_192", "_null_193", "_null_194", "_null_195", "_null_196", "_null_197", "_null_198", "_null_199", "_null_200", "_null_201"]] },
+    { y: 1485, r: { "Taiwan": "Taiwan (Japão)", "Bhutan": "Butão", "Goa": "Goa (Índia Portuguesa)", "French India": "Índia Francesa", "Portuguese Timor": "Timor Português",
       "Macau": "Macau", "Maldives": "Maldivas (protetorado britânico)", "Rattanakosin Kingdom": "Sião" },
       f: { "Taiwan": "x:jp", "Bhutan": "blank", "Afghanistan": "h:af_black", "French India": "x:fr", "Maldives": "x:gb" }, o: { "Taiwan": "Japão" } },
-    { y: 1500, m: ["Índia Britânica", "x:gb", ["British Raj", "India"]] },
-    { y: 1500, y1: 1905, f: { "Brunei": "h:bn_y" } }, // amarela lisa até 1906
+    { y: 1485, m: ["Índia Britânica", "x:gb", ["British Raj", "India"]] },
+    { y: 1485, y1: 1905, f: { "Brunei": "h:bn_y" } }, // amarela lisa até 1906
     { y: 1906, f: { "Brunei": "h:bn06" } },
-    { y: 1500, y1: 1904, r: { "Korea": "Império Coreano" }, f: { "Korea": "x:kr" }, o: { "Korea": null } },
+    { y: 1485, y1: 1904, r: { "Korea": "Império Coreano" }, f: { "Korea": "x:kr" }, o: { "Korea": null } },
     { y: 1905, y1: 1909, r: { "Korea": "Império Coreano (protetorado japonês)" }, f: { "Korea": "x:kr" }, o: { "Korea": null } }, // nov/1905
     { y: 1910, r: { "Korea": "Coreia (Japão)" }, f: { "Korea": "x:jp" }, o: { "Korea": "Japão" } }, // 29/ago/1910
     { y: 1720, y1: 1910, /*fixo*/ m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Mongolia", "Tibet"]] }, // zungares expulsos do Tibete em 1720
@@ -185,17 +185,17 @@ export const EVENTS = {
     { y: 1646, /*fixo*/ m: [null, null, ["Manchu Empire", "CN Fujian"]] }, // Fuzhou em 17/out/1646
     { y: 1650, /*fixo*/ m: [null, null, ["Manchu Empire", "CN Hubei", "CN Jiangxi", "CN Guangdong"]] }, // Huguang, Jiangxi e Cantão retomados em 1649–1650 (Cantão em 24/nov/1650)
     { y: 1758, y1: 1910, m: [null, null, ["Manchu Empire", "Tuva"]] }, // Tuva sob os Qing de 1758 a 1911
-    { y: 1500, y1: 1757, m: [null, null, ["Xinjiang", "Tuva"]] }, // canatos Khotgoid e Zungar (1634–1758)
+    { y: 1485, y1: 1757, m: [null, null, ["Xinjiang", "Tuva"]] }, // canatos Khotgoid e Zungar (1634–1758)
     { y: 1911, y1: 1911, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Tibet", "Tuva"]] },
     { y: 1911, r: { "Mongolia": "Mongólia (Canato de Bogd)" }, f: { "Mongolia": "h:mn_bogd" }, o: { "Mongolia": null } }, // dez/1911
     { y: 1912, r: { "Manchu Empire": "República da China", "Tibet": "Tibete", "Tuva": null }, f: { "Manchu Empire": "h:cn_5", "Tibet": "blank" }, o: { "Manchu Empire": null, "Tibet": null } },
-    { y: 1500, m: ["Império Russo", "x:ru", ["Russian Empire", "central Asian khanates"]] },
+    { y: 1485, m: ["Império Russo", "x:ru", ["Russian Empire", "central Asian khanates"]] },
     // Oriente Médio
     { y: 1821, y1: 1831, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Egyptian Syria", "Lebanon", "Hasa", "Albania", "Kosovo and Macedonia", "Ottoman Sandzak", "Ottoman Macedonia", "Epirus", "Western Thrace", "East Thrace", "Aegean Islands", "_null_159", "Asir"]] },
     { y: 1818, y1: 1820, m: ["Império Otomano", "blank", ["Ottoman Empire", "Egyptian Syria", "Lebanon", "Hasa", "Albania", "Kosovo and Macedonia", "Ottoman Sandzak", "Ottoman Macedonia", "Epirus", "Western Thrace", "East Thrace", "Aegean Islands", "_null_159", "Asir", "Greece"]] }, // Hasa tomada por Ibrahim Paxá após a queda de Diriyah (1818)
     { y: 1523, y1: 1817, /*fixo*/ m: ["Império Otomano", "blank", ["Ottoman Empire", "Egyptian Syria", "Lebanon", "Albania", "Kosovo and Macedonia", "Ottoman Sandzak", "Ottoman Macedonia", "Epirus", "Western Thrace", "East Thrace", "Aegean Islands", "_null_159", "Asir", "Greece"]] }, // Síria, Hejaz e Creta com o Egito até 1840
     ...perYear(1517, 1522, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Egyptian Syria", "Lebanon", "Albania", "Kosovo and Macedonia", "Ottoman Sandzak", "Ottoman Macedonia", "Epirus", "Western Thrace", "East Thrace", "Aegean Islands", "Asir", "Greece"]] }), /*fixo*/ // Rodes rende-se em 20/dez/1522; Cavaleiros partem em 1/jan/1523
-    ...perYear(1500, 1516, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Albania", "Kosovo and Macedonia", "Ottoman Sandzak", "Ottoman Macedonia", "Epirus", "Western Thrace", "East Thrace", "Aegean Islands", "Asir", "Greece"]] }), /*fixo*/ // Síria e Egito mamelucos até 1516–1517
+    ...perYear(1490, 1516, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Albania", "Kosovo and Macedonia", "Ottoman Sandzak", "Ottoman Macedonia", "Epirus", "Western Thrace", "East Thrace", "Aegean Islands", "Asir", "Greece"]] }), /*fixo*/ // Síria e Egito mamelucos até 1516–1517
     { y: 1832, y1: 1834, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Hasa", "Albania", "Kosovo and Macedonia", "Ottoman Sandzak", "Ottoman Macedonia", "Epirus", "Western Thrace", "East Thrace", "Aegean Islands", "_null_159", "Asir"]] }, // Síria, Hejaz e Creta com o Egito até 1840
     { y: 1835, y1: 1839, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Hasa", "Libya", "Albania", "Kosovo and Macedonia", "Ottoman Sandzak", "Ottoman Macedonia", "Epirus", "Western Thrace", "East Thrace", "Aegean Islands", "_null_159", "Asir"]] }, // Síria, Hejaz e Creta com o Egito até 1840
     { y: 1840, y1: 1910, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Egyptian Syria", "Lebanon", "Hejaz", "Hasa", "Libya", "Albania", "Kosovo and Macedonia", "Ottoman Sandzak", "Ottoman Macedonia", "Epirus", "Western Thrace", "East Thrace", "Aegean Islands", "_null_159", "Asir"]] },
@@ -207,27 +207,27 @@ export const EVENTS = {
     { y: 1902, y1: 1903, r: { "Riyadh": "Emirado de Riad" }, f: { "Riyadh": "x:sa" } },
     { y: 1904, r: { "Hail": "Emirado de Jabal Shammar" }, f: { "Hail": "blank" } },
     { y: 1904, m: ["Emirado de Riad", "x:sa", ["Riyadh", "Qassim"]] }, // Qassim em 1904–1906
-    { y: 1500, r: { "Arabia": null, "Kuwait": "Kuwait", "Bahrain": "Bahrein (protetorado britânico)", "Qatar": "Catar", "Trucial Oman": "Estados da Trégua (protetorado britânico)",
+    { y: 1485, r: { "Arabia": null, "Kuwait": "Kuwait", "Bahrain": "Bahrein (protetorado britânico)", "Qatar": "Catar", "Trucial Oman": "Estados da Trégua (protetorado britânico)",
       "Oman": "Mascate e Omã", "Aden": "Áden e protetorados (britânicos)", "Cyprus": "Chipre (administração britânica)", "Malta": "Malta", "Gibraltar": "Gibraltar" },
       f: { "Kuwait": "x:tr", "Bahrain": "x:gb", "Qatar": "blank", "Trucial Oman": "h:trucial", "Oman": "h:om_red", "Aden": "x:gb", "Cyprus": "x:gb", "Malta": "x:gb", "Gibraltar": "x:gb" },
       o: { "Kuwait": null, "Qatar": null, "Trucial Oman": null, "Oman": null, "Cyprus": null } },
     // Europa
-    { y: 1500, r: { "Germany": "Império Alemão", "Italy": "Reino da Itália", "Austria Hungary": "Áustria-Hungria", "Faroe Islands": "Ilhas Faroé", "Channel Islands": "Ilhas do Canal",
+    { y: 1485, r: { "Germany": "Império Alemão", "Italy": "Reino da Itália", "Austria Hungary": "Áustria-Hungria", "Faroe Islands": "Ilhas Faroé", "Channel Islands": "Ilhas do Canal",
       "Finland": "Grão-Ducado da Finlândia" },
       f: { "Faroe Islands": "x:dk", "Channel Islands": "x:gb", "Finland": "x:ru" }, o: { "Finland": "Império Russo" } },
-    { y: 1500, m: ["Reino Unido", "x:gb", ["United Kingdom of Great Britain and Ireland", "_null_164", "_null_165", "_null_166", "_null_167", "_null_168", "_null_169", "_null_170", "_null_171", "_null_172", "_null_173", "_null_174", "_null_175", "_null_176", "_null_177", "_null_178", "_null_179", "_null_180", "_null_181", "_null_182", "_null_184"]] },
-    { y: 1500, m: ["Suécia", "x:se", ["Sweden–Norway", "_null_149"]] },
-    { y: 1500, y1: 1904, r: { "Sweden–Norway": "Suécia (em união com a Noruega)", "Norway": "Noruega (em união com a Suécia)" }, f: { "Sweden–Norway": "h:se_union", "Norway": "x:no" }, o: { "Norway": null } }, // Noruega tirou a marca da união da bandeira em 1899; a Suécia manteve até 1905
+    { y: 1485, m: ["Reino Unido", "x:gb", ["United Kingdom of Great Britain and Ireland", "_null_164", "_null_165", "_null_166", "_null_167", "_null_168", "_null_169", "_null_170", "_null_171", "_null_172", "_null_173", "_null_174", "_null_175", "_null_176", "_null_177", "_null_178", "_null_179", "_null_180", "_null_181", "_null_182", "_null_184"]] },
+    { y: 1485, m: ["Suécia", "x:se", ["Sweden–Norway", "_null_149"]] },
+    { y: 1485, y1: 1904, r: { "Sweden–Norway": "Suécia (em união com a Noruega)", "Norway": "Noruega (em união com a Suécia)" }, f: { "Sweden–Norway": "h:se_union", "Norway": "x:no" }, o: { "Norway": null } }, // Noruega tirou a marca da união da bandeira em 1899; a Suécia manteve até 1905
     { y: 1905, r: { "Sweden–Norway": "Suécia", "Norway": "Noruega" }, f: { "Sweden–Norway": "x:se", "Norway": "x:no" }, o: { "Norway": null } }, // jun–out/1905
     { y: 1808, y1: 1909, r: { "Portugal": "Reino de Portugal" } },
-    { y: 1500, y1: 1909, f: { "Portuguese East Africa": "h:pt_mon", "Portuguese Guinea": "h:pt_mon", "Cape Verde": "h:pt_mon", "Sao Tome": "h:pt_mon", "Goa": "h:pt_mon", "Macau": "h:pt_mon", "Portuguese Timor": "h:pt_mon", "Angola": "h:pt_mon" } },
+    { y: 1485, y1: 1909, f: { "Portuguese East Africa": "h:pt_mon", "Portuguese Guinea": "h:pt_mon", "Cape Verde": "h:pt_mon", "Sao Tome": "h:pt_mon", "Goa": "h:pt_mon", "Macau": "h:pt_mon", "Portuguese Timor": "h:pt_mon", "Angola": "h:pt_mon" } },
     { y: 1910, f: { "Portuguese East Africa": "x:pt", "Portuguese Guinea": "x:pt", "Cape Verde": "x:pt", "Sao Tome": "x:pt", "Goa": "x:pt", "Macau": "x:pt", "Portuguese Timor": "x:pt", "Angola": "x:pt" } }, // república em 5/out/1910
     { y: 1878, y1: 1907, r: { "Bosnia-Herzegovina": "Bósnia e Herzegovina (ocupação austro-húngara)" }, f: { "Bosnia-Herzegovina": "h:at_hab" }, o: { "Bosnia-Herzegovina": null } },
     { y: 1908, m: ["Áustria-Hungria", "h:at_hab", ["Austria Hungary", "Bosnia-Herzegovina", "_null_154"]] }, // anexada em out/1908
-    { y: 1500, y1: 1907, m: ["Áustria-Hungria", "h:at_hab", ["Austria Hungary", "_null_154"]] },
+    { y: 1485, y1: 1907, m: ["Áustria-Hungria", "h:at_hab", ["Austria Hungary", "_null_154"]] },
     { y: 1878, y1: 1907, r: { "Bulgaria": "Principado da Bulgária" }, f: { "Bulgaria": "x:bg" } },
     { y: 1908, r: { "Bulgaria": "Bulgária" }, f: { "Bulgaria": "x:bg" } }, // independência em 5/out/1908
-    { y: 1500, y1: 1909, r: { "Montenegro": "Principado de Montenegro" } },
+    { y: 1485, y1: 1909, r: { "Montenegro": "Principado de Montenegro" } },
     { y: 1910, r: { "Montenegro": "Reino de Montenegro" } }, // 28/ago/1910
     { y: 1898, y1: 1911, /*fixo*/ r: { "Crete": "Estado de Creta" }, f: { "Crete": "h:cretan" }, o: { "Crete": null } },
     // Guerra dos Bálcãs (31/dez/1912)
@@ -240,7 +240,7 @@ export const EVENTS = {
     // África
     { y: 1911, y1: 1911, r: { "Libya": "Líbia (guerra ítalo-turca)" }, f: { "Libya": "blank" }, o: { "Libya": null } },
     { y: 1912, r: { "Libya": "Líbia Italiana" }, f: { "Libya": "h:it_sav" }, o: { "Libya": "Itália" } }, // Tratado de Ouchy, out/1912
-    { y: 1500, r: { "Egypt": "Quedivato do Egito", "Darfur": "Sultanato de Darfur", "Anglo-Egyptian Sudan": "Sudão Anglo-Egípcio", "Algeria": "Argélia", "Tunisia": "Tunísia",
+    { y: 1485, r: { "Egypt": "Quedivato do Egito", "Darfur": "Sultanato de Darfur", "Anglo-Egyptian Sudan": "Sudão Anglo-Egípcio", "Algeria": "Argélia", "Tunisia": "Tunísia",
       "Rio de Oro": "Rio de Oro (Espanha)", "French West Africa": "África Ocidental Francesa", "Gambia": "Gâmbia", "Sierra Leone": "Serra Leoa", "Portuguese Guinea": "Guiné Portuguesa",
       "Liberia": "Libéria", "Gold Coast": "Costa do Ouro", "Togoland": "Togolândia", "Nigeria": "Nigéria", "Kamerun": "Camarões Alemão", "Spanish Guinea": "Guiné Espanhola",
       "Angola": "Angola", "German South-West Africa": "Sudoeste Africano Alemão", "Cape Colony": "Colônia do Cabo", "Natal": "Colônia de Natal", "Basutoland": "Basutolândia",
@@ -261,95 +261,95 @@ export const EVENTS = {
       "Rhodesia": "Reino Unido", "Portuguese East Africa": "Portugal", "German East Africa": "Império Alemão", "British East Africa": "Reino Unido", "Uganda": "Reino Unido",
       "Zanzibar": "Reino Unido", "Ethiopia": null, "Eritrea": "Itália", "French Somaliland": "França", "British Somaliland": "Reino Unido", "Italian Somaliland": "Itália",
       "Madagascar": "França", "Comoros": "França", "Reunion": "França", "Mauritius": "Reino Unido", "Seychelles": "Reino Unido", "Cape Verde": "Portugal", "Sao Tome": "Portugal" } },
-    { y: 1500, y1: 1911, r: { "Morocco": "Marrocos" }, f: { "Morocco": "h:ma_red" }, o: { "Morocco": null } },
+    { y: 1485, y1: 1911, r: { "Morocco": "Marrocos" }, f: { "Morocco": "h:ma_red" }, o: { "Morocco": null } },
     { y: 1912, r: { "Morocco": "Marrocos (protetorado francês)" }, f: { "Morocco": "x:fr" }, o: { "Morocco": "França" } }, // 30/mar/1912
-    { y: 1500, y1: 1902, r: { "Mauritania": null } }, // emirados mouros (pendente)
+    { y: 1485, y1: 1902, r: { "Mauritania": null } }, // emirados mouros (pendente)
     { y: 1903, m: ["África Ocidental Francesa", "x:fr", ["French West Africa", "Mauritania"]] }, // protetorado em 1903
-    { y: 1500, y1: 1909, r: { "French Congo": "Congo Francês" }, f: { "French Congo": "x:fr" }, o: { "French Congo": "França" } },
+    { y: 1485, y1: 1909, r: { "French Congo": "Congo Francês" }, f: { "French Congo": "x:fr" }, o: { "French Congo": "França" } },
     { y: 1910, r: { "French Congo": "África Equatorial Francesa" }, f: { "French Congo": "x:fr" }, o: { "French Congo": "França" } }, // jan/1910
-    { y: 1500, y1: 1907, r: { "Congo Free State": "Estado Livre do Congo" }, f: { "Congo Free State": "h:cfs" }, o: { "Congo Free State": null } },
+    { y: 1485, y1: 1907, r: { "Congo Free State": "Estado Livre do Congo" }, f: { "Congo Free State": "h:cfs" }, o: { "Congo Free State": null } },
     { y: 1908, r: { "Congo Free State": "Congo Belga" }, f: { "Congo Free State": "x:be" }, o: { "Congo Free State": "Bélgica" } }, // 15/nov/1908
-    { y: 1500, y1: 1901, r: { "Transvaal": "Transvaal (Guerra dos Bôeres)", "Orange Free State": "Estado Livre de Orange (Guerra dos Bôeres)" },
+    { y: 1485, y1: 1901, r: { "Transvaal": "Transvaal (Guerra dos Bôeres)", "Orange Free State": "Estado Livre de Orange (Guerra dos Bôeres)" },
       f: { "Transvaal": "blank", "Orange Free State": "blank" }, o: { "Transvaal": null, "Orange Free State": null } }, // anexados em 1900; guerra até 31/mai/1902
     { y: 1902, y1: 1909, r: { "Transvaal": "Colônia do Transvaal", "Orange Free State": "Colônia do Rio Orange" }, f: { "Transvaal": "x:gb", "Orange Free State": "x:gb" },
       o: { "Transvaal": "Reino Unido", "Orange Free State": "Reino Unido" } },
     { y: 1910, m: ["União Sul-Africana", "h:za_red", ["Cape Colony", "Natal", "Zululand", "Transvaal", "Orange Free State"]], o: { "Cape Colony": null } }, // 31/mai/1910
-    { y: 1500, y1: 1902, r: { "Swaziland": "Suazilândia" }, f: { "Swaziland": "blank" }, o: { "Swaziland": null } },
+    { y: 1485, y1: 1902, r: { "Swaziland": "Suazilândia" }, f: { "Swaziland": "blank" }, o: { "Swaziland": null } },
     { y: 1903, r: { "Swaziland": "Suazilândia (protetorado britânico)" }, f: { "Swaziland": "x:gb" }, o: { "Swaziland": null } },
-    { y: 1500, y1: 1906, r: { "British Central Africa": "África Central Britânica" }, f: { "British Central Africa": "x:gb" }, o: { "British Central Africa": "Reino Unido" } },
+    { y: 1485, y1: 1906, r: { "British Central Africa": "África Central Britânica" }, f: { "British Central Africa": "x:gb" }, o: { "British Central Africa": "Reino Unido" } },
     { y: 1907, r: { "British Central Africa": "Niassalândia" }, f: { "British Central Africa": "x:gb" }, o: { "British Central Africa": "Reino Unido" } },
     // revisão 1885–1899 (situação em 31/dez; fontes: Wikipedia)
     { y: 1894, y1: 1897, r: { "Kingdom of Hawaii": "República do Havaí" }, f: { "Kingdom of Hawaii": "h:hawaii" }, o: { "Kingdom of Hawaii": null } }, // 4/jul/1894 a 12/ago/1898; manteve a bandeira do reino
-    { y: 1500, y1: 1897, r: { "Guam": "Guam (Espanha)", "Puerto Rico": "Porto Rico (Espanha)", "Cuba": "Cuba (Espanha)", "Philippines": "Filipinas (Espanha)" },
+    { y: 1485, y1: 1897, r: { "Guam": "Guam (Espanha)", "Puerto Rico": "Porto Rico (Espanha)", "Cuba": "Cuba (Espanha)", "Philippines": "Filipinas (Espanha)" },
       f: { "Guam": "x:es", "Puerto Rico": "x:es", "Cuba": "x:es", "Philippines": "x:es" }, o: { "Guam": "Espanha", "Puerto Rico": "Espanha", "Cuba": "Espanha", "Philippines": "Espanha" } },
     { y: 1898, y1: 1898, r: { "Puerto Rico": "Porto Rico (ocupação americana)", "Cuba": "Cuba (Guerra Hispano-Americana)", "Philippines": "Filipinas (Revolução Filipina)" },
       f: { "Puerto Rico": "h:us45", "Cuba": "blank", "Philippines": "blank" }, o: { "Puerto Rico": null, "Cuba": null, "Philippines": null } }, // Tratado de Paris assinado em 10/dez/1898, em vigor em 11/abr/1899
     { y: 1898, y1: 1898, r: { "Guam": "Guam (ocupação americana)" }, o: { "Guam": null } }, // rendeu-se em 20/jun/1898
-    { y: 1500, y1: 1898, r: { "Micronesia": "Carolinas e Marianas (Espanha)" }, f: { "Micronesia": "x:es" }, o: { "Micronesia": "Espanha" } }, // vendidas à Alemanha pelo tratado de 12/fev/1899
-    { y: 1500, y1: 1899, m: ["Samoa", "blank", ["Samoa", "American Samoa"]], o: { "Samoa": null } }, // partilha só em 1900
-    { y: 1500, y1: 1899, r: { "Niue": "Niue", "Tonga": "Reino de Tonga" }, f: { "Niue": "blank", "Tonga": "x:to" }, o: { "Niue": null, "Tonga": null } }, // protetorados britânicos em 1900
-    { y: 1500, y1: 1896, r: { "Korea": "Reino de Joseon" }, f: { "Korea": "x:kr" }, o: { "Korea": null } }, // Império Coreano em 13/out/1897; taegukgi oficial desde 1883
-    { y: 1500, y1: 1897, f: { "Norway": "h:no_union", "Sweden–Norway": "h:se_union" } },
+    { y: 1485, y1: 1898, r: { "Micronesia": "Carolinas e Marianas (Espanha)" }, f: { "Micronesia": "x:es" }, o: { "Micronesia": "Espanha" } }, // vendidas à Alemanha pelo tratado de 12/fev/1899
+    { y: 1485, y1: 1899, m: ["Samoa", "blank", ["Samoa", "American Samoa"]], o: { "Samoa": null } }, // partilha só em 1900
+    { y: 1485, y1: 1899, r: { "Niue": "Niue", "Tonga": "Reino de Tonga" }, f: { "Niue": "blank", "Tonga": "x:to" }, o: { "Niue": null, "Tonga": null } }, // protetorados britânicos em 1900
+    { y: 1485, y1: 1896, r: { "Korea": "Reino de Joseon" }, f: { "Korea": "x:kr" }, o: { "Korea": null } }, // Império Coreano em 13/out/1897; taegukgi oficial desde 1883
+    { y: 1485, y1: 1897, f: { "Norway": "h:no_union", "Sweden–Norway": "h:se_union" } },
     { y: 1898, y1: 1898, f: { "Norway": "h:no_union" } }, // lei de 10/dez/1898; a bandeira "pura" foi hasteada a partir de 1899
     { y: 1840, y1: 1896, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Crete"]] },
     { y: 1897, y1: 1897, r: { "Crete": "Creta (ocupação das Grandes Potências)" }, f: { "Crete": "blank" }, o: { "Crete": null } }, // revolta e ocupação em mar–abr/1897; Estado de Creta proclamado em 9/dez/1898
     { y: 1883, y1: 1897, m: ["Estado Mahdista", "blank", ["Anglo-Egyptian Sudan", "Darfur"]], o: { "Anglo-Egyptian Sudan": null } },
     { y: 1898, y1: 1898, r: { "Anglo-Egyptian Sudan": "Sudão (ocupação anglo-egípcia)" }, f: { "Anglo-Egyptian Sudan": "x:gb" }, o: { "Anglo-Egyptian Sudan": null } }, // Omdurman 2/set/1898; convenção de 18/jan/1899
-    { y: 1500, y1: 1896, f: { "Ethiopia": "blank" } }, // primeira bandeira oficial em 11/out/1897
+    { y: 1485, y1: 1896, f: { "Ethiopia": "blank" } }, // primeira bandeira oficial em 11/out/1897
     { y: 1895, y1: 1895, r: { "Madagascar": "Reino Merina (invasão francesa)" }, f: { "Madagascar": "blank" }, o: { "Madagascar": null } },
     { y: 1896, y1: 1896, r: { "Madagascar": "Madagascar (protetorado francês)" } }, // anexada em 1897
-    { y: 1500, y1: 1899, r: { "Nigeria": "Costa do Níger, Lagos e Cia. Real do Níger (britânicos)" } }, // protetorados da Nigéria em 1/jan/1900
-    { y: 1500, y1: 1899, r: { "Transvaal": "Transvaal (República Sul-Africana)", "Orange Free State": "Estado Livre de Orange" },
+    { y: 1485, y1: 1899, r: { "Nigeria": "Costa do Níger, Lagos e Cia. Real do Níger (britânicos)" } }, // protetorados da Nigéria em 1/jan/1900
+    { y: 1485, y1: 1899, r: { "Transvaal": "Transvaal (República Sul-Africana)", "Orange Free State": "Estado Livre de Orange" },
       f: { "Transvaal": "h:transvaal", "Orange Free State": "h:ofs" }, o: { "Transvaal": null, "Orange Free State": null } }, // Guerra dos Bôeres desde 11/out/1899; anexados em 1900
     { y: 1894, y1: 1898, r: { "Swaziland": "Suazilândia (protetorado do Transvaal)" }, f: { "Swaziland": "blank" }, o: { "Swaziland": "Transvaal (República Sul-Africana)" } }, // convenção de 1894 até out/1899
-    { y: 1500, y1: 1892, r: { "Kingdom of Hawaii": "Reino do Havaí" }, f: { "Kingdom of Hawaii": "h:hawaii" }, o: { "Kingdom of Hawaii": null } },
+    { y: 1485, y1: 1892, r: { "Kingdom of Hawaii": "Reino do Havaí" }, f: { "Kingdom of Hawaii": "h:hawaii" }, o: { "Kingdom of Hawaii": null } },
     { y: 1893, y1: 1893, r: { "Kingdom of Hawaii": "Havaí (Governo Provisório)" }, f: { "Kingdom of Hawaii": "h:hawaii" }, o: { "Kingdom of Hawaii": null } }, // monarquia derrubada em 17/jan/1893
-    { y: 1500, y1: 1894, r: { "Madagascar": "Reino Merina (protetorado reivindicado pela França)" }, f: { "Madagascar": "blank" }, o: { "Madagascar": null } }, // protetorado desde 1882 (Wikipedia); monarquia até 1897
-    { y: 1500, y1: 1893, r: { "Swaziland": "Suazilândia" }, f: { "Swaziland": "blank" }, o: { "Swaziland": null } }, // convenção de dez/1894 a pôs sob o Transvaal
+    { y: 1485, y1: 1894, r: { "Madagascar": "Reino Merina (protetorado reivindicado pela França)" }, f: { "Madagascar": "blank" }, o: { "Madagascar": null } }, // protetorado desde 1882 (Wikipedia); monarquia até 1897
+    { y: 1485, y1: 1893, r: { "Swaziland": "Suazilândia" }, f: { "Swaziland": "blank" }, o: { "Swaziland": null } }, // convenção de dez/1894 a pôs sob o Transvaal
     { y: 1683, y1: 1894, /*fixo*/ m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Taiwan"]] }, // Tungning rende-se em 5/set/1683 // Tratado de Shimonoseki, 17/abr/1895
     { y: 1891, y1: 1892, r: { "Uganda": "Uganda (Cia. Imperial Britânica da África Oriental)" } }, // tratado de 1891 // a companhia saiu em 31/mar/1893; protetorado em 18/jun/1894
-    { y: 1500, y1: 1894, r: { "British East Africa": "África Oriental Britânica (Cia. Imperial Britânica da África Oriental)" } }, // protetorado em 1/jul/1895
-    { y: 1500, y1: 1894, r: { "French West Africa": "Colônias francesas da África Ocidental" } }, // federação criada em 27/out/1895
-    { y: 1500, y1: 1894, r: { "Rhodesia": "Territórios da Companhia Britânica da África do Sul" } }, // nome Rodésia adotado em 1895
-    { y: 1500, y1: 1898, r: { "Marshall Islands": "Ilhas Marshall (protetorado alemão)" }, f: { "Marshall Islands": "h:de_emp" }, o: { "Marshall Islands": "Império Alemão" } }, // 1885
+    { y: 1485, y1: 1894, r: { "British East Africa": "África Oriental Britânica (Cia. Imperial Britânica da África Oriental)" } }, // protetorado em 1/jul/1895
+    { y: 1485, y1: 1894, r: { "French West Africa": "Colônias francesas da África Ocidental" } }, // federação criada em 27/out/1895
+    { y: 1485, y1: 1894, r: { "Rhodesia": "Territórios da Companhia Britânica da África do Sul" } }, // nome Rodésia adotado em 1895
+    { y: 1485, y1: 1898, r: { "Marshall Islands": "Ilhas Marshall (protetorado alemão)" }, f: { "Marshall Islands": "h:de_emp" }, o: { "Marshall Islands": "Império Alemão" } }, // 1885
     { y: 1899, m: ["Micronésia Alemã", "h:de_emp", ["Micronesia", "Marshall Islands"]] },
     // Axanti: império até a ocupação britânica de jan/1896, protetorado em 1897, colônia anexada à Costa do Ouro em 1/jan/1902
     { y: 1701, y1: 1895, /*fixo*/ r: { "Ashanti": "Império Axanti" }, f: { "Ashanti": "blank" }, o: { "Ashanti": null } },
     { y: 1896, y1: 1901, r: { "Ashanti": "Axanti (protetorado britânico)" }, f: { "Ashanti": "x:gb" }, o: { "Ashanti": "Reino Unido" } },
     { y: 1902, m: ["Costa do Ouro", "x:gb", ["Gold Coast", "Gold Coast GB", "Ashanti"]] },
     // 1885–1889
-    { y: 1500, y1: 1890, r: { "Hail": "Emirado de Jabal Shammar", "Riyadh": "Emirado de Négede", "Qassim": null }, f: { "Hail": "blank", "Riyadh": "blank" }, o: { "Hail": null, "Riyadh": null } },
-    { y: 1500, y1: 1888, r: { "Kingdom of Brazil": "Império do Brasil" }, f: { "Kingdom of Brazil": "h:br_emp" }, o: { "Kingdom of Brazil": null } }, // república em 15/nov/1889, bandeira em 19/nov/1889
+    { y: 1485, y1: 1890, r: { "Hail": "Emirado de Jabal Shammar", "Riyadh": "Emirado de Négede", "Qassim": null }, f: { "Hail": "blank", "Riyadh": "blank" }, o: { "Hail": null, "Riyadh": null } },
+    { y: 1485, y1: 1888, r: { "Kingdom of Brazil": "Império do Brasil" }, f: { "Kingdom of Brazil": "h:br_emp" }, o: { "Kingdom of Brazil": null } }, // república em 15/nov/1889, bandeira em 19/nov/1889
     { y: 1861, y1: 1885, r: { "Colombia": "Estados Unidos da Colômbia" } }, // República da Colômbia em 1886
-    { y: 1500, y1: 1886, r: { "French Indochina": "Cochinchina, Aname, Tonquim e Camboja (França)" } }, // União Indochinesa em 17/out/1887
-    { y: 1500, y1: 1886, r: { "Wallis and Futuna Islands": "Wallis e Futuna" }, f: { "Wallis and Futuna Islands": "blank" }, o: { "Wallis and Futuna Islands": null } }, // protetorado em 5/abr/1887
-    { y: 1500, y1: 1889, r: { "Zanzibar": "Sultanato de Zanzibar" }, f: { "Zanzibar": "h:zanzibar" }, o: { "Zanzibar": null } }, // protetorado britânico em 1890
-    { y: 1500, y1: 1889, r: { "Eritrea": "Possessões italianas do Mar Vermelho" } }, // colônia da Eritreia em 1/jan/1890
-    { y: 1500, y1: 1888, r: { "Italian Somaliland": null } }, // protetorados de 1889
-    { y: 1500, y1: 1888, r: { "Rhodesia": null, "British Central Africa": null } }, // carta da BSAC em 20/dez/1889; protetorado proclamado em 1889
-    { y: 1500, y1: 1887, r: { "British East Africa": null } }, // carta da IBEAC em 6/set/1888
-    { y: 1500, y1: 1890, r: { "Uganda": null } },
-    { y: 1500, y1: 1892, r: { "Nigeria": "Rios do Petróleo, Lagos e Cia. do Níger (britânicos)" } }, // Costa do Níger desde 12/mai/1893
+    { y: 1485, y1: 1886, r: { "French Indochina": "Cochinchina, Aname, Tonquim e Camboja (França)" } }, // União Indochinesa em 17/out/1887
+    { y: 1485, y1: 1886, r: { "Wallis and Futuna Islands": "Wallis e Futuna" }, f: { "Wallis and Futuna Islands": "blank" }, o: { "Wallis and Futuna Islands": null } }, // protetorado em 5/abr/1887
+    { y: 1485, y1: 1889, r: { "Zanzibar": "Sultanato de Zanzibar" }, f: { "Zanzibar": "h:zanzibar" }, o: { "Zanzibar": null } }, // protetorado britânico em 1890
+    { y: 1485, y1: 1889, r: { "Eritrea": "Possessões italianas do Mar Vermelho" } }, // colônia da Eritreia em 1/jan/1890
+    { y: 1485, y1: 1888, r: { "Italian Somaliland": null } }, // protetorados de 1889
+    { y: 1485, y1: 1888, r: { "Rhodesia": null, "British Central Africa": null } }, // carta da BSAC em 20/dez/1889; protetorado proclamado em 1889
+    { y: 1485, y1: 1887, r: { "British East Africa": null } }, // carta da IBEAC em 6/set/1888
+    { y: 1485, y1: 1890, r: { "Uganda": null } },
+    { y: 1485, y1: 1892, r: { "Nigeria": "Rios do Petróleo, Lagos e Cia. do Níger (britânicos)" } }, // Costa do Níger desde 12/mai/1893
     // revisão 1880–1884 (mapa de 1900; situação em 31/dez; fontes: Wikipedia). Unidades novas em hist-overrides.json.
     // Bálcãs
     { y: 1878, y1: 1884, r: { "Eastern Rumelia": "Rumélia Oriental (província autônoma otomana)" }, f: { "Eastern Rumelia": "blank" }, o: { "Eastern Rumelia": "Império Otomano" } }, // Tratado de Berlim, 13/jul/1878
     { y: 1885, y1: 1907, m: ["Principado da Bulgária", "x:bg", ["Bulgaria", "Eastern Rumelia"]] }, // união de fato em 6/set/1885
     { y: 1908, m: ["Bulgária", "x:bg", ["Bulgaria", "Eastern Rumelia"]] },
-    { y: 1500, y1: 1880, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Thessaly"]] }, // Convenção de Constantinopla, 2/jul/1881
+    { y: 1485, y1: 1880, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Thessaly"]] }, // Convenção de Constantinopla, 2/jul/1881
     { y: 1881, m: ["Grécia", "h:gr_cross", ["Greece", "Thessaly"]] },
     // Birmânia
-    { y: 1500, y1: 1884, r: { "Upper Burma": "Reino da Birmânia", "Shan States": "Estados Shan" }, f: { "Upper Burma": "blank", "Shan States": "blank" }, o: { "Upper Burma": null, "Shan States": null } }, // anexado em 29/nov/1885
+    { y: 1485, y1: 1884, r: { "Upper Burma": "Reino da Birmânia", "Shan States": "Estados Shan" }, f: { "Upper Burma": "blank", "Shan States": "blank" }, o: { "Upper Burma": null, "Shan States": null } }, // anexado em 29/nov/1885
     { y: 1885, m: ["Índia Britânica", "x:gb", ["British Raj", "Upper Burma", "Shan States"]] },
-    { y: 1500, y1: 1891, r: { "Karenni": "Estados Karenni" }, f: { "Karenni": "blank" }, o: { "Karenni": null } }, // independência garantida em 1875; tributários da Birmânia Britânica em 1892
+    { y: 1485, y1: 1891, r: { "Karenni": "Estados Karenni" }, f: { "Karenni": "blank" }, o: { "Karenni": null } }, // independência garantida em 1875; tributários da Birmânia Britânica em 1892
     { y: 1892, m: ["Índia Britânica", "x:gb", ["British Raj", "Karenni"]] },
     // Indochina e Sião
-    { y: 1500, y1: 1882, r: { "French Indochina": "Đại Nam (Vietnã)" }, f: { "French Indochina": "blank" }, o: { "French Indochina": null } },
+    { y: 1485, y1: 1882, r: { "French Indochina": "Đại Nam (Vietnã)" }, f: { "French Indochina": "blank" }, o: { "French Indochina": null } },
     { y: 1883, y1: 1884, r: { "French Indochina": "Aname e Tonquim (protetorado francês)" }, f: { "French Indochina": "x:fr" }, o: { "French Indochina": "França" } }, // Tratado Harmand, 25/ago/1883; Patenôtre, 6/jun/1884
-    { y: 1500, y1: 1884, r: { "Cochinchina": "Cochinchina Francesa", "Cambodia": "Camboja (protetorado francês)" }, f: { "Cochinchina": "x:fr", "Cambodia": "x:fr" }, o: { "Cochinchina": "França", "Cambodia": "França" } },
+    { y: 1485, y1: 1884, r: { "Cochinchina": "Cochinchina Francesa", "Cambodia": "Camboja (protetorado francês)" }, f: { "Cochinchina": "x:fr", "Cambodia": "x:fr" }, o: { "Cochinchina": "França", "Cambodia": "França" } },
     { y: 1885, y1: 1886, m: ["Cochinchina, Aname, Tonquim e Camboja (França)", "x:fr", ["French Indochina", "Cochinchina", "Western Cochinchina", "Cambodia"]], o: { "French Indochina": "França" } },
     { y: 1887, m: ["Indochina Francesa", "x:fr", ["French Indochina", "Cochinchina", "Western Cochinchina", "Cambodia"]], o: { "French Indochina": "França" } },
-    { y: 1500, y1: 1778, m: ["Sião", "h:th_el", ["Rattanakosin Kingdom", "Inner Cambodia"]] }, // Vientiane, Luang Prabang e Champasak vassalos do Sião só em 1778–1779
-    { y: 1500, y1: 1778, m: ["Reinos laosianos (Luang Prabang, Vientiane e Champasak)", "blank", ["Siamese Laos", "Sainyabuli"]] }, // Vientiane e Luang Prabang vassalos da Birmânia desde 1765; Champasak independente
+    { y: 1485, y1: 1778, m: ["Sião", "h:th_el", ["Rattanakosin Kingdom", "Inner Cambodia"]] }, // Vientiane, Luang Prabang e Champasak vassalos do Sião só em 1778–1779
+    { y: 1485, y1: 1778, m: ["Reinos laosianos (Luang Prabang, Vientiane e Champasak)", "blank", ["Siamese Laos", "Sainyabuli"]] }, // Vientiane e Luang Prabang vassalos da Birmânia desde 1765; Champasak independente
     { y: 1779, y1: 1892, m: ["Sião", "h:th_el", ["Rattanakosin Kingdom", "Siamese Laos", "Sainyabuli", "Inner Cambodia"]] }, // margem leste do Mekong cedida em 3/out/1893
     { y: 1893, m: ["Indochina Francesa", "x:fr", ["French Indochina", "Siamese Laos"]] },
     { y: 1893, y1: 1903, m: ["Sião", "h:th_el", ["Rattanakosin Kingdom", "Sainyabuli", "Inner Cambodia"]] }, // margem direita cedida pelo tratado de 13/fev/1904
@@ -357,87 +357,87 @@ export const EVENTS = {
     { y: 1904, y1: 1906, m: ["Sião", "h:th_el", ["Rattanakosin Kingdom", "Inner Cambodia"]] }, // Battambang, Siem Reap e Sisophon cedidas em 23/mar/1907
     { y: 1907, m: ["Indochina Francesa", "x:fr", ["French Indochina", "Inner Cambodia"]] },
     // Malásia e Bornéu
-    { y: 1500, y1: 1908, r: { "Siamese Malay States": "Kedah, Perlis, Kelantan e Terengganu (tributários do Sião)" }, f: { "Siamese Malay States": "blank" }, o: { "Siamese Malay States": null } }, // Tratado Anglo-Siamês, 10/mar/1909
+    { y: 1485, y1: 1908, r: { "Siamese Malay States": "Kedah, Perlis, Kelantan e Terengganu (tributários do Sião)" }, f: { "Siamese Malay States": "blank" }, o: { "Siamese Malay States": null } }, // Tratado Anglo-Siamês, 10/mar/1909
     { y: 1909, m: ["Malaia", "x:gb", ["Malaya", "Siamese Malay States"]] },
-    { y: 1500, y1: 1887, r: { "Sarawak": "Raj de Sarawak" }, f: { "Sarawak": "blank" }, o: { "Sarawak": null } },
+    { y: 1485, y1: 1887, r: { "Sarawak": "Raj de Sarawak" }, f: { "Sarawak": "blank" }, o: { "Sarawak": null } },
     { y: 1888, r: { "Sarawak": "Sarawak (protetorado britânico)" }, f: { "Sarawak": "blank" }, o: { "Sarawak": null } }, // 14/jun/1888
-    { y: 1500, y1: 1880, r: { "North Borneo": null } }, // carta régia de 1/nov/1881
+    { y: 1485, y1: 1880, r: { "North Borneo": null } }, // carta régia de 1/nov/1881
     { y: 1881, y1: 1887, r: { "North Borneo": "Bornéu do Norte (Cia. Britânica de Bornéu do Norte)" }, f: { "North Borneo": "blank" }, o: { "North Borneo": null } },
     { y: 1888, r: { "North Borneo": "Bornéu do Norte (protetorado britânico)" }, f: { "North Borneo": "blank" }, o: { "North Borneo": null } }, // 12/mai/1888
     // Ásia Central
-    { y: 1500, y1: 1880, r: { "Ahal": null } }, // Geok Tepe tomada em 1881
+    { y: 1485, y1: 1880, r: { "Ahal": null } }, // Geok Tepe tomada em 1881
     { y: 1881, m: ["Império Russo", "x:ru", ["Russian Empire", "Ahal"]] },
-    { y: 1500, y1: 1883, r: { "Merv": null } }, // oásis ocupado em 1884
+    { y: 1485, y1: 1883, r: { "Merv": null } }, // oásis ocupado em 1884
     { y: 1884, m: ["Império Russo", "x:ru", ["Russian Empire", "Merv"]] },
-    { y: 1500, y1: 1882, f: { "Korea": "blank" } }, // taegukgi promulgada em 27/jan/1883
+    { y: 1485, y1: 1882, f: { "Korea": "blank" } }, // taegukgi promulgada em 27/jan/1883
     // Guerra do Pacífico
-    { y: 1500, y1: 1883, r: { "Tacna and Arica": "Tacna e Arica (ocupadas pelo Chile)", "Tarapaca": "Tarapacá (ocupada pelo Chile)" }, f: { "Tacna and Arica": "x:cl", "Tarapaca": "x:cl" }, o: { "Tacna and Arica": null, "Tarapaca": null } },
+    { y: 1485, y1: 1883, r: { "Tacna and Arica": "Tacna e Arica (ocupadas pelo Chile)", "Tarapaca": "Tarapacá (ocupada pelo Chile)" }, f: { "Tacna and Arica": "x:cl", "Tarapaca": "x:cl" }, o: { "Tacna and Arica": null, "Tarapaca": null } },
     { y: 1884, r: { "Tacna and Arica": "Tacna e Arica (administração chilena)" }, f: { "Tacna and Arica": "x:cl" }, o: { "Tacna and Arica": null } }, // Tratado de Ancón (20/out/1883, ratificado em 1884); Tacna voltou ao Peru em 1929
     { y: 1884, m: ["Chile", "x:cl", ["Chile", "Tarapaca"]] },
-    { y: 1500, y1: 1883, r: { "Bolivian Litoral": "Litoral boliviano (ocupado pelo Chile)" }, f: { "Bolivian Litoral": "x:cl" }, o: { "Bolivian Litoral": null } },
+    { y: 1485, y1: 1883, r: { "Bolivian Litoral": "Litoral boliviano (ocupado pelo Chile)" }, f: { "Bolivian Litoral": "x:cl" }, o: { "Bolivian Litoral": null } },
     { y: 1884, y1: 1904, r: { "Bolivian Litoral": "Litoral boliviano (administração chilena)" }, f: { "Bolivian Litoral": "x:cl" }, o: { "Bolivian Litoral": null } }, // trégua de Valparaíso, 4/abr/1884; tratado de 20/out/1904, ratificado em 10/mar/1905
     { y: 1905, m: ["Chile", "x:cl", ["Chile", "Bolivian Litoral"]] },
     { y: 1881, y1: 1882, r: { "Lima": "Lima (ocupada pelo Chile)" }, f: { "Lima": "x:cl" }, o: { "Lima": null } }, // 17/jan/1881 a 23/out/1883
-    { y: 1500, y1: 1880, m: ["Peru", "x:pe", ["Peru", "Lima"]] },
+    { y: 1485, y1: 1880, m: ["Peru", "x:pe", ["Peru", "Lima"]] },
     { y: 1883, m: ["Peru", "x:pe", ["Peru", "Lima"]] },
     // África
-    { y: 1500, y1: 1881, o: { "Egypt": null } }, // ocupação britânica em set/1882
+    { y: 1485, y1: 1881, o: { "Egypt": null } }, // ocupação britânica em set/1882
     { y: 1874, y1: 1882, m: ["Sudão Egípcio", "h:eg_khed", ["Anglo-Egyptian Sudan", "Darfur"]], o: { "Anglo-Egyptian Sudan": "Quedivato do Egito" } },
     { y: 1883, y1: 1884, m: ["Sudão (Guerra Mahdista)", "blank", ["Anglo-Egyptian Sudan", "Darfur"]], o: { "Anglo-Egyptian Sudan": null } }, // Hicks destruído em nov/1883; Cartum caiu em 26/jan/1885
-    { y: 1500, y1: 1880, r: { "Tunisia": "Beilhique de Túnis" }, f: { "Tunisia": "x:tn" }, o: { "Tunisia": null } }, // Tratado do Bardo, 12/mai/1881
-    { y: 1500, y1: 1880, r: { "Transvaal": "Transvaal (Primeira Guerra dos Bôeres)" }, f: { "Transvaal": "blank" }, o: { "Transvaal": null } }, // anexado em 1877; guerra desde 16/dez/1880
+    { y: 1485, y1: 1880, r: { "Tunisia": "Beilhique de Túnis" }, f: { "Tunisia": "x:tn" }, o: { "Tunisia": null } }, // Tratado do Bardo, 12/mai/1881
+    { y: 1485, y1: 1880, r: { "Transvaal": "Transvaal (Primeira Guerra dos Bôeres)" }, f: { "Transvaal": "blank" }, o: { "Transvaal": null } }, // anexado em 1877; guerra desde 16/dez/1880
     { y: 1881, y1: 1883, r: { "Transvaal": "Transvaal (República Sul-Africana, suserania britânica)" }, f: { "Transvaal": "h:transvaal" }, o: { "Transvaal": null } }, // Convenção de Pretória, 3/ago/1881; de Londres, 1884
-    { y: 1500, y1: 1867, r: { "Basutoland": "Reino Basoto" }, f: { "Basutoland": "blank" }, o: { "Basutoland": null } },
+    { y: 1485, y1: 1867, r: { "Basutoland": "Reino Basoto" }, f: { "Basutoland": "blank" }, o: { "Basutoland": null } },
     { y: 1868, y1: 1870, r: { "Basutoland": "Basutolândia (protetorado britânico)" }, f: { "Basutoland": "x:gb" }, o: { "Basutoland": "Reino Unido" } }, // proclamação de 12/mar/1868
     { y: 1871, y1: 1883, r: { "Basutoland": "Basutolândia (Colônia do Cabo)" }, f: { "Basutoland": "x:gb" }, o: { "Basutoland": "Colônia do Cabo" } }, // colônia da coroa em 18/mar/1884
-    { y: 1500, y1: 1884, r: { "Bechuanaland": null } }, // protetorado em 31/mar/1885
-    { y: 1500, y1: 1882, r: { "Madagascar": "Reino Merina" }, f: { "Madagascar": "blank" }, o: { "Madagascar": null } },
+    { y: 1485, y1: 1884, r: { "Bechuanaland": null } }, // protetorado em 31/mar/1885
+    { y: 1485, y1: 1882, r: { "Madagascar": "Reino Merina" }, f: { "Madagascar": "blank" }, o: { "Madagascar": null } },
     { y: 1883, y1: 1884, r: { "Madagascar": "Reino Merina (Guerra Franco-Hova)" }, f: { "Madagascar": "blank" }, o: { "Madagascar": null } }, // dez/1883 a 17/dez/1885
-    { y: 1500, y1: 1883, r: { "Togoland": null, "Kamerun": null, "German South-West Africa": null, "Papua New Guinea": null, "Papua": null, "British Somaliland": null, "Rio de Oro": null, "Nigeria": null, "Congo Free State": null } }, // protetorados de 1884
+    { y: 1485, y1: 1883, r: { "Togoland": null, "Kamerun": null, "German South-West Africa": null, "Papua New Guinea": null, "Papua": null, "British Somaliland": null, "Rio de Oro": null, "Nigeria": null, "Congo Free State": null } }, // protetorados de 1884
     { y: 1884, y1: 1884, r: { "Congo Free State": "Associação Internacional do Congo" }, f: { "Congo Free State": "blank" }, o: { "Congo Free State": null } }, // reconhecida pela Alemanha em 8/nov/1884; Estado Livre em 1885
-    { y: 1500, y1: 1884, r: { "German East Africa": null, "Marshall Islands": null, "Eritrea": null } }, // 1885 (Assab italiana e Massaua egípcia até 1885)
-    { y: 1500, y1: 1861, r: { "French Somaliland": null } },
+    { y: 1485, y1: 1884, r: { "German East Africa": null, "Marshall Islands": null, "Eritrea": null } }, // 1885 (Assab italiana e Massaua egípcia até 1885)
+    { y: 1485, y1: 1861, r: { "French Somaliland": null } },
     { y: 1862, y1: 1883, r: { "French Somaliland": "Obock (França)" } }, // colônia estabelecida em 20/mai/1884
     // revisão 1878–1879 (após o Congresso de Berlim, 13/jul/1878)
-    { y: 1500, y1: 1878, r: { "Bulgaria": "Principado da Bulgária (administração provisória russa)", "Eastern Rumelia": "Rumélia Oriental (administração provisória russa)" },
+    { y: 1485, y1: 1878, r: { "Bulgaria": "Principado da Bulgária (administração provisória russa)", "Eastern Rumelia": "Rumélia Oriental (administração provisória russa)" },
       f: { "Bulgaria": "blank", "Eastern Rumelia": "blank" }, o: { "Bulgaria": null, "Eastern Rumelia": null } }, // até jun/1879; bandeira de 1879
     { y: 1877, y1: 1879, r: { "Transvaal": "Transvaal (anexado pelo Reino Unido)" }, f: { "Transvaal": "x:gb" }, o: { "Transvaal": "Reino Unido" } }, // 12/abr/1877; Vierkleur suspensa até ago/1881
     { y: 1872, y1: 1878, r: { "Ryukyu": "Domínio de Ryukyu" }, f: { "Ryukyu": "blank" }, o: { "Ryukyu": "Império do Japão" } }, // domínio desde 1872; Prefeitura de Okinawa em 1879
     { y: 1879, m: ["Império do Japão", "x:jp", ["Imperial Japan", "Ryukyu"]] },
-    { y: 1500, y1: 1879, r: { "French Polynesia": "Reino do Taiti (protetorado francês)" }, f: { "French Polynesia": "blank" }, o: { "French Polynesia": "França" } }, // anexado em 29/jun/1880
+    { y: 1485, y1: 1879, r: { "French Polynesia": "Reino do Taiti (protetorado francês)" }, f: { "French Polynesia": "blank" }, o: { "French Polynesia": "França" } }, // anexado em 29/jun/1880
     { y: 1880, r: { "French Polynesia": "Estabelecimentos Franceses da Oceania" }, f: { "French Polynesia": "x:fr" }, o: { "French Polynesia": "França" } },
     { y: 1878, y1: 1879, r: { "Afghanistan": "Afeganistão (Segunda Guerra Anglo-Afegã)" }, o: { "Afghanistan": null } }, // nov/1878 a 1881; Cabul ocupada em out/1879
-    { y: 1500, y1: 1896, f: { "Afghanistan": "blank" } }, // bandeira negra com emblema introduzida em 1897
-    { y: 1500, y1: 1879, m: ["Peru", "x:pe", ["Peru", "Tacna and Arica"]] },
-    { y: 1500, y1: 1878, m: ["Peru", "x:pe", ["Peru", "Tarapaca"]] }, // campanha de Tarapacá, nov–dez/1879
+    { y: 1485, y1: 1896, f: { "Afghanistan": "blank" } }, // bandeira negra com emblema introduzida em 1897
+    { y: 1485, y1: 1879, m: ["Peru", "x:pe", ["Peru", "Tacna and Arica"]] },
+    { y: 1485, y1: 1878, m: ["Peru", "x:pe", ["Peru", "Tarapaca"]] }, // campanha de Tarapacá, nov–dez/1879
     ...yearly(1825, 1835, "Bolívia", "Bolivia", ["Bolivia", "Bolivian Litoral"]),
     ...yearly(1839, 1878, "Bolívia", "Bolivia", ["Bolivia", "Bolivian Litoral"]), // independência em 6/ago/1825; bandeira só em 1851
     { y: 1811, y1: 1824, m: ["Alto Peru (realistas)", "x:es", ["Bolivia", "Bolivian Litoral"]], o: { "Bolivia": "Espanha" } }, // Olañeta até abr/1825 // Antofagasta ocupada em 14/fev/1879
     // revisão 1871–1877 (antes do Congresso de Berlim; fontes: Wikipedia)
     { y: 1571, y1: 1876, /*fixo*/ m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Bulgaria", "Eastern Rumelia", "Bosnia-Herzegovina", "Cyprus", "Serbia 1878 gains", "Montenegro 1878 gains", "Niksic", "Northern Dobruja", "Kars Oblast", "Adjara"]] }, // Famagusta rendida em 1/ago/1571
-    ...perYear(1500, 1570, { m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Bulgaria", "Eastern Rumelia", "Bosnia-Herzegovina", "Serbia 1878 gains", "Montenegro 1878 gains", "Niksic", "Northern Dobruja", "Kars Oblast", "Adjara"]] }), /*fixo*/
+    ...perYear(1490, 1570, { m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Bulgaria", "Eastern Rumelia", "Bosnia-Herzegovina", "Serbia 1878 gains", "Montenegro 1878 gains", "Niksic", "Northern Dobruja", "Kars Oblast", "Adjara"]] }), /*fixo*/
     { y: 1877, y1: 1877, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Bosnia-Herzegovina", "Cyprus", "Serbia 1878 gains", "Montenegro 1878 gains", "Northern Dobruja", "Adjara"]] }, // Guerra Russo-Turca desde 24/abr/1877
     { y: 1877, y1: 1877, m: ["Bulgária (Guerra Russo-Turca)", "blank", ["Bulgaria", "Eastern Rumelia"]], o: { "Bulgaria": null } }, // Plevna caiu em 10/dez/1877
     { y: 1877, y1: 1877, r: { "Kars Oblast": "Kars e Ardahan (ocupados pela Rússia)" }, f: { "Kars Oblast": "x:ru" }, o: { "Kars Oblast": null } }, // Kars caiu em 18/nov/1877
     { y: 1877, y1: 1877, m: ["Principado de Montenegro", "blank", ["Montenegro", "Niksic"]] }, // Nikšić tomada em 24/set/1877
     { y: 1878, m: ["Principado de Montenegro", "blank", ["Montenegro", "Niksic", "Montenegro 1878 gains"]] }, // Nikšić, Kolašin, Podgorica, Bar etc.
-    { y: 1500, y1: 1879, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Ulcinj"]] }, // Ulcinj entregue a Montenegro em nov/1880
+    { y: 1485, y1: 1879, m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Ulcinj"]] }, // Ulcinj entregue a Montenegro em nov/1880
     { y: 1880, m: ["Principado de Montenegro", "blank", ["Montenegro", "Ulcinj"]] },
     { y: 1878, m: ["Sérvia", "h:rs_old", ["Serbia", "Serbia 1878 gains"]] }, // distritos de Niš, Pirot, Toplica e Vranje
-    { y: 1500, y1: 1877, f: { "Serbia": "blank" } }, // tricolor com brasão e quatro estrelas (suserania otomana) até 1878
+    { y: 1485, y1: 1877, f: { "Serbia": "blank" } }, // tricolor com brasão e quatro estrelas (suserania otomana) até 1878
     { y: 1878, m: ["Romênia", "x:ro", ["Romania", "Northern Dobruja"]] },
     { y: 1856, y1: 1877, m: ["Romênia", "x:ro", ["Romania", "Southern Bessarabia"]] }, // sul da Bessarábia moldava/romena de 1856 a 1878
     { y: 1878, m: ["Império Russo", "x:ru", ["Russian Empire", "Adjara"]] },
-    { y: 1500, y1: 1876, r: { "Transvaal": "Transvaal (República Sul-Africana)" }, f: { "Transvaal": "h:transvaal" }, o: { "Transvaal": null } },
+    { y: 1485, y1: 1876, r: { "Transvaal": "Transvaal (República Sul-Africana)" }, f: { "Transvaal": "h:transvaal" }, o: { "Transvaal": null } },
     { y: 1874, y1: 1874, f: { "Transvaal": "blank" } }, // bandeira de Burgers, 24/out/1874 a 10/mai/1875
-    { y: 1500, y1: 1871, r: { "Ryukyu": "Reino de Ryukyu" }, f: { "Ryukyu": "blank" }, o: { "Ryukyu": null } }, // tributário da China e vassalo de Satsuma; domínio em 16/out/1872
-    { y: 1500, y1: 1870, r: { "Fiji": null } },
+    { y: 1485, y1: 1871, r: { "Ryukyu": "Reino de Ryukyu" }, f: { "Ryukyu": "blank" }, o: { "Ryukyu": null } }, // tributário da China e vassalo de Satsuma; domínio em 16/out/1872
+    { y: 1485, y1: 1870, r: { "Fiji": null } },
     { y: 1871, y1: 1873, r: { "Fiji": "Reino de Fiji" }, f: { "Fiji": "blank" }, o: { "Fiji": null } }, // 5/jun/1871 a 10/out/1874
-    { y: 1500, y1: 1872, r: { "Prince Edward Island": "Ilha do Príncipe Eduardo" }, f: { "Prince Edward Island": "x:gb" }, o: { "Prince Edward Island": "Reino Unido" } }, // Confederação em 1/jul/1873
+    { y: 1485, y1: 1872, r: { "Prince Edward Island": "Ilha do Príncipe Eduardo" }, f: { "Prince Edward Island": "x:gb" }, o: { "Prince Edward Island": "Reino Unido" } }, // Confederação em 1/jul/1873
     { y: 1873, m: ["Canadá", "h:ca_red", ["Canada", "Prince Edward Island"]] },
     { y: 1864, y1: 1876, r: { "Xinjiang": "Yettishar (Emirado de Kashgar)" }, f: { "Xinjiang": "blank" }, o: { "Xinjiang": null } }, // Kashgar retomada pelos Qing em 18/dez/1877
     { y: 1877, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Xinjiang"]] },
-    { y: 1500, y1: 1722, m: ["Canatos cazaques", "blank", ["Kazakh Middle", "Kazakh Junior", "Lower Syr", "Syr", "Tashkent"]], o: { "Kazakh Middle": null } }, // Tashkent cazaque 1598–1723
+    { y: 1485, y1: 1722, m: ["Canatos cazaques", "blank", ["Kazakh Middle", "Kazakh Junior", "Lower Syr", "Syr", "Tashkent"]], o: { "Kazakh Middle": null } }, // Tashkent cazaque 1598–1723
     { y: 1723, y1: 1730, m: ["Canatos cazaques", "blank", ["Kazakh Middle", "Kazakh Junior", "Lower Syr"]], o: { "Kazakh Middle": null } },
     { y: 1731, y1: 1821, m: ["Canatos cazaques (sob proteção russa)", "blank", ["Kazakh Middle", "Kazakh Junior", "Lower Syr"]], o: { "Kazakh Middle": null } }, // zhuzes Júnior (out/1731) e Médio (dez/1731) juram lealdade à Rússia
     { y: 1822, y1: 1823, m: ["Zhuz Júnior cazaque (sob proteção russa)", "blank", ["Kazakh Junior", "Lower Syr"]], o: { "Kazakh Junior": null } },
@@ -445,7 +445,7 @@ export const EVENTS = {
     { y: 1824, m: [null, null, ["Russian Empire", "Kazakh Junior"]] }, // Carta dos quirguizes de Orenburg (1824)
     { y: 1824, y1: 1852, r: { "Lower Syr": "Baixo Syr Darya (disputado entre cazaques, Khiva e Kokand)" }, f: { "Lower Syr": "blank" }, o: { "Lower Syr": null } },
     { y: 1853, m: [null, null, ["Russian Empire", "Lower Syr"]] }, // Ak-Mechet tomada em 1853
-    { y: 1500, y1: 1745, m: [null, null, ["Xinjiang", "Semirechye", "North Kyrgyz"]] }, // zungares controlaram Jetisu e Tashkent até 1745
+    { y: 1485, y1: 1745, m: [null, null, ["Xinjiang", "Semirechye", "North Kyrgyz"]] }, // zungares controlaram Jetisu e Tashkent até 1745
     { y: 1723, y1: 1745, m: [null, null, ["Xinjiang", "Tashkent", "Syr"]] },
     { y: 1746, y1: 1846, r: { "Semirechye": "Zhuz Sênior cazaque" }, f: { "Semirechye": "blank" }, o: { "Semirechye": null } }, // só plenamente sujeito à Rússia em 1846
     { y: 1847, m: [null, null, ["Russian Empire", "Semirechye"]] }, // Kopal fundada em 1847; Verny em 1854
@@ -459,19 +459,19 @@ export const EVENTS = {
     { y: 1865, m: [null, null, ["Russian Empire", "Tashkent"]] }, // tomada em mai/1865
     { y: 1709, y1: 1865, /*fixo*/ m: [null, null, ["Kokand", "Khujand"]] },
     { y: 1866, m: [null, null, ["Russian Empire", "Khujand"]] },
-    { y: 1500, y1: 1894, r: { "Pamir": null } }, // acordo anglo-russo do Pamir, 1895
+    { y: 1485, y1: 1894, r: { "Pamir": null } }, // acordo anglo-russo do Pamir, 1895
     { y: 1895, m: [null, null, ["Russian Empire", "Pamir"]] },
-    { y: 1500, y1: 1868, r: { "Balkan": null } }, // Krasnovodsk fundada em 1869
+    { y: 1485, y1: 1868, r: { "Balkan": null } }, // Krasnovodsk fundada em 1869
     { y: 1869, m: [null, null, ["Russian Empire", "Balkan"]] },
     { y: 1709, y1: 1875, /*fixo*/ r: { "Kokand": "Canato de Kokand" }, f: { "Kokand": "blank" }, o: { "Kokand": null } }, // abolido pela Rússia em 1876
     { y: 1876, m: ["Império Russo", "x:ru", ["Russian Empire", "Kokand"]] },
-    { y: 1500, y1: 1872, r: { "Khiva": "Canato de Khiva" }, f: { "Khiva": "blank" }, o: { "Khiva": null } }, // protetorado russo em 12/ago/1873
+    { y: 1485, y1: 1872, r: { "Khiva": "Canato de Khiva" }, f: { "Khiva": "blank" }, o: { "Khiva": null } }, // protetorado russo em 12/ago/1873
     { y: 1873, r: { "Khiva": "Canato de Khiva (protetorado russo)" }, f: { "Khiva": "blank" }, o: { "Khiva": null } },
-    { y: 1500, y1: 1873, r: { "Aceh": "Sultanato de Aceh" }, f: { "Aceh": "blank" }, o: { "Aceh": null } }, // Banda Aceh tomada em jan/1874
+    { y: 1485, y1: 1873, r: { "Aceh": "Sultanato de Aceh" }, f: { "Aceh": "blank" }, o: { "Aceh": null } }, // Banda Aceh tomada em jan/1874
     { y: 1874, m: ["Índias Orientais Holandesas", "x:nl", ["Netherlands Indies", "Aceh"]] },
-    { y: 1500, y1: 1866, r: { "Anglo-Egyptian Sudan": "Sudão Egípcio" }, f: { "Anglo-Egyptian Sudan": "h:eg_khed" }, o: { "Anglo-Egyptian Sudan": "Egito (eialete otomano)" } },
+    { y: 1485, y1: 1866, r: { "Anglo-Egyptian Sudan": "Sudão Egípcio" }, f: { "Anglo-Egyptian Sudan": "h:eg_khed" }, o: { "Anglo-Egyptian Sudan": "Egito (eialete otomano)" } },
     { y: 1867, y1: 1873, r: { "Anglo-Egyptian Sudan": "Sudão Egípcio" }, f: { "Anglo-Egyptian Sudan": "h:eg_khed" }, o: { "Anglo-Egyptian Sudan": "Quedivato do Egito" } }, // Darfur conquistado em 1874
-    { y: 1500, y1: 1879, r: { "French Congo": null, "Gabon": "Gabão (França)" }, f: { "Gabon": "x:fr" }, o: { "Gabon": "França" } }, // protetorado do Congo em 10/set/1880
+    { y: 1485, y1: 1879, r: { "French Congo": null, "Gabon": "Gabão (França)" }, f: { "Gabon": "x:fr" }, o: { "Gabon": "França" } }, // protetorado do Congo em 10/set/1880
     { y: 1880, m: ["Congo Francês", "x:fr", ["French Congo", "Gabon", "Gabon FR"]] },
     // revisão 1867–1870
     { y: 1867, y1: 1870, r: { "Germany": "Confederação da Alemanha do Norte" }, f: { "Germany": "blank" }, o: { "Germany": null } }, // 1/jul/1867 a 31/dez/1870
@@ -480,28 +480,28 @@ export const EVENTS = {
       o: { "Kingdom of Bavaria": null, "Kingdom of Württemberg": null, "Grand Duchy of Baden": null, "Grand Duchy of Hesse": null } }, // Tratados de Novembro de 1870, em vigor em 1/jan/1871; o Alto Hesse já era da Confederação
     { y: 1867, y1: 1870, m: ["Confederação da Alemanha do Norte", "blank", ["Germany", ...NORTH1866]] },
     { y: 1871, m: ["Império Alemão", "h:de_emp", ["Germany", ...NORTH1866, "Kingdom of Bavaria", "Kingdom of Württemberg", "Grand Duchy of Baden", "Grand Duchy of Hesse", "Alsace-Lorraine"]] }, // Tratado de Frankfurt, 10/mai/1871
-    { y: 1500, y1: 1869, m: ["França", "x:fr", ["France", "Alsace-Lorraine"]] },
+    { y: 1485, y1: 1869, m: ["França", "x:fr", ["France", "Alsace-Lorraine"]] },
     { y: 1870, y1: 1870, r: { "Alsace-Lorraine": "Alsácia-Lorena (Guerra Franco-Prussiana)" }, f: { "Alsace-Lorraine": "blank" }, o: { "Alsace-Lorraine": null } },
-    { y: 1500, y1: 1869, r: { "Papal States": "Estados Papais" }, f: { "Papal States": "blank" }, o: { "Papal States": null } }, // Roma tomada em 20/set/1870
+    { y: 1485, y1: 1869, r: { "Papal States": "Estados Papais" }, f: { "Papal States": "blank" }, o: { "Papal States": null } }, // Roma tomada em 20/set/1870
     { y: 1870, m: ["Reino da Itália", "h:it_sav", ["Italy", "Papal States"]] },
     { y: 1867, y1: 1869, r: { "Rupert's Land": "Terra de Rupert (Cia. da Baía de Hudson)" }, f: { "Rupert's Land": "x:gb" }, o: { "Rupert's Land": "Reino Unido" } }, // transferida ao Canadá em 15/jul/1870
     { y: 1870, m: ["Canadá", "h:ca_red", ["Canada", "Rupert's Land"]] },
-    { y: 1500, y1: 1870, r: { "British Columbia": "Colônia da Colúmbia Britânica" }, f: { "British Columbia": "x:gb" }, o: { "British Columbia": "Reino Unido" } }, // província em 20/jul/1871
+    { y: 1485, y1: 1870, r: { "British Columbia": "Colônia da Colúmbia Britânica" }, f: { "British Columbia": "x:gb" }, o: { "British Columbia": "Reino Unido" } }, // província em 20/jul/1871
     { y: 1871, m: ["Canadá", "h:ca_red", ["Canada", "British Columbia"]] },
     { y: 1864, y1: 1868, r: { "Paraguay": "Paraguai (Guerra do Paraguai)" } },
     { y: 1869, y1: 1869, r: { "Paraguay": "Paraguai (Guerra do Paraguai, Assunção ocupada)" } }, // Assunção ocupada em 1/jan/1869; López morto em 1/mar/1870
     { y: 1867, y1: 1867, m: ["Império do Japão", "x:jp", ["Imperial Japan", "Ezo"]] },
     { y: 1868, y1: 1868, r: { "Ezo": "Ezo (forças do antigo xogunato)" }, f: { "Ezo": "blank" }, o: { "Ezo": null } }, // Hakodate tomada em dez/1868; República de Ezo de jan a jun/1869
     { y: 1869, m: ["Império do Japão", "x:jp", ["Imperial Japan", "Ezo"]] },
-    { y: 1500, y1: 1784, r: { "Bukhara": "Canato de Bukhara" }, f: { "Bukhara": "blank" }, o: { "Bukhara": null } }, // ataliqs manghit desde 1747
+    { y: 1485, y1: 1784, r: { "Bukhara": "Canato de Bukhara" }, f: { "Bukhara": "blank" }, o: { "Bukhara": null } }, // ataliqs manghit desde 1747
     { y: 1785, y1: 1872, r: { "Bukhara": "Emirado de Bukhara" }, f: { "Bukhara": "blank" }, o: { "Bukhara": null } }, // emirado manghit desde 1785
     { y: 1873, r: { "Bukhara": "Emirado de Bukhara (protetorado russo)" }, f: { "Bukhara": "blank" }, o: { "Bukhara": null } }, // 1873
-    { y: 1500, y1: 1784, m: ["Canato de Bukhara", "blank", ["Bukhara", "Samarkand"]] },
+    { y: 1485, y1: 1784, m: ["Canato de Bukhara", "blank", ["Bukhara", "Samarkand"]] },
     { y: 1785, y1: 1867, m: ["Emirado de Bukhara", "blank", ["Bukhara", "Samarkand"]] },
     { y: 1868, m: ["Império Russo", "x:ru", ["Russian Empire", "Samarkand"]] }, // Samarcanda anexada em 1868
     // revisão 1861–1866 (fontes: Wikipedia)
     { y: 1701, y1: 1865, /*fixo*/ r: { "Germany": "Reino da Prússia" }, f: { "Germany": "blank" }, o: { "Germany": null } },
-    { y: 1500, y1: 1866, r: { "Kingdom of Bavaria": "Reino da Baviera", "Kingdom of Württemberg": "Reino de Württemberg", "Grand Duchy of Baden": "Grão-Ducado de Baden", "Grand Duchy of Hesse": "Grão-Ducado de Hesse",
+    { y: 1485, y1: 1866, r: { "Kingdom of Bavaria": "Reino da Baviera", "Kingdom of Württemberg": "Reino de Württemberg", "Grand Duchy of Baden": "Grão-Ducado de Baden", "Grand Duchy of Hesse": "Grão-Ducado de Hesse",
       "Kingdom of Saxony": "Reino da Saxônia", "Mecklenburg-Schwerin": "Grão-Ducado de Mecklemburgo-Schwerin", "Mecklenburg-Strelitz": "Grão-Ducado de Mecklemburgo-Strelitz", "Grand Duchy of Oldenburg": "Grão-Ducado de Oldemburgo",
       "Duchy of Brunswick": "Ducado de Brunsvique", "Thuringian states": "Estados da Turíngia", "Anhalt": "Anhalt", "Lippe": "Principado de Lippe", "Schaumburg-Lippe": "Principado de Schaumburg-Lippe", "Waldeck": "Principado de Waldeck",
       "Free City of Hamburg": "Cidade Livre de Hamburgo", "Free City of Bremen": "Cidade Livre de Bremen", "Free City of Lübeck": "Cidade Livre de Lübeck" },
@@ -509,10 +509,10 @@ export const EVENTS = {
       "Grand Duchy of Oldenburg": "blank", "Duchy of Brunswick": "blank", "Thuringian states": "blank", "Anhalt": "blank", "Lippe": "blank", "Schaumburg-Lippe": "blank", "Waldeck": "blank", "Free City of Hamburg": "blank", "Free City of Bremen": "blank", "Free City of Lübeck": "blank" },
       o: { "Kingdom of Bavaria": null, "Kingdom of Württemberg": null, "Grand Duchy of Baden": null, "Grand Duchy of Hesse": null, "Kingdom of Saxony": null, "Mecklenburg-Schwerin": null, "Mecklenburg-Strelitz": null, "Grand Duchy of Oldenburg": null,
       "Duchy of Brunswick": null, "Thuringian states": null, "Anhalt": null, "Lippe": null, "Schaumburg-Lippe": null, "Waldeck": null, "Free City of Hamburg": null, "Free City of Bremen": null, "Free City of Lübeck": null } }, // Confederação Germânica até 1866
-    { y: 1500, y1: 1865, r: { "Kingdom of Hanover": "Reino de Hanôver", "Electorate of Hesse": "Eleitorado de Hesse", "Duchy of Nassau": "Ducado de Nassau" }, f: { "Kingdom of Hanover": "blank", "Electorate of Hesse": "blank", "Duchy of Nassau": "blank" },
+    { y: 1485, y1: 1865, r: { "Kingdom of Hanover": "Reino de Hanôver", "Electorate of Hesse": "Eleitorado de Hesse", "Duchy of Nassau": "Ducado de Nassau" }, f: { "Kingdom of Hanover": "blank", "Electorate of Hesse": "blank", "Duchy of Nassau": "blank" },
       o: { "Kingdom of Hanover": null, "Electorate of Hesse": null, "Duchy of Nassau": null } }, // anexados pela Prússia em 1866
     { y: 1866, y1: 1866, m: ["Reino da Prússia", "blank", ["Germany", "Kingdom of Hanover", "Electorate of Hesse", "Duchy of Nassau", "Duchy of Schleswig", "Duchy of Holstein"]], o: { "Germany": null } }, // Guerra Austro-Prussiana, 14/jun a 22/jul/1866; Paz de Praga, 23/ago/1866
-    { y: 1500, y1: 1863, r: { "Duchy of Schleswig": "Ducado de Schleswig (Dinamarca)", "Duchy of Holstein": "Ducado de Holstein (Dinamarca)" }, f: { "Duchy of Schleswig": "x:dk", "Duchy of Holstein": "x:dk" },
+    { y: 1485, y1: 1863, r: { "Duchy of Schleswig": "Ducado de Schleswig (Dinamarca)", "Duchy of Holstein": "Ducado de Holstein (Dinamarca)" }, f: { "Duchy of Schleswig": "x:dk", "Duchy of Holstein": "x:dk" },
       o: { "Duchy of Schleswig": "Dinamarca", "Duchy of Holstein": "Dinamarca" } }, // Segunda Guerra do Schleswig, 1/fev a 30/out/1864
     { y: 1864, y1: 1864, m: ["Schleswig-Holstein (condomínio austro-prussiano)", "blank", ["Duchy of Schleswig", "Duchy of Holstein"]], o: { "Duchy of Schleswig": null } }, // Tratado de Viena, 30/out/1864
     { y: 1865, y1: 1865, r: { "Duchy of Schleswig": "Schleswig (administração prussiana)", "Duchy of Holstein": "Holstein (administração austríaca)" }, f: { "Duchy of Schleswig": "blank", "Duchy of Holstein": "blank" },
@@ -525,11 +525,11 @@ export const EVENTS = {
     { y: 1866, m: ["Reino da Itália", "h:it_sav", ["Italy", "Venetia", "Venice"]] },
     { y: 1815, y1: 1863, r: { "Ionian Islands": "Estados Unidos das Ilhas Jônicas (protetorado britânico)" }, f: { "Ionian Islands": "x:gb" }, o: { "Ionian Islands": null } }, // unidas à Grécia em mai–jun/1864
     { y: 1864, m: ["Grécia", "h:gr_cross", ["Greece", "Ionian Islands"]] },
-    { y: 1500, y1: 1861, r: { "Romania": "Principados Unidos da Moldávia e Valáquia" }, f: { "Romania": "h:ro_up" } }, // união pessoal em fev/1859; formal em fev/1862
+    { y: 1485, y1: 1861, r: { "Romania": "Principados Unidos da Moldávia e Valáquia" }, f: { "Romania": "h:ro_up" } }, // união pessoal em fev/1859; formal em fev/1862
     { y: 1862, y1: 1865, r: { "Romania": "Principados Unidos (Romênia)" }, f: { "Romania": "h:ro_up" } }, // nome Romênia pela constituição de jul/1866
     { y: 1866, y1: 1866, f: { "Romania": "h:ro_up" } }, // faixas verticais desde 26/mar/1867
     { y: 1517, y1: 1866, /*fixo*/ r: { "Egypt": "Egito (eialete otomano)" }, o: { "Egypt": null } }, // Cairo tomado em jan/1517 // título de quediva em 8/jun/1867
-    { y: 1500, y1: 1864, r: { "Confederate States": "Estados Confederados da América" }, f: { "Confederate States": "blank" }, o: { "Confederate States": null } }, // 8/fev/1861 a mai/1865
+    { y: 1485, y1: 1864, r: { "Confederate States": "Estados Confederados da América" }, f: { "Confederate States": "blank" }, o: { "Confederate States": null } }, // 8/fev/1861 a mai/1865
     { y: 1865, y1: 1866, m: ["Estados Unidos", "h:us36", ["United States of America", "Confederate States", "Louisiana N", "Louisiana S"]] },
     { y: 1867, y1: 1876, m: ["Estados Unidos", "h:us37", ["United States of America", "Confederate States", "Louisiana N", "Louisiana S"]] },
     { y: 1877, y1: 1889, m: ["Estados Unidos", "h:us38", ["United States of America", "Confederate States", "Louisiana N", "Louisiana S"]] },
@@ -538,9 +538,9 @@ export const EVENTS = {
     { y: 1896, y1: 1907, m: ["Estados Unidos", "h:us45", ["United States of America", "Confederate States", "Louisiana N", "Louisiana S"]] },
     { y: 1908, y1: 1911, m: ["Estados Unidos", "h:us46", ["United States of America", "Confederate States", "Louisiana N", "Louisiana S"]] },
     { y: 1912, y1: 1912, m: ["Estados Unidos", "h:us48", ["United States of America", "Confederate States", "Louisiana N", "Louisiana S"]] },
-    { y: 1500, y1: 1866, r: { "Russian America": "América Russa" }, f: { "Russian America": "x:ru" }, o: { "Russian America": "Império Russo" } }, // transferida aos EUA em 18/out/1867
+    { y: 1485, y1: 1866, r: { "Russian America": "América Russa" }, f: { "Russian America": "x:ru" }, o: { "Russian America": "Império Russo" } }, // transferida aos EUA em 18/out/1867
     { y: 1721, /*fixo*/ m: [null, null, ["Russian Empire", "Swedish Baltic"]] }, // Estônia e Livônia cedidas pela Suécia em Nystad (10/set/1721)
-    { y: 1500, y1: 1783, r: { "Russian America": null } }, // primeiro assentamento permanente em Three Saints Bay, 1784
+    { y: 1485, y1: 1783, r: { "Russian America": null } }, // primeiro assentamento permanente em Three Saints Bay, 1784
     { y: 1867, y1: 1876, m: ["Estados Unidos", "h:us37", ["United States of America", "Russian America"]] },
     { y: 1877, y1: 1889, m: ["Estados Unidos", "h:us38", ["United States of America", "Russian America"]] },
     { y: 1890, y1: 1890, m: ["Estados Unidos", "h:us43", ["United States of America", "Russian America"]] },
@@ -548,28 +548,28 @@ export const EVENTS = {
     { y: 1896, y1: 1907, m: ["Estados Unidos", "h:us45", ["United States of America", "Russian America"]] },
     { y: 1908, y1: 1911, m: ["Estados Unidos", "h:us46", ["United States of America", "Russian America"]] },
     { y: 1912, y1: 1912, m: ["Estados Unidos", "h:us48", ["United States of America", "Russian America"]] },
-    { y: 1500, y1: 1866, r: { "Canada": "Província do Canadá", "Nova Scotia": "Nova Escócia", "New Brunswick": "Nova Brunswick" }, f: { "Canada": "x:gb", "Nova Scotia": "x:gb", "New Brunswick": "x:gb" },
+    { y: 1485, y1: 1866, r: { "Canada": "Província do Canadá", "Nova Scotia": "Nova Escócia", "New Brunswick": "Nova Brunswick" }, f: { "Canada": "x:gb", "Nova Scotia": "x:gb", "New Brunswick": "x:gb" },
       o: { "Canada": "Reino Unido", "Nova Scotia": "Reino Unido", "New Brunswick": "Reino Unido" } }, // Confederação em 1/jul/1867
     { y: 1867, m: ["Canadá", "h:ca_red", ["Canada", "Nova Scotia", "New Brunswick"]] },
     { y: 1867, y1: 1867, f: { "Canada": "x:gb" } },
-    { y: 1500, y1: 1865, r: { "British Columbia": "Colônias da Colúmbia Britânica e da Ilha de Vancouver" }, f: { "British Columbia": "x:gb" }, o: { "British Columbia": "Reino Unido" } }, // unidas em 1866
-    { y: 1500, y1: 1861, r: { "Mexico": "México" } },
+    { y: 1485, y1: 1865, r: { "British Columbia": "Colônias da Colúmbia Britânica e da Ilha de Vancouver" }, f: { "British Columbia": "x:gb" }, o: { "British Columbia": "Reino Unido" } }, // unidas em 1866
+    { y: 1485, y1: 1861, r: { "Mexico": "México" } },
     { y: 1862, y1: 1862, r: { "Mexico": "México (intervenção francesa)" } }, // tropas francesas desde dez/1861
     { y: 1863, y1: 1863, r: { "Mexico": "México (intervenção francesa; Regência do Império)" }, f: { "Mexico": "blank" } }, // Cidade do México tomada em jun/1863; regência em 11/jul/1863
     { y: 1864, y1: 1866, r: { "Mexico": "Segundo Império Mexicano" }, f: { "Mexico": "blank" }, o: { "Mexico": null } }, // Maximiliano aceitou a coroa em 10/abr/1864; fuzilado em 19/jun/1867
-    { y: 1500, y1: 1862, r: { "Dominican Republic": "São Domingos (Espanha)" }, f: { "Dominican Republic": "x:es" }, o: { "Dominican Republic": "Espanha" } }, // anexação anunciada em 18/mar/1861
+    { y: 1485, y1: 1862, r: { "Dominican Republic": "São Domingos (Espanha)" }, f: { "Dominican Republic": "x:es" }, o: { "Dominican Republic": "Espanha" } }, // anexação anunciada em 18/mar/1861
     { y: 1863, y1: 1864, r: { "Dominican Republic": "São Domingos (Guerra da Restauração)" }, f: { "Dominican Republic": "blank" }, o: { "Dominican Republic": null } }, // 16/ago/1863 a 15/jul/1865
-    { y: 1500, y1: 1866, m: ["Japão (xogunato Tokugawa)", "x:jp", ["Imperial Japan", "Ezo"]] },
+    { y: 1485, y1: 1866, m: ["Japão (xogunato Tokugawa)", "x:jp", ["Imperial Japan", "Ezo"]] },
     { y: 1867, y1: 1867, r: { "Imperial Japan": "Japão (xogunato Tokugawa)" } }, // Restauração Meiji em 3/jan/1868
-    { y: 1500, y1: 1866, m: ["Đại Nam (Vietnã)", "blank", ["French Indochina", "Western Cochinchina"]] }, // províncias ocidentais anexadas pela França em 1867
-    { y: 1500, y1: 1861, r: { "Cochinchina": "Cochinchina (ocupação francesa)" }, o: { "Cochinchina": null } }, // Tratado de Saigon, 5/jun/1862
+    { y: 1485, y1: 1866, m: ["Đại Nam (Vietnã)", "blank", ["French Indochina", "Western Cochinchina"]] }, // províncias ocidentais anexadas pela França em 1867
+    { y: 1485, y1: 1861, r: { "Cochinchina": "Cochinchina (ocupação francesa)" }, o: { "Cochinchina": null } }, // Tratado de Saigon, 5/jun/1862
     { y: 1867, y1: 1884, m: ["Cochinchina Francesa", "x:fr", ["Cochinchina", "Western Cochinchina"]] },
-    { y: 1500, y1: 1862, r: { "Cambodia": "Camboja (vassalo do Sião)" }, f: { "Cambodia": "blank" }, o: { "Cambodia": null } }, // protetorado francês em 11/ago/1863
-    { y: 1500, y1: 1862, r: { "Herat": "Emirado de Herat" }, f: { "Herat": "blank" }, o: { "Herat": null } }, // tomado pelos Barakzai em 27/mai/1863
+    { y: 1485, y1: 1862, r: { "Cambodia": "Camboja (vassalo do Sião)" }, f: { "Cambodia": "blank" }, o: { "Cambodia": null } }, // protetorado francês em 11/ago/1863
+    { y: 1485, y1: 1862, r: { "Herat": "Emirado de Herat" }, f: { "Herat": "blank" }, o: { "Herat": null } }, // tomado pelos Barakzai em 27/mai/1863
     { y: 1863, m: ["Afeganistão", "blank", ["Afghanistan", "Herat"]] },
     { y: 1759, y1: 1863, m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Xinjiang"]] }, // Bacia do Tarim pacificada em 1759
     { y: 1755, y1: 1758, r: { "Xinjiang": "Zungária e Bacia do Tarim (guerra Qing–Zungar)" }, f: { "Xinjiang": "blank" }, o: { "Xinjiang": null } }, // Ili tomada em 1755; revolta de Amursana; batalhas de 1758
-    { y: 1500, y1: 1754, r: { "Xinjiang": "Canato Zungar" }, f: { "Xinjiang": "blank" }, o: { "Xinjiang": null } }, // Bacia do Tarim conquistada pelos zungares em 1680–1688 // Yettishar desde 12/nov/1864
+    { y: 1485, y1: 1754, r: { "Xinjiang": "Canato Zungar" }, f: { "Xinjiang": "blank" }, o: { "Xinjiang": null } }, // Bacia do Tarim conquistada pelos zungares em 1680–1688 // Yettishar desde 12/nov/1864
     // erros do mapa de 1900 corrigidos para 1878–1912
     { y: 1815, y1: 1827, m: ["Império Russo", "x:ru", ["Russian Empire", "Russian Caucasus", "Bessarabia", "Congress Poland"]] },
     { y: 1828, y1: 1829, m: ["Império Russo", "x:ru", ["Russian Empire", "Russian Caucasus", "Bessarabia", "Erivan", "Congress Poland"]] }, // Turkmenchay, 2/fev/1828
@@ -579,63 +579,63 @@ export const EVENTS = {
     { y: 1867, m: ["Áustria-Hungria", "h:at_hab", ["Austria Hungary", "Bay of Kotor", "Kraków"]] }, // Boca de Kotor na Dalmácia austríaca até 1918
     // revisão 1856–1860 (situação em 31/dez)
     // Itália
-    { y: 1500, y1: 1860, r: { "Italy": "Reino da Sardenha" }, f: { "Italy": "h:it_sav" }, o: { "Italy": null } },
+    { y: 1485, y1: 1860, r: { "Italy": "Reino da Sardenha" }, f: { "Italy": "h:it_sav" }, o: { "Italy": null } },
     { y: 1814, y1: 1859, m: ["Reino da Sardenha", "h:it_sav", ["Italy", "Savoy and Nice"]] },
     { y: 1814, y1: 1858, m: ["Império Austríaco", "h:at_hab", ["Austria Hungary", "Lombardy"]] }, // Reino Lombardo-Vêneto
-    { y: 1500, y1: 1858, r: { "Duchy of Parma": "Ducado de Parma", "Duchy of Modena": "Ducado de Módena", "Tuscany": "Grão-Ducado da Toscana" }, f: { "Duchy of Parma": "blank", "Duchy of Modena": "blank", "Tuscany": "blank" }, o: { "Duchy of Parma": null, "Duchy of Modena": null, "Tuscany": null } },
+    { y: 1485, y1: 1858, r: { "Duchy of Parma": "Ducado de Parma", "Duchy of Modena": "Ducado de Módena", "Tuscany": "Grão-Ducado da Toscana" }, f: { "Duchy of Parma": "blank", "Duchy of Modena": "blank", "Tuscany": "blank" }, o: { "Duchy of Parma": null, "Duchy of Modena": null, "Tuscany": null } },
     { y: 1814, y1: 1858, m: ["Estados Papais", "blank", ["Papal States", "Romagna", "Marche and Umbria"]] },
     { y: 1859, y1: 1859, m: ["Estados Papais", "blank", ["Papal States", "Marche and Umbria"]] },
     { y: 1859, y1: 1859, m: ["Províncias Unidas da Itália Central", "blank", ["Tuscany", "Duchy of Parma", "Duchy of Modena", "Romagna"]], o: { "Tuscany": null } }, // Toscana, Parma, Módena e Legações papais, dez/1859
-    { y: 1500, y1: 1859, r: { "Two Sicilies": "Reino das Duas Sicílias" }, f: { "Two Sicilies": "blank" }, o: { "Two Sicilies": null } }, // Gaeta resistiu até fev/1861 (não mostrado)
+    { y: 1485, y1: 1859, r: { "Two Sicilies": "Reino das Duas Sicílias" }, f: { "Two Sicilies": "blank" }, o: { "Two Sicilies": null } }, // Gaeta resistiu até fev/1861 (não mostrado)
     // Moldávia e Valáquia (vassalos otomanos); sul da Bessarábia moldavo pelo Tratado de Paris (1856)
-    { y: 1500, y1: 1858, r: { "Romania": "Principado da Moldávia", "Wallachia": "Principado da Valáquia" }, f: { "Romania": "blank", "Wallachia": "blank" }, o: { "Romania": null, "Wallachia": null } },
+    { y: 1485, y1: 1858, r: { "Romania": "Principado da Moldávia", "Wallachia": "Principado da Valáquia" }, f: { "Romania": "blank", "Wallachia": "blank" }, o: { "Romania": null, "Wallachia": null } },
     // Extremo Oriente
     { y: 1644, y1: 1857, /*fixo*/ m: ["Império Qing", "h:cn_qing", ["Manchu Empire", "Amur", "Ussuri"]] },
     { y: 1858, y1: 1859, r: { "Ussuri": "Região do Ussuri (condomínio russo-chinês)" }, f: { "Ussuri": "blank" }, o: { "Ussuri": null } }, // Aigun: administração conjunta até a Convenção de Pequim
-    { y: 1500, y1: 1874, r: { "Sakhalin": "Sacalina (indivisa entre Rússia e Japão)" }, f: { "Sakhalin": "blank" }, o: { "Sakhalin": null } }, // Shimoda (1855) não definiu Sacalina
+    { y: 1485, y1: 1874, r: { "Sakhalin": "Sacalina (indivisa entre Rússia e Japão)" }, f: { "Sakhalin": "blank" }, o: { "Sakhalin": null } }, // Shimoda (1855) não definiu Sacalina
     // Estados Unidos (bandeira de 31, 32 e 33 estrelas)
     { y: 1851, y1: 1857, m: ["Estados Unidos", "h:us31", ["United States of America", "Confederate States", "Louisiana N", "Louisiana S"]] },
     { y: 1858, y1: 1858, m: ["Estados Unidos", "h:us32", ["United States of America", "Confederate States", "Louisiana N", "Louisiana S"]] },
     { y: 1859, y1: 1860, m: ["Estados Unidos", "h:us33", ["United States of America", "Confederate States", "Louisiana N", "Louisiana S"]] }, // Carolina do Sul declarou secessão em 20/dez/1860 (Confederação só em fev/1861)
-    { y: 1500, y1: 1857, r: { "British Columbia": "Ilha de Vancouver e Nova Caledônia (britânicas)" }, f: { "British Columbia": "x:gb" }, o: { "British Columbia": "Reino Unido" } }, // colônia da Colúmbia Britânica em ago/1858
+    { y: 1485, y1: 1857, r: { "British Columbia": "Ilha de Vancouver e Nova Caledônia (britânicas)" }, f: { "British Columbia": "x:gb" }, o: { "British Columbia": "Reino Unido" } }, // colônia da Colúmbia Britânica em ago/1858
     { y: 1858, y1: 1859, r: { "Mexico": "México (Guerra da Reforma)" } }, // liberais vencem em Calpulalpan, 22/dez/1860
-    { y: 1500, y1: 1860, r: { "Dominican Republic": "República Dominicana" }, f: { "Dominican Republic": "blank" }, o: { "Dominican Republic": null } },
+    { y: 1485, y1: 1860, r: { "Dominican Republic": "República Dominicana" }, f: { "Dominican Republic": "blank" }, o: { "Dominican Republic": null } },
     { y: 1849, y1: 1858, r: { "Haiti": "Império do Haiti" } }, // Faustin I abdicou em 15/jan/1859
     { y: 1831, y1: 1857, r: { "Colombia": "República de Nova Granada" }, f: { "Colombia": "blank" } },
     { y: 1858, y1: 1860, r: { "Colombia": "Confederação Granadina" }, f: { "Colombia": "blank" } }, // constituição de 22/mai/1858; bandeira atual em 26/nov/1861
     { y: 1831, y1: 1860, r: { "Argentina": "Confederação Argentina", "State of Buenos Aires": "Estado de Buenos Aires" }, f: { "State of Buenos Aires": "blank" }, o: { "State of Buenos Aires": null } }, // separado desde 11/set/1852
     // Ásia
     { y: 1803, y1: 1857, r: { "British Raj": "Índia (Companhia Britânica das Índias Orientais)" }, f: { "British Raj": "blank" }, o: { "British Raj": "Reino Unido" } }, // Coroa assume em 1/nov/1858
-    { y: 1500, y1: 1802, r: { "British Raj": "Império Mogol" }, f: { "British Raj": "blank" }, o: { "British Raj": null } }, // Delhi tomada pelos britânicos em 11/set/1803
+    { y: 1485, y1: 1802, r: { "British Raj": "Império Mogol" }, f: { "British Raj": "blank" }, o: { "British Raj": null } }, // Delhi tomada pelos britânicos em 11/set/1803
     { y: 1717, y1: 1756, /*fixo*/ r: { "Bengal Subah": "Nababado de Bengala" }, f: { "Bengal Subah": "blank" }, o: { "Bengal Subah": null } }, // nababos hereditários desde 1717; Plassey, 23/jun/1757
     { y: 1757, y1: 1802, /*fixo*/ r: { "Bengal Subah": "Índia (Companhia Britânica das Índias Orientais)" }, f: { "Bengal Subah": "blank" }, o: { "Bengal Subah": "Reino Unido" } },
     { y: 1803, m: [null, null, ["British Raj", "Bengal Subah", "Orissa", "Andhra", "Hyderabad", "Mysore", "Carnatic", "Travancore"]] },
     { y: 1751, y1: 1802, /*fixo*/ m: [null, null, ["Maratha", "Orissa"]] }, // controle marata de fato; incorporada formalmente em 1752
     { y: 1724, y1: 1797, r: { "Hyderabad": "Estado de Hyderabad (Nizam)" }, f: { "Hyderabad": "blank" }, o: { "Hyderabad": null } }, // fundado em 31/jul/1724
-    { y: 1500, y1: 1767, m: [null, null, ["Hyderabad", "Andhra"]] }, // Circars do Norte cedidos aos britânicos em 1768 (Tratado de Masulipatam)
+    { y: 1485, y1: 1767, m: [null, null, ["Hyderabad", "Andhra"]] }, // Circars do Norte cedidos aos britânicos em 1768 (Tratado de Masulipatam)
     { y: 1768, y1: 1802, m: [null, null, ["Bengal Subah", "Andhra"]] },
     { y: 1798, y1: 1802, m: [null, null, ["Bengal Subah", "Hyderabad"]] }, // aliança subsidiária
-    { y: 1500, y1: 1798, r: { "Mysore": "Reino de Mysore" }, f: { "Mysore": "blank" }, o: { "Mysore": null } }, // Tipu morto em 1799; aliança subsidiária
+    { y: 1485, y1: 1798, r: { "Mysore": "Reino de Mysore" }, f: { "Mysore": "blank" }, o: { "Mysore": null } }, // Tipu morto em 1799; aliança subsidiária
     { y: 1799, y1: 1802, m: [null, null, ["Bengal Subah", "Mysore"]] },
-    { y: 1500, y1: 1800, r: { "Carnatic": "Nababado do Carnático (Arcot)" }, f: { "Carnatic": "blank" }, o: { "Carnatic": null } }, // independente desde 1710; Tratado do Carnático, 26/jul/1801
+    { y: 1485, y1: 1800, r: { "Carnatic": "Nababado do Carnático (Arcot)" }, f: { "Carnatic": "blank" }, o: { "Carnatic": null } }, // independente desde 1710; Tratado do Carnático, 26/jul/1801
     { y: 1801, y1: 1802, m: [null, null, ["Bengal Subah", "Carnatic"]] },
-    { y: 1500, y1: 1728, r: { "Travancore": "Reinos de Kerala (Venad, Cochim e Calicute)" }, f: { "Travancore": "blank" }, o: { "Travancore": null } }, // Marthanda Varma funda Travancore a partir de Venad em 1729
+    { y: 1485, y1: 1728, r: { "Travancore": "Reinos de Kerala (Venad, Cochim e Calicute)" }, f: { "Travancore": "blank" }, o: { "Travancore": null } }, // Marthanda Varma funda Travancore a partir de Venad em 1729
     { y: 1729, y1: 1794, /*fixo*/ r: { "Travancore": "Reino de Travancore" }, f: { "Travancore": "blank" }, o: { "Travancore": null } }, // fundado c. 1729; aliança subsidiária em 1795
     { y: 1795, y1: 1802, m: [null, null, ["Bengal Subah", "Travancore"]] },
     { y: 1856, y1: 1856, r: { "Herat": "Herat (ocupação persa)" }, f: { "Herat": "h:ir_old" }, o: { "Herat": "Pérsia" } }, // tomada em out/1856; devolvida pelo Tratado de Paris (mar/1857)
-    { y: 1500, y1: 1860, m: ["Đại Nam (Vietnã)", "blank", ["French Indochina", "Western Cochinchina", "Cochinchina"]] }, // franceses só em Saigon (1859–1860)
+    { y: 1485, y1: 1860, m: ["Đại Nam (Vietnã)", "blank", ["French Indochina", "Western Cochinchina", "Cochinchina"]] }, // franceses só em Saigon (1859–1860)
     // Oceania
-    { y: 1500, y1: 1858, m: ["Nova Gales do Sul (britânica)", "x:gb", ["New South Wales (UK)", "Northern Territory (UK)", "Queensland (UK)"]] }, // Queensland separada em 10/dez/1859
-    { y: 1500, y1: 1874, f: { "Tonga": "blank" } }, // bandeira adotada em 4/nov/1875
-    { y: 1500, y1: 1856, f: { "Transvaal": "blank", "Orange Free State": "blank" } }, // Vierkleur hasteada em 6/jan/1857; bandeira do Estado Livre em 23/fev/1857
+    { y: 1485, y1: 1858, m: ["Nova Gales do Sul (britânica)", "x:gb", ["New South Wales (UK)", "Northern Territory (UK)", "Queensland (UK)"]] }, // Queensland separada em 10/dez/1859
+    { y: 1485, y1: 1874, f: { "Tonga": "blank" } }, // bandeira adotada em 4/nov/1875
+    { y: 1485, y1: 1856, f: { "Transvaal": "blank", "Orange Free State": "blank" } }, // Vierkleur hasteada em 6/jan/1857; bandeira do Estado Livre em 23/fev/1857
     // revisão 1841–1845 (situação em 31/dez)
     ...yearly(1821, 1844, "Estados Unidos", "United States of America", ["United States of America", "Confederate States", "Louisiana N", "Louisiana S"]), // Flórida transferida pelo Tratado Adams–Onís (em vigor em 22/fev/1821)
     ...yearly(1803, 1820, "Estados Unidos", "United States of America", ["United States of America", "Confederate States", "Louisiana N", "Louisiana S"]),
-    ...yearly(1500, 1802, "Estados Unidos", "United States of America", ["United States of America", "Confederate States"]),
+    ...yearly(1485, 1802, "Estados Unidos", "United States of America", ["United States of America", "Confederate States"]),
     ...yearly(1845, 1845, "Estados Unidos", "United States of America", ["United States of America", "Confederate States", "Louisiana N", "Louisiana S", "Texas"]), // Texas anexado em 29/dez/1845
     ...yearly(1846, 1847, "Estados Unidos", "United States of America", ["United States of America", "Confederate States", "Louisiana N", "Louisiana S", "Texas", "Oregon"]), // Tratado do Oregon, 15/jun/1846
     { y: 1836, y1: 1844, r: { "Texas": "República do Texas" }, f: { "Texas": "h:texas" }, o: { "Texas": null } }, // Lone Star Flag de 1839
-    { y: 1500, y1: 1845, r: { "Oregon": "Oregon (ocupação conjunta EUA–Reino Unido)" }, f: { "Oregon": "blank" }, o: { "Oregon": null } }, // convenção de 1818
+    { y: 1485, y1: 1845, r: { "Oregon": "Oregon (ocupação conjunta EUA–Reino Unido)" }, f: { "Oregon": "blank" }, o: { "Oregon": null } }, // convenção de 1818
     { y: 1823, y1: 1834, m: ["México", "x:mx", ["Mexico", "Mexican Cession", "Alta California", "New Mexico", "Yucatan", "Texas"]] }, // Iturbide abdica em 19/mar/1823
     { y: 1821, y1: 1821, m: ["Império Mexicano", "blank", ["Mexico", "Mexican Cession", "Alta California", "New Mexico", "Yucatan", "Texas"]] }, // independência em 27/set/1821
     { y: 1822, y1: 1822, m: ["Império Mexicano", "blank", ["Mexico", "Mexican Cession", "Alta California", "New Mexico", "Yucatan", "Texas", "Guatemala", "El Salvador", "Honduras", "Nicaragua", "Costa Rica"]] }, // América Central anexada em jan/1822
@@ -644,9 +644,9 @@ export const EVENTS = {
     { y: 1843, y1: 1845, m: ["México", "x:mx", ["Mexico", "Mexican Cession", "Alta California", "New Mexico", "Yucatan"]] }, // convênios de dez/1843
     { y: 1841, y1: 1842, r: { "Yucatan": "República de Yucatán" }, f: { "Yucatan": "blank" }, o: { "Yucatan": null } }, // independência em 16/mar e 1/out/1841
     { y: 1822, y1: 1843, m: ["Haiti", "x:ht", ["Haiti", "Dominican Republic"]] }, // independência dominicana em 27/fev/1844
-    { y: 1500, y1: 1842, r: { "Natal": "República de Natália" }, f: { "Natal": "blank" }, o: { "Natal": null } }, // anexada pelos britânicos em 12/mai/1843
+    { y: 1485, y1: 1842, r: { "Natal": "República de Natália" }, f: { "Natal": "blank" }, o: { "Natal": null } }, // anexada pelos britânicos em 12/mai/1843
     { y: 1783, y1: 1842, r: { "Sind": "Amirados do Sind (Talpur)" }, f: { "Sind": "blank" }, o: { "Sind": null } }, // Miani e Hyderabad, fev–mar/1843
-    { y: 1500, y1: 1782, r: { "Sind": "Sind (dinastia Kalhora)" }, f: { "Sind": "blank" }, o: { "Sind": null } }, // vassala do Império Durrani desde 1748–1750; Talpur desde 1783
+    { y: 1485, y1: 1782, r: { "Sind": "Sind (dinastia Kalhora)" }, f: { "Sind": "blank" }, o: { "Sind": null } }, // vassala do Império Durrani desde 1748–1750; Talpur desde 1783
     { y: 1843, y1: 1845, m: ["Índia (Companhia Britânica das Índias Orientais)", "blank", ["British Raj", "Sind"]] },
     { y: 1846, y1: 1848, m: ["Índia (Companhia Britânica das Índias Orientais)", "blank", ["British Raj", "Sind", "Kashmir"]] }, // Caxemira a Gulab Singh, 16/mar/1846
     { y: 1819, y1: 1833, m: ["Império Sikh", "blank", ["Punjab", "Kashmir"]] }, // Shopian, 3/jul/1819
@@ -661,8 +661,8 @@ export const EVENTS = {
     { y: 1834, y1: 1853, r: { "Maryland": "Maryland na Libéria (colônia)" }, f: { "Maryland": "blank" }, o: { "Maryland": null } }, // colônia desde 12/fev/1834
     { y: 1854, y1: 1856, r: { "Maryland": "República de Maryland" }, f: { "Maryland": "blank" }, o: { "Maryland": null } }, // independência em 29/mai/1854
     { y: 1857, m: ["Libéria", "x:lr", ["Liberia", "Maryland"]] }, // anexada pela Libéria em 1857
-    { y: 1500, y1: 1844, f: { "Kingdom of Hawaii": "blank" } },
-    { y: 1500, y1: 1843, f: { "Ottoman Empire": "blank", "Kuwait": "blank" } }, // bandeira de crescente e estrela de cinco pontas adotada em 1844 // bandeira de 8 listras oficializada em 25/mai/1845
+    { y: 1485, y1: 1844, f: { "Kingdom of Hawaii": "blank" } },
+    { y: 1485, y1: 1843, f: { "Ottoman Empire": "blank", "Kuwait": "blank" } }, // bandeira de crescente e estrela de cinco pontas adotada em 1844 // bandeira de 8 listras oficializada em 25/mai/1845
     // revisão 1806 (situação em 31/dez; fontes: Wikipedia)
     { y: 1806, y1: 1806, r: { "Ionian Islands": "República Septinsular (protetorado russo)", "Dominican Republic": "Santo Domingo (França)", "Senegal FR": "Senegal (França)", "Portugal": "Reino de Portugal",
       "Dubrovnik": "República de Ragusa (ocupação francesa)", "Bay of Kotor": "Boca de Kotor (ocupação russa)", "Tuscany": "Reino da Etrúria", "Electorate of Hesse": "Eleitorado de Hesse (ocupação francesa)", "Duchy of Brunswick": "Principado de Brunsvique-Wolfenbüttel",
@@ -676,13 +676,13 @@ export const EVENTS = {
       "Dubrovnik": "República de Ragusa (ocupação francesa)" },
       f: { "Ionian Islands": "x:fr", "Dominican Republic": "x:fr", "Senegal FR": "x:fr", "Portugal": "x:fr", "Dubrovnik": "x:fr" },
       o: { "Ionian Islands": "França", "Dominican Republic": "França", "Senegal FR": "França", "Portugal": null, "Dubrovnik": null } }, // Junot em Lisboa em 30/nov/1807; Ragusa ocupada em 26/mai/1806 e anexada à Itália em 31/jan/1808; colônia da Coroa em 1/jan/1808
-    { y: 1500, y1: 1807, m: ["Estado do Brasil (Portugal)", "blank", ["Kingdom of Brazil", "Rio Grande do Sul"]], o: { "Kingdom of Brazil": "Portugal" } }, // a corte partiu de Lisboa em nov/1807 e chegou em 1808
+    { y: 1485, y1: 1807, m: ["Estado do Brasil (Portugal)", "blank", ["Kingdom of Brazil", "Rio Grande do Sul"]], o: { "Kingdom of Brazil": "Portugal" } }, // a corte partiu de Lisboa em nov/1807 e chegou em 1808
     // revisão 1808 (situação em 31/dez; fontes: Wikipedia)
-    { y: 1500, y1: 1808, m: ["Império Russo", "x:ru", ["Russian Empire", "Russian Caucasus"]] }, // Tarnopol austríaco até Schönbrunn (14/out/1809)
+    { y: 1485, y1: 1808, m: ["Império Russo", "x:ru", ["Russian Empire", "Russian Caucasus"]] }, // Tarnopol austríaco até Schönbrunn (14/out/1809)
     { y: 1808, y1: 1808, r: { "Finland": "Finlândia (ocupação russa)", "Ionian Islands": "Ilhas Jônicas (França)", "Dominican Republic": "Santo Domingo (França)", "Senegal FR": "Senegal (França)" },
       f: { "Finland": "x:ru", "Ionian Islands": "x:fr", "Dominican Republic": "x:fr", "Senegal FR": "x:fr" }, o: { "Finland": null, "Ionian Islands": "França", "Dominican Republic": "França", "Senegal FR": "França" } }, // Rússia ocupou a Finlândia até nov/1808 (Olkijoki, 19/nov); cessão em 17/set/1809; Jônicas cedidas à França em 1807; Ferrand voltou à cidade após Palo Hincado (7/nov/1808)
     // revisão 1809 (situação em 31/dez; fontes: Wikipedia)
-    { y: 1500, y1: 1809, r: { "Serbia": "Sérvia (Primeira Revolta Sérvia)", "Spain": "Espanha (Guerra Peninsular)", "Venezuela": "Capitania-Geral da Venezuela (Espanha)", "Chile": "Capitania-Geral do Chile (Espanha)",
+    { y: 1485, y1: 1809, r: { "Serbia": "Sérvia (Primeira Revolta Sérvia)", "Spain": "Espanha (Guerra Peninsular)", "Venezuela": "Capitania-Geral da Venezuela (Espanha)", "Chile": "Capitania-Geral do Chile (Espanha)",
       "Netherlands": "Reino da Holanda", "Netherlands Indies": "Índias Orientais Holandesas", "Valais": "República do Valais", "Grand Duchy of Oldenburg": "Ducado de Oldemburgo", "Kingdom of Hanover": "Hanôver (ocupação francesa)",
       "Kingdom of Haiti": "Estado do Haiti (Christophe)", "Haiti": "República do Haiti", "Guadeloupe": "Guadalupe", "Reunion": "Reunião", "Mauritius": "Maurício (Ilha de França)", "Malta": "Malta (protetorado britânico)" },
       f: { "Serbia": "blank", "Venezuela": "x:es", "Chile": "x:es", "Netherlands": "blank", "Netherlands Indies": "blank", "Valais": "blank", "Grand Duchy of Oldenburg": "blank", "Kingdom of Hanover": "x:fr", "Kingdom of Haiti": "blank",
@@ -720,25 +720,25 @@ export const EVENTS = {
     { y: 1813, y1: 1814, m: ["Ducado de Varsóvia (ocupação russa)", "x:ru", ["Congress Poland", "Kraków", "Posen"]], o: { "Congress Poland": null } }, // ocupado desde jan/1813; dividido em 9/jun/1815
     { y: 1812, y1: 1814, m: ["Império Russo", "x:ru", ["Russian Empire", "Russian Caucasus", "Bessarabia", "Tarnopol"]] }, // Tratado de Gulistão, 24/out/1813
     { y: 1813, y1: 1814, r: { "Kingdom of Saxony": "Reino da Saxônia (administração prussiana)" }, o: { "Kingdom of Saxony": null } }, // perde 60% do território em 1815
-    { y: 1500, y1: 1814, r: { "Two Sicilies": "Reino de Nápoles (Joaquim Murat)", "Sicily": "Reino da Sicília (Bourbon)" }, f: { "Two Sicilies": "blank", "Sicily": "blank" }, o: { "Two Sicilies": null, "Sicily": null } }, // Tolentino, 3/mai/1815
+    { y: 1485, y1: 1814, r: { "Two Sicilies": "Reino de Nápoles (Joaquim Murat)", "Sicily": "Reino da Sicília (Bourbon)" }, f: { "Two Sicilies": "blank", "Sicily": "blank" }, o: { "Two Sicilies": null, "Sicily": null } }, // Tolentino, 3/mai/1815
     { y: 1809, y1: 1814, r: { "Ionian Islands": "Ilhas Jônicas (ocupação britânica)" }, f: { "Ionian Islands": "x:gb" }, o: { "Ionian Islands": null } }, // protetorado em 5–9/nov/1815
     { y: 1813, y1: 1814, m: ["Império Otomano", "blank", ["Ottoman Empire", "Serbia"]] }, // Sérvia reconquistada em out/1813; segunda revolta em abr/1815
-    { y: 1500, y1: 1814, f: { "Ceylon": "x:gb" }, o: { "Ceylon": "Reino Unido" } },
-    { y: 1500, y1: 1814, r: { "Kandy": "Reino de Kandy" }, f: { "Kandy": "blank" }, o: { "Kandy": null } }, // Kandy tomada em 14/fev/1815
+    { y: 1485, y1: 1814, f: { "Ceylon": "x:gb" }, o: { "Ceylon": "Reino Unido" } },
+    { y: 1485, y1: 1814, r: { "Kandy": "Reino de Kandy" }, f: { "Kandy": "blank" }, o: { "Kandy": null } }, // Kandy tomada em 14/fev/1815
     // revisão 1815 (situação em 31/dez; fontes: Wikipedia)
     { y: 1814, y1: 1815, r: { "Venezuela": "Capitania-Geral da Venezuela (Espanha)" }, f: { "Venezuela": "x:es" }, o: { "Venezuela": "Espanha" } }, // Caracas retomada pelos realistas em 16/jul/1814
     { y: 1542, y1: 1815, m: ["Vice-Reino de Nova Granada (Espanha)", "x:es", ["Panama", "Ecuador"]], o: { "Panama": "Espanha" } },
     { y: 1811, y1: 1815, r: { "Colombia": "Províncias Unidas de Nova Granada" }, f: { "Colombia": "blank" }, o: { "Colombia": null } }, // 1810–1816; Cartagena cai em 6/dez/1815
-    { y: 1500, y1: 1815, f: { "Argentina": "blank" } }, // bandeira adotada pelo Congresso de Tucumán em 1816
+    { y: 1485, y1: 1815, f: { "Argentina": "blank" } }, // bandeira adotada pelo Congresso de Tucumán em 1816
     { y: 1815, y1: 1815, m: ["Liga Federal (Artigas)", "blank", ["Liga Federal", "Uruguay"]], o: { "Liga Federal": null } }, // Artigas controla Montevidéu desde 1815
     { y: 1816, y1: 1819, r: { "Liga Federal": "Liga Federal (Artigas)" }, f: { "Liga Federal": "blank" }, o: { "Liga Federal": null } }, // 1815–1820
     { y: 1814, y1: 1815, r: { "Nepal": "Nepal (Guerra Anglo-Nepalesa)" } }, // 1/nov/1814 a 4/mar/1816 (Tratado de Sugauli ratificado)
     { y: 1811, y1: 1815, r: { "Netherlands Indies": "Índias Orientais Holandesas (ocupação britânica)" }, f: { "Netherlands Indies": "x:gb" }, o: { "Netherlands Indies": null } }, // Java devolvida aos holandeses em 1816
     // revisão 1816–1820 (situação em 31/dez; fontes: Wikipedia)
-    { y: 1500, y1: 1843, f: { "Ottoman Empire": "blank" } }, // bandeira atual em 1844
+    { y: 1485, y1: 1843, f: { "Ottoman Empire": "blank" } }, // bandeira atual em 1844
     { y: 1821, y1: 1843, f: { "Ottoman Empire": "blank" } },
-    { y: 1500, y1: 1820, r: { "Florida": "Flórida (Espanha)" }, f: { "Florida": "x:es" }, o: { "Florida": "Espanha" } }, // Tratado Adams–Onís, 22/fev/1819, em vigor em 22/fev/1821
-    { y: 1500, y1: 1817, r: { "Oregon": "País do Oregon (disputado)" }, f: { "Oregon": "blank" }, o: { "Oregon": null } }, // Tratado de 1818 (20/out/1818): ocupação conjunta
+    { y: 1485, y1: 1820, r: { "Florida": "Flórida (Espanha)" }, f: { "Florida": "x:es" }, o: { "Florida": "Espanha" } }, // Tratado Adams–Onís, 22/fev/1819, em vigor em 22/fev/1821
+    { y: 1485, y1: 1817, r: { "Oregon": "País do Oregon (disputado)" }, f: { "Oregon": "blank" }, o: { "Oregon": null } }, // Tratado de 1818 (20/out/1818): ocupação conjunta
     ...perYear(1521, 1534, { r: { "Mexico": "Nova Espanha (Espanha)" }, f: { "Mexico": "x:es" }, o: { "Mexico": "Espanha" } }), /*fixo*/ // Tenochtitlan cai em 13/ago/1521; vice-reino em 1535
     ...perYear(1535, 1545, { r: { "Mexico": "Vice-Reino da Nova Espanha (Espanha)" }, f: { "Mexico": "x:es" }, o: { "Mexico": "Espanha" } }), /*fixo*/
     ...perYear(1546, 1597, { m: ["Vice-Reino da Nova Espanha (Espanha)", "x:es", ["Mexico", "Yucatan"]], o: { "Mexico": "Espanha" } }), /*fixo*/ // conquista do Iucatã concluída em 1546
@@ -749,28 +749,28 @@ export const EVENTS = {
     { y: 1694, y1: 1715, /*fixo*/ m: ["Vice-Reino da Nova Espanha (Espanha)", "x:es", ["Mexico", "Yucatan", "New Mexico"]], o: { "Mexico": "Espanha" } },
     { y: 1716, y1: 1768, /*fixo*/ m: ["Vice-Reino da Nova Espanha (Espanha)", "x:es", ["Mexico", "Yucatan", "New Mexico", "Texas"]], o: { "Mexico": "Espanha" } }, // missões do Texas restabelecidas em 1716
     { y: 1769, y1: 1820, /*fixo*/ m: ["Vice-Reino da Nova Espanha (Espanha)", "x:es", ["Mexico", "Yucatan", "New Mexico", "Texas", "Alta California"]], o: { "Mexico": "Espanha" } }, // San Diego, 1769
-    ...perYear(1500, 1820, { r: { "Mexican Cession": null } }), /*fixo*/ // Nevada, Utah e Colorado sem presença espanhola efetiva
-    ...perYear(1500, 1768, { r: { "Alta California": null } }), /*fixo*/
-    ...perYear(1500, 1689, { r: { "Texas": null } }), /*fixo*/
+    ...perYear(1490, 1820, { r: { "Mexican Cession": null } }), /*fixo*/ // Nevada, Utah e Colorado sem presença espanhola efetiva
+    ...perYear(1490, 1768, { r: { "Alta California": null } }), /*fixo*/
+    ...perYear(1490, 1689, { r: { "Texas": null } }), /*fixo*/
     ...perYear(1694, 1715, { r: { "Texas": null } }), /*fixo*/
-    ...perYear(1500, 1597, { r: { "New Mexico": null } }), /*fixo*/
+    ...perYear(1490, 1597, { r: { "New Mexico": null } }), /*fixo*/
     ...perYear(1680, 1691, { r: { "New Mexico": "Novo México (Revolta dos Pueblos)" }, f: { "New Mexico": "blank" }, o: { "New Mexico": null } }), /*fixo*/
     ...perYear(1542, 1545, { r: { "Yucatan": "Iucatã (conquista espanhola em curso)" }, f: { "Yucatan": "blank" }, o: { "Yucatan": null } }), /*fixo*/ // Mérida fundada em 1542
-    ...perYear(1500, 1541, { r: { "Yucatan": "Iucatã (estados maias)" }, f: { "Yucatan": "blank" }, o: { "Yucatan": null } }), /*fixo*/
+    ...perYear(1490, 1541, { r: { "Yucatan": "Iucatã (estados maias)" }, f: { "Yucatan": "blank" }, o: { "Yucatan": null } }), /*fixo*/
     ...perYear(1519, 1520, { r: { "Mexico": "Império Asteca (disputado; invasão espanhola)" }, f: { "Mexico": "blank" }, o: { "Mexico": null } }), /*fixo*/ // Cortés desembarca em 1519
-    ...perYear(1500, 1518, { r: { "Mexico": "Império Asteca e outros povos" }, f: { "Mexico": "blank" }, o: { "Mexico": null } }), /*fixo*/
+    ...perYear(1490, 1518, { r: { "Mexico": "Império Asteca e outros povos" }, f: { "Mexico": "blank" }, o: { "Mexico": null } }), /*fixo*/
     { y: 1563, y1: 1820, /*fixo*/ m: ["Capitania-Geral da Guatemala (Espanha)", "x:es", ["Guatemala", "El Salvador", "Honduras", "Nicaragua", "Costa Rica"]], o: { "Guatemala": "Espanha" } }, // Cartago (Costa Rica) fundada em 1563
     { y: 1543, y1: 1562, /*fixo*/ m: ["Capitania-Geral da Guatemala (Espanha)", "x:es", ["Guatemala", "El Salvador", "Honduras", "Nicaragua"]], o: { "Guatemala": "Espanha" } }, // Audiência dos Confins, 1543
     ...perYear(1524, 1542, { m: ["Governações da Guatemala, Honduras e Nicarágua (Espanha)", "x:es", ["Guatemala", "El Salvador", "Honduras", "Nicaragua"]], o: { "Guatemala": "Espanha" } }), /*fixo*/ // Alvarado na Guatemala e Nicarágua conquistada em 1524
     ...perYear(1524, 1562, { r: { "Costa Rica": "Costa Rica (povos indígenas)" }, f: { "Costa Rica": "blank" }, o: { "Costa Rica": null } }), /*fixo*/
-    ...perYear(1500, 1523, { m: ["América Central (estados maias e outros povos indígenas)", "blank", ["Guatemala", "El Salvador", "Honduras", "Nicaragua", "Costa Rica"]], o: { "Guatemala": null } }), /*fixo*/
+    ...perYear(1490, 1523, { m: ["América Central (estados maias e outros povos indígenas)", "blank", ["Guatemala", "El Salvador", "Honduras", "Nicaragua", "Costa Rica"]], o: { "Guatemala": null } }), /*fixo*/
     { y: 1809, y1: 1820, r: { "Dominican Republic": "Santo Domingo (Espanha)" }, f: { "Dominican Republic": "x:es" }, o: { "Dominican Republic": "Espanha" } },
     { y: 1811, y1: 1819, r: { "Kingdom of Haiti": "Reino do Haiti (Henrique I)", "Haiti": "República do Haiti" }, f: { "Kingdom of Haiti": "blank" }, o: { "Kingdom of Haiti": null } }, // reino proclamado em 28/mar/1811, no norte
     { y: 1816, y1: 1818, m: ["Vice-Reino de Nova Granada (Espanha)", "x:es", ["Colombia", "Panama", "Ecuador"]], o: { "Colombia": "Espanha" } }, // Bogotá retomada em 6/mai/1816
     { y: 1819, y1: 1820, m: ["Real Audiência de Quito e Panamá (Espanha)", "x:es", ["Ecuador", "Panama"]], o: { "Ecuador": "Espanha" } },
     { y: 1819, y1: 1820, r: { "Colombia": "República da Colômbia (Nova Granada)" }, f: { "Colombia": "blank" }, o: { "Colombia": null } }, // Boyacá, 7/ago/1819; Congresso de Angostura
     { y: 1816, y1: 1820, r: { "Venezuela": "Venezuela (Guerra de Independência)" }, f: { "Venezuela": "blank" }, o: { "Venezuela": null } }, // Carabobo só em 24/jun/1821
-    { y: 1500, y1: 1820, r: { "Peru": "Vice-Reino do Peru (Espanha)" }, f: { "Peru": "x:es" }, o: { "Peru": "Espanha" } }, // San Martín desembarca em set/1820
+    { y: 1485, y1: 1820, r: { "Peru": "Vice-Reino do Peru (Espanha)" }, f: { "Peru": "x:es" }, o: { "Peru": "Espanha" } }, // San Martín desembarca em set/1820
     { y: 1814, y1: 1816, r: { "Chile": "Capitania-Geral do Chile (Espanha)" }, f: { "Chile": "x:es" }, o: { "Chile": "Espanha" } }, // Reconquista 1814–1817; Chacabuco em 12/fev/1817
     { y: 1817, y1: 1817, r: { "Chile": "Chile (governo patriota)" }, o: { "Chile": null } }, // independência em 12/fev/1818; bandeira atual em 18/out/1817
     { y: 1816, y1: 1817, f: { "Argentina": "h:ar_ns" } }, // Congresso de Tucumán (9/jul/1816); sol de maio em 1818
@@ -779,41 +779,41 @@ export const EVENTS = {
     { y: 1815, y1: 1820, m: ["Reino do Brasil (Reino Unido de Portugal, Brasil e Algarves)", "blank", ["Kingdom of Brazil", "Rio Grande do Sul"]] },
     { y: 1816, y1: 1816, r: { "Uruguay": "Banda Oriental (Artigas; invasão luso-brasileira)" }, f: { "Uruguay": "blank" }, o: { "Uruguay": null } },
     { y: 1817, y1: 1820, r: { "Uruguay": "Banda Oriental (ocupação luso-brasileira)" }, f: { "Uruguay": "blank" }, o: { "Uruguay": null } }, // anexada como Cisplatina em 1821
-    { y: 1500, y1: 1820, r: { "Anglo-Egyptian Sudan": null } }, // invasão egípcia a partir de jul/1820; Sennar em 14/jun/1821
+    { y: 1485, y1: 1820, r: { "Anglo-Egyptian Sudan": null } }, // invasão egípcia a partir de jul/1820; Sennar em 14/jun/1821
     { y: 1809, y1: 1816, r: { "Senegal FR": "Senegal (britânico)" }, f: { "Senegal FR": "x:gb" }, o: { "Senegal FR": "Reino Unido" } }, // devolvido à França em 1817
-    { y: 1500, y1: 1819, r: { "Zululand": null } }, // Shaka desde 1816; Mhlatuze em 1820
+    { y: 1485, y1: 1819, r: { "Zululand": null } }, // Shaka desde 1816; Mhlatuze em 1820
     { y: 1796, y1: 1817, /*fixo*/ m: ["Emirado de Diriyah (Primeiro Estado Saudita)", "blank", ["Riyadh", "Qassim", "Hail", "Hasa"]], o: { "Riyadh": null } }, // fim do emirado de Bani Khalid em 1796
     { y: 1744, y1: 1795, /*fixo*/ m: ["Emirado de Diriyah (Primeiro Estado Saudita)", "blank", ["Riyadh", "Qassim", "Hail"]], o: { "Riyadh": null } }, // fundado em 1744 (Qassim e Hail sem data checada) // Diriyah rende-se em 1818
     { y: 1818, y1: 1819, m: ["Négede (ocupação egípcia)", "h:eg_khed", ["Riyadh", "Qassim"]], o: { "Riyadh": null } }, // Ibrahim Paxá volta ao Egito em dez/1819
     { y: 1752, y1: 1818, /*fixo*/ r: { "Kashmir": "Caxemira (Império Durrani)" }, f: { "Kashmir": "blank" }, o: { "Kashmir": null } },
-    { y: 1500, y1: 1816, r: { "Maratha": "Confederação Maratha" }, f: { "Maratha": "blank" }, o: { "Maratha": null } },
+    { y: 1485, y1: 1816, r: { "Maratha": "Confederação Maratha" }, f: { "Maratha": "blank" }, o: { "Maratha": null } },
     { y: 1817, y1: 1817, r: { "Maratha": "Confederação Maratha (Terceira Guerra Anglo-Maratha)" }, f: { "Maratha": "blank" }, o: { "Maratha": null } }, // 5/nov/1817 a 9/abr/1819
     { y: 1818, m: ["Índia (Companhia Britânica das Índias Orientais)", "blank", ["British Raj", "Maratha"]] }, // Baji Rao II rende-se em 3/jun/1818
     { y: 1785, y1: 1818, m: ["Reino da Birmânia", "blank", ["Upper Burma", "Pegu", "Arakan", "Tenasserim"]] }, // Mrauk-U conquistada em 2/jan/1785
     { y: 1760, y1: 1784, m: ["Reino da Birmânia", "blank", ["Upper Burma", "Pegu", "Tenasserim"]] }, // Tavoy tomada em dez/1759; litoral inteiro até 1765
     { y: 1757, y1: 1759, m: ["Reino da Birmânia", "blank", ["Upper Burma", "Pegu"]] }, // Pegu cai em 6/mai/1757
-    { y: 1500, y1: 1759, m: [null, null, ["Rattanakosin Kingdom", "Tenasserim"]] }, // Mergui e o sul de Tenasserim siameses até 1759–1760
-    { y: 1500, y1: 1784, r: { "Arakan": "Reino de Mrauk-U (Arracão)" }, f: { "Arakan": "blank" }, o: { "Arakan": null } }, // independente desde 1437 (vassalo de Bengala até 1531)
+    { y: 1485, y1: 1759, m: [null, null, ["Rattanakosin Kingdom", "Tenasserim"]] }, // Mergui e o sul de Tenasserim siameses até 1759–1760
+    { y: 1485, y1: 1784, r: { "Arakan": "Reino de Mrauk-U (Arracão)" }, f: { "Arakan": "blank" }, o: { "Arakan": null } }, // independente desde 1437 (vassalo de Bengala até 1531)
     ...perYear(1752, 1756, { r: { "Upper Burma": "Reino de Konbaung (Birmânia)", "Pegu": "Reino de Hanthawaddy Restaurado" }, f: { "Upper Burma": "blank", "Pegu": "blank" }, o: { "Upper Burma": null, "Pegu": null } }), /*fixo*/ // Konbaung domina a Alta Birmânia em dez/1753
     { y: 1740, y1: 1751, r: { "Upper Burma": "Reino de Toungoo (Ava)", "Pegu": "Reino de Hanthawaddy Restaurado" }, f: { "Upper Burma": "blank", "Pegu": "blank" }, o: { "Upper Burma": null, "Pegu": null } }, // Hanthawaddy restaurado em 29/nov/1740; Ava cai em mar/1752
     { y: 1555, y1: 1739, /*fixo*/ m: ["Reino de Toungoo (Birmânia)", "blank", ["Upper Burma", "Pegu"]], o: { "Upper Burma": null } }, // Ava tomada por Bayinnaung em jan/1555
     ...perYear(1541, 1554, { r: { "Pegu": "Reino de Toungoo (Birmânia)" }, f: { "Pegu": "blank" }, o: { "Pegu": null } }), /*fixo*/ // Martaban cai em 1541
     ...perYear(1534, 1540, { r: { "Pegu": "Pegu (disputado; guerra Toungoo–Hanthawaddy)" }, f: { "Pegu": "blank" }, o: { "Pegu": null } }), /*fixo*/ // guerra de 1534–1541
-    ...perYear(1500, 1533, { r: { "Pegu": "Reino de Hanthawaddy (Pegu)" }, f: { "Pegu": "blank" }, o: { "Pegu": null } }), /*fixo*/
+    ...perYear(1490, 1533, { r: { "Pegu": "Reino de Hanthawaddy (Pegu)" }, f: { "Pegu": "blank" }, o: { "Pegu": null } }), /*fixo*/
     ...perYear(1527, 1554, { r: { "Upper Burma": "Ava (Confederação dos Estados Shan)" }, f: { "Upper Burma": "blank" }, o: { "Upper Burma": null } }), /*fixo*/ // Ava tomada pelos shans em 1527
-    ...perYear(1500, 1526, { r: { "Upper Burma": "Reino de Ava" }, f: { "Upper Burma": "blank" }, o: { "Upper Burma": null } }), /*fixo*/ // toda a Birmânia sob Toungoo antes da revolta mon de 1740
+    ...perYear(1490, 1526, { r: { "Upper Burma": "Reino de Ava" }, f: { "Upper Burma": "blank" }, o: { "Upper Burma": null } }), /*fixo*/ // toda a Birmânia sob Toungoo antes da revolta mon de 1740
     { y: 1819, y1: 1820, m: ["Reino da Birmânia", "blank", ["Upper Burma", "Pegu", "Arakan", "Tenasserim", "Manipur"]] }, // Manipur conquistado em 1819
-    { y: 1500, y1: 1818, r: { "Manipur": "Reino de Manipur" }, f: { "Manipur": "blank" }, o: { "Manipur": null } },
-    { y: 1500, y1: 1820, r: { "Assam": "Reino Ahom (Assam)" }, f: { "Assam": "blank" }, o: { "Assam": null } }, // invasões birmanesas em 1817 e 1819; controle birmanês de 1821 a 1825
+    { y: 1485, y1: 1818, r: { "Manipur": "Reino de Manipur" }, f: { "Manipur": "blank" }, o: { "Manipur": null } },
+    { y: 1485, y1: 1820, r: { "Assam": "Reino Ahom (Assam)" }, f: { "Assam": "blank" }, o: { "Assam": null } }, // invasões birmanesas em 1817 e 1819; controle birmanês de 1821 a 1825
     // revisão 1821–1825 (situação em 31/dez)
-    { y: 1500, y1: 1887, r: { "Rapa Nui": null } },
+    { y: 1485, y1: 1887, r: { "Rapa Nui": null } },
     { y: 1824, y1: 1824, f: { "Peru": "blank" } }, // bandeira atual em 25/fev/1825 // anexada pelo Chile em 9/set/1888
     { y: 1825, y1: 1855, r: { "_null_150": "Terra de Van Diemen (britânica)" }, f: { "_null_150": "x:gb" }, o: { "_null_150": "Reino Unido" } }, // colônia em 3/dez/1825; Tasmânia em 1/jan/1856
-    { y: 1500, y1: 1824, m: ["Nova Gales do Sul (britânica)", "x:gb", ["New South Wales (UK)", "_null_150"]] },
+    { y: 1485, y1: 1824, m: ["Nova Gales do Sul (britânica)", "x:gb", ["New South Wales (UK)", "_null_150"]] },
     { y: 1821, y1: 1823, r: { "Peru": "Peru (Guerra de Independência)" }, f: { "Peru": "blank" }, o: { "Peru": null } }, // realistas na serra; Ayacucho em 9/dez/1824
     { y: 1821, y1: 1821, r: { "Dominican Republic": "Haiti Espanhol (independência efêmera)" }, f: { "Dominican Republic": "blank" }, o: { "Dominican Republic": null } }, // 1/dez/1821 a 9/fev/1822
     { y: 1815, y1: 1821, r: { "Portugal": "Reino Unido de Portugal, Brasil e Algarves" } },
-    { y: 1500, y1: 1821, r: { "Liberia": null } }, // Cabo Mesurado adquirido em dez/1821
+    { y: 1485, y1: 1821, r: { "Liberia": null } }, // Cabo Mesurado adquirido em dez/1821
     { y: 1821, y1: 1821, f: { "Greece": "blank" } },
     { y: 1821, y1: 1824, m: ["Reino da Birmânia", "blank", ["Upper Burma", "Pegu", "Assam", "Manipur", "Arakan", "Tenasserim"]] }, // Assam sob a Birmânia de 1821 a 1825
     { y: 1824, y1: 1824, r: { "Upper Burma": "Reino da Birmânia (Primeira Guerra Anglo-Birmanesa)" } },
@@ -823,7 +823,7 @@ export const EVENTS = {
     { y: 1826, m: ["Índia (Companhia Britânica das Índias Orientais)", "blank", ["British Raj", "Assam", "Manipur", "Arakan", "Tenasserim"]] },
     // revisão 1826–1830 (situação em 31/dez)
     { y: 1669, y1: 1829, /*fixo*/ m: ["Império Otomano", "x:tr", ["Ottoman Empire", "Crete"]] }, // Cândia rende-se em set/1669 // Creta entregue a Muhammad Ali em 1830
-    { y: 1500, y1: 1843, f: { "Ottoman Empire": "blank", "Kuwait": "blank" } },
+    { y: 1485, y1: 1843, f: { "Ottoman Empire": "blank", "Kuwait": "blank" } },
     { y: 1822, y1: 1829, m: ["Grã-Colômbia", "blank", ["Colombia", "Panama", "Venezuela", "Ecuador"]] }, // Quito e Guayaquil em 1822
     { y: 1821, y1: 1821, m: ["Grã-Colômbia", "blank", ["Colombia", "Panama", "Venezuela"]] }, // Panamá adere em 28/nov/1821
     { y: 1821, y1: 1821, r: { "Ecuador": "Real Audiência de Quito (Espanha)" }, f: { "Ecuador": "x:es" }, o: { "Ecuador": "Espanha" } }, // Pichincha em 24/mai/1822
@@ -839,52 +839,52 @@ export const EVENTS = {
     { y: 1554, y1: 1829, /*fixo*/ m: ["Regência de Argel", "blank", ["Algeria", "Algeria FR"]], o: { "Algeria": null } }, // Tlemcen tomada pelos otomanos em 1554
     ...perYear(1519, 1553, { m: ["Regência de Argel e Reino Zayyanida de Tlemcen", "blank", ["Algeria", "Algeria FR"]], o: { "Algeria": null } }), /*fixo*/ // Hayreddin aceita a suserania otomana em 1519
     ...perYear(1516, 1518, { m: ["Argel (Aruj Barbarossa) e Reino Zayyanida de Tlemcen", "blank", ["Algeria", "Algeria FR"]], o: { "Algeria": null } }), /*fixo*/
-    ...perYear(1500, 1515, { m: ["Reino Zayyanida de Tlemcen e cidades costeiras", "blank", ["Algeria", "Algeria FR"]], o: { "Algeria": null } }), /*fixo*/
+    ...perYear(1490, 1515, { m: ["Reino Zayyanida de Tlemcen e cidades costeiras", "blank", ["Algeria", "Algeria FR"]], o: { "Algeria": null } }), /*fixo*/
     { y: 1830, y1: 1830, r: { "Algeria FR": "Argel (conquista francesa)" }, f: { "Algeria FR": "x:fr" }, o: { "Algeria FR": "França" } }, // Argel tomada em 5/jul/1830
     { y: 1831, y1: 1899, r: { "Algeria FR": "Argélia (França)" }, f: { "Algeria FR": "x:fr" }, o: { "Algeria FR": "França" } }, // forma do mapa de 1880; Saara conquistado depois
     { y: 1830, y1: 1899, r: { "Algeria": null } },
     { y: 1900, m: ["Argélia", "x:fr", ["Algeria", "Algeria FR"]] },
     // África antes da partilha: colônias com a forma do mapa de 1880, interior sem dono no mapa
     { y: 1817, r: { "Senegal FR": "Senegal (França)" }, f: { "Senegal FR": "x:fr" }, o: { "Senegal FR": "França" } },
-    { y: 1500, y1: 1894, r: { "French West Africa": null } }, // federação em 27/out/1895
+    { y: 1485, y1: 1894, r: { "French West Africa": null } }, // federação em 27/out/1895
     { y: 1895, m: ["África Ocidental Francesa", "x:fr", ["French West Africa", "Senegal FR"]] },
-    { y: 1500, r: { "Angola PT": "Angola (Portugal)", "Mozambique PT": "Moçambique (Portugal)", "Portuguese Guinea PT": "Guiné Portuguesa" }, f: { "Angola PT": "h:pt_mon", "Mozambique PT": "h:pt_mon", "Portuguese Guinea PT": "h:pt_mon" },
+    { y: 1485, r: { "Angola PT": "Angola (Portugal)", "Mozambique PT": "Moçambique (Portugal)", "Portuguese Guinea PT": "Guiné Portuguesa" }, f: { "Angola PT": "h:pt_mon", "Mozambique PT": "h:pt_mon", "Portuguese Guinea PT": "h:pt_mon" },
       o: { "Angola PT": "Portugal", "Mozambique PT": "Portugal", "Portuguese Guinea PT": "Portugal" } },
-    { y: 1500, y1: 1890, r: { "Angola": null, "Portuguese East Africa": null } }, // tratado anglo-português de 11/jun/1891
+    { y: 1485, y1: 1890, r: { "Angola": null, "Portuguese East Africa": null } }, // tratado anglo-português de 11/jun/1891
     { y: 1891, m: ["Angola", "h:pt_mon", ["Angola", "Angola PT"]] },
     { y: 1891, m: ["Moçambique", "h:pt_mon", ["Portuguese East Africa", "Mozambique PT"]] },
-    { y: 1500, y1: 1885, r: { "Portuguese Guinea": null } }, // convenção franco-portuguesa de 1886
+    { y: 1485, y1: 1885, r: { "Portuguese Guinea": null } }, // convenção franco-portuguesa de 1886
     { y: 1886, m: ["Guiné Portuguesa", "h:pt_mon", ["Portuguese Guinea", "Portuguese Guinea PT"]] },
-    { y: 1500, y1: 1833, f: { "Angola PT": "blank", "Mozambique PT": "blank", "Portuguese Guinea PT": "blank", "Cape Verde": "blank", "Sao Tome": "blank", "Goa": "blank", "Macau": "blank", "Portuguese Timor": "blank" } }, // bandeira azul e branca só em 1834
-    { y: 1500, y1: 1842, r: { "Gabon FR": null } }, // posto francês de Fort d'Aumale em 1843
+    { y: 1485, y1: 1833, f: { "Angola PT": "blank", "Mozambique PT": "blank", "Portuguese Guinea PT": "blank", "Cape Verde": "blank", "Sao Tome": "blank", "Goa": "blank", "Macau": "blank", "Portuguese Timor": "blank" } }, // bandeira azul e branca só em 1834
+    { y: 1485, y1: 1842, r: { "Gabon FR": null } }, // posto francês de Fort d'Aumale em 1843
     { y: 1843, y1: 1879, r: { "Gabon FR": "Gabão (França)" }, f: { "Gabon FR": "x:fr" }, o: { "Gabon FR": "França" } },
-    { y: 1500, y1: 1879, r: { "Gabon": null } },
-    { y: 1500, r: { "Gold Coast GB": "Costa do Ouro", "Sierra Leone GB": "Serra Leoa" }, f: { "Gold Coast GB": "x:gb", "Sierra Leone GB": "x:gb" }, o: { "Gold Coast GB": "Reino Unido", "Sierra Leone GB": "Reino Unido" } },
-    { y: 1500, y1: 1900, r: { "Gold Coast": null } }, // Territórios do Norte em 1901
+    { y: 1485, y1: 1879, r: { "Gabon": null } },
+    { y: 1485, r: { "Gold Coast GB": "Costa do Ouro", "Sierra Leone GB": "Serra Leoa" }, f: { "Gold Coast GB": "x:gb", "Sierra Leone GB": "x:gb" }, o: { "Gold Coast GB": "Reino Unido", "Sierra Leone GB": "Reino Unido" } },
+    { y: 1485, y1: 1900, r: { "Gold Coast": null } }, // Territórios do Norte em 1901
     { y: 1901, y1: 1901, m: ["Costa do Ouro", "x:gb", ["Gold Coast", "Gold Coast GB"]] },
-    { y: 1500, y1: 1895, r: { "Sierra Leone": null } }, // protetorado em 1896
+    { y: 1485, y1: 1895, r: { "Sierra Leone": null } }, // protetorado em 1896
     { y: 1896, m: ["Serra Leoa", "x:gb", ["Sierra Leone", "Sierra Leone GB"]] },
     { y: 1747, y1: 1826, r: { "Erivan": "Canatos de Erivã e Nakhchivan (Pérsia)" }, f: { "Erivan": "blank" }, o: { "Erivan": "Pérsia" } },
     { y: 1827, y1: 1827, r: { "Erivan": "Canatos de Erivã e Nakhchivan (ocupação russa)" }, f: { "Erivan": "x:ru" }, o: { "Erivan": null } }, // Erivã tomada em set/1827
     { y: 1830, y1: 1830, r: { "Congress Poland": "Reino da Polônia (Revolta de Novembro)" }, f: { "Congress Poland": "blank" }, o: { "Congress Poland": null } }, // governo nacional em Varsóvia; ofensiva russa em fev/1831
     { y: 1828, y1: 1830, r: { "Romania": "Principado da Moldávia (ocupação russa)", "Wallachia": "Principado da Valáquia (ocupação russa)" }, f: { "Romania": "x:ru", "Wallachia": "x:ru" } }, // guerra russo-turca de 1828–29; Tratado de Adrianópolis
-    { y: 1500, y1: 1828, r: { "Western Australia (UK)": null } }, // Fremantle reivindica a costa oeste em 2/mai/1829; colônia em 17/jun/1829
+    { y: 1485, y1: 1828, r: { "Western Australia (UK)": null } }, // Fremantle reivindica a costa oeste em 2/mai/1829; colônia em 17/jun/1829
     // revisão 1831–1835 (situação em 31/dez)
     ...yearly(1825, 1834, "Império do Brasil", "Kingdom of Brazil", ["Kingdom of Brazil", "Rio Grande do Sul"]),
     ...yearly(1822, 1824, "Império do Brasil", "Kingdom of Brazil", ["Kingdom of Brazil", "Rio Grande do Sul", "Uruguay"]), // independência em 7/set/1822; Cisplatina
     { y: 1821, y1: 1821, m: ["Reino do Brasil (Reino Unido de Portugal, Brasil e Algarves)", "blank", ["Kingdom of Brazil", "Rio Grande do Sul", "Uruguay"]] }, // Cisplatina incorporada em 18/jul/1821 // Farrapos tomam Porto Alegre em 20/set/1835
     { y: 1835, y1: 1835, r: { "Texas": "Texas (Revolução do Texas)" }, f: { "Texas": "blank" }, o: { "Texas": null } }, // sem guarnição mexicana desde dez/1835
-    { y: 1500, y1: 1833, r: { "Peshawar": "Peshawar (sardares barakzais)" }, f: { "Peshawar": "blank" }, o: { "Peshawar": null } },
+    { y: 1485, y1: 1833, r: { "Peshawar": "Peshawar (sardares barakzais)" }, f: { "Peshawar": "blank" }, o: { "Peshawar": null } },
     { y: 1846, y1: 1848, m: ["Império Sikh", "blank", ["Punjab", "Peshawar"]] },
-    { y: 1500, y1: 1833, r: { "Maryland": null } }, // colônia fundada em 12/fev/1834
-    { y: 1500, y1: 1833, r: { "Cambodia": "Reino do Camboja" }, f: { "Cambodia": "blank" }, o: { "Cambodia": null } }, // rebaixado a província vietnamita em 1834
+    { y: 1485, y1: 1833, r: { "Maryland": null } }, // colônia fundada em 12/fev/1834
+    { y: 1485, y1: 1833, r: { "Cambodia": "Reino do Camboja" }, f: { "Cambodia": "blank" }, o: { "Cambodia": null } }, // rebaixado a província vietnamita em 1834
     { y: 1711, y1: 1834, /*fixo*/ r: { "Libya": "Paxalato de Trípoli (dinastia Caramanli)" }, f: { "Libya": "blank" }, o: { "Libya": null } }, // Ali II deposto em 26/mai/1835
     { y: 1832, y1: 1843, f: { "Ottoman Empire": "blank", "Kuwait": "blank" } }, // as fusões otomanas de 1832 e 1835 repõem a bandeira
     { y: 1835, y1: 1843, f: { "Ottoman Empire": "blank", "Kuwait": "blank" } },
     { y: 1829, y1: 1831, r: { "Greece": "Estado Helênico" } }, // Reino da Grécia em 7/mai/1832
     { y: 1828, y1: 1831, r: { "Portugal": "Portugal (reinado de D. Miguel)" }, f: { "Portugal": "blank" } }, // D. Miguel mantinha a bandeira branca de D. João VI
     { y: 1832, y1: 1833, r: { "Portugal": "Portugal (Guerras Liberais)" }, f: { "Portugal": "blank" } }, // Lisboa tomada em 24/jul/1833; Évora-Monte em 26/mai/1834
-    { y: 1500, y1: 1835, m: ["Nova Gales do Sul (britânica)", "x:gb", ["New South Wales (UK)", "South Australia (UK)"]] }, // província da Austrália Meridional proclamada em 28/dez/1836
+    { y: 1485, y1: 1835, m: ["Nova Gales do Sul (britânica)", "x:gb", ["New South Wales (UK)", "South Australia (UK)"]] }, // província da Austrália Meridional proclamada em 28/dez/1836
     // revisão 1836–1840 (situação em 31/dez)
     { y: 1836, y1: 1838, f: { "Texas": "blank" } }, // independência em 2/mar/1836; Lone Star Flag em 1839
     { y: 1840, y1: 1840, r: { "Yucatan": "Yucatán (rebelião federalista)" }, f: { "Yucatan": "blank" }, o: { "Yucatan": null } }, // independência formal em 1841
@@ -899,11 +899,11 @@ export const EVENTS = {
     { y: 1838, y1: 1838, m: ["Confederação Peru-Boliviana (Guerra da Confederação)", "blank", ["Peru", "Bolivia", "Bolivian Litoral"]] }, // dissolvida em 25/ago/1839
     { y: 1833, y1: 1839, r: { "Spain": "Espanha (Primeira Guerra Carlista)" } }, // desde 29/set/1833; Convenção de Vergara em 31/ago/1839; fim em jul/1840
     { y: 1840, y1: 1843, f: { "Ottoman Empire": "blank", "Kuwait": "blank" } }, // a fusão otomana de 1840 repõe a bandeira
-    { y: 1500, y1: 1840, r: { "Canada": "Alto e Baixo Canadá (britânicos)" } }, // Província do Canadá em 10/fev/1841
-    { y: 1500, y1: 1839, r: { "New Zealand": "Nova Zelândia (maoris)" }, f: { "New Zealand": "blank" }, o: { "New Zealand": null } }, // soberania britânica em 21/mai/1840
+    { y: 1485, y1: 1840, r: { "Canada": "Alto e Baixo Canadá (britânicos)" } }, // Província do Canadá em 10/fev/1841
+    { y: 1485, y1: 1839, r: { "New Zealand": "Nova Zelândia (maoris)" }, f: { "New Zealand": "blank" }, o: { "New Zealand": null } }, // soberania britânica em 21/mai/1840
     { y: 1840, y1: 1840, r: { "New Zealand": "Nova Zelândia (parte de Nova Gales do Sul)" }, f: { "New Zealand": "x:gb" }, o: { "New Zealand": "Reino Unido" } }, // colônia separada em 3/mai/1841
-    { y: 1500, y1: 1838, r: { "Natal": null } }, // República de Natália em 12/out/1839
-    { y: 1500, y1: 1837, r: { "Transvaal": null } }, // ndebeles de Mzilikazi expulsos pelos voortrekkers em nov/1837
+    { y: 1485, y1: 1838, r: { "Natal": null } }, // República de Natália em 12/out/1839
+    { y: 1485, y1: 1837, r: { "Transvaal": null } }, // ndebeles de Mzilikazi expulsos pelos voortrekkers em nov/1837
     { y: 1820, y1: 1878, r: { "Zululand": "Reino Zulu" }, f: { "Zululand": "blank" }, o: { "Zululand": null } },
     { y: 1879, y1: 1886, r: { "Zululand": "Zululândia (chefaturas após a Guerra Anglo-Zulu)" }, f: { "Zululand": "blank" }, o: { "Zululand": null } }, // rei deposto em 28/ago/1879
     { y: 1887, y1: 1896, r: { "Zululand": "Zululândia (britânica)" }, f: { "Zululand": "x:gb" }, o: { "Zululand": "Reino Unido" } }, // anexada em 1887
@@ -911,13 +911,13 @@ export const EVENTS = {
     { y: 1822, y1: 1838, r: { "Liberia": "Libéria (colônia da Sociedade Americana de Colonização)" }, f: { "Liberia": "blank" }, o: { "Liberia": null } }, // Commonwealth em 1839
     { y: 1839, y1: 1840, r: { "Afghanistan": "Afeganistão (Primeira Guerra Anglo-Afegã)" }, o: { "Afghanistan": null } }, // Cabul ocupada em ago/1839
     { y: 1651, y1: 1840, /*fixo*/ m: ["Império Qing", "blank", ["Manchu Empire", "Hong Kong"]] },
-    { y: 1500, y1: 1840, m: ["Brunei", "h:bn_y", ["Brunei", "Sarawak"]] }, // Sarawak a James Brooke em 24/set/1841
+    { y: 1485, y1: 1840, m: ["Brunei", "h:bn_y", ["Brunei", "Sarawak"]] }, // Sarawak a James Brooke em 24/set/1841
     { y: 1834, y1: 1840, r: { "Cambodia": "Camboja (província vietnamita de Trấn Tây)" }, f: { "Cambodia": "blank" }, o: { "Cambodia": "Đại Nam" } }, // 1835; retirada vietnamita em 1841
     { y: 1832, y1: 1839, m: ["Egito (eialete otomano)", "h:eg_khed", ["Egypt", "Egyptian Syria", "Lebanon", "Hejaz", "Crete"]] }, // Acre tomada em mai/1832
     { y: 1830, y1: 1831, m: ["Egito (eialete otomano)", "h:eg_khed", ["Egypt", "Hejaz", "Crete"]] },
     { y: 1813, y1: 1829, m: ["Egito (eialete otomano)", "h:eg_khed", ["Egypt", "Hejaz"]] }, // Medina retomada no fim de 1812; Meca em jan/1813 // guerra com o sultão desde 10/out/1831 // Muhammad Ali aceita a retirada em 27/nov/1840
-    { y: 1500, y1: 1838, m: ["Sultanatos do Sul da Arábia", "blank", ["South Arabia", "Aden"]] }, // Áden tomada pelos britânicos em jan/1839
-    { y: 1500, y1: 1885, r: { "South Arabia": "Sultanatos do Sul da Arábia" }, f: { "South Arabia": "blank" }, o: { "South Arabia": null } },
+    { y: 1485, y1: 1838, m: ["Sultanatos do Sul da Arábia", "blank", ["South Arabia", "Aden"]] }, // Áden tomada pelos britânicos em jan/1839
+    { y: 1485, y1: 1885, r: { "South Arabia": "Sultanatos do Sul da Arábia" }, f: { "South Arabia": "blank" }, o: { "South Arabia": null } },
     { y: 1839, y1: 1885, r: { "Aden": "Áden (britânica)" }, f: { "Aden": "x:gb" }, o: { "Aden": "Reino Unido" } }, // primeiro tratado formal de proteção em 1886
     { y: 1886, m: ["Áden e protetorados (britânicos)", "x:gb", ["Aden", "South Arabia"]] },
     // revisão 1846–1850 (situação em 31/dez)
@@ -931,28 +931,28 @@ export const EVENTS = {
     { y: 1846, y1: 1847, m: ["México", "x:mx", ["Mexico", "Mexican Cession"]] },
     { y: 1847, y1: 1847, r: { "Mexico": "México (capital ocupada pelos EUA)" } }, // Cidade do México tomada em set/1847
     { y: 1846, y1: 1847, r: { "Yucatan": "República de Yucatán" }, f: { "Yucatan": "blank" }, o: { "Yucatan": null } }, // independente desde 1/jan/1846
-    { y: 1500, y1: 1859, r: { "Mosquito Coast": "Costa dos Mosquitos (protetorado britânico)" }, f: { "Mosquito Coast": "blank" }, o: { "Mosquito Coast": "Reino Unido" } }, // protetorado de 1844 a 1860
+    { y: 1485, y1: 1859, r: { "Mosquito Coast": "Costa dos Mosquitos (protetorado britânico)" }, f: { "Mosquito Coast": "blank" }, o: { "Mosquito Coast": "Reino Unido" } }, // protetorado de 1844 a 1860
     { y: 1761, y1: 1848, r: { "Punjab": "Império Sikh" }, f: { "Punjab": "blank" }, o: { "Punjab": null } }, // sob regência britânica desde 1846 (Tratado de Lahore)
     { y: 1848, y1: 1848, r: { "Hungary": "Reino da Hungria (revolução de 1848)", "Sicily": "Reino da Sicília (revolução de 1848)", "Venice": "República de San Marco" }, f: { "Hungary": "blank", "Sicily": "blank", "Venice": "blank" }, o: { "Hungary": null, "Sicily": null, "Venice": null } }, // Pest tomada em 5/jan/1849
     { y: 1848, y1: 1848, r: { "Papal States": "Estados Papais (papa refugiado em Gaeta)" } },
-    { y: 1500, y1: 1846, r: { "Lucca": "Ducado de Lucca" }, f: { "Lucca": "blank" }, o: { "Lucca": null } },
+    { y: 1485, y1: 1846, r: { "Lucca": "Ducado de Lucca" }, f: { "Lucca": "blank" }, o: { "Lucca": null } },
     { y: 1848, y1: 1850, r: { "Romania": "Principado da Moldávia (ocupação russa)", "Wallachia": "Principado da Valáquia (ocupação russa e otomana)" }, f: { "Romania": "x:ru", "Wallachia": "blank" } }, // abr/1848 e set/1848 até 1851
     { y: 1848, y1: 1848, r: { "Duchy of Schleswig": "Schleswig (Primeira Guerra do Schleswig)", "Duchy of Holstein": "Holstein (governo provisório de Schleswig-Holstein)" }, f: { "Duchy of Schleswig": "blank", "Duchy of Holstein": "blank" }, o: { "Duchy of Schleswig": null, "Duchy of Holstein": null } },
     { y: 1849, y1: 1849, r: { "Duchy of Schleswig": "Schleswig (comissão mista do armistício)", "Duchy of Holstein": "Holstein (lugar-tenência alemã)" }, f: { "Duchy of Schleswig": "blank", "Duchy of Holstein": "blank" }, o: { "Duchy of Schleswig": null, "Duchy of Holstein": null } }, // armistício de 10/jul/1849
     { y: 1850, y1: 1850, r: { "Duchy of Holstein": "Holstein (governo de Schleswig-Holstein)" }, f: { "Duchy of Holstein": "blank" }, o: { "Duchy of Holstein": null } }, // exército dissolvido em 1/abr/1851
     { y: 1839, y1: 1846, r: { "Liberia": "Commonwealth da Libéria (Sociedade Americana de Colonização)" }, f: { "Liberia": "blank" } }, // independência em 26/jul/1847, bandeira em 24/ago/1847
-    { y: 1500, y1: 1850, m: ["Nova Gales do Sul (britânica)", "x:gb", ["New South Wales (UK)", "Victoria (UK)"]] }, // Vitória separada em 1/jul/1851
+    { y: 1485, y1: 1850, m: ["Nova Gales do Sul (britânica)", "x:gb", ["New South Wales (UK)", "Victoria (UK)"]] }, // Vitória separada em 1/jul/1851
     { y: 1836, y1: 1847, r: { "Orange Free State": "Transorângia (bôeres e griquas)" }, f: { "Orange Free State": "blank" }, o: { "Orange Free State": null } }, // Grande Jornada desde 1835–1836
-    { y: 1500, y1: 1835, r: { "Orange Free State": "Transorângia (griquas)" }, f: { "Orange Free State": "blank" }, o: { "Orange Free State": null } }, // Soberania do Rio Orange em 3/fev/1848
+    { y: 1485, y1: 1835, r: { "Orange Free State": "Transorângia (griquas)" }, f: { "Orange Free State": "blank" }, o: { "Orange Free State": null } }, // Soberania do Rio Orange em 3/fev/1848
     { y: 1831, y1: 1850, m: ["Confederação Argentina", "blank", ["Argentina", "State of Buenos Aires", "Liga Federal"]] }, // Rosas
     { y: 1839, y1: 1850, r: { "Uruguay": "Uruguai (Guerra Grande)" } },
     { y: 1820, y1: 1848, r: { "Haiti": "Haiti" } }, // Faustin I imperador em ago/1849
-    { y: 1500, y1: 1848, r: { "British Columbia": "Nova Caledônia e Colúmbia (Cia. da Baía de Hudson)" }, f: { "British Columbia": "x:gb" }, o: { "British Columbia": "Reino Unido" } }, // colônia da Ilha de Vancouver em 1849
+    { y: 1485, y1: 1848, r: { "British Columbia": "Nova Caledônia e Colúmbia (Cia. da Baía de Hudson)" }, f: { "British Columbia": "x:gb" }, o: { "British Columbia": "Reino Unido" } }, // colônia da Ilha de Vancouver em 1849
     // revisão 1851–1855 (situação em 31/dez)
     { y: 1812, y1: 1855, m: ["Império Russo", "x:ru", ["Russian Empire", "Southern Bessarabia"]] }, // sul da Bessarábia devolvido à Moldávia pelo Tratado de Paris (1856)
     { y: 1853, y1: 1853, r: { "Romania": "Principado da Moldávia (ocupação russa)", "Wallachia": "Principado da Valáquia (ocupação russa)" }, f: { "Romania": "x:ru", "Wallachia": "x:ru" } }, // jul/1853 a jul/1854
     { y: 1854, y1: 1855, r: { "Romania": "Principado da Moldávia (ocupação austríaca)", "Wallachia": "Principado da Valáquia (ocupação austríaca)" }, f: { "Romania": "h:at_hab", "Wallachia": "h:at_hab" } }, // administração austríaca neutra (1854–1856)
-    { y: 1500, y1: 1851, r: { "Montenegro": "Príncipe-Bispado de Montenegro" } }, // principado secular em 13/mar/1852
+    { y: 1485, y1: 1851, r: { "Montenegro": "Príncipe-Bispado de Montenegro" } }, // principado secular em 13/mar/1852
     { y: 1848, y1: 1853, r: { "Orange Free State": "Soberania do Rio Orange (britânica)" }, f: { "Orange Free State": "x:gb" }, o: { "Orange Free State": "Reino Unido" } }, // Estado Livre em 23/fev/1854
     { y: 1838, y1: 1851, r: { "Transvaal": "Transvaal (bôeres, independência não reconhecida)" }, f: { "Transvaal": "blank" }, o: { "Transvaal": null } }, // Convenção do Rio Sand, 17/jan/1852
     { y: 1851, y1: 1851, m: ["Confederação Argentina (guerra civil)", "blank", ["Argentina", "State of Buenos Aires", "Liga Federal"]] },
@@ -962,34 +962,34 @@ export const EVENTS = {
     { y: 1722, y1: 1855, r: { "Oudh": "Reino de Awadh" }, f: { "Oudh": "blank" }, o: { "Oudh": null } },
     // bandeiras e situações fixas do mapa de 1900 corrigidas para 1816–1899 (fontes: Wikipedia)
     ...perYear(1813, 1829, { f: { "France": "h:fr_bourbon", "Martinique": "h:fr_bourbon", "Guadeloupe": "h:fr_bourbon", "French India": "h:fr_bourbon", "Senegal FR": "h:fr_bourbon", "Reunion": "h:fr_bourbon", "Saint Martin": "h:fr_bourbon", "Saint Pierre and Miquelon": "h:fr_bourbon", "French Guiana": "h:fr_bourbon" } }), // bandeira branca da Restauração até jul/1830
-    ...perYear(1500, 1840, { f: { "Switzerland": "blank" } }), // bandeira federal das tropas a partir de 1841
-    ...perYear(1500, 1844, { f: { "Luxembourg": "blank" } }), // tricolor fixada em 12/jun/1845
-    ...perYear(1500, 1830, { f: { "Tunisia": "blank" } }), // aprovada em 1831
-    ...perYear(1500, 1853, { f: { "Imperial Japan": "blank" } }), // navios japoneses com o Hinomaru a partir de 1854
-    ...perYear(1500, 1854, { f: { "Rattanakosin Kingdom": "blank" } }), // bandeira do elefante oficial em 1855
-    ...perYear(1500, 1843, { f: { "Sweden–Norway": "blank" } }),
+    ...perYear(1485, 1840, { f: { "Switzerland": "blank" } }), // bandeira federal das tropas a partir de 1841
+    ...perYear(1485, 1844, { f: { "Luxembourg": "blank" } }), // tricolor fixada em 12/jun/1845
+    ...perYear(1485, 1830, { f: { "Tunisia": "blank" } }), // aprovada em 1831
+    ...perYear(1485, 1853, { f: { "Imperial Japan": "blank" } }), // navios japoneses com o Hinomaru a partir de 1854
+    ...perYear(1485, 1854, { f: { "Rattanakosin Kingdom": "blank" } }), // bandeira do elefante oficial em 1855
+    ...perYear(1485, 1843, { f: { "Sweden–Norway": "blank" } }),
     ...perYear(1814, 1843, { f: { "Norway": "blank" } }), // marca da união em 20/jun/1844
-    ...perYear(1500, 1847, { f: { "Italy": "blank" } }), // tricolor com o escudo de Saboia em mar/1848
+    ...perYear(1485, 1847, { f: { "Italy": "blank" } }), // tricolor com o escudo de Saboia em mar/1848
     ...perYear(1698, 1855, { m: ["Mascate e Omã", "h:om_red", ["Oman", "Sultanate of Zanzibar", "Zanzibar"]] }), /*fixo*/ // Forte Jesus (Mombaça) tomado pelos omanis em 13/dez/1698; Zanzibar e Omã separados em 19/out/1856
-    ...perYear(1500, 1840, { r: { "Comoros": "Sultanatos das Comores" }, f: { "Comoros": "blank" }, o: { "Comoros": null } }),
+    ...perYear(1485, 1840, { r: { "Comoros": "Sultanatos das Comores" }, f: { "Comoros": "blank" }, o: { "Comoros": null } }),
     ...perYear(1841, 1885, { r: { "Comoros": "Sultanatos das Comores (Mayotte francesa desde 1841)" }, f: { "Comoros": "blank" }, o: { "Comoros": null } }), // protetorado em 1886–1887
-    ...perYear(1500, 1843, { r: { "Saint Barthelemy": "São Bartolomeu (Suécia)" }, f: { "Saint Barthelemy": "blank" }, o: { "Saint Barthelemy": "Suécia" } }), // sueca de 1784 a 16/mar/1878
+    ...perYear(1485, 1843, { r: { "Saint Barthelemy": "São Bartolomeu (Suécia)" }, f: { "Saint Barthelemy": "blank" }, o: { "Saint Barthelemy": "Suécia" } }), // sueca de 1784 a 16/mar/1878
     ...perYear(1844, 1877, { r: { "Saint Barthelemy": "São Bartolomeu (Suécia)" }, f: { "Saint Barthelemy": "h:se_union" }, o: { "Saint Barthelemy": "Suécia" } }),
-    ...perYear(1500, 1841, { r: { "French Polynesia": "Reino do Taiti" }, f: { "French Polynesia": "blank" }, o: { "French Polynesia": null } }), // protetorado francês em 1842
-    ...perYear(1500, 1819, { r: { "Trucial Oman": "Xeicados da costa do Golfo Pérsico" }, f: { "Trucial Oman": "blank" }, o: { "Trucial Oman": null } }), // Tratado Marítimo Geral, 8/jan/1820
+    ...perYear(1485, 1841, { r: { "French Polynesia": "Reino do Taiti" }, f: { "French Polynesia": "blank" }, o: { "French Polynesia": null } }), // protetorado francês em 1842
+    ...perYear(1485, 1819, { r: { "Trucial Oman": "Xeicados da costa do Golfo Pérsico" }, f: { "Trucial Oman": "blank" }, o: { "Trucial Oman": null } }), // Tratado Marítimo Geral, 8/jan/1820
     ...perYear(1820, 1891, { r: { "Trucial Oman": "Estados da Trégua (tratados com o Reino Unido)" }, f: { "Trucial Oman": "blank" }, o: { "Trucial Oman": null } }), // Acordo Exclusivo em mar/1892
-    ...perYear(1500, 1879, { r: { "Bahrain": "Bahrein" }, f: { "Bahrain": "blank" }, o: { "Bahrain": null } }), // acordos de 1880 e 1892 selam o protetorado
-    ...perYear(1500, 1886, { r: { "Maldives": "Sultanato das Maldivas" }, f: { "Maldives": "blank" }, o: { "Maldives": null } }), // protetorado em 1887
-    ...perYear(1500, 1843, { r: { "Mosquito Coast": "Reino Mosquito" }, f: { "Mosquito Coast": "blank" }, o: { "Mosquito Coast": null } }), // protetorado britânico de 1844 a 1860
+    ...perYear(1485, 1879, { r: { "Bahrain": "Bahrein" }, f: { "Bahrain": "blank" }, o: { "Bahrain": null } }), // acordos de 1880 e 1892 selam o protetorado
+    ...perYear(1485, 1886, { r: { "Maldives": "Sultanato das Maldivas" }, f: { "Maldives": "blank" }, o: { "Maldives": null } }), // protetorado em 1887
+    ...perYear(1485, 1843, { r: { "Mosquito Coast": "Reino Mosquito" }, f: { "Mosquito Coast": "blank" }, o: { "Mosquito Coast": null } }), // protetorado britânico de 1844 a 1860
     ...perYear(1809, 1816, { r: { "French Guiana": "Guiana Francesa (ocupação luso-brasileira)" }, f: { "French Guiana": "blank" }, o: { "French Guiana": null } }), // jan/1809 a 8/nov/1817
     ...perYear(1813, 1813, { r: { "Reunion": "Reunião (ocupação britânica)", "Guadeloupe": "Guadalupe (ocupação britânica)" }, f: { "Reunion": "x:gb", "Guadeloupe": "x:gb" }, o: { "Reunion": null, "Guadeloupe": null } }), // devolvidas pelo Tratado de Paris de 1814
     ...perYear(1809, 1814, { r: { "Martinique": "Martinica (ocupação britânica)", "Netherlands Antilles": "Curaçao (ocupação britânica)", "United States Virgin Islands": "Índias Ocidentais Dinamarquesas (ocupação britânica)" }, f: { "Martinique": "x:gb", "Netherlands Antilles": "x:gb", "United States Virgin Islands": "x:gb" }, o: { "Martinique": null, "Netherlands Antilles": null, "United States Virgin Islands": null } }), // Martinica até 1815; Curaçao até 1815; Índias dinamarquesas até 20/nov/1815
     ...perYear(1804, 1815, { r: { "Dutch Guiana": "Suriname (ocupação britânica)" }, f: { "Dutch Guiana": "x:gb" }, o: { "Dutch Guiana": null } }), // 1804–1816
     ...perYear(1813, 1813, { m: ["Império Francês", "x:fr", ["France", "Belgium", "Luxembourg", "Rhine Left", "Palatinate", "Piedmont", "Liguria", "Savoy and Nice", "Duchy of Parma", "Tuscany", "Lucca", "Papal States", "Umbria", "Catalonia"]], o: { "France": null } }), // Império até 6/abr/1814
     ...perYear(1813, 1813, { m: ["Reino da Itália (napoleônico)", "blank", ["Lombardy", "Venetia", "Venice", "Duchy of Modena", "Romagna", "Marche and Umbria", "Trentino", "Novara"]], o: { "Lombardy": null } }), // Eugênio; armistício em fev/1814
-    ...perYear(1500, 1813, { m: ["Dinamarca-Noruega", "x:dk", ["Denmark", "Norway"]] }), // Tratado de Kiel, 14/jan/1814
+    ...perYear(1485, 1813, { m: ["Dinamarca-Noruega", "x:dk", ["Denmark", "Norway"]] }), // Tratado de Kiel, 14/jan/1814
     ...perYear(1812, 1814, { r: { "United States of America": "Estados Unidos (Guerra de 1812)" } }), // 18/jun/1812 a 17/fev/1815
-    ...perYear(1500, 1813, { r: { "Sweden–Norway": "Suécia" } }), // união com a Noruega em 4/nov/1814
+    ...perYear(1485, 1813, { r: { "Sweden–Norway": "Suécia" } }), // união com a Noruega em 4/nov/1814
     ...perYear(1812, 1812, { m: ["Império Francês", "x:fr", ["France", "Belgium", "Luxembourg", "Rhine Left", "Palatinate", "Piedmont", "Liguria", "Savoy and Nice", "Duchy of Parma", "Tuscany", "Lucca", "Papal States", "Umbria", "Catalonia", "Netherlands", "Grand Duchy of Oldenburg", "Free City of Bremen", "Free City of Hamburg", "Free City of Lübeck", "Illyria", "Dalmatia", "Gorizia", "Dubrovnik", "Bay of Kotor", "Valais", "Geneva"]], o: { "France": null } }), // Holanda (9/jul/1810), departamentos hanseáticos (13/dez/1810), Valais (dez/1810), Províncias Ilírias (1809); NRW aprox. (Roer e Lippe franceses, Berg satélite)
     ...perYear(1812, 1812, { m: ["Reino da Itália (napoleônico)", "blank", ["Lombardy", "Venetia", "Venice", "Duchy of Modena", "Romagna", "Marche and Umbria", "Trentino", "Novara"]], o: { "Lombardy": null } }),
     ...perYear(1811, 1811, { m: ["Império Francês", "x:fr", ["France", "Belgium", "Luxembourg", "Rhine Left", "Palatinate", "Piedmont", "Liguria", "Savoy and Nice", "Duchy of Parma", "Tuscany", "Lucca", "Papal States", "Umbria", "Netherlands", "Grand Duchy of Oldenburg", "Free City of Bremen", "Free City of Hamburg", "Free City of Lübeck", "Illyria", "Dalmatia", "Gorizia", "Dubrovnik", "Bay of Kotor", "Valais", "Geneva"]], o: { "France": null } }), // Catalunha anexada em 1812
@@ -1011,37 +1011,37 @@ export const EVENTS = {
     ...perYear(1734, 1758, { m: ["Reinos de Nápoles e Sicília (Carlos de Bourbon)", "blank", ["Two Sicilies", "Sicily"]], o: { "Two Sicilies": null } }), // conquistados por Carlos de Espanha em 1734; rei da Espanha em 1759
     ...perYear(1759, 1805, { m: ["Reinos de Nápoles e Sicília (Fernando IV)", "blank", ["Two Sicilies", "Sicily"]], o: { "Two Sicilies": null } }), // José Bonaparte rei em 30/mar/1806
     ...perYear(1804, 1805, { m: ["Império do Haiti (Jacques I)", "blank", ["Haiti", "Kingdom of Haiti"]], o: { "Haiti": null } }), // Dessalines morto em 17/out/1806
-    ...perYear(1500, 1805, { m: ["Principado da Moldávia", "blank", ["Romania", "Bessarabia", "Southern Bessarabia"]], o: { "Romania": null } }), // tropas russas só com a guerra de 1806
-    ...perYear(1500, 1805, { r: { "Ionian Islands": "República Septinsular (protetorado russo)", "Dominican Republic": "Santo Domingo (França)", "Senegal FR": "Senegal (França)", "Portugal": "Reino de Portugal",
+    ...perYear(1485, 1805, { m: ["Principado da Moldávia", "blank", ["Romania", "Bessarabia", "Southern Bessarabia"]], o: { "Romania": null } }), // tropas russas só com a guerra de 1806
+    ...perYear(1485, 1805, { r: { "Ionian Islands": "República Septinsular (protetorado russo)", "Dominican Republic": "Santo Domingo (França)", "Senegal FR": "Senegal (França)", "Portugal": "Reino de Portugal",
       "Tuscany": "Reino da Etrúria", "Duchy of Brunswick": "Principado de Brunsvique-Wolfenbüttel", "Netherlands Antilles": "Curaçao (República Batava)", "United States Virgin Islands": "Índias Ocidentais Dinamarquesas" },
       f: { "Ionian Islands": "blank", "Dominican Republic": "x:fr", "Senegal FR": "x:fr", "Portugal": "blank", "Tuscany": "blank", "Duchy of Brunswick": "blank", "Netherlands Antilles": "blank", "United States Virgin Islands": "x:dk" },
       o: { "Ionian Islands": null, "Dominican Republic": "França", "Senegal FR": "França", "Portugal": null, "Tuscany": null, "Duchy of Brunswick": null, "United States Virgin Islands": "Dinamarca" } }),
-    ...perYear(1500, 1805, { r: { "Romania": "Principado da Moldávia", "Wallachia": "Principado da Valáquia", "Netherlands": "República Batava", "Kingdom of Bavaria": "Eleitorado da Baviera", "Kingdom of Württemberg": "Eleitorado de Württemberg",
+    ...perYear(1485, 1805, { r: { "Romania": "Principado da Moldávia", "Wallachia": "Principado da Valáquia", "Netherlands": "República Batava", "Kingdom of Bavaria": "Eleitorado da Baviera", "Kingdom of Württemberg": "Eleitorado de Württemberg",
       "Grand Duchy of Baden": "Eleitorado de Baden", "Kingdom of Saxony": "Eleitorado da Saxônia", "Grand Duchy of Hesse": "Landgraviato de Hesse-Darmstadt", "Duchy of Nassau": "Principados de Nassau", "Electorate of Hesse": "Eleitorado de Hesse",
       "Kingdom of Hanover": "Eleitorado de Hanôver", "Dubrovnik": "República de Ragusa", "Cape Colony": "Colônia do Cabo (República Batava)" },
       f: { "Romania": "blank", "Wallachia": "blank", "Netherlands": "blank", "Electorate of Hesse": "blank", "Kingdom of Hanover": "blank", "Dubrovnik": "blank", "Cape Colony": "blank" },
       o: { "Romania": null, "Wallachia": null, "Netherlands": null, "Electorate of Hesse": null, "Kingdom of Hanover": null, "Dubrovnik": null, "Cape Colony": "República Batava", "Netherlands Indies": "República Batava", "Netherlands Antilles": "República Batava" } }), // reis da Baviera e de Württemberg em 1/jan/1806; Reino da Holanda em 5/jun/1806; Cabo britânico em 8/jan/1806; Hanôver cedido à Prússia em dez/1805, ocupado no início de 1806
     ...perYear(1806, 1806, { m: ["Reino da Prússia (invasão francesa)", "blank", ["Germany", "Altmark", "Posen", "Congress Poland"]], o: { "Germany": null } }), // Berlim ocupada em 27/out/1806; o rei refugiado na Prússia Oriental; franceses na Polônia no fim de 1806
     ...perYear(1805, 1808, { r: { "Lucca": "Principado de Lucca e Piombino" }, f: { "Lucca": "blank" }, o: { "Lucca": null } }), // Estado-cliente de 1805; parte da Toscana (francesa) desde 3/mar/1809
-    ...perYear(1500, 1807, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria"]], o: { "Papal States": null } }), // bandeira amarela e vermelha sem descrição exata
+    ...perYear(1485, 1807, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria"]], o: { "Papal States": null } }), // bandeira amarela e vermelha sem descrição exata
     ...perYear(1714, 1807, { m: ["Espanha", "x:es", ["Spain", "Catalonia"]] }), /*fixo*/ // aliada da França até 1808; Barcelona caiu em 11/set/1714
-    ...perYear(1500, 1807, { r: { "Sierra Leone GB": "Serra Leoa (assentamento de Freetown)" }, f: { "Sierra Leone GB": "blank" }, o: { "Sierra Leone GB": null } }), // colônia da Coroa em 1/jan/1808
+    ...perYear(1485, 1807, { r: { "Sierra Leone GB": "Serra Leoa (assentamento de Freetown)" }, f: { "Sierra Leone GB": "blank" }, o: { "Sierra Leone GB": null } }), // colônia da Coroa em 1/jan/1808
     // nomes anacrônicos corrigidos (fontes: Wikipedia)
-    ...perYear(1500, 1844, { r: { "Tonga": "Tonga (guerra civil)" } }), // guerra civil desde 1799; reino unificado em 1845
-    ...perYear(1500, 1821, { r: { "Basutoland": null } }), // Moshoeshoe rei em 1822
-    ...perYear(1500, 1817, { r: { "Peshawar": "Peshawar" } }), // sardares barakzais só depois de 1818 (pendente)
+    ...perYear(1485, 1844, { r: { "Tonga": "Tonga (guerra civil)" } }), // guerra civil desde 1799; reino unificado em 1845
+    ...perYear(1485, 1821, { r: { "Basutoland": null } }), // Moshoeshoe rei em 1822
+    ...perYear(1485, 1817, { r: { "Peshawar": "Peshawar" } }), // sardares barakzais só depois de 1818 (pendente)
     ...perYear(1805, 1820, { r: { "British Columbia": "Nova Caledônia (postos de peles britânicos)" } }), // postos de Simon Fraser desde 1805; fusão com a Cia. da Baía de Hudson em 1821
     ...perYear(1806, 1807, { r: { "Two Sicilies": "Reino de Nápoles (José Bonaparte)" } }), // 30/mar/1806 a 6/jun/1808; Murat desde 1/ago/1808
-    ...perYear(1500, 1809, { r: { "Seychelles": "Seicheles (França)" }, f: { "Seychelles": "x:fr" }, o: { "Seychelles": "França" } }), // britânicas desde dez/1810
+    ...perYear(1485, 1809, { r: { "Seychelles": "Seicheles (França)" }, f: { "Seychelles": "x:fr" }, o: { "Seychelles": "França" } }), // britânicas desde dez/1810
     ...perYear(1803, 1813, { r: { "British Guiana": "Demerara-Essequibo e Berbice (ocupação britânica)" }, f: { "British Guiana": "x:gb" }, o: { "British Guiana": null } }), // colônias holandesas tomadas em 1803; cedidas em 1814
     ...perYear(1814, 1830, { r: { "British Guiana": "Demerara-Essequibo e Berbice (britânicas)" } }), // Guiana Britânica em 21/jul/1831
     ...perYear(1803, 1813, { r: { "Saint Pierre and Miquelon": "Saint-Pierre e Miquelon (ocupação britânica)" }, f: { "Saint Pierre and Miquelon": "x:gb" }, o: { "Saint Pierre and Miquelon": null } }), // retomadas em 1803; devolvidas pelo Tratado de Paris de 1814
     ...perYear(1803, 1815, { r: { "French India": "Índia Francesa (ocupação britânica)" }, f: { "French India": "x:gb" }, o: { "French India": null } }), // ago/1803 a 26/set/1816
-    ...perYear(1500, 1814, { r: { "Gambia": null } }), // presença britânica desde 1815–1816
-    ...perYear(1500, 1861, { r: { "Belize": "Assentamento de Belize (britânico)" } }), // colônia de Honduras Britânica em 12/mai/1862
-    ...perYear(1500, 1814, { r: { "Mecklenburg-Schwerin": "Ducado de Mecklemburgo-Schwerin", "Mecklenburg-Strelitz": "Ducado de Mecklemburgo-Strelitz" } }), // grão-ducados no Congresso de Viena (1815)
-    ...perYear(1500, 1838, { r: { "French Indochina": "Vietnã (dinastia Nguyễn)" } }), // nome Việt Nam desde 1804; Đại Nam em 1839
-    ...perYear(1500, 1841, { r: { "Siamese Malay States": "Kedah, Kelantan e Terengganu (tributários do Sião)" } }), // Perlis separado de Kedah em 1842
+    ...perYear(1485, 1814, { r: { "Gambia": null } }), // presença britânica desde 1815–1816
+    ...perYear(1485, 1861, { r: { "Belize": "Assentamento de Belize (britânico)" } }), // colônia de Honduras Britânica em 12/mai/1862
+    ...perYear(1485, 1814, { r: { "Mecklenburg-Schwerin": "Ducado de Mecklemburgo-Schwerin", "Mecklenburg-Strelitz": "Ducado de Mecklemburgo-Strelitz" } }), // grão-ducados no Congresso de Viena (1815)
+    ...perYear(1485, 1838, { r: { "French Indochina": "Vietnã (dinastia Nguyễn)" } }), // nome Việt Nam desde 1804; Đại Nam em 1839
+    ...perYear(1485, 1841, { r: { "Siamese Malay States": "Kedah, Kelantan e Terengganu (tributários do Sião)" } }), // Perlis separado de Kedah em 1842
     ...perYear(1818, 1835, { r: { "Hail": "Ha'il" } }), // Emirado de Jabal Shammar fundado em 1836
     ...perYear(1820, 1823, { r: { "Riyadh": "Négede (ocupação egípcia)" }, f: { "Riyadh": "h:eg_khed" } }), // Turki retoma Riad das forças otomano-egípcias em 1824
     ...perYear(1838, 1840, { r: { "Riyadh": "Négede (ocupação egípcia; Khalid bin Saud)" }, f: { "Riyadh": "h:eg_khed" } }), // Faisal preso em 1838; retirada após a Convenção de Londres (1840)
@@ -1054,11 +1054,11 @@ export const EVENTS = {
     { y: 1775, /*fixo*/ m: [null, null, ["Kingdom of Brazil", "Maranhao"]] }, // Estados do Brasil, Maranhão e Grão-Pará unificados em 1775
     { y: 1715, /*fixo*/ m: [null, null, ["Spain", "Majorca"]] }, // Maiorca capitulou em 2/jul/1715
     { y: 1763, /*fixo*/ m: [null, null, ["Nova Scotia", "Cape Breton"]] }, // cedida à Grã-Bretanha em 1763
-    { y: 1500, /*fixo*/ m: [null, null, ["France", "Grasse"]] }, // Grasse, Cannes e Antibes (Provença) sempre francesas
+    { y: 1490, /*fixo*/ m: [null, null, ["France", "Grasse"]] }, // Grasse, Cannes e Antibes (Provença) sempre francesas
     { y: 1713, /*fixo*/ m: [null, null, ["Savoy and Nice", "Nice"]] }, // Condado de Nice ocupado pela França em 1691–1697 e 1707–1713
     { y: 1698, y1: 1702, /*fixo*/ m: [null, null, ["Savoy and Nice", "Nice"]] },
     { y: 1703, y1: 1704, /*fixo*/ m: [null, null, ["Piedmont", "Nice"]] }, // Saboia ocupada pela França desde 1703; Nice sitiada a partir de 15/mar/1705
-    { y: 1500, y1: 1690, /*fixo*/ m: [null, null, ["Savoy and Nice", "Nice"]] },
+    { y: 1490, y1: 1690, /*fixo*/ m: [null, null, ["Savoy and Nice", "Nice"]] },
     { y: 1555, y1: 1737, /*fixo*/ m: [null, null, ["British Raj", "Kabul"]] }, // Kabul Subah mogol; Nader Xá tomou Cabul em 1738
     { y: 1738, /*fixo*/ m: [null, null, ["Afghanistan", "Kabul"]] },
     { y: 1513, y1: 1645, /*fixo*/ m: [null, null, ["Bukhara", "Balkh"]] },
@@ -1087,12 +1087,12 @@ export const EVENTS = {
     { y: 1737, /*fixo*/ m: [null, null, ["Wallachia", "Oltenia"]] }, // Banato de Craiova reconquistado no fim de 1737; volta à Valáquia em 1739
     { y: 1730, /*fixo*/ m: [null, null, ["Persia", "West Persia"]] }, // retomado por Nader na primavera de 1730
     { y: 1724, y1: 1729, /*fixo*/ r: { "West Persia": "Oeste da Pérsia (ocupação otomana)" }, f: { "West Persia": "blank" }, o: { "West Persia": null } }, // Hamadan e Kermanshah em 1723–1724; Tabriz otomana desde ago/1725
-    { y: 1500, y1: 1722, m: [null, null, ["Persia", "Persian Caspian", "West Persia"]] },
+    { y: 1485, y1: 1722, m: [null, null, ["Persia", "Persian Caspian", "West Persia"]] },
     { y: 1734, /*fixo*/ m: [null, null, ["Persia", "Persian Caspian"]] }, // Tratado de Resht (21/jan/1732); tropas russas só saem em 1734
     { y: 1723, y1: 1733, /*fixo*/ r: { "Persian Caspian": "Gilan, Mazandaran e Astarabad (ocupação russa)" }, f: { "Persian Caspian": "x:ru" }, o: { "Persian Caspian": null } }, // Rasht tomada em mar/1723
     { y: 1766, /*fixo*/ m: [null, null, ["France", "Lorraine"]] }, // anexada pela França com a morte de Estanislau, 23/fev/1766
     { y: 1733, y1: 1736, r: { "Lorraine": "Ducado da Lorena (ocupação francesa)" }, f: { "Lorraine": "h:fr_bourbon" }, o: { "Lorraine": null } }, // invadido pela França em out/1733
-    { y: 1500, y1: 1732, /*fixo*/ r: { "Lorraine": "Ducado da Lorena" }, f: { "Lorraine": "blank" }, o: { "Lorraine": null } }, // Francisco Estêvão duque desde 1729
+    { y: 1490, y1: 1732, /*fixo*/ r: { "Lorraine": "Ducado da Lorena" }, f: { "Lorraine": "blank" }, o: { "Lorraine": null } }, // Francisco Estêvão duque desde 1729
     { y: 1737, y1: 1765, r: { "Lorraine": "Ducado da Lorena e Bar (Estanislau Leszczyński)" }, f: { "Lorraine": "blank" }, o: { "Lorraine": null } }, // Tratado de Viena; Estanislau duque desde 1737
     { y: 1809, m: [null, null, ["Finland", "Kymmene"]] }, // Velha Finlândia unida ao Grão-Ducado em 1812
     ...perYear(1805, 1808, { m: ["Reino da Baviera", "blank", ["Kingdom of Bavaria", "Tyrol", "Trentino"]] }),
@@ -1106,8 +1106,8 @@ export const EVENTS = {
     ...perYear(1808, 1811, { m: ["Espanha (Guerra Peninsular)", "x:es", ["Spain", "Catalonia"]] }), // Catalunha anexada à França só em 1812
     ...perYear(1806, 1811, { r: { "Wallachia": "Principado da Valáquia (ocupação russa)" }, f: { "Wallachia": "x:ru" }, o: { "Wallachia": null } }),
     ...perYear(1810, 1812, { r: { "Reunion": "Reunião (ocupação britânica)", "Guadeloupe": "Guadalupe (ocupação britânica)", "Malta": "Malta (protetorado britânico)" }, f: { "Reunion": "x:gb", "Guadeloupe": "x:gb", "Malta": "x:gb" }, o: { "Reunion": null, "Guadeloupe": null, "Malta": null } }), // Malta colônia em 1813
-    ...perYear(1500, 1812, { r: { "Austria Hungary": "Império Austríaco" } }),
-    ...perYear(1500, 1805, { r: { "Kingdom of Bavaria": "Eleitorado da Baviera" } }), // rei em 1/jan/1806
+    ...perYear(1485, 1812, { r: { "Austria Hungary": "Império Austríaco" } }),
+    ...perYear(1485, 1805, { r: { "Kingdom of Bavaria": "Eleitorado da Baviera" } }), // rei em 1/jan/1806
     ...perYear(1802, 1804, { m: ["Império Francês", "x:fr", ["France", "Belgium", "Luxembourg", "Rhine Left", "Palatinate", "Piedmont", "Savoy and Nice", "Duchy of Parma", "Geneva"]], o: { "France": null } }), // Império proclamado em 18/mai/1804; Piemonte anexado em 1802
     // revisão 1804 (situação em 31/dez; fontes: Wikipedia)
     ...perYear(1802, 1804, { m: ["República Italiana", "blank", ["Lombardy", "Duchy of Modena", "Romagna", "Novara"]], o: { "Lombardy": null } }), // 1802–1805; reino proclamado em 17/mar/1805
@@ -1117,13 +1117,13 @@ export const EVENTS = {
     // revisão 1803 (situação em 31/dez; fontes: Wikipedia)
     ...perYear(1803, 1803, { m: ["Saint-Domingue (exército de Dessalines)", "blank", ["Haiti", "Kingdom of Haiti"]], o: { "Haiti": null } }), // Vertières (18/nov/1803); franceses evacuam o Cabo em 30/nov/1803; independência em 1/jan/1804
     ...perYear(1791, 1803, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Serbia"]] }), // Primeira Revolta Sérvia em 14/fev/1804
-    ...perYear(1500, 1803, { r: { "France": "República Francesa (Consulado)", "Austria Hungary": "Monarquia de Habsburgo", "Dutch Guiana": "Suriname (República Batava)" },
+    ...perYear(1485, 1803, { r: { "France": "República Francesa (Consulado)", "Austria Hungary": "Monarquia de Habsburgo", "Dutch Guiana": "Suriname (República Batava)" },
       f: { "Dutch Guiana": "blank" }, o: { "Dutch Guiana": "República Batava" } }), // Império Francês em 18/mai/1804; Império Austríaco em 11/ago/1804; Suriname britânico de 1804 a 1816
     ...perYear(1722, 1817, { r: { "Oudh": "Awadh (nababos)" } }), // Ghazi-ud-Din Haidar rei (badshah) em out/1818–1819
     // revisão 1802 (situação em 31/dez; fontes: Wikipedia)
     ...perYear(1767, 1802, { m: ["Luisiana (Espanha)", "x:es", ["Louisiana N", "Louisiana S"]], o: { "Louisiana N": "Espanha" } }), // entregue à França em 30/nov/1803 e aos EUA em 20/dez/1803
     ...perYear(1802, 1802, { m: ["Saint-Domingue (guerra de independência)", "blank", ["Haiti", "Kingdom of Haiti"]], o: { "Haiti": null } }), // expedição de Leclerc (morto em 1/nov/1802); Pétion, Christophe e Dessalines desertam em out/1802
-    ...perYear(1500, 1802, { r: { "Switzerland": "República Helvética", "Salzburg": "Principado-Arcebispado de Salzburgo", "Kingdom of Hanover": "Eleitorado de Hanôver", "Kingdom of Württemberg": "Ducado de Württemberg",
+    ...perYear(1485, 1802, { r: { "Switzerland": "República Helvética", "Salzburg": "Principado-Arcebispado de Salzburgo", "Kingdom of Hanover": "Eleitorado de Hanôver", "Kingdom of Württemberg": "Ducado de Württemberg",
       "Grand Duchy of Baden": "Margraviato de Baden", "Electorate of Hesse": "Landgraviato de Hesse-Kassel", "Cape Colony": "Colônia do Cabo (ocupação britânica)", "British Guiana": "Demerara-Essequibo e Berbice (República Batava)" },
       f: { "Switzerland": "blank", "Kingdom of Hanover": "blank", "Cape Colony": "x:gb", "British Guiana": "blank" }, o: { "Kingdom of Hanover": null, "Cape Colony": null, "British Guiana": "República Batava" } }), // Ato de Mediação em 19/fev/1803; eleitorados de Baden, Württemberg, Hesse e Salzburgo em 1803; Hanôver invadido em 26/mai/1803; Cabo devolvido em 1803; Paz de Amiens (25/mar/1802)
     // revisão 1801 (situação em 31/dez; fontes: Wikipedia)
@@ -1139,7 +1139,7 @@ export const EVENTS = {
     // revisão 1800 (situação em 31/dez; fontes: Wikipedia)
     ...perYear(1798, 1800, { m: ["República Francesa (Consulado)", "x:fr", ["France", "Belgium", "Luxembourg", "Rhine Left", "Palatinate", "Savoy and Nice", "Geneva"]], o: { "France": null } }), // Parma cedida em 21/mar/1801
     ...perYear(1800, 1800, { m: ["Saint-Domingue (governo de Toussaint Louverture)", "blank", ["Haiti", "Kingdom of Haiti"]], o: { "Haiti": null } }), // Santo Domingo tomado em jan/1801
-    ...perYear(1500, 1800, { r: { "Martinique": "Martinica (ocupação britânica)", "Dutch Guiana": "Suriname (ocupação britânica)", "British Guiana": "Demerara-Essequibo e Berbice (ocupação britânica)", "French India": "Índia Francesa (ocupação britânica)",
+    ...perYear(1485, 1800, { r: { "Martinique": "Martinica (ocupação britânica)", "Dutch Guiana": "Suriname (ocupação britânica)", "British Guiana": "Demerara-Essequibo e Berbice (ocupação britânica)", "French India": "Índia Francesa (ocupação britânica)",
       "United Kingdom of Great Britain and Ireland": "Reino da Grã-Bretanha", "Ireland": "Reino da Irlanda", "Dominican Republic": "Santo Domingo (Espanha)", "Egypt": "Egito (ocupação francesa)",
       "Tuscany": "Grão-Ducado da Toscana", "Lucca": "Lucca (ocupação francesa)", "Duchy of Parma": "Ducado de Parma" },
       f: { "Martinique": "x:gb", "Dutch Guiana": "x:gb", "British Guiana": "x:gb", "French India": "x:gb", "United Kingdom of Great Britain and Ireland": "h:gb1707", "Ireland": "blank", "Dominican Republic": "x:es", "Egypt": "x:fr",
@@ -1157,19 +1157,19 @@ export const EVENTS = {
     ...perYear(1747, 1761, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": null } }), // independência de fato após a morte de Nader Xá
     ...perYear(1735, 1746, /*fixo*/ { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // reconquistados por Nader no verão de 1735; vassalos otomanos em 1723–1735
     ...perYear(1801, 1912, { m: ["Império Russo", "x:ru", ["Russian Empire", "Kartli-Kakheti"]] }), // decreto de anexação em 18/dez/1800, confirmado em 12/set/1801
-    ...perYear(1500, 1803, { r: { "Imereti": "Reino de Imereti" }, f: { "Imereti": "blank" }, o: { "Imereti": null } }),
+    ...perYear(1485, 1803, { r: { "Imereti": "Reino de Imereti" }, f: { "Imereti": "blank" }, o: { "Imereti": null } }),
     ...perYear(1804, 1809, { r: { "Imereti": "Reino de Imereti (vassalo russo)" }, f: { "Imereti": "blank" }, o: { "Imereti": null } }),
     ...perYear(1810, 1912, { m: ["Império Russo", "x:ru", ["Russian Empire", "Imereti"]] }), // vassalo em 25/abr/1804; anexado em 20/fev/1810
-    ...perYear(1500, 1802, { r: { "Mingrelia": "Principado da Mingrélia" }, f: { "Mingrelia": "blank" }, o: { "Mingrelia": null } }),
+    ...perYear(1485, 1802, { r: { "Mingrelia": "Principado da Mingrélia" }, f: { "Mingrelia": "blank" }, o: { "Mingrelia": null } }),
     ...perYear(1803, 1866, { r: { "Mingrelia": "Principado da Mingrélia (vassalo russo)" }, f: { "Mingrelia": "blank" }, o: { "Mingrelia": null } }),
     ...perYear(1867, 1912, { m: ["Império Russo", "x:ru", ["Russian Empire", "Mingrelia"]] }), // vassalo em 1803; anexado em 4/jan/1867
-    ...perYear(1500, 1809, { r: { "Guria": "Principado da Gúria" }, f: { "Guria": "blank" }, o: { "Guria": null } }),
+    ...perYear(1485, 1809, { r: { "Guria": "Principado da Gúria" }, f: { "Guria": "blank" }, o: { "Guria": null } }),
     ...perYear(1810, 1828, { r: { "Guria": "Principado da Gúria (vassalo russo)" }, f: { "Guria": "blank" }, o: { "Guria": null } }),
     ...perYear(1829, 1912, { m: ["Império Russo", "x:ru", ["Russian Empire", "Guria"]] }), // suserania russa em 19/jun/1810; anexado em 2/set/1829
-    ...perYear(1500, 1809, { r: { "Abkhazia": "Principado da Abecásia" }, f: { "Abkhazia": "blank" }, o: { "Abkhazia": null } }),
+    ...perYear(1485, 1809, { r: { "Abkhazia": "Principado da Abecásia" }, f: { "Abkhazia": "blank" }, o: { "Abkhazia": null } }),
     ...perYear(1810, 1863, { r: { "Abkhazia": "Principado da Abecásia (vassalo russo)" }, f: { "Abkhazia": "blank" }, o: { "Abkhazia": null } }),
     ...perYear(1864, 1912, { m: ["Império Russo", "x:ru", ["Russian Empire", "Abkhazia"]] }), // Sukhum tomada em 2/jul/1810; absorvido em 1864
-    ...perYear(1500, 1828, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Samtskhe"]] }),
+    ...perYear(1485, 1828, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Samtskhe"]] }),
     ...perYear(1829, 1912, { m: ["Império Russo", "x:ru", ["Russian Empire", "Samtskhe"]] }), // Akhaltsikhe e Akhalkalaki cedidas em Adrianópolis (14/set/1829)
     ...perYear(1747, 1803, { r: { "Azerbaijani khanates": "Canatos do Azerbaijão" }, f: { "Azerbaijani khanates": "blank" }, o: { "Azerbaijani khanates": null } }),
     ...perYear(1735, 1746, /*fixo*/ { m: [null, null, ["Persia", "Azerbaijani khanates", "Erivan"]] }), // canatos organizados por Nader Xá; semi-independentes após sua morte (1747)
@@ -1189,7 +1189,7 @@ export const EVENTS = {
     ...perYear(1752, 1817, { m: ["Império Durrani", "blank", ["Afghanistan", "Peshawar", "Kashmir"]], o: { "Afghanistan": null } }), // Peshawar capital durrani (1776–1823)
     ...perYear(1818, 1818, { m: ["Império Durrani", "blank", ["Afghanistan", "Kashmir"]], o: { "Afghanistan": null } }), // Caxemira perdida para os sikhs em Shopian (1819)
     ...perYear(1819, 1822, { r: { "Afghanistan": "Império Durrani" } }), // queda de Cabul em mar/1823
-    ...perYear(1500, 1801, { r: { "French Indochina": "Vietnã (guerra entre Tây Sơn e Nguyễn)" } }), // Nguyễn Ánh toma Đông Kinh em 18/jun/1802
+    ...perYear(1485, 1801, { r: { "French Indochina": "Vietnã (guerra entre Tây Sơn e Nguyễn)" } }), // Nguyễn Ánh toma Đông Kinh em 18/jun/1802
     // revisão 1797 (situação em 31/dez; fontes: Wikipedia)
     ...perYear(1797, 1797, { m: ["República Francesa (Diretório)", "x:fr", ["France", "Belgium", "Luxembourg", "Rhine Left", "Palatinate", "Savoy and Nice"]], o: { "France": null } }), // Genebra anexada em 15/abr/1798
     ...perYear(1797, 1797, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Hungary", "Tarnopol", "Illyria", "Gorizia", "Kraków", "Tyrol", "Dalmatia", "Bay of Kotor"]] }), // Campo Formio, 17/out/1797
@@ -1202,10 +1202,10 @@ export const EVENTS = {
       "Dutch Guiana": "Suriname (República Batava)", "Punjab": "Confederação Sikh", "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)" },
       f: { "Malta": "blank", "Ionian Islands": "x:fr", "Lucca": "blank", "Tuscany": "blank", "Dutch Guiana": "blank", "Punjab": "blank", "Geneva": "blank", "Egypt": "blank" },
       o: { "Malta": null, "Ionian Islands": "França", "Lucca": null, "Tuscany": null, "Dutch Guiana": "República Batava", "Punjab": null, "Geneva": null, "Egypt": "Império Otomano" } }), // Malta tomada por Napoleão em jun/1798; Jônicas francesas desde jun/1797; Egito invadido em jul/1798
-    ...perYear(1500, 1802, { r: { "Hejaz": "Xerifado de Meca (Império Otomano)" }, f: { "Hejaz": "blank" }, o: { "Hejaz": "Império Otomano" } }),
+    ...perYear(1485, 1802, { r: { "Hejaz": "Xerifado de Meca (Império Otomano)" }, f: { "Hejaz": "blank" }, o: { "Hejaz": "Império Otomano" } }),
     ...perYear(1803, 1811, { r: { "Hejaz": "Xerifado de Meca (vassalo saudita)" }, f: { "Hejaz": "blank" }, o: { "Hejaz": null } }), // Meca tomada em 1803; Meca e Medina sob controle saudita em 1805
     ...perYear(1812, 1812, { r: { "Hejaz": "Hejaz (disputado: Medina retomada pelo Egito)" }, f: { "Hejaz": "blank" }, o: { "Hejaz": null } }), // Meca retomada em jan/1813
-    ...perYear(1500, 1825, { f: { "Anglo-Egyptian Sudan": "blank", "Riyadh": "blank" } }),
+    ...perYear(1485, 1825, { f: { "Anglo-Egyptian Sudan": "blank", "Riyadh": "blank" } }),
     ...perYear(1802, 1825, { f: { "Egypt": "blank" } }), // bandeira vermelha de Muhammad Ali datada de 1826 na Wikipedia
     // revisão 1796 (situação em 31/dez; fontes: Wikipedia)
     ...perYear(1796, 1796, { m: ["República Francesa (Diretório)", "x:fr", ["France", "Belgium", "Luxembourg", "Rhine Left", "Palatinate", "Savoy and Nice"]], o: { "France": null } }), // margem esquerda do Reno ocupada desde o fim de 1794; Córsega retomada em 19/out/1796
@@ -1244,7 +1244,7 @@ export const EVENTS = {
     ...perYear(1796, 1801, { m: [null, null, ["British West Indies", "Saint Lucia"]] }),
     ...perYear(1802, 1802, { r: { "Saint Lucia": "Santa Lúcia (França)" }, f: { "Saint Lucia": "x:fr" }, o: { "Saint Lucia": "França" } }), // devolvida em Amiens (1802); retomada em 1803
     ...perYear(1803, 1912, { m: [null, null, ["British West Indies", "Saint Lucia"]] }),
-    ...perYear(1500, 1796, { r: { "Liguria": "República de Gênova", "Lucca": "República de Lucca", "Salzburg": "Principado-Arcebispado de Salzburgo", "Kingdom of Hanover": "Eleitorado de Hanôver", "British Columbia": null }, f: { "Liguria": "h:genoa", "Lucca": "blank", "Salzburg": "blank", "Kingdom of Hanover": "blank" }, o: { "Liguria": null, "Lucca": null, "Salzburg": null, "Kingdom of Hanover": null } }), // República Lígure em 14/jun/1797
+    ...perYear(1485, 1796, { r: { "Liguria": "República de Gênova", "Lucca": "República de Lucca", "Salzburg": "Principado-Arcebispado de Salzburgo", "Kingdom of Hanover": "Eleitorado de Hanôver", "British Columbia": null }, f: { "Liguria": "h:genoa", "Lucca": "blank", "Salzburg": "blank", "Kingdom of Hanover": "blank" }, o: { "Liguria": null, "Lucca": null, "Salzburg": null, "Kingdom of Hanover": null } }), // República Lígure em 14/jun/1797
     // revisão 1794 (situação em 31/dez; fontes: Wikipedia)
     ...perYear(1794, 1794, { m: ["República Francesa (Convenção Nacional)", "x:fr", ["France", "Rhine Left", "Palatinate", "Savoy and Nice"]], o: { "France": null } }), // Diretório em 3/nov/1795; margem esquerda do Reno ocupada no fim do outono de 1794
     ...perYear(1794, 1794, { m: ["Países Baixos Austríacos (ocupação francesa)", "x:fr", ["Belgium"]], o: { "Belgium": null } }), // tomados após Fleurus (1794); anexados em 1/out/1795
@@ -1366,7 +1366,7 @@ export const EVENTS = {
         "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
         "Punjab": null, "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
     ...perYear(1790, 1790, { r: { "Serbia": "Sérvia (ocupação austríaca)", "Canada": "Província de Quebec (britânica)" }, f: { "Serbia": "h:at_hab", "Canada": "x:gb" }, o: { "Serbia": null, "Canada": "Reino Unido" } }), // Sérvia ocupada pelos Habsburgo (1788–1791), devolvida em Sistova (4/ago/1791); Alto e Baixo Canadá em 26/dez/1791
-    ...perYear(1500, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
+    ...perYear(1485, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
     // revisão 1789 (situação em 31/dez; fontes: Wikipedia)
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1789, 1789, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), // bandeira real não única antes da tricolor de 24/out/1790
@@ -1666,7 +1666,7 @@ export const EVENTS = {
       "British Guiana": "Demerara-Essequibo e Berbice (ocupação britânica)", "Crimea": "Canato da Crimeia", "Florida": "Flórida Oriental (britânica)" },
       f: { "Grenada": "x:fr", "Saint Vincent": "x:fr", "Tobago": "x:fr", "French India": "x:gb", "British Guiana": "x:gb", "Crimea": "blank", "Florida": "x:gb" },
       o: { "Grenada": null, "Saint Vincent": null, "Tobago": null, "French India": null, "British Guiana": null, "Crimea": null, "Florida": "Reino Unido" } }), // Granada (jul/1779) e São Vicente (18/jun/1779); Tobago (jun/1781); Pondicherry britânica de 1778 a 1783; Demerara tomada pelos franceses em 22/jan/1782; Crimeia independente desde 1774; Flórida Ocidental espanhola desde 1781
-    ...perYear(1500, 1783, { r: { "Saint Lucia": "Santa Lúcia (ocupação britânica)" }, f: { "Saint Lucia": "x:gb" }, o: { "Saint Lucia": null } }), // ocupada pelos britânicos em 1778; devolvida à França em 1784 (Paz de Paris)
+    ...perYear(1485, 1783, { r: { "Saint Lucia": "Santa Lúcia (ocupação britânica)" }, f: { "Saint Lucia": "x:gb" }, o: { "Saint Lucia": null } }), // ocupada pelos britânicos em 1778; devolvida à França em 1784 (Paz de Paris)
     // revisão 1780 (situação em 31/dez; fontes: Wikipedia)
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
     ...perYear(1780, 1780, { m: ["Reino da França", "x:fr", ["France", "Corsica"]], o: { "France": null } }), 
@@ -2405,7 +2405,7 @@ export const EVENTS = {
     { y: 1775, m: [null, null, ["Rattanakosin Kingdom", "Lan Na"]] }, // Chiang Mai tomada pelos siameses em 15/jan/1775
     { y: 1763, y1: 1774, /*fixo*/ r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // quarto período de domínio birmanês, 1763–1774
     { y: 1767, y1: 1769, /*fixo*/ r: { "Rattanakosin Kingdom": "Sião (Thonburi e regimes rivais)" } },
-    { y: 1500, y1: 1766, r: { "Rattanakosin Kingdom": "Reino de Ayutthaya (Sião)" } }, // Ayutthaya cai em abr/1767
+    { y: 1485, y1: 1766, r: { "Rattanakosin Kingdom": "Reino de Ayutthaya (Sião)" } }, // Ayutthaya cai em abr/1767
     { y: 1727, y1: 1762, /*fixo*/ r: { "Lan Na": "Lan Na (Chiang Mai)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // fora do domínio birmanês entre 1727 e 1763 // Ayutthaya cai em abr/1767; Taksin coroado em Thonburi em 28/dez/1767; reunificação em 1770
     { y: 1770, y1: 1778, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } },
     { y: 1779, y1: 1781, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } }, // depois da fusão de 1779 (Laos)
@@ -2853,7 +2853,7 @@ export const EVENTS = {
       f: { "Martinique": "x:gb", "Guadeloupe": "x:gb", "Saint Lucia": "x:gb", "Grenada": "x:gb", "Saint Vincent": "x:gb", "Dominica": "x:gb", "Tobago": "blank", "Minorca": "x:fr" },
       o: { "Martinique": null, "Guadeloupe": null, "Saint Lucia": null, "Grenada": null, "Saint Vincent": null, "Dominica": null, "Tobago": null, "Minorca": null } }), // Guadalupe (2/mai/1759), Dominica (7/jun/1761), Martinica (fev/1762), Santa Lúcia, Granada e São Vicente (26/fev–3/mar/1762); Tobago neutra 1679–1763; Minorca francesa desde 1756
     ...perYear(1762, 1912, { m: [null, null, ["Germany", "East Prussia"]] }), // retirada russa em 1762
-    ...perYear(1500, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
+    ...perYear(1485, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
     ...perYear(1756, 1762, { r: { "Kingdom of Saxony": "Eleitorado da Saxônia (ocupação prussiana)" }, f: { "Kingdom of Saxony": "blank" }, o: { "Kingdom of Saxony": null } }), // invadida pela Prússia em 1756; ocupada até 1763
     // revisão 1761 (situação em 31/dez; fontes: Wikipedia)
     ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
@@ -2930,7 +2930,7 @@ export const EVENTS = {
     ...perYear(1762, 1763, { r: { "Philippines": "Filipinas (Espanha; Manila ocupada pelos britânicos)" } }), // Manila tomada em 6/out/1762; evacuada na 1ª semana de abr/1764
     ...perYear(1761, 1761, { m: [null, null, ["Canada", "Old Northwest"]] }), // Pays d'en Haut: fortes franceses rendidos com Montreal (set/1760)
     ...perYear(1762, 1912, { m: [null, null, ["Germany", "East Prussia"]] }), // retirada russa em 1762
-    ...perYear(1500, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
+    ...perYear(1485, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
     ...perYear(1756, 1762, { r: { "Kingdom of Saxony": "Eleitorado da Saxônia (ocupação prussiana)" }, f: { "Kingdom of Saxony": "blank" }, o: { "Kingdom of Saxony": null } }), // invadida pela Prússia em 1756; ocupada até 1763
     ...perYear(1761, 1761, { r: { "Martinique": "Martinica", "Guadeloupe": "Guadalupe (ocupação britânica)", "Saint Lucia": "Santa Lúcia (França)", "Grenada": "Granada (França)", "Saint Vincent": "São Vicente (caribes e colonos franceses)", "Dominica": "Dominica (ocupação britânica)", "Tobago": "Tobago (neutra, disputada entre Grã-Bretanha e França)", "Minorca": "Minorca (ocupação francesa)" },
       f: { "Martinique": "x:fr", "Guadeloupe": "x:gb", "Saint Lucia": "x:fr", "Grenada": "x:fr", "Saint Vincent": "blank", "Dominica": "x:gb", "Tobago": "blank", "Minorca": "x:fr" },
@@ -3010,7 +3010,7 @@ export const EVENTS = {
     ...perYear(1762, 1763, { r: { "Philippines": "Filipinas (Espanha; Manila ocupada pelos britânicos)" } }), // Manila tomada em 6/out/1762; evacuada na 1ª semana de abr/1764
     ...perYear(1760, 1760, { m: [null, null, ["Canada", "Old Northwest"]] }), // Pays d'en Haut: fortes franceses rendidos com Montreal (set/1760)
     ...perYear(1762, 1912, { m: [null, null, ["Germany", "East Prussia"]] }), // retirada russa em 1762
-    ...perYear(1500, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
+    ...perYear(1485, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
     ...perYear(1756, 1762, { r: { "Kingdom of Saxony": "Eleitorado da Saxônia (ocupação prussiana)" }, f: { "Kingdom of Saxony": "blank" }, o: { "Kingdom of Saxony": null } }), // invadida pela Prússia em 1756; ocupada até 1763
     ...perYear(1760, 1760, { r: { "Martinique": "Martinica", "Guadeloupe": "Guadalupe (ocupação britânica)", "Saint Lucia": "Santa Lúcia (França)", "Grenada": "Granada (França)", "Saint Vincent": "São Vicente (caribes e colonos franceses)", "Dominica": "Dominica (França)", "Tobago": "Tobago (neutra, disputada entre Grã-Bretanha e França)", "Minorca": "Minorca (ocupação francesa)" },
       f: { "Martinique": "x:fr", "Guadeloupe": "x:gb", "Saint Lucia": "x:fr", "Grenada": "x:fr", "Saint Vincent": "blank", "Dominica": "x:fr", "Tobago": "blank", "Minorca": "x:fr" },
@@ -3091,7 +3091,7 @@ export const EVENTS = {
     ...perYear(1762, 1763, { r: { "Philippines": "Filipinas (Espanha; Manila ocupada pelos britânicos)" } }), // Manila tomada em 6/out/1762; evacuada na 1ª semana de abr/1764
     ...perYear(1759, 1759, { m: [null, null, ["Canada", "Old Northwest"]] }), // Pays d'en Haut: fortes franceses rendidos com Montreal (set/1760)
     ...perYear(1762, 1912, { m: [null, null, ["Germany", "East Prussia"]] }), // retirada russa em 1762
-    ...perYear(1500, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
+    ...perYear(1485, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
     ...perYear(1756, 1762, { r: { "Kingdom of Saxony": "Eleitorado da Saxônia (ocupação prussiana)" }, f: { "Kingdom of Saxony": "blank" }, o: { "Kingdom of Saxony": null } }), // invadida pela Prússia em 1756; ocupada até 1763
     ...perYear(1759, 1759, { r: { "Martinique": "Martinica", "Guadeloupe": "Guadalupe (ocupação britânica)", "Saint Lucia": "Santa Lúcia (França)", "Grenada": "Granada (França)", "Saint Vincent": "São Vicente (caribes e colonos franceses)", "Dominica": "Dominica (França)", "Tobago": "Tobago (neutra, disputada entre Grã-Bretanha e França)", "Minorca": "Minorca (ocupação francesa)" },
       f: { "Martinique": "x:fr", "Guadeloupe": "x:gb", "Saint Lucia": "x:fr", "Grenada": "x:fr", "Saint Vincent": "blank", "Dominica": "x:fr", "Tobago": "blank", "Minorca": "x:fr" },
@@ -3172,7 +3172,7 @@ export const EVENTS = {
     ...perYear(1762, 1763, { r: { "Philippines": "Filipinas (Espanha; Manila ocupada pelos britânicos)" } }), // Manila tomada em 6/out/1762; evacuada na 1ª semana de abr/1764
     ...perYear(1758, 1758, { m: [null, null, ["Canada", "Old Northwest"]] }), // Pays d'en Haut: fortes franceses rendidos com Montreal (set/1760)
     ...perYear(1762, 1912, { m: [null, null, ["Germany", "East Prussia"]] }), // retirada russa em 1762
-    ...perYear(1500, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
+    ...perYear(1485, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
     ...perYear(1756, 1762, { r: { "Kingdom of Saxony": "Eleitorado da Saxônia (ocupação prussiana)" }, f: { "Kingdom of Saxony": "blank" }, o: { "Kingdom of Saxony": null } }), // invadida pela Prússia em 1756; ocupada até 1763
     ...perYear(1758, 1758, { r: { "Martinique": "Martinica", "Guadeloupe": "Guadalupe", "Saint Lucia": "Santa Lúcia (França)", "Grenada": "Granada (França)", "Saint Vincent": "São Vicente (caribes e colonos franceses)", "Dominica": "Dominica (França)", "Tobago": "Tobago (neutra, disputada entre Grã-Bretanha e França)", "Minorca": "Minorca (ocupação francesa)" },
       f: { "Martinique": "x:fr", "Guadeloupe": "x:fr", "Saint Lucia": "x:fr", "Grenada": "x:fr", "Saint Vincent": "blank", "Dominica": "x:fr", "Tobago": "blank", "Minorca": "x:fr" },
@@ -31574,90 +31574,1710 @@ export const EVENTS = {
     ...perYear(1500, 1500, { m: [null, null, ["Ottoman Empire", "Morea", "Achaea"]] }), // Coroni tomada pelos venezianos em 11/ago/1685
     ...perYear(1500, 1500, { m: [null, null, ["Belgium", "Luxembourg"]] }), // Luxemburgo tomado pela França em jun/1684
     ...perYear(1500, 1500, { r: { "East Prussia": "Ducado da Prússia (Brandemburgo; feudo polonês)" }, f: { "East Prussia": "blank" }, o: { "East Prussia": "República das Duas Nações" } }), // soberania reconhecida em Wehlau (set/1657); Cracóvia sueca de 13/out/1655 a 30/ago/1657
+    // revisão 1499 (situação em 31/dez; fontes: Wikipedia)
+    ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
+    ...perYear(1499, 1499, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
+    ...perYear(1499, 1499, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
+    ...perYear(1499, 1499, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1499, 1499, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
+    ...perYear(1499, 1499, { m: ["Reino da Polônia", "blank", ["Congress Poland", "West Galicia", "Kraków", "Posen", "Galicia 1772", "Tarnopol", "Royal Prussia", "Podolia"]], o: { "Congress Poland": null } }), ...perYear(1499, 1499, { m: ["Grão-Ducado da Lituânia", "blank", ["Lithuania GD", "Right-bank Ukraine", "Minsk region", "West Volhynia", "East Belarus"]], o: { "Lithuania GD": null } }), // União de Lublin, 1/jul/1569 
+    ...perYear(1499, 1499, { m: [null, null, ["British Raj", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
+    ...perYear(1499, 1499, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
+    ...perYear(1499, 1499, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands", "Tinos"]], o: { "Venetia": null } }), // Moreia veneziana de 1699 (Karlowitz) a 1715
+    ...perYear(1499, 1499, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
+    ...perYear(1499, 1499, { m: ["Ducado de Saboia", "h:it_sav", ["Piedmont", "Savoy and Nice"]], o: { "Piedmont": null } }), // Saboia ocupada pela França 1703–1713
+    ...perYear(1499, 1499, { m: [null, null, ["Lombardy", "Novara"]] }), // Novara e Tortona milanesas até o Tratado de Viena (1738)
+    ...perYear(1499, 1499, { m: ["Antiga Confederação Suíça", "blank", ["Switzerland", "Valais"]], o: { "Switzerland": null } }),
+    ...perYear(1499, 1499, { m: [null, null, ["Dominican Republic", "Haiti", "Kingdom of Haiti"]] }), // devastações de Osorio (1605–1606) despovoaram o oeste da ilha
+    ...perYear(1499, 1499, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
+      "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
+      "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
+      f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Martinique": "x:fr", "Saint Lucia": "x:fr" },
+      o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
+        "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+    ...perYear(1499, 1499, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
+    ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
+    ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
+    ...perYear(1499, 1499, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Serbia", "Yedisan"]] }), // Belgrado tomado pela Liga Santa em set/1688
+    ...perYear(1499, 1499, { r: { "Sierra Leone GB": null } }), // Granville Town fundada em 1787
+    ...perYear(1499, 1499, { r: { "New South Wales (UK)": null } }), // Primeira Frota chega em jan/1788
+    ...perYear(1499, 1499, { m: [null, null, ["Nova Scotia", "New Brunswick"]] }), // Nova Brunswick separada em 18/jun/1784
+    ...perYear(1499, 1499, { r: { "Saint Barthelemy": "São Bartolomeu (França)" }, f: { "Saint Barthelemy": "x:fr" }, o: { "Saint Barthelemy": "França" } }), // comprada pela Suécia em 1/jul/1784
+    ...perYear(1783, 1790, { r: { "Vermont": "República de Vermont" }, f: { "Vermont": "blank" }, o: { "Vermont": null } }), // independente de 15/jan/1777 a 4/mar/1791
+    ...perYear(1791, 1912, { m: [null, null, ["United States of America", "Vermont"]] }),
+    ...perYear(1783, 1912, { m: [null, null, ["Russian Empire", "Crimea"]] }), // anexação de fato em 8/abr/1783
+    ...perYear(1783, 1912, { m: [null, null, ["British West Indies", "Grenada", "Saint Vincent", "Bahamas"]] }), // devolvidas pelo Tratado de Paris (3/set/1783); Nassau retomada em 17/abr/1783
+    ...perYear(1783, 1792, { r: { "Tobago": "Tobago (França)" }, f: { "Tobago": "x:fr" }, o: { "Tobago": "França" } }), // francesa desde jun/1781; britânica de novo em 1793 (pendente: Amiens, 1802)
+    ...perYear(1793, 1912, { m: [null, null, ["British West Indies", "Tobago"]] }),
+    ...perYear(1782, 1783, { r: { "Dominica": "Dominica (ocupação francesa)" }, f: { "Dominica": "x:fr" }, o: { "Dominica": null } }), // invadida em 7/set/1778; francesa até 1784
+    ...perYear(1499, 1499, { r: {   
+       "Crimea": "Canato da Crimeia", "Florida": "Flórida (Espanha)" },
+      f: {     "Crimea": "blank", "Florida": "x:es" },
+      o: {     "Crimea": null, "Florida": "Espanha" } }), // Granada (jul/1779) e São Vicente (18/jun/1779); Tobago (jun/1781); Pondicherry britânica de 1778 a 1783; Demerara tomada pelos franceses em 22/jan/1782; Crimeia independente desde 1774; Flórida Ocidental espanhola desde 1781
+    ...perYear(1781, 1783, { r: { "Saint Lucia": "Santa Lúcia (ocupação britânica)" }, f: { "Saint Lucia": "x:gb" }, o: { "Saint Lucia": null } }), // ocupada pelos britânicos em 1778; devolvida à França em 1784 (Paz de Paris)
+    ...perYear(1780, 1783, { r: { "Belize": "Belize (assentamento britânico abandonado)" }, f: { "Belize": "blank" }, o: { "Belize": null } }), // abandonado com a guerra de 1779; colonos voltam em 1784
+    ...perYear(1499, 1499, { r: { "Senegal FR": "Senegal (França)" }, f: { "Senegal FR": "x:fr" }, o: { "Senegal FR": "França" } }), // Saint-Louis britânica desde 1758; francesa em fev/1779
+    ...perYear(1499, 1499, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // Pondicherry tomada pelos britânicos em out/1778
+    ...perYear(1499, 1499, { r: { "Spanish Guinea": "Fernando Pó e Ano-Bom (Portugal)" }, f: { "Spanish Guinea": "blank" }, o: { "Spanish Guinea": "Portugal" } }), // cedidas à Espanha pelo Tratado de El Pardo (11/mar/1778)
+    ...perYear(1499, 1499, { m: [null, null, ["United States of America", "Vermont"]] }), // Concessões de New Hampshire, parte da revolta; Vermont independente em 15/jan/1777
+    ...perYear(1783, 1912, { m: [null, null, ["United States of America", "Old Northwest"]] }), // cedido aos EUA pelo Tratado de Paris (1783); fortes britânicos até 1796 (pendente)
+    ...perYear(1776, 1777, { m: [null, null, ["Canada", "Old Northwest"]] }), // Ato de Quebec (1774): região ao norte do Ohio anexada à Província de Quebec
+    ...perYear(1778, 1782, { r: { "Old Northwest": "Região do Noroeste (disputada entre Grã-Bretanha e Virgínia)" }, f: { "Old Northwest": "blank" }, o: { "Old Northwest": null } }), // Condado de Illinois (Virgínia) de 4/jul/1778 a jan/1782, só nos povoados de Vincennes, Cahokia e Kaskaskia
+    ...perYear(1499, 1499, { m: [null, null, ["Peru", "Argentina", "State of Buenos Aires", "Liga Federal", "Uruguay", "Paraguay", "Bolivia", "Bolivian Litoral"]] }), // Vice-Reino do Rio da Prata criado em 1/ago/1776
+    ...perYear(1499, 1499, { r: { "United States of America": "Treze Colônias (britânicas)" }, f: { "United States of America": "x:gb" }, o: { "United States of America": "Reino Unido" } }), // Primeiro Congresso Continental (set–out/1774); governos reais ainda em funções
+    ...perYear(1775, 1912, { m: [null, null, ["Austria Hungary", "Bukovina"]] }), // cedida pela Convenção de Pera (7/mai/1775)
+    ...perYear(1499, 1499, { m: [null, null, ["Romania", "Bukovina"]] }), // parte da Moldávia até a ocupação austríaca (out/1774)
+    ...perYear(1772, 1912, { m: [null, null, ["Austria Hungary", "Galicia 1772"]] }), // Primeira Partilha da Polônia (5/ago/1772)
+    ...perYear(1772, 1912, { m: [null, null, ["Germany", "Royal Prussia"]] }),
+    ...perYear(1772, 1912, { m: [null, null, ["Russian Empire", "Polish Livonia", "East Belarus"]] }),
+    ...perYear(1770, 1773, { r: { "Romania": "Principado da Moldávia (ocupação russa)", "Wallachia": "Principado da Valáquia (ocupação russa)" }, f: { "Romania": "x:ru", "Wallachia": "x:ru" }, o: { "Romania": null, "Wallachia": null } }), // Iași tomada em 7/out/1769, Bucareste em 17/nov/1769; devolvidas pelo Tratado de Küçük Kaynarca (21/jul/1774)
+    { y: 1775, m: [null, null, ["Rattanakosin Kingdom", "Lan Na"]] }, // Chiang Mai tomada pelos siameses em 15/jan/1775
+    { y: 1768, y1: 1774, r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // quarto período de domínio birmanês, 1763–1774
+    { y: 1768, y1: 1769, r: { "Rattanakosin Kingdom": "Sião (Thonburi e regimes rivais)" } }, // Ayutthaya cai em abr/1767; Taksin coroado em Thonburi em 28/dez/1767; reunificação em 1770
+    { y: 1770, y1: 1778, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } },
+    { y: 1779, y1: 1781, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } }, // depois da fusão de 1779 (Laos)
+    ...perYear(1499, 1499, { m: ["Luisiana (reivindicada pela França)", "blank", ["Louisiana N", "Louisiana S"]], o: { "Louisiana N": null } }), // reivindicada por La Salle em 1682; Fort Maurepas fundado em 1699
+    ...perYear(1782, 1797, { m: [null, null, ["Spain", "Minorca"]] }), // tomada por franceses e espanhóis em 1782; cedida à Espanha em 1783
+    ...perYear(1802, 1912, { m: [null, null, ["Spain", "Minorca"]] }), // devolvida pela Paz de Amiens (1802)
+    ...perYear(1798, 1801, { r: { "Minorca": "Minorca (ocupação britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": null } }), // tomada pelos britânicos em 1798
+    ...perYear(1781, 1781, { r: { "Minorca": "Minorca (sítio franco-espanhol)" }, f: { "Minorca": "blank" }, o: { "Minorca": null } }), // invasão em 1781; Fort St. Philip rende-se em 1782
+    ...perYear(1765, 1780, { r: { "Minorca": "Minorca (britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": "Reino Unido" } }), // devolvida à Grã-Bretanha pela Paz de Paris (1763)
+    ...perYear(1762, 1763, { r: { "Philippines": "Filipinas (Espanha; Manila ocupada pelos britânicos)" } }), // Manila tomada em 6/out/1762; evacuada na 1ª semana de abr/1764
+    ...perYear(1499, 1499, { m: [null, null, ["Canada", "Old Northwest"]] }), // Pays d'en Haut: fortes franceses rendidos com Montreal (set/1760)
+    ...perYear(1762, 1912, { m: [null, null, ["Germany", "East Prussia"]] }), // retirada russa em 1762
+    ...perYear(1758, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
+    ...perYear(1756, 1762, { r: { "Kingdom of Saxony": "Eleitorado da Saxônia (ocupação prussiana)" }, f: { "Kingdom of Saxony": "blank" }, o: { "Kingdom of Saxony": null } }), // invadida pela Prússia em 1756; ocupada até 1763
+    ...perYear(1499, 1499, { r: { "Martinique": "Martinica", "Guadeloupe": "Guadalupe", "Saint Lucia": "Santa Lúcia (neutra; colonos franceses)", "Grenada": "Granada (França)", "Saint Vincent": "São Vicente (caribes e colonos franceses)", "Dominica": "Dominica (França)", "Tobago": "Tobago (neutra, disputada entre Grã-Bretanha e França)", "Minorca": "Minorca (britânica)" },
+      f: { "Martinique": "x:fr", "Guadeloupe": "x:fr", "Saint Lucia": "blank", "Grenada": "x:fr", "Saint Vincent": "blank", "Dominica": "x:fr", "Tobago": "blank", "Minorca": "x:gb" },
+      o: { "Martinique": "França", "Guadeloupe": "França", "Saint Lucia": null, "Grenada": "França", "Saint Vincent": null, "Dominica": "França", "Tobago": null, "Minorca": "Reino Unido" } }), // Guadalupe (2/mai/1759), Dominica (7/jun/1761); Santa Lúcia colônia francesa desde 1756; Tobago neutra 1679–1763; Minorca francesa desde 1756
+    ...perYear(1761, 1762, { r: { "French India": "Índia Francesa (ocupação britânica)" }, f: { "French India": "x:gb" }, o: { "French India": null } }), // Pondicherry cai em 15/jan/1761; devolvida pela Paz de Paris (1763)
+    ...perYear(1499, 1499, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
+    ...perYear(1499, 1499, { m: [null, null, ["Finland", "Kymmene"]] }),
+    ...perYear(1499, 1499, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
+    ...perYear(1499, 1499, { m: [null, null, ["Persia", "West Persia"]] }), // Erivã tomada por Murad IV em ago/1635, retomada pelos safávidas em abr/1636; // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
+    ...perYear(1499, 1499, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
+    ...perYear(1499, 1499, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
+    ...perYear(1499, 1499, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
+    ...perYear(1499, 1499, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
+    ...perYear(1499, 1499, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
+    ...perYear(1499, 1499, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
+    ...perYear(1499, 1499, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
+    ...perYear(1499, 1499, { r: { "Belgium": "Países Baixos Espanhóis", "Kingdom of Bavaria": "Eleitorado da Baviera"}, f: { "Belgium": "blank", "Kingdom of Bavaria": "blank"}, o: { "Belgium": "Espanha", "Kingdom of Bavaria": null} }), // condomínio desde 1706; Luxemburgo e Namur cedidos a Max Emanuel em 1712; Baviera partilhada após Blenheim (1704) e restituída em 1714; Barcelona sitiada desde 25/jul/1713, guerra catalã unilateral desde 9/jul/1713; ocupação russa da Finlândia a partir de 1713–14 (Helsinque 1713, Storkyro fev/1714)
+    ...perYear(1499, 1499, { m: [null, null, ["Spain", "Sicily"]] }), // Sicília de Filipe V até Utrecht (1713)
+    ...perYear(1499, 1499, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // invasão russa da Finlândia em 1713
+    ...perYear(1499, 1499, { r: { "Nova Scotia": "Acádia (França)" }, f: { "Nova Scotia": "x:fr" }, o: { "Nova Scotia": "França" } }), // Port Royal tomada pelos britânicos em out/1710
+    ...perYear(1499, 1499, { m: [null, null, ["Spain", "Italy", "Minorca"]] }), // Sardenha tomada pelos aliados em ago/1708; Minorca em set/1708
+    ...perYear(1499, 1499, { r: { "United Kingdom of Great Britain and Ireland": "Reino da Inglaterra", "Scotland": "Reino da Escócia" }, f: { "United Kingdom of Great Britain and Ireland": "h:england", "Scotland": "h:scotland" }, o: { "United Kingdom of Great Britain and Ireland": null, "Scotland": null } }), // Ato de União em 1/mai/1707
+    ...perYear(1499, 1499, { m: [null, null, ["Spain", "Majorca"]] }), // data da adesão de Maiorca a Carlos III (1706) não checada
+    ...perYear(1499, 1499, { m: [null, null, ["Spain", "Valencia"]] }), // Girona tomada pela França em 29/jun/1694; Barcelona em 10/ago/1697
+    ...perYear(1499, 1499, { m: [null, null, ["Spain", "Gibraltar"]] }), // tomado pelos anglo-holandeses em ago/1704
+    ...perYear(1499, 1499, { r: { "Germany": "Brandemburgo-Prússia", "Ashanti": "Estados axantis (vassalos de Denkyira)" }, f: { "Germany": "blank", "Ashanti": "blank" }, o: { "Germany": null, "Ashanti": null } }), // Frederico I rei na Prússia em 1701; Denkyira derrotado em Feyiase (1701)
+    ...perYear(1499, 1499, { r: { "Transylvania": "Principado da Transilvânia" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), // domínio habsburgo imposto aos poucos depois de 1683; Diploma Leopoldino em 16/out/1690
+    ...perYear(1499, 1499, { r: { "Hungary": "Hungria (dividida entre Habsburgos e otomanos)" }, f: { "Hungary": "blank" }, o: { "Hungary": null } }), // Buda otomana desde 1541, tomada pela Liga Santa em 2/set/1686
+    ...perYear(1499, 1499, { m: [null, null, ["Ottoman Empire", "Morea", "Achaea"]] }), // Coroni tomada pelos venezianos em 11/ago/1685
+    ...perYear(1499, 1499, { m: [null, null, ["Belgium", "Luxembourg"]] }), // Luxemburgo tomado pela França em jun/1684
+    ...perYear(1499, 1499, { r: { "East Prussia": "Ducado da Prússia (Brandemburgo; feudo polonês)" }, f: { "East Prussia": "blank" }, o: { "East Prussia": "República das Duas Nações" } }), // soberania reconhecida em Wehlau (set/1657); Cracóvia sueca de 13/out/1655 a 30/ago/1657
+    // revisão 1498 (situação em 31/dez; fontes: Wikipedia)
+    ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
+    ...perYear(1498, 1498, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
+    ...perYear(1498, 1498, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
+    ...perYear(1498, 1498, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1498, 1498, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
+    ...perYear(1498, 1498, { m: ["Reino da Polônia", "blank", ["Congress Poland", "West Galicia", "Kraków", "Posen", "Galicia 1772", "Tarnopol", "Royal Prussia", "Podolia"]], o: { "Congress Poland": null } }), ...perYear(1498, 1498, { m: ["Grão-Ducado da Lituânia", "blank", ["Lithuania GD", "Right-bank Ukraine", "Minsk region", "West Volhynia", "East Belarus"]], o: { "Lithuania GD": null } }), // União de Lublin, 1/jul/1569 
+    ...perYear(1498, 1498, { m: [null, null, ["British Raj", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
+    ...perYear(1498, 1498, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
+    ...perYear(1498, 1498, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands", "Tinos"]], o: { "Venetia": null } }), // Moreia veneziana de 1699 (Karlowitz) a 1715
+    ...perYear(1498, 1498, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
+    ...perYear(1498, 1498, { m: ["Ducado de Saboia", "h:it_sav", ["Piedmont", "Savoy and Nice"]], o: { "Piedmont": null } }), // Saboia ocupada pela França 1703–1713
+    ...perYear(1498, 1498, { m: [null, null, ["Lombardy", "Novara"]] }), // Novara e Tortona milanesas até o Tratado de Viena (1738)
+    ...perYear(1498, 1498, { m: ["Antiga Confederação Suíça", "blank", ["Switzerland", "Valais"]], o: { "Switzerland": null } }),
+    ...perYear(1498, 1498, { m: [null, null, ["Dominican Republic", "Haiti", "Kingdom of Haiti"]] }), // devastações de Osorio (1605–1606) despovoaram o oeste da ilha
+    ...perYear(1498, 1498, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
+      "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
+      "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
+      f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Martinique": "x:fr", "Saint Lucia": "x:fr" },
+      o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
+        "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+    ...perYear(1498, 1498, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
+    ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
+    ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
+    ...perYear(1498, 1498, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Serbia", "Yedisan"]] }), // Belgrado tomado pela Liga Santa em set/1688
+    ...perYear(1498, 1498, { r: { "Sierra Leone GB": null } }), // Granville Town fundada em 1787
+    ...perYear(1498, 1498, { r: { "New South Wales (UK)": null } }), // Primeira Frota chega em jan/1788
+    ...perYear(1498, 1498, { m: [null, null, ["Nova Scotia", "New Brunswick"]] }), // Nova Brunswick separada em 18/jun/1784
+    ...perYear(1498, 1498, { r: { "Saint Barthelemy": "São Bartolomeu (França)" }, f: { "Saint Barthelemy": "x:fr" }, o: { "Saint Barthelemy": "França" } }), // comprada pela Suécia em 1/jul/1784
+    ...perYear(1783, 1790, { r: { "Vermont": "República de Vermont" }, f: { "Vermont": "blank" }, o: { "Vermont": null } }), // independente de 15/jan/1777 a 4/mar/1791
+    ...perYear(1791, 1912, { m: [null, null, ["United States of America", "Vermont"]] }),
+    ...perYear(1783, 1912, { m: [null, null, ["Russian Empire", "Crimea"]] }), // anexação de fato em 8/abr/1783
+    ...perYear(1783, 1912, { m: [null, null, ["British West Indies", "Grenada", "Saint Vincent", "Bahamas"]] }), // devolvidas pelo Tratado de Paris (3/set/1783); Nassau retomada em 17/abr/1783
+    ...perYear(1783, 1792, { r: { "Tobago": "Tobago (França)" }, f: { "Tobago": "x:fr" }, o: { "Tobago": "França" } }), // francesa desde jun/1781; britânica de novo em 1793 (pendente: Amiens, 1802)
+    ...perYear(1793, 1912, { m: [null, null, ["British West Indies", "Tobago"]] }),
+    ...perYear(1782, 1783, { r: { "Dominica": "Dominica (ocupação francesa)" }, f: { "Dominica": "x:fr" }, o: { "Dominica": null } }), // invadida em 7/set/1778; francesa até 1784
+    ...perYear(1498, 1498, { r: {   
+       "Crimea": "Canato da Crimeia", "Florida": "Flórida (Espanha)" },
+      f: {     "Crimea": "blank", "Florida": "x:es" },
+      o: {     "Crimea": null, "Florida": "Espanha" } }), // Granada (jul/1779) e São Vicente (18/jun/1779); Tobago (jun/1781); Pondicherry britânica de 1778 a 1783; Demerara tomada pelos franceses em 22/jan/1782; Crimeia independente desde 1774; Flórida Ocidental espanhola desde 1781
+    ...perYear(1781, 1783, { r: { "Saint Lucia": "Santa Lúcia (ocupação britânica)" }, f: { "Saint Lucia": "x:gb" }, o: { "Saint Lucia": null } }), // ocupada pelos britânicos em 1778; devolvida à França em 1784 (Paz de Paris)
+    ...perYear(1780, 1783, { r: { "Belize": "Belize (assentamento britânico abandonado)" }, f: { "Belize": "blank" }, o: { "Belize": null } }), // abandonado com a guerra de 1779; colonos voltam em 1784
+    ...perYear(1498, 1498, { r: { "Senegal FR": "Senegal (França)" }, f: { "Senegal FR": "x:fr" }, o: { "Senegal FR": "França" } }), // Saint-Louis britânica desde 1758; francesa em fev/1779
+    ...perYear(1498, 1498, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // Pondicherry tomada pelos britânicos em out/1778
+    ...perYear(1498, 1498, { r: { "Spanish Guinea": "Fernando Pó e Ano-Bom (Portugal)" }, f: { "Spanish Guinea": "blank" }, o: { "Spanish Guinea": "Portugal" } }), // cedidas à Espanha pelo Tratado de El Pardo (11/mar/1778)
+    ...perYear(1498, 1498, { m: [null, null, ["United States of America", "Vermont"]] }), // Concessões de New Hampshire, parte da revolta; Vermont independente em 15/jan/1777
+    ...perYear(1783, 1912, { m: [null, null, ["United States of America", "Old Northwest"]] }), // cedido aos EUA pelo Tratado de Paris (1783); fortes britânicos até 1796 (pendente)
+    ...perYear(1776, 1777, { m: [null, null, ["Canada", "Old Northwest"]] }), // Ato de Quebec (1774): região ao norte do Ohio anexada à Província de Quebec
+    ...perYear(1778, 1782, { r: { "Old Northwest": "Região do Noroeste (disputada entre Grã-Bretanha e Virgínia)" }, f: { "Old Northwest": "blank" }, o: { "Old Northwest": null } }), // Condado de Illinois (Virgínia) de 4/jul/1778 a jan/1782, só nos povoados de Vincennes, Cahokia e Kaskaskia
+    ...perYear(1498, 1498, { m: [null, null, ["Peru", "Argentina", "State of Buenos Aires", "Liga Federal", "Uruguay", "Paraguay", "Bolivia", "Bolivian Litoral"]] }), // Vice-Reino do Rio da Prata criado em 1/ago/1776
+    ...perYear(1498, 1498, { r: { "United States of America": "Treze Colônias (britânicas)" }, f: { "United States of America": "x:gb" }, o: { "United States of America": "Reino Unido" } }), // Primeiro Congresso Continental (set–out/1774); governos reais ainda em funções
+    ...perYear(1775, 1912, { m: [null, null, ["Austria Hungary", "Bukovina"]] }), // cedida pela Convenção de Pera (7/mai/1775)
+    ...perYear(1498, 1498, { m: [null, null, ["Romania", "Bukovina"]] }), // parte da Moldávia até a ocupação austríaca (out/1774)
+    ...perYear(1772, 1912, { m: [null, null, ["Austria Hungary", "Galicia 1772"]] }), // Primeira Partilha da Polônia (5/ago/1772)
+    ...perYear(1772, 1912, { m: [null, null, ["Germany", "Royal Prussia"]] }),
+    ...perYear(1772, 1912, { m: [null, null, ["Russian Empire", "Polish Livonia", "East Belarus"]] }),
+    ...perYear(1770, 1773, { r: { "Romania": "Principado da Moldávia (ocupação russa)", "Wallachia": "Principado da Valáquia (ocupação russa)" }, f: { "Romania": "x:ru", "Wallachia": "x:ru" }, o: { "Romania": null, "Wallachia": null } }), // Iași tomada em 7/out/1769, Bucareste em 17/nov/1769; devolvidas pelo Tratado de Küçük Kaynarca (21/jul/1774)
+    { y: 1775, m: [null, null, ["Rattanakosin Kingdom", "Lan Na"]] }, // Chiang Mai tomada pelos siameses em 15/jan/1775
+    { y: 1768, y1: 1774, r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // quarto período de domínio birmanês, 1763–1774
+    { y: 1768, y1: 1769, r: { "Rattanakosin Kingdom": "Sião (Thonburi e regimes rivais)" } }, // Ayutthaya cai em abr/1767; Taksin coroado em Thonburi em 28/dez/1767; reunificação em 1770
+    { y: 1770, y1: 1778, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } },
+    { y: 1779, y1: 1781, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } }, // depois da fusão de 1779 (Laos)
+    ...perYear(1498, 1498, { m: ["Luisiana (reivindicada pela França)", "blank", ["Louisiana N", "Louisiana S"]], o: { "Louisiana N": null } }), // reivindicada por La Salle em 1682; Fort Maurepas fundado em 1699
+    ...perYear(1782, 1797, { m: [null, null, ["Spain", "Minorca"]] }), // tomada por franceses e espanhóis em 1782; cedida à Espanha em 1783
+    ...perYear(1802, 1912, { m: [null, null, ["Spain", "Minorca"]] }), // devolvida pela Paz de Amiens (1802)
+    ...perYear(1798, 1801, { r: { "Minorca": "Minorca (ocupação britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": null } }), // tomada pelos britânicos em 1798
+    ...perYear(1781, 1781, { r: { "Minorca": "Minorca (sítio franco-espanhol)" }, f: { "Minorca": "blank" }, o: { "Minorca": null } }), // invasão em 1781; Fort St. Philip rende-se em 1782
+    ...perYear(1765, 1780, { r: { "Minorca": "Minorca (britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": "Reino Unido" } }), // devolvida à Grã-Bretanha pela Paz de Paris (1763)
+    ...perYear(1762, 1763, { r: { "Philippines": "Filipinas (Espanha; Manila ocupada pelos britânicos)" } }), // Manila tomada em 6/out/1762; evacuada na 1ª semana de abr/1764
+    ...perYear(1498, 1498, { m: [null, null, ["Canada", "Old Northwest"]] }), // Pays d'en Haut: fortes franceses rendidos com Montreal (set/1760)
+    ...perYear(1762, 1912, { m: [null, null, ["Germany", "East Prussia"]] }), // retirada russa em 1762
+    ...perYear(1758, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
+    ...perYear(1756, 1762, { r: { "Kingdom of Saxony": "Eleitorado da Saxônia (ocupação prussiana)" }, f: { "Kingdom of Saxony": "blank" }, o: { "Kingdom of Saxony": null } }), // invadida pela Prússia em 1756; ocupada até 1763
+    ...perYear(1498, 1498, { r: { "Martinique": "Martinica", "Guadeloupe": "Guadalupe", "Saint Lucia": "Santa Lúcia (neutra; colonos franceses)", "Grenada": "Granada (França)", "Saint Vincent": "São Vicente (caribes e colonos franceses)", "Dominica": "Dominica (França)", "Tobago": "Tobago (neutra, disputada entre Grã-Bretanha e França)", "Minorca": "Minorca (britânica)" },
+      f: { "Martinique": "x:fr", "Guadeloupe": "x:fr", "Saint Lucia": "blank", "Grenada": "x:fr", "Saint Vincent": "blank", "Dominica": "x:fr", "Tobago": "blank", "Minorca": "x:gb" },
+      o: { "Martinique": "França", "Guadeloupe": "França", "Saint Lucia": null, "Grenada": "França", "Saint Vincent": null, "Dominica": "França", "Tobago": null, "Minorca": "Reino Unido" } }), // Guadalupe (2/mai/1759), Dominica (7/jun/1761); Santa Lúcia colônia francesa desde 1756; Tobago neutra 1679–1763; Minorca francesa desde 1756
+    ...perYear(1761, 1762, { r: { "French India": "Índia Francesa (ocupação britânica)" }, f: { "French India": "x:gb" }, o: { "French India": null } }), // Pondicherry cai em 15/jan/1761; devolvida pela Paz de Paris (1763)
+    ...perYear(1498, 1498, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
+    ...perYear(1498, 1498, { m: [null, null, ["Finland", "Kymmene"]] }),
+    ...perYear(1498, 1498, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
+    ...perYear(1498, 1498, { m: [null, null, ["Persia", "West Persia"]] }), // Erivã tomada por Murad IV em ago/1635, retomada pelos safávidas em abr/1636; // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
+    ...perYear(1498, 1498, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
+    ...perYear(1498, 1498, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
+    ...perYear(1498, 1498, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
+    ...perYear(1498, 1498, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
+    ...perYear(1498, 1498, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
+    ...perYear(1498, 1498, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
+    ...perYear(1498, 1498, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
+    ...perYear(1498, 1498, { r: { "Belgium": "Países Baixos Espanhóis", "Kingdom of Bavaria": "Eleitorado da Baviera"}, f: { "Belgium": "blank", "Kingdom of Bavaria": "blank"}, o: { "Belgium": "Espanha", "Kingdom of Bavaria": null} }), // condomínio desde 1706; Luxemburgo e Namur cedidos a Max Emanuel em 1712; Baviera partilhada após Blenheim (1704) e restituída em 1714; Barcelona sitiada desde 25/jul/1713, guerra catalã unilateral desde 9/jul/1713; ocupação russa da Finlândia a partir de 1713–14 (Helsinque 1713, Storkyro fev/1714)
+    ...perYear(1498, 1498, { m: [null, null, ["Spain", "Sicily"]] }), // Sicília de Filipe V até Utrecht (1713)
+    ...perYear(1498, 1498, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // invasão russa da Finlândia em 1713
+    ...perYear(1498, 1498, { r: { "Nova Scotia": "Acádia (França)" }, f: { "Nova Scotia": "x:fr" }, o: { "Nova Scotia": "França" } }), // Port Royal tomada pelos britânicos em out/1710
+    ...perYear(1498, 1498, { m: [null, null, ["Spain", "Italy", "Minorca"]] }), // Sardenha tomada pelos aliados em ago/1708; Minorca em set/1708
+    ...perYear(1498, 1498, { r: { "United Kingdom of Great Britain and Ireland": "Reino da Inglaterra", "Scotland": "Reino da Escócia" }, f: { "United Kingdom of Great Britain and Ireland": "h:england", "Scotland": "h:scotland" }, o: { "United Kingdom of Great Britain and Ireland": null, "Scotland": null } }), // Ato de União em 1/mai/1707
+    ...perYear(1498, 1498, { m: [null, null, ["Spain", "Majorca"]] }), // data da adesão de Maiorca a Carlos III (1706) não checada
+    ...perYear(1498, 1498, { m: [null, null, ["Spain", "Valencia"]] }), // Girona tomada pela França em 29/jun/1694; Barcelona em 10/ago/1697
+    ...perYear(1498, 1498, { m: [null, null, ["Spain", "Gibraltar"]] }), // tomado pelos anglo-holandeses em ago/1704
+    ...perYear(1498, 1498, { r: { "Germany": "Brandemburgo-Prússia", "Ashanti": "Estados axantis (vassalos de Denkyira)" }, f: { "Germany": "blank", "Ashanti": "blank" }, o: { "Germany": null, "Ashanti": null } }), // Frederico I rei na Prússia em 1701; Denkyira derrotado em Feyiase (1701)
+    ...perYear(1498, 1498, { r: { "Transylvania": "Principado da Transilvânia" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), // domínio habsburgo imposto aos poucos depois de 1683; Diploma Leopoldino em 16/out/1690
+    ...perYear(1498, 1498, { r: { "Hungary": "Hungria (dividida entre Habsburgos e otomanos)" }, f: { "Hungary": "blank" }, o: { "Hungary": null } }), // Buda otomana desde 1541, tomada pela Liga Santa em 2/set/1686
+    ...perYear(1498, 1498, { m: [null, null, ["Ottoman Empire", "Morea", "Achaea"]] }), // Coroni tomada pelos venezianos em 11/ago/1685
+    ...perYear(1498, 1498, { m: [null, null, ["Belgium", "Luxembourg"]] }), // Luxemburgo tomado pela França em jun/1684
+    ...perYear(1498, 1498, { r: { "East Prussia": "Ducado da Prússia (Brandemburgo; feudo polonês)" }, f: { "East Prussia": "blank" }, o: { "East Prussia": "República das Duas Nações" } }), // soberania reconhecida em Wehlau (set/1657); Cracóvia sueca de 13/out/1655 a 30/ago/1657
+    // revisão 1497 (situação em 31/dez; fontes: Wikipedia)
+    ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
+    ...perYear(1497, 1497, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
+    ...perYear(1497, 1497, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
+    ...perYear(1497, 1497, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1497, 1497, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
+    ...perYear(1497, 1497, { m: ["Reino da Polônia", "blank", ["Congress Poland", "West Galicia", "Kraków", "Posen", "Galicia 1772", "Tarnopol", "Royal Prussia", "Podolia"]], o: { "Congress Poland": null } }), ...perYear(1497, 1497, { m: ["Grão-Ducado da Lituânia", "blank", ["Lithuania GD", "Right-bank Ukraine", "Minsk region", "West Volhynia", "East Belarus"]], o: { "Lithuania GD": null } }), // União de Lublin, 1/jul/1569 
+    ...perYear(1497, 1497, { m: [null, null, ["British Raj", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
+    ...perYear(1497, 1497, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
+    ...perYear(1497, 1497, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands", "Tinos"]], o: { "Venetia": null } }), // Moreia veneziana de 1699 (Karlowitz) a 1715
+    ...perYear(1497, 1497, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
+    ...perYear(1497, 1497, { m: ["Ducado de Saboia", "h:it_sav", ["Piedmont", "Savoy and Nice"]], o: { "Piedmont": null } }), // Saboia ocupada pela França 1703–1713
+    ...perYear(1497, 1497, { m: [null, null, ["Lombardy", "Novara"]] }), // Novara e Tortona milanesas até o Tratado de Viena (1738)
+    ...perYear(1497, 1497, { m: ["Antiga Confederação Suíça", "blank", ["Switzerland", "Valais"]], o: { "Switzerland": null } }),
+    ...perYear(1497, 1497, { m: [null, null, ["Dominican Republic", "Haiti", "Kingdom of Haiti"]] }), // devastações de Osorio (1605–1606) despovoaram o oeste da ilha
+    ...perYear(1497, 1497, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
+      "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
+      "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
+      f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Martinique": "x:fr", "Saint Lucia": "x:fr" },
+      o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
+        "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+    ...perYear(1497, 1497, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
+    ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
+    ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
+    ...perYear(1497, 1497, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Serbia", "Yedisan"]] }), // Belgrado tomado pela Liga Santa em set/1688
+    ...perYear(1497, 1497, { r: { "Sierra Leone GB": null } }), // Granville Town fundada em 1787
+    ...perYear(1497, 1497, { r: { "New South Wales (UK)": null } }), // Primeira Frota chega em jan/1788
+    ...perYear(1497, 1497, { m: [null, null, ["Nova Scotia", "New Brunswick"]] }), // Nova Brunswick separada em 18/jun/1784
+    ...perYear(1497, 1497, { r: { "Saint Barthelemy": "São Bartolomeu (França)" }, f: { "Saint Barthelemy": "x:fr" }, o: { "Saint Barthelemy": "França" } }), // comprada pela Suécia em 1/jul/1784
+    ...perYear(1783, 1790, { r: { "Vermont": "República de Vermont" }, f: { "Vermont": "blank" }, o: { "Vermont": null } }), // independente de 15/jan/1777 a 4/mar/1791
+    ...perYear(1791, 1912, { m: [null, null, ["United States of America", "Vermont"]] }),
+    ...perYear(1783, 1912, { m: [null, null, ["Russian Empire", "Crimea"]] }), // anexação de fato em 8/abr/1783
+    ...perYear(1783, 1912, { m: [null, null, ["British West Indies", "Grenada", "Saint Vincent", "Bahamas"]] }), // devolvidas pelo Tratado de Paris (3/set/1783); Nassau retomada em 17/abr/1783
+    ...perYear(1783, 1792, { r: { "Tobago": "Tobago (França)" }, f: { "Tobago": "x:fr" }, o: { "Tobago": "França" } }), // francesa desde jun/1781; britânica de novo em 1793 (pendente: Amiens, 1802)
+    ...perYear(1793, 1912, { m: [null, null, ["British West Indies", "Tobago"]] }),
+    ...perYear(1782, 1783, { r: { "Dominica": "Dominica (ocupação francesa)" }, f: { "Dominica": "x:fr" }, o: { "Dominica": null } }), // invadida em 7/set/1778; francesa até 1784
+    ...perYear(1497, 1497, { r: {   
+       "Crimea": "Canato da Crimeia", "Florida": "Flórida (Espanha)" },
+      f: {     "Crimea": "blank", "Florida": "x:es" },
+      o: {     "Crimea": null, "Florida": "Espanha" } }), // Granada (jul/1779) e São Vicente (18/jun/1779); Tobago (jun/1781); Pondicherry britânica de 1778 a 1783; Demerara tomada pelos franceses em 22/jan/1782; Crimeia independente desde 1774; Flórida Ocidental espanhola desde 1781
+    ...perYear(1781, 1783, { r: { "Saint Lucia": "Santa Lúcia (ocupação britânica)" }, f: { "Saint Lucia": "x:gb" }, o: { "Saint Lucia": null } }), // ocupada pelos britânicos em 1778; devolvida à França em 1784 (Paz de Paris)
+    ...perYear(1780, 1783, { r: { "Belize": "Belize (assentamento britânico abandonado)" }, f: { "Belize": "blank" }, o: { "Belize": null } }), // abandonado com a guerra de 1779; colonos voltam em 1784
+    ...perYear(1497, 1497, { r: { "Senegal FR": "Senegal (França)" }, f: { "Senegal FR": "x:fr" }, o: { "Senegal FR": "França" } }), // Saint-Louis britânica desde 1758; francesa em fev/1779
+    ...perYear(1497, 1497, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // Pondicherry tomada pelos britânicos em out/1778
+    ...perYear(1497, 1497, { r: { "Spanish Guinea": "Fernando Pó e Ano-Bom (Portugal)" }, f: { "Spanish Guinea": "blank" }, o: { "Spanish Guinea": "Portugal" } }), // cedidas à Espanha pelo Tratado de El Pardo (11/mar/1778)
+    ...perYear(1497, 1497, { m: [null, null, ["United States of America", "Vermont"]] }), // Concessões de New Hampshire, parte da revolta; Vermont independente em 15/jan/1777
+    ...perYear(1783, 1912, { m: [null, null, ["United States of America", "Old Northwest"]] }), // cedido aos EUA pelo Tratado de Paris (1783); fortes britânicos até 1796 (pendente)
+    ...perYear(1776, 1777, { m: [null, null, ["Canada", "Old Northwest"]] }), // Ato de Quebec (1774): região ao norte do Ohio anexada à Província de Quebec
+    ...perYear(1778, 1782, { r: { "Old Northwest": "Região do Noroeste (disputada entre Grã-Bretanha e Virgínia)" }, f: { "Old Northwest": "blank" }, o: { "Old Northwest": null } }), // Condado de Illinois (Virgínia) de 4/jul/1778 a jan/1782, só nos povoados de Vincennes, Cahokia e Kaskaskia
+    ...perYear(1497, 1497, { m: [null, null, ["Peru", "Argentina", "State of Buenos Aires", "Liga Federal", "Uruguay", "Paraguay", "Bolivia", "Bolivian Litoral"]] }), // Vice-Reino do Rio da Prata criado em 1/ago/1776
+    ...perYear(1497, 1497, { r: { "United States of America": "Treze Colônias (britânicas)" }, f: { "United States of America": "x:gb" }, o: { "United States of America": "Reino Unido" } }), // Primeiro Congresso Continental (set–out/1774); governos reais ainda em funções
+    ...perYear(1775, 1912, { m: [null, null, ["Austria Hungary", "Bukovina"]] }), // cedida pela Convenção de Pera (7/mai/1775)
+    ...perYear(1497, 1497, { m: [null, null, ["Romania", "Bukovina"]] }), // parte da Moldávia até a ocupação austríaca (out/1774)
+    ...perYear(1772, 1912, { m: [null, null, ["Austria Hungary", "Galicia 1772"]] }), // Primeira Partilha da Polônia (5/ago/1772)
+    ...perYear(1772, 1912, { m: [null, null, ["Germany", "Royal Prussia"]] }),
+    ...perYear(1772, 1912, { m: [null, null, ["Russian Empire", "Polish Livonia", "East Belarus"]] }),
+    ...perYear(1770, 1773, { r: { "Romania": "Principado da Moldávia (ocupação russa)", "Wallachia": "Principado da Valáquia (ocupação russa)" }, f: { "Romania": "x:ru", "Wallachia": "x:ru" }, o: { "Romania": null, "Wallachia": null } }), // Iași tomada em 7/out/1769, Bucareste em 17/nov/1769; devolvidas pelo Tratado de Küçük Kaynarca (21/jul/1774)
+    { y: 1775, m: [null, null, ["Rattanakosin Kingdom", "Lan Na"]] }, // Chiang Mai tomada pelos siameses em 15/jan/1775
+    { y: 1768, y1: 1774, r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // quarto período de domínio birmanês, 1763–1774
+    { y: 1768, y1: 1769, r: { "Rattanakosin Kingdom": "Sião (Thonburi e regimes rivais)" } }, // Ayutthaya cai em abr/1767; Taksin coroado em Thonburi em 28/dez/1767; reunificação em 1770
+    { y: 1770, y1: 1778, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } },
+    { y: 1779, y1: 1781, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } }, // depois da fusão de 1779 (Laos)
+    ...perYear(1497, 1497, { m: ["Luisiana (reivindicada pela França)", "blank", ["Louisiana N", "Louisiana S"]], o: { "Louisiana N": null } }), // reivindicada por La Salle em 1682; Fort Maurepas fundado em 1699
+    ...perYear(1782, 1797, { m: [null, null, ["Spain", "Minorca"]] }), // tomada por franceses e espanhóis em 1782; cedida à Espanha em 1783
+    ...perYear(1802, 1912, { m: [null, null, ["Spain", "Minorca"]] }), // devolvida pela Paz de Amiens (1802)
+    ...perYear(1798, 1801, { r: { "Minorca": "Minorca (ocupação britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": null } }), // tomada pelos britânicos em 1798
+    ...perYear(1781, 1781, { r: { "Minorca": "Minorca (sítio franco-espanhol)" }, f: { "Minorca": "blank" }, o: { "Minorca": null } }), // invasão em 1781; Fort St. Philip rende-se em 1782
+    ...perYear(1765, 1780, { r: { "Minorca": "Minorca (britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": "Reino Unido" } }), // devolvida à Grã-Bretanha pela Paz de Paris (1763)
+    ...perYear(1762, 1763, { r: { "Philippines": "Filipinas (Espanha; Manila ocupada pelos britânicos)" } }), // Manila tomada em 6/out/1762; evacuada na 1ª semana de abr/1764
+    ...perYear(1497, 1497, { m: [null, null, ["Canada", "Old Northwest"]] }), // Pays d'en Haut: fortes franceses rendidos com Montreal (set/1760)
+    ...perYear(1762, 1912, { m: [null, null, ["Germany", "East Prussia"]] }), // retirada russa em 1762
+    ...perYear(1758, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
+    ...perYear(1756, 1762, { r: { "Kingdom of Saxony": "Eleitorado da Saxônia (ocupação prussiana)" }, f: { "Kingdom of Saxony": "blank" }, o: { "Kingdom of Saxony": null } }), // invadida pela Prússia em 1756; ocupada até 1763
+    ...perYear(1497, 1497, { r: { "Martinique": "Martinica", "Guadeloupe": "Guadalupe", "Saint Lucia": "Santa Lúcia (neutra; colonos franceses)", "Grenada": "Granada (França)", "Saint Vincent": "São Vicente (caribes e colonos franceses)", "Dominica": "Dominica (França)", "Tobago": "Tobago (neutra, disputada entre Grã-Bretanha e França)", "Minorca": "Minorca (britânica)" },
+      f: { "Martinique": "x:fr", "Guadeloupe": "x:fr", "Saint Lucia": "blank", "Grenada": "x:fr", "Saint Vincent": "blank", "Dominica": "x:fr", "Tobago": "blank", "Minorca": "x:gb" },
+      o: { "Martinique": "França", "Guadeloupe": "França", "Saint Lucia": null, "Grenada": "França", "Saint Vincent": null, "Dominica": "França", "Tobago": null, "Minorca": "Reino Unido" } }), // Guadalupe (2/mai/1759), Dominica (7/jun/1761); Santa Lúcia colônia francesa desde 1756; Tobago neutra 1679–1763; Minorca francesa desde 1756
+    ...perYear(1761, 1762, { r: { "French India": "Índia Francesa (ocupação britânica)" }, f: { "French India": "x:gb" }, o: { "French India": null } }), // Pondicherry cai em 15/jan/1761; devolvida pela Paz de Paris (1763)
+    ...perYear(1497, 1497, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
+    ...perYear(1497, 1497, { m: [null, null, ["Finland", "Kymmene"]] }),
+    ...perYear(1497, 1497, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
+    ...perYear(1497, 1497, { m: [null, null, ["Persia", "West Persia"]] }), // Erivã tomada por Murad IV em ago/1635, retomada pelos safávidas em abr/1636; // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
+    ...perYear(1497, 1497, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
+    ...perYear(1497, 1497, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
+    ...perYear(1497, 1497, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
+    ...perYear(1497, 1497, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
+    ...perYear(1497, 1497, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
+    ...perYear(1497, 1497, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
+    ...perYear(1497, 1497, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
+    ...perYear(1497, 1497, { r: { "Belgium": "Países Baixos Espanhóis", "Kingdom of Bavaria": "Eleitorado da Baviera"}, f: { "Belgium": "blank", "Kingdom of Bavaria": "blank"}, o: { "Belgium": "Espanha", "Kingdom of Bavaria": null} }), // condomínio desde 1706; Luxemburgo e Namur cedidos a Max Emanuel em 1712; Baviera partilhada após Blenheim (1704) e restituída em 1714; Barcelona sitiada desde 25/jul/1713, guerra catalã unilateral desde 9/jul/1713; ocupação russa da Finlândia a partir de 1713–14 (Helsinque 1713, Storkyro fev/1714)
+    ...perYear(1497, 1497, { m: [null, null, ["Spain", "Sicily"]] }), // Sicília de Filipe V até Utrecht (1713)
+    ...perYear(1497, 1497, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // invasão russa da Finlândia em 1713
+    ...perYear(1497, 1497, { r: { "Nova Scotia": "Acádia (França)" }, f: { "Nova Scotia": "x:fr" }, o: { "Nova Scotia": "França" } }), // Port Royal tomada pelos britânicos em out/1710
+    ...perYear(1497, 1497, { m: [null, null, ["Spain", "Italy", "Minorca"]] }), // Sardenha tomada pelos aliados em ago/1708; Minorca em set/1708
+    ...perYear(1497, 1497, { r: { "United Kingdom of Great Britain and Ireland": "Reino da Inglaterra", "Scotland": "Reino da Escócia" }, f: { "United Kingdom of Great Britain and Ireland": "h:england", "Scotland": "h:scotland" }, o: { "United Kingdom of Great Britain and Ireland": null, "Scotland": null } }), // Ato de União em 1/mai/1707
+    ...perYear(1497, 1497, { m: [null, null, ["Spain", "Majorca"]] }), // data da adesão de Maiorca a Carlos III (1706) não checada
+    ...perYear(1497, 1497, { m: [null, null, ["Spain", "Valencia"]] }), // Girona tomada pela França em 29/jun/1694; Barcelona em 10/ago/1697
+    ...perYear(1497, 1497, { m: [null, null, ["Spain", "Gibraltar"]] }), // tomado pelos anglo-holandeses em ago/1704
+    ...perYear(1497, 1497, { r: { "Germany": "Brandemburgo-Prússia", "Ashanti": "Estados axantis (vassalos de Denkyira)" }, f: { "Germany": "blank", "Ashanti": "blank" }, o: { "Germany": null, "Ashanti": null } }), // Frederico I rei na Prússia em 1701; Denkyira derrotado em Feyiase (1701)
+    ...perYear(1497, 1497, { r: { "Transylvania": "Principado da Transilvânia" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), // domínio habsburgo imposto aos poucos depois de 1683; Diploma Leopoldino em 16/out/1690
+    ...perYear(1497, 1497, { r: { "Hungary": "Hungria (dividida entre Habsburgos e otomanos)" }, f: { "Hungary": "blank" }, o: { "Hungary": null } }), // Buda otomana desde 1541, tomada pela Liga Santa em 2/set/1686
+    ...perYear(1497, 1497, { m: [null, null, ["Ottoman Empire", "Morea", "Achaea"]] }), // Coroni tomada pelos venezianos em 11/ago/1685
+    ...perYear(1497, 1497, { m: [null, null, ["Belgium", "Luxembourg"]] }), // Luxemburgo tomado pela França em jun/1684
+    ...perYear(1497, 1497, { r: { "East Prussia": "Ducado da Prússia (Brandemburgo; feudo polonês)" }, f: { "East Prussia": "blank" }, o: { "East Prussia": "República das Duas Nações" } }), // soberania reconhecida em Wehlau (set/1657); Cracóvia sueca de 13/out/1655 a 30/ago/1657
+    // revisão 1496 (situação em 31/dez; fontes: Wikipedia)
+    ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
+    ...perYear(1496, 1496, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
+    ...perYear(1496, 1496, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
+    ...perYear(1496, 1496, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1496, 1496, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
+    ...perYear(1496, 1496, { m: ["Reino da Polônia", "blank", ["Congress Poland", "West Galicia", "Kraków", "Posen", "Galicia 1772", "Tarnopol", "Royal Prussia", "Podolia"]], o: { "Congress Poland": null } }), ...perYear(1496, 1496, { m: ["Grão-Ducado da Lituânia", "blank", ["Lithuania GD", "Right-bank Ukraine", "Minsk region", "West Volhynia", "East Belarus"]], o: { "Lithuania GD": null } }), // União de Lublin, 1/jul/1569 
+    ...perYear(1496, 1496, { m: [null, null, ["British Raj", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
+    ...perYear(1496, 1496, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
+    ...perYear(1496, 1496, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands", "Tinos"]], o: { "Venetia": null } }), // Moreia veneziana de 1699 (Karlowitz) a 1715
+    ...perYear(1496, 1496, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
+    ...perYear(1496, 1496, { m: ["Ducado de Saboia", "h:it_sav", ["Piedmont", "Savoy and Nice"]], o: { "Piedmont": null } }), // Saboia ocupada pela França 1703–1713
+    ...perYear(1496, 1496, { m: [null, null, ["Lombardy", "Novara"]] }), // Novara e Tortona milanesas até o Tratado de Viena (1738)
+    ...perYear(1496, 1496, { m: ["Antiga Confederação Suíça", "blank", ["Switzerland", "Valais"]], o: { "Switzerland": null } }),
+    ...perYear(1496, 1496, { m: [null, null, ["Dominican Republic", "Haiti", "Kingdom of Haiti"]] }), // devastações de Osorio (1605–1606) despovoaram o oeste da ilha
+    ...perYear(1496, 1496, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
+      "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
+      "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
+      f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Martinique": "x:fr", "Saint Lucia": "x:fr" },
+      o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
+        "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+    ...perYear(1496, 1496, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
+    ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
+    ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
+    ...perYear(1496, 1496, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Serbia", "Yedisan"]] }), // Belgrado tomado pela Liga Santa em set/1688
+    ...perYear(1496, 1496, { r: { "Sierra Leone GB": null } }), // Granville Town fundada em 1787
+    ...perYear(1496, 1496, { r: { "New South Wales (UK)": null } }), // Primeira Frota chega em jan/1788
+    ...perYear(1496, 1496, { m: [null, null, ["Nova Scotia", "New Brunswick"]] }), // Nova Brunswick separada em 18/jun/1784
+    ...perYear(1496, 1496, { r: { "Saint Barthelemy": "São Bartolomeu (França)" }, f: { "Saint Barthelemy": "x:fr" }, o: { "Saint Barthelemy": "França" } }), // comprada pela Suécia em 1/jul/1784
+    ...perYear(1783, 1790, { r: { "Vermont": "República de Vermont" }, f: { "Vermont": "blank" }, o: { "Vermont": null } }), // independente de 15/jan/1777 a 4/mar/1791
+    ...perYear(1791, 1912, { m: [null, null, ["United States of America", "Vermont"]] }),
+    ...perYear(1783, 1912, { m: [null, null, ["Russian Empire", "Crimea"]] }), // anexação de fato em 8/abr/1783
+    ...perYear(1783, 1912, { m: [null, null, ["British West Indies", "Grenada", "Saint Vincent", "Bahamas"]] }), // devolvidas pelo Tratado de Paris (3/set/1783); Nassau retomada em 17/abr/1783
+    ...perYear(1783, 1792, { r: { "Tobago": "Tobago (França)" }, f: { "Tobago": "x:fr" }, o: { "Tobago": "França" } }), // francesa desde jun/1781; britânica de novo em 1793 (pendente: Amiens, 1802)
+    ...perYear(1793, 1912, { m: [null, null, ["British West Indies", "Tobago"]] }),
+    ...perYear(1782, 1783, { r: { "Dominica": "Dominica (ocupação francesa)" }, f: { "Dominica": "x:fr" }, o: { "Dominica": null } }), // invadida em 7/set/1778; francesa até 1784
+    ...perYear(1496, 1496, { r: {   
+       "Crimea": "Canato da Crimeia", "Florida": "Flórida (Espanha)" },
+      f: {     "Crimea": "blank", "Florida": "x:es" },
+      o: {     "Crimea": null, "Florida": "Espanha" } }), // Granada (jul/1779) e São Vicente (18/jun/1779); Tobago (jun/1781); Pondicherry britânica de 1778 a 1783; Demerara tomada pelos franceses em 22/jan/1782; Crimeia independente desde 1774; Flórida Ocidental espanhola desde 1781
+    ...perYear(1781, 1783, { r: { "Saint Lucia": "Santa Lúcia (ocupação britânica)" }, f: { "Saint Lucia": "x:gb" }, o: { "Saint Lucia": null } }), // ocupada pelos britânicos em 1778; devolvida à França em 1784 (Paz de Paris)
+    ...perYear(1780, 1783, { r: { "Belize": "Belize (assentamento britânico abandonado)" }, f: { "Belize": "blank" }, o: { "Belize": null } }), // abandonado com a guerra de 1779; colonos voltam em 1784
+    ...perYear(1496, 1496, { r: { "Senegal FR": "Senegal (França)" }, f: { "Senegal FR": "x:fr" }, o: { "Senegal FR": "França" } }), // Saint-Louis britânica desde 1758; francesa em fev/1779
+    ...perYear(1496, 1496, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // Pondicherry tomada pelos britânicos em out/1778
+    ...perYear(1496, 1496, { r: { "Spanish Guinea": "Fernando Pó e Ano-Bom (Portugal)" }, f: { "Spanish Guinea": "blank" }, o: { "Spanish Guinea": "Portugal" } }), // cedidas à Espanha pelo Tratado de El Pardo (11/mar/1778)
+    ...perYear(1496, 1496, { m: [null, null, ["United States of America", "Vermont"]] }), // Concessões de New Hampshire, parte da revolta; Vermont independente em 15/jan/1777
+    ...perYear(1783, 1912, { m: [null, null, ["United States of America", "Old Northwest"]] }), // cedido aos EUA pelo Tratado de Paris (1783); fortes britânicos até 1796 (pendente)
+    ...perYear(1776, 1777, { m: [null, null, ["Canada", "Old Northwest"]] }), // Ato de Quebec (1774): região ao norte do Ohio anexada à Província de Quebec
+    ...perYear(1778, 1782, { r: { "Old Northwest": "Região do Noroeste (disputada entre Grã-Bretanha e Virgínia)" }, f: { "Old Northwest": "blank" }, o: { "Old Northwest": null } }), // Condado de Illinois (Virgínia) de 4/jul/1778 a jan/1782, só nos povoados de Vincennes, Cahokia e Kaskaskia
+    ...perYear(1496, 1496, { m: [null, null, ["Peru", "Argentina", "State of Buenos Aires", "Liga Federal", "Uruguay", "Paraguay", "Bolivia", "Bolivian Litoral"]] }), // Vice-Reino do Rio da Prata criado em 1/ago/1776
+    ...perYear(1496, 1496, { r: { "United States of America": "Treze Colônias (britânicas)" }, f: { "United States of America": "x:gb" }, o: { "United States of America": "Reino Unido" } }), // Primeiro Congresso Continental (set–out/1774); governos reais ainda em funções
+    ...perYear(1775, 1912, { m: [null, null, ["Austria Hungary", "Bukovina"]] }), // cedida pela Convenção de Pera (7/mai/1775)
+    ...perYear(1496, 1496, { m: [null, null, ["Romania", "Bukovina"]] }), // parte da Moldávia até a ocupação austríaca (out/1774)
+    ...perYear(1772, 1912, { m: [null, null, ["Austria Hungary", "Galicia 1772"]] }), // Primeira Partilha da Polônia (5/ago/1772)
+    ...perYear(1772, 1912, { m: [null, null, ["Germany", "Royal Prussia"]] }),
+    ...perYear(1772, 1912, { m: [null, null, ["Russian Empire", "Polish Livonia", "East Belarus"]] }),
+    ...perYear(1770, 1773, { r: { "Romania": "Principado da Moldávia (ocupação russa)", "Wallachia": "Principado da Valáquia (ocupação russa)" }, f: { "Romania": "x:ru", "Wallachia": "x:ru" }, o: { "Romania": null, "Wallachia": null } }), // Iași tomada em 7/out/1769, Bucareste em 17/nov/1769; devolvidas pelo Tratado de Küçük Kaynarca (21/jul/1774)
+    { y: 1775, m: [null, null, ["Rattanakosin Kingdom", "Lan Na"]] }, // Chiang Mai tomada pelos siameses em 15/jan/1775
+    { y: 1768, y1: 1774, r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // quarto período de domínio birmanês, 1763–1774
+    { y: 1768, y1: 1769, r: { "Rattanakosin Kingdom": "Sião (Thonburi e regimes rivais)" } }, // Ayutthaya cai em abr/1767; Taksin coroado em Thonburi em 28/dez/1767; reunificação em 1770
+    { y: 1770, y1: 1778, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } },
+    { y: 1779, y1: 1781, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } }, // depois da fusão de 1779 (Laos)
+    ...perYear(1496, 1496, { m: ["Luisiana (reivindicada pela França)", "blank", ["Louisiana N", "Louisiana S"]], o: { "Louisiana N": null } }), // reivindicada por La Salle em 1682; Fort Maurepas fundado em 1699
+    ...perYear(1782, 1797, { m: [null, null, ["Spain", "Minorca"]] }), // tomada por franceses e espanhóis em 1782; cedida à Espanha em 1783
+    ...perYear(1802, 1912, { m: [null, null, ["Spain", "Minorca"]] }), // devolvida pela Paz de Amiens (1802)
+    ...perYear(1798, 1801, { r: { "Minorca": "Minorca (ocupação britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": null } }), // tomada pelos britânicos em 1798
+    ...perYear(1781, 1781, { r: { "Minorca": "Minorca (sítio franco-espanhol)" }, f: { "Minorca": "blank" }, o: { "Minorca": null } }), // invasão em 1781; Fort St. Philip rende-se em 1782
+    ...perYear(1765, 1780, { r: { "Minorca": "Minorca (britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": "Reino Unido" } }), // devolvida à Grã-Bretanha pela Paz de Paris (1763)
+    ...perYear(1762, 1763, { r: { "Philippines": "Filipinas (Espanha; Manila ocupada pelos britânicos)" } }), // Manila tomada em 6/out/1762; evacuada na 1ª semana de abr/1764
+    ...perYear(1496, 1496, { m: [null, null, ["Canada", "Old Northwest"]] }), // Pays d'en Haut: fortes franceses rendidos com Montreal (set/1760)
+    ...perYear(1762, 1912, { m: [null, null, ["Germany", "East Prussia"]] }), // retirada russa em 1762
+    ...perYear(1758, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
+    ...perYear(1756, 1762, { r: { "Kingdom of Saxony": "Eleitorado da Saxônia (ocupação prussiana)" }, f: { "Kingdom of Saxony": "blank" }, o: { "Kingdom of Saxony": null } }), // invadida pela Prússia em 1756; ocupada até 1763
+    ...perYear(1496, 1496, { r: { "Martinique": "Martinica", "Guadeloupe": "Guadalupe", "Saint Lucia": "Santa Lúcia (neutra; colonos franceses)", "Grenada": "Granada (França)", "Saint Vincent": "São Vicente (caribes e colonos franceses)", "Dominica": "Dominica (França)", "Tobago": "Tobago (neutra, disputada entre Grã-Bretanha e França)", "Minorca": "Minorca (britânica)" },
+      f: { "Martinique": "x:fr", "Guadeloupe": "x:fr", "Saint Lucia": "blank", "Grenada": "x:fr", "Saint Vincent": "blank", "Dominica": "x:fr", "Tobago": "blank", "Minorca": "x:gb" },
+      o: { "Martinique": "França", "Guadeloupe": "França", "Saint Lucia": null, "Grenada": "França", "Saint Vincent": null, "Dominica": "França", "Tobago": null, "Minorca": "Reino Unido" } }), // Guadalupe (2/mai/1759), Dominica (7/jun/1761); Santa Lúcia colônia francesa desde 1756; Tobago neutra 1679–1763; Minorca francesa desde 1756
+    ...perYear(1761, 1762, { r: { "French India": "Índia Francesa (ocupação britânica)" }, f: { "French India": "x:gb" }, o: { "French India": null } }), // Pondicherry cai em 15/jan/1761; devolvida pela Paz de Paris (1763)
+    ...perYear(1496, 1496, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
+    ...perYear(1496, 1496, { m: [null, null, ["Finland", "Kymmene"]] }),
+    ...perYear(1496, 1496, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
+    ...perYear(1496, 1496, { m: [null, null, ["Persia", "West Persia"]] }), // Erivã tomada por Murad IV em ago/1635, retomada pelos safávidas em abr/1636; // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
+    ...perYear(1496, 1496, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
+    ...perYear(1496, 1496, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
+    ...perYear(1496, 1496, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
+    ...perYear(1496, 1496, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
+    ...perYear(1496, 1496, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
+    ...perYear(1496, 1496, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
+    ...perYear(1496, 1496, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
+    ...perYear(1496, 1496, { r: { "Belgium": "Países Baixos Espanhóis", "Kingdom of Bavaria": "Eleitorado da Baviera"}, f: { "Belgium": "blank", "Kingdom of Bavaria": "blank"}, o: { "Belgium": "Espanha", "Kingdom of Bavaria": null} }), // condomínio desde 1706; Luxemburgo e Namur cedidos a Max Emanuel em 1712; Baviera partilhada após Blenheim (1704) e restituída em 1714; Barcelona sitiada desde 25/jul/1713, guerra catalã unilateral desde 9/jul/1713; ocupação russa da Finlândia a partir de 1713–14 (Helsinque 1713, Storkyro fev/1714)
+    ...perYear(1496, 1496, { m: [null, null, ["Spain", "Sicily"]] }), // Sicília de Filipe V até Utrecht (1713)
+    ...perYear(1496, 1496, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // invasão russa da Finlândia em 1713
+    ...perYear(1496, 1496, { r: { "Nova Scotia": "Acádia (França)" }, f: { "Nova Scotia": "x:fr" }, o: { "Nova Scotia": "França" } }), // Port Royal tomada pelos britânicos em out/1710
+    ...perYear(1496, 1496, { m: [null, null, ["Spain", "Italy", "Minorca"]] }), // Sardenha tomada pelos aliados em ago/1708; Minorca em set/1708
+    ...perYear(1496, 1496, { r: { "United Kingdom of Great Britain and Ireland": "Reino da Inglaterra", "Scotland": "Reino da Escócia" }, f: { "United Kingdom of Great Britain and Ireland": "h:england", "Scotland": "h:scotland" }, o: { "United Kingdom of Great Britain and Ireland": null, "Scotland": null } }), // Ato de União em 1/mai/1707
+    ...perYear(1496, 1496, { m: [null, null, ["Spain", "Majorca"]] }), // data da adesão de Maiorca a Carlos III (1706) não checada
+    ...perYear(1496, 1496, { m: [null, null, ["Spain", "Valencia"]] }), // Girona tomada pela França em 29/jun/1694; Barcelona em 10/ago/1697
+    ...perYear(1496, 1496, { m: [null, null, ["Spain", "Gibraltar"]] }), // tomado pelos anglo-holandeses em ago/1704
+    ...perYear(1496, 1496, { r: { "Germany": "Brandemburgo-Prússia", "Ashanti": "Estados axantis (vassalos de Denkyira)" }, f: { "Germany": "blank", "Ashanti": "blank" }, o: { "Germany": null, "Ashanti": null } }), // Frederico I rei na Prússia em 1701; Denkyira derrotado em Feyiase (1701)
+    ...perYear(1496, 1496, { r: { "Transylvania": "Principado da Transilvânia" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), // domínio habsburgo imposto aos poucos depois de 1683; Diploma Leopoldino em 16/out/1690
+    ...perYear(1496, 1496, { r: { "Hungary": "Hungria (dividida entre Habsburgos e otomanos)" }, f: { "Hungary": "blank" }, o: { "Hungary": null } }), // Buda otomana desde 1541, tomada pela Liga Santa em 2/set/1686
+    ...perYear(1496, 1496, { m: [null, null, ["Ottoman Empire", "Morea", "Achaea"]] }), // Coroni tomada pelos venezianos em 11/ago/1685
+    ...perYear(1496, 1496, { m: [null, null, ["Belgium", "Luxembourg"]] }), // Luxemburgo tomado pela França em jun/1684
+    ...perYear(1496, 1496, { r: { "East Prussia": "Ducado da Prússia (Brandemburgo; feudo polonês)" }, f: { "East Prussia": "blank" }, o: { "East Prussia": "República das Duas Nações" } }), // soberania reconhecida em Wehlau (set/1657); Cracóvia sueca de 13/out/1655 a 30/ago/1657
+    // revisão 1495 (situação em 31/dez; fontes: Wikipedia)
+    ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
+    ...perYear(1495, 1495, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
+    ...perYear(1495, 1495, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
+    ...perYear(1495, 1495, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1495, 1495, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
+    ...perYear(1495, 1495, { m: ["Reino da Polônia", "blank", ["Congress Poland", "West Galicia", "Kraków", "Posen", "Galicia 1772", "Tarnopol", "Royal Prussia", "Podolia"]], o: { "Congress Poland": null } }), ...perYear(1495, 1495, { m: ["Grão-Ducado da Lituânia", "blank", ["Lithuania GD", "Right-bank Ukraine", "Minsk region", "West Volhynia", "East Belarus"]], o: { "Lithuania GD": null } }), // União de Lublin, 1/jul/1569 
+    ...perYear(1495, 1495, { m: [null, null, ["British Raj", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
+    ...perYear(1495, 1495, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
+    ...perYear(1495, 1495, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands", "Tinos"]], o: { "Venetia": null } }), // Moreia veneziana de 1699 (Karlowitz) a 1715
+    ...perYear(1495, 1495, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
+    ...perYear(1495, 1495, { m: ["Ducado de Saboia", "h:it_sav", ["Piedmont", "Savoy and Nice"]], o: { "Piedmont": null } }), // Saboia ocupada pela França 1703–1713
+    ...perYear(1495, 1495, { m: [null, null, ["Lombardy", "Novara"]] }), // Novara e Tortona milanesas até o Tratado de Viena (1738)
+    ...perYear(1495, 1495, { m: ["Antiga Confederação Suíça", "blank", ["Switzerland", "Valais"]], o: { "Switzerland": null } }),
+    ...perYear(1495, 1495, { m: [null, null, ["Dominican Republic", "Haiti", "Kingdom of Haiti"]] }), // devastações de Osorio (1605–1606) despovoaram o oeste da ilha
+    ...perYear(1495, 1495, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
+      "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
+      "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
+      f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Martinique": "x:fr", "Saint Lucia": "x:fr" },
+      o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
+        "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+    ...perYear(1495, 1495, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
+    ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
+    ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
+    ...perYear(1495, 1495, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Serbia", "Yedisan"]] }), // Belgrado tomado pela Liga Santa em set/1688
+    ...perYear(1495, 1495, { r: { "Sierra Leone GB": null } }), // Granville Town fundada em 1787
+    ...perYear(1495, 1495, { r: { "New South Wales (UK)": null } }), // Primeira Frota chega em jan/1788
+    ...perYear(1495, 1495, { m: [null, null, ["Nova Scotia", "New Brunswick"]] }), // Nova Brunswick separada em 18/jun/1784
+    ...perYear(1495, 1495, { r: { "Saint Barthelemy": "São Bartolomeu (França)" }, f: { "Saint Barthelemy": "x:fr" }, o: { "Saint Barthelemy": "França" } }), // comprada pela Suécia em 1/jul/1784
+    ...perYear(1783, 1790, { r: { "Vermont": "República de Vermont" }, f: { "Vermont": "blank" }, o: { "Vermont": null } }), // independente de 15/jan/1777 a 4/mar/1791
+    ...perYear(1791, 1912, { m: [null, null, ["United States of America", "Vermont"]] }),
+    ...perYear(1783, 1912, { m: [null, null, ["Russian Empire", "Crimea"]] }), // anexação de fato em 8/abr/1783
+    ...perYear(1783, 1912, { m: [null, null, ["British West Indies", "Grenada", "Saint Vincent", "Bahamas"]] }), // devolvidas pelo Tratado de Paris (3/set/1783); Nassau retomada em 17/abr/1783
+    ...perYear(1783, 1792, { r: { "Tobago": "Tobago (França)" }, f: { "Tobago": "x:fr" }, o: { "Tobago": "França" } }), // francesa desde jun/1781; britânica de novo em 1793 (pendente: Amiens, 1802)
+    ...perYear(1793, 1912, { m: [null, null, ["British West Indies", "Tobago"]] }),
+    ...perYear(1782, 1783, { r: { "Dominica": "Dominica (ocupação francesa)" }, f: { "Dominica": "x:fr" }, o: { "Dominica": null } }), // invadida em 7/set/1778; francesa até 1784
+    ...perYear(1495, 1495, { r: {   
+       "Crimea": "Canato da Crimeia", "Florida": "Flórida (Espanha)" },
+      f: {     "Crimea": "blank", "Florida": "x:es" },
+      o: {     "Crimea": null, "Florida": "Espanha" } }), // Granada (jul/1779) e São Vicente (18/jun/1779); Tobago (jun/1781); Pondicherry britânica de 1778 a 1783; Demerara tomada pelos franceses em 22/jan/1782; Crimeia independente desde 1774; Flórida Ocidental espanhola desde 1781
+    ...perYear(1781, 1783, { r: { "Saint Lucia": "Santa Lúcia (ocupação britânica)" }, f: { "Saint Lucia": "x:gb" }, o: { "Saint Lucia": null } }), // ocupada pelos britânicos em 1778; devolvida à França em 1784 (Paz de Paris)
+    ...perYear(1780, 1783, { r: { "Belize": "Belize (assentamento britânico abandonado)" }, f: { "Belize": "blank" }, o: { "Belize": null } }), // abandonado com a guerra de 1779; colonos voltam em 1784
+    ...perYear(1495, 1495, { r: { "Senegal FR": "Senegal (França)" }, f: { "Senegal FR": "x:fr" }, o: { "Senegal FR": "França" } }), // Saint-Louis britânica desde 1758; francesa em fev/1779
+    ...perYear(1495, 1495, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // Pondicherry tomada pelos britânicos em out/1778
+    ...perYear(1495, 1495, { r: { "Spanish Guinea": "Fernando Pó e Ano-Bom (Portugal)" }, f: { "Spanish Guinea": "blank" }, o: { "Spanish Guinea": "Portugal" } }), // cedidas à Espanha pelo Tratado de El Pardo (11/mar/1778)
+    ...perYear(1495, 1495, { m: [null, null, ["United States of America", "Vermont"]] }), // Concessões de New Hampshire, parte da revolta; Vermont independente em 15/jan/1777
+    ...perYear(1783, 1912, { m: [null, null, ["United States of America", "Old Northwest"]] }), // cedido aos EUA pelo Tratado de Paris (1783); fortes britânicos até 1796 (pendente)
+    ...perYear(1776, 1777, { m: [null, null, ["Canada", "Old Northwest"]] }), // Ato de Quebec (1774): região ao norte do Ohio anexada à Província de Quebec
+    ...perYear(1778, 1782, { r: { "Old Northwest": "Região do Noroeste (disputada entre Grã-Bretanha e Virgínia)" }, f: { "Old Northwest": "blank" }, o: { "Old Northwest": null } }), // Condado de Illinois (Virgínia) de 4/jul/1778 a jan/1782, só nos povoados de Vincennes, Cahokia e Kaskaskia
+    ...perYear(1495, 1495, { m: [null, null, ["Peru", "Argentina", "State of Buenos Aires", "Liga Federal", "Uruguay", "Paraguay", "Bolivia", "Bolivian Litoral"]] }), // Vice-Reino do Rio da Prata criado em 1/ago/1776
+    ...perYear(1495, 1495, { r: { "United States of America": "Treze Colônias (britânicas)" }, f: { "United States of America": "x:gb" }, o: { "United States of America": "Reino Unido" } }), // Primeiro Congresso Continental (set–out/1774); governos reais ainda em funções
+    ...perYear(1775, 1912, { m: [null, null, ["Austria Hungary", "Bukovina"]] }), // cedida pela Convenção de Pera (7/mai/1775)
+    ...perYear(1495, 1495, { m: [null, null, ["Romania", "Bukovina"]] }), // parte da Moldávia até a ocupação austríaca (out/1774)
+    ...perYear(1772, 1912, { m: [null, null, ["Austria Hungary", "Galicia 1772"]] }), // Primeira Partilha da Polônia (5/ago/1772)
+    ...perYear(1772, 1912, { m: [null, null, ["Germany", "Royal Prussia"]] }),
+    ...perYear(1772, 1912, { m: [null, null, ["Russian Empire", "Polish Livonia", "East Belarus"]] }),
+    ...perYear(1770, 1773, { r: { "Romania": "Principado da Moldávia (ocupação russa)", "Wallachia": "Principado da Valáquia (ocupação russa)" }, f: { "Romania": "x:ru", "Wallachia": "x:ru" }, o: { "Romania": null, "Wallachia": null } }), // Iași tomada em 7/out/1769, Bucareste em 17/nov/1769; devolvidas pelo Tratado de Küçük Kaynarca (21/jul/1774)
+    { y: 1775, m: [null, null, ["Rattanakosin Kingdom", "Lan Na"]] }, // Chiang Mai tomada pelos siameses em 15/jan/1775
+    { y: 1768, y1: 1774, r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // quarto período de domínio birmanês, 1763–1774
+    { y: 1768, y1: 1769, r: { "Rattanakosin Kingdom": "Sião (Thonburi e regimes rivais)" } }, // Ayutthaya cai em abr/1767; Taksin coroado em Thonburi em 28/dez/1767; reunificação em 1770
+    { y: 1770, y1: 1778, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } },
+    { y: 1779, y1: 1781, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } }, // depois da fusão de 1779 (Laos)
+    ...perYear(1495, 1495, { m: ["Luisiana (reivindicada pela França)", "blank", ["Louisiana N", "Louisiana S"]], o: { "Louisiana N": null } }), // reivindicada por La Salle em 1682; Fort Maurepas fundado em 1699
+    ...perYear(1782, 1797, { m: [null, null, ["Spain", "Minorca"]] }), // tomada por franceses e espanhóis em 1782; cedida à Espanha em 1783
+    ...perYear(1802, 1912, { m: [null, null, ["Spain", "Minorca"]] }), // devolvida pela Paz de Amiens (1802)
+    ...perYear(1798, 1801, { r: { "Minorca": "Minorca (ocupação britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": null } }), // tomada pelos britânicos em 1798
+    ...perYear(1781, 1781, { r: { "Minorca": "Minorca (sítio franco-espanhol)" }, f: { "Minorca": "blank" }, o: { "Minorca": null } }), // invasão em 1781; Fort St. Philip rende-se em 1782
+    ...perYear(1765, 1780, { r: { "Minorca": "Minorca (britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": "Reino Unido" } }), // devolvida à Grã-Bretanha pela Paz de Paris (1763)
+    ...perYear(1762, 1763, { r: { "Philippines": "Filipinas (Espanha; Manila ocupada pelos britânicos)" } }), // Manila tomada em 6/out/1762; evacuada na 1ª semana de abr/1764
+    ...perYear(1495, 1495, { m: [null, null, ["Canada", "Old Northwest"]] }), // Pays d'en Haut: fortes franceses rendidos com Montreal (set/1760)
+    ...perYear(1762, 1912, { m: [null, null, ["Germany", "East Prussia"]] }), // retirada russa em 1762
+    ...perYear(1758, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
+    ...perYear(1756, 1762, { r: { "Kingdom of Saxony": "Eleitorado da Saxônia (ocupação prussiana)" }, f: { "Kingdom of Saxony": "blank" }, o: { "Kingdom of Saxony": null } }), // invadida pela Prússia em 1756; ocupada até 1763
+    ...perYear(1495, 1495, { r: { "Martinique": "Martinica", "Guadeloupe": "Guadalupe", "Saint Lucia": "Santa Lúcia (neutra; colonos franceses)", "Grenada": "Granada (França)", "Saint Vincent": "São Vicente (caribes e colonos franceses)", "Dominica": "Dominica (França)", "Tobago": "Tobago (neutra, disputada entre Grã-Bretanha e França)", "Minorca": "Minorca (britânica)" },
+      f: { "Martinique": "x:fr", "Guadeloupe": "x:fr", "Saint Lucia": "blank", "Grenada": "x:fr", "Saint Vincent": "blank", "Dominica": "x:fr", "Tobago": "blank", "Minorca": "x:gb" },
+      o: { "Martinique": "França", "Guadeloupe": "França", "Saint Lucia": null, "Grenada": "França", "Saint Vincent": null, "Dominica": "França", "Tobago": null, "Minorca": "Reino Unido" } }), // Guadalupe (2/mai/1759), Dominica (7/jun/1761); Santa Lúcia colônia francesa desde 1756; Tobago neutra 1679–1763; Minorca francesa desde 1756
+    ...perYear(1761, 1762, { r: { "French India": "Índia Francesa (ocupação britânica)" }, f: { "French India": "x:gb" }, o: { "French India": null } }), // Pondicherry cai em 15/jan/1761; devolvida pela Paz de Paris (1763)
+    ...perYear(1495, 1495, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
+    ...perYear(1495, 1495, { m: [null, null, ["Finland", "Kymmene"]] }),
+    ...perYear(1495, 1495, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
+    ...perYear(1495, 1495, { m: [null, null, ["Persia", "West Persia"]] }), // Erivã tomada por Murad IV em ago/1635, retomada pelos safávidas em abr/1636; // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
+    ...perYear(1495, 1495, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
+    ...perYear(1495, 1495, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
+    ...perYear(1495, 1495, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
+    ...perYear(1495, 1495, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
+    ...perYear(1495, 1495, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
+    ...perYear(1495, 1495, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
+    ...perYear(1495, 1495, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
+    ...perYear(1495, 1495, { r: { "Belgium": "Países Baixos Espanhóis", "Kingdom of Bavaria": "Eleitorado da Baviera"}, f: { "Belgium": "blank", "Kingdom of Bavaria": "blank"}, o: { "Belgium": "Espanha", "Kingdom of Bavaria": null} }), // condomínio desde 1706; Luxemburgo e Namur cedidos a Max Emanuel em 1712; Baviera partilhada após Blenheim (1704) e restituída em 1714; Barcelona sitiada desde 25/jul/1713, guerra catalã unilateral desde 9/jul/1713; ocupação russa da Finlândia a partir de 1713–14 (Helsinque 1713, Storkyro fev/1714)
+    ...perYear(1495, 1495, { m: [null, null, ["Spain", "Sicily"]] }), // Sicília de Filipe V até Utrecht (1713)
+    ...perYear(1495, 1495, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // invasão russa da Finlândia em 1713
+    ...perYear(1495, 1495, { r: { "Nova Scotia": "Acádia (França)" }, f: { "Nova Scotia": "x:fr" }, o: { "Nova Scotia": "França" } }), // Port Royal tomada pelos britânicos em out/1710
+    ...perYear(1495, 1495, { m: [null, null, ["Spain", "Italy", "Minorca"]] }), // Sardenha tomada pelos aliados em ago/1708; Minorca em set/1708
+    ...perYear(1495, 1495, { r: { "United Kingdom of Great Britain and Ireland": "Reino da Inglaterra", "Scotland": "Reino da Escócia" }, f: { "United Kingdom of Great Britain and Ireland": "h:england", "Scotland": "h:scotland" }, o: { "United Kingdom of Great Britain and Ireland": null, "Scotland": null } }), // Ato de União em 1/mai/1707
+    ...perYear(1495, 1495, { m: [null, null, ["Spain", "Majorca"]] }), // data da adesão de Maiorca a Carlos III (1706) não checada
+    ...perYear(1495, 1495, { m: [null, null, ["Spain", "Valencia"]] }), // Girona tomada pela França em 29/jun/1694; Barcelona em 10/ago/1697
+    ...perYear(1495, 1495, { m: [null, null, ["Spain", "Gibraltar"]] }), // tomado pelos anglo-holandeses em ago/1704
+    ...perYear(1495, 1495, { r: { "Germany": "Brandemburgo-Prússia", "Ashanti": "Estados axantis (vassalos de Denkyira)" }, f: { "Germany": "blank", "Ashanti": "blank" }, o: { "Germany": null, "Ashanti": null } }), // Frederico I rei na Prússia em 1701; Denkyira derrotado em Feyiase (1701)
+    ...perYear(1495, 1495, { r: { "Transylvania": "Principado da Transilvânia" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), // domínio habsburgo imposto aos poucos depois de 1683; Diploma Leopoldino em 16/out/1690
+    ...perYear(1495, 1495, { r: { "Hungary": "Hungria (dividida entre Habsburgos e otomanos)" }, f: { "Hungary": "blank" }, o: { "Hungary": null } }), // Buda otomana desde 1541, tomada pela Liga Santa em 2/set/1686
+    ...perYear(1495, 1495, { m: [null, null, ["Ottoman Empire", "Morea", "Achaea"]] }), // Coroni tomada pelos venezianos em 11/ago/1685
+    ...perYear(1495, 1495, { m: [null, null, ["Belgium", "Luxembourg"]] }), // Luxemburgo tomado pela França em jun/1684
+    ...perYear(1495, 1495, { r: { "East Prussia": "Ducado da Prússia (Brandemburgo; feudo polonês)" }, f: { "East Prussia": "blank" }, o: { "East Prussia": "República das Duas Nações" } }), // soberania reconhecida em Wehlau (set/1657); Cracóvia sueca de 13/out/1655 a 30/ago/1657
+    // revisão 1494 (situação em 31/dez; fontes: Wikipedia)
+    ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
+    ...perYear(1494, 1494, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
+    ...perYear(1494, 1494, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
+    ...perYear(1494, 1494, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1494, 1494, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
+    ...perYear(1494, 1494, { m: ["Reino da Polônia", "blank", ["Congress Poland", "West Galicia", "Kraków", "Posen", "Galicia 1772", "Tarnopol", "Royal Prussia", "Podolia"]], o: { "Congress Poland": null } }), ...perYear(1494, 1494, { m: ["Grão-Ducado da Lituânia", "blank", ["Lithuania GD", "Right-bank Ukraine", "Minsk region", "West Volhynia", "East Belarus"]], o: { "Lithuania GD": null } }), // União de Lublin, 1/jul/1569 
+    ...perYear(1494, 1494, { m: [null, null, ["British Raj", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
+    ...perYear(1494, 1494, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
+    ...perYear(1494, 1494, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands", "Tinos"]], o: { "Venetia": null } }), // Moreia veneziana de 1699 (Karlowitz) a 1715
+    ...perYear(1494, 1494, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
+    ...perYear(1494, 1494, { m: ["Ducado de Saboia", "h:it_sav", ["Piedmont", "Savoy and Nice"]], o: { "Piedmont": null } }), // Saboia ocupada pela França 1703–1713
+    ...perYear(1494, 1494, { m: [null, null, ["Lombardy", "Novara"]] }), // Novara e Tortona milanesas até o Tratado de Viena (1738)
+    ...perYear(1494, 1494, { m: ["Antiga Confederação Suíça", "blank", ["Switzerland", "Valais"]], o: { "Switzerland": null } }),
+    ...perYear(1494, 1494, { m: [null, null, ["Dominican Republic", "Haiti", "Kingdom of Haiti"]] }), // devastações de Osorio (1605–1606) despovoaram o oeste da ilha
+    ...perYear(1494, 1494, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
+      "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
+      "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
+      f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Martinique": "x:fr", "Saint Lucia": "x:fr" },
+      o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
+        "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+    ...perYear(1494, 1494, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
+    ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
+    ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
+    ...perYear(1494, 1494, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Serbia", "Yedisan"]] }), // Belgrado tomado pela Liga Santa em set/1688
+    ...perYear(1494, 1494, { r: { "Sierra Leone GB": null } }), // Granville Town fundada em 1787
+    ...perYear(1494, 1494, { r: { "New South Wales (UK)": null } }), // Primeira Frota chega em jan/1788
+    ...perYear(1494, 1494, { m: [null, null, ["Nova Scotia", "New Brunswick"]] }), // Nova Brunswick separada em 18/jun/1784
+    ...perYear(1494, 1494, { r: { "Saint Barthelemy": "São Bartolomeu (França)" }, f: { "Saint Barthelemy": "x:fr" }, o: { "Saint Barthelemy": "França" } }), // comprada pela Suécia em 1/jul/1784
+    ...perYear(1783, 1790, { r: { "Vermont": "República de Vermont" }, f: { "Vermont": "blank" }, o: { "Vermont": null } }), // independente de 15/jan/1777 a 4/mar/1791
+    ...perYear(1791, 1912, { m: [null, null, ["United States of America", "Vermont"]] }),
+    ...perYear(1783, 1912, { m: [null, null, ["Russian Empire", "Crimea"]] }), // anexação de fato em 8/abr/1783
+    ...perYear(1783, 1912, { m: [null, null, ["British West Indies", "Grenada", "Saint Vincent", "Bahamas"]] }), // devolvidas pelo Tratado de Paris (3/set/1783); Nassau retomada em 17/abr/1783
+    ...perYear(1783, 1792, { r: { "Tobago": "Tobago (França)" }, f: { "Tobago": "x:fr" }, o: { "Tobago": "França" } }), // francesa desde jun/1781; britânica de novo em 1793 (pendente: Amiens, 1802)
+    ...perYear(1793, 1912, { m: [null, null, ["British West Indies", "Tobago"]] }),
+    ...perYear(1782, 1783, { r: { "Dominica": "Dominica (ocupação francesa)" }, f: { "Dominica": "x:fr" }, o: { "Dominica": null } }), // invadida em 7/set/1778; francesa até 1784
+    ...perYear(1494, 1494, { r: {   
+       "Crimea": "Canato da Crimeia", "Florida": "Flórida (Espanha)" },
+      f: {     "Crimea": "blank", "Florida": "x:es" },
+      o: {     "Crimea": null, "Florida": "Espanha" } }), // Granada (jul/1779) e São Vicente (18/jun/1779); Tobago (jun/1781); Pondicherry britânica de 1778 a 1783; Demerara tomada pelos franceses em 22/jan/1782; Crimeia independente desde 1774; Flórida Ocidental espanhola desde 1781
+    ...perYear(1781, 1783, { r: { "Saint Lucia": "Santa Lúcia (ocupação britânica)" }, f: { "Saint Lucia": "x:gb" }, o: { "Saint Lucia": null } }), // ocupada pelos britânicos em 1778; devolvida à França em 1784 (Paz de Paris)
+    ...perYear(1780, 1783, { r: { "Belize": "Belize (assentamento britânico abandonado)" }, f: { "Belize": "blank" }, o: { "Belize": null } }), // abandonado com a guerra de 1779; colonos voltam em 1784
+    ...perYear(1494, 1494, { r: { "Senegal FR": "Senegal (França)" }, f: { "Senegal FR": "x:fr" }, o: { "Senegal FR": "França" } }), // Saint-Louis britânica desde 1758; francesa em fev/1779
+    ...perYear(1494, 1494, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // Pondicherry tomada pelos britânicos em out/1778
+    ...perYear(1494, 1494, { r: { "Spanish Guinea": "Fernando Pó e Ano-Bom (Portugal)" }, f: { "Spanish Guinea": "blank" }, o: { "Spanish Guinea": "Portugal" } }), // cedidas à Espanha pelo Tratado de El Pardo (11/mar/1778)
+    ...perYear(1494, 1494, { m: [null, null, ["United States of America", "Vermont"]] }), // Concessões de New Hampshire, parte da revolta; Vermont independente em 15/jan/1777
+    ...perYear(1783, 1912, { m: [null, null, ["United States of America", "Old Northwest"]] }), // cedido aos EUA pelo Tratado de Paris (1783); fortes britânicos até 1796 (pendente)
+    ...perYear(1776, 1777, { m: [null, null, ["Canada", "Old Northwest"]] }), // Ato de Quebec (1774): região ao norte do Ohio anexada à Província de Quebec
+    ...perYear(1778, 1782, { r: { "Old Northwest": "Região do Noroeste (disputada entre Grã-Bretanha e Virgínia)" }, f: { "Old Northwest": "blank" }, o: { "Old Northwest": null } }), // Condado de Illinois (Virgínia) de 4/jul/1778 a jan/1782, só nos povoados de Vincennes, Cahokia e Kaskaskia
+    ...perYear(1494, 1494, { m: [null, null, ["Peru", "Argentina", "State of Buenos Aires", "Liga Federal", "Uruguay", "Paraguay", "Bolivia", "Bolivian Litoral"]] }), // Vice-Reino do Rio da Prata criado em 1/ago/1776
+    ...perYear(1494, 1494, { r: { "United States of America": "Treze Colônias (britânicas)" }, f: { "United States of America": "x:gb" }, o: { "United States of America": "Reino Unido" } }), // Primeiro Congresso Continental (set–out/1774); governos reais ainda em funções
+    ...perYear(1775, 1912, { m: [null, null, ["Austria Hungary", "Bukovina"]] }), // cedida pela Convenção de Pera (7/mai/1775)
+    ...perYear(1494, 1494, { m: [null, null, ["Romania", "Bukovina"]] }), // parte da Moldávia até a ocupação austríaca (out/1774)
+    ...perYear(1772, 1912, { m: [null, null, ["Austria Hungary", "Galicia 1772"]] }), // Primeira Partilha da Polônia (5/ago/1772)
+    ...perYear(1772, 1912, { m: [null, null, ["Germany", "Royal Prussia"]] }),
+    ...perYear(1772, 1912, { m: [null, null, ["Russian Empire", "Polish Livonia", "East Belarus"]] }),
+    ...perYear(1770, 1773, { r: { "Romania": "Principado da Moldávia (ocupação russa)", "Wallachia": "Principado da Valáquia (ocupação russa)" }, f: { "Romania": "x:ru", "Wallachia": "x:ru" }, o: { "Romania": null, "Wallachia": null } }), // Iași tomada em 7/out/1769, Bucareste em 17/nov/1769; devolvidas pelo Tratado de Küçük Kaynarca (21/jul/1774)
+    { y: 1775, m: [null, null, ["Rattanakosin Kingdom", "Lan Na"]] }, // Chiang Mai tomada pelos siameses em 15/jan/1775
+    { y: 1768, y1: 1774, r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // quarto período de domínio birmanês, 1763–1774
+    { y: 1768, y1: 1769, r: { "Rattanakosin Kingdom": "Sião (Thonburi e regimes rivais)" } }, // Ayutthaya cai em abr/1767; Taksin coroado em Thonburi em 28/dez/1767; reunificação em 1770
+    { y: 1770, y1: 1778, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } },
+    { y: 1779, y1: 1781, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } }, // depois da fusão de 1779 (Laos)
+    ...perYear(1494, 1494, { m: ["Luisiana (reivindicada pela França)", "blank", ["Louisiana N", "Louisiana S"]], o: { "Louisiana N": null } }), // reivindicada por La Salle em 1682; Fort Maurepas fundado em 1699
+    ...perYear(1782, 1797, { m: [null, null, ["Spain", "Minorca"]] }), // tomada por franceses e espanhóis em 1782; cedida à Espanha em 1783
+    ...perYear(1802, 1912, { m: [null, null, ["Spain", "Minorca"]] }), // devolvida pela Paz de Amiens (1802)
+    ...perYear(1798, 1801, { r: { "Minorca": "Minorca (ocupação britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": null } }), // tomada pelos britânicos em 1798
+    ...perYear(1781, 1781, { r: { "Minorca": "Minorca (sítio franco-espanhol)" }, f: { "Minorca": "blank" }, o: { "Minorca": null } }), // invasão em 1781; Fort St. Philip rende-se em 1782
+    ...perYear(1765, 1780, { r: { "Minorca": "Minorca (britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": "Reino Unido" } }), // devolvida à Grã-Bretanha pela Paz de Paris (1763)
+    ...perYear(1762, 1763, { r: { "Philippines": "Filipinas (Espanha; Manila ocupada pelos britânicos)" } }), // Manila tomada em 6/out/1762; evacuada na 1ª semana de abr/1764
+    ...perYear(1494, 1494, { m: [null, null, ["Canada", "Old Northwest"]] }), // Pays d'en Haut: fortes franceses rendidos com Montreal (set/1760)
+    ...perYear(1762, 1912, { m: [null, null, ["Germany", "East Prussia"]] }), // retirada russa em 1762
+    ...perYear(1758, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
+    ...perYear(1756, 1762, { r: { "Kingdom of Saxony": "Eleitorado da Saxônia (ocupação prussiana)" }, f: { "Kingdom of Saxony": "blank" }, o: { "Kingdom of Saxony": null } }), // invadida pela Prússia em 1756; ocupada até 1763
+    ...perYear(1494, 1494, { r: { "Martinique": "Martinica", "Guadeloupe": "Guadalupe", "Saint Lucia": "Santa Lúcia (neutra; colonos franceses)", "Grenada": "Granada (França)", "Saint Vincent": "São Vicente (caribes e colonos franceses)", "Dominica": "Dominica (França)", "Tobago": "Tobago (neutra, disputada entre Grã-Bretanha e França)", "Minorca": "Minorca (britânica)" },
+      f: { "Martinique": "x:fr", "Guadeloupe": "x:fr", "Saint Lucia": "blank", "Grenada": "x:fr", "Saint Vincent": "blank", "Dominica": "x:fr", "Tobago": "blank", "Minorca": "x:gb" },
+      o: { "Martinique": "França", "Guadeloupe": "França", "Saint Lucia": null, "Grenada": "França", "Saint Vincent": null, "Dominica": "França", "Tobago": null, "Minorca": "Reino Unido" } }), // Guadalupe (2/mai/1759), Dominica (7/jun/1761); Santa Lúcia colônia francesa desde 1756; Tobago neutra 1679–1763; Minorca francesa desde 1756
+    ...perYear(1761, 1762, { r: { "French India": "Índia Francesa (ocupação britânica)" }, f: { "French India": "x:gb" }, o: { "French India": null } }), // Pondicherry cai em 15/jan/1761; devolvida pela Paz de Paris (1763)
+    ...perYear(1494, 1494, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
+    ...perYear(1494, 1494, { m: [null, null, ["Finland", "Kymmene"]] }),
+    ...perYear(1494, 1494, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
+    ...perYear(1494, 1494, { m: [null, null, ["Persia", "West Persia"]] }), // Erivã tomada por Murad IV em ago/1635, retomada pelos safávidas em abr/1636; // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
+    ...perYear(1494, 1494, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
+    ...perYear(1494, 1494, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
+    ...perYear(1494, 1494, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
+    ...perYear(1494, 1494, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
+    ...perYear(1494, 1494, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
+    ...perYear(1494, 1494, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
+    ...perYear(1494, 1494, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
+    ...perYear(1494, 1494, { r: { "Belgium": "Países Baixos Espanhóis", "Kingdom of Bavaria": "Eleitorado da Baviera"}, f: { "Belgium": "blank", "Kingdom of Bavaria": "blank"}, o: { "Belgium": "Espanha", "Kingdom of Bavaria": null} }), // condomínio desde 1706; Luxemburgo e Namur cedidos a Max Emanuel em 1712; Baviera partilhada após Blenheim (1704) e restituída em 1714; Barcelona sitiada desde 25/jul/1713, guerra catalã unilateral desde 9/jul/1713; ocupação russa da Finlândia a partir de 1713–14 (Helsinque 1713, Storkyro fev/1714)
+    ...perYear(1494, 1494, { m: [null, null, ["Spain", "Sicily"]] }), // Sicília de Filipe V até Utrecht (1713)
+    ...perYear(1494, 1494, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // invasão russa da Finlândia em 1713
+    ...perYear(1494, 1494, { r: { "Nova Scotia": "Acádia (França)" }, f: { "Nova Scotia": "x:fr" }, o: { "Nova Scotia": "França" } }), // Port Royal tomada pelos britânicos em out/1710
+    ...perYear(1494, 1494, { m: [null, null, ["Spain", "Italy", "Minorca"]] }), // Sardenha tomada pelos aliados em ago/1708; Minorca em set/1708
+    ...perYear(1494, 1494, { r: { "United Kingdom of Great Britain and Ireland": "Reino da Inglaterra", "Scotland": "Reino da Escócia" }, f: { "United Kingdom of Great Britain and Ireland": "h:england", "Scotland": "h:scotland" }, o: { "United Kingdom of Great Britain and Ireland": null, "Scotland": null } }), // Ato de União em 1/mai/1707
+    ...perYear(1494, 1494, { m: [null, null, ["Spain", "Majorca"]] }), // data da adesão de Maiorca a Carlos III (1706) não checada
+    ...perYear(1494, 1494, { m: [null, null, ["Spain", "Valencia"]] }), // Girona tomada pela França em 29/jun/1694; Barcelona em 10/ago/1697
+    ...perYear(1494, 1494, { m: [null, null, ["Spain", "Gibraltar"]] }), // tomado pelos anglo-holandeses em ago/1704
+    ...perYear(1494, 1494, { r: { "Germany": "Brandemburgo-Prússia", "Ashanti": "Estados axantis (vassalos de Denkyira)" }, f: { "Germany": "blank", "Ashanti": "blank" }, o: { "Germany": null, "Ashanti": null } }), // Frederico I rei na Prússia em 1701; Denkyira derrotado em Feyiase (1701)
+    ...perYear(1494, 1494, { r: { "Transylvania": "Principado da Transilvânia" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), // domínio habsburgo imposto aos poucos depois de 1683; Diploma Leopoldino em 16/out/1690
+    ...perYear(1494, 1494, { r: { "Hungary": "Hungria (dividida entre Habsburgos e otomanos)" }, f: { "Hungary": "blank" }, o: { "Hungary": null } }), // Buda otomana desde 1541, tomada pela Liga Santa em 2/set/1686
+    ...perYear(1494, 1494, { m: [null, null, ["Ottoman Empire", "Morea", "Achaea"]] }), // Coroni tomada pelos venezianos em 11/ago/1685
+    ...perYear(1494, 1494, { m: [null, null, ["Belgium", "Luxembourg"]] }), // Luxemburgo tomado pela França em jun/1684
+    ...perYear(1494, 1494, { r: { "East Prussia": "Ducado da Prússia (Brandemburgo; feudo polonês)" }, f: { "East Prussia": "blank" }, o: { "East Prussia": "República das Duas Nações" } }), // soberania reconhecida em Wehlau (set/1657); Cracóvia sueca de 13/out/1655 a 30/ago/1657
+    // revisão 1493 (situação em 31/dez; fontes: Wikipedia)
+    ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
+    ...perYear(1493, 1493, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
+    ...perYear(1493, 1493, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
+    ...perYear(1493, 1493, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1493, 1493, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
+    ...perYear(1493, 1493, { m: ["Reino da Polônia", "blank", ["Congress Poland", "West Galicia", "Kraków", "Posen", "Galicia 1772", "Tarnopol", "Royal Prussia", "Podolia"]], o: { "Congress Poland": null } }), ...perYear(1493, 1493, { m: ["Grão-Ducado da Lituânia", "blank", ["Lithuania GD", "Right-bank Ukraine", "Minsk region", "West Volhynia", "East Belarus"]], o: { "Lithuania GD": null } }), // União de Lublin, 1/jul/1569 
+    ...perYear(1493, 1493, { m: [null, null, ["British Raj", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
+    ...perYear(1493, 1493, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
+    ...perYear(1493, 1493, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands", "Tinos"]], o: { "Venetia": null } }), // Moreia veneziana de 1699 (Karlowitz) a 1715
+    ...perYear(1493, 1493, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
+    ...perYear(1493, 1493, { m: ["Ducado de Saboia", "h:it_sav", ["Piedmont", "Savoy and Nice"]], o: { "Piedmont": null } }), // Saboia ocupada pela França 1703–1713
+    ...perYear(1493, 1493, { m: [null, null, ["Lombardy", "Novara"]] }), // Novara e Tortona milanesas até o Tratado de Viena (1738)
+    ...perYear(1493, 1493, { m: ["Antiga Confederação Suíça", "blank", ["Switzerland", "Valais"]], o: { "Switzerland": null } }),
+    ...perYear(1493, 1493, { m: [null, null, ["Dominican Republic", "Haiti", "Kingdom of Haiti"]] }), // devastações de Osorio (1605–1606) despovoaram o oeste da ilha
+    ...perYear(1493, 1493, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
+      "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
+      "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
+      f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Martinique": "x:fr", "Saint Lucia": "x:fr" },
+      o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
+        "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+    ...perYear(1493, 1493, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
+    ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
+    ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
+    ...perYear(1493, 1493, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Serbia", "Yedisan"]] }), // Belgrado tomado pela Liga Santa em set/1688
+    ...perYear(1493, 1493, { r: { "Sierra Leone GB": null } }), // Granville Town fundada em 1787
+    ...perYear(1493, 1493, { r: { "New South Wales (UK)": null } }), // Primeira Frota chega em jan/1788
+    ...perYear(1493, 1493, { m: [null, null, ["Nova Scotia", "New Brunswick"]] }), // Nova Brunswick separada em 18/jun/1784
+    ...perYear(1493, 1493, { r: { "Saint Barthelemy": "São Bartolomeu (França)" }, f: { "Saint Barthelemy": "x:fr" }, o: { "Saint Barthelemy": "França" } }), // comprada pela Suécia em 1/jul/1784
+    ...perYear(1783, 1790, { r: { "Vermont": "República de Vermont" }, f: { "Vermont": "blank" }, o: { "Vermont": null } }), // independente de 15/jan/1777 a 4/mar/1791
+    ...perYear(1791, 1912, { m: [null, null, ["United States of America", "Vermont"]] }),
+    ...perYear(1783, 1912, { m: [null, null, ["Russian Empire", "Crimea"]] }), // anexação de fato em 8/abr/1783
+    ...perYear(1783, 1912, { m: [null, null, ["British West Indies", "Grenada", "Saint Vincent", "Bahamas"]] }), // devolvidas pelo Tratado de Paris (3/set/1783); Nassau retomada em 17/abr/1783
+    ...perYear(1783, 1792, { r: { "Tobago": "Tobago (França)" }, f: { "Tobago": "x:fr" }, o: { "Tobago": "França" } }), // francesa desde jun/1781; britânica de novo em 1793 (pendente: Amiens, 1802)
+    ...perYear(1793, 1912, { m: [null, null, ["British West Indies", "Tobago"]] }),
+    ...perYear(1782, 1783, { r: { "Dominica": "Dominica (ocupação francesa)" }, f: { "Dominica": "x:fr" }, o: { "Dominica": null } }), // invadida em 7/set/1778; francesa até 1784
+    ...perYear(1493, 1493, { r: {   
+       "Crimea": "Canato da Crimeia", "Florida": "Flórida (Espanha)" },
+      f: {     "Crimea": "blank", "Florida": "x:es" },
+      o: {     "Crimea": null, "Florida": "Espanha" } }), // Granada (jul/1779) e São Vicente (18/jun/1779); Tobago (jun/1781); Pondicherry britânica de 1778 a 1783; Demerara tomada pelos franceses em 22/jan/1782; Crimeia independente desde 1774; Flórida Ocidental espanhola desde 1781
+    ...perYear(1781, 1783, { r: { "Saint Lucia": "Santa Lúcia (ocupação britânica)" }, f: { "Saint Lucia": "x:gb" }, o: { "Saint Lucia": null } }), // ocupada pelos britânicos em 1778; devolvida à França em 1784 (Paz de Paris)
+    ...perYear(1780, 1783, { r: { "Belize": "Belize (assentamento britânico abandonado)" }, f: { "Belize": "blank" }, o: { "Belize": null } }), // abandonado com a guerra de 1779; colonos voltam em 1784
+    ...perYear(1493, 1493, { r: { "Senegal FR": "Senegal (França)" }, f: { "Senegal FR": "x:fr" }, o: { "Senegal FR": "França" } }), // Saint-Louis britânica desde 1758; francesa em fev/1779
+    ...perYear(1493, 1493, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // Pondicherry tomada pelos britânicos em out/1778
+    ...perYear(1493, 1493, { r: { "Spanish Guinea": "Fernando Pó e Ano-Bom (Portugal)" }, f: { "Spanish Guinea": "blank" }, o: { "Spanish Guinea": "Portugal" } }), // cedidas à Espanha pelo Tratado de El Pardo (11/mar/1778)
+    ...perYear(1493, 1493, { m: [null, null, ["United States of America", "Vermont"]] }), // Concessões de New Hampshire, parte da revolta; Vermont independente em 15/jan/1777
+    ...perYear(1783, 1912, { m: [null, null, ["United States of America", "Old Northwest"]] }), // cedido aos EUA pelo Tratado de Paris (1783); fortes britânicos até 1796 (pendente)
+    ...perYear(1776, 1777, { m: [null, null, ["Canada", "Old Northwest"]] }), // Ato de Quebec (1774): região ao norte do Ohio anexada à Província de Quebec
+    ...perYear(1778, 1782, { r: { "Old Northwest": "Região do Noroeste (disputada entre Grã-Bretanha e Virgínia)" }, f: { "Old Northwest": "blank" }, o: { "Old Northwest": null } }), // Condado de Illinois (Virgínia) de 4/jul/1778 a jan/1782, só nos povoados de Vincennes, Cahokia e Kaskaskia
+    ...perYear(1493, 1493, { m: [null, null, ["Peru", "Argentina", "State of Buenos Aires", "Liga Federal", "Uruguay", "Paraguay", "Bolivia", "Bolivian Litoral"]] }), // Vice-Reino do Rio da Prata criado em 1/ago/1776
+    ...perYear(1493, 1493, { r: { "United States of America": "Treze Colônias (britânicas)" }, f: { "United States of America": "x:gb" }, o: { "United States of America": "Reino Unido" } }), // Primeiro Congresso Continental (set–out/1774); governos reais ainda em funções
+    ...perYear(1775, 1912, { m: [null, null, ["Austria Hungary", "Bukovina"]] }), // cedida pela Convenção de Pera (7/mai/1775)
+    ...perYear(1493, 1493, { m: [null, null, ["Romania", "Bukovina"]] }), // parte da Moldávia até a ocupação austríaca (out/1774)
+    ...perYear(1772, 1912, { m: [null, null, ["Austria Hungary", "Galicia 1772"]] }), // Primeira Partilha da Polônia (5/ago/1772)
+    ...perYear(1772, 1912, { m: [null, null, ["Germany", "Royal Prussia"]] }),
+    ...perYear(1772, 1912, { m: [null, null, ["Russian Empire", "Polish Livonia", "East Belarus"]] }),
+    ...perYear(1770, 1773, { r: { "Romania": "Principado da Moldávia (ocupação russa)", "Wallachia": "Principado da Valáquia (ocupação russa)" }, f: { "Romania": "x:ru", "Wallachia": "x:ru" }, o: { "Romania": null, "Wallachia": null } }), // Iași tomada em 7/out/1769, Bucareste em 17/nov/1769; devolvidas pelo Tratado de Küçük Kaynarca (21/jul/1774)
+    { y: 1775, m: [null, null, ["Rattanakosin Kingdom", "Lan Na"]] }, // Chiang Mai tomada pelos siameses em 15/jan/1775
+    { y: 1768, y1: 1774, r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // quarto período de domínio birmanês, 1763–1774
+    { y: 1768, y1: 1769, r: { "Rattanakosin Kingdom": "Sião (Thonburi e regimes rivais)" } }, // Ayutthaya cai em abr/1767; Taksin coroado em Thonburi em 28/dez/1767; reunificação em 1770
+    { y: 1770, y1: 1778, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } },
+    { y: 1779, y1: 1781, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } }, // depois da fusão de 1779 (Laos)
+    ...perYear(1493, 1493, { m: ["Luisiana (reivindicada pela França)", "blank", ["Louisiana N", "Louisiana S"]], o: { "Louisiana N": null } }), // reivindicada por La Salle em 1682; Fort Maurepas fundado em 1699
+    ...perYear(1782, 1797, { m: [null, null, ["Spain", "Minorca"]] }), // tomada por franceses e espanhóis em 1782; cedida à Espanha em 1783
+    ...perYear(1802, 1912, { m: [null, null, ["Spain", "Minorca"]] }), // devolvida pela Paz de Amiens (1802)
+    ...perYear(1798, 1801, { r: { "Minorca": "Minorca (ocupação britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": null } }), // tomada pelos britânicos em 1798
+    ...perYear(1781, 1781, { r: { "Minorca": "Minorca (sítio franco-espanhol)" }, f: { "Minorca": "blank" }, o: { "Minorca": null } }), // invasão em 1781; Fort St. Philip rende-se em 1782
+    ...perYear(1765, 1780, { r: { "Minorca": "Minorca (britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": "Reino Unido" } }), // devolvida à Grã-Bretanha pela Paz de Paris (1763)
+    ...perYear(1762, 1763, { r: { "Philippines": "Filipinas (Espanha; Manila ocupada pelos britânicos)" } }), // Manila tomada em 6/out/1762; evacuada na 1ª semana de abr/1764
+    ...perYear(1493, 1493, { m: [null, null, ["Canada", "Old Northwest"]] }), // Pays d'en Haut: fortes franceses rendidos com Montreal (set/1760)
+    ...perYear(1762, 1912, { m: [null, null, ["Germany", "East Prussia"]] }), // retirada russa em 1762
+    ...perYear(1758, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
+    ...perYear(1756, 1762, { r: { "Kingdom of Saxony": "Eleitorado da Saxônia (ocupação prussiana)" }, f: { "Kingdom of Saxony": "blank" }, o: { "Kingdom of Saxony": null } }), // invadida pela Prússia em 1756; ocupada até 1763
+    ...perYear(1493, 1493, { r: { "Martinique": "Martinica", "Guadeloupe": "Guadalupe", "Saint Lucia": "Santa Lúcia (neutra; colonos franceses)", "Grenada": "Granada (França)", "Saint Vincent": "São Vicente (caribes e colonos franceses)", "Dominica": "Dominica (França)", "Tobago": "Tobago (neutra, disputada entre Grã-Bretanha e França)", "Minorca": "Minorca (britânica)" },
+      f: { "Martinique": "x:fr", "Guadeloupe": "x:fr", "Saint Lucia": "blank", "Grenada": "x:fr", "Saint Vincent": "blank", "Dominica": "x:fr", "Tobago": "blank", "Minorca": "x:gb" },
+      o: { "Martinique": "França", "Guadeloupe": "França", "Saint Lucia": null, "Grenada": "França", "Saint Vincent": null, "Dominica": "França", "Tobago": null, "Minorca": "Reino Unido" } }), // Guadalupe (2/mai/1759), Dominica (7/jun/1761); Santa Lúcia colônia francesa desde 1756; Tobago neutra 1679–1763; Minorca francesa desde 1756
+    ...perYear(1761, 1762, { r: { "French India": "Índia Francesa (ocupação britânica)" }, f: { "French India": "x:gb" }, o: { "French India": null } }), // Pondicherry cai em 15/jan/1761; devolvida pela Paz de Paris (1763)
+    ...perYear(1493, 1493, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
+    ...perYear(1493, 1493, { m: [null, null, ["Finland", "Kymmene"]] }),
+    ...perYear(1493, 1493, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
+    ...perYear(1493, 1493, { m: [null, null, ["Persia", "West Persia"]] }), // Erivã tomada por Murad IV em ago/1635, retomada pelos safávidas em abr/1636; // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
+    ...perYear(1493, 1493, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
+    ...perYear(1493, 1493, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
+    ...perYear(1493, 1493, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
+    ...perYear(1493, 1493, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
+    ...perYear(1493, 1493, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
+    ...perYear(1493, 1493, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
+    ...perYear(1493, 1493, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
+    ...perYear(1493, 1493, { r: { "Belgium": "Países Baixos Espanhóis", "Kingdom of Bavaria": "Eleitorado da Baviera"}, f: { "Belgium": "blank", "Kingdom of Bavaria": "blank"}, o: { "Belgium": "Espanha", "Kingdom of Bavaria": null} }), // condomínio desde 1706; Luxemburgo e Namur cedidos a Max Emanuel em 1712; Baviera partilhada após Blenheim (1704) e restituída em 1714; Barcelona sitiada desde 25/jul/1713, guerra catalã unilateral desde 9/jul/1713; ocupação russa da Finlândia a partir de 1713–14 (Helsinque 1713, Storkyro fev/1714)
+    ...perYear(1493, 1493, { m: [null, null, ["Spain", "Sicily"]] }), // Sicília de Filipe V até Utrecht (1713)
+    ...perYear(1493, 1493, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // invasão russa da Finlândia em 1713
+    ...perYear(1493, 1493, { r: { "Nova Scotia": "Acádia (França)" }, f: { "Nova Scotia": "x:fr" }, o: { "Nova Scotia": "França" } }), // Port Royal tomada pelos britânicos em out/1710
+    ...perYear(1493, 1493, { m: [null, null, ["Spain", "Italy", "Minorca"]] }), // Sardenha tomada pelos aliados em ago/1708; Minorca em set/1708
+    ...perYear(1493, 1493, { r: { "United Kingdom of Great Britain and Ireland": "Reino da Inglaterra", "Scotland": "Reino da Escócia" }, f: { "United Kingdom of Great Britain and Ireland": "h:england", "Scotland": "h:scotland" }, o: { "United Kingdom of Great Britain and Ireland": null, "Scotland": null } }), // Ato de União em 1/mai/1707
+    ...perYear(1493, 1493, { m: [null, null, ["Spain", "Majorca"]] }), // data da adesão de Maiorca a Carlos III (1706) não checada
+    ...perYear(1493, 1493, { m: [null, null, ["Spain", "Valencia"]] }), // Girona tomada pela França em 29/jun/1694; Barcelona em 10/ago/1697
+    ...perYear(1493, 1493, { m: [null, null, ["Spain", "Gibraltar"]] }), // tomado pelos anglo-holandeses em ago/1704
+    ...perYear(1493, 1493, { r: { "Germany": "Brandemburgo-Prússia", "Ashanti": "Estados axantis (vassalos de Denkyira)" }, f: { "Germany": "blank", "Ashanti": "blank" }, o: { "Germany": null, "Ashanti": null } }), // Frederico I rei na Prússia em 1701; Denkyira derrotado em Feyiase (1701)
+    ...perYear(1493, 1493, { r: { "Transylvania": "Principado da Transilvânia" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), // domínio habsburgo imposto aos poucos depois de 1683; Diploma Leopoldino em 16/out/1690
+    ...perYear(1493, 1493, { r: { "Hungary": "Hungria (dividida entre Habsburgos e otomanos)" }, f: { "Hungary": "blank" }, o: { "Hungary": null } }), // Buda otomana desde 1541, tomada pela Liga Santa em 2/set/1686
+    ...perYear(1493, 1493, { m: [null, null, ["Ottoman Empire", "Morea", "Achaea"]] }), // Coroni tomada pelos venezianos em 11/ago/1685
+    ...perYear(1493, 1493, { m: [null, null, ["Belgium", "Luxembourg"]] }), // Luxemburgo tomado pela França em jun/1684
+    ...perYear(1493, 1493, { r: { "East Prussia": "Ducado da Prússia (Brandemburgo; feudo polonês)" }, f: { "East Prussia": "blank" }, o: { "East Prussia": "República das Duas Nações" } }), // soberania reconhecida em Wehlau (set/1657); Cracóvia sueca de 13/out/1655 a 30/ago/1657
+    // revisão 1492 (situação em 31/dez; fontes: Wikipedia)
+    ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
+    ...perYear(1492, 1492, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
+    ...perYear(1492, 1492, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
+    ...perYear(1492, 1492, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1492, 1492, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
+    ...perYear(1492, 1492, { m: ["Reino da Polônia", "blank", ["Congress Poland", "West Galicia", "Kraków", "Posen", "Galicia 1772", "Tarnopol", "Royal Prussia", "Podolia"]], o: { "Congress Poland": null } }), ...perYear(1492, 1492, { m: ["Grão-Ducado da Lituânia", "blank", ["Lithuania GD", "Right-bank Ukraine", "Minsk region", "West Volhynia", "East Belarus"]], o: { "Lithuania GD": null } }), // União de Lublin, 1/jul/1569 
+    ...perYear(1492, 1492, { m: [null, null, ["British Raj", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
+    ...perYear(1492, 1492, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
+    ...perYear(1492, 1492, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands", "Tinos"]], o: { "Venetia": null } }), // Moreia veneziana de 1699 (Karlowitz) a 1715
+    ...perYear(1492, 1492, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
+    ...perYear(1492, 1492, { m: ["Ducado de Saboia", "h:it_sav", ["Piedmont", "Savoy and Nice"]], o: { "Piedmont": null } }), // Saboia ocupada pela França 1703–1713
+    ...perYear(1492, 1492, { m: [null, null, ["Lombardy", "Novara"]] }), // Novara e Tortona milanesas até o Tratado de Viena (1738)
+    ...perYear(1492, 1492, { m: ["Antiga Confederação Suíça", "blank", ["Switzerland", "Valais"]], o: { "Switzerland": null } }),
+    ...perYear(1492, 1492, { m: [null, null, ["Dominican Republic", "Haiti", "Kingdom of Haiti"]] }), // devastações de Osorio (1605–1606) despovoaram o oeste da ilha
+    ...perYear(1492, 1492, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
+      "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
+      "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
+      f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Martinique": "x:fr", "Saint Lucia": "x:fr" },
+      o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
+        "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+    ...perYear(1492, 1492, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
+    ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
+    ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
+    ...perYear(1492, 1492, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Serbia", "Yedisan"]] }), // Belgrado tomado pela Liga Santa em set/1688
+    ...perYear(1492, 1492, { r: { "Sierra Leone GB": null } }), // Granville Town fundada em 1787
+    ...perYear(1492, 1492, { r: { "New South Wales (UK)": null } }), // Primeira Frota chega em jan/1788
+    ...perYear(1492, 1492, { m: [null, null, ["Nova Scotia", "New Brunswick"]] }), // Nova Brunswick separada em 18/jun/1784
+    ...perYear(1492, 1492, { r: { "Saint Barthelemy": "São Bartolomeu (França)" }, f: { "Saint Barthelemy": "x:fr" }, o: { "Saint Barthelemy": "França" } }), // comprada pela Suécia em 1/jul/1784
+    ...perYear(1783, 1790, { r: { "Vermont": "República de Vermont" }, f: { "Vermont": "blank" }, o: { "Vermont": null } }), // independente de 15/jan/1777 a 4/mar/1791
+    ...perYear(1791, 1912, { m: [null, null, ["United States of America", "Vermont"]] }),
+    ...perYear(1783, 1912, { m: [null, null, ["Russian Empire", "Crimea"]] }), // anexação de fato em 8/abr/1783
+    ...perYear(1783, 1912, { m: [null, null, ["British West Indies", "Grenada", "Saint Vincent", "Bahamas"]] }), // devolvidas pelo Tratado de Paris (3/set/1783); Nassau retomada em 17/abr/1783
+    ...perYear(1783, 1792, { r: { "Tobago": "Tobago (França)" }, f: { "Tobago": "x:fr" }, o: { "Tobago": "França" } }), // francesa desde jun/1781; britânica de novo em 1793 (pendente: Amiens, 1802)
+    ...perYear(1793, 1912, { m: [null, null, ["British West Indies", "Tobago"]] }),
+    ...perYear(1782, 1783, { r: { "Dominica": "Dominica (ocupação francesa)" }, f: { "Dominica": "x:fr" }, o: { "Dominica": null } }), // invadida em 7/set/1778; francesa até 1784
+    ...perYear(1492, 1492, { r: {   
+       "Crimea": "Canato da Crimeia", "Florida": "Flórida (Espanha)" },
+      f: {     "Crimea": "blank", "Florida": "x:es" },
+      o: {     "Crimea": null, "Florida": "Espanha" } }), // Granada (jul/1779) e São Vicente (18/jun/1779); Tobago (jun/1781); Pondicherry britânica de 1778 a 1783; Demerara tomada pelos franceses em 22/jan/1782; Crimeia independente desde 1774; Flórida Ocidental espanhola desde 1781
+    ...perYear(1781, 1783, { r: { "Saint Lucia": "Santa Lúcia (ocupação britânica)" }, f: { "Saint Lucia": "x:gb" }, o: { "Saint Lucia": null } }), // ocupada pelos britânicos em 1778; devolvida à França em 1784 (Paz de Paris)
+    ...perYear(1780, 1783, { r: { "Belize": "Belize (assentamento britânico abandonado)" }, f: { "Belize": "blank" }, o: { "Belize": null } }), // abandonado com a guerra de 1779; colonos voltam em 1784
+    ...perYear(1492, 1492, { r: { "Senegal FR": "Senegal (França)" }, f: { "Senegal FR": "x:fr" }, o: { "Senegal FR": "França" } }), // Saint-Louis britânica desde 1758; francesa em fev/1779
+    ...perYear(1492, 1492, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // Pondicherry tomada pelos britânicos em out/1778
+    ...perYear(1492, 1492, { r: { "Spanish Guinea": "Fernando Pó e Ano-Bom (Portugal)" }, f: { "Spanish Guinea": "blank" }, o: { "Spanish Guinea": "Portugal" } }), // cedidas à Espanha pelo Tratado de El Pardo (11/mar/1778)
+    ...perYear(1492, 1492, { m: [null, null, ["United States of America", "Vermont"]] }), // Concessões de New Hampshire, parte da revolta; Vermont independente em 15/jan/1777
+    ...perYear(1783, 1912, { m: [null, null, ["United States of America", "Old Northwest"]] }), // cedido aos EUA pelo Tratado de Paris (1783); fortes britânicos até 1796 (pendente)
+    ...perYear(1776, 1777, { m: [null, null, ["Canada", "Old Northwest"]] }), // Ato de Quebec (1774): região ao norte do Ohio anexada à Província de Quebec
+    ...perYear(1778, 1782, { r: { "Old Northwest": "Região do Noroeste (disputada entre Grã-Bretanha e Virgínia)" }, f: { "Old Northwest": "blank" }, o: { "Old Northwest": null } }), // Condado de Illinois (Virgínia) de 4/jul/1778 a jan/1782, só nos povoados de Vincennes, Cahokia e Kaskaskia
+    ...perYear(1492, 1492, { m: [null, null, ["Peru", "Argentina", "State of Buenos Aires", "Liga Federal", "Uruguay", "Paraguay", "Bolivia", "Bolivian Litoral"]] }), // Vice-Reino do Rio da Prata criado em 1/ago/1776
+    ...perYear(1492, 1492, { r: { "United States of America": "Treze Colônias (britânicas)" }, f: { "United States of America": "x:gb" }, o: { "United States of America": "Reino Unido" } }), // Primeiro Congresso Continental (set–out/1774); governos reais ainda em funções
+    ...perYear(1775, 1912, { m: [null, null, ["Austria Hungary", "Bukovina"]] }), // cedida pela Convenção de Pera (7/mai/1775)
+    ...perYear(1492, 1492, { m: [null, null, ["Romania", "Bukovina"]] }), // parte da Moldávia até a ocupação austríaca (out/1774)
+    ...perYear(1772, 1912, { m: [null, null, ["Austria Hungary", "Galicia 1772"]] }), // Primeira Partilha da Polônia (5/ago/1772)
+    ...perYear(1772, 1912, { m: [null, null, ["Germany", "Royal Prussia"]] }),
+    ...perYear(1772, 1912, { m: [null, null, ["Russian Empire", "Polish Livonia", "East Belarus"]] }),
+    ...perYear(1770, 1773, { r: { "Romania": "Principado da Moldávia (ocupação russa)", "Wallachia": "Principado da Valáquia (ocupação russa)" }, f: { "Romania": "x:ru", "Wallachia": "x:ru" }, o: { "Romania": null, "Wallachia": null } }), // Iași tomada em 7/out/1769, Bucareste em 17/nov/1769; devolvidas pelo Tratado de Küçük Kaynarca (21/jul/1774)
+    { y: 1775, m: [null, null, ["Rattanakosin Kingdom", "Lan Na"]] }, // Chiang Mai tomada pelos siameses em 15/jan/1775
+    { y: 1768, y1: 1774, r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // quarto período de domínio birmanês, 1763–1774
+    { y: 1768, y1: 1769, r: { "Rattanakosin Kingdom": "Sião (Thonburi e regimes rivais)" } }, // Ayutthaya cai em abr/1767; Taksin coroado em Thonburi em 28/dez/1767; reunificação em 1770
+    { y: 1770, y1: 1778, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } },
+    { y: 1779, y1: 1781, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } }, // depois da fusão de 1779 (Laos)
+    ...perYear(1492, 1492, { m: ["Luisiana (reivindicada pela França)", "blank", ["Louisiana N", "Louisiana S"]], o: { "Louisiana N": null } }), // reivindicada por La Salle em 1682; Fort Maurepas fundado em 1699
+    ...perYear(1782, 1797, { m: [null, null, ["Spain", "Minorca"]] }), // tomada por franceses e espanhóis em 1782; cedida à Espanha em 1783
+    ...perYear(1802, 1912, { m: [null, null, ["Spain", "Minorca"]] }), // devolvida pela Paz de Amiens (1802)
+    ...perYear(1798, 1801, { r: { "Minorca": "Minorca (ocupação britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": null } }), // tomada pelos britânicos em 1798
+    ...perYear(1781, 1781, { r: { "Minorca": "Minorca (sítio franco-espanhol)" }, f: { "Minorca": "blank" }, o: { "Minorca": null } }), // invasão em 1781; Fort St. Philip rende-se em 1782
+    ...perYear(1765, 1780, { r: { "Minorca": "Minorca (britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": "Reino Unido" } }), // devolvida à Grã-Bretanha pela Paz de Paris (1763)
+    ...perYear(1762, 1763, { r: { "Philippines": "Filipinas (Espanha; Manila ocupada pelos britânicos)" } }), // Manila tomada em 6/out/1762; evacuada na 1ª semana de abr/1764
+    ...perYear(1492, 1492, { m: [null, null, ["Canada", "Old Northwest"]] }), // Pays d'en Haut: fortes franceses rendidos com Montreal (set/1760)
+    ...perYear(1762, 1912, { m: [null, null, ["Germany", "East Prussia"]] }), // retirada russa em 1762
+    ...perYear(1758, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
+    ...perYear(1756, 1762, { r: { "Kingdom of Saxony": "Eleitorado da Saxônia (ocupação prussiana)" }, f: { "Kingdom of Saxony": "blank" }, o: { "Kingdom of Saxony": null } }), // invadida pela Prússia em 1756; ocupada até 1763
+    ...perYear(1492, 1492, { r: { "Martinique": "Martinica", "Guadeloupe": "Guadalupe", "Saint Lucia": "Santa Lúcia (neutra; colonos franceses)", "Grenada": "Granada (França)", "Saint Vincent": "São Vicente (caribes e colonos franceses)", "Dominica": "Dominica (França)", "Tobago": "Tobago (neutra, disputada entre Grã-Bretanha e França)", "Minorca": "Minorca (britânica)" },
+      f: { "Martinique": "x:fr", "Guadeloupe": "x:fr", "Saint Lucia": "blank", "Grenada": "x:fr", "Saint Vincent": "blank", "Dominica": "x:fr", "Tobago": "blank", "Minorca": "x:gb" },
+      o: { "Martinique": "França", "Guadeloupe": "França", "Saint Lucia": null, "Grenada": "França", "Saint Vincent": null, "Dominica": "França", "Tobago": null, "Minorca": "Reino Unido" } }), // Guadalupe (2/mai/1759), Dominica (7/jun/1761); Santa Lúcia colônia francesa desde 1756; Tobago neutra 1679–1763; Minorca francesa desde 1756
+    ...perYear(1761, 1762, { r: { "French India": "Índia Francesa (ocupação britânica)" }, f: { "French India": "x:gb" }, o: { "French India": null } }), // Pondicherry cai em 15/jan/1761; devolvida pela Paz de Paris (1763)
+    ...perYear(1492, 1492, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
+    ...perYear(1492, 1492, { m: [null, null, ["Finland", "Kymmene"]] }),
+    ...perYear(1492, 1492, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
+    ...perYear(1492, 1492, { m: [null, null, ["Persia", "West Persia"]] }), // Erivã tomada por Murad IV em ago/1635, retomada pelos safávidas em abr/1636; // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
+    ...perYear(1492, 1492, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
+    ...perYear(1492, 1492, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
+    ...perYear(1492, 1492, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
+    ...perYear(1492, 1492, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
+    ...perYear(1492, 1492, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
+    ...perYear(1492, 1492, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
+    ...perYear(1492, 1492, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
+    ...perYear(1492, 1492, { r: { "Belgium": "Países Baixos Espanhóis", "Kingdom of Bavaria": "Eleitorado da Baviera"}, f: { "Belgium": "blank", "Kingdom of Bavaria": "blank"}, o: { "Belgium": "Espanha", "Kingdom of Bavaria": null} }), // condomínio desde 1706; Luxemburgo e Namur cedidos a Max Emanuel em 1712; Baviera partilhada após Blenheim (1704) e restituída em 1714; Barcelona sitiada desde 25/jul/1713, guerra catalã unilateral desde 9/jul/1713; ocupação russa da Finlândia a partir de 1713–14 (Helsinque 1713, Storkyro fev/1714)
+    ...perYear(1492, 1492, { m: [null, null, ["Spain", "Sicily"]] }), // Sicília de Filipe V até Utrecht (1713)
+    ...perYear(1492, 1492, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // invasão russa da Finlândia em 1713
+    ...perYear(1492, 1492, { r: { "Nova Scotia": "Acádia (França)" }, f: { "Nova Scotia": "x:fr" }, o: { "Nova Scotia": "França" } }), // Port Royal tomada pelos britânicos em out/1710
+    ...perYear(1492, 1492, { m: [null, null, ["Spain", "Italy", "Minorca"]] }), // Sardenha tomada pelos aliados em ago/1708; Minorca em set/1708
+    ...perYear(1492, 1492, { r: { "United Kingdom of Great Britain and Ireland": "Reino da Inglaterra", "Scotland": "Reino da Escócia" }, f: { "United Kingdom of Great Britain and Ireland": "h:england", "Scotland": "h:scotland" }, o: { "United Kingdom of Great Britain and Ireland": null, "Scotland": null } }), // Ato de União em 1/mai/1707
+    ...perYear(1492, 1492, { m: [null, null, ["Spain", "Majorca"]] }), // data da adesão de Maiorca a Carlos III (1706) não checada
+    ...perYear(1492, 1492, { m: [null, null, ["Spain", "Valencia"]] }), // Girona tomada pela França em 29/jun/1694; Barcelona em 10/ago/1697
+    ...perYear(1492, 1492, { m: [null, null, ["Spain", "Gibraltar"]] }), // tomado pelos anglo-holandeses em ago/1704
+    ...perYear(1492, 1492, { r: { "Germany": "Brandemburgo-Prússia", "Ashanti": "Estados axantis (vassalos de Denkyira)" }, f: { "Germany": "blank", "Ashanti": "blank" }, o: { "Germany": null, "Ashanti": null } }), // Frederico I rei na Prússia em 1701; Denkyira derrotado em Feyiase (1701)
+    ...perYear(1492, 1492, { r: { "Transylvania": "Principado da Transilvânia" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), // domínio habsburgo imposto aos poucos depois de 1683; Diploma Leopoldino em 16/out/1690
+    ...perYear(1492, 1492, { r: { "Hungary": "Hungria (dividida entre Habsburgos e otomanos)" }, f: { "Hungary": "blank" }, o: { "Hungary": null } }), // Buda otomana desde 1541, tomada pela Liga Santa em 2/set/1686
+    ...perYear(1492, 1492, { m: [null, null, ["Ottoman Empire", "Morea", "Achaea"]] }), // Coroni tomada pelos venezianos em 11/ago/1685
+    ...perYear(1492, 1492, { m: [null, null, ["Belgium", "Luxembourg"]] }), // Luxemburgo tomado pela França em jun/1684
+    ...perYear(1492, 1492, { r: { "East Prussia": "Ducado da Prússia (Brandemburgo; feudo polonês)" }, f: { "East Prussia": "blank" }, o: { "East Prussia": "República das Duas Nações" } }), // soberania reconhecida em Wehlau (set/1657); Cracóvia sueca de 13/out/1655 a 30/ago/1657
+    // revisão 1491 (situação em 31/dez; fontes: Wikipedia)
+    ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
+    ...perYear(1491, 1491, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
+    ...perYear(1491, 1491, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
+    ...perYear(1491, 1491, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1491, 1491, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
+    ...perYear(1491, 1491, { m: ["Reino da Polônia", "blank", ["Congress Poland", "West Galicia", "Kraków", "Posen", "Galicia 1772", "Tarnopol", "Royal Prussia", "Podolia"]], o: { "Congress Poland": null } }), ...perYear(1491, 1491, { m: ["Grão-Ducado da Lituânia", "blank", ["Lithuania GD", "Right-bank Ukraine", "Minsk region", "West Volhynia", "East Belarus"]], o: { "Lithuania GD": null } }), // União de Lublin, 1/jul/1569 
+    ...perYear(1491, 1491, { m: [null, null, ["British Raj", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
+    ...perYear(1491, 1491, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
+    ...perYear(1491, 1491, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands", "Tinos"]], o: { "Venetia": null } }), // Moreia veneziana de 1699 (Karlowitz) a 1715
+    ...perYear(1491, 1491, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
+    ...perYear(1491, 1491, { m: ["Ducado de Saboia", "h:it_sav", ["Piedmont", "Savoy and Nice"]], o: { "Piedmont": null } }), // Saboia ocupada pela França 1703–1713
+    ...perYear(1491, 1491, { m: [null, null, ["Lombardy", "Novara"]] }), // Novara e Tortona milanesas até o Tratado de Viena (1738)
+    ...perYear(1491, 1491, { m: ["Antiga Confederação Suíça", "blank", ["Switzerland", "Valais"]], o: { "Switzerland": null } }),
+    ...perYear(1491, 1491, { m: [null, null, ["Dominican Republic", "Haiti", "Kingdom of Haiti"]] }), // devastações de Osorio (1605–1606) despovoaram o oeste da ilha
+    ...perYear(1491, 1491, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
+      "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
+      "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
+      f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Martinique": "x:fr", "Saint Lucia": "x:fr" },
+      o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
+        "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+    ...perYear(1491, 1491, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
+    ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
+    ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
+    ...perYear(1491, 1491, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Serbia", "Yedisan"]] }), // Belgrado tomado pela Liga Santa em set/1688
+    ...perYear(1491, 1491, { r: { "Sierra Leone GB": null } }), // Granville Town fundada em 1787
+    ...perYear(1491, 1491, { r: { "New South Wales (UK)": null } }), // Primeira Frota chega em jan/1788
+    ...perYear(1491, 1491, { m: [null, null, ["Nova Scotia", "New Brunswick"]] }), // Nova Brunswick separada em 18/jun/1784
+    ...perYear(1491, 1491, { r: { "Saint Barthelemy": "São Bartolomeu (França)" }, f: { "Saint Barthelemy": "x:fr" }, o: { "Saint Barthelemy": "França" } }), // comprada pela Suécia em 1/jul/1784
+    ...perYear(1783, 1790, { r: { "Vermont": "República de Vermont" }, f: { "Vermont": "blank" }, o: { "Vermont": null } }), // independente de 15/jan/1777 a 4/mar/1791
+    ...perYear(1791, 1912, { m: [null, null, ["United States of America", "Vermont"]] }),
+    ...perYear(1783, 1912, { m: [null, null, ["Russian Empire", "Crimea"]] }), // anexação de fato em 8/abr/1783
+    ...perYear(1783, 1912, { m: [null, null, ["British West Indies", "Grenada", "Saint Vincent", "Bahamas"]] }), // devolvidas pelo Tratado de Paris (3/set/1783); Nassau retomada em 17/abr/1783
+    ...perYear(1783, 1792, { r: { "Tobago": "Tobago (França)" }, f: { "Tobago": "x:fr" }, o: { "Tobago": "França" } }), // francesa desde jun/1781; britânica de novo em 1793 (pendente: Amiens, 1802)
+    ...perYear(1793, 1912, { m: [null, null, ["British West Indies", "Tobago"]] }),
+    ...perYear(1782, 1783, { r: { "Dominica": "Dominica (ocupação francesa)" }, f: { "Dominica": "x:fr" }, o: { "Dominica": null } }), // invadida em 7/set/1778; francesa até 1784
+    ...perYear(1491, 1491, { r: {   
+       "Crimea": "Canato da Crimeia", "Florida": "Flórida (Espanha)" },
+      f: {     "Crimea": "blank", "Florida": "x:es" },
+      o: {     "Crimea": null, "Florida": "Espanha" } }), // Granada (jul/1779) e São Vicente (18/jun/1779); Tobago (jun/1781); Pondicherry britânica de 1778 a 1783; Demerara tomada pelos franceses em 22/jan/1782; Crimeia independente desde 1774; Flórida Ocidental espanhola desde 1781
+    ...perYear(1781, 1783, { r: { "Saint Lucia": "Santa Lúcia (ocupação britânica)" }, f: { "Saint Lucia": "x:gb" }, o: { "Saint Lucia": null } }), // ocupada pelos britânicos em 1778; devolvida à França em 1784 (Paz de Paris)
+    ...perYear(1780, 1783, { r: { "Belize": "Belize (assentamento britânico abandonado)" }, f: { "Belize": "blank" }, o: { "Belize": null } }), // abandonado com a guerra de 1779; colonos voltam em 1784
+    ...perYear(1491, 1491, { r: { "Senegal FR": "Senegal (França)" }, f: { "Senegal FR": "x:fr" }, o: { "Senegal FR": "França" } }), // Saint-Louis britânica desde 1758; francesa em fev/1779
+    ...perYear(1491, 1491, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // Pondicherry tomada pelos britânicos em out/1778
+    ...perYear(1491, 1491, { r: { "Spanish Guinea": "Fernando Pó e Ano-Bom (Portugal)" }, f: { "Spanish Guinea": "blank" }, o: { "Spanish Guinea": "Portugal" } }), // cedidas à Espanha pelo Tratado de El Pardo (11/mar/1778)
+    ...perYear(1491, 1491, { m: [null, null, ["United States of America", "Vermont"]] }), // Concessões de New Hampshire, parte da revolta; Vermont independente em 15/jan/1777
+    ...perYear(1783, 1912, { m: [null, null, ["United States of America", "Old Northwest"]] }), // cedido aos EUA pelo Tratado de Paris (1783); fortes britânicos até 1796 (pendente)
+    ...perYear(1776, 1777, { m: [null, null, ["Canada", "Old Northwest"]] }), // Ato de Quebec (1774): região ao norte do Ohio anexada à Província de Quebec
+    ...perYear(1778, 1782, { r: { "Old Northwest": "Região do Noroeste (disputada entre Grã-Bretanha e Virgínia)" }, f: { "Old Northwest": "blank" }, o: { "Old Northwest": null } }), // Condado de Illinois (Virgínia) de 4/jul/1778 a jan/1782, só nos povoados de Vincennes, Cahokia e Kaskaskia
+    ...perYear(1491, 1491, { m: [null, null, ["Peru", "Argentina", "State of Buenos Aires", "Liga Federal", "Uruguay", "Paraguay", "Bolivia", "Bolivian Litoral"]] }), // Vice-Reino do Rio da Prata criado em 1/ago/1776
+    ...perYear(1491, 1491, { r: { "United States of America": "Treze Colônias (britânicas)" }, f: { "United States of America": "x:gb" }, o: { "United States of America": "Reino Unido" } }), // Primeiro Congresso Continental (set–out/1774); governos reais ainda em funções
+    ...perYear(1775, 1912, { m: [null, null, ["Austria Hungary", "Bukovina"]] }), // cedida pela Convenção de Pera (7/mai/1775)
+    ...perYear(1491, 1491, { m: [null, null, ["Romania", "Bukovina"]] }), // parte da Moldávia até a ocupação austríaca (out/1774)
+    ...perYear(1772, 1912, { m: [null, null, ["Austria Hungary", "Galicia 1772"]] }), // Primeira Partilha da Polônia (5/ago/1772)
+    ...perYear(1772, 1912, { m: [null, null, ["Germany", "Royal Prussia"]] }),
+    ...perYear(1772, 1912, { m: [null, null, ["Russian Empire", "Polish Livonia", "East Belarus"]] }),
+    ...perYear(1770, 1773, { r: { "Romania": "Principado da Moldávia (ocupação russa)", "Wallachia": "Principado da Valáquia (ocupação russa)" }, f: { "Romania": "x:ru", "Wallachia": "x:ru" }, o: { "Romania": null, "Wallachia": null } }), // Iași tomada em 7/out/1769, Bucareste em 17/nov/1769; devolvidas pelo Tratado de Küçük Kaynarca (21/jul/1774)
+    { y: 1775, m: [null, null, ["Rattanakosin Kingdom", "Lan Na"]] }, // Chiang Mai tomada pelos siameses em 15/jan/1775
+    { y: 1768, y1: 1774, r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // quarto período de domínio birmanês, 1763–1774
+    { y: 1768, y1: 1769, r: { "Rattanakosin Kingdom": "Sião (Thonburi e regimes rivais)" } }, // Ayutthaya cai em abr/1767; Taksin coroado em Thonburi em 28/dez/1767; reunificação em 1770
+    { y: 1770, y1: 1778, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } },
+    { y: 1779, y1: 1781, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } }, // depois da fusão de 1779 (Laos)
+    ...perYear(1491, 1491, { m: ["Luisiana (reivindicada pela França)", "blank", ["Louisiana N", "Louisiana S"]], o: { "Louisiana N": null } }), // reivindicada por La Salle em 1682; Fort Maurepas fundado em 1699
+    ...perYear(1782, 1797, { m: [null, null, ["Spain", "Minorca"]] }), // tomada por franceses e espanhóis em 1782; cedida à Espanha em 1783
+    ...perYear(1802, 1912, { m: [null, null, ["Spain", "Minorca"]] }), // devolvida pela Paz de Amiens (1802)
+    ...perYear(1798, 1801, { r: { "Minorca": "Minorca (ocupação britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": null } }), // tomada pelos britânicos em 1798
+    ...perYear(1781, 1781, { r: { "Minorca": "Minorca (sítio franco-espanhol)" }, f: { "Minorca": "blank" }, o: { "Minorca": null } }), // invasão em 1781; Fort St. Philip rende-se em 1782
+    ...perYear(1765, 1780, { r: { "Minorca": "Minorca (britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": "Reino Unido" } }), // devolvida à Grã-Bretanha pela Paz de Paris (1763)
+    ...perYear(1762, 1763, { r: { "Philippines": "Filipinas (Espanha; Manila ocupada pelos britânicos)" } }), // Manila tomada em 6/out/1762; evacuada na 1ª semana de abr/1764
+    ...perYear(1491, 1491, { m: [null, null, ["Canada", "Old Northwest"]] }), // Pays d'en Haut: fortes franceses rendidos com Montreal (set/1760)
+    ...perYear(1762, 1912, { m: [null, null, ["Germany", "East Prussia"]] }), // retirada russa em 1762
+    ...perYear(1758, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
+    ...perYear(1756, 1762, { r: { "Kingdom of Saxony": "Eleitorado da Saxônia (ocupação prussiana)" }, f: { "Kingdom of Saxony": "blank" }, o: { "Kingdom of Saxony": null } }), // invadida pela Prússia em 1756; ocupada até 1763
+    ...perYear(1491, 1491, { r: { "Martinique": "Martinica", "Guadeloupe": "Guadalupe", "Saint Lucia": "Santa Lúcia (neutra; colonos franceses)", "Grenada": "Granada (França)", "Saint Vincent": "São Vicente (caribes e colonos franceses)", "Dominica": "Dominica (França)", "Tobago": "Tobago (neutra, disputada entre Grã-Bretanha e França)", "Minorca": "Minorca (britânica)" },
+      f: { "Martinique": "x:fr", "Guadeloupe": "x:fr", "Saint Lucia": "blank", "Grenada": "x:fr", "Saint Vincent": "blank", "Dominica": "x:fr", "Tobago": "blank", "Minorca": "x:gb" },
+      o: { "Martinique": "França", "Guadeloupe": "França", "Saint Lucia": null, "Grenada": "França", "Saint Vincent": null, "Dominica": "França", "Tobago": null, "Minorca": "Reino Unido" } }), // Guadalupe (2/mai/1759), Dominica (7/jun/1761); Santa Lúcia colônia francesa desde 1756; Tobago neutra 1679–1763; Minorca francesa desde 1756
+    ...perYear(1761, 1762, { r: { "French India": "Índia Francesa (ocupação britânica)" }, f: { "French India": "x:gb" }, o: { "French India": null } }), // Pondicherry cai em 15/jan/1761; devolvida pela Paz de Paris (1763)
+    ...perYear(1491, 1491, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
+    ...perYear(1491, 1491, { m: [null, null, ["Finland", "Kymmene"]] }),
+    ...perYear(1491, 1491, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
+    ...perYear(1491, 1491, { m: [null, null, ["Persia", "West Persia"]] }), // Erivã tomada por Murad IV em ago/1635, retomada pelos safávidas em abr/1636; // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
+    ...perYear(1491, 1491, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
+    ...perYear(1491, 1491, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
+    ...perYear(1491, 1491, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
+    ...perYear(1491, 1491, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
+    ...perYear(1491, 1491, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
+    ...perYear(1491, 1491, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
+    ...perYear(1491, 1491, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
+    ...perYear(1491, 1491, { r: { "Belgium": "Países Baixos Espanhóis", "Kingdom of Bavaria": "Eleitorado da Baviera"}, f: { "Belgium": "blank", "Kingdom of Bavaria": "blank"}, o: { "Belgium": "Espanha", "Kingdom of Bavaria": null} }), // condomínio desde 1706; Luxemburgo e Namur cedidos a Max Emanuel em 1712; Baviera partilhada após Blenheim (1704) e restituída em 1714; Barcelona sitiada desde 25/jul/1713, guerra catalã unilateral desde 9/jul/1713; ocupação russa da Finlândia a partir de 1713–14 (Helsinque 1713, Storkyro fev/1714)
+    ...perYear(1491, 1491, { m: [null, null, ["Spain", "Sicily"]] }), // Sicília de Filipe V até Utrecht (1713)
+    ...perYear(1491, 1491, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // invasão russa da Finlândia em 1713
+    ...perYear(1491, 1491, { r: { "Nova Scotia": "Acádia (França)" }, f: { "Nova Scotia": "x:fr" }, o: { "Nova Scotia": "França" } }), // Port Royal tomada pelos britânicos em out/1710
+    ...perYear(1491, 1491, { m: [null, null, ["Spain", "Italy", "Minorca"]] }), // Sardenha tomada pelos aliados em ago/1708; Minorca em set/1708
+    ...perYear(1491, 1491, { r: { "United Kingdom of Great Britain and Ireland": "Reino da Inglaterra", "Scotland": "Reino da Escócia" }, f: { "United Kingdom of Great Britain and Ireland": "h:england", "Scotland": "h:scotland" }, o: { "United Kingdom of Great Britain and Ireland": null, "Scotland": null } }), // Ato de União em 1/mai/1707
+    ...perYear(1491, 1491, { m: [null, null, ["Spain", "Majorca"]] }), // data da adesão de Maiorca a Carlos III (1706) não checada
+    ...perYear(1491, 1491, { m: [null, null, ["Spain", "Valencia"]] }), // Girona tomada pela França em 29/jun/1694; Barcelona em 10/ago/1697
+    ...perYear(1491, 1491, { m: [null, null, ["Spain", "Gibraltar"]] }), // tomado pelos anglo-holandeses em ago/1704
+    ...perYear(1491, 1491, { r: { "Germany": "Brandemburgo-Prússia", "Ashanti": "Estados axantis (vassalos de Denkyira)" }, f: { "Germany": "blank", "Ashanti": "blank" }, o: { "Germany": null, "Ashanti": null } }), // Frederico I rei na Prússia em 1701; Denkyira derrotado em Feyiase (1701)
+    ...perYear(1491, 1491, { r: { "Transylvania": "Principado da Transilvânia" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), // domínio habsburgo imposto aos poucos depois de 1683; Diploma Leopoldino em 16/out/1690
+    ...perYear(1491, 1491, { r: { "Hungary": "Hungria (dividida entre Habsburgos e otomanos)" }, f: { "Hungary": "blank" }, o: { "Hungary": null } }), // Buda otomana desde 1541, tomada pela Liga Santa em 2/set/1686
+    ...perYear(1491, 1491, { m: [null, null, ["Ottoman Empire", "Morea", "Achaea"]] }), // Coroni tomada pelos venezianos em 11/ago/1685
+    ...perYear(1491, 1491, { m: [null, null, ["Belgium", "Luxembourg"]] }), // Luxemburgo tomado pela França em jun/1684
+    ...perYear(1491, 1491, { r: { "East Prussia": "Ducado da Prússia (Brandemburgo; feudo polonês)" }, f: { "East Prussia": "blank" }, o: { "East Prussia": "República das Duas Nações" } }), // soberania reconhecida em Wehlau (set/1657); Cracóvia sueca de 13/out/1655 a 30/ago/1657
+    // revisão 1490 (situação em 31/dez; fontes: Wikipedia)
+    ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
+    ...perYear(1490, 1490, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
+    ...perYear(1490, 1490, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
+    ...perYear(1490, 1490, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1490, 1490, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
+    ...perYear(1490, 1490, { m: ["Reino da Polônia", "blank", ["Congress Poland", "West Galicia", "Kraków", "Posen", "Galicia 1772", "Tarnopol", "Royal Prussia", "Podolia"]], o: { "Congress Poland": null } }), ...perYear(1490, 1490, { m: ["Grão-Ducado da Lituânia", "blank", ["Lithuania GD", "Right-bank Ukraine", "Minsk region", "West Volhynia", "East Belarus"]], o: { "Lithuania GD": null } }), // União de Lublin, 1/jul/1569 
+    ...perYear(1490, 1490, { m: [null, null, ["British Raj", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
+    ...perYear(1490, 1490, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
+    ...perYear(1490, 1490, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands", "Tinos"]], o: { "Venetia": null } }), // Moreia veneziana de 1699 (Karlowitz) a 1715
+    ...perYear(1490, 1490, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
+    ...perYear(1490, 1490, { m: ["Ducado de Saboia", "h:it_sav", ["Piedmont", "Savoy and Nice"]], o: { "Piedmont": null } }), // Saboia ocupada pela França 1703–1713
+    ...perYear(1490, 1490, { m: [null, null, ["Lombardy", "Novara"]] }), // Novara e Tortona milanesas até o Tratado de Viena (1738)
+    ...perYear(1490, 1490, { m: ["Antiga Confederação Suíça", "blank", ["Switzerland", "Valais"]], o: { "Switzerland": null } }),
+    ...perYear(1490, 1490, { m: [null, null, ["Dominican Republic", "Haiti", "Kingdom of Haiti"]] }), // devastações de Osorio (1605–1606) despovoaram o oeste da ilha
+    ...perYear(1490, 1490, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
+      "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
+      "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
+      f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Martinique": "x:fr", "Saint Lucia": "x:fr" },
+      o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
+        "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+    ...perYear(1490, 1490, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
+    ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
+    ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
+    ...perYear(1490, 1490, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Serbia", "Yedisan"]] }), // Belgrado tomado pela Liga Santa em set/1688
+    ...perYear(1490, 1490, { r: { "Sierra Leone GB": null } }), // Granville Town fundada em 1787
+    ...perYear(1490, 1490, { r: { "New South Wales (UK)": null } }), // Primeira Frota chega em jan/1788
+    ...perYear(1490, 1490, { m: [null, null, ["Nova Scotia", "New Brunswick"]] }), // Nova Brunswick separada em 18/jun/1784
+    ...perYear(1490, 1490, { r: { "Saint Barthelemy": "São Bartolomeu (França)" }, f: { "Saint Barthelemy": "x:fr" }, o: { "Saint Barthelemy": "França" } }), // comprada pela Suécia em 1/jul/1784
+    ...perYear(1783, 1790, { r: { "Vermont": "República de Vermont" }, f: { "Vermont": "blank" }, o: { "Vermont": null } }), // independente de 15/jan/1777 a 4/mar/1791
+    ...perYear(1791, 1912, { m: [null, null, ["United States of America", "Vermont"]] }),
+    ...perYear(1783, 1912, { m: [null, null, ["Russian Empire", "Crimea"]] }), // anexação de fato em 8/abr/1783
+    ...perYear(1783, 1912, { m: [null, null, ["British West Indies", "Grenada", "Saint Vincent", "Bahamas"]] }), // devolvidas pelo Tratado de Paris (3/set/1783); Nassau retomada em 17/abr/1783
+    ...perYear(1783, 1792, { r: { "Tobago": "Tobago (França)" }, f: { "Tobago": "x:fr" }, o: { "Tobago": "França" } }), // francesa desde jun/1781; britânica de novo em 1793 (pendente: Amiens, 1802)
+    ...perYear(1793, 1912, { m: [null, null, ["British West Indies", "Tobago"]] }),
+    ...perYear(1782, 1783, { r: { "Dominica": "Dominica (ocupação francesa)" }, f: { "Dominica": "x:fr" }, o: { "Dominica": null } }), // invadida em 7/set/1778; francesa até 1784
+    ...perYear(1490, 1490, { r: {   
+       "Crimea": "Canato da Crimeia", "Florida": "Flórida (Espanha)" },
+      f: {     "Crimea": "blank", "Florida": "x:es" },
+      o: {     "Crimea": null, "Florida": "Espanha" } }), // Granada (jul/1779) e São Vicente (18/jun/1779); Tobago (jun/1781); Pondicherry britânica de 1778 a 1783; Demerara tomada pelos franceses em 22/jan/1782; Crimeia independente desde 1774; Flórida Ocidental espanhola desde 1781
+    ...perYear(1781, 1783, { r: { "Saint Lucia": "Santa Lúcia (ocupação britânica)" }, f: { "Saint Lucia": "x:gb" }, o: { "Saint Lucia": null } }), // ocupada pelos britânicos em 1778; devolvida à França em 1784 (Paz de Paris)
+    ...perYear(1780, 1783, { r: { "Belize": "Belize (assentamento britânico abandonado)" }, f: { "Belize": "blank" }, o: { "Belize": null } }), // abandonado com a guerra de 1779; colonos voltam em 1784
+    ...perYear(1490, 1490, { r: { "Senegal FR": "Senegal (França)" }, f: { "Senegal FR": "x:fr" }, o: { "Senegal FR": "França" } }), // Saint-Louis britânica desde 1758; francesa em fev/1779
+    ...perYear(1490, 1490, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // Pondicherry tomada pelos britânicos em out/1778
+    ...perYear(1490, 1490, { r: { "Spanish Guinea": "Fernando Pó e Ano-Bom (Portugal)" }, f: { "Spanish Guinea": "blank" }, o: { "Spanish Guinea": "Portugal" } }), // cedidas à Espanha pelo Tratado de El Pardo (11/mar/1778)
+    ...perYear(1490, 1490, { m: [null, null, ["United States of America", "Vermont"]] }), // Concessões de New Hampshire, parte da revolta; Vermont independente em 15/jan/1777
+    ...perYear(1783, 1912, { m: [null, null, ["United States of America", "Old Northwest"]] }), // cedido aos EUA pelo Tratado de Paris (1783); fortes britânicos até 1796 (pendente)
+    ...perYear(1776, 1777, { m: [null, null, ["Canada", "Old Northwest"]] }), // Ato de Quebec (1774): região ao norte do Ohio anexada à Província de Quebec
+    ...perYear(1778, 1782, { r: { "Old Northwest": "Região do Noroeste (disputada entre Grã-Bretanha e Virgínia)" }, f: { "Old Northwest": "blank" }, o: { "Old Northwest": null } }), // Condado de Illinois (Virgínia) de 4/jul/1778 a jan/1782, só nos povoados de Vincennes, Cahokia e Kaskaskia
+    ...perYear(1490, 1490, { m: [null, null, ["Peru", "Argentina", "State of Buenos Aires", "Liga Federal", "Uruguay", "Paraguay", "Bolivia", "Bolivian Litoral"]] }), // Vice-Reino do Rio da Prata criado em 1/ago/1776
+    ...perYear(1490, 1490, { r: { "United States of America": "Treze Colônias (britânicas)" }, f: { "United States of America": "x:gb" }, o: { "United States of America": "Reino Unido" } }), // Primeiro Congresso Continental (set–out/1774); governos reais ainda em funções
+    ...perYear(1775, 1912, { m: [null, null, ["Austria Hungary", "Bukovina"]] }), // cedida pela Convenção de Pera (7/mai/1775)
+    ...perYear(1490, 1490, { m: [null, null, ["Romania", "Bukovina"]] }), // parte da Moldávia até a ocupação austríaca (out/1774)
+    ...perYear(1772, 1912, { m: [null, null, ["Austria Hungary", "Galicia 1772"]] }), // Primeira Partilha da Polônia (5/ago/1772)
+    ...perYear(1772, 1912, { m: [null, null, ["Germany", "Royal Prussia"]] }),
+    ...perYear(1772, 1912, { m: [null, null, ["Russian Empire", "Polish Livonia", "East Belarus"]] }),
+    ...perYear(1770, 1773, { r: { "Romania": "Principado da Moldávia (ocupação russa)", "Wallachia": "Principado da Valáquia (ocupação russa)" }, f: { "Romania": "x:ru", "Wallachia": "x:ru" }, o: { "Romania": null, "Wallachia": null } }), // Iași tomada em 7/out/1769, Bucareste em 17/nov/1769; devolvidas pelo Tratado de Küçük Kaynarca (21/jul/1774)
+    { y: 1775, m: [null, null, ["Rattanakosin Kingdom", "Lan Na"]] }, // Chiang Mai tomada pelos siameses em 15/jan/1775
+    { y: 1768, y1: 1774, r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // quarto período de domínio birmanês, 1763–1774
+    { y: 1768, y1: 1769, r: { "Rattanakosin Kingdom": "Sião (Thonburi e regimes rivais)" } }, // Ayutthaya cai em abr/1767; Taksin coroado em Thonburi em 28/dez/1767; reunificação em 1770
+    { y: 1770, y1: 1778, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } },
+    { y: 1779, y1: 1781, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } }, // depois da fusão de 1779 (Laos)
+    ...perYear(1490, 1490, { m: ["Luisiana (reivindicada pela França)", "blank", ["Louisiana N", "Louisiana S"]], o: { "Louisiana N": null } }), // reivindicada por La Salle em 1682; Fort Maurepas fundado em 1699
+    ...perYear(1782, 1797, { m: [null, null, ["Spain", "Minorca"]] }), // tomada por franceses e espanhóis em 1782; cedida à Espanha em 1783
+    ...perYear(1802, 1912, { m: [null, null, ["Spain", "Minorca"]] }), // devolvida pela Paz de Amiens (1802)
+    ...perYear(1798, 1801, { r: { "Minorca": "Minorca (ocupação britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": null } }), // tomada pelos britânicos em 1798
+    ...perYear(1781, 1781, { r: { "Minorca": "Minorca (sítio franco-espanhol)" }, f: { "Minorca": "blank" }, o: { "Minorca": null } }), // invasão em 1781; Fort St. Philip rende-se em 1782
+    ...perYear(1765, 1780, { r: { "Minorca": "Minorca (britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": "Reino Unido" } }), // devolvida à Grã-Bretanha pela Paz de Paris (1763)
+    ...perYear(1762, 1763, { r: { "Philippines": "Filipinas (Espanha; Manila ocupada pelos britânicos)" } }), // Manila tomada em 6/out/1762; evacuada na 1ª semana de abr/1764
+    ...perYear(1490, 1490, { m: [null, null, ["Canada", "Old Northwest"]] }), // Pays d'en Haut: fortes franceses rendidos com Montreal (set/1760)
+    ...perYear(1762, 1912, { m: [null, null, ["Germany", "East Prussia"]] }), // retirada russa em 1762
+    ...perYear(1758, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
+    ...perYear(1756, 1762, { r: { "Kingdom of Saxony": "Eleitorado da Saxônia (ocupação prussiana)" }, f: { "Kingdom of Saxony": "blank" }, o: { "Kingdom of Saxony": null } }), // invadida pela Prússia em 1756; ocupada até 1763
+    ...perYear(1490, 1490, { r: { "Martinique": "Martinica", "Guadeloupe": "Guadalupe", "Saint Lucia": "Santa Lúcia (neutra; colonos franceses)", "Grenada": "Granada (França)", "Saint Vincent": "São Vicente (caribes e colonos franceses)", "Dominica": "Dominica (França)", "Tobago": "Tobago (neutra, disputada entre Grã-Bretanha e França)", "Minorca": "Minorca (britânica)" },
+      f: { "Martinique": "x:fr", "Guadeloupe": "x:fr", "Saint Lucia": "blank", "Grenada": "x:fr", "Saint Vincent": "blank", "Dominica": "x:fr", "Tobago": "blank", "Minorca": "x:gb" },
+      o: { "Martinique": "França", "Guadeloupe": "França", "Saint Lucia": null, "Grenada": "França", "Saint Vincent": null, "Dominica": "França", "Tobago": null, "Minorca": "Reino Unido" } }), // Guadalupe (2/mai/1759), Dominica (7/jun/1761); Santa Lúcia colônia francesa desde 1756; Tobago neutra 1679–1763; Minorca francesa desde 1756
+    ...perYear(1761, 1762, { r: { "French India": "Índia Francesa (ocupação britânica)" }, f: { "French India": "x:gb" }, o: { "French India": null } }), // Pondicherry cai em 15/jan/1761; devolvida pela Paz de Paris (1763)
+    ...perYear(1490, 1490, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
+    ...perYear(1490, 1490, { m: [null, null, ["Finland", "Kymmene"]] }),
+    ...perYear(1490, 1490, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
+    ...perYear(1490, 1490, { m: [null, null, ["Persia", "West Persia"]] }), // Erivã tomada por Murad IV em ago/1635, retomada pelos safávidas em abr/1636; // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
+    ...perYear(1490, 1490, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
+    ...perYear(1490, 1490, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
+    ...perYear(1490, 1490, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
+    ...perYear(1490, 1490, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
+    ...perYear(1490, 1490, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
+    ...perYear(1490, 1490, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
+    ...perYear(1490, 1490, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
+    ...perYear(1490, 1490, { r: { "Belgium": "Países Baixos Espanhóis", "Kingdom of Bavaria": "Eleitorado da Baviera"}, f: { "Belgium": "blank", "Kingdom of Bavaria": "blank"}, o: { "Belgium": "Espanha", "Kingdom of Bavaria": null} }), // condomínio desde 1706; Luxemburgo e Namur cedidos a Max Emanuel em 1712; Baviera partilhada após Blenheim (1704) e restituída em 1714; Barcelona sitiada desde 25/jul/1713, guerra catalã unilateral desde 9/jul/1713; ocupação russa da Finlândia a partir de 1713–14 (Helsinque 1713, Storkyro fev/1714)
+    ...perYear(1490, 1490, { m: [null, null, ["Spain", "Sicily"]] }), // Sicília de Filipe V até Utrecht (1713)
+    ...perYear(1490, 1490, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // invasão russa da Finlândia em 1713
+    ...perYear(1490, 1490, { r: { "Nova Scotia": "Acádia (França)" }, f: { "Nova Scotia": "x:fr" }, o: { "Nova Scotia": "França" } }), // Port Royal tomada pelos britânicos em out/1710
+    ...perYear(1490, 1490, { m: [null, null, ["Spain", "Italy", "Minorca"]] }), // Sardenha tomada pelos aliados em ago/1708; Minorca em set/1708
+    ...perYear(1490, 1490, { r: { "United Kingdom of Great Britain and Ireland": "Reino da Inglaterra", "Scotland": "Reino da Escócia" }, f: { "United Kingdom of Great Britain and Ireland": "h:england", "Scotland": "h:scotland" }, o: { "United Kingdom of Great Britain and Ireland": null, "Scotland": null } }), // Ato de União em 1/mai/1707
+    ...perYear(1490, 1490, { m: [null, null, ["Spain", "Majorca"]] }), // data da adesão de Maiorca a Carlos III (1706) não checada
+    ...perYear(1490, 1490, { m: [null, null, ["Spain", "Valencia"]] }), // Girona tomada pela França em 29/jun/1694; Barcelona em 10/ago/1697
+    ...perYear(1490, 1490, { m: [null, null, ["Spain", "Gibraltar"]] }), // tomado pelos anglo-holandeses em ago/1704
+    ...perYear(1490, 1490, { r: { "Germany": "Brandemburgo-Prússia", "Ashanti": "Estados axantis (vassalos de Denkyira)" }, f: { "Germany": "blank", "Ashanti": "blank" }, o: { "Germany": null, "Ashanti": null } }), // Frederico I rei na Prússia em 1701; Denkyira derrotado em Feyiase (1701)
+    ...perYear(1490, 1490, { r: { "Transylvania": "Principado da Transilvânia" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), // domínio habsburgo imposto aos poucos depois de 1683; Diploma Leopoldino em 16/out/1690
+    ...perYear(1490, 1490, { r: { "Hungary": "Hungria (dividida entre Habsburgos e otomanos)" }, f: { "Hungary": "blank" }, o: { "Hungary": null } }), // Buda otomana desde 1541, tomada pela Liga Santa em 2/set/1686
+    ...perYear(1490, 1490, { m: [null, null, ["Ottoman Empire", "Morea", "Achaea"]] }), // Coroni tomada pelos venezianos em 11/ago/1685
+    ...perYear(1490, 1490, { m: [null, null, ["Belgium", "Luxembourg"]] }), // Luxemburgo tomado pela França em jun/1684
+    ...perYear(1490, 1490, { r: { "East Prussia": "Ducado da Prússia (Brandemburgo; feudo polonês)" }, f: { "East Prussia": "blank" }, o: { "East Prussia": "República das Duas Nações" } }), // soberania reconhecida em Wehlau (set/1657); Cracóvia sueca de 13/out/1655 a 30/ago/1657
+    // revisão 1489 (situação em 31/dez; fontes: Wikipedia)
+    ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
+    ...perYear(1489, 1489, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
+    ...perYear(1489, 1489, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
+    ...perYear(1489, 1489, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1489, 1489, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
+    ...perYear(1489, 1489, { m: ["Reino da Polônia", "blank", ["Congress Poland", "West Galicia", "Kraków", "Posen", "Galicia 1772", "Tarnopol", "Royal Prussia", "Podolia"]], o: { "Congress Poland": null } }), ...perYear(1489, 1489, { m: ["Grão-Ducado da Lituânia", "blank", ["Lithuania GD", "Right-bank Ukraine", "Minsk region", "West Volhynia", "East Belarus"]], o: { "Lithuania GD": null } }), // União de Lublin, 1/jul/1569 
+    ...perYear(1489, 1489, { m: [null, null, ["British Raj", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
+    ...perYear(1489, 1489, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
+    ...perYear(1489, 1489, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands", "Tinos"]], o: { "Venetia": null } }), // Moreia veneziana de 1699 (Karlowitz) a 1715
+    ...perYear(1489, 1489, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
+    ...perYear(1489, 1489, { m: ["Ducado de Saboia", "h:it_sav", ["Piedmont", "Savoy and Nice"]], o: { "Piedmont": null } }), // Saboia ocupada pela França 1703–1713
+    ...perYear(1489, 1489, { m: [null, null, ["Lombardy", "Novara"]] }), // Novara e Tortona milanesas até o Tratado de Viena (1738)
+    ...perYear(1489, 1489, { m: ["Antiga Confederação Suíça", "blank", ["Switzerland", "Valais"]], o: { "Switzerland": null } }),
+    ...perYear(1489, 1489, { m: [null, null, ["Dominican Republic", "Haiti", "Kingdom of Haiti"]] }), // devastações de Osorio (1605–1606) despovoaram o oeste da ilha
+    ...perYear(1489, 1489, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
+      "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
+      "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
+      f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Martinique": "x:fr", "Saint Lucia": "x:fr" },
+      o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
+        "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+    ...perYear(1489, 1489, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
+    ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
+    ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
+    ...perYear(1489, 1489, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Serbia", "Yedisan"]] }), // Belgrado tomado pela Liga Santa em set/1688
+    ...perYear(1489, 1489, { r: { "Sierra Leone GB": null } }), // Granville Town fundada em 1787
+    ...perYear(1489, 1489, { r: { "New South Wales (UK)": null } }), // Primeira Frota chega em jan/1788
+    ...perYear(1489, 1489, { m: [null, null, ["Nova Scotia", "New Brunswick"]] }), // Nova Brunswick separada em 18/jun/1784
+    ...perYear(1489, 1489, { r: { "Saint Barthelemy": "São Bartolomeu (França)" }, f: { "Saint Barthelemy": "x:fr" }, o: { "Saint Barthelemy": "França" } }), // comprada pela Suécia em 1/jul/1784
+    ...perYear(1783, 1790, { r: { "Vermont": "República de Vermont" }, f: { "Vermont": "blank" }, o: { "Vermont": null } }), // independente de 15/jan/1777 a 4/mar/1791
+    ...perYear(1791, 1912, { m: [null, null, ["United States of America", "Vermont"]] }),
+    ...perYear(1783, 1912, { m: [null, null, ["Russian Empire", "Crimea"]] }), // anexação de fato em 8/abr/1783
+    ...perYear(1783, 1912, { m: [null, null, ["British West Indies", "Grenada", "Saint Vincent", "Bahamas"]] }), // devolvidas pelo Tratado de Paris (3/set/1783); Nassau retomada em 17/abr/1783
+    ...perYear(1783, 1792, { r: { "Tobago": "Tobago (França)" }, f: { "Tobago": "x:fr" }, o: { "Tobago": "França" } }), // francesa desde jun/1781; britânica de novo em 1793 (pendente: Amiens, 1802)
+    ...perYear(1793, 1912, { m: [null, null, ["British West Indies", "Tobago"]] }),
+    ...perYear(1782, 1783, { r: { "Dominica": "Dominica (ocupação francesa)" }, f: { "Dominica": "x:fr" }, o: { "Dominica": null } }), // invadida em 7/set/1778; francesa até 1784
+    ...perYear(1489, 1489, { r: {   
+       "Crimea": "Canato da Crimeia", "Florida": "Flórida (Espanha)" },
+      f: {     "Crimea": "blank", "Florida": "x:es" },
+      o: {     "Crimea": null, "Florida": "Espanha" } }), // Granada (jul/1779) e São Vicente (18/jun/1779); Tobago (jun/1781); Pondicherry britânica de 1778 a 1783; Demerara tomada pelos franceses em 22/jan/1782; Crimeia independente desde 1774; Flórida Ocidental espanhola desde 1781
+    ...perYear(1781, 1783, { r: { "Saint Lucia": "Santa Lúcia (ocupação britânica)" }, f: { "Saint Lucia": "x:gb" }, o: { "Saint Lucia": null } }), // ocupada pelos britânicos em 1778; devolvida à França em 1784 (Paz de Paris)
+    ...perYear(1780, 1783, { r: { "Belize": "Belize (assentamento britânico abandonado)" }, f: { "Belize": "blank" }, o: { "Belize": null } }), // abandonado com a guerra de 1779; colonos voltam em 1784
+    ...perYear(1489, 1489, { r: { "Senegal FR": "Senegal (França)" }, f: { "Senegal FR": "x:fr" }, o: { "Senegal FR": "França" } }), // Saint-Louis britânica desde 1758; francesa em fev/1779
+    ...perYear(1489, 1489, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // Pondicherry tomada pelos britânicos em out/1778
+    ...perYear(1489, 1489, { r: { "Spanish Guinea": "Fernando Pó e Ano-Bom (Portugal)" }, f: { "Spanish Guinea": "blank" }, o: { "Spanish Guinea": "Portugal" } }), // cedidas à Espanha pelo Tratado de El Pardo (11/mar/1778)
+    ...perYear(1489, 1489, { m: [null, null, ["United States of America", "Vermont"]] }), // Concessões de New Hampshire, parte da revolta; Vermont independente em 15/jan/1777
+    ...perYear(1783, 1912, { m: [null, null, ["United States of America", "Old Northwest"]] }), // cedido aos EUA pelo Tratado de Paris (1783); fortes britânicos até 1796 (pendente)
+    ...perYear(1776, 1777, { m: [null, null, ["Canada", "Old Northwest"]] }), // Ato de Quebec (1774): região ao norte do Ohio anexada à Província de Quebec
+    ...perYear(1778, 1782, { r: { "Old Northwest": "Região do Noroeste (disputada entre Grã-Bretanha e Virgínia)" }, f: { "Old Northwest": "blank" }, o: { "Old Northwest": null } }), // Condado de Illinois (Virgínia) de 4/jul/1778 a jan/1782, só nos povoados de Vincennes, Cahokia e Kaskaskia
+    ...perYear(1489, 1489, { m: [null, null, ["Peru", "Argentina", "State of Buenos Aires", "Liga Federal", "Uruguay", "Paraguay", "Bolivia", "Bolivian Litoral"]] }), // Vice-Reino do Rio da Prata criado em 1/ago/1776
+    ...perYear(1489, 1489, { r: { "United States of America": "Treze Colônias (britânicas)" }, f: { "United States of America": "x:gb" }, o: { "United States of America": "Reino Unido" } }), // Primeiro Congresso Continental (set–out/1774); governos reais ainda em funções
+    ...perYear(1775, 1912, { m: [null, null, ["Austria Hungary", "Bukovina"]] }), // cedida pela Convenção de Pera (7/mai/1775)
+    ...perYear(1489, 1489, { m: [null, null, ["Romania", "Bukovina"]] }), // parte da Moldávia até a ocupação austríaca (out/1774)
+    ...perYear(1772, 1912, { m: [null, null, ["Austria Hungary", "Galicia 1772"]] }), // Primeira Partilha da Polônia (5/ago/1772)
+    ...perYear(1772, 1912, { m: [null, null, ["Germany", "Royal Prussia"]] }),
+    ...perYear(1772, 1912, { m: [null, null, ["Russian Empire", "Polish Livonia", "East Belarus"]] }),
+    ...perYear(1770, 1773, { r: { "Romania": "Principado da Moldávia (ocupação russa)", "Wallachia": "Principado da Valáquia (ocupação russa)" }, f: { "Romania": "x:ru", "Wallachia": "x:ru" }, o: { "Romania": null, "Wallachia": null } }), // Iași tomada em 7/out/1769, Bucareste em 17/nov/1769; devolvidas pelo Tratado de Küçük Kaynarca (21/jul/1774)
+    { y: 1775, m: [null, null, ["Rattanakosin Kingdom", "Lan Na"]] }, // Chiang Mai tomada pelos siameses em 15/jan/1775
+    { y: 1768, y1: 1774, r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // quarto período de domínio birmanês, 1763–1774
+    { y: 1768, y1: 1769, r: { "Rattanakosin Kingdom": "Sião (Thonburi e regimes rivais)" } }, // Ayutthaya cai em abr/1767; Taksin coroado em Thonburi em 28/dez/1767; reunificação em 1770
+    { y: 1770, y1: 1778, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } },
+    { y: 1779, y1: 1781, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } }, // depois da fusão de 1779 (Laos)
+    ...perYear(1489, 1489, { m: ["Luisiana (reivindicada pela França)", "blank", ["Louisiana N", "Louisiana S"]], o: { "Louisiana N": null } }), // reivindicada por La Salle em 1682; Fort Maurepas fundado em 1699
+    ...perYear(1782, 1797, { m: [null, null, ["Spain", "Minorca"]] }), // tomada por franceses e espanhóis em 1782; cedida à Espanha em 1783
+    ...perYear(1802, 1912, { m: [null, null, ["Spain", "Minorca"]] }), // devolvida pela Paz de Amiens (1802)
+    ...perYear(1798, 1801, { r: { "Minorca": "Minorca (ocupação britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": null } }), // tomada pelos britânicos em 1798
+    ...perYear(1781, 1781, { r: { "Minorca": "Minorca (sítio franco-espanhol)" }, f: { "Minorca": "blank" }, o: { "Minorca": null } }), // invasão em 1781; Fort St. Philip rende-se em 1782
+    ...perYear(1765, 1780, { r: { "Minorca": "Minorca (britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": "Reino Unido" } }), // devolvida à Grã-Bretanha pela Paz de Paris (1763)
+    ...perYear(1762, 1763, { r: { "Philippines": "Filipinas (Espanha; Manila ocupada pelos britânicos)" } }), // Manila tomada em 6/out/1762; evacuada na 1ª semana de abr/1764
+    ...perYear(1489, 1489, { m: [null, null, ["Canada", "Old Northwest"]] }), // Pays d'en Haut: fortes franceses rendidos com Montreal (set/1760)
+    ...perYear(1762, 1912, { m: [null, null, ["Germany", "East Prussia"]] }), // retirada russa em 1762
+    ...perYear(1758, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
+    ...perYear(1756, 1762, { r: { "Kingdom of Saxony": "Eleitorado da Saxônia (ocupação prussiana)" }, f: { "Kingdom of Saxony": "blank" }, o: { "Kingdom of Saxony": null } }), // invadida pela Prússia em 1756; ocupada até 1763
+    ...perYear(1489, 1489, { r: { "Martinique": "Martinica", "Guadeloupe": "Guadalupe", "Saint Lucia": "Santa Lúcia (neutra; colonos franceses)", "Grenada": "Granada (França)", "Saint Vincent": "São Vicente (caribes e colonos franceses)", "Dominica": "Dominica (França)", "Tobago": "Tobago (neutra, disputada entre Grã-Bretanha e França)", "Minorca": "Minorca (britânica)" },
+      f: { "Martinique": "x:fr", "Guadeloupe": "x:fr", "Saint Lucia": "blank", "Grenada": "x:fr", "Saint Vincent": "blank", "Dominica": "x:fr", "Tobago": "blank", "Minorca": "x:gb" },
+      o: { "Martinique": "França", "Guadeloupe": "França", "Saint Lucia": null, "Grenada": "França", "Saint Vincent": null, "Dominica": "França", "Tobago": null, "Minorca": "Reino Unido" } }), // Guadalupe (2/mai/1759), Dominica (7/jun/1761); Santa Lúcia colônia francesa desde 1756; Tobago neutra 1679–1763; Minorca francesa desde 1756
+    ...perYear(1761, 1762, { r: { "French India": "Índia Francesa (ocupação britânica)" }, f: { "French India": "x:gb" }, o: { "French India": null } }), // Pondicherry cai em 15/jan/1761; devolvida pela Paz de Paris (1763)
+    ...perYear(1489, 1489, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
+    ...perYear(1489, 1489, { m: [null, null, ["Finland", "Kymmene"]] }),
+    ...perYear(1489, 1489, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
+    ...perYear(1489, 1489, { m: [null, null, ["Persia", "West Persia"]] }), // Erivã tomada por Murad IV em ago/1635, retomada pelos safávidas em abr/1636; // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
+    ...perYear(1489, 1489, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
+    ...perYear(1489, 1489, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
+    ...perYear(1489, 1489, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
+    ...perYear(1489, 1489, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
+    ...perYear(1489, 1489, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
+    ...perYear(1489, 1489, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
+    ...perYear(1489, 1489, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
+    ...perYear(1489, 1489, { r: { "Belgium": "Países Baixos Espanhóis", "Kingdom of Bavaria": "Eleitorado da Baviera"}, f: { "Belgium": "blank", "Kingdom of Bavaria": "blank"}, o: { "Belgium": "Espanha", "Kingdom of Bavaria": null} }), // condomínio desde 1706; Luxemburgo e Namur cedidos a Max Emanuel em 1712; Baviera partilhada após Blenheim (1704) e restituída em 1714; Barcelona sitiada desde 25/jul/1713, guerra catalã unilateral desde 9/jul/1713; ocupação russa da Finlândia a partir de 1713–14 (Helsinque 1713, Storkyro fev/1714)
+    ...perYear(1489, 1489, { m: [null, null, ["Spain", "Sicily"]] }), // Sicília de Filipe V até Utrecht (1713)
+    ...perYear(1489, 1489, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // invasão russa da Finlândia em 1713
+    ...perYear(1489, 1489, { r: { "Nova Scotia": "Acádia (França)" }, f: { "Nova Scotia": "x:fr" }, o: { "Nova Scotia": "França" } }), // Port Royal tomada pelos britânicos em out/1710
+    ...perYear(1489, 1489, { m: [null, null, ["Spain", "Italy", "Minorca"]] }), // Sardenha tomada pelos aliados em ago/1708; Minorca em set/1708
+    ...perYear(1489, 1489, { r: { "United Kingdom of Great Britain and Ireland": "Reino da Inglaterra", "Scotland": "Reino da Escócia" }, f: { "United Kingdom of Great Britain and Ireland": "h:england", "Scotland": "h:scotland" }, o: { "United Kingdom of Great Britain and Ireland": null, "Scotland": null } }), // Ato de União em 1/mai/1707
+    ...perYear(1489, 1489, { m: [null, null, ["Spain", "Majorca"]] }), // data da adesão de Maiorca a Carlos III (1706) não checada
+    ...perYear(1489, 1489, { m: [null, null, ["Spain", "Valencia"]] }), // Girona tomada pela França em 29/jun/1694; Barcelona em 10/ago/1697
+    ...perYear(1489, 1489, { m: [null, null, ["Spain", "Gibraltar"]] }), // tomado pelos anglo-holandeses em ago/1704
+    ...perYear(1489, 1489, { r: { "Germany": "Brandemburgo-Prússia", "Ashanti": "Estados axantis (vassalos de Denkyira)" }, f: { "Germany": "blank", "Ashanti": "blank" }, o: { "Germany": null, "Ashanti": null } }), // Frederico I rei na Prússia em 1701; Denkyira derrotado em Feyiase (1701)
+    ...perYear(1489, 1489, { r: { "Transylvania": "Principado da Transilvânia" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), // domínio habsburgo imposto aos poucos depois de 1683; Diploma Leopoldino em 16/out/1690
+    ...perYear(1489, 1489, { r: { "Hungary": "Hungria (dividida entre Habsburgos e otomanos)" }, f: { "Hungary": "blank" }, o: { "Hungary": null } }), // Buda otomana desde 1541, tomada pela Liga Santa em 2/set/1686
+    ...perYear(1489, 1489, { m: [null, null, ["Ottoman Empire", "Morea", "Achaea"]] }), // Coroni tomada pelos venezianos em 11/ago/1685
+    ...perYear(1489, 1489, { m: [null, null, ["Belgium", "Luxembourg"]] }), // Luxemburgo tomado pela França em jun/1684
+    ...perYear(1489, 1489, { r: { "East Prussia": "Ducado da Prússia (Brandemburgo; feudo polonês)" }, f: { "East Prussia": "blank" }, o: { "East Prussia": "República das Duas Nações" } }), // soberania reconhecida em Wehlau (set/1657); Cracóvia sueca de 13/out/1655 a 30/ago/1657
+    // revisão 1488 (situação em 31/dez; fontes: Wikipedia)
+    ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
+    ...perYear(1488, 1488, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
+    ...perYear(1488, 1488, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
+    ...perYear(1488, 1488, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1488, 1488, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
+    ...perYear(1488, 1488, { m: ["Reino da Polônia", "blank", ["Congress Poland", "West Galicia", "Kraków", "Posen", "Galicia 1772", "Tarnopol", "Royal Prussia", "Podolia"]], o: { "Congress Poland": null } }), ...perYear(1488, 1488, { m: ["Grão-Ducado da Lituânia", "blank", ["Lithuania GD", "Right-bank Ukraine", "Minsk region", "West Volhynia", "East Belarus"]], o: { "Lithuania GD": null } }), // União de Lublin, 1/jul/1569 
+    ...perYear(1488, 1488, { m: [null, null, ["British Raj", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
+    ...perYear(1488, 1488, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
+    ...perYear(1488, 1488, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands", "Tinos"]], o: { "Venetia": null } }), // Moreia veneziana de 1699 (Karlowitz) a 1715
+    ...perYear(1488, 1488, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
+    ...perYear(1488, 1488, { m: ["Ducado de Saboia", "h:it_sav", ["Piedmont", "Savoy and Nice"]], o: { "Piedmont": null } }), // Saboia ocupada pela França 1703–1713
+    ...perYear(1488, 1488, { m: [null, null, ["Lombardy", "Novara"]] }), // Novara e Tortona milanesas até o Tratado de Viena (1738)
+    ...perYear(1488, 1488, { m: ["Antiga Confederação Suíça", "blank", ["Switzerland", "Valais"]], o: { "Switzerland": null } }),
+    ...perYear(1488, 1488, { m: [null, null, ["Dominican Republic", "Haiti", "Kingdom of Haiti"]] }), // devastações de Osorio (1605–1606) despovoaram o oeste da ilha
+    ...perYear(1488, 1488, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
+      "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
+      "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
+      f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Martinique": "x:fr", "Saint Lucia": "x:fr" },
+      o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
+        "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+    ...perYear(1488, 1488, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
+    ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
+    ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
+    ...perYear(1488, 1488, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Serbia", "Yedisan"]] }), // Belgrado tomado pela Liga Santa em set/1688
+    ...perYear(1488, 1488, { r: { "Sierra Leone GB": null } }), // Granville Town fundada em 1787
+    ...perYear(1488, 1488, { r: { "New South Wales (UK)": null } }), // Primeira Frota chega em jan/1788
+    ...perYear(1488, 1488, { m: [null, null, ["Nova Scotia", "New Brunswick"]] }), // Nova Brunswick separada em 18/jun/1784
+    ...perYear(1488, 1488, { r: { "Saint Barthelemy": "São Bartolomeu (França)" }, f: { "Saint Barthelemy": "x:fr" }, o: { "Saint Barthelemy": "França" } }), // comprada pela Suécia em 1/jul/1784
+    ...perYear(1783, 1790, { r: { "Vermont": "República de Vermont" }, f: { "Vermont": "blank" }, o: { "Vermont": null } }), // independente de 15/jan/1777 a 4/mar/1791
+    ...perYear(1791, 1912, { m: [null, null, ["United States of America", "Vermont"]] }),
+    ...perYear(1783, 1912, { m: [null, null, ["Russian Empire", "Crimea"]] }), // anexação de fato em 8/abr/1783
+    ...perYear(1783, 1912, { m: [null, null, ["British West Indies", "Grenada", "Saint Vincent", "Bahamas"]] }), // devolvidas pelo Tratado de Paris (3/set/1783); Nassau retomada em 17/abr/1783
+    ...perYear(1783, 1792, { r: { "Tobago": "Tobago (França)" }, f: { "Tobago": "x:fr" }, o: { "Tobago": "França" } }), // francesa desde jun/1781; britânica de novo em 1793 (pendente: Amiens, 1802)
+    ...perYear(1793, 1912, { m: [null, null, ["British West Indies", "Tobago"]] }),
+    ...perYear(1782, 1783, { r: { "Dominica": "Dominica (ocupação francesa)" }, f: { "Dominica": "x:fr" }, o: { "Dominica": null } }), // invadida em 7/set/1778; francesa até 1784
+    ...perYear(1488, 1488, { r: {   
+       "Crimea": "Canato da Crimeia", "Florida": "Flórida (Espanha)" },
+      f: {     "Crimea": "blank", "Florida": "x:es" },
+      o: {     "Crimea": null, "Florida": "Espanha" } }), // Granada (jul/1779) e São Vicente (18/jun/1779); Tobago (jun/1781); Pondicherry britânica de 1778 a 1783; Demerara tomada pelos franceses em 22/jan/1782; Crimeia independente desde 1774; Flórida Ocidental espanhola desde 1781
+    ...perYear(1781, 1783, { r: { "Saint Lucia": "Santa Lúcia (ocupação britânica)" }, f: { "Saint Lucia": "x:gb" }, o: { "Saint Lucia": null } }), // ocupada pelos britânicos em 1778; devolvida à França em 1784 (Paz de Paris)
+    ...perYear(1780, 1783, { r: { "Belize": "Belize (assentamento britânico abandonado)" }, f: { "Belize": "blank" }, o: { "Belize": null } }), // abandonado com a guerra de 1779; colonos voltam em 1784
+    ...perYear(1488, 1488, { r: { "Senegal FR": "Senegal (França)" }, f: { "Senegal FR": "x:fr" }, o: { "Senegal FR": "França" } }), // Saint-Louis britânica desde 1758; francesa em fev/1779
+    ...perYear(1488, 1488, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // Pondicherry tomada pelos britânicos em out/1778
+    ...perYear(1488, 1488, { r: { "Spanish Guinea": "Fernando Pó e Ano-Bom (Portugal)" }, f: { "Spanish Guinea": "blank" }, o: { "Spanish Guinea": "Portugal" } }), // cedidas à Espanha pelo Tratado de El Pardo (11/mar/1778)
+    ...perYear(1488, 1488, { m: [null, null, ["United States of America", "Vermont"]] }), // Concessões de New Hampshire, parte da revolta; Vermont independente em 15/jan/1777
+    ...perYear(1783, 1912, { m: [null, null, ["United States of America", "Old Northwest"]] }), // cedido aos EUA pelo Tratado de Paris (1783); fortes britânicos até 1796 (pendente)
+    ...perYear(1776, 1777, { m: [null, null, ["Canada", "Old Northwest"]] }), // Ato de Quebec (1774): região ao norte do Ohio anexada à Província de Quebec
+    ...perYear(1778, 1782, { r: { "Old Northwest": "Região do Noroeste (disputada entre Grã-Bretanha e Virgínia)" }, f: { "Old Northwest": "blank" }, o: { "Old Northwest": null } }), // Condado de Illinois (Virgínia) de 4/jul/1778 a jan/1782, só nos povoados de Vincennes, Cahokia e Kaskaskia
+    ...perYear(1488, 1488, { m: [null, null, ["Peru", "Argentina", "State of Buenos Aires", "Liga Federal", "Uruguay", "Paraguay", "Bolivia", "Bolivian Litoral"]] }), // Vice-Reino do Rio da Prata criado em 1/ago/1776
+    ...perYear(1488, 1488, { r: { "United States of America": "Treze Colônias (britânicas)" }, f: { "United States of America": "x:gb" }, o: { "United States of America": "Reino Unido" } }), // Primeiro Congresso Continental (set–out/1774); governos reais ainda em funções
+    ...perYear(1775, 1912, { m: [null, null, ["Austria Hungary", "Bukovina"]] }), // cedida pela Convenção de Pera (7/mai/1775)
+    ...perYear(1488, 1488, { m: [null, null, ["Romania", "Bukovina"]] }), // parte da Moldávia até a ocupação austríaca (out/1774)
+    ...perYear(1772, 1912, { m: [null, null, ["Austria Hungary", "Galicia 1772"]] }), // Primeira Partilha da Polônia (5/ago/1772)
+    ...perYear(1772, 1912, { m: [null, null, ["Germany", "Royal Prussia"]] }),
+    ...perYear(1772, 1912, { m: [null, null, ["Russian Empire", "Polish Livonia", "East Belarus"]] }),
+    ...perYear(1770, 1773, { r: { "Romania": "Principado da Moldávia (ocupação russa)", "Wallachia": "Principado da Valáquia (ocupação russa)" }, f: { "Romania": "x:ru", "Wallachia": "x:ru" }, o: { "Romania": null, "Wallachia": null } }), // Iași tomada em 7/out/1769, Bucareste em 17/nov/1769; devolvidas pelo Tratado de Küçük Kaynarca (21/jul/1774)
+    { y: 1775, m: [null, null, ["Rattanakosin Kingdom", "Lan Na"]] }, // Chiang Mai tomada pelos siameses em 15/jan/1775
+    { y: 1768, y1: 1774, r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // quarto período de domínio birmanês, 1763–1774
+    { y: 1768, y1: 1769, r: { "Rattanakosin Kingdom": "Sião (Thonburi e regimes rivais)" } }, // Ayutthaya cai em abr/1767; Taksin coroado em Thonburi em 28/dez/1767; reunificação em 1770
+    { y: 1770, y1: 1778, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } },
+    { y: 1779, y1: 1781, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } }, // depois da fusão de 1779 (Laos)
+    ...perYear(1488, 1488, { m: ["Luisiana (reivindicada pela França)", "blank", ["Louisiana N", "Louisiana S"]], o: { "Louisiana N": null } }), // reivindicada por La Salle em 1682; Fort Maurepas fundado em 1699
+    ...perYear(1782, 1797, { m: [null, null, ["Spain", "Minorca"]] }), // tomada por franceses e espanhóis em 1782; cedida à Espanha em 1783
+    ...perYear(1802, 1912, { m: [null, null, ["Spain", "Minorca"]] }), // devolvida pela Paz de Amiens (1802)
+    ...perYear(1798, 1801, { r: { "Minorca": "Minorca (ocupação britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": null } }), // tomada pelos britânicos em 1798
+    ...perYear(1781, 1781, { r: { "Minorca": "Minorca (sítio franco-espanhol)" }, f: { "Minorca": "blank" }, o: { "Minorca": null } }), // invasão em 1781; Fort St. Philip rende-se em 1782
+    ...perYear(1765, 1780, { r: { "Minorca": "Minorca (britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": "Reino Unido" } }), // devolvida à Grã-Bretanha pela Paz de Paris (1763)
+    ...perYear(1762, 1763, { r: { "Philippines": "Filipinas (Espanha; Manila ocupada pelos britânicos)" } }), // Manila tomada em 6/out/1762; evacuada na 1ª semana de abr/1764
+    ...perYear(1488, 1488, { m: [null, null, ["Canada", "Old Northwest"]] }), // Pays d'en Haut: fortes franceses rendidos com Montreal (set/1760)
+    ...perYear(1762, 1912, { m: [null, null, ["Germany", "East Prussia"]] }), // retirada russa em 1762
+    ...perYear(1758, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
+    ...perYear(1756, 1762, { r: { "Kingdom of Saxony": "Eleitorado da Saxônia (ocupação prussiana)" }, f: { "Kingdom of Saxony": "blank" }, o: { "Kingdom of Saxony": null } }), // invadida pela Prússia em 1756; ocupada até 1763
+    ...perYear(1488, 1488, { r: { "Martinique": "Martinica", "Guadeloupe": "Guadalupe", "Saint Lucia": "Santa Lúcia (neutra; colonos franceses)", "Grenada": "Granada (França)", "Saint Vincent": "São Vicente (caribes e colonos franceses)", "Dominica": "Dominica (França)", "Tobago": "Tobago (neutra, disputada entre Grã-Bretanha e França)", "Minorca": "Minorca (britânica)" },
+      f: { "Martinique": "x:fr", "Guadeloupe": "x:fr", "Saint Lucia": "blank", "Grenada": "x:fr", "Saint Vincent": "blank", "Dominica": "x:fr", "Tobago": "blank", "Minorca": "x:gb" },
+      o: { "Martinique": "França", "Guadeloupe": "França", "Saint Lucia": null, "Grenada": "França", "Saint Vincent": null, "Dominica": "França", "Tobago": null, "Minorca": "Reino Unido" } }), // Guadalupe (2/mai/1759), Dominica (7/jun/1761); Santa Lúcia colônia francesa desde 1756; Tobago neutra 1679–1763; Minorca francesa desde 1756
+    ...perYear(1761, 1762, { r: { "French India": "Índia Francesa (ocupação britânica)" }, f: { "French India": "x:gb" }, o: { "French India": null } }), // Pondicherry cai em 15/jan/1761; devolvida pela Paz de Paris (1763)
+    ...perYear(1488, 1488, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
+    ...perYear(1488, 1488, { m: [null, null, ["Finland", "Kymmene"]] }),
+    ...perYear(1488, 1488, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
+    ...perYear(1488, 1488, { m: [null, null, ["Persia", "West Persia"]] }), // Erivã tomada por Murad IV em ago/1635, retomada pelos safávidas em abr/1636; // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
+    ...perYear(1488, 1488, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
+    ...perYear(1488, 1488, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
+    ...perYear(1488, 1488, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
+    ...perYear(1488, 1488, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
+    ...perYear(1488, 1488, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
+    ...perYear(1488, 1488, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
+    ...perYear(1488, 1488, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
+    ...perYear(1488, 1488, { r: { "Belgium": "Países Baixos Espanhóis", "Kingdom of Bavaria": "Eleitorado da Baviera"}, f: { "Belgium": "blank", "Kingdom of Bavaria": "blank"}, o: { "Belgium": "Espanha", "Kingdom of Bavaria": null} }), // condomínio desde 1706; Luxemburgo e Namur cedidos a Max Emanuel em 1712; Baviera partilhada após Blenheim (1704) e restituída em 1714; Barcelona sitiada desde 25/jul/1713, guerra catalã unilateral desde 9/jul/1713; ocupação russa da Finlândia a partir de 1713–14 (Helsinque 1713, Storkyro fev/1714)
+    ...perYear(1488, 1488, { m: [null, null, ["Spain", "Sicily"]] }), // Sicília de Filipe V até Utrecht (1713)
+    ...perYear(1488, 1488, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // invasão russa da Finlândia em 1713
+    ...perYear(1488, 1488, { r: { "Nova Scotia": "Acádia (França)" }, f: { "Nova Scotia": "x:fr" }, o: { "Nova Scotia": "França" } }), // Port Royal tomada pelos britânicos em out/1710
+    ...perYear(1488, 1488, { m: [null, null, ["Spain", "Italy", "Minorca"]] }), // Sardenha tomada pelos aliados em ago/1708; Minorca em set/1708
+    ...perYear(1488, 1488, { r: { "United Kingdom of Great Britain and Ireland": "Reino da Inglaterra", "Scotland": "Reino da Escócia" }, f: { "United Kingdom of Great Britain and Ireland": "h:england", "Scotland": "h:scotland" }, o: { "United Kingdom of Great Britain and Ireland": null, "Scotland": null } }), // Ato de União em 1/mai/1707
+    ...perYear(1488, 1488, { m: [null, null, ["Spain", "Majorca"]] }), // data da adesão de Maiorca a Carlos III (1706) não checada
+    ...perYear(1488, 1488, { m: [null, null, ["Spain", "Valencia"]] }), // Girona tomada pela França em 29/jun/1694; Barcelona em 10/ago/1697
+    ...perYear(1488, 1488, { m: [null, null, ["Spain", "Gibraltar"]] }), // tomado pelos anglo-holandeses em ago/1704
+    ...perYear(1488, 1488, { r: { "Germany": "Brandemburgo-Prússia", "Ashanti": "Estados axantis (vassalos de Denkyira)" }, f: { "Germany": "blank", "Ashanti": "blank" }, o: { "Germany": null, "Ashanti": null } }), // Frederico I rei na Prússia em 1701; Denkyira derrotado em Feyiase (1701)
+    ...perYear(1488, 1488, { r: { "Transylvania": "Principado da Transilvânia" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), // domínio habsburgo imposto aos poucos depois de 1683; Diploma Leopoldino em 16/out/1690
+    ...perYear(1488, 1488, { r: { "Hungary": "Hungria (dividida entre Habsburgos e otomanos)" }, f: { "Hungary": "blank" }, o: { "Hungary": null } }), // Buda otomana desde 1541, tomada pela Liga Santa em 2/set/1686
+    ...perYear(1488, 1488, { m: [null, null, ["Ottoman Empire", "Morea", "Achaea"]] }), // Coroni tomada pelos venezianos em 11/ago/1685
+    ...perYear(1488, 1488, { m: [null, null, ["Belgium", "Luxembourg"]] }), // Luxemburgo tomado pela França em jun/1684
+    ...perYear(1488, 1488, { r: { "East Prussia": "Ducado da Prússia (Brandemburgo; feudo polonês)" }, f: { "East Prussia": "blank" }, o: { "East Prussia": "República das Duas Nações" } }), // soberania reconhecida em Wehlau (set/1657); Cracóvia sueca de 13/out/1655 a 30/ago/1657
+    // revisão 1487 (situação em 31/dez; fontes: Wikipedia)
+    ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
+    ...perYear(1487, 1487, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
+    ...perYear(1487, 1487, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
+    ...perYear(1487, 1487, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1487, 1487, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
+    ...perYear(1487, 1487, { m: ["Reino da Polônia", "blank", ["Congress Poland", "West Galicia", "Kraków", "Posen", "Galicia 1772", "Tarnopol", "Royal Prussia", "Podolia"]], o: { "Congress Poland": null } }), ...perYear(1487, 1487, { m: ["Grão-Ducado da Lituânia", "blank", ["Lithuania GD", "Right-bank Ukraine", "Minsk region", "West Volhynia", "East Belarus"]], o: { "Lithuania GD": null } }), // União de Lublin, 1/jul/1569 
+    ...perYear(1487, 1487, { m: [null, null, ["British Raj", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
+    ...perYear(1487, 1487, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
+    ...perYear(1487, 1487, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands", "Tinos"]], o: { "Venetia": null } }), // Moreia veneziana de 1699 (Karlowitz) a 1715
+    ...perYear(1487, 1487, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
+    ...perYear(1487, 1487, { m: ["Ducado de Saboia", "h:it_sav", ["Piedmont", "Savoy and Nice"]], o: { "Piedmont": null } }), // Saboia ocupada pela França 1703–1713
+    ...perYear(1487, 1487, { m: [null, null, ["Lombardy", "Novara"]] }), // Novara e Tortona milanesas até o Tratado de Viena (1738)
+    ...perYear(1487, 1487, { m: ["Antiga Confederação Suíça", "blank", ["Switzerland", "Valais"]], o: { "Switzerland": null } }),
+    ...perYear(1487, 1487, { m: [null, null, ["Dominican Republic", "Haiti", "Kingdom of Haiti"]] }), // devastações de Osorio (1605–1606) despovoaram o oeste da ilha
+    ...perYear(1487, 1487, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
+      "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
+      "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
+      f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Martinique": "x:fr", "Saint Lucia": "x:fr" },
+      o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
+        "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+    ...perYear(1487, 1487, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
+    ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
+    ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
+    ...perYear(1487, 1487, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Serbia", "Yedisan"]] }), // Belgrado tomado pela Liga Santa em set/1688
+    ...perYear(1487, 1487, { r: { "Sierra Leone GB": null } }), // Granville Town fundada em 1787
+    ...perYear(1487, 1487, { r: { "New South Wales (UK)": null } }), // Primeira Frota chega em jan/1788
+    ...perYear(1487, 1487, { m: [null, null, ["Nova Scotia", "New Brunswick"]] }), // Nova Brunswick separada em 18/jun/1784
+    ...perYear(1487, 1487, { r: { "Saint Barthelemy": "São Bartolomeu (França)" }, f: { "Saint Barthelemy": "x:fr" }, o: { "Saint Barthelemy": "França" } }), // comprada pela Suécia em 1/jul/1784
+    ...perYear(1783, 1790, { r: { "Vermont": "República de Vermont" }, f: { "Vermont": "blank" }, o: { "Vermont": null } }), // independente de 15/jan/1777 a 4/mar/1791
+    ...perYear(1791, 1912, { m: [null, null, ["United States of America", "Vermont"]] }),
+    ...perYear(1783, 1912, { m: [null, null, ["Russian Empire", "Crimea"]] }), // anexação de fato em 8/abr/1783
+    ...perYear(1783, 1912, { m: [null, null, ["British West Indies", "Grenada", "Saint Vincent", "Bahamas"]] }), // devolvidas pelo Tratado de Paris (3/set/1783); Nassau retomada em 17/abr/1783
+    ...perYear(1783, 1792, { r: { "Tobago": "Tobago (França)" }, f: { "Tobago": "x:fr" }, o: { "Tobago": "França" } }), // francesa desde jun/1781; britânica de novo em 1793 (pendente: Amiens, 1802)
+    ...perYear(1793, 1912, { m: [null, null, ["British West Indies", "Tobago"]] }),
+    ...perYear(1782, 1783, { r: { "Dominica": "Dominica (ocupação francesa)" }, f: { "Dominica": "x:fr" }, o: { "Dominica": null } }), // invadida em 7/set/1778; francesa até 1784
+    ...perYear(1487, 1487, { r: {   
+       "Crimea": "Canato da Crimeia", "Florida": "Flórida (Espanha)" },
+      f: {     "Crimea": "blank", "Florida": "x:es" },
+      o: {     "Crimea": null, "Florida": "Espanha" } }), // Granada (jul/1779) e São Vicente (18/jun/1779); Tobago (jun/1781); Pondicherry britânica de 1778 a 1783; Demerara tomada pelos franceses em 22/jan/1782; Crimeia independente desde 1774; Flórida Ocidental espanhola desde 1781
+    ...perYear(1781, 1783, { r: { "Saint Lucia": "Santa Lúcia (ocupação britânica)" }, f: { "Saint Lucia": "x:gb" }, o: { "Saint Lucia": null } }), // ocupada pelos britânicos em 1778; devolvida à França em 1784 (Paz de Paris)
+    ...perYear(1780, 1783, { r: { "Belize": "Belize (assentamento britânico abandonado)" }, f: { "Belize": "blank" }, o: { "Belize": null } }), // abandonado com a guerra de 1779; colonos voltam em 1784
+    ...perYear(1487, 1487, { r: { "Senegal FR": "Senegal (França)" }, f: { "Senegal FR": "x:fr" }, o: { "Senegal FR": "França" } }), // Saint-Louis britânica desde 1758; francesa em fev/1779
+    ...perYear(1487, 1487, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // Pondicherry tomada pelos britânicos em out/1778
+    ...perYear(1487, 1487, { r: { "Spanish Guinea": "Fernando Pó e Ano-Bom (Portugal)" }, f: { "Spanish Guinea": "blank" }, o: { "Spanish Guinea": "Portugal" } }), // cedidas à Espanha pelo Tratado de El Pardo (11/mar/1778)
+    ...perYear(1487, 1487, { m: [null, null, ["United States of America", "Vermont"]] }), // Concessões de New Hampshire, parte da revolta; Vermont independente em 15/jan/1777
+    ...perYear(1783, 1912, { m: [null, null, ["United States of America", "Old Northwest"]] }), // cedido aos EUA pelo Tratado de Paris (1783); fortes britânicos até 1796 (pendente)
+    ...perYear(1776, 1777, { m: [null, null, ["Canada", "Old Northwest"]] }), // Ato de Quebec (1774): região ao norte do Ohio anexada à Província de Quebec
+    ...perYear(1778, 1782, { r: { "Old Northwest": "Região do Noroeste (disputada entre Grã-Bretanha e Virgínia)" }, f: { "Old Northwest": "blank" }, o: { "Old Northwest": null } }), // Condado de Illinois (Virgínia) de 4/jul/1778 a jan/1782, só nos povoados de Vincennes, Cahokia e Kaskaskia
+    ...perYear(1487, 1487, { m: [null, null, ["Peru", "Argentina", "State of Buenos Aires", "Liga Federal", "Uruguay", "Paraguay", "Bolivia", "Bolivian Litoral"]] }), // Vice-Reino do Rio da Prata criado em 1/ago/1776
+    ...perYear(1487, 1487, { r: { "United States of America": "Treze Colônias (britânicas)" }, f: { "United States of America": "x:gb" }, o: { "United States of America": "Reino Unido" } }), // Primeiro Congresso Continental (set–out/1774); governos reais ainda em funções
+    ...perYear(1775, 1912, { m: [null, null, ["Austria Hungary", "Bukovina"]] }), // cedida pela Convenção de Pera (7/mai/1775)
+    ...perYear(1487, 1487, { m: [null, null, ["Romania", "Bukovina"]] }), // parte da Moldávia até a ocupação austríaca (out/1774)
+    ...perYear(1772, 1912, { m: [null, null, ["Austria Hungary", "Galicia 1772"]] }), // Primeira Partilha da Polônia (5/ago/1772)
+    ...perYear(1772, 1912, { m: [null, null, ["Germany", "Royal Prussia"]] }),
+    ...perYear(1772, 1912, { m: [null, null, ["Russian Empire", "Polish Livonia", "East Belarus"]] }),
+    ...perYear(1770, 1773, { r: { "Romania": "Principado da Moldávia (ocupação russa)", "Wallachia": "Principado da Valáquia (ocupação russa)" }, f: { "Romania": "x:ru", "Wallachia": "x:ru" }, o: { "Romania": null, "Wallachia": null } }), // Iași tomada em 7/out/1769, Bucareste em 17/nov/1769; devolvidas pelo Tratado de Küçük Kaynarca (21/jul/1774)
+    { y: 1775, m: [null, null, ["Rattanakosin Kingdom", "Lan Na"]] }, // Chiang Mai tomada pelos siameses em 15/jan/1775
+    { y: 1768, y1: 1774, r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // quarto período de domínio birmanês, 1763–1774
+    { y: 1768, y1: 1769, r: { "Rattanakosin Kingdom": "Sião (Thonburi e regimes rivais)" } }, // Ayutthaya cai em abr/1767; Taksin coroado em Thonburi em 28/dez/1767; reunificação em 1770
+    { y: 1770, y1: 1778, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } },
+    { y: 1779, y1: 1781, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } }, // depois da fusão de 1779 (Laos)
+    ...perYear(1487, 1487, { m: ["Luisiana (reivindicada pela França)", "blank", ["Louisiana N", "Louisiana S"]], o: { "Louisiana N": null } }), // reivindicada por La Salle em 1682; Fort Maurepas fundado em 1699
+    ...perYear(1782, 1797, { m: [null, null, ["Spain", "Minorca"]] }), // tomada por franceses e espanhóis em 1782; cedida à Espanha em 1783
+    ...perYear(1802, 1912, { m: [null, null, ["Spain", "Minorca"]] }), // devolvida pela Paz de Amiens (1802)
+    ...perYear(1798, 1801, { r: { "Minorca": "Minorca (ocupação britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": null } }), // tomada pelos britânicos em 1798
+    ...perYear(1781, 1781, { r: { "Minorca": "Minorca (sítio franco-espanhol)" }, f: { "Minorca": "blank" }, o: { "Minorca": null } }), // invasão em 1781; Fort St. Philip rende-se em 1782
+    ...perYear(1765, 1780, { r: { "Minorca": "Minorca (britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": "Reino Unido" } }), // devolvida à Grã-Bretanha pela Paz de Paris (1763)
+    ...perYear(1762, 1763, { r: { "Philippines": "Filipinas (Espanha; Manila ocupada pelos britânicos)" } }), // Manila tomada em 6/out/1762; evacuada na 1ª semana de abr/1764
+    ...perYear(1487, 1487, { m: [null, null, ["Canada", "Old Northwest"]] }), // Pays d'en Haut: fortes franceses rendidos com Montreal (set/1760)
+    ...perYear(1762, 1912, { m: [null, null, ["Germany", "East Prussia"]] }), // retirada russa em 1762
+    ...perYear(1758, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
+    ...perYear(1756, 1762, { r: { "Kingdom of Saxony": "Eleitorado da Saxônia (ocupação prussiana)" }, f: { "Kingdom of Saxony": "blank" }, o: { "Kingdom of Saxony": null } }), // invadida pela Prússia em 1756; ocupada até 1763
+    ...perYear(1487, 1487, { r: { "Martinique": "Martinica", "Guadeloupe": "Guadalupe", "Saint Lucia": "Santa Lúcia (neutra; colonos franceses)", "Grenada": "Granada (França)", "Saint Vincent": "São Vicente (caribes e colonos franceses)", "Dominica": "Dominica (França)", "Tobago": "Tobago (neutra, disputada entre Grã-Bretanha e França)", "Minorca": "Minorca (britânica)" },
+      f: { "Martinique": "x:fr", "Guadeloupe": "x:fr", "Saint Lucia": "blank", "Grenada": "x:fr", "Saint Vincent": "blank", "Dominica": "x:fr", "Tobago": "blank", "Minorca": "x:gb" },
+      o: { "Martinique": "França", "Guadeloupe": "França", "Saint Lucia": null, "Grenada": "França", "Saint Vincent": null, "Dominica": "França", "Tobago": null, "Minorca": "Reino Unido" } }), // Guadalupe (2/mai/1759), Dominica (7/jun/1761); Santa Lúcia colônia francesa desde 1756; Tobago neutra 1679–1763; Minorca francesa desde 1756
+    ...perYear(1761, 1762, { r: { "French India": "Índia Francesa (ocupação britânica)" }, f: { "French India": "x:gb" }, o: { "French India": null } }), // Pondicherry cai em 15/jan/1761; devolvida pela Paz de Paris (1763)
+    ...perYear(1487, 1487, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
+    ...perYear(1487, 1487, { m: [null, null, ["Finland", "Kymmene"]] }),
+    ...perYear(1487, 1487, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
+    ...perYear(1487, 1487, { m: [null, null, ["Persia", "West Persia"]] }), // Erivã tomada por Murad IV em ago/1635, retomada pelos safávidas em abr/1636; // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
+    ...perYear(1487, 1487, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
+    ...perYear(1487, 1487, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
+    ...perYear(1487, 1487, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
+    ...perYear(1487, 1487, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
+    ...perYear(1487, 1487, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
+    ...perYear(1487, 1487, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
+    ...perYear(1487, 1487, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
+    ...perYear(1487, 1487, { r: { "Belgium": "Países Baixos Espanhóis", "Kingdom of Bavaria": "Eleitorado da Baviera"}, f: { "Belgium": "blank", "Kingdom of Bavaria": "blank"}, o: { "Belgium": "Espanha", "Kingdom of Bavaria": null} }), // condomínio desde 1706; Luxemburgo e Namur cedidos a Max Emanuel em 1712; Baviera partilhada após Blenheim (1704) e restituída em 1714; Barcelona sitiada desde 25/jul/1713, guerra catalã unilateral desde 9/jul/1713; ocupação russa da Finlândia a partir de 1713–14 (Helsinque 1713, Storkyro fev/1714)
+    ...perYear(1487, 1487, { m: [null, null, ["Spain", "Sicily"]] }), // Sicília de Filipe V até Utrecht (1713)
+    ...perYear(1487, 1487, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // invasão russa da Finlândia em 1713
+    ...perYear(1487, 1487, { r: { "Nova Scotia": "Acádia (França)" }, f: { "Nova Scotia": "x:fr" }, o: { "Nova Scotia": "França" } }), // Port Royal tomada pelos britânicos em out/1710
+    ...perYear(1487, 1487, { m: [null, null, ["Spain", "Italy", "Minorca"]] }), // Sardenha tomada pelos aliados em ago/1708; Minorca em set/1708
+    ...perYear(1487, 1487, { r: { "United Kingdom of Great Britain and Ireland": "Reino da Inglaterra", "Scotland": "Reino da Escócia" }, f: { "United Kingdom of Great Britain and Ireland": "h:england", "Scotland": "h:scotland" }, o: { "United Kingdom of Great Britain and Ireland": null, "Scotland": null } }), // Ato de União em 1/mai/1707
+    ...perYear(1487, 1487, { m: [null, null, ["Spain", "Majorca"]] }), // data da adesão de Maiorca a Carlos III (1706) não checada
+    ...perYear(1487, 1487, { m: [null, null, ["Spain", "Valencia"]] }), // Girona tomada pela França em 29/jun/1694; Barcelona em 10/ago/1697
+    ...perYear(1487, 1487, { m: [null, null, ["Spain", "Gibraltar"]] }), // tomado pelos anglo-holandeses em ago/1704
+    ...perYear(1487, 1487, { r: { "Germany": "Brandemburgo-Prússia", "Ashanti": "Estados axantis (vassalos de Denkyira)" }, f: { "Germany": "blank", "Ashanti": "blank" }, o: { "Germany": null, "Ashanti": null } }), // Frederico I rei na Prússia em 1701; Denkyira derrotado em Feyiase (1701)
+    ...perYear(1487, 1487, { r: { "Transylvania": "Principado da Transilvânia" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), // domínio habsburgo imposto aos poucos depois de 1683; Diploma Leopoldino em 16/out/1690
+    ...perYear(1487, 1487, { r: { "Hungary": "Hungria (dividida entre Habsburgos e otomanos)" }, f: { "Hungary": "blank" }, o: { "Hungary": null } }), // Buda otomana desde 1541, tomada pela Liga Santa em 2/set/1686
+    ...perYear(1487, 1487, { m: [null, null, ["Ottoman Empire", "Morea", "Achaea"]] }), // Coroni tomada pelos venezianos em 11/ago/1685
+    ...perYear(1487, 1487, { m: [null, null, ["Belgium", "Luxembourg"]] }), // Luxemburgo tomado pela França em jun/1684
+    ...perYear(1487, 1487, { r: { "East Prussia": "Ducado da Prússia (Brandemburgo; feudo polonês)" }, f: { "East Prussia": "blank" }, o: { "East Prussia": "República das Duas Nações" } }), // soberania reconhecida em Wehlau (set/1657); Cracóvia sueca de 13/out/1655 a 30/ago/1657
+    // revisão 1486 (situação em 31/dez; fontes: Wikipedia)
+    ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
+    ...perYear(1486, 1486, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
+    ...perYear(1486, 1486, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
+    ...perYear(1486, 1486, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1486, 1486, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
+    ...perYear(1486, 1486, { m: ["Reino da Polônia", "blank", ["Congress Poland", "West Galicia", "Kraków", "Posen", "Galicia 1772", "Tarnopol", "Royal Prussia", "Podolia"]], o: { "Congress Poland": null } }), ...perYear(1486, 1486, { m: ["Grão-Ducado da Lituânia", "blank", ["Lithuania GD", "Right-bank Ukraine", "Minsk region", "West Volhynia", "East Belarus"]], o: { "Lithuania GD": null } }), // União de Lublin, 1/jul/1569 
+    ...perYear(1486, 1486, { m: [null, null, ["British Raj", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
+    ...perYear(1486, 1486, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
+    ...perYear(1486, 1486, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands", "Tinos"]], o: { "Venetia": null } }), // Moreia veneziana de 1699 (Karlowitz) a 1715
+    ...perYear(1486, 1486, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
+    ...perYear(1486, 1486, { m: ["Ducado de Saboia", "h:it_sav", ["Piedmont", "Savoy and Nice"]], o: { "Piedmont": null } }), // Saboia ocupada pela França 1703–1713
+    ...perYear(1486, 1486, { m: [null, null, ["Lombardy", "Novara"]] }), // Novara e Tortona milanesas até o Tratado de Viena (1738)
+    ...perYear(1486, 1486, { m: ["Antiga Confederação Suíça", "blank", ["Switzerland", "Valais"]], o: { "Switzerland": null } }),
+    ...perYear(1486, 1486, { m: [null, null, ["Dominican Republic", "Haiti", "Kingdom of Haiti"]] }), // devastações de Osorio (1605–1606) despovoaram o oeste da ilha
+    ...perYear(1486, 1486, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
+      "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
+      "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
+      f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Martinique": "x:fr", "Saint Lucia": "x:fr" },
+      o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
+        "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+    ...perYear(1486, 1486, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
+    ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
+    ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
+    ...perYear(1486, 1486, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Serbia", "Yedisan"]] }), // Belgrado tomado pela Liga Santa em set/1688
+    ...perYear(1486, 1486, { r: { "Sierra Leone GB": null } }), // Granville Town fundada em 1787
+    ...perYear(1486, 1486, { r: { "New South Wales (UK)": null } }), // Primeira Frota chega em jan/1788
+    ...perYear(1486, 1486, { m: [null, null, ["Nova Scotia", "New Brunswick"]] }), // Nova Brunswick separada em 18/jun/1784
+    ...perYear(1486, 1486, { r: { "Saint Barthelemy": "São Bartolomeu (França)" }, f: { "Saint Barthelemy": "x:fr" }, o: { "Saint Barthelemy": "França" } }), // comprada pela Suécia em 1/jul/1784
+    ...perYear(1783, 1790, { r: { "Vermont": "República de Vermont" }, f: { "Vermont": "blank" }, o: { "Vermont": null } }), // independente de 15/jan/1777 a 4/mar/1791
+    ...perYear(1791, 1912, { m: [null, null, ["United States of America", "Vermont"]] }),
+    ...perYear(1783, 1912, { m: [null, null, ["Russian Empire", "Crimea"]] }), // anexação de fato em 8/abr/1783
+    ...perYear(1783, 1912, { m: [null, null, ["British West Indies", "Grenada", "Saint Vincent", "Bahamas"]] }), // devolvidas pelo Tratado de Paris (3/set/1783); Nassau retomada em 17/abr/1783
+    ...perYear(1783, 1792, { r: { "Tobago": "Tobago (França)" }, f: { "Tobago": "x:fr" }, o: { "Tobago": "França" } }), // francesa desde jun/1781; britânica de novo em 1793 (pendente: Amiens, 1802)
+    ...perYear(1793, 1912, { m: [null, null, ["British West Indies", "Tobago"]] }),
+    ...perYear(1782, 1783, { r: { "Dominica": "Dominica (ocupação francesa)" }, f: { "Dominica": "x:fr" }, o: { "Dominica": null } }), // invadida em 7/set/1778; francesa até 1784
+    ...perYear(1486, 1486, { r: {   
+       "Crimea": "Canato da Crimeia", "Florida": "Flórida (Espanha)" },
+      f: {     "Crimea": "blank", "Florida": "x:es" },
+      o: {     "Crimea": null, "Florida": "Espanha" } }), // Granada (jul/1779) e São Vicente (18/jun/1779); Tobago (jun/1781); Pondicherry britânica de 1778 a 1783; Demerara tomada pelos franceses em 22/jan/1782; Crimeia independente desde 1774; Flórida Ocidental espanhola desde 1781
+    ...perYear(1781, 1783, { r: { "Saint Lucia": "Santa Lúcia (ocupação britânica)" }, f: { "Saint Lucia": "x:gb" }, o: { "Saint Lucia": null } }), // ocupada pelos britânicos em 1778; devolvida à França em 1784 (Paz de Paris)
+    ...perYear(1780, 1783, { r: { "Belize": "Belize (assentamento britânico abandonado)" }, f: { "Belize": "blank" }, o: { "Belize": null } }), // abandonado com a guerra de 1779; colonos voltam em 1784
+    ...perYear(1486, 1486, { r: { "Senegal FR": "Senegal (França)" }, f: { "Senegal FR": "x:fr" }, o: { "Senegal FR": "França" } }), // Saint-Louis britânica desde 1758; francesa em fev/1779
+    ...perYear(1486, 1486, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // Pondicherry tomada pelos britânicos em out/1778
+    ...perYear(1486, 1486, { r: { "Spanish Guinea": "Fernando Pó e Ano-Bom (Portugal)" }, f: { "Spanish Guinea": "blank" }, o: { "Spanish Guinea": "Portugal" } }), // cedidas à Espanha pelo Tratado de El Pardo (11/mar/1778)
+    ...perYear(1486, 1486, { m: [null, null, ["United States of America", "Vermont"]] }), // Concessões de New Hampshire, parte da revolta; Vermont independente em 15/jan/1777
+    ...perYear(1783, 1912, { m: [null, null, ["United States of America", "Old Northwest"]] }), // cedido aos EUA pelo Tratado de Paris (1783); fortes britânicos até 1796 (pendente)
+    ...perYear(1776, 1777, { m: [null, null, ["Canada", "Old Northwest"]] }), // Ato de Quebec (1774): região ao norte do Ohio anexada à Província de Quebec
+    ...perYear(1778, 1782, { r: { "Old Northwest": "Região do Noroeste (disputada entre Grã-Bretanha e Virgínia)" }, f: { "Old Northwest": "blank" }, o: { "Old Northwest": null } }), // Condado de Illinois (Virgínia) de 4/jul/1778 a jan/1782, só nos povoados de Vincennes, Cahokia e Kaskaskia
+    ...perYear(1486, 1486, { m: [null, null, ["Peru", "Argentina", "State of Buenos Aires", "Liga Federal", "Uruguay", "Paraguay", "Bolivia", "Bolivian Litoral"]] }), // Vice-Reino do Rio da Prata criado em 1/ago/1776
+    ...perYear(1486, 1486, { r: { "United States of America": "Treze Colônias (britânicas)" }, f: { "United States of America": "x:gb" }, o: { "United States of America": "Reino Unido" } }), // Primeiro Congresso Continental (set–out/1774); governos reais ainda em funções
+    ...perYear(1775, 1912, { m: [null, null, ["Austria Hungary", "Bukovina"]] }), // cedida pela Convenção de Pera (7/mai/1775)
+    ...perYear(1486, 1486, { m: [null, null, ["Romania", "Bukovina"]] }), // parte da Moldávia até a ocupação austríaca (out/1774)
+    ...perYear(1772, 1912, { m: [null, null, ["Austria Hungary", "Galicia 1772"]] }), // Primeira Partilha da Polônia (5/ago/1772)
+    ...perYear(1772, 1912, { m: [null, null, ["Germany", "Royal Prussia"]] }),
+    ...perYear(1772, 1912, { m: [null, null, ["Russian Empire", "Polish Livonia", "East Belarus"]] }),
+    ...perYear(1770, 1773, { r: { "Romania": "Principado da Moldávia (ocupação russa)", "Wallachia": "Principado da Valáquia (ocupação russa)" }, f: { "Romania": "x:ru", "Wallachia": "x:ru" }, o: { "Romania": null, "Wallachia": null } }), // Iași tomada em 7/out/1769, Bucareste em 17/nov/1769; devolvidas pelo Tratado de Küçük Kaynarca (21/jul/1774)
+    { y: 1775, m: [null, null, ["Rattanakosin Kingdom", "Lan Na"]] }, // Chiang Mai tomada pelos siameses em 15/jan/1775
+    { y: 1768, y1: 1774, r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // quarto período de domínio birmanês, 1763–1774
+    { y: 1768, y1: 1769, r: { "Rattanakosin Kingdom": "Sião (Thonburi e regimes rivais)" } }, // Ayutthaya cai em abr/1767; Taksin coroado em Thonburi em 28/dez/1767; reunificação em 1770
+    { y: 1770, y1: 1778, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } },
+    { y: 1779, y1: 1781, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } }, // depois da fusão de 1779 (Laos)
+    ...perYear(1486, 1486, { m: ["Luisiana (reivindicada pela França)", "blank", ["Louisiana N", "Louisiana S"]], o: { "Louisiana N": null } }), // reivindicada por La Salle em 1682; Fort Maurepas fundado em 1699
+    ...perYear(1782, 1797, { m: [null, null, ["Spain", "Minorca"]] }), // tomada por franceses e espanhóis em 1782; cedida à Espanha em 1783
+    ...perYear(1802, 1912, { m: [null, null, ["Spain", "Minorca"]] }), // devolvida pela Paz de Amiens (1802)
+    ...perYear(1798, 1801, { r: { "Minorca": "Minorca (ocupação britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": null } }), // tomada pelos britânicos em 1798
+    ...perYear(1781, 1781, { r: { "Minorca": "Minorca (sítio franco-espanhol)" }, f: { "Minorca": "blank" }, o: { "Minorca": null } }), // invasão em 1781; Fort St. Philip rende-se em 1782
+    ...perYear(1765, 1780, { r: { "Minorca": "Minorca (britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": "Reino Unido" } }), // devolvida à Grã-Bretanha pela Paz de Paris (1763)
+    ...perYear(1762, 1763, { r: { "Philippines": "Filipinas (Espanha; Manila ocupada pelos britânicos)" } }), // Manila tomada em 6/out/1762; evacuada na 1ª semana de abr/1764
+    ...perYear(1486, 1486, { m: [null, null, ["Canada", "Old Northwest"]] }), // Pays d'en Haut: fortes franceses rendidos com Montreal (set/1760)
+    ...perYear(1762, 1912, { m: [null, null, ["Germany", "East Prussia"]] }), // retirada russa em 1762
+    ...perYear(1758, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
+    ...perYear(1756, 1762, { r: { "Kingdom of Saxony": "Eleitorado da Saxônia (ocupação prussiana)" }, f: { "Kingdom of Saxony": "blank" }, o: { "Kingdom of Saxony": null } }), // invadida pela Prússia em 1756; ocupada até 1763
+    ...perYear(1486, 1486, { r: { "Martinique": "Martinica", "Guadeloupe": "Guadalupe", "Saint Lucia": "Santa Lúcia (neutra; colonos franceses)", "Grenada": "Granada (França)", "Saint Vincent": "São Vicente (caribes e colonos franceses)", "Dominica": "Dominica (França)", "Tobago": "Tobago (neutra, disputada entre Grã-Bretanha e França)", "Minorca": "Minorca (britânica)" },
+      f: { "Martinique": "x:fr", "Guadeloupe": "x:fr", "Saint Lucia": "blank", "Grenada": "x:fr", "Saint Vincent": "blank", "Dominica": "x:fr", "Tobago": "blank", "Minorca": "x:gb" },
+      o: { "Martinique": "França", "Guadeloupe": "França", "Saint Lucia": null, "Grenada": "França", "Saint Vincent": null, "Dominica": "França", "Tobago": null, "Minorca": "Reino Unido" } }), // Guadalupe (2/mai/1759), Dominica (7/jun/1761); Santa Lúcia colônia francesa desde 1756; Tobago neutra 1679–1763; Minorca francesa desde 1756
+    ...perYear(1761, 1762, { r: { "French India": "Índia Francesa (ocupação britânica)" }, f: { "French India": "x:gb" }, o: { "French India": null } }), // Pondicherry cai em 15/jan/1761; devolvida pela Paz de Paris (1763)
+    ...perYear(1486, 1486, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
+    ...perYear(1486, 1486, { m: [null, null, ["Finland", "Kymmene"]] }),
+    ...perYear(1486, 1486, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
+    ...perYear(1486, 1486, { m: [null, null, ["Persia", "West Persia"]] }), // Erivã tomada por Murad IV em ago/1635, retomada pelos safávidas em abr/1636; // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
+    ...perYear(1486, 1486, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
+    ...perYear(1486, 1486, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
+    ...perYear(1486, 1486, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
+    ...perYear(1486, 1486, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
+    ...perYear(1486, 1486, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
+    ...perYear(1486, 1486, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
+    ...perYear(1486, 1486, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
+    ...perYear(1486, 1486, { r: { "Belgium": "Países Baixos Espanhóis", "Kingdom of Bavaria": "Eleitorado da Baviera"}, f: { "Belgium": "blank", "Kingdom of Bavaria": "blank"}, o: { "Belgium": "Espanha", "Kingdom of Bavaria": null} }), // condomínio desde 1706; Luxemburgo e Namur cedidos a Max Emanuel em 1712; Baviera partilhada após Blenheim (1704) e restituída em 1714; Barcelona sitiada desde 25/jul/1713, guerra catalã unilateral desde 9/jul/1713; ocupação russa da Finlândia a partir de 1713–14 (Helsinque 1713, Storkyro fev/1714)
+    ...perYear(1486, 1486, { m: [null, null, ["Spain", "Sicily"]] }), // Sicília de Filipe V até Utrecht (1713)
+    ...perYear(1486, 1486, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // invasão russa da Finlândia em 1713
+    ...perYear(1486, 1486, { r: { "Nova Scotia": "Acádia (França)" }, f: { "Nova Scotia": "x:fr" }, o: { "Nova Scotia": "França" } }), // Port Royal tomada pelos britânicos em out/1710
+    ...perYear(1486, 1486, { m: [null, null, ["Spain", "Italy", "Minorca"]] }), // Sardenha tomada pelos aliados em ago/1708; Minorca em set/1708
+    ...perYear(1486, 1486, { r: { "United Kingdom of Great Britain and Ireland": "Reino da Inglaterra", "Scotland": "Reino da Escócia" }, f: { "United Kingdom of Great Britain and Ireland": "h:england", "Scotland": "h:scotland" }, o: { "United Kingdom of Great Britain and Ireland": null, "Scotland": null } }), // Ato de União em 1/mai/1707
+    ...perYear(1486, 1486, { m: [null, null, ["Spain", "Majorca"]] }), // data da adesão de Maiorca a Carlos III (1706) não checada
+    ...perYear(1486, 1486, { m: [null, null, ["Spain", "Valencia"]] }), // Girona tomada pela França em 29/jun/1694; Barcelona em 10/ago/1697
+    ...perYear(1486, 1486, { m: [null, null, ["Spain", "Gibraltar"]] }), // tomado pelos anglo-holandeses em ago/1704
+    ...perYear(1486, 1486, { r: { "Germany": "Brandemburgo-Prússia", "Ashanti": "Estados axantis (vassalos de Denkyira)" }, f: { "Germany": "blank", "Ashanti": "blank" }, o: { "Germany": null, "Ashanti": null } }), // Frederico I rei na Prússia em 1701; Denkyira derrotado em Feyiase (1701)
+    ...perYear(1486, 1486, { r: { "Transylvania": "Principado da Transilvânia" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), // domínio habsburgo imposto aos poucos depois de 1683; Diploma Leopoldino em 16/out/1690
+    ...perYear(1486, 1486, { r: { "Hungary": "Hungria (dividida entre Habsburgos e otomanos)" }, f: { "Hungary": "blank" }, o: { "Hungary": null } }), // Buda otomana desde 1541, tomada pela Liga Santa em 2/set/1686
+    ...perYear(1486, 1486, { m: [null, null, ["Ottoman Empire", "Morea", "Achaea"]] }), // Coroni tomada pelos venezianos em 11/ago/1685
+    ...perYear(1486, 1486, { m: [null, null, ["Belgium", "Luxembourg"]] }), // Luxemburgo tomado pela França em jun/1684
+    ...perYear(1486, 1486, { r: { "East Prussia": "Ducado da Prússia (Brandemburgo; feudo polonês)" }, f: { "East Prussia": "blank" }, o: { "East Prussia": "República das Duas Nações" } }), // soberania reconhecida em Wehlau (set/1657); Cracóvia sueca de 13/out/1655 a 30/ago/1657
+    // revisão 1485 (situação em 31/dez; fontes: Wikipedia)
+    ...perYear(1790, 1791, { r: { "Yedisan": "Yedisan (ocupação russa)" }, f: { "Yedisan": "x:ru" }, o: { "Yedisan": null } }), // Ochakov tomada em 6/dez/1788; trégua em 31/jul/1791
+    ...perYear(1485, 1485, { m: ["Reino da França", "x:fr", ["France"]], o: { "France": null } }), 
+    ...perYear(1485, 1485, { m: ["Renânia e Palatinado (estados do Sacro Império)", "blank", ["Rhine Left", "Palatinate"]], o: { "Rhine Left": null } }),
+    ...perYear(1485, 1485, { m: ["Monarquia de Habsburgo", "h:at_hab", ["Austria Hungary", "Illyria", "Gorizia", "Tyrol"]] }), // Nápoles e Sicília austríacos até 1734; Milão ocupado (nov/1733–nov/1735); Parma de Carlos de Bourbon (1731–1735); Parma habsburga até Aix-la-Chapelle (1748); invasão francesa dos Países Baixos em 1744
+    ...perYear(1485, 1485, { m: ["Reino da Prússia", "blank", ["Germany", "Altmark"]], o: { "Germany": null } }),
+    ...perYear(1485, 1485, { m: ["Reino da Polônia", "blank", ["Congress Poland", "West Galicia", "Kraków", "Posen", "Galicia 1772", "Tarnopol", "Royal Prussia", "Podolia"]], o: { "Congress Poland": null } }), ...perYear(1485, 1485, { m: ["Grão-Ducado da Lituânia", "blank", ["Lithuania GD", "Right-bank Ukraine", "Minsk region", "West Volhynia", "East Belarus"]], o: { "Lithuania GD": null } }), // União de Lublin, 1/jul/1569 
+    ...perYear(1485, 1485, { m: [null, null, ["British Raj", "Punjab"]] }), // Caxemira durrani em 1752; Punjab cedido aos durranis em 1749
+    ...perYear(1485, 1485, { m: [null, null, ["British Raj", "Peshawar"]] }), // Cabul e Peshawar tomadas por Nader Xá em 1738
+    ...perYear(1485, 1485, { m: ["República de Veneza", "blank", ["Venetia", "Venice", "Dalmatia", "Bay of Kotor", "Ionian Islands", "Tinos"]], o: { "Venetia": null } }), // Moreia veneziana de 1699 (Karlowitz) a 1715
+    ...perYear(1485, 1485, { m: ["Estados Papais", "blank", ["Papal States", "Umbria", "Marche and Umbria", "Romagna"]], o: { "Papal States": null } }),
+    ...perYear(1485, 1485, { m: ["Ducado de Saboia", "h:it_sav", ["Piedmont", "Savoy and Nice"]], o: { "Piedmont": null } }), // Saboia ocupada pela França 1703–1713
+    ...perYear(1485, 1485, { m: [null, null, ["Lombardy", "Novara"]] }), // Novara e Tortona milanesas até o Tratado de Viena (1738)
+    ...perYear(1485, 1485, { m: ["Antiga Confederação Suíça", "blank", ["Switzerland", "Valais"]], o: { "Switzerland": null } }),
+    ...perYear(1485, 1485, { m: [null, null, ["Dominican Republic", "Haiti", "Kingdom of Haiti"]] }), // devastações de Osorio (1605–1606) despovoaram o oeste da ilha
+    ...perYear(1485, 1485, { r: { "Malta": "Malta (Ordem de São João)", "Lucca": "República de Lucca", "Tuscany": "Grão-Ducado da Toscana", "Duchy of Modena": "Ducado de Módena",
+      "Netherlands": "República das Sete Províncias Unidas", "Dutch Guiana": "Suriname (Holanda)", "British Guiana": "Demerara-Essequibo e Berbice (Holanda)", "Netherlands Antilles": "Curaçao (Holanda)",
+      "Cape Colony": "Colônia do Cabo (Holanda)", "Ceylon": "Ceilão Holandês", "Netherlands Indies": "Índias Orientais Holandesas",
+      "Tonga": "Tonga", "Geneva": "República de Genebra", "Egypt": "Egito (eialete otomano)", "Trinidad": "Trinidad (Espanha)",
+      "Courland": "Ducado da Curlândia e Semigália", "Kingdom of Hawaii": "Ilhas Havaianas (chefias rivais)", "Martinique": "Martinica", "Saint Lucia": "Santa Lúcia (França)", "Sierra Leone GB": null },
+      f: { "Malta": "blank", "Lucca": "blank", "Tuscany": "blank", "Duchy of Modena": "blank", "Netherlands": "blank", "Dutch Guiana": "blank", "British Guiana": "blank", "Netherlands Antilles": "blank",
+        "Cape Colony": "blank", "Ceylon": "blank", "Netherlands Indies": "blank", "Geneva": "blank", "Egypt": "blank", "Trinidad": "x:es", "Courland": "blank", "Kingdom of Hawaii": "blank",
+        "Martinique": "x:fr", "Saint Lucia": "x:fr" },
+      o: { "Malta": null, "Lucca": null, "Tuscany": null, "Duchy of Modena": null, "Netherlands": null, "Dutch Guiana": "República das Sete Províncias Unidas", "British Guiana": "República das Sete Províncias Unidas",
+        "Netherlands Antilles": "República das Sete Províncias Unidas", "Cape Colony": "República das Sete Províncias Unidas", "Ceylon": "República das Sete Províncias Unidas", "Netherlands Indies": "República das Sete Províncias Unidas",
+        "Geneva": null, "Egypt": "Império Otomano", "Trinidad": "Espanha", "Courland": "República das Duas Nações", "Kingdom of Hawaii": null, "Martinique": "França", "Saint Lucia": "França" } }), // Granville Town destruída em 1789 e reconstruída em 1791
+    ...perYear(1485, 1485, { r: { "Canada": "Nova França (Canadá)" }, f: { "Canada": "x:fr" }, o: { "Canada": "França" } }), // Belgrado tomada pelos Habsburgo em 1789; Alto e Baixo Canadá em 26/dez/1791
+    ...perYear(1790, 1798, { r: { "Prince Edward Island": "Ilha de São João (britânica)" } }), // renomeada Ilha do Príncipe Eduardo em 29/nov/1798
+    ...perYear(1789, 1792, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // terceira ocupação britânica de 23/ago/1793 a 18/jun/1802
+    ...perYear(1485, 1485, { m: ["Império Otomano", "blank", ["Ottoman Empire", "Serbia", "Yedisan"]] }), // Belgrado tomado pela Liga Santa em set/1688
+    ...perYear(1485, 1485, { r: { "Sierra Leone GB": null } }), // Granville Town fundada em 1787
+    ...perYear(1485, 1485, { r: { "New South Wales (UK)": null } }), // Primeira Frota chega em jan/1788
+    ...perYear(1485, 1485, { m: [null, null, ["Nova Scotia", "New Brunswick"]] }), // Nova Brunswick separada em 18/jun/1784
+    ...perYear(1485, 1485, { r: { "Saint Barthelemy": "São Bartolomeu (França)" }, f: { "Saint Barthelemy": "x:fr" }, o: { "Saint Barthelemy": "França" } }), // comprada pela Suécia em 1/jul/1784
+    ...perYear(1783, 1790, { r: { "Vermont": "República de Vermont" }, f: { "Vermont": "blank" }, o: { "Vermont": null } }), // independente de 15/jan/1777 a 4/mar/1791
+    ...perYear(1791, 1912, { m: [null, null, ["United States of America", "Vermont"]] }),
+    ...perYear(1783, 1912, { m: [null, null, ["Russian Empire", "Crimea"]] }), // anexação de fato em 8/abr/1783
+    ...perYear(1783, 1912, { m: [null, null, ["British West Indies", "Grenada", "Saint Vincent", "Bahamas"]] }), // devolvidas pelo Tratado de Paris (3/set/1783); Nassau retomada em 17/abr/1783
+    ...perYear(1783, 1792, { r: { "Tobago": "Tobago (França)" }, f: { "Tobago": "x:fr" }, o: { "Tobago": "França" } }), // francesa desde jun/1781; britânica de novo em 1793 (pendente: Amiens, 1802)
+    ...perYear(1793, 1912, { m: [null, null, ["British West Indies", "Tobago"]] }),
+    ...perYear(1782, 1783, { r: { "Dominica": "Dominica (ocupação francesa)" }, f: { "Dominica": "x:fr" }, o: { "Dominica": null } }), // invadida em 7/set/1778; francesa até 1784
+    ...perYear(1485, 1485, { r: {   
+       "Crimea": "Canato da Crimeia", "Florida": "Flórida (Espanha)" },
+      f: {     "Crimea": "blank", "Florida": "x:es" },
+      o: {     "Crimea": null, "Florida": "Espanha" } }), // Granada (jul/1779) e São Vicente (18/jun/1779); Tobago (jun/1781); Pondicherry britânica de 1778 a 1783; Demerara tomada pelos franceses em 22/jan/1782; Crimeia independente desde 1774; Flórida Ocidental espanhola desde 1781
+    ...perYear(1781, 1783, { r: { "Saint Lucia": "Santa Lúcia (ocupação britânica)" }, f: { "Saint Lucia": "x:gb" }, o: { "Saint Lucia": null } }), // ocupada pelos britânicos em 1778; devolvida à França em 1784 (Paz de Paris)
+    ...perYear(1780, 1783, { r: { "Belize": "Belize (assentamento britânico abandonado)" }, f: { "Belize": "blank" }, o: { "Belize": null } }), // abandonado com a guerra de 1779; colonos voltam em 1784
+    ...perYear(1485, 1485, { r: { "Senegal FR": "Senegal (França)" }, f: { "Senegal FR": "x:fr" }, o: { "Senegal FR": "França" } }), // Saint-Louis britânica desde 1758; francesa em fev/1779
+    ...perYear(1485, 1485, { r: { "French India": "Índia Francesa" }, f: { "French India": "x:fr" }, o: { "French India": "França" } }), // Pondicherry tomada pelos britânicos em out/1778
+    ...perYear(1485, 1485, { r: { "Spanish Guinea": "Fernando Pó e Ano-Bom (Portugal)" }, f: { "Spanish Guinea": "blank" }, o: { "Spanish Guinea": "Portugal" } }), // cedidas à Espanha pelo Tratado de El Pardo (11/mar/1778)
+    ...perYear(1485, 1485, { m: [null, null, ["United States of America", "Vermont"]] }), // Concessões de New Hampshire, parte da revolta; Vermont independente em 15/jan/1777
+    ...perYear(1783, 1912, { m: [null, null, ["United States of America", "Old Northwest"]] }), // cedido aos EUA pelo Tratado de Paris (1783); fortes britânicos até 1796 (pendente)
+    ...perYear(1776, 1777, { m: [null, null, ["Canada", "Old Northwest"]] }), // Ato de Quebec (1774): região ao norte do Ohio anexada à Província de Quebec
+    ...perYear(1778, 1782, { r: { "Old Northwest": "Região do Noroeste (disputada entre Grã-Bretanha e Virgínia)" }, f: { "Old Northwest": "blank" }, o: { "Old Northwest": null } }), // Condado de Illinois (Virgínia) de 4/jul/1778 a jan/1782, só nos povoados de Vincennes, Cahokia e Kaskaskia
+    ...perYear(1485, 1485, { m: [null, null, ["Peru", "Argentina", "State of Buenos Aires", "Liga Federal", "Uruguay", "Paraguay", "Bolivia", "Bolivian Litoral"]] }), // Vice-Reino do Rio da Prata criado em 1/ago/1776
+    ...perYear(1485, 1485, { r: { "United States of America": "Treze Colônias (britânicas)" }, f: { "United States of America": "x:gb" }, o: { "United States of America": "Reino Unido" } }), // Primeiro Congresso Continental (set–out/1774); governos reais ainda em funções
+    ...perYear(1775, 1912, { m: [null, null, ["Austria Hungary", "Bukovina"]] }), // cedida pela Convenção de Pera (7/mai/1775)
+    ...perYear(1485, 1485, { m: [null, null, ["Romania", "Bukovina"]] }), // parte da Moldávia até a ocupação austríaca (out/1774)
+    ...perYear(1772, 1912, { m: [null, null, ["Austria Hungary", "Galicia 1772"]] }), // Primeira Partilha da Polônia (5/ago/1772)
+    ...perYear(1772, 1912, { m: [null, null, ["Germany", "Royal Prussia"]] }),
+    ...perYear(1772, 1912, { m: [null, null, ["Russian Empire", "Polish Livonia", "East Belarus"]] }),
+    ...perYear(1770, 1773, { r: { "Romania": "Principado da Moldávia (ocupação russa)", "Wallachia": "Principado da Valáquia (ocupação russa)" }, f: { "Romania": "x:ru", "Wallachia": "x:ru" }, o: { "Romania": null, "Wallachia": null } }), // Iași tomada em 7/out/1769, Bucareste em 17/nov/1769; devolvidas pelo Tratado de Küçük Kaynarca (21/jul/1774)
+    { y: 1775, m: [null, null, ["Rattanakosin Kingdom", "Lan Na"]] }, // Chiang Mai tomada pelos siameses em 15/jan/1775
+    { y: 1768, y1: 1774, r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }, // quarto período de domínio birmanês, 1763–1774
+    { y: 1768, y1: 1769, r: { "Rattanakosin Kingdom": "Sião (Thonburi e regimes rivais)" } }, // Ayutthaya cai em abr/1767; Taksin coroado em Thonburi em 28/dez/1767; reunificação em 1770
+    { y: 1770, y1: 1778, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } },
+    { y: 1779, y1: 1781, r: { "Rattanakosin Kingdom": "Reino de Thonburi (Sião)" } }, // depois da fusão de 1779 (Laos)
+    ...perYear(1485, 1485, { m: ["Luisiana (reivindicada pela França)", "blank", ["Louisiana N", "Louisiana S"]], o: { "Louisiana N": null } }), // reivindicada por La Salle em 1682; Fort Maurepas fundado em 1699
+    ...perYear(1782, 1797, { m: [null, null, ["Spain", "Minorca"]] }), // tomada por franceses e espanhóis em 1782; cedida à Espanha em 1783
+    ...perYear(1802, 1912, { m: [null, null, ["Spain", "Minorca"]] }), // devolvida pela Paz de Amiens (1802)
+    ...perYear(1798, 1801, { r: { "Minorca": "Minorca (ocupação britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": null } }), // tomada pelos britânicos em 1798
+    ...perYear(1781, 1781, { r: { "Minorca": "Minorca (sítio franco-espanhol)" }, f: { "Minorca": "blank" }, o: { "Minorca": null } }), // invasão em 1781; Fort St. Philip rende-se em 1782
+    ...perYear(1765, 1780, { r: { "Minorca": "Minorca (britânica)" }, f: { "Minorca": "x:gb" }, o: { "Minorca": "Reino Unido" } }), // devolvida à Grã-Bretanha pela Paz de Paris (1763)
+    ...perYear(1762, 1763, { r: { "Philippines": "Filipinas (Espanha; Manila ocupada pelos britânicos)" } }), // Manila tomada em 6/out/1762; evacuada na 1ª semana de abr/1764
+    ...perYear(1485, 1485, { m: [null, null, ["Canada", "Old Northwest"]] }), // Pays d'en Haut: fortes franceses rendidos com Montreal (set/1760)
+    ...perYear(1762, 1912, { m: [null, null, ["Germany", "East Prussia"]] }), // retirada russa em 1762
+    ...perYear(1758, 1761, { r: { "East Prussia": "Prússia Oriental (ocupação russa)" }, f: { "East Prussia": "x:ru" }, o: { "East Prussia": null } }), // ocupada por quatro anos na Guerra dos Sete Anos
+    ...perYear(1756, 1762, { r: { "Kingdom of Saxony": "Eleitorado da Saxônia (ocupação prussiana)" }, f: { "Kingdom of Saxony": "blank" }, o: { "Kingdom of Saxony": null } }), // invadida pela Prússia em 1756; ocupada até 1763
+    ...perYear(1485, 1485, { r: { "Martinique": "Martinica", "Guadeloupe": "Guadalupe", "Saint Lucia": "Santa Lúcia (neutra; colonos franceses)", "Grenada": "Granada (França)", "Saint Vincent": "São Vicente (caribes e colonos franceses)", "Dominica": "Dominica (França)", "Tobago": "Tobago (neutra, disputada entre Grã-Bretanha e França)", "Minorca": "Minorca (britânica)" },
+      f: { "Martinique": "x:fr", "Guadeloupe": "x:fr", "Saint Lucia": "blank", "Grenada": "x:fr", "Saint Vincent": "blank", "Dominica": "x:fr", "Tobago": "blank", "Minorca": "x:gb" },
+      o: { "Martinique": "França", "Guadeloupe": "França", "Saint Lucia": null, "Grenada": "França", "Saint Vincent": null, "Dominica": "França", "Tobago": null, "Minorca": "Reino Unido" } }), // Guadalupe (2/mai/1759), Dominica (7/jun/1761); Santa Lúcia colônia francesa desde 1756; Tobago neutra 1679–1763; Minorca francesa desde 1756
+    ...perYear(1761, 1762, { r: { "French India": "Índia Francesa (ocupação britânica)" }, f: { "French India": "x:gb" }, o: { "French India": null } }), // Pondicherry cai em 15/jan/1761; devolvida pela Paz de Paris (1763)
+    ...perYear(1485, 1485, { r: { "Prince Edward Island": "Ilha de São João (França)" }, f: { "Prince Edward Island": "x:fr" }, o: { "Prince Edward Island": "França" } }), // campanha britânica após a queda de Louisbourg (26/jul/1758)
+    ...perYear(1485, 1485, { m: [null, null, ["Finland", "Kymmene"]] }),
+    ...perYear(1485, 1485, { r: { "Duchy of Parma": "Ducado de Parma (Farnese)" }, f: { "Duchy of Parma": "blank" }, o: { "Duchy of Parma": null } }), // Antonio Farnese morre em jan/1731
+    ...perYear(1485, 1485, { m: [null, null, ["Persia", "West Persia"]] }), // Erivã tomada por Murad IV em ago/1635, retomada pelos safávidas em abr/1636; // Erivã otomana só em 28/set/1724; Baku russa em jun/1723
+    ...perYear(1485, 1485, { m: [null, null, ["Liguria", "Corsica"]] }), // revolta corsa a partir de dez/1729
+    ...perYear(1485, 1485, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), // vassalos otomanos a partir de 1723 (Tiflis)
+    ...perYear(1485, 1485, { m: [null, null, ["British Raj", "Oudh"]] }), // nababado de Awadh desde 26/jan/1722
+    ...perYear(1485, 1485, { r: { "Russian Empire": "Czarado da Rússia" } }), // Pedro I proclamado imperador em 2/nov/1721
+    ...perYear(1485, 1485, { m: [null, null, ["Wallachia", "Oltenia"]] }), // data da ocupação austríaca da Oltênia não checada; cedida em 1718
+    ...perYear(1485, 1485, { r: { "Tibet": "Canato Khoshut (Tibete)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), // Lha-bzang Khan em Lhasa desde 1705–06; morto pelos zungares em 1717
+    ...perYear(1485, 1485, { r: { "Spain": "Espanha" }, f: { "Spain": "x:es" }, o: { "Spain": null } }), // Filipe V
+    ...perYear(1485, 1485, { r: { "Belgium": "Países Baixos Espanhóis", "Kingdom of Bavaria": "Eleitorado da Baviera"}, f: { "Belgium": "blank", "Kingdom of Bavaria": "blank"}, o: { "Belgium": "Espanha", "Kingdom of Bavaria": null} }), // condomínio desde 1706; Luxemburgo e Namur cedidos a Max Emanuel em 1712; Baviera partilhada após Blenheim (1704) e restituída em 1714; Barcelona sitiada desde 25/jul/1713, guerra catalã unilateral desde 9/jul/1713; ocupação russa da Finlândia a partir de 1713–14 (Helsinque 1713, Storkyro fev/1714)
+    ...perYear(1485, 1485, { m: [null, null, ["Spain", "Sicily"]] }), // Sicília de Filipe V até Utrecht (1713)
+    ...perYear(1485, 1485, { m: ["Suécia", "blank", ["Sweden–Norway", "Finland"]] }), // invasão russa da Finlândia em 1713
+    ...perYear(1485, 1485, { r: { "Nova Scotia": "Acádia (França)" }, f: { "Nova Scotia": "x:fr" }, o: { "Nova Scotia": "França" } }), // Port Royal tomada pelos britânicos em out/1710
+    ...perYear(1485, 1485, { m: [null, null, ["Spain", "Italy", "Minorca"]] }), // Sardenha tomada pelos aliados em ago/1708; Minorca em set/1708
+    ...perYear(1485, 1485, { r: { "United Kingdom of Great Britain and Ireland": "Reino da Inglaterra", "Scotland": "Reino da Escócia" }, f: { "United Kingdom of Great Britain and Ireland": "h:england", "Scotland": "h:scotland" }, o: { "United Kingdom of Great Britain and Ireland": null, "Scotland": null } }), // Ato de União em 1/mai/1707
+    ...perYear(1485, 1485, { m: [null, null, ["Spain", "Majorca"]] }), // data da adesão de Maiorca a Carlos III (1706) não checada
+    ...perYear(1485, 1485, { m: [null, null, ["Spain", "Valencia"]] }), // Girona tomada pela França em 29/jun/1694; Barcelona em 10/ago/1697
+    ...perYear(1485, 1485, { m: [null, null, ["Spain", "Gibraltar"]] }), // tomado pelos anglo-holandeses em ago/1704
+    ...perYear(1485, 1485, { r: { "Germany": "Brandemburgo-Prússia", "Ashanti": "Estados axantis (vassalos de Denkyira)" }, f: { "Germany": "blank", "Ashanti": "blank" }, o: { "Germany": null, "Ashanti": null } }), // Frederico I rei na Prússia em 1701; Denkyira derrotado em Feyiase (1701)
+    ...perYear(1485, 1485, { r: { "Transylvania": "Principado da Transilvânia" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), // domínio habsburgo imposto aos poucos depois de 1683; Diploma Leopoldino em 16/out/1690
+    ...perYear(1485, 1485, { r: { "Hungary": "Hungria (dividida entre Habsburgos e otomanos)" }, f: { "Hungary": "blank" }, o: { "Hungary": null } }), // Buda otomana desde 1541, tomada pela Liga Santa em 2/set/1686
+    ...perYear(1485, 1485, { m: [null, null, ["Ottoman Empire", "Morea", "Achaea"]] }), // Coroni tomada pelos venezianos em 11/ago/1685
+    ...perYear(1485, 1485, { m: [null, null, ["Belgium", "Luxembourg"]] }), // Luxemburgo tomado pela França em jun/1684
+    ...perYear(1485, 1485, { r: { "East Prussia": "Ducado da Prússia (Brandemburgo; feudo polonês)" }, f: { "East Prussia": "blank" }, o: { "East Prussia": "República das Duas Nações" } }), // soberania reconhecida em Wehlau (set/1657); Cracóvia sueca de 13/out/1655 a 30/ago/1657
     // Qing: sem bandeira oficial antes de 1862; a triangular (1862) não é descrita em detalhe; retangular promulgada em 1888 (um evento por ano para vencer as fusões)
-    ...Array.from({ length: 388 }, (_, i) => ({ y: 1500 + i, y1: 1500 + i, f: { "Manchu Empire": "blank" } })),
+    ...Array.from({ length: 403 }, (_, i) => ({ y: 1485 + i, y1: 1485 + i, f: { "Manchu Empire": "blank" } })),
     // correções de anacronismos (aplicadas por último; fontes: Wikipedia)
     ...perYear(1503, 1504, { m: [null, null, ["Bukhara", "Kokand", "Khujand"]] }), /*fixo*/ // Xaibani Khan vence os cãs mogóis em Akhsi (1503)
-    ...perYear(1500, 1502, { m: ["Fergana (disputada entre Babur, Tambal e os cãs mogóis)", "blank", ["Kokand", "Khujand"]], o: { "Kokand": null } }), /*fixo*/
-    ...perYear(1500, 1500, { m: [null, null, ["Persia", "Erivan"]] }), /*fixo*/ // Tabriz tomada por Ismail em 1501
+    ...perYear(1490, 1502, { m: ["Fergana (disputada entre Babur, Tambal e os cãs mogóis)", "blank", ["Kokand", "Khujand"]], o: { "Kokand": null } }), /*fixo*/
+    ...perYear(1490, 1500, { m: [null, null, ["Persia", "Erivan"]] }), /*fixo*/ // Tabriz tomada por Ismail em 1501
     ...perYear(1501, 1502, { r: { "Two Sicilies": "Reino de Nápoles (disputado entre França e Espanha)" }, f: { "Two Sicilies": "blank" }, o: { "Two Sicilies": null } }), /*fixo*/ // partilha de Granada (1500); Garigliano em dez/1503
-    ...perYear(1500, 1500, { r: { "Two Sicilies": "Reino de Nápoles (Frederico de Aragão)" }, f: { "Two Sicilies": "blank" }, o: { "Two Sicilies": null } }), /*fixo*/
-    ...perYear(1500, 1517, { m: [null, null, ["Maratha", "Hyderabad"]] }), /*fixo*/ // Sultanato de Golconda independente em 1518
+    ...perYear(1490, 1500, { r: { "Two Sicilies": "Reino de Nápoles (Frederico de Aragão)" }, f: { "Two Sicilies": "blank" }, o: { "Two Sicilies": null } }), /*fixo*/
+    ...perYear(1490, 1517, { m: [null, null, ["Maratha", "Hyderabad"]] }), /*fixo*/ // Sultanato de Golconda independente em 1518
     ...perYear(1510, 1512, { r: { "Balkh": "Balkh (disputado entre xaibânidas, safávidas e Babur)" }, f: { "Balkh": "blank" }, o: { "Balkh": null } }), /*fixo*/ // Ghazdewan, nov/1512
     ...perYear(1506, 1509, { m: [null, null, ["Bukhara", "Balkh"]] }), /*fixo*/
-    ...perYear(1500, 1505, { m: [null, null, ["Herat", "Balkh"]] }), /*fixo*/ // Balkh timúrida até 1505–1506
+    ...perYear(1490, 1505, { m: [null, null, ["Herat", "Balkh"]] }), /*fixo*/ // Balkh timúrida até 1505–1506
     ...perYear(1521, 1534, { r: { "Lombardy": "Ducado de Milão (Sforza)" }, f: { "Lombardy": "blank" }, o: { "Lombardy": null } }), /*fixo*/ // Francisco II Sforza morre em nov/1535; Milão passa a Carlos V
     ...perYear(1515, 1520, { r: { "Lombardy": "Ducado de Milão (sob a França)" }, f: { "Lombardy": "blank" }, o: { "Lombardy": "Reino da França" } }), /*fixo*/ // Marignano, set/1515; franceses expulsos em nov/1521
     ...perYear(1512, 1514, { r: { "Lombardy": "Ducado de Milão (Sforza)" }, f: { "Lombardy": "blank" }, o: { "Lombardy": null } }), /*fixo*/ // Maximiliano Sforza restaurado em dez/1512
-    ...perYear(1500, 1511, { r: { "Lombardy": "Ducado de Milão (sob a França)" }, f: { "Lombardy": "blank" }, o: { "Lombardy": "Reino da França" } }), /*fixo*/ // Luís XII conquista Milão em 1499–1500
+    ...perYear(1490, 1511, { r: { "Lombardy": "Ducado de Milão (sob a França)" }, f: { "Lombardy": "blank" }, o: { "Lombardy": "Reino da França" } }), /*fixo*/ // Luís XII conquista Milão em 1499–1500
     ...perYear(1515, 1520, { m: [null, null, ["Lombardy", "Duchy of Parma"]] }), /*fixo*/
-    ...perYear(1500, 1511, { m: [null, null, ["Lombardy", "Duchy of Parma"]] }), /*fixo*/
-    ...perYear(1500, 1522, { r: { "_null_159": "Rodes e Dodecaneso (Cavaleiros Hospitalários)" }, f: { "_null_159": "blank" }, o: { "_null_159": null } }), /*fixo*/
-    ...perYear(1500, 1516, { m: ["Sultanato Mameluco", "blank", ["Egypt", "Egyptian Syria", "Lebanon"]], o: { "Egypt": null } }), /*fixo*/ // Marj Dabiq (ago/1516); Cairo tomado em jan/1517
-    ...perYear(1500, 1516, { r: { "Hejaz": "Xerifado de Meca (vassalo mameluco)" }, f: { "Hejaz": "blank" }, o: { "Hejaz": null } }), /*fixo*/ // xerife submete-se aos otomanos em 1517
-    ...perYear(1500, 1520, { m: [null, null, ["Hungary", "Habsburg Serbia"]] }), /*fixo*/ // Belgrado tomada pelos otomanos em ago/1521
-    ...perYear(1500, 1525, { m: ["Reino da Boêmia (Jagelões)", "blank", ["Bohemia", "Silesia"]], o: { "Bohemia": null } }), /*fixo*/ // Luís II morre em Mohács (29/ago/1526); Fernando I eleito rei da Boêmia em out/1526
+    ...perYear(1490, 1511, { m: [null, null, ["Lombardy", "Duchy of Parma"]] }), /*fixo*/
+    ...perYear(1490, 1522, { r: { "_null_159": "Rodes e Dodecaneso (Cavaleiros Hospitalários)" }, f: { "_null_159": "blank" }, o: { "_null_159": null } }), /*fixo*/
+    ...perYear(1490, 1516, { m: ["Sultanato Mameluco", "blank", ["Egypt", "Egyptian Syria", "Lebanon"]], o: { "Egypt": null } }), /*fixo*/ // Marj Dabiq (ago/1516); Cairo tomado em jan/1517
+    ...perYear(1490, 1516, { r: { "Hejaz": "Xerifado de Meca (vassalo mameluco)" }, f: { "Hejaz": "blank" }, o: { "Hejaz": null } }), /*fixo*/ // xerife submete-se aos otomanos em 1517
+    ...perYear(1490, 1520, { m: [null, null, ["Hungary", "Habsburg Serbia"]] }), /*fixo*/ // Belgrado tomada pelos otomanos em ago/1521
+    ...perYear(1490, 1525, { m: ["Reino da Boêmia (Jagelões)", "blank", ["Bohemia", "Silesia"]], o: { "Bohemia": null } }), /*fixo*/ // Luís II morre em Mohács (29/ago/1526); Fernando I eleito rei da Boêmia em out/1526
     ...perYear(1511, 1527, { r: { "Malaya": "Sultanatos malaios (Malaca no exílio, Pahang e outros)" }, f: { "Malaya": "blank" }, o: { "Malaya": null } }), /*fixo*/ // Johor e Perak fundados por volta de 1528
-    ...perYear(1500, 1510, { m: ["Sultanato de Malaca", "blank", ["Malacca", "Malaya"]], o: { "Malacca": null } }), /*fixo*/
+    ...perYear(1490, 1510, { m: ["Sultanato de Malaca", "blank", ["Malacca", "Malaya"]], o: { "Malacca": null } }), /*fixo*/
     ...perYear(1527, 1532, { r: { "French Indochina": "Đại Việt (dinastia Mạc)" }, f: { "French Indochina": "blank" }, o: { "French Indochina": null } }), /*fixo*/ // Mạc Đăng Dung toma o trono em 1527; Lê restaurada no sul em 1533
-    ...perYear(1500, 1526, { r: { "French Indochina": "Đại Việt (dinastia Lê)" }, f: { "French Indochina": "blank" }, o: { "French Indochina": null } }), /*fixo*/
+    ...perYear(1490, 1526, { r: { "French Indochina": "Đại Việt (dinastia Lê)" }, f: { "French Indochina": "blank" }, o: { "French Indochina": null } }), /*fixo*/
     ...perYear(1520, 1533, { r: { "Kingdom of Württemberg": "Ducado de Württemberg (ocupação austríaca)" }, f: { "Kingdom of Württemberg": "blank" }, o: { "Kingdom of Württemberg": null } }), /*fixo*/ // Ulrich expulso em 1519; restaurado em mai/1534
     ...perYear(1519, 1519, { r: { "Kingdom of Württemberg": "Ducado de Württemberg (ocupação da Liga da Suábia)" }, f: { "Kingdom of Württemberg": "blank" }, o: { "Kingdom of Württemberg": null } }), /*fixo*/
-    ...perYear(1500, 1529, { r: { "Malta": "Malta (Reino da Sicília)" }, f: { "Malta": "blank" }, o: { "Malta": null } }), /*fixo*/ // cedida à Ordem de São João em 1530
-    ...perYear(1500, 1509, { r: { "Goa": "Goa (Sultanato de Bijapur)" }, f: { "Goa": "blank" }, o: { "Goa": null } }), /*fixo*/ // tomada por Albuquerque em nov/1510
-    ...perYear(1500, 1510, { r: { "Cuba": "Cuba (taínos)" }, f: { "Cuba": "blank" }, o: { "Cuba": null } }), /*fixo*/ // conquista de Velázquez a partir de 1511
-    ...perYear(1500, 1507, { r: { "Puerto Rico": "Porto Rico (taínos)" }, f: { "Puerto Rico": "blank" }, o: { "Puerto Rico": null } }), /*fixo*/ // Ponce de León em 1508
-    ...perYear(1500, 1502, { r: { "Zanzibar": "Zanzibar e Pemba (reinos suaílis)" }, f: { "Zanzibar": "blank" }, o: { "Zanzibar": null } }), /*fixo*/ // tributário de Portugal desde 1503
+    ...perYear(1490, 1529, { r: { "Malta": "Malta (Reino da Sicília)" }, f: { "Malta": "blank" }, o: { "Malta": null } }), /*fixo*/ // cedida à Ordem de São João em 1530
+    ...perYear(1490, 1509, { r: { "Goa": "Goa (Sultanato de Bijapur)" }, f: { "Goa": "blank" }, o: { "Goa": null } }), /*fixo*/ // tomada por Albuquerque em nov/1510
+    ...perYear(1490, 1510, { r: { "Cuba": "Cuba (taínos)" }, f: { "Cuba": "blank" }, o: { "Cuba": null } }), /*fixo*/ // conquista de Velázquez a partir de 1511
+    ...perYear(1490, 1507, { r: { "Puerto Rico": "Porto Rico (taínos)" }, f: { "Puerto Rico": "blank" }, o: { "Puerto Rico": null } }), /*fixo*/ // Ponce de León em 1508
+    ...perYear(1490, 1502, { r: { "Zanzibar": "Zanzibar e Pemba (reinos suaílis)" }, f: { "Zanzibar": "blank" }, o: { "Zanzibar": null } }), /*fixo*/ // tributário de Portugal desde 1503
     ...perYear(1507, 1509, { r: { "Herat": "Herat (Canato Xaibânida)" }, f: { "Herat": "blank" }, o: { "Herat": null } }), /*fixo*/ // safávidas tomam Herat em dez/1510
-    ...perYear(1500, 1506, { r: { "Herat": "Sultanato Timúrida de Herat" }, f: { "Herat": "blank" }, o: { "Herat": null } }), /*fixo*/
+    ...perYear(1490, 1506, { r: { "Herat": "Sultanato Timúrida de Herat" }, f: { "Herat": "blank" }, o: { "Herat": null } }), /*fixo*/
     ...perYear(1505, 1510, { r: { "Khiva": "Corásmia (Canato Xaibânida)" }, f: { "Khiva": "blank" }, o: { "Khiva": null } }), /*fixo*/ // canato de Khiva fundado em 1511
-    ...perYear(1500, 1504, { r: { "Khiva": "Corásmia (Sultanato Timúrida de Herat)" }, f: { "Khiva": "blank" }, o: { "Khiva": null } }), /*fixo*/
-    ...perYear(1500, 1513, { r: { "Xinjiang": "Mogulistão e oirates" }, f: { "Xinjiang": "blank" }, o: { "Xinjiang": null } }), /*fixo*/ // Canato de Yarkent fundado em 1514
-    ...perYear(1500, 1520, { r: { "Bahrain": "Bahrein (Sultanato Jabrida)" }, f: { "Bahrain": "blank" }, o: { "Bahrain": null } }), /*fixo*/ // tomado pelos portugueses em 1521
-    ...perYear(1500, 1506, { r: { "Oman": "Omã (nabânidas; costa do Reino de Ormuz)" }, f: { "Oman": "blank" }, o: { "Oman": null } }), /*fixo*/ // Mascate saqueada pelos portugueses em 1507
+    ...perYear(1490, 1504, { r: { "Khiva": "Corásmia (Sultanato Timúrida de Herat)" }, f: { "Khiva": "blank" }, o: { "Khiva": null } }), /*fixo*/
+    ...perYear(1490, 1513, { r: { "Xinjiang": "Mogulistão e oirates" }, f: { "Xinjiang": "blank" }, o: { "Xinjiang": null } }), /*fixo*/ // Canato de Yarkent fundado em 1514
+    ...perYear(1490, 1520, { r: { "Bahrain": "Bahrein (Sultanato Jabrida)" }, f: { "Bahrain": "blank" }, o: { "Bahrain": null } }), /*fixo*/ // tomado pelos portugueses em 1521
+    ...perYear(1490, 1506, { r: { "Oman": "Omã (nabânidas; costa do Reino de Ormuz)" }, f: { "Oman": "blank" }, o: { "Oman": null } }), /*fixo*/ // Mascate saqueada pelos portugueses em 1507
     ...perYear(1521, 1522, { r: { "Sweden–Norway": "Suécia (disputada; Guerra de Libertação Sueca)" }, f: { "Sweden–Norway": "blank" }, o: { "Sweden–Norway": null } }), /*fixo*/ // Gustavo Vasa eleito rei em jun/1523
     ...perYear(1520, 1520, { r: { "Sweden–Norway": "Suécia (União de Kalmar, sob Cristiano II)" }, f: { "Sweden–Norway": "blank" }, o: { "Sweden–Norway": null } }), /*fixo*/ // Banho de Sangue de Estocolmo, nov/1520
-    ...perYear(1500, 1519, { r: { "Sweden–Norway": "Suécia (União de Kalmar; regentes Sture)" }, f: { "Sweden–Norway": "blank" }, o: { "Sweden–Norway": null } }), /*fixo*/
-    ...perYear(1500, 1515, { r: { "Spain": "Espanha (Coroas de Castela e Aragão)" }, f: { "Spain": "blank" }, o: { "Spain": null } }), /*fixo*/ // Carlos I rei de ambas em 1516
-    ...perYear(1500, 1513, { m: [null, null, ["Lithuania GD", "Smolensk"]] }), /*fixo*/ // Smolensk tomada por Moscou em 1514
-    ...perYear(1500, 1502, { m: [null, null, ["Lithuania GD", "Chernihiv"]] }), /*fixo*/ // Chernihiv cedida a Moscou em 1503
-    ...perYear(1500, 1619, { r: { "Ashanti": "Estados akan" }, f: { "Ashanti": "blank" }, o: { "Ashanti": null } }), /*fixo*/ // Akwamu e Denkyira surgem por volta de 1600–1620
-    ...perYear(1500, 1624, { r: { "Waldeck": "Condado de Waldeck" }, f: { "Waldeck": "blank" }, o: { "Waldeck": null } }), /*fixo*/ // Pyrmont herdado em 1625
-    ...perYear(1500, 1622, { r: { "Kingdom of Bavaria": "Ducado da Baviera" }, f: { "Kingdom of Bavaria": "blank" }, o: { "Kingdom of Bavaria": null } }), /*fixo*/ // eleitorado em fev/1623
-    ...perYear(1500, 1566, { m: ["Landgraviato de Hesse", "blank", ["Electorate of Hesse", "Grand Duchy of Hesse"]], o: { "Electorate of Hesse": null } }), /*fixo*/ // Filipe I morre em 1567 e Hesse é partilhado
-    ...perYear(1500, 1546, { r: { "Russian Empire": "Grão-Principado de Moscou" }, f: { "Russian Empire": "blank" }, o: { "Russian Empire": null } }), /*fixo*/ // Ivã IV coroado czar em 16/jan/1547
-    ...perYear(1500, 1602, { r: { "Darfur": "Darfur (reino tunjur)" }, f: { "Darfur": "blank" }, o: { "Darfur": null } }), /*fixo*/ // sultanato dos Keira desde c. 1603
-    ...perYear(1500, 1615, { r: { "Bhutan": "Butão (senhores locais rivais)" }, f: { "Bhutan": "blank" }, o: { "Bhutan": null } }), /*fixo*/ // unificação pelo Zhabdrung a partir de 1616
-    ...perYear(1500, 1555, { r: { "Portuguese Timor": "Timor (reinos locais)" }, f: { "Portuguese Timor": "blank" }, o: { "Portuguese Timor": null } }), /*fixo*/ // missionários portugueses em Solor e Timor a partir de 1556
-    ...perYear(1500, 1591, { r: { "Trinidad": "Trinidad (povos indígenas; reivindicada pela Espanha)" }, f: { "Trinidad": "blank" }, o: { "Trinidad": null } }), /*fixo*/ // San José de Oruña fundada em 1592
-    ...perYear(1500, 1574, { r: { "Angola PT": "Angola (reinos do Congo e do Ndongo)" }, f: { "Angola PT": "blank" }, o: { "Angola PT": null } }), /*fixo*/ // Paulo Dias de Novais chega em 1575; Luanda fundada em 1576
-    ...perYear(1500, 1506, { r: { "Mozambique PT": "Moçambique (cidades suaílis e reinos locais)" }, f: { "Mozambique PT": "blank" }, o: { "Mozambique PT": null } }), /*fixo*/ // forte de Sofala em 1505; Ilha de Moçambique em 1507
-    ...perYear(1500, 1587, { r: { "Portuguese Guinea PT": "Guiné (reinos locais; comerciantes portugueses)" }, f: { "Portuguese Guinea PT": "blank" }, o: { "Portuguese Guinea PT": null } }), /*fixo*/ // Cacheu fundada em 1588
+    ...perYear(1490, 1519, { r: { "Sweden–Norway": "Suécia (União de Kalmar; regentes Sture)" }, f: { "Sweden–Norway": "blank" }, o: { "Sweden–Norway": null } }), /*fixo*/
+    ...perYear(1490, 1515, { r: { "Spain": "Espanha (Coroas de Castela e Aragão)" }, f: { "Spain": "blank" }, o: { "Spain": null } }), /*fixo*/ // Carlos I rei de ambas em 1516
+    ...perYear(1490, 1513, { m: [null, null, ["Lithuania GD", "Smolensk"]] }), /*fixo*/ // Smolensk tomada por Moscou em 1514
+    ...perYear(1490, 1502, { m: [null, null, ["Lithuania GD", "Chernihiv"]] }), /*fixo*/ // Chernihiv cedida a Moscou em 1503
+    ...perYear(1490, 1619, { r: { "Ashanti": "Estados akan" }, f: { "Ashanti": "blank" }, o: { "Ashanti": null } }), /*fixo*/ // Akwamu e Denkyira surgem por volta de 1600–1620
+    ...perYear(1490, 1624, { r: { "Waldeck": "Condado de Waldeck" }, f: { "Waldeck": "blank" }, o: { "Waldeck": null } }), /*fixo*/ // Pyrmont herdado em 1625
+    ...perYear(1490, 1622, { r: { "Kingdom of Bavaria": "Ducado da Baviera" }, f: { "Kingdom of Bavaria": "blank" }, o: { "Kingdom of Bavaria": null } }), /*fixo*/ // eleitorado em fev/1623
+    ...perYear(1490, 1566, { m: ["Landgraviato de Hesse", "blank", ["Electorate of Hesse", "Grand Duchy of Hesse"]], o: { "Electorate of Hesse": null } }), /*fixo*/ // Filipe I morre em 1567 e Hesse é partilhado
+    ...perYear(1490, 1546, { r: { "Russian Empire": "Grão-Principado de Moscou" }, f: { "Russian Empire": "blank" }, o: { "Russian Empire": null } }), /*fixo*/ // Ivã IV coroado czar em 16/jan/1547
+    ...perYear(1490, 1602, { r: { "Darfur": "Darfur (reino tunjur)" }, f: { "Darfur": "blank" }, o: { "Darfur": null } }), /*fixo*/ // sultanato dos Keira desde c. 1603
+    ...perYear(1490, 1615, { r: { "Bhutan": "Butão (senhores locais rivais)" }, f: { "Bhutan": "blank" }, o: { "Bhutan": null } }), /*fixo*/ // unificação pelo Zhabdrung a partir de 1616
+    ...perYear(1490, 1555, { r: { "Portuguese Timor": "Timor (reinos locais)" }, f: { "Portuguese Timor": "blank" }, o: { "Portuguese Timor": null } }), /*fixo*/ // missionários portugueses em Solor e Timor a partir de 1556
+    ...perYear(1490, 1591, { r: { "Trinidad": "Trinidad (povos indígenas; reivindicada pela Espanha)" }, f: { "Trinidad": "blank" }, o: { "Trinidad": null } }), /*fixo*/ // San José de Oruña fundada em 1592
+    ...perYear(1490, 1574, { r: { "Angola PT": "Angola (reinos do Congo e do Ndongo)" }, f: { "Angola PT": "blank" }, o: { "Angola PT": null } }), /*fixo*/ // Paulo Dias de Novais chega em 1575; Luanda fundada em 1576
+    ...perYear(1490, 1506, { r: { "Mozambique PT": "Moçambique (cidades suaílis e reinos locais)" }, f: { "Mozambique PT": "blank" }, o: { "Mozambique PT": null } }), /*fixo*/ // forte de Sofala em 1505; Ilha de Moçambique em 1507
+    ...perYear(1490, 1587, { r: { "Portuguese Guinea PT": "Guiné (reinos locais; comerciantes portugueses)" }, f: { "Portuguese Guinea PT": "blank" }, o: { "Portuguese Guinea PT": null } }), /*fixo*/ // Cacheu fundada em 1588
     ...perYear(1534, 1548, { m: ["Capitanias do Brasil (Portugal)", "blank", ["Kingdom of Brazil", "Rio Grande do Sul"]], o: { "Kingdom of Brazil": "Portugal" } }), /*fixo*/ // governo-geral criado em 1549
-    ...perYear(1500, 1533, { m: ["Terra de Santa Cruz (Portugal)", "blank", ["Kingdom of Brazil", "Rio Grande do Sul"]], o: { "Kingdom of Brazil": "Portugal" } }), /*fixo*/ // Cabral em abr/1500; capitanias em 1534
+    ...perYear(1490, 1533, { m: ["Terra de Santa Cruz (Portugal)", "blank", ["Kingdom of Brazil", "Rio Grande do Sul"]], o: { "Kingdom of Brazil": "Portugal" } }), /*fixo*/ // Cabral em abr/1500; capitanias em 1534
     ...perYear(1536, 1558, { m: ["Ducado de Saboia (em grande parte ocupado pela França)", "h:it_sav", ["Piedmont", "Savoy and Nice"]], o: { "Piedmont": null } }), /*fixo*/ // ocupação francesa de 1536 até a Paz de Cateau-Cambrésis (abr/1559)
     ...perYear(1557, 1568, { r: { "Tuscany": "Ducado de Florença" }, f: { "Tuscany": "blank" }, o: { "Tuscany": null } }), /*fixo*/ // Grão-Ducado em 27/ago/1569; Siena cedida em 1557
     ...perYear(1555, 1556, { r: { "Tuscany": "Ducado de Florença e Siena (Espanha)" }, f: { "Tuscany": "blank" }, o: { "Tuscany": null } }), /*fixo*/ // Siena cai em abr/1555
     ...perYear(1532, 1554, { r: { "Tuscany": "Ducado de Florença e República de Siena" }, f: { "Tuscany": "blank" }, o: { "Tuscany": null } }), /*fixo*/ // Alessandro de Médici duque em 1532
-    ...perYear(1500, 1531, { r: { "Tuscany": "Repúblicas de Florença e Siena" }, f: { "Tuscany": "blank" }, o: { "Tuscany": null } }), /*fixo*/
+    ...perYear(1490, 1531, { r: { "Tuscany": "Repúblicas de Florença e Siena" }, f: { "Tuscany": "blank" }, o: { "Tuscany": null } }), /*fixo*/
     ...perYear(1521, 1544, { m: [null, null, ["Papal States", "Duchy of Parma"]] }), /*fixo*/ // Ducado de Parma criado em 1545
     ...perYear(1512, 1514, { m: [null, null, ["Papal States", "Duchy of Parma"]] }), /*fixo*/ // Parma e Piacenza francesas de 1515 a 1521
-    ...perYear(1500, 1531, { r: { "SwPom": "Ducado da Pomerânia" }, f: { "SwPom": "blank" }, o: { "SwPom": null } }), /*fixo*/
-    ...perYear(1500, 1531, { m: ["Ducado da Pomerânia", "blank", ["SwPom", "SwPom South"]], o: { "SwPom": null } }), /*fixo*/ // partilha de 1532
-    ...perYear(1500, 1510, { r: { "Malacca": "Sultanato de Malaca" }, f: { "Malacca": "blank" }, o: { "Malacca": null } }), /*fixo*/ // tomada pelos portugueses em ago/1511
-    ...perYear(1500, 1508, { r: { "JM Jamaica": "Jamaica (taínos)" }, f: { "JM Jamaica": "blank" }, o: { "JM Jamaica": null } }), /*fixo*/ // Nueva Sevilla em 1509
-    ...perYear(1500, 1535, { r: { "Geneva": "Príncipe-Bispado de Genebra" }, f: { "Geneva": "blank" }, o: { "Geneva": null } }), /*fixo*/ // república protestante desde 1536
-    ...perYear(1500, 1531, { m: ["Império Inca", "blank", ["Peru", "Ecuador", "Bolivia"]], o: { "Peru": null } }), /*fixo*/ // guerra civil inca 1529–1532
+    ...perYear(1490, 1531, { r: { "SwPom": "Ducado da Pomerânia" }, f: { "SwPom": "blank" }, o: { "SwPom": null } }), /*fixo*/
+    ...perYear(1490, 1531, { m: ["Ducado da Pomerânia", "blank", ["SwPom", "SwPom South"]], o: { "SwPom": null } }), /*fixo*/ // partilha de 1532
+    ...perYear(1490, 1510, { r: { "Malacca": "Sultanato de Malaca" }, f: { "Malacca": "blank" }, o: { "Malacca": null } }), /*fixo*/ // tomada pelos portugueses em ago/1511
+    ...perYear(1490, 1508, { r: { "JM Jamaica": "Jamaica (taínos)" }, f: { "JM Jamaica": "blank" }, o: { "JM Jamaica": null } }), /*fixo*/ // Nueva Sevilla em 1509
+    ...perYear(1490, 1535, { r: { "Geneva": "Príncipe-Bispado de Genebra" }, f: { "Geneva": "blank" }, o: { "Geneva": null } }), /*fixo*/ // república protestante desde 1536
+    ...perYear(1490, 1531, { m: ["Império Inca", "blank", ["Peru", "Ecuador", "Bolivia"]], o: { "Peru": null } }), /*fixo*/ // guerra civil inca 1529–1532
     ...perYear(1532, 1532, { m: ["Império Inca (disputado; invasão espanhola)", "blank", ["Peru", "Ecuador", "Bolivia"]], o: { "Peru": null } }), /*fixo*/ // Atahualpa capturado em Cajamarca, 16/nov/1532
     ...perYear(1533, 1533, { r: { "Ecuador": "Quito (resistência inca de Rumiñahui)" }, f: { "Ecuador": "blank" }, o: { "Ecuador": null } }), /*fixo*/ // Quito tomada em 1534
-    ...perYear(1500, 1532, { r: { "Chile": "Chile (Inca ao norte; mapuches e outros povos)" }, f: { "Chile": "blank" }, o: { "Chile": null } }), /*fixo*/
+    ...perYear(1490, 1532, { r: { "Chile": "Chile (Inca ao norte; mapuches e outros povos)" }, f: { "Chile": "blank" }, o: { "Chile": null } }), /*fixo*/
     ...perYear(1533, 1535, { r: { "Chile": "Chile (povos indígenas)" }, f: { "Chile": "blank" }, o: { "Chile": null } }), /*fixo*/
     ...perYear(1525, 1537, { r: { "Colombia": "Colômbia (povos indígenas; Santa Marta espanhola desde 1525)" }, f: { "Colombia": "blank" }, o: { "Colombia": null } }), /*fixo*/
-    ...perYear(1500, 1524, { r: { "Colombia": "Colômbia (muíscas e outros povos indígenas)" }, f: { "Colombia": "blank" }, o: { "Colombia": null } }), /*fixo*/
+    ...perYear(1490, 1524, { r: { "Colombia": "Colômbia (muíscas e outros povos indígenas)" }, f: { "Colombia": "blank" }, o: { "Colombia": null } }), /*fixo*/
     ...perYear(1510, 1512, { r: { "Panama": "Castela do Ouro (Espanha)" }, f: { "Panama": "x:es" }, o: { "Panama": "Espanha" } }), /*fixo*/ // Santa María la Antigua del Darién, 1510
-    ...perYear(1500, 1509, { r: { "Panama": "Panamá (povos indígenas)" }, f: { "Panama": "blank" }, o: { "Panama": null } }), /*fixo*/
+    ...perYear(1490, 1509, { r: { "Panama": "Panamá (povos indígenas)" }, f: { "Panama": "blank" }, o: { "Panama": null } }), /*fixo*/
     ...perYear(1527, 1527, { r: { "Venezuela": "Província da Venezuela (Espanha)" }, f: { "Venezuela": "x:es" }, o: { "Venezuela": "Espanha" } }), /*fixo*/ // Coro fundada em 1527
-    ...perYear(1500, 1526, { r: { "Venezuela": "Venezuela (povos indígenas)" }, f: { "Venezuela": "blank" }, o: { "Venezuela": null } }), /*fixo*/
+    ...perYear(1490, 1526, { r: { "Venezuela": "Venezuela (povos indígenas)" }, f: { "Venezuela": "blank" }, o: { "Venezuela": null } }), /*fixo*/
     ...perYear(1533, 1541, { r: { "Peru": "Governação da Nova Castela (Espanha)" }, f: { "Peru": "x:es" }, o: { "Peru": "Espanha" } }), /*fixo*/ // Cuzco tomada em nov/1533; Vice-Reino criado em 20/nov/1542
     ...perYear(1534, 1541, { m: ["Governação da Nova Castela (Espanha)", "x:es", ["Peru", "Ecuador"]], o: { "Peru": "Espanha" } }), /*fixo*/ // Quito fundada em 1534, parte da governação de Pizarro
     ...perYear(1538, 1541, { r: { "Colombia": "Novo Reino de Granada (Espanha)" }, f: { "Colombia": "x:es" }, o: { "Colombia": "Espanha" } }), /*fixo*/ // Bogotá fundada em 1538
@@ -31665,29 +33285,29 @@ export const EVENTS = {
     ...perYear(1536, 1540, { r: { "Chile": "Chile (povos indígenas)" }, f: { "Chile": "blank" }, o: { "Chile": null } }), /*fixo*/ // Santiago fundada por Valdivia em 12/fev/1541
     ...perYear(1528, 1545, { r: { "Venezuela": "Província da Venezuela (concessão aos Welser, Espanha)" }, f: { "Venezuela": "x:es" }, o: { "Venezuela": "Espanha" } }), /*fixo*/ // Klein-Venedig 1528–1546
     ...perYear(1524, 1551, { r: { "Hasa": "Al-Hasa" }, f: { "Hasa": "blank" }, o: { "Hasa": null } }), /*fixo*/ // fim dos Jabridas em 1524; guarnições otomanas em mar/1552 (Wikipedia)
-    ...perYear(1500, 1523, { r: { "Hasa": "Sultanato Jabrida (al-Hasa)" }, f: { "Hasa": "blank" }, o: { "Hasa": null } }), /*fixo*/
-    ...perYear(1500, 1551, { m: [null, null, ["Hasa", "Kuwait"]] }), /*fixo*/
-    ...perYear(1500, 1546, { r: { "North Yemen": "Iêmen (imamato zaidita e outros governantes)" }, f: { "North Yemen": "blank" }, o: { "North Yemen": null } }), /*fixo*/
-    ...perYear(1500, 1558, { r: { "Nepal": "Reinos do Nepal (Malla e outros)" }, f: { "Nepal": "blank" }, o: { "Nepal": null } }), /*fixo*/ // Gorkha fundado em 1559
-    ...perYear(1500, 1557, { r: { "Lan Na": "Reino de Lan Na" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }), /*fixo*/ // rendido aos birmaneses em 2/abr/1558
-    ...perYear(1500, 1555, { r: { "Franche-Comte": "Franco-Condado (Habsburgo)" }, f: { "Franche-Comte": "blank" }, o: { "Franche-Comte": null } }), /*fixo*/
+    ...perYear(1490, 1523, { r: { "Hasa": "Sultanato Jabrida (al-Hasa)" }, f: { "Hasa": "blank" }, o: { "Hasa": null } }), /*fixo*/
+    ...perYear(1490, 1551, { m: [null, null, ["Hasa", "Kuwait"]] }), /*fixo*/
+    ...perYear(1490, 1546, { r: { "North Yemen": "Iêmen (imamato zaidita e outros governantes)" }, f: { "North Yemen": "blank" }, o: { "North Yemen": null } }), /*fixo*/
+    ...perYear(1490, 1558, { r: { "Nepal": "Reinos do Nepal (Malla e outros)" }, f: { "Nepal": "blank" }, o: { "Nepal": null } }), /*fixo*/ // Gorkha fundado em 1559
+    ...perYear(1490, 1557, { r: { "Lan Na": "Reino de Lan Na" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }), /*fixo*/ // rendido aos birmaneses em 2/abr/1558
+    ...perYear(1490, 1555, { r: { "Franche-Comte": "Franco-Condado (Habsburgo)" }, f: { "Franche-Comte": "blank" }, o: { "Franche-Comte": null } }), /*fixo*/
     ...perYear(1530, 1550, { r: { "Libya": "Trípoli (Cavaleiros de São João)" }, f: { "Libya": "blank" }, o: { "Libya": null } }), /*fixo*/ // entregue por Carlos V à Ordem em 1530; tomada pelos otomanos em ago/1551
     ...perYear(1510, 1529, { r: { "Libya": "Trípoli (Espanha)" }, f: { "Libya": "blank" }, o: { "Libya": "Espanha" } }), /*fixo*/ // conquistada por Pedro Navarro em jul/1510
-    ...perYear(1500, 1509, { r: { "Libya": "Tripolitânia (haféssidas)" }, f: { "Libya": "blank" }, o: { "Libya": null } }), /*fixo*/
+    ...perYear(1490, 1509, { r: { "Libya": "Tripolitânia (haféssidas)" }, f: { "Libya": "blank" }, o: { "Libya": null } }), /*fixo*/
     ...perYear(1525, 1548, { r: { "Morocco": "Marrocos (dividido entre os wattássidas de Fez e os saadianos de Marrakech)" }, f: { "Morocco": "blank" }, o: { "Morocco": null } }), /*fixo*/ // Fez tomada pelos saadianos em jan/1549
-    ...perYear(1500, 1524, { r: { "Morocco": "Sultanato Wattássida (Marrocos)" }, f: { "Morocco": "blank" }, o: { "Morocco": null } }), /*fixo*/ // saadianos em Marrakech desde 1524–1525
+    ...perYear(1490, 1524, { r: { "Morocco": "Sultanato Wattássida (Marrocos)" }, f: { "Morocco": "blank" }, o: { "Morocco": null } }), /*fixo*/ // saadianos em Marrakech desde 1524–1525
     ...perYear(1529, 1543, { r: { "Ethiopia": "Abissínia (disputada; invasão do Sultanato de Adal)" }, f: { "Ethiopia": "blank" }, o: { "Ethiopia": null } }), /*fixo*/ // Shimbra Kure (1529); Wayna Daga (fev/1543)
-    ...perYear(1500, 1541, { r: { "Ireland": "Senhorio da Irlanda (Inglaterra)" }, f: { "Ireland": "blank" }, o: { "Ireland": "Reino da Inglaterra" } }), /*fixo*/ // Reino da Irlanda proclamado em 1542
+    ...perYear(1490, 1541, { r: { "Ireland": "Senhorio da Irlanda (Inglaterra)" }, f: { "Ireland": "blank" }, o: { "Ireland": "Reino da Inglaterra" } }), /*fixo*/ // Reino da Irlanda proclamado em 1542
     ...perYear(1526, 1540, { m: [null, null, ["Hungary", "Upper Hungary", "Transylvania", "Banat"]] }), /*fixo*/ // Buda tomada pelos otomanos em ago/1541
     ...perYear(1526, 1540, { r: { "Hungary": "Reino da Hungria (disputado entre João Zápolya e Fernando I)" }, f: { "Hungary": "blank" }, o: { "Hungary": null } }), /*fixo*/ // Mohács, 29/ago/1526
-    ...perYear(1500, 1525, { m: [null, null, ["Hungary", "Upper Hungary", "Transylvania", "Banat"]] }), /*fixo*/
-    ...perYear(1500, 1525, { r: { "Hungary": "Reino da Hungria" }, f: { "Hungary": "blank" }, o: { "Hungary": null } }), /*fixo*/
+    ...perYear(1490, 1525, { m: [null, null, ["Hungary", "Upper Hungary", "Transylvania", "Banat"]] }), /*fixo*/
+    ...perYear(1490, 1525, { r: { "Hungary": "Reino da Hungria" }, f: { "Hungary": "blank" }, o: { "Hungary": null } }), /*fixo*/
     ...perYear(1541, 1551, { m: [null, null, ["Transylvania", "Banat"]] }), /*fixo*/ // Temesvár tomada pelos otomanos em 1552
     ...perYear(1501, 1537, { r: { "Azerbaijani khanates": "Shirvan (xirvanxás) e Karabakh (safávida)" }, f: { "Azerbaijani khanates": "blank" }, o: { "Azerbaijani khanates": null } }), /*fixo*/ // Shirvan anexado pelos safávidas em 1538
-    ...perYear(1500, 1500, { r: { "Azerbaijani khanates": "Shirvan (xirvanxás) e Karabakh (Aq Qoyunlu)" }, f: { "Azerbaijani khanates": "blank" }, o: { "Azerbaijani khanates": null } }), /*fixo*/
+    ...perYear(1490, 1500, { r: { "Azerbaijani khanates": "Shirvan (xirvanxás) e Karabakh (Aq Qoyunlu)" }, f: { "Azerbaijani khanates": "blank" }, o: { "Azerbaijani khanates": null } }), /*fixo*/
     ...perYear(1508, 1533, { m: [null, null, ["Persia", "IQ Baghdad"]] }), /*fixo*/ // Bagdá safávida de 1508 a 1534
-    ...perYear(1500, 1507, { r: { "IQ Baghdad": "Iraque (Aq Qoyunlu)" }, f: { "IQ Baghdad": "blank" }, o: { "IQ Baghdad": null } }), /*fixo*/
-    ...perYear(1500, 1500, { r: { "Persia": "Confederação Aq Qoyunlu" }, f: { "Persia": "blank" } }), /*fixo*/ // Ismail I tomou Tabriz em jul/1501
+    ...perYear(1490, 1507, { r: { "IQ Baghdad": "Iraque (Aq Qoyunlu)" }, f: { "IQ Baghdad": "blank" }, o: { "IQ Baghdad": null } }), /*fixo*/
+    ...perYear(1490, 1500, { r: { "Persia": "Confederação Aq Qoyunlu" }, f: { "Persia": "blank" } }), /*fixo*/ // Ismail I tomou Tabriz em jul/1501
     ...perYear(1555, 1557, { m: [null, null, ["British Raj", "Afghanistan"]] }), /*fixo*/ // Kandahar safávida de 1558 a 1595
     ...perYear(1540, 1554, { m: [null, null, ["Kabul", "Afghanistan"]] }), /*fixo*/
     ...perYear(1540, 1554, { r: { "Kabul": "Cabul e Kandahar (mogóis, sob Kamran e Humayun)" }, f: { "Kabul": "blank" }, o: { "Kabul": null } }), /*fixo*/ // Humayun derrotado em Kannauj, 17/mai/1540
@@ -31698,71 +33318,71 @@ export const EVENTS = {
     ...perYear(1522, 1525, { m: [null, null, ["Kabul", "Afghanistan"]] }), /*fixo*/ // Kandahar tomada por Babur em 1522
     ...perYear(1504, 1525, { r: { "Kabul": "Cabul (Babur)" }, f: { "Kabul": "blank" }, o: { "Kabul": null } }), /*fixo*/ // Babur tomou Cabul em 1504
     ...perYear(1501, 1503, { r: { "Kabul": "Cabul (dinastia Arghun)" }, f: { "Kabul": "blank" }, o: { "Kabul": null } }), /*fixo*/
-    ...perYear(1500, 1500, { r: { "Kabul": "Cabul (timúridas)" }, f: { "Kabul": "blank" }, o: { "Kabul": null } }), /*fixo*/
-    ...perYear(1500, 1521, { r: { "Afghanistan": "Kandahar (dinastia Arghun)" }, f: { "Afghanistan": "blank" }, o: { "Afghanistan": null } }), /*fixo*/
+    ...perYear(1490, 1500, { r: { "Kabul": "Cabul (timúridas)" }, f: { "Kabul": "blank" }, o: { "Kabul": null } }), /*fixo*/
+    ...perYear(1490, 1521, { r: { "Afghanistan": "Kandahar (dinastia Arghun)" }, f: { "Afghanistan": "blank" }, o: { "Afghanistan": null } }), /*fixo*/
     ...perYear(1540, 1554, { r: { "British Raj": "Império Suri" } }), /*fixo*/ // Sher Shah coroado em 17/mai/1540; Humayun venceu em Sirhind (22/jun/1555)
     ...perYear(1526, 1539, { r: { "British Raj": "Império Mogol" } }), /*fixo*/ // Panipat, 21/abr/1526
-    ...perYear(1500, 1525, { r: { "British Raj": "Sultanato de Délhi (dinastia Lodi)" } }), /*fixo*/
+    ...perYear(1490, 1525, { r: { "British Raj": "Sultanato de Délhi (dinastia Lodi)" } }), /*fixo*/
     ...perYear(1540, 1553, { m: [null, null, ["British Raj", "Bengal Subah"]] }), /*fixo*/
     ...perYear(1539, 1539, { r: { "Bengal Subah": "Bengala (Sher Shah Suri)" }, f: { "Bengal Subah": "blank" }, o: { "Bengal Subah": null } }), /*fixo*/ // Chausa, jun/1539
     ...perYear(1538, 1538, { r: { "Bengal Subah": "Bengala (disputada entre Sher Shah e Humayun)" }, f: { "Bengal Subah": "blank" }, o: { "Bengal Subah": null } }), /*fixo*/ // Gaur tomada por Sher Shah em abr/1538 e por Humayun em set/1538
     ...perYear(1554, 1563, { r: { "Bengal Subah": "Sultanato de Bengala (dinastia Muhammad Shahi)" }, f: { "Bengal Subah": "blank" }, o: { "Bengal Subah": null } }), /*fixo*/
-    ...perYear(1500, 1537, { r: { "Bengal Subah": "Sultanato de Bengala (dinastia Hussain Shahi)" }, f: { "Bengal Subah": "blank" }, o: { "Bengal Subah": null } }), /*fixo*/
+    ...perYear(1490, 1537, { r: { "Bengal Subah": "Sultanato de Bengala (dinastia Hussain Shahi)" }, f: { "Bengal Subah": "blank" }, o: { "Bengal Subah": null } }), /*fixo*/
     ...perYear(1542, 1554, { m: [null, null, ["British Raj", "IN Malwa"]] }), /*fixo*/ // campanha de Sher Shah em Malwa, 1542
-    ...perYear(1500, 1564, { r: { "Tibet": "Tibete (Rinpungpa)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), /*fixo*/ // Tsangpa desde 1565
+    ...perYear(1490, 1564, { r: { "Tibet": "Tibete (Rinpungpa)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), /*fixo*/ // Tsangpa desde 1565
     ...perYear(1555, 1561, { r: { "IN Malwa": "Sultanato de Malwa" }, f: { "IN Malwa": "blank" }, o: { "IN Malwa": null } }), /*fixo*/
-    ...perYear(1500, 1541, { r: { "IN Malwa": "Sultanato de Malwa" }, f: { "IN Malwa": "blank" }, o: { "IN Malwa": null } }), /*fixo*/ // conquistado por Akbar em 1561–1562
+    ...perYear(1490, 1541, { r: { "IN Malwa": "Sultanato de Malwa" }, f: { "IN Malwa": "blank" }, o: { "IN Malwa": null } }), /*fixo*/ // conquistado por Akbar em 1561–1562
     ...perYear(1561, 1582, { r: { "Swedish Baltic": "Estônia (disputada; Guerra da Livônia; Reval sueca desde 1561)" }, f: { "Swedish Baltic": "blank" }, o: { "Swedish Baltic": null } }), /*fixo*/ // Narva e Dorpat russas de 1558 a 1581–1582; Trégua de Plussa, 1583
-    ...perYear(1500, 1560, { m: [null, null, ["LV Livonia", "Swedish Baltic", "Courland", "Polish Livonia"]] }), /*fixo*/ // Confederação da Livônia dissolvida em 1561
+    ...perYear(1490, 1560, { m: [null, null, ["LV Livonia", "Swedish Baltic", "Courland", "Polish Livonia"]] }), /*fixo*/ // Confederação da Livônia dissolvida em 1561
     ...perYear(1572, 1578, { r: { "Netherlands": "Holanda e Zelândia (revolta contra a Espanha)" }, f: { "Netherlands": "blank" }, o: { "Netherlands": null } }), /*fixo*/ // Brielle tomada pelos Mendigos do Mar em 1/abr/1572
-    ...perYear(1500, 1571, { m: [null, null, ["Belgium", "Netherlands"]] }), /*fixo*/
+    ...perYear(1490, 1571, { m: [null, null, ["Belgium", "Netherlands"]] }), /*fixo*/
     ...perYear(1556, 1575, { r: { "Belgium": "Países Baixos Espanhóis" }, f: { "Belgium": "blank" }, o: { "Belgium": "Espanha" } }), /*fixo*/ // abdicação de Carlos V em 1555–1556
-    ...perYear(1500, 1555, { r: { "Belgium": "Países Baixos dos Habsburgo" }, f: { "Belgium": "blank" }, o: { "Belgium": null } }), /*fixo*/
+    ...perYear(1490, 1555, { r: { "Belgium": "Países Baixos dos Habsburgo" }, f: { "Belgium": "blank" }, o: { "Belgium": null } }), /*fixo*/
     ...perYear(1541, 1569, { r: { "Transylvania": "Reino da Hungria Oriental (vassalo otomano)" }, f: { "Transylvania": "blank" }, o: { "Transylvania": "Império Otomano" } }), /*fixo*/ // Tratado de Speyer (1570): João Sigismundo príncipe da Transilvânia
     ...perYear(1525, 1568, { o: { "East Prussia": "Reino da Polônia" } }), /*fixo*/
     ...perYear(1561, 1568, { o: { "Courland": "Grão-Ducado da Lituânia" } }), /*fixo*/ // Pacto de Vilnius, 1561
-    ...perYear(1500, 1567, { r: { "IN Rajputana": "Reinos rajputes (Mewar, Marwar, Amber e outros)" }, f: { "IN Rajputana": "blank" }, o: { "IN Rajputana": null } }), /*fixo*/
+    ...perYear(1490, 1567, { r: { "IN Rajputana": "Reinos rajputes (Mewar, Marwar, Amber e outros)" }, f: { "IN Rajputana": "blank" }, o: { "IN Rajputana": null } }), /*fixo*/
     ...perYear(1568, 1614, { r: { "IN Rajputana": "Reinos rajputes (disputados; Mewar resiste aos mogóis)" }, f: { "IN Rajputana": "blank" }, o: { "IN Rajputana": null } }), /*fixo*/ // Chittorgarh tomada em 1567–1568; Amar Singh I rendeu-se em 1615
     { y: 1615, /*fixo*/ m: [null, null, ["British Raj", "IN Rajputana"]] },
-    ...perYear(1500, 1564, { m: ["Império de Vijayanagara", "blank", ["Carnatic", "Mysore"]], o: { "Carnatic": null } }), /*fixo*/ // batalha de Talikota, 1565
-    ...perYear(1500, 1564, { r: { "Philippines": "Filipinas (reinos e sultanatos locais)" }, f: { "Philippines": "blank" }, o: { "Philippines": null } }), /*fixo*/ // Legazpi em Cebu em 1565; Manila em 1571
+    ...perYear(1490, 1564, { m: ["Império de Vijayanagara", "blank", ["Carnatic", "Mysore"]], o: { "Carnatic": null } }), /*fixo*/ // batalha de Talikota, 1565
+    ...perYear(1490, 1564, { r: { "Philippines": "Filipinas (reinos e sultanatos locais)" }, f: { "Philippines": "blank" }, o: { "Philippines": null } }), /*fixo*/ // Legazpi em Cebu em 1565; Manila em 1571
     ...perYear(1564, 1564, { r: { "Florida": "Flórida (Forte Caroline, colônia francesa)" }, f: { "Florida": "blank" }, o: { "Florida": null } }), /*fixo*/ // Fort Caroline destruído por Menéndez em set/1565; Santo Agostinho fundada em 1565
-    ...perYear(1500, 1563, { r: { "Florida": null } }), /*fixo*/
-    ...perYear(1500, 1556, { m: [null, null, ["Manchu Empire", "Macau"]] }), /*fixo*/ // portugueses em Macau desde 1557
+    ...perYear(1490, 1563, { r: { "Florida": null } }), /*fixo*/
+    ...perYear(1490, 1556, { m: [null, null, ["Manchu Empire", "Macau"]] }), /*fixo*/ // portugueses em Macau desde 1557
     ...perYear(1570, 1570, { r: { "Cyprus": "Chipre (disputado; invasão otomana)" }, f: { "Cyprus": "blank" }, o: { "Cyprus": null } }), /*fixo*/ // Nicósia caiu em 9/set/1570; Famagusta resistiu até ago/1571
-    ...perYear(1500, 1569, { r: { "Cyprus": "Reino de Chipre (Veneza)" }, f: { "Cyprus": "blank" }, o: { "Cyprus": "República de Veneza" } }), /*fixo*/ // veneziano desde 1489
+    ...perYear(1490, 1569, { r: { "Cyprus": "Reino de Chipre (Veneza)" }, f: { "Cyprus": "blank" }, o: { "Cyprus": "República de Veneza" } }), /*fixo*/ // veneziano desde 1489
     ...perYear(1574, 1575, { r: { "Bengal Subah": "Bengala (disputada; conquista mogol do sultanato Karrani)" }, f: { "Bengal Subah": "blank" }, o: { "Bengal Subah": null } }), /*fixo*/ // Tanda tomada em 25/set/1574; Daud Khan morto após Rajmahal, 12/jul/1576
     ...perYear(1574, 1575, { r: { "Orissa": "Orissa (sultanato Karrani)" }, f: { "Orissa": "blank" }, o: { "Orissa": null } }), /*fixo*/
     ...perYear(1564, 1573, { r: { "Bengal Subah": "Sultanato de Bengala (dinastia Karrani)" }, f: { "Bengal Subah": "blank" }, o: { "Bengal Subah": null } }), /*fixo*/ // Orissa anexada em 1568
-    ...perYear(1500, 1567, { r: { "Orissa": "Reino de Orissa (Gajapati)" }, f: { "Orissa": "blank" }, o: { "Orissa": null } }), /*fixo*/
-    ...perYear(1500, 1585, { r: { "Kashmir": "Sultanato da Caxemira" }, f: { "Kashmir": "blank" }, o: { "Kashmir": null } }), /*fixo*/ // anexado pelos mogóis em 1586 (Yusuf Shah Chak levado a Akbar em abr/1586)
+    ...perYear(1490, 1567, { r: { "Orissa": "Reino de Orissa (Gajapati)" }, f: { "Orissa": "blank" }, o: { "Orissa": null } }), /*fixo*/
+    ...perYear(1490, 1585, { r: { "Kashmir": "Sultanato da Caxemira" }, f: { "Kashmir": "blank" }, o: { "Kashmir": null } }), /*fixo*/ // anexado pelos mogóis em 1586 (Yusuf Shah Chak levado a Akbar em abr/1586)
     ...perYear(1576, 1591, { r: { "Orissa": "Orissa (chefes afegãos)" }, f: { "Orissa": "blank" }, o: { "Orissa": null } }), /*fixo*/ // Qutlu Khan Lohani e Nasir Khan; conquista mogol concluída em 1592
     ...perYear(1574, 1612, { r: { "Tunisia": "Túnis (eialete otomano)" }, f: { "Tunisia": "blank" }, o: { "Tunisia": "Império Otomano" } }), /*fixo*/ // La Goleta e Túnis tomadas em ago–set/1574; beis muraditas desde 1613
     ...perYear(1573, 1573, { r: { "Tunisia": "Reino Haféssida de Túnis (vassalo da Espanha)" }, f: { "Tunisia": "blank" }, o: { "Tunisia": null } }), /*fixo*/ // Dom João da Áustria retomou Túnis em out/1573
     ...perYear(1569, 1572, { r: { "Tunisia": "Túnis (ocupação otomana)" }, f: { "Tunisia": "blank" }, o: { "Tunisia": null } }), /*fixo*/ // tomada por Uluj Ali em 1569
     ...perYear(1535, 1568, { r: { "Tunisia": "Reino Haféssida de Túnis (vassalo da Espanha)" }, f: { "Tunisia": "blank" }, o: { "Tunisia": null } }), /*fixo*/ // Carlos V restaurou Hasan em 1535
-    ...perYear(1500, 1533, { r: { "Tunisia": "Reino Haféssida de Túnis" }, f: { "Tunisia": "blank" }, o: { "Tunisia": null } }), /*fixo*/
+    ...perYear(1490, 1533, { r: { "Tunisia": "Reino Haféssida de Túnis" }, f: { "Tunisia": "blank" }, o: { "Tunisia": null } }), /*fixo*/
     ...perYear(1534, 1534, { r: { "Tunisia": "Túnis (ocupação otomana)" }, f: { "Tunisia": "blank" }, o: { "Tunisia": null } }), /*fixo*/ // Barba-Ruiva tomou Túnis em ago/1534
-    ...perYear(1500, 1572, { r: { "IN Gujarat": "Sultanato de Guzerate" }, f: { "IN Gujarat": "blank" }, o: { "IN Gujarat": null } }), /*fixo*/ // conquista mogol concluída em 1573
+    ...perYear(1490, 1572, { r: { "IN Gujarat": "Sultanato de Guzerate" }, f: { "IN Gujarat": "blank" }, o: { "IN Gujarat": null } }), /*fixo*/ // conquista mogol concluída em 1573
     { y: 1573, /*fixo*/ m: [null, null, ["British Raj", "IN Gujarat"]] },
-    ...perYear(1500, 1551, { r: { "RU Kazan": "Canato de Cazã" }, f: { "RU Kazan": "blank" }, o: { "RU Kazan": null } }), /*fixo*/
+    ...perYear(1490, 1551, { r: { "RU Kazan": "Canato de Cazã" }, f: { "RU Kazan": "blank" }, o: { "RU Kazan": null } }), /*fixo*/
     { y: 1552, /*fixo*/ m: [null, null, ["Russian Empire", "RU Kazan"]] }, // Cazã tomada por Ivã IV em out/1552
-    ...perYear(1500, 1555, { r: { "RU Astrakhan": "Canato de Astracã" }, f: { "RU Astrakhan": "blank" }, o: { "RU Astrakhan": null } }), /*fixo*/
+    ...perYear(1490, 1555, { r: { "RU Astrakhan": "Canato de Astracã" }, f: { "RU Astrakhan": "blank" }, o: { "RU Astrakhan": null } }), /*fixo*/
     { y: 1556, /*fixo*/ m: [null, null, ["Russian Empire", "RU Astrakhan"]] }, // anexado em 1556
-    ...perYear(1500, 1556, { r: { "RU Bashkiria": "Bashkíria (tribos bashkires)" }, f: { "RU Bashkiria": "blank" }, o: { "RU Bashkiria": null } }), /*fixo*/
+    ...perYear(1490, 1556, { r: { "RU Bashkiria": "Bashkíria (tribos bashkires)" }, f: { "RU Bashkiria": "blank" }, o: { "RU Bashkiria": null } }), /*fixo*/
     { y: 1557, /*fixo*/ m: [null, null, ["Russian Empire", "RU Bashkiria"]] }, // bashkires aceitam a suserania russa (1554–1557)
-    ...perYear(1500, 1556, { r: { "RU Nogai": "Horda Nogai" }, f: { "RU Nogai": "blank" }, o: { "RU Nogai": null } }), /*fixo*/
+    ...perYear(1490, 1556, { r: { "RU Nogai": "Horda Nogai" }, f: { "RU Nogai": "blank" }, o: { "RU Nogai": null } }), /*fixo*/
     { y: 1557, /*fixo*/ m: [null, null, ["Russian Empire", "RU Nogai"]] }, // Grande Horda Nogai vassala de Moscou desde 1557
     ...perYear(1568, 1589, { r: { "Imperial Japan": "Japão (unificação por Oda Nobunaga e Toyotomi Hideyoshi)" } }), /*fixo*/ // Nobunaga em Quioto em 1568; cerco de Odawara em 1590
-    ...perYear(1500, 1567, { r: { "Imperial Japan": "Japão (período Sengoku)" } }), /*fixo*/
+    ...perYear(1490, 1567, { r: { "Imperial Japan": "Japão (período Sengoku)" } }), /*fixo*/
     ...perYear(1510, 1587, { m: [null, null, ["Persia", "Herat"]] }), /*fixo*/ // Herat safávida desde 1510; tomada pelos uzbeques em 1588
-    ...perYear(1500, 1586, { r: { "ID Java": "Java (reinos e sultanatos locais)" }, f: { "ID Java": "blank" }, o: { "ID Java": null } }), /*fixo*/
+    ...perYear(1490, 1586, { r: { "ID Java": "Java (reinos e sultanatos locais)" }, f: { "ID Java": "blank" }, o: { "ID Java": null } }), /*fixo*/
     ...perYear(1582, 1582, { m: [null, null, ["Congress Poland", "LV Livonia"]] }), /*fixo*/ // Trégua de Jam Zapolski, jan/1582
     ...perYear(1558, 1581, { r: { "LV Livonia": "Livônia (disputada; Guerra da Livônia)" }, f: { "LV Livonia": "blank" }, o: { "LV Livonia": null } }), /*fixo*/ // invasão russa em 1558; Confederação dissolvida em 1561
-    ...perYear(1500, 1557, { r: { "LV Livonia": "Confederação da Livônia" }, f: { "LV Livonia": "blank" }, o: { "LV Livonia": null } }), /*fixo*/
+    ...perYear(1490, 1557, { r: { "LV Livonia": "Confederação da Livônia" }, f: { "LV Livonia": "blank" }, o: { "LV Livonia": null } }), /*fixo*/
     ...perYear(1502, 1582, { r: { "Newfoundland": "Terra Nova (pesqueiros sazonais europeus)" }, f: { "Newfoundland": "blank" }, o: { "Newfoundland": null } }), /*fixo*/ // posse tomada por Humphrey Gilbert em 1583
-    ...perYear(1500, 1580, { m: [null, null, ["Russian Empire", "RU Ingria"]] }), /*fixo*/ // Ivangorod e Koporye tomadas pelos suecos em 1581
-    ...perYear(1500, 1579, { r: { "Portugal": "Reino de Portugal" } }), /*fixo*/ // anexado por Filipe II após Alcântara (ago/1580)
+    ...perYear(1490, 1580, { m: [null, null, ["Russian Empire", "RU Ingria"]] }), /*fixo*/ // Ivangorod e Koporye tomadas pelos suecos em 1581
+    ...perYear(1490, 1579, { r: { "Portugal": "Reino de Portugal" } }), /*fixo*/ // anexado por Filipe II após Alcântara (ago/1580)
     ...perYear(1581, 1587, { r: { "Netherlands": "Províncias Unidas (revolta contra a Espanha)" }, f: { "Netherlands": "blank" }, o: { "Netherlands": null } }), /*fixo*/ // Ato de Abjuração em 26/jul/1581; república desde 1588
     ...perYear(1579, 1580, { r: { "Netherlands": "União de Utrecht (revolta contra a Espanha)" }, f: { "Netherlands": "blank" }, o: { "Netherlands": null } }), /*fixo*/ // União de Utrecht, 23/jan/1579
     ...perYear(1576, 1584, { r: { "Belgium": "Países Baixos Espanhóis (disputados; revolta holandesa)" }, f: { "Belgium": "blank" }, o: { "Belgium": null } }), /*fixo*/ // Antuérpia retomada por Farnese em ago/1585
@@ -31773,37 +33393,37 @@ export const EVENTS = {
     ...perYear(1501, 1577, { m: [null, null, ["Persia", "Erivan"]] }), /*fixo*/
     ...perYear(1578, 1589, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (disputados; guerra otomano-safávida)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": null } }), /*fixo*/ // Tiflis tomada pelos otomanos em ago/1578
     ...perYear(1555, 1577, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos da Pérsia)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Pérsia" } }), /*fixo*/ // Paz de Amásia, 1555
-    ...perYear(1500, 1581, { r: { "RU Sibir": "Canato de Sibir" }, f: { "RU Sibir": "blank" }, o: { "RU Sibir": null } }), /*fixo*/
+    ...perYear(1490, 1581, { r: { "RU Sibir": "Canato de Sibir" }, f: { "RU Sibir": "blank" }, o: { "RU Sibir": null } }), /*fixo*/
     ...perYear(1582, 1597, { r: { "RU Sibir": "Canato de Sibir (disputado; conquista russa)" }, f: { "RU Sibir": "blank" }, o: { "RU Sibir": null } }), /*fixo*/ // Qashliq tomada por Yermak em 26/out/1582; Tyumen (1586), Tobolsk (1587)
     { y: 1598, /*fixo*/ m: [null, null, ["Russian Empire", "RU Sibir"]] }, // Kuchum derrotado em ago/1598
-    ...perYear(1500, 1603, { r: { "RU Tomsk": null } }), /*fixo*/ // Tomsk fundada em 1604
+    ...perYear(1490, 1603, { r: { "RU Tomsk": null } }), /*fixo*/ // Tomsk fundada em 1604
     { y: 1604, /*fixo*/ m: [null, null, ["Russian Empire", "RU Tomsk"]] },
-    ...perYear(1500, 1618, { r: { "RU Yenisei": null } }), /*fixo*/ // Yeniseysk em 1619; Krasnoyarsk em 1628
+    ...perYear(1490, 1618, { r: { "RU Yenisei": null } }), /*fixo*/ // Yeniseysk em 1619; Krasnoyarsk em 1628
     { y: 1619, /*fixo*/ m: [null, null, ["Russian Empire", "RU Yenisei"]] },
-    ...perYear(1500, 1629, { r: { "RU Irkutsk": null } }), /*fixo*/ // Ilimsk em 1630; Bratsk em 1631
+    ...perYear(1490, 1629, { r: { "RU Irkutsk": null } }), /*fixo*/ // Ilimsk em 1630; Bratsk em 1631
     { y: 1630, /*fixo*/ m: [null, null, ["Russian Empire", "RU Irkutsk"]] },
-    ...perYear(1500, 1631, { r: { "RU Yakutia": null } }), /*fixo*/ // Yakutsk fundada por Beketov em 1632
+    ...perYear(1490, 1631, { r: { "RU Yakutia": null } }), /*fixo*/ // Yakutsk fundada por Beketov em 1632
     { y: 1632, /*fixo*/ m: [null, null, ["Russian Empire", "RU Yakutia"]] },
-    ...perYear(1500, 1646, { r: { "RU Okhotsk": null } }), /*fixo*/ // Okhotsk fundada por Moskvitin em 1647
+    ...perYear(1490, 1646, { r: { "RU Okhotsk": null } }), /*fixo*/ // Okhotsk fundada por Moskvitin em 1647
     { y: 1647, /*fixo*/ m: [null, null, ["Russian Empire", "RU Okhotsk"]] },
     ...perYear(1594, 1596, { r: { "Ceylon": "Reino de Kotte (Dharmapala, sob proteção portuguesa)" }, f: { "Ceylon": "blank" }, o: { "Ceylon": null } }), /*fixo*/ // Sitawaka saqueada em 1594; Kotte cedido a Portugal com a morte de Dharmapala, 27/mai/1597
     ...perYear(1565, 1593, { r: { "Ceylon": "Ceilão (disputado; Sitawaka contra Kotte e os portugueses)" }, f: { "Ceylon": "blank" }, o: { "Ceylon": null } }), /*fixo*/ // Kotte abandonada em 1565; Dharmapala em Colombo
     ...perYear(1538, 1564, { r: { "Ceylon": "Reinos de Kotte (aliado dos portugueses) e Sitawaka" }, f: { "Ceylon": "blank" }, o: { "Ceylon": null } }), /*fixo*/ // Raigama anexada por Sitawaka em 1538
     ...perYear(1521, 1537, { r: { "Ceylon": "Reinos de Kotte, Sitawaka e Raigama" }, f: { "Ceylon": "blank" }, o: { "Ceylon": null } }), /*fixo*/ // partilha de Vijayabahu, 1521
-    ...perYear(1500, 1520, { r: { "Ceylon": "Reino de Kotte" }, f: { "Ceylon": "blank" }, o: { "Ceylon": null } }), /*fixo*/
+    ...perYear(1490, 1520, { r: { "Ceylon": "Reino de Kotte" }, f: { "Ceylon": "blank" }, o: { "Ceylon": null } }), /*fixo*/
     ...perYear(1554, 1590, { r: { "Sind": "Sind (dinastia Tarkhan)" }, f: { "Sind": "blank" }, o: { "Sind": null } }), /*fixo*/ // Baixo Sind conquistado pelos mogóis em 1591
     ...perYear(1520, 1553, { r: { "Sind": "Sind (dinastia Arghun)" }, f: { "Sind": "blank" }, o: { "Sind": null } }), /*fixo*/ // Thatta saqueada por Shah Beg em 1520
-    ...perYear(1500, 1519, { r: { "Sind": "Sind (dinastia Samma)" }, f: { "Sind": "blank" }, o: { "Sind": null } }), /*fixo*/
+    ...perYear(1490, 1519, { r: { "Sind": "Sind (dinastia Samma)" }, f: { "Sind": "blank" }, o: { "Sind": null } }), /*fixo*/
     ...perYear(1575, 1595, { r: { "Maratha": "Decão ocidental (dividido entre Ahmadnagar e Bijapur)" }, f: { "Maratha": "blank" }, o: { "Maratha": null } }), /*fixo*/ // Berar anexado por Ahmadnagar em 1574; cedido aos mogóis em 1596
     ...perYear(1518, 1574, { r: { "Maratha": "Decão ocidental (dividido entre Ahmadnagar, Bijapur e Berar)" }, f: { "Maratha": "blank" }, o: { "Maratha": null } }), /*fixo*/
-    ...perYear(1500, 1517, { r: { "Maratha": "Decão ocidental (sultanato bahmani em desintegração)" }, f: { "Maratha": "blank" }, o: { "Maratha": null } }), /*fixo*/
+    ...perYear(1490, 1517, { r: { "Maratha": "Decão ocidental (sultanato bahmani em desintegração)" }, f: { "Maratha": "blank" }, o: { "Maratha": null } }), /*fixo*/
     ...perYear(1571, 1596, { r: { "North Yemen": "Iêmen (eialete otomano)" }, f: { "North Yemen": "blank" }, o: { "North Yemen": "Império Otomano" } }), /*fixo*/ // revolta de al-Qasim em 1597
     ...perYear(1567, 1570, { r: { "North Yemen": "Iêmen (disputado; revolta zaidita de al-Mutahhar)" }, f: { "North Yemen": "blank" }, o: { "North Yemen": null } }), /*fixo*/
     ...perYear(1547, 1566, { r: { "North Yemen": "Iêmen (eialete otomano)" }, f: { "North Yemen": "blank" }, o: { "North Yemen": "Império Otomano" } }), /*fixo*/
     ...perYear(1581, 1589, { r: { "RU Ingria": "Íngria (ocupação sueca)" }, f: { "RU Ingria": "blank" }, o: { "RU Ingria": null } }), /*fixo*/ // Ivangorod, Yam e Koporye suecas de 1581 até a guerra de 1590
     ...perYear(1544, 1599, { r: { "Canada": null } }), /*fixo*/ // Charlesbourg-Royal abandonado em 1543; posto de Tadoussac em 1600
     ...perYear(1541, 1543, { r: { "Canada": "Nova França (Charlesbourg-Royal)" }, f: { "Canada": "h:fr_bourbon" }, o: { "Canada": "França" } }), /*fixo*/ // Cartier e Roberval, 1541–1543
-    ...perYear(1500, 1540, { r: { "Canada": null } }), /*fixo*/
+    ...perYear(1490, 1540, { r: { "Canada": null } }), /*fixo*/
     ...perYear(1558, 1595, { r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }), /*fixo*/ // Mae Ku rendeu-se em 2/abr/1558; independência em 1596
     ...perYear(1592, 1597, { r: { "Korea": "Reino de Joseon (disputado; invasão japonesa)" }, f: { "Korea": "blank" }, o: { "Korea": null } }), /*fixo*/ // Guerra Imjin, 23/mai/1592 – 16/dez/1598
     ...perYear(1533, 1591, { r: { "French Indochina": "Đại Việt (disputado; dinastia Mạc no norte e Lê restaurada no sul)" }, f: { "French Indochina": "blank" }, o: { "French Indochina": null } }), /*fixo*/ // Thăng Long retomada pelos Lê/Trịnh em 1592
@@ -31811,8 +33431,8 @@ export const EVENTS = {
     ...perYear(1599, 1599, { r: { "Transylvania": "Principado da Transilvânia (Miguel, o Valente, governador imperial)" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), /*fixo*/ // batalha de Sellenberk, 28/out/1599
     ...perYear(1595, 1598, { r: { "Transylvania": "Principado da Transilvânia (aliado dos Habsburgo)" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), /*fixo*/ // Segismundo Báthory na Liga Santa desde 1595
     ...perYear(1570, 1594, { r: { "Transylvania": "Principado da Transilvânia (vassalo otomano)" }, f: { "Transylvania": "blank" }, o: { "Transylvania": "Império Otomano" } }), /*fixo*/
-    ...perYear(1500, 1597, { r: { "Duchy of Modena": "Ducado de Ferrara, Módena e Reggio (Este)" } }), /*fixo*/ // Ferrara devolvida aos Estados Papais em 1598
-    ...perYear(1500, 1629, { r: { "Mosquito Coast": "Costa dos Mosquitos (misquitos)" }, f: { "Mosquito Coast": "blank" }, o: { "Mosquito Coast": null } }), /*fixo*/ // entidade de organização incerta no início do séc. XVII; contato inglês desde c. 1630
+    ...perYear(1490, 1597, { r: { "Duchy of Modena": "Ducado de Ferrara, Módena e Reggio (Este)" } }), /*fixo*/ // Ferrara devolvida aos Estados Papais em 1598
+    ...perYear(1490, 1629, { r: { "Mosquito Coast": "Costa dos Mosquitos (misquitos)" }, f: { "Mosquito Coast": "blank" }, o: { "Mosquito Coast": null } }), /*fixo*/ // entidade de organização incerta no início do séc. XVII; contato inglês desde c. 1630
     ...perYear(1521, 1601, { r: { "Bahrain": "Bahrein (Reino de Ormuz, vassalo de Portugal)" }, f: { "Bahrain": "blank" }, o: { "Bahrain": null } }), /*fixo*/ // domínio português de 1521 a 1602
     ...perYear(1600, 1604, { r: { "Transylvania": "Principado da Transilvânia (disputado; controlado pelos Habsburgo)" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), /*fixo*/ // Miguel, o Valente (1599–1600) e Giorgio Basta em nome de Rodolfo II (1600–1604)
     ...perYear(1605, 1605, { r: { "Transylvania": "Principado da Transilvânia (revolta de Bocskai)" }, f: { "Transylvania": "blank" }, o: { "Transylvania": null } }), /*fixo*/ // Bocskai eleito príncipe em 21/fev/1605
@@ -31823,9 +33443,9 @@ export const EVENTS = {
     ...perYear(1603, 1603, { r: { "Erivan": "Erivã (disputada; cerco persa)" }, f: { "Erivan": "blank" }, o: { "Erivan": null } }), /*fixo*/ // cerco desde 15/nov/1603; tomada em jun/1604
     ...perYear(1604, 1605, { m: [null, null, ["Ottoman Empire", "Azerbaijani khanates"]] }), /*fixo*/ // Shirvan reconquistado pelos safávidas em jun/1606
     ...perYear(1590, 1602, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti (vassalos otomanos)" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": "Império Otomano" } }), /*fixo*/ // Tbilisi tomada pelos safávidas em 1603
-    ...perYear(1500, 1606, { r: { "United States of America": null } }), /*fixo*/ // Jamestown fundada em mai/1607
+    ...perYear(1490, 1606, { r: { "United States of America": null } }), /*fixo*/ // Jamestown fundada em mai/1607
     ...perYear(1583, 1609, { r: { "Newfoundland": "Terra Nova (pesqueiros sazonais; reivindicada pela Inglaterra)" }, f: { "Newfoundland": "blank" }, o: { "Newfoundland": null } }), /*fixo*/ // colônia de Cuper's Cove em 1610
-    ...perYear(1500, 1603, { r: { "Nova Scotia": null, "Cape Breton": null } }), /*fixo*/ // ilha de Sainte-Croix em 1604; Port-Royal em 1605
+    ...perYear(1490, 1603, { r: { "Nova Scotia": null, "Cape Breton": null } }), /*fixo*/ // ilha de Sainte-Croix em 1604; Port-Royal em 1605
     ...perYear(1607, 1609, { r: { "Nova Scotia": "Acádia (micmacs; reivindicada pela França)" }, f: { "Nova Scotia": "blank" }, o: { "Nova Scotia": null } }), /*fixo*/ // Port-Royal abandonada no verão de 1607; restabelecida em 1610
     ...perYear(1600, 1607, { r: { "Canada": "Nova França (posto de Tadoussac)" } }), /*fixo*/ // Quebec fundada em jul/1608
     ...perYear(1610, 1611, { r: { "Russian Empire": "Czarado da Rússia (Tempo das Dificuldades; Moscou ocupada pela Polônia-Lituânia)" } }), /*fixo*/ // guarnição polonesa no Kremlin de set/1610 a nov/1612
@@ -31833,23 +33453,23 @@ export const EVENTS = {
     ...perYear(1620, 1669, { r: { "Ashanti": "Estados akan (Denkyira, Akwamu e outros)" }, f: { "Ashanti": "blank" }, o: { "Ashanti": null } }), /*fixo*/ // Kumasi e a união axanti só a partir de c. 1670
     ...perYear(1569, 1617, { r: { "Germany": "Eleitorado de Brandemburgo", "East Prussia": "Ducado da Prússia (feudo polonês)" }, f: { "Germany": "blank", "East Prussia": "blank" }, o: { "Germany": null, "East Prussia": "República das Duas Nações" } }), /*fixo*/
     ...perYear(1525, 1568, { r: { "Germany": "Eleitorado de Brandemburgo", "East Prussia": "Ducado da Prússia (feudo polonês)" }, f: { "Germany": "blank", "East Prussia": "blank" }, o: { "Germany": null, "East Prussia": "Reino da Polônia" } }), /*fixo*/
-    ...perYear(1500, 1524, { r: { "Germany": "Eleitorado de Brandemburgo", "East Prussia": "Estado da Ordem Teutônica (vassalo da Polônia)" }, f: { "Germany": "blank", "East Prussia": "blank" }, o: { "Germany": null, "East Prussia": null } }), /*fixo*/ // secularizado em abr/1525 (Tratado de Cracóvia) // Prússia herdada pelo eleitor João Sigismundo em ago/1618
+    ...perYear(1490, 1524, { r: { "Germany": "Eleitorado de Brandemburgo", "East Prussia": "Estado da Ordem Teutônica (vassalo da Polônia)" }, f: { "Germany": "blank", "East Prussia": "blank" }, o: { "Germany": null, "East Prussia": null } }), /*fixo*/ // secularizado em abr/1525 (Tratado de Cracóvia) // Prússia herdada pelo eleitor João Sigismundo em ago/1618
     ...perYear(1590, 1611, { m: [null, null, ["Russian Empire", "RU Ingria"]] }), /*fixo*/
     ...perYear(1612, 1616, { r: { "RU Ingria": "Íngria (ocupação sueca)" }, f: { "RU Ingria": "blank" }, o: { "RU Ingria": null } }), /*fixo*/ // Ivangorod, Yam e Koporye tomadas em 1612
     ...perYear(1617, 1702, { m: [null, null, ["Sweden–Norway", "RU Ingria"]] }), /*fixo*/ // Tratado de Stolbovo, 27/fev/1617
     ...perYear(1703, 1720, { r: { "RU Ingria": "Íngria (ocupação russa)" }, f: { "RU Ingria": "x:ru" }, o: { "RU Ingria": null } }), /*fixo*/ // Nyenskans tomada em mai/1703; cedida em Nystad (1721)
     { y: 1721, /*fixo*/ m: [null, null, ["Russian Empire", "RU Ingria"]] },
-    ...perYear(1500, 1610, { m: [null, null, ["Russian Empire", "RU Novgorod"]] }), /*fixo*/
+    ...perYear(1478, 1610, { m: [null, null, ["Russian Empire", "RU Novgorod"]] }), /*fixo*/ // Novgorod anexada por Ivã III em jan/1478
     ...perYear(1611, 1616, { r: { "RU Novgorod": "Novgorod (ocupação sueca)" }, f: { "RU Novgorod": "blank" }, o: { "RU Novgorod": null } }), /*fixo*/ // tomada em jul/1611; devolvida em Stolbovo (1617)
     { y: 1617, /*fixo*/ m: [null, null, ["Russian Empire", "RU Novgorod"]] },
-    ...perYear(1500, 1620, { m: [null, null, ["Manchu Empire", "CN Liaodong"]] }), /*fixo*/ // Liaodong ming até a conquista de Nurhaci (Shenyang e Liaoyang, 1621)
-    ...perYear(1500, 1611, { m: [null, null, ["Kingdom of Brazil", "Maranhao"]] }), /*fixo*/
+    ...perYear(1490, 1620, { m: [null, null, ["Manchu Empire", "CN Liaodong"]] }), /*fixo*/ // Liaodong ming até a conquista de Nurhaci (Shenyang e Liaoyang, 1621)
+    ...perYear(1490, 1611, { m: [null, null, ["Kingdom of Brazil", "Maranhao"]] }), /*fixo*/
     ...perYear(1615, 1620, { m: [null, null, ["Kingdom of Brazil", "Maranhao"]] }), /*fixo*/ // Estado do Maranhão criado em 1621
     ...perYear(1612, 1614, { r: { "Maranhao": "França Equinocial (São Luís)" }, f: { "Maranhao": "h:fr_bourbon" }, o: { "Maranhao": "França" } }), /*fixo*/ // fundada em set/1612; rendida aos portugueses em nov/1615
     ...perYear(1583, 1620, { m: [null, null, ["Congress Poland", "LV Livonia"]] }), /*fixo*/ // Riga tomada pelos suecos em set/1621
     ...perYear(1621, 1624, { r: { "LV Livonia": "Livônia (disputada; Riga sueca desde 1621)" }, f: { "LV Livonia": "blank" }, o: { "LV Livonia": null } }), /*fixo*/ // resto da Livônia conquistado em 1625–1626
     { y: 1625, /*fixo*/ m: [null, null, ["Swedish Baltic", "LV Livonia"]] },
-    ...perYear(1500, 1623, { r: { "Saint Kitts and Nevis": null }, f: { "Saint Kitts and Nevis": "blank" }, o: { "Saint Kitts and Nevis": null } }), /*fixo*/ // Thomas Warner funda a colônia inglesa em jan/1624
+    ...perYear(1490, 1623, { r: { "Saint Kitts and Nevis": null }, f: { "Saint Kitts and Nevis": "blank" }, o: { "Saint Kitts and Nevis": null } }), /*fixo*/ // Thomas Warner funda a colônia inglesa em jan/1624
     ...perYear(1624, 1624, { r: { "Saint Kitts and Nevis": "São Cristóvão (Inglaterra)" }, f: { "Saint Kitts and Nevis": "h:england" }, o: { "Saint Kitts and Nevis": "Reino da Inglaterra" } }), /*fixo*/
     ...perYear(1625, 1627, { r: { "Saint Kitts and Nevis": "São Cristóvão (dividida entre Inglaterra e França)" }, f: { "Saint Kitts and Nevis": "blank" }, o: { "Saint Kitts and Nevis": null } }), /*fixo*/ // franceses de d'Esnambuc em 1625; partilha de 1627
     ...perYear(1628, 1665, { r: { "Saint Kitts and Nevis": "São Cristóvão (dividida entre Inglaterra e França) e Névis (Inglaterra)" }, f: { "Saint Kitts and Nevis": "blank" }, o: { "Saint Kitts and Nevis": null } }), /*fixo*/ // Névis colonizada em 1628
@@ -31859,21 +33479,21 @@ export const EVENTS = {
     ...perYear(1697, 1701, { r: { "Saint Kitts and Nevis": "São Cristóvão (dividida entre Inglaterra e França) e Névis (Inglaterra)" }, f: { "Saint Kitts and Nevis": "blank" }, o: { "Saint Kitts and Nevis": null } }), /*fixo*/
     ...perYear(1707, 1712, { r: { "Saint Kitts and Nevis": "São Cristóvão (parte francesa ocupada pela Grã-Bretanha) e Névis" }, f: { "Saint Kitts and Nevis": "blank" }, o: { "Saint Kitts and Nevis": null } }), /*fixo*/
     ...perYear(1702, 1706, { r: { "Saint Kitts and Nevis": "São Cristóvão (parte francesa ocupada pela Inglaterra) e Névis" }, f: { "Saint Kitts and Nevis": "blank" }, o: { "Saint Kitts and Nevis": null } }), /*fixo*/ // cedida à Grã-Bretanha em Utrecht (1713)
-    ...perYear(1500, 1626, { r: { "British West Indies": null }, f: { "British West Indies": "blank" }, o: { "British West Indies": null } }), /*fixo*/ // Barbados colonizada em fev/1627
+    ...perYear(1490, 1626, { r: { "British West Indies": null }, f: { "British West Indies": "blank" }, o: { "British West Indies": null } }), /*fixo*/ // Barbados colonizada em fev/1627
     ...perYear(1509, 1654, { r: { "JM Jamaica": "Jamaica (Espanha)" }, f: { "JM Jamaica": "blank" }, o: { "JM Jamaica": "Espanha" } }), /*fixo*/
     ...perYear(1655, 1659, { r: { "JM Jamaica": "Jamaica (ocupação inglesa)" }, f: { "JM Jamaica": "h:england" }, o: { "JM Jamaica": null } }), /*fixo*/ // invasão inglesa em mai/1655; espanhóis expulsos em 1660
     { y: 1660, /*fixo*/ m: [null, null, ["British West Indies", "JM Jamaica"]] }, // cedida pelo Tratado de Madri (1670)
-    ...perYear(1500, 1669, { r: { "KY Cayman": null }, f: { "KY Cayman": "blank" }, o: { "KY Cayman": null } }), /*fixo*/
+    ...perYear(1490, 1669, { r: { "KY Cayman": null }, f: { "KY Cayman": "blank" }, o: { "KY Cayman": null } }), /*fixo*/
     { y: 1670, /*fixo*/ m: [null, null, ["British West Indies", "KY Cayman"]] }, // Tratado de Madri (1670)
-    ...perYear(1500, 1680, { r: { "TC Turks": null }, f: { "TC Turks": "blank" }, o: { "TC Turks": null } }), /*fixo*/
+    ...perYear(1490, 1680, { r: { "TC Turks": null }, f: { "TC Turks": "blank" }, o: { "TC Turks": null } }), /*fixo*/
     { y: 1681, /*fixo*/ m: [null, null, ["British West Indies", "TC Turks"]] }, // salineiros das Bermudas desde 1681
-    ...perYear(1500, 1647, { r: { "VG Virgin": null }, f: { "VG Virgin": "blank" }, o: { "VG Virgin": null } }), /*fixo*/
+    ...perYear(1490, 1647, { r: { "VG Virgin": null }, f: { "VG Virgin": "blank" }, o: { "VG Virgin": null } }), /*fixo*/
     ...perYear(1648, 1671, { r: { "VG Virgin": "Tortola (Holanda)" }, f: { "VG Virgin": "blank" }, o: { "VG Virgin": "República das Sete Províncias Unidas" } }), /*fixo*/ // holandeses de 1648; ingleses em 1672
     { y: 1672, /*fixo*/ m: [null, null, ["British West Indies", "VG Virgin"]] },
     ...perYear(1629, 1631, { r: { "Canada": "Nova França (ocupação inglesa)" }, f: { "Canada": "h:england" }, o: { "Canada": null } }), /*fixo*/ // Quebec rendida aos Kirke em jul/1629; devolvida em jul/1632 (Saint-Germain-en-Laye)
     ...perYear(1629, 1631, { r: { "Nova Scotia": "Acádia (disputada; colônia escocesa de Port-Royal)" }, f: { "Nova Scotia": "blank" }, o: { "Nova Scotia": null } }), /*fixo*/ // Charles Fort escocês de 1629 a 1632
-    ...perYear(1500, 1631, { r: { "Antigua and Barbuda": null }, f: { "Antigua and Barbuda": "blank" }, o: { "Antigua and Barbuda": null } }), /*fixo*/ // colonos ingleses de São Cristóvão em 1632
-    ...perYear(1500, 1631, { r: { "Montserrat": null }, f: { "Montserrat": "blank" }, o: { "Montserrat": null } }), /*fixo*/ // colonos irlandeses e ingleses em 1632
+    ...perYear(1490, 1631, { r: { "Antigua and Barbuda": null }, f: { "Antigua and Barbuda": "blank" }, o: { "Antigua and Barbuda": null } }), /*fixo*/ // colonos ingleses de São Cristóvão em 1632
+    ...perYear(1490, 1631, { r: { "Montserrat": null }, f: { "Montserrat": "blank" }, o: { "Montserrat": null } }), /*fixo*/ // colonos irlandeses e ingleses em 1632
     ...perYear(1527, 1633, { r: { "Netherlands Antilles": "Curaçao, Aruba e Bonaire (Espanha)" }, f: { "Netherlands Antilles": "blank" }, o: { "Netherlands Antilles": "Espanha" } }), /*fixo*/ // tomadas pela Companhia das Índias Ocidentais em ago/1634
     ...perYear(1597, 1628, { r: { "North Yemen": "Iêmen (eialete otomano; revolta zaidita)" }, f: { "North Yemen": "blank" }, o: { "North Yemen": "Império Otomano" } }), /*fixo*/ // al-Mansur al-Qasim em armas desde 1597
     ...perYear(1629, 1635, { r: { "North Yemen": "Iêmen (disputado; qasímidas contra os otomanos)" }, f: { "North Yemen": "blank" }, o: { "North Yemen": null } }), /*fixo*/ // Sanaa qasímida em 1629; otomanos deixam o Iêmen em 1635–1636
@@ -31885,35 +33505,35 @@ export const EVENTS = {
     ...perYear(1647, 1647, { r: { "Two Sicilies": "Nápoles (disputado; República Napolitana)" }, f: { "Two Sicilies": "blank" }, o: { "Two Sicilies": null } }), /*fixo*/ // revolta de Masaniello em jul/1647; república em 22/out/1647; Espanha retoma a cidade em abr/1648
     ...perYear(1641, 1647, { r: { "Angola PT": "Angola (disputada; Luanda holandesa, Massangano portuguesa)" }, f: { "Angola PT": "blank" }, o: { "Angola PT": null } }), /*fixo*/ // Luanda tomada pelos holandeses em ago/1641; retomada em ago/1648
     ...perYear(1641, 1647, { r: { "Sao Tome": "São Tomé e Príncipe (disputado; ocupação holandesa)" }, f: { "Sao Tome": "blank" }, o: { "Sao Tome": null } }), /*fixo*/ // holandeses de out/1641 a 1648
-    ...perYear(1500, 1630, { r: { "Saint Martin": null }, f: { "Saint Martin": "blank" }, o: { "Saint Martin": null } }), /*fixo*/
+    ...perYear(1490, 1630, { r: { "Saint Martin": null }, f: { "Saint Martin": "blank" }, o: { "Saint Martin": null } }), /*fixo*/
     ...perYear(1631, 1632, { r: { "Saint Martin": "São Martinho (Holanda)" }, f: { "Saint Martin": "blank" }, o: { "Saint Martin": "República das Sete Províncias Unidas" } }), /*fixo*/ // forte holandês de 1631; tomado pela Espanha em 1633
-    ...perYear(1500, 1634, { r: { "Guadeloupe": "Guadalupe (caribes)" }, f: { "Guadeloupe": "blank" }, o: { "Guadeloupe": null } }), /*fixo*/ // colonos franceses em jun/1635
-    ...perYear(1500, 1634, { r: { "Martinique": "Martinica (caribes)" }, f: { "Martinique": "blank" }, o: { "Martinique": null } }), /*fixo*/ // Saint-Pierre fundada em set/1635
-    ...perYear(1500, 1642, { r: { "French Guiana": null }, f: { "French Guiana": "blank" }, o: { "French Guiana": null } }), /*fixo*/ // Caiena fundada em 1643
+    ...perYear(1490, 1634, { r: { "Guadeloupe": "Guadalupe (caribes)" }, f: { "Guadeloupe": "blank" }, o: { "Guadeloupe": null } }), /*fixo*/ // colonos franceses em jun/1635
+    ...perYear(1490, 1634, { r: { "Martinique": "Martinica (caribes)" }, f: { "Martinique": "blank" }, o: { "Martinique": null } }), /*fixo*/ // Saint-Pierre fundada em set/1635
+    ...perYear(1490, 1642, { r: { "French Guiana": null }, f: { "French Guiana": "blank" }, o: { "French Guiana": null } }), /*fixo*/ // Caiena fundada em 1643
     ...perYear(1633, 1647, { r: { "Saint Martin": "São Martinho (Espanha)" }, f: { "Saint Martin": "blank" }, o: { "Saint Martin": "Espanha" } }), /*fixo*/ // ocupação espanhola de 1633 a jan/1648; Tratado de Concórdia em 23/mar/1648
-    ...perYear(1500, 1647, { r: { "Saint Barthelemy": null }, f: { "Saint Barthelemy": "blank" }, o: { "Saint Barthelemy": null } }), /*fixo*/ // colonos franceses de São Cristóvão em 1648
-    ...perYear(1500, 1647, { r: { "Bahamas": null }, f: { "Bahamas": "blank" }, o: { "Bahamas": null } }), /*fixo*/ // Eleutheran Adventurers em 1648
-    ...perYear(1500, 1649, { r: { "Anguilla": null }, f: { "Anguilla": "blank" }, o: { "Anguilla": null } }), /*fixo*/ // colonos ingleses de São Cristóvão em 1650
-    ...perYear(1500, 1849, { r: { "Gold Coast GB": "Costa do Ouro (fortes holandeses, britânicos e dinamarqueses)" }, f: { "Gold Coast GB": "blank" }, o: { "Gold Coast GB": null } }), /*fixo*/ // Costa do Ouro Holandesa 1598–1872; dinamarquesa 1658–1850
+    ...perYear(1490, 1647, { r: { "Saint Barthelemy": null }, f: { "Saint Barthelemy": "blank" }, o: { "Saint Barthelemy": null } }), /*fixo*/ // colonos franceses de São Cristóvão em 1648
+    ...perYear(1490, 1647, { r: { "Bahamas": null }, f: { "Bahamas": "blank" }, o: { "Bahamas": null } }), /*fixo*/ // Eleutheran Adventurers em 1648
+    ...perYear(1490, 1649, { r: { "Anguilla": null }, f: { "Anguilla": "blank" }, o: { "Anguilla": null } }), /*fixo*/ // colonos ingleses de São Cristóvão em 1650
+    ...perYear(1490, 1849, { r: { "Gold Coast GB": "Costa do Ouro (fortes holandeses, britânicos e dinamarqueses)" }, f: { "Gold Coast GB": "blank" }, o: { "Gold Coast GB": null } }), /*fixo*/ // Costa do Ouro Holandesa 1598–1872; dinamarquesa 1658–1850
     ...perYear(1850, 1871, { r: { "Gold Coast GB": "Costa do Ouro (fortes holandeses e britânicos)" }, f: { "Gold Coast GB": "blank" }, o: { "Gold Coast GB": null } }), /*fixo*/ // fortes holandeses comprados pelos britânicos em 1871–1872
-    ...perYear(1500, 1611, { r: { "Gold Coast GB": "Costa do Ouro (fortes portugueses)" } }), /*fixo*/ // forte Nassau (Mouri) construído em 1611–1612
+    ...perYear(1490, 1611, { r: { "Gold Coast GB": "Costa do Ouro (fortes portugueses)" } }), /*fixo*/ // forte Nassau (Mouri) construído em 1611–1612
     ...perYear(1612, 1630, { r: { "Gold Coast GB": "Costa do Ouro (fortes portugueses e holandeses)" } }), /*fixo*/ // Elmina portuguesa até 1637; Mouri holandês desde 1612
     ...perYear(1631, 1641, { r: { "Gold Coast GB": "Costa do Ouro (fortes portugueses, holandeses e ingleses)" } }), /*fixo*/ // Kormantin inglês desde 1631; Axim portuguesa até 1642
-    ...perYear(1500, 1641, { r: { "Reunion": null }, f: { "Reunion": "blank" }, o: { "Reunion": null } }), /*fixo*/
-    ...perYear(1500, 1649, { r: { "Dutch Guiana": null }, f: { "Dutch Guiana": "blank" }, o: { "Dutch Guiana": null } }), /*fixo*/ // colônia de Willoughby fundada em 1650
-    ...perYear(1500, 1649, { r: { "Grenada": "Granada (caribes)" }, f: { "Grenada": "blank" }, o: { "Grenada": null } }), /*fixo*/ // du Parquet desembarca em mar/1650
-    ...perYear(1500, 1649, { r: { "Saint Lucia": "Santa Lúcia (caribes)" }, f: { "Saint Lucia": "blank" }, o: { "Saint Lucia": null } }), /*fixo*/ // colonos franceses desde 1650
+    ...perYear(1490, 1641, { r: { "Reunion": null }, f: { "Reunion": "blank" }, o: { "Reunion": null } }), /*fixo*/
+    ...perYear(1490, 1649, { r: { "Dutch Guiana": null }, f: { "Dutch Guiana": "blank" }, o: { "Dutch Guiana": null } }), /*fixo*/ // colônia de Willoughby fundada em 1650
+    ...perYear(1490, 1649, { r: { "Grenada": "Granada (caribes)" }, f: { "Grenada": "blank" }, o: { "Grenada": null } }), /*fixo*/ // du Parquet desembarca em mar/1650
+    ...perYear(1490, 1649, { r: { "Saint Lucia": "Santa Lúcia (caribes)" }, f: { "Saint Lucia": "blank" }, o: { "Saint Lucia": null } }), /*fixo*/ // colonos franceses desde 1650
     ...perYear(1642, 1649, { r: { "Gold Coast GB": "Costa do Ouro (fortes holandeses e ingleses)" } }), /*fixo*/ // Axim tomada dos portugueses em 1642; Carlsborg sueco em 1650
     ...perYear(1806, 1806, { r: { "NRW": "Vestfália e Baixo Reno (Berg e terras prussianas ocupadas pela França)" }, f: { "NRW": "blank" }, o: { "NRW": null } }), /*fixo*/
     ...perYear(1807, 1809, { r: { "NRW": "Vestfália e Baixo Reno (Grão-Ducado de Berg, Reino da Vestfália e outros)" }, f: { "NRW": "blank" }, o: { "NRW": null } }), /*fixo*/
     ...perYear(1810, 1812, { r: { "NRW": "Vestfália e Baixo Reno (dividida entre Berg, a França e o Reino da Vestfália)" }, f: { "NRW": "blank" }, o: { "NRW": null } }), /*fixo*/ // Berg 15/mar/1806; Vestfália ago/1807; departamento da Lippe francês 13/dez/1810
-    ...perYear(1500, 1696, { r: { "RU Kamchatka": null }, f: { "RU Kamchatka": "blank" }, o: { "RU Kamchatka": null } }), /*fixo*/
+    ...perYear(1490, 1696, { r: { "RU Kamchatka": null }, f: { "RU Kamchatka": "blank" }, o: { "RU Kamchatka": null } }), /*fixo*/
     ...perYear(1697, 1755, { r: { "RU Kamchatka": "Kamchatka (conquista russa em curso)" }, f: { "RU Kamchatka": "blank" }, o: { "RU Kamchatka": null } }), /*fixo*/
     { y: 1756, /*fixo*/ m: [null, null, ["Russian Empire", "RU Kamchatka"]] }, // conquista concluída em meados do séc. XVIII
-    ...perYear(1500, 1648, { r: { "RU Chukotka": null }, f: { "RU Chukotka": "blank" }, o: { "RU Chukotka": null } }), /*fixo*/
+    ...perYear(1490, 1648, { r: { "RU Chukotka": null }, f: { "RU Chukotka": "blank" }, o: { "RU Chukotka": null } }), /*fixo*/
     ...perYear(1649, 1777, { r: { "RU Chukotka": "Chukotka (tchuktchis independentes)" }, f: { "RU Chukotka": "blank" }, o: { "RU Chukotka": null } }), /*fixo*/
     { y: 1778, /*fixo*/ m: [null, null, ["Russian Empire", "RU Chukotka"]] }, // tratado com os tchuktchis, 1778
-    ...perYear(1500, 1652, { r: { "RU Transbaikal": "Transbaikália (buriates e evenques)" }, f: { "RU Transbaikal": "blank" }, o: { "RU Transbaikal": null } }), /*fixo*/
+    ...perYear(1490, 1652, { r: { "RU Transbaikal": "Transbaikália (buriates e evenques)" }, f: { "RU Transbaikal": "blank" }, o: { "RU Transbaikal": null } }), /*fixo*/
     { y: 1653, /*fixo*/ m: [null, null, ["Russian Empire", "RU Transbaikal"]] },
     ...perYear(1511, 1640, { r: { "Malacca": "Malaca (Portugal)" }, f: { "Malacca": "blank" }, o: { "Malacca": "Portugal" } }), /*fixo*/
     ...perYear(1641, 1794, { r: { "Malacca": "Malaca (Holanda)" }, f: { "Malacca": "blank" }, o: { "Malacca": "República das Sete Províncias Unidas" } }), /*fixo*/
@@ -31922,27 +33542,27 @@ export const EVENTS = {
     ...perYear(1818, 1824, { r: { "Malacca": "Malaca (Holanda)" }, f: { "Malacca": "x:nl" }, o: { "Malacca": "Reino Unido dos Países Baixos" } }), /*fixo*/
     ...perYear(1825, 1879, { r: { "Malacca": "Malaca (Reino Unido)" }, f: { "Malacca": "x:gb" }, o: { "Malacca": "Reino Unido" } }), /*fixo*/
     { y: 1880, /*fixo*/ m: [null, null, ["Malaya", "Malacca"]] }, // holandesa 14/jan/1641; britânica ago/1795–set/1818 e desde 1825
-    ...perYear(1500, 1618, { m: [null, null, ["ID Java", "Netherlands Indies"]] }), /*fixo*/
+    ...perYear(1490, 1618, { m: [null, null, ["ID Java", "Netherlands Indies"]] }), /*fixo*/
     { y: 1619, /*fixo*/ m: [null, null, ["Netherlands Indies", "ID Maluku"]] }, // Batávia em 30/mai/1619
     { y: 1749, /*fixo*/ m: [null, null, ["Netherlands Indies", "ID Java"]] }, // Mataram cede a soberania em 11/dez/1749
-    ...perYear(1500, 1799, { m: [null, null, ["Malaya", "ID Riau Islands"]] }), /*fixo*/
+    ...perYear(1490, 1799, { m: [null, null, ["Malaya", "ID Riau Islands"]] }), /*fixo*/
     { y: 1800, /*fixo*/ m: [null, null, ["Netherlands Indies", "ID Sulawesi", "ID Sumatra", "ID Riau Islands", "ID Borneo", "ID Lesser Sundas", "ID Papua"]] },
     ...perYear(1587, 1618, { r: { "ID Java": "Java (Mataram, Banten e outros)" }, f: { "ID Java": "blank" }, o: { "ID Java": null } }), /*fixo*/
     ...perYear(1619, 1679, { r: { "ID Java": "Java (Mataram, Banten e outros; Batávia holandesa)" }, f: { "ID Java": "blank" }, o: { "ID Java": null } }), /*fixo*/
     ...perYear(1680, 1748, { r: { "ID Java": "Java (Mataram e Banten, sob influência da VOC)" }, f: { "ID Java": "blank" }, o: { "ID Java": null } }), /*fixo*/
-    ...perYear(1500, 1609, { r: { "ID Maluku": "Molucas (Ternate, Tidore e outros)" }, f: { "ID Maluku": "blank" }, o: { "ID Maluku": null } }), /*fixo*/
+    ...perYear(1490, 1609, { r: { "ID Maluku": "Molucas (Ternate, Tidore e outros)" }, f: { "ID Maluku": "blank" }, o: { "ID Maluku": null } }), /*fixo*/
     ...perYear(1610, 1618, { r: { "ID Maluku": "Molucas (sede da VOC em Ambon; Ternate, Tidore e outros)" }, f: { "ID Maluku": "blank" }, o: { "ID Maluku": null } }), /*fixo*/
-    ...perYear(1500, 1667, { r: { "ID Sulawesi": "Celebes (Gowa-Tallo e outros reinos)" }, f: { "ID Sulawesi": "blank" }, o: { "ID Sulawesi": null } }), /*fixo*/
+    ...perYear(1490, 1667, { r: { "ID Sulawesi": "Celebes (Gowa-Tallo e outros reinos)" }, f: { "ID Sulawesi": "blank" }, o: { "ID Sulawesi": null } }), /*fixo*/
     ...perYear(1668, 1799, { r: { "ID Sulawesi": "Celebes (reinos locais; Makassar holandesa)" }, f: { "ID Sulawesi": "blank" }, o: { "ID Sulawesi": null } }), /*fixo*/
-    ...perYear(1500, 1659, { r: { "ID Sumatra": "Sumatra (reinos locais, como Jambi, Palembang e Minangkabau)" }, f: { "ID Sumatra": "blank" }, o: { "ID Sumatra": null } }), /*fixo*/
+    ...perYear(1490, 1659, { r: { "ID Sumatra": "Sumatra (reinos locais, como Jambi, Palembang e Minangkabau)" }, f: { "ID Sumatra": "blank" }, o: { "ID Sumatra": null } }), /*fixo*/
     ...perYear(1660, 1799, { r: { "ID Sumatra": "Sumatra (reinos locais; portos da VOC)" }, f: { "ID Sumatra": "blank" }, o: { "ID Sumatra": null } }), /*fixo*/
-    ...perYear(1500, 1799, { r: { "ID Borneo": "Bornéu (sultanatos locais, como Banjarmasin e Kutai)" }, f: { "ID Borneo": "blank" }, o: { "ID Borneo": null } }), /*fixo*/
-    ...perYear(1500, 1799, { r: { "ID Lesser Sundas": "Pequenas Ilhas da Sonda (reinos locais)" }, f: { "ID Lesser Sundas": "blank" }, o: { "ID Lesser Sundas": null } }), /*fixo*/
-    ...perYear(1500, 1799, { r: { "ID Papua": null }, f: { "ID Papua": "blank" }, o: { "ID Papua": null } }), /*fixo*/
-    ...perYear(1500, 1805, { r: { "NRW": "Vestfália e Baixo Reno (estados do Sacro Império)" }, f: { "NRW": "blank" }, o: { "NRW": null } }), /*fixo*/ // Cleves, Mark e Ravensberg brandemburgueses (1614/1666); Renânia e Vestfália prussianas em 1815
-    ...perYear(1500, 1802, { r: { "Trentino": "Príncipe-Bispado de Trento" }, f: { "Trentino": "blank" }, o: { "Trentino": null } }), /*fixo*/ // secularizado e anexado à Áustria em 1803
-    ...perYear(1500, 1639, { m: [null, null, ["Spain", "Catalonia"]] }), /*fixo*/
-    ...perYear(1500, 1640, { m: [null, null, ["Spain", "Roussillon"]] }), /*fixo*/
+    ...perYear(1490, 1799, { r: { "ID Borneo": "Bornéu (sultanatos locais, como Banjarmasin e Kutai)" }, f: { "ID Borneo": "blank" }, o: { "ID Borneo": null } }), /*fixo*/
+    ...perYear(1490, 1799, { r: { "ID Lesser Sundas": "Pequenas Ilhas da Sonda (reinos locais)" }, f: { "ID Lesser Sundas": "blank" }, o: { "ID Lesser Sundas": null } }), /*fixo*/
+    ...perYear(1490, 1799, { r: { "ID Papua": null }, f: { "ID Papua": "blank" }, o: { "ID Papua": null } }), /*fixo*/
+    ...perYear(1490, 1805, { r: { "NRW": "Vestfália e Baixo Reno (estados do Sacro Império)" }, f: { "NRW": "blank" }, o: { "NRW": null } }), /*fixo*/ // Cleves, Mark e Ravensberg brandemburgueses (1614/1666); Renânia e Vestfália prussianas em 1815
+    ...perYear(1490, 1802, { r: { "Trentino": "Príncipe-Bispado de Trento" }, f: { "Trentino": "blank" }, o: { "Trentino": null } }), /*fixo*/ // secularizado e anexado à Áustria em 1803
+    ...perYear(1490, 1639, { m: [null, null, ["Spain", "Catalonia"]] }), /*fixo*/
+    ...perYear(1493, 1640, { m: [null, null, ["Spain", "Roussillon"]] }), /*fixo*/ // Tratado de Barcelona (jan/1493)
     ...perYear(1640, 1640, { r: { "Catalonia": "Catalunha (disputada; revolta dos Segadores)" }, f: { "Catalonia": "blank" }, o: { "Catalonia": null } }), /*fixo*/ // Corpus de Sangue em 7/jun/1640; República Catalã em jan/1641
     ...perYear(1641, 1651, { r: { "Catalonia": "Catalunha (França)" }, f: { "Catalonia": "h:fr_bourbon" }, o: { "Catalonia": "França" } }), /*fixo*/ // revolta dos Segadores; Barcelona retomada em out/1652
     // Iêmen, Marrocos, Tobago, Acádia e outras colônias (fontes: Wikipedia — Qasimid State, Saadi Sultanate, Zawiya Dila'iya, History of Tobago, Danish West Indies, Brandenburger Gold Coast, Port-Royal, Isle Saint-Jean, English settling of Belize, Réunion)
@@ -31958,7 +33578,7 @@ export const EVENTS = {
     ...perYear(1627, 1640, { r: { "Morocco": "Marrocos (dividido entre os saadianos, a zawiya de Dila e outros)" }, f: { "Morocco": "blank" }, o: { "Morocco": null } }), /*fixo*/ // morte de Zidan em 1627
     ...perYear(1641, 1658, { r: { "Morocco": "Marrocos (dividido entre os saadianos de Marrakech e a zawiya de Dila)" }, f: { "Morocco": "blank" }, o: { "Morocco": null } }), /*fixo*/ // Dila em Fez desde 1641
     ...perYear(1659, 1667, { r: { "Morocco": "Marrocos (dividido entre Dila, os alauitas e outros)" }, f: { "Morocco": "blank" }, o: { "Morocco": null } }), /*fixo*/ // último saadiano morto em 1659; Dila anexada pelos alauitas em 1668
-    ...perYear(1500, 1627, { r: { "Tobago": "Tobago (caribes)" }, f: { "Tobago": "blank" }, o: { "Tobago": null } }), /*fixo*/
+    ...perYear(1490, 1627, { r: { "Tobago": "Tobago (caribes)" }, f: { "Tobago": "blank" }, o: { "Tobago": null } }), /*fixo*/
     ...perYear(1628, 1636, { r: { "Tobago": "Tobago (colônia holandesa de Nova Walcheren)" }, f: { "Tobago": "blank" }, o: { "Tobago": "República das Sete Províncias Unidas" } }), /*fixo*/ // colonos zelandeses de 1628; destruída por espanhóis e caribes em 1637
     ...perYear(1637, 1653, { r: { "Tobago": "Tobago (caribes)" }, f: { "Tobago": "blank" }, o: { "Tobago": null } }), /*fixo*/ // colônia holandesa tomada pelos espanhóis em dez/1636
     ...perYear(1666, 1666, { r: { "Tobago": "Tobago (disputada; ataques ingleses e franceses)" }, f: { "Tobago": "blank" }, o: { "Tobago": null } }), /*fixo*/
@@ -31966,12 +33586,12 @@ export const EVENTS = {
     ...perYear(1672, 1675, { r: { "Tobago": "Tobago (disputada entre Holanda e Inglaterra)" }, f: { "Tobago": "blank" }, o: { "Tobago": null } }), /*fixo*/ // tomada por barbadianos na Terceira Guerra Anglo-Holandesa
     ...perYear(1676, 1677, { r: { "Tobago": "Tobago (Holanda)" }, f: { "Tobago": "blank" }, o: { "Tobago": "República das Sete Províncias Unidas" } }), /*fixo*/ // nova colônia em 1676; ataque francês em mar/1677
     ...perYear(1678, 1747, { r: { "Tobago": "Tobago (caribes; reivindicada pela Grã-Bretanha e pela França)" }, f: { "Tobago": "blank" }, o: { "Tobago": null } }), /*fixo*/ // destruída pelos franceses em 1678; neutra em 1748
-    ...perYear(1500, 1671, { r: { "United States Virgin Islands": null }, f: { "United States Virgin Islands": "blank" }, o: { "United States Virgin Islands": null } }), /*fixo*/ // St. Thomas dinamarquesa em 25/mai/1672
+    ...perYear(1490, 1671, { r: { "United States Virgin Islands": null }, f: { "United States Virgin Islands": "blank" }, o: { "United States Virgin Islands": null } }), /*fixo*/ // St. Thomas dinamarquesa em 25/mai/1672
     ...perYear(1682, 1716, { r: { "Gold Coast GB": "Costa do Ouro (fortes holandeses, britânicos, dinamarqueses e brandemburgueses)" } }), /*fixo*/ // Groß Friedrichsburg 1682–1717
     ...perYear(1654, 1669, { r: { "Nova Scotia": "Acádia (ocupação inglesa)" }, f: { "Nova Scotia": "h:england" }, o: { "Nova Scotia": null } }), /*fixo*/ // Sedgwick em Port Royal (1654); devolvida em 1670
     ...perYear(1690, 1696, { r: { "Nova Scotia": "Acádia (disputada entre França e Inglaterra)" }, f: { "Nova Scotia": "blank" }, o: { "Nova Scotia": null } }), /*fixo*/ // Phips tomou Port Royal em 1690; Ryswick (1697)
-    ...perYear(1500, 1712, { m: [null, null, ["Nova Scotia", "Prince Edward Island"]] }), /*fixo*/ // Isle Saint-Jean estabelecida em 1713
-    ...perYear(1500, 1661, { r: { "Belize": null }, f: { "Belize": "blank" }, o: { "Belize": null } }), /*fixo*/ // corte regular de madeira entre 1662 e 1670
+    ...perYear(1490, 1712, { m: [null, null, ["Nova Scotia", "Prince Edward Island"]] }), /*fixo*/ // Isle Saint-Jean estabelecida em 1713
+    ...perYear(1490, 1661, { r: { "Belize": null }, f: { "Belize": "blank" }, o: { "Belize": null } }), /*fixo*/ // corte regular de madeira entre 1662 e 1670
     ...perYear(1642, 1664, { r: { "Reunion": "Ilha Bourbon (França; sem colonos)" }, f: { "Reunion": "h:fr_bourbon" }, o: { "Reunion": "França" } }), /*fixo*/ // reivindicada em 1642; colonização em 1665
     ...perYear(1665, 1792, { r: { "Reunion": "Ilha Bourbon (França)" }, f: { "Reunion": "h:fr_bourbon" }, o: { "Reunion": "França" } }), /*fixo*/
     ...perYear(1806, 1809, { r: { "Reunion": "Ilha Bonaparte (França)" } }), /*fixo*/
@@ -31981,7 +33601,7 @@ export const EVENTS = {
     { y: 1738, /*fixo*/ m: [null, null, ["Maratha", "IN Malwa"]] }, // Tratado de Bhopal, 7/jan/1738
     { y: 1755, /*fixo*/ m: [null, null, ["Maratha", "IN Gondwana"]] }, // Chanda, Chhattisgarh e Sambalpur anexados por Raghoji I entre 1745 e 1755
     ...perYear(1562, 1737, { m: [null, null, ["British Raj", "IN Malwa"]] }), /*fixo*/
-    ...perYear(1500, 1744, { r: { "IN Gondwana": "Chhattisgarh (reinos locais)" }, f: { "IN Gondwana": "blank" }, o: { "IN Gondwana": null } }), /*fixo*/
+    ...perYear(1490, 1744, { r: { "IN Gondwana": "Chhattisgarh (reinos locais)" }, f: { "IN Gondwana": "blank" }, o: { "IN Gondwana": null } }), /*fixo*/
     ...perYear(1745, 1754, { r: { "IN Gondwana": "Chhattisgarh (disputado; conquista dos Bhonsles de Nagpur)" }, f: { "IN Gondwana": "blank" }, o: { "IN Gondwana": null } }), /*fixo*/
     ...perYear(1596, 1635, { r: { "Maratha": "Decão ocidental (dividido entre Ahmadnagar, Bijapur e os mogóis)" }, f: { "Maratha": "blank" }, o: { "Maratha": null } }), /*fixo*/ // Ahmadnagar extinto em 1636
     ...perYear(1636, 1645, { r: { "Maratha": "Decão ocidental (dividido entre mogóis e Bijapur)" }, f: { "Maratha": "blank" }, o: { "Maratha": null } }), /*fixo*/ // Shivaji toma Torna em 1646
@@ -32002,30 +33622,30 @@ export const EVENTS = {
     ...perYear(1710, 1735, { r: { "Carnatic": "Tâmil Nadu (dividido entre o Nababado do Carnático, Madurai e Thanjavur)" }, f: { "Carnatic": "blank" }, o: { "Carnatic": null } }), /*fixo*/ // Saadatullah Khan independente em 1710; nayaks de Madurai até 1736
     ...perYear(1591, 1700, { m: [null, null, ["British Raj", "Sind"]] }), /*fixo*/
     ...perYear(1701, 1736, { r: { "Sind": "Sind (Kalhoras, sob suserania mogol)" }, f: { "Sind": "blank" }, o: { "Sind": null } }), /*fixo*/ // Yar Muhammad Kalhoro subahdar em 1701; separação dos mogóis em 1737
-    ...perYear(1500, 1672, { r: { "French India": null }, f: { "French India": "blank" }, o: { "French India": null } }), /*fixo*/ // Pondicherry adquirida em 1673
-    ...perYear(1500, 1669, { r: { "Rupert's Land": null }, f: { "Rupert's Land": "blank" }, o: { "Rupert's Land": null } }), /*fixo*/ // carta da Cia. da Baía de Hudson em 2/mai/1670
-    ...perYear(1500, 1651, { r: { "Cape Colony": null }, f: { "Cape Colony": "blank" }, o: { "Cape Colony": null } }), /*fixo*/ // fundada em 1652
+    ...perYear(1490, 1672, { r: { "French India": null }, f: { "French India": "blank" }, o: { "French India": null } }), /*fixo*/ // Pondicherry adquirida em 1673
+    ...perYear(1490, 1669, { r: { "Rupert's Land": null }, f: { "Rupert's Land": "blank" }, o: { "Rupert's Land": null } }), /*fixo*/ // carta da Cia. da Baía de Hudson em 2/mai/1670
+    ...perYear(1490, 1651, { r: { "Cape Colony": null }, f: { "Cape Colony": "blank" }, o: { "Cape Colony": null } }), /*fixo*/ // fundada em 1652
     ...perYear(1650, 1666, { r: { "Dutch Guiana": "Suriname (Inglaterra)" }, f: { "Dutch Guiana": "h:england" }, o: { "Dutch Guiana": "Reino da Inglaterra" } }), /*fixo*/ // fundada por Lord Willoughby em 1650
     ...perYear(1667, 1667, { r: { "Dutch Guiana": "Suriname (disputado entre Holanda e Inglaterra)" }, f: { "Dutch Guiana": "blank" }, o: { "Dutch Guiana": null } }), /*fixo*/ // tomado por Crijnssen em 1667; retomado pelos ingleses cinco meses depois
-    ...perYear(1500, 1657, { r: { "Senegal FR": null }, f: { "Senegal FR": "blank" }, o: { "Senegal FR": null } }), /*fixo*/ // entreposto transferido para Ndar (Saint-Louis) em 1658–1660
-    ...perYear(1500, 1667, { r: { "Guam": null }, f: { "Guam": "blank" }, o: { "Guam": null } }), /*fixo*/ // San Vitores em Hagåtña, 15/jun/1668
-    ...perYear(1500, 1693, { r: { "Micronesia": null }, f: { "Micronesia": "blank" }, o: { "Micronesia": null } }), /*fixo*/ // Saipan tomada em 1694
+    ...perYear(1490, 1657, { r: { "Senegal FR": null }, f: { "Senegal FR": "blank" }, o: { "Senegal FR": null } }), /*fixo*/ // entreposto transferido para Ndar (Saint-Louis) em 1658–1660
+    ...perYear(1490, 1667, { r: { "Guam": null }, f: { "Guam": "blank" }, o: { "Guam": null } }), /*fixo*/ // San Vitores em Hagåtña, 15/jun/1668
+    ...perYear(1490, 1693, { r: { "Micronesia": null }, f: { "Micronesia": "blank" }, o: { "Micronesia": null } }), /*fixo*/ // Saipan tomada em 1694
     ...perYear(1606, 1658, { r: { "Haiti": "Hispaniola ocidental (bucaneiros; reivindicada pela Espanha)" }, f: { "Haiti": "blank" }, o: { "Haiti": null } }), /*fixo*/
     ...perYear(1659, 1664, { r: { "Haiti": "Tortuga (França) e Hispaniola ocidental (bucaneiros)" }, f: { "Haiti": "blank" }, o: { "Haiti": null } }), /*fixo*/ // Tortuga oficializada em 1659
     ...perYear(1665, 1696, { r: { "Haiti": "Saint-Domingue (França; não reconhecido pela Espanha)" }, f: { "Haiti": "h:fr_bourbon" }, o: { "Haiti": "França" } }), /*fixo*/ // reconhecido em Ryswick (1697)
-    ...perYear(1500, 1706, { r: { "Siamese Laos": "Reino de Lan Xang" }, f: { "Siamese Laos": "blank" }, o: { "Siamese Laos": null } }), /*fixo*/ // divisão em 1707
+    ...perYear(1490, 1706, { r: { "Siamese Laos": "Reino de Lan Xang" }, f: { "Siamese Laos": "blank" }, o: { "Siamese Laos": null } }), /*fixo*/ // divisão em 1707
     ...perYear(1707, 1712, { r: { "Siamese Laos": "Reinos laosianos (Luang Prabang e Vientiane)" }, f: { "Siamese Laos": "blank" }, o: { "Siamese Laos": null } }), /*fixo*/
-    ...perYear(1500, 1691, { r: { "Kingdom of Hanover": "Principados de Brunsvique-Lüneburg (Calenberg e Lüneburg)" }, f: { "Kingdom of Hanover": "blank" }, o: { "Kingdom of Hanover": null } }), /*fixo*/
+    ...perYear(1490, 1691, { r: { "Kingdom of Hanover": "Principados de Brunsvique-Lüneburg (Calenberg e Lüneburg)" }, f: { "Kingdom of Hanover": "blank" }, o: { "Kingdom of Hanover": null } }), /*fixo*/
     ...perYear(1692, 1704, { r: { "Kingdom of Hanover": "Eleitorado de Hanôver e Principado de Lüneburg" }, f: { "Kingdom of Hanover": "blank" }, o: { "Kingdom of Hanover": null } }), /*fixo*/ // eleitor em 1692; herda Lüneburg-Celle em 1705
     ...perYear(1621, 1694, { r: { "Mecklenburg-Strelitz": "Ducado de Mecklemburgo-Güstrow" }, f: { "Mecklenburg-Strelitz": "blank" }, o: { "Mecklenburg-Strelitz": null } }), /*fixo*/
-    ...perYear(1500, 1620, { m: ["Ducado de Mecklemburgo", "blank", ["Mecklenburg-Schwerin", "Mecklenburg-Strelitz"]], o: { "Mecklenburg-Schwerin": null } }), /*fixo*/ // partilha entre Schwerin e Güstrow em 1621
+    ...perYear(1490, 1620, { m: ["Ducado de Mecklemburgo", "blank", ["Mecklenburg-Schwerin", "Mecklenburg-Strelitz"]], o: { "Mecklenburg-Schwerin": null } }), /*fixo*/ // partilha entre Schwerin e Güstrow em 1621
     ...perYear(1621, 1627, { r: { "Mecklenburg-Schwerin": "Ducado de Mecklemburgo-Schwerin" }, f: { "Mecklenburg-Schwerin": "blank" }, o: { "Mecklenburg-Schwerin": null } }), /*fixo*/
     ...perYear(1628, 1630, { m: ["Ducado de Mecklemburgo (Wallenstein)", "blank", ["Mecklenburg-Schwerin", "Mecklenburg-Strelitz"]], o: { "Mecklenburg-Schwerin": null } }), /*fixo*/ // duques depostos em 1628; restaurados pelos suecos em 1631
     ...perYear(1695, 1700, { r: { "Mecklenburg-Strelitz": "Mecklemburgo-Güstrow (sucessão disputada)" }, f: { "Mecklenburg-Strelitz": "blank" }, o: { "Mecklenburg-Strelitz": null } }), /*fixo*/ // Gustavo Adolfo morre em 1695; Tratado de Hamburgo, 8/mar/1701
-    ...perYear(1500, 1639, { r: { "Schaumburg-Lippe": "Condado de Holstein-Schaumburg" }, f: { "Schaumburg-Lippe": "blank" }, o: { "Schaumburg-Lippe": null } }), /*fixo*/ // Otto V morre sem herdeiros em 1640
+    ...perYear(1490, 1639, { r: { "Schaumburg-Lippe": "Condado de Holstein-Schaumburg" }, f: { "Schaumburg-Lippe": "blank" }, o: { "Schaumburg-Lippe": null } }), /*fixo*/ // Otto V morre sem herdeiros em 1640
     ...perYear(1640, 1646, { r: { "Schaumburg-Lippe": "Condado de Schaumburg (sucessão disputada)" }, f: { "Schaumburg-Lippe": "blank" }, o: { "Schaumburg-Lippe": null } }), /*fixo*/ // partilha entre Hesse-Kassel, Lippe e Brunsvique-Lüneburg em 1647
     ...perYear(1647, 1806, { r: { "Schaumburg-Lippe": "Condado de Schaumburg-Lippe" }, f: { "Schaumburg-Lippe": "blank" }, o: { "Schaumburg-Lippe": null } }), /*fixo*/ // principado em 1807
-    ...perYear(1500, 1788, { r: { "Lippe": "Condado de Lippe" }, f: { "Lippe": "blank" }, o: { "Lippe": null } }), /*fixo*/ // principado em 1789
+    ...perYear(1490, 1788, { r: { "Lippe": "Condado de Lippe" }, f: { "Lippe": "blank" }, o: { "Lippe": null } }), /*fixo*/ // principado em 1789
     ...perYear(1625, 1711, { r: { "Waldeck": "Condado de Waldeck e Pyrmont" }, f: { "Waldeck": "blank" }, o: { "Waldeck": null } }), /*fixo*/ // principado em 6/jan/1712
     ...perYear(1650, 1657, { r: { "Gold Coast GB": "Costa do Ouro (fortes holandeses, ingleses e suecos)" } }), /*fixo*/ // Carlsborg sueco desde 22/abr/1650
     ...perYear(1658, 1659, { r: { "Gold Coast GB": "Costa do Ouro (fortes holandeses, ingleses e dinamarqueses)" } }), /*fixo*/ // Carlsborg tomado em 27/jan/1658
@@ -32048,7 +33668,7 @@ export const EVENTS = {
     ...perYear(1812, 1812, { r: { "SwPom": "Pomerânia Sueca (ocupação francesa)" }, f: { "SwPom": "x:fr" }, o: { "SwPom": null } }), /*fixo*/
     ...perYear(1813, 1814, { r: { "SwPom": "Pomerânia Sueca" }, f: { "SwPom": "blank" }, o: { "SwPom": "Suécia" } }), /*fixo*/ // cedida à Dinamarca em Kiel (14/jan/1814), sem posse
     { y: 1815, /*fixo*/ m: [null, null, ["Germany", "SwPom"]] }, // entregue à Prússia em 23/out/1815
-    ...perYear(1500, 1644, { r: { "Bremen-Verden": "Príncipe-Arcebispado de Bremen e Príncipe-Bispado de Verden" }, f: { "Bremen-Verden": "blank" }, o: { "Bremen-Verden": null } }), /*fixo*/ // administrador Frederico da Dinamarca até 1645
+    ...perYear(1490, 1644, { r: { "Bremen-Verden": "Príncipe-Arcebispado de Bremen e Príncipe-Bispado de Verden" }, f: { "Bremen-Verden": "blank" }, o: { "Bremen-Verden": null } }), /*fixo*/ // administrador Frederico da Dinamarca até 1645
     ...perYear(1648, 1674, { r: { "Bremen-Verden": "Bremen-Verden (Suécia)" }, f: { "Bremen-Verden": "blank" }, o: { "Bremen-Verden": "Suécia" } }), /*fixo*/ // Brömsebro, 13/ago/1645; secularizados em 1648
     ...perYear(1675, 1675, { r: { "Bremen-Verden": "Bremen-Verden (disputado; invasão aliada)" }, f: { "Bremen-Verden": "blank" }, o: { "Bremen-Verden": null } }), /*fixo*/ // campanha de 15/set/1675 a 13/ago/1676
     ...perYear(1676, 1679, { r: { "Bremen-Verden": "Bremen-Verden (ocupação aliada)" }, f: { "Bremen-Verden": "blank" }, o: { "Bremen-Verden": null } }), /*fixo*/ // evacuado em jan–mar/1680
@@ -32056,17 +33676,17 @@ export const EVENTS = {
     ...perYear(1712, 1714, { r: { "Bremen-Verden": "Bremen-Verden (ocupação dinamarquesa)" }, f: { "Bremen-Verden": "x:dk" }, o: { "Bremen-Verden": null } }), /*fixo*/
     { y: 1715, /*fixo*/ m: [null, null, ["Kingdom of Hanover", "Bremen-Verden"]] }, // vendido a Hanôver em 1715
     // China, Mongólia e Tibete 1600–1661 (fontes: Wikipedia — Southern Ming, Xi dynasty, Li Dingguo, Li Zicheng, Mongolia under Qing rule, Dzungar–Qing Wars, Khoshut Khanate, Upper Mongols)
-    ...perYear(1500, 1650, { m: [null, null, ["CN Guangdong", "Hong Kong"]] }), /*fixo*/
-    ...perYear(1500, 1643, { m: ["Dinastia Ming", "blank", ["Manchu Empire", "CN Shaanxi", "CN Hubei", "CN Jiangnan", "CN Fujian", "CN Jiangxi", "CN Guangdong", "CN Sichuan", "CN Hunan", "CN Guangxi", "Feudatories Hunan", "Three Feudatories"]], o: { "Manchu Empire": null } }), /*fixo*/
+    ...perYear(1490, 1650, { m: [null, null, ["CN Guangdong", "Hong Kong"]] }), /*fixo*/
+    ...perYear(1490, 1643, { m: ["Dinastia Ming", "blank", ["Manchu Empire", "CN Shaanxi", "CN Hubei", "CN Jiangnan", "CN Fujian", "CN Jiangxi", "CN Guangdong", "CN Sichuan", "CN Hunan", "CN Guangxi", "Feudatories Hunan", "Three Feudatories"]], o: { "Manchu Empire": null } }), /*fixo*/
     ...perYear(1621, 1643, { m: [null, null, ["CN Manchuria", "CN Liaodong"]] }), /*fixo*/ // Shenyang e Liaoyang tomadas em 1621
     ...perYear(1635, 1643, { m: [null, null, ["CN Manchuria", "CN Inner Mongolia"]] }), /*fixo*/ // Ejei Khan rende-se a Hong Taiji em 1635
-    ...perYear(1500, 1615, { r: { "CN Manchuria": "Tribos jurchéns" }, f: { "CN Manchuria": "blank" }, o: { "CN Manchuria": null } }), /*fixo*/
+    ...perYear(1490, 1615, { r: { "CN Manchuria": "Tribos jurchéns" }, f: { "CN Manchuria": "blank" }, o: { "CN Manchuria": null } }), /*fixo*/
     ...perYear(1616, 1635, { r: { "CN Manchuria": "Jin Posterior" }, f: { "CN Manchuria": "blank" }, o: { "CN Manchuria": null } }), /*fixo*/ // Nurhaci, 1616; Qing desde 14/mai/1636
     ...perYear(1636, 1643, { r: { "CN Manchuria": "Império Qing" }, f: { "CN Manchuria": "blank" }, o: { "CN Manchuria": null } }), /*fixo*/
-    ...perYear(1500, 1633, { r: { "CN Inner Mongolia": "Yuan do Norte (mongóis do sul)" }, f: { "CN Inner Mongolia": "blank" }, o: { "CN Inner Mongolia": null } }), /*fixo*/
+    ...perYear(1490, 1633, { r: { "CN Inner Mongolia": "Yuan do Norte (mongóis do sul)" }, f: { "CN Inner Mongolia": "blank" }, o: { "CN Inner Mongolia": null } }), /*fixo*/
     ...perYear(1634, 1634, { r: { "CN Inner Mongolia": "Mongóis do sul (disputado; conquista do Jin Posterior)" }, f: { "CN Inner Mongolia": "blank" }, o: { "CN Inner Mongolia": null } }), /*fixo*/ // morte de Ligdan Khan em 1634
-    ...perYear(1500, 1643, { r: { "Amur": null, "Ussuri": null } }), /*fixo*/
-    ...perYear(1500, 1649, { f: { "Manchu Empire": "blank" }, o: { "Manchu Empire": null } }), /*fixo*/
+    ...perYear(1490, 1643, { r: { "Amur": null, "Ussuri": null } }), /*fixo*/
+    ...perYear(1490, 1649, { f: { "Manchu Empire": "blank" }, o: { "Manchu Empire": null } }), /*fixo*/
     ...perYear(1644, 1690, { r: { "Manchu Empire": "Império Qing" }, o: { "Manchu Empire": null } }), /*fixo*/ // Pequim tomada em 6/jun/1644
     ...perYear(1644, 1644, { r: { "CN Shaanxi": "Dinastia Shun (Li Zicheng)" }, f: { "CN Shaanxi": "blank" }, o: { "CN Shaanxi": null } }), /*fixo*/ // entronizado em Xi'an em 8/fev/1644
     ...perYear(1644, 1649, { r: { "CN Hubei": "Hubei (disputado)" }, f: { "CN Hubei": "blank" }, o: { "CN Hubei": null } }), /*fixo*/
@@ -32093,17 +33713,17 @@ export const EVENTS = {
     ...perYear(1653, 1657, { m: ["Ming do Sul (Yongli)", "blank", ["Feudatories Hunan", "Three Feudatories"]], o: { "Feudatories Hunan": null } }), /*fixo*/ // Sun Kewang rende-se aos Qing em dez/1657
     ...perYear(1658, 1658, { r: { "Feudatories Hunan": "Guizhou (disputado)" }, f: { "Feudatories Hunan": "blank" }, o: { "Feudatories Hunan": null } }), /*fixo*/ // Zunyi tomada em 1658; campanha Qing no fim de 1658
     ...perYear(1658, 1658, { r: { "Three Feudatories": "Ming do Sul (Yongli)" }, f: { "Three Feudatories": "blank" }, o: { "Three Feudatories": null } }), /*fixo*/
-    ...perYear(1500, 1687, { r: { "Mongolia": "Mongóis Khalkha" }, f: { "Mongolia": "blank" }, o: { "Mongolia": null } }), /*fixo*/
+    ...perYear(1490, 1687, { r: { "Mongolia": "Mongóis Khalkha" }, f: { "Mongolia": "blank" }, o: { "Mongolia": null } }), /*fixo*/
     ...perYear(1688, 1690, { r: { "Mongolia": "Khalkha (ocupação zungar)" }, f: { "Mongolia": "blank" }, o: { "Mongolia": null } }), /*fixo*/ // Olgoi Nor (1688); khans khalkhas refugiados em Hohhot
     ...perYear(1514, 1633, { r: { "Xinjiang": "Oirates e Canato de Yarkent" }, f: { "Xinjiang": "blank" }, o: { "Xinjiang": null } }), /*fixo*/
     ...perYear(1634, 1679, { r: { "Xinjiang": "Canato Zungar e Canato de Yarkent" }, f: { "Xinjiang": "blank" }, o: { "Xinjiang": null } }), /*fixo*/ // Bacia do Tarim conquistada pelos zungares a partir de 1680
     ...perYear(1565, 1641, { r: { "Tibet": "Tibete (Tsangpa)" }, f: { "Tibet": "blank" }, o: { "Tibet": null } }), /*fixo*/ // Güshi Khan proclamado cã do Tibete em 13/abr/1642
-    ...perYear(1500, 1636, { r: { "CN Kokonor": "Kokonor (mongóis)" }, f: { "CN Kokonor": "blank" }, o: { "CN Kokonor": null } }), /*fixo*/
+    ...perYear(1490, 1636, { r: { "CN Kokonor": "Kokonor (mongóis)" }, f: { "CN Kokonor": "blank" }, o: { "CN Kokonor": null } }), /*fixo*/
     ...perYear(1637, 1641, { r: { "CN Kokonor": "Kokonor (Khoshut, Güshi Khan)" }, f: { "CN Kokonor": "blank" }, o: { "CN Kokonor": null } }), /*fixo*/ // morte de Choghtu
     ...perYear(1642, 1716, { m: [null, null, ["Tibet", "CN Kokonor"]] }), /*fixo*/ // Canato Khoshut (1642–1717)
     ...perYear(1717, 1723, { r: { "CN Kokonor": "Kokonor (mongóis Khoshut)" }, f: { "CN Kokonor": "blank" }, o: { "CN Kokonor": null } }), /*fixo*/
-    ...perYear(1500, 1629, { m: [null, null, ["Kingdom of Brazil", "Dutch Brazil"]] }), /*fixo*/
-    ...perYear(1500, 1623, { m: [null, null, ["Kingdom of Brazil", "Bahia"]] }), /*fixo*/
+    ...perYear(1490, 1629, { m: [null, null, ["Kingdom of Brazil", "Dutch Brazil"]] }), /*fixo*/
+    ...perYear(1490, 1623, { m: [null, null, ["Kingdom of Brazil", "Bahia"]] }), /*fixo*/
     ...perYear(1625, 1653, { m: [null, null, ["Kingdom of Brazil", "Bahia"]] }), /*fixo*/
     ...perYear(1624, 1624, { r: { "Bahia": "Bahia (ocupação holandesa)" }, f: { "Bahia": "blank" }, o: { "Bahia": null } }), /*fixo*/ // Salvador tomada em 8/mai/1624, retomada em 30/abr/1625
     ...perYear(1630, 1633, { r: { "Dutch Brazil": "Pernambuco (disputado; Recife e Olinda holandesas)" }, f: { "Dutch Brazil": "blank" }, o: { "Dutch Brazil": null } }), /*fixo*/ // Olinda e Recife tomadas em fev–mar/1630
@@ -32115,7 +33735,7 @@ export const EVENTS = {
     ...perYear(1514, 1610, { m: [null, null, ["Russian Empire", "Smolensk"]] }), /*fixo*/ // tomada pela Polônia-Lituânia em 1611
     ...perYear(1611, 1653, { m: [null, null, ["Lithuania GD", "Smolensk"]] }), /*fixo*/
     ...perYear(1503, 1617, { m: [null, null, ["Russian Empire", "Chernihiv"]] }), /*fixo*/ // Chernihiv cedida à Polônia-Lituânia na trégua de Deulino (dez/1618)
-    ...perYear(1500, 1617, { m: [null, null, ["Right-bank Ukraine", "Hetmanate L", "Hetmanate R"]] }), /*fixo*/
+    ...perYear(1490, 1617, { m: [null, null, ["Right-bank Ukraine", "Hetmanate L", "Hetmanate R"]] }), /*fixo*/
     ...perYear(1618, 1647, { m: [null, null, ["Right-bank Ukraine", "Chernihiv", "Hetmanate L", "Hetmanate R"]] }), /*fixo*/
     ...perYear(1648, 1666, { m: ["Hetmanato Cossaco", "blank", ["Hetmanate L", "Hetmanate R", "Chernihiv"]], o: { "Hetmanate L": null } }), /*fixo*/ // Khmelnytsky em Kiev no Natal de 1648; Zboriv (18/ago/1649); Pereiaslav (1654); dividido em Andrusovo (1667)
     ...perYear(1653, 1659, { m: ["Commonwealth da Inglaterra, Escócia e Irlanda", "blank", ["United Kingdom of Great Britain and Ireland", "Scotland", "Ireland"]], o: { "United Kingdom of Great Britain and Ireland": null } }), /*fixo*/ // união da Escócia (12/abr/1654) e Irlanda subjugada (27/set/1653); Restauração em mai/1660
@@ -32127,25 +33747,25 @@ export const EVENTS = {
     ...perYear(1652, 1652, { r: { "Ireland": "Irlanda (ocupação inglesa)" }, f: { "Ireland": "blank" }, o: { "Ireland": null } }), /*fixo*/ // Galway cai em 1652; guerrilha até 1653
     ...perYear(1641, 1641, { r: { "Ireland": "Irlanda (disputada; rebelião irlandesa de 1641)" }, f: { "Ireland": "blank" }, o: { "Ireland": null } }), /*fixo*/ // rebelião em 23/out/1641
     ...perYear(1642, 1648, { r: { "Ireland": "Irlanda (dividida; dois terços com a Confederação de Kilkenny)" }, f: { "Ireland": "blank" }, o: { "Ireland": null } }), /*fixo*/ // Irlanda Confederada, 1642–1652
-    ...perYear(1500, 1637, { r: { "Mauritius": null } }), /*fixo*/ // primeira colônia holandesa em 1638
+    ...perYear(1490, 1637, { r: { "Mauritius": null } }), /*fixo*/ // primeira colônia holandesa em 1638
     ...perYear(1638, 1657, { r: { "Mauritius": "Maurício (Holanda)" }, f: { "Mauritius": "blank" }, o: { "Mauritius": "República das Sete Províncias Unidas" } }), /*fixo*/
     ...perYear(1658, 1663, { r: { "Mauritius": null } }), /*fixo*/ // abandonada pelos holandeses em 1658; reocupada em 1664
-    ...perYear(1500, 1643, { m: [null, null, ["Denmark", "Scania"]] }), /*fixo*/
+    ...perYear(1490, 1643, { m: [null, null, ["Denmark", "Scania"]] }), /*fixo*/
     ...perYear(1645, 1657, { m: [null, null, ["Denmark", "Scania"]] }), /*fixo*/ // Escânia e Blekinge dinamarquesas até Roskilde
-    ...perYear(1500, 1643, { m: [null, null, ["Denmark", "Halland"]] }), /*fixo*/
+    ...perYear(1490, 1643, { m: [null, null, ["Denmark", "Halland"]] }), /*fixo*/
     ...perYear(1644, 1644, { r: { "Scania": "Escânia e Blekinge (disputadas; ocupação sueca, exceto Malmö e Kristianstad)", "Halland": "Halland (ocupação sueca)", "Denmark": "Dinamarca-Noruega (Jutlândia ocupada pela Suécia)" },
       f: { "Scania": "blank", "Halland": "blank", "Denmark": "x:dk" }, o: { "Scania": null, "Halland": null, "Denmark": null } }), /*fixo*/ // Guerra de Torstenson: Horn ocupa a Escânia em fev/1644; Wrangel retoma a Jutlândia em set/1644
-    ...perYear(1500, 1644, { m: [null, null, ["Denmark", "SE Gotland", "SE Jamtland"]] }), /*fixo*/ // Jämtland norueguesa e Gotland dinamarquesa até Brömsebro
+    ...perYear(1490, 1644, { m: [null, null, ["Denmark", "SE Gotland", "SE Jamtland"]] }), /*fixo*/ // Jämtland norueguesa e Gotland dinamarquesa até Brömsebro
     { y: 1645, /*fixo*/ m: [null, null, ["Sweden–Norway", "SE Gotland", "SE Jamtland"]] }, // Paz de Brömsebro, 13/ago/1645
     ...perYear(1645, 1657, { r: { "Halland": "Halland (arrendado à Suécia)" }, f: { "Halland": "blank" }, o: { "Halland": "Suécia" } }), /*fixo*/ // arrendado por 30 anos em Brömsebro (1645)
-    ...perYear(1500, 1657, { m: [null, null, ["Norway", "Trondelag"]] }), /*fixo*/
+    ...perYear(1490, 1657, { m: [null, null, ["Norway", "Trondelag"]] }), /*fixo*/
     ...perYear(1658, 1659, { m: [null, null, ["Sweden–Norway", "Trondelag"]] }), /*fixo*/ // cedido em Roskilde, devolvido em 1660
     ...perYear(1552, 1668, { m: ["Lahsa (eialete otomano)", "blank", ["Hasa", "Kuwait"]], o: { "Hasa": "Império Otomano" } }), /*fixo*/ // os Bani Khalid expulsam os otomanos em 1669–1670
-    ...perYear(1500, 1666, { r: { "Grand Duchy of Oldenburg": "Condado de Oldemburgo" }, f: { "Grand Duchy of Oldenburg": "blank" }, o: { "Grand Duchy of Oldenburg": null } }), /*fixo*/ // Antônio Günther morre em 1667; condados passam à Dinamarca
-    ...perYear(1500, 1644, { m: [null, null, ["Venetia", "Crete"]] }), /*fixo*/ // Reino de Cândia veneziano
+    ...perYear(1490, 1666, { r: { "Grand Duchy of Oldenburg": "Condado de Oldemburgo" }, f: { "Grand Duchy of Oldenburg": "blank" }, o: { "Grand Duchy of Oldenburg": null } }), /*fixo*/ // Antônio Günther morre em 1667; condados passam à Dinamarca
+    ...perYear(1490, 1644, { m: [null, null, ["Venetia", "Crete"]] }), /*fixo*/ // Reino de Cândia veneziano
     ...perYear(1645, 1647, { r: { "Crete": "Creta (disputada; invasão otomana)" }, f: { "Crete": "blank" }, o: { "Crete": null } }), /*fixo*/ // Chania tomada em ago/1645, Rethymno em nov/1646; cerco de Cândia desde mai/1648
     ...perYear(1648, 1668, { r: { "Crete": "Creta (disputada; Cândia veneziana sitiada pelos otomanos)" }, f: { "Crete": "blank" }, o: { "Crete": null } }), /*fixo*/ // Guerra de Creta, 1645–1669
-    ...perYear(1500, 1623, { r: { "Taiwan": null } }), /*fixo*/ // Forte Zeelandia em 1624
+    ...perYear(1490, 1623, { r: { "Taiwan": null } }), /*fixo*/ // Forte Zeelandia em 1624
     ...perYear(1661, 1661, { r: { "Taiwan": "Formosa (disputada; Forte Zeelandia holandês sitiado por Koxinga)" }, f: { "Taiwan": "blank" }, o: { "Taiwan": null } }), /*fixo*/ // cerco de abr/1661 a fev/1662
     ...perYear(1624, 1660, { r: { "Taiwan": "Formosa Holandesa" }, f: { "Taiwan": "blank" }, o: { "Taiwan": "República das Sete Províncias Unidas" } }), /*fixo*/ // feitoria holandesa no sudoeste de 1624 a 1662
     ...perYear(1626, 1641, { r: { "Taiwan": "Formosa (holandesa no sudoeste; espanhola no norte)" }, f: { "Taiwan": "blank" }, o: { "Taiwan": null } }), /*fixo*/ // Formosa Espanhola (Keelung e Tamsui) de 1626 a ago/1642
@@ -32158,19 +33778,19 @@ export const EVENTS = {
     ...perYear(1680, 1680, { m: ["Grande Zhou (Wu Shifan, Yunnan)", "blank", ["Three Feudatories"]], o: { "Three Feudatories": null } }), /*fixo*/ // Hunan, Guizhou, Guangxi e Sichuan retomados pelos Qing em 1680
     ...perYear(1680, 1680, { m: [null, null, ["Manchu Empire", "Feudatories Hunan", "CN Sichuan", "CN Hunan", "CN Guangxi"]] }), /*fixo*/
     ...perYear(1664, 1672, { m: [null, null, ["United States of America", "New Netherland", "New Sweden"]] }), /*fixo*/ // Nova Amsterdã tomada pelos ingleses em 27/ago/1664
-    ...perYear(1500, 1637, { m: [null, null, ["New Netherland", "New Sweden"]] }), /*fixo*/
+    ...perYear(1490, 1637, { m: [null, null, ["New Netherland", "New Sweden"]] }), /*fixo*/
     ...perYear(1655, 1663, { m: [null, null, ["New Netherland", "New Sweden"]] }), /*fixo*/ // Nova Suécia conquistada pelos holandeses (Fort Christina, 15/set/1655)
     ...perYear(1673, 1673, { m: [null, null, ["New Netherland", "New Sweden"]] }), /*fixo*/
-    ...perYear(1500, 1613, { r: { "New Netherland": null } }), /*fixo*/ // primeiros colonos holandeses em 1614
+    ...perYear(1490, 1613, { r: { "New Netherland": null } }), /*fixo*/ // primeiros colonos holandeses em 1614
     ...perYear(1614, 1663, { r: { "New Netherland": "Nova Holanda (Holanda)" }, f: { "New Netherland": "blank" }, o: { "New Netherland": "República das Sete Províncias Unidas" } }), /*fixo*/ // província desde 1624
     ...perYear(1673, 1673, { r: { "New Netherland": "Nova Holanda (Holanda)" }, f: { "New Netherland": "blank" }, o: { "New Netherland": "República das Sete Províncias Unidas" } }), /*fixo*/ // retomada pelos holandeses em 9/ago/1673
     ...perYear(1638, 1654, { r: { "New Sweden": "Nova Suécia" }, f: { "New Sweden": "blank" }, o: { "New Sweden": "Suécia" } }), /*fixo*/ // Fort Christina fundado em 1638
-    ...perYear(1500, 1671, { m: [null, null, ["Netherlands", "Dutch East"]] }), /*fixo*/
+    ...perYear(1490, 1671, { m: [null, null, ["Netherlands", "Dutch East"]] }), /*fixo*/
     ...perYear(1672, 1672, { r: { "Dutch East": "Utrecht, Guéldria e Overijssel (ocupação francesa e de Münster)" }, f: { "Dutch East": "x:fr" }, o: { "Dutch East": null } }), /*fixo*/ // Arnhem e Zutphen tomadas em 12/jun/1672; Overijssel rendida a Münster em jul/1672
-    ...perYear(1500, 1666, { m: [null, null, ["Belgium", "French Flanders"]] }), /*fixo*/
+    ...perYear(1490, 1666, { m: [null, null, ["Belgium", "French Flanders"]] }), /*fixo*/
     ...perYear(1667, 1677, { r: { "French Flanders": "Flandres valona (parcialmente ocupada pela França)" }, f: { "French Flanders": "blank" }, o: { "French Flanders": null } }), /*fixo*/ // Lille e Douai francesas desde 1667–1668 (Aix-la-Chapelle); Cambrai e Valenciennes espanholas até 1678
-    ...perYear(1500, 1658, { m: [null, null, ["Belgium", "Artois"]] }), /*fixo*/
-    ...perYear(1500, 1640, { m: [null, null, ["Spain", "Roussillon"]] }), /*fixo*/
+    ...perYear(1493, 1658, { m: [null, null, ["Belgium", "Artois"]] }), /*fixo*/ // Tratado de Senlis (mai/1493)
+    ...perYear(1493, 1640, { m: [null, null, ["Spain", "Roussillon"]] }), /*fixo*/ // Tratado de Barcelona (jan/1493)
     ...perYear(1641, 1641, { r: { "Roussillon": "Rossilhão (disputado; invasão francesa)" }, f: { "Roussillon": "blank" }, o: { "Roussillon": null } }), /*fixo*/ // Perpignan rende-se em set/1642
     ...perYear(1642, 1658, { r: { "Roussillon": "Rossilhão (ocupação francesa)" }, f: { "Roussillon": "x:fr" }, o: { "Roussillon": null } }), /*fixo*/ // Catalunha sob a França de jan/1641 a 1652; a França manteve o norte dos Pireneus
     ...perYear(1556, 1673, { r: { "Franche-Comte": "Franco-Condado (Espanha)" }, f: { "Franche-Comte": "blank" }, o: { "Franche-Comte": "Espanha" } }), /*fixo*/ // Habsburgos espanhóis; ocupado pela França em 1668 e devolvido em Aix-la-Chapelle (2/mai/1668)
@@ -32185,29 +33805,29 @@ export const EVENTS = {
     ...perYear(1633, 1660, { r: { "Lorraine": "Ducado da Lorena (ocupação francesa)" }, f: { "Lorraine": "x:fr" }, o: { "Lorraine": null } }), /*fixo*/ // Nancy ocupada em set/1633; Carlos IV restaurado em 1661
     ...perYear(1670, 1697, { r: { "Lorraine": "Ducado da Lorena (ocupação francesa)" }, f: { "Lorraine": "x:fr" }, o: { "Lorraine": null } }), /*fixo*/ // invadido em 1670; devolvido pelo Tratado de Ryswick (1697)
     ...perYear(1693, 1698, { r: { "French India": "Pondicherry (ocupação holandesa)" }, f: { "French India": "blank" }, o: { "French India": null } }), /*fixo*/ // ocupação holandesa set/1693–set/1699
-    ...perYear(1500, 1681, { r: { "Louisiana N": null, "Louisiana S": null } }), /*fixo*/ // reivindicada por La Salle em 1682
+    ...perYear(1490, 1681, { r: { "Louisiana N": null, "Louisiana S": null } }), /*fixo*/ // reivindicada por La Salle em 1682
     ...perYear(1690, 1695, { r: { "Savoy and Nice": "Ducado de Saboia (ocupação francesa)" }, f: { "Savoy and Nice": "x:fr" }, o: { "Savoy and Nice": null } }), /*fixo*/ // ocupado pela França 1690–1696 (Wikipedia, Duchy of Savoy); Tratado de Turim em 29/ago/1696
-    ...perYear(1500, 1647, { r: { "Bahamas": null } }), /*fixo*/ // primeiro assentamento inglês permanente em Eleuthera (1648)
+    ...perYear(1490, 1647, { r: { "Bahamas": null } }), /*fixo*/ // primeiro assentamento inglês permanente em Eleuthera (1648)
     ...perYear(1684, 1685, { r: { "Bahamas": null } }), /*fixo*/ // assentamentos queimados pelos espanhóis em 1684 e abandonados; New Providence recolonizada em 1686
     ...perYear(1706, 1717, { r: { "Bahamas": "Bahamas (sem governo; república de corsários e piratas)" }, f: { "Bahamas": "blank" }, o: { "Bahamas": null } }), /*fixo*/ // Nassau saqueada em 1703 e 1706; governo restaurado por Woodes Rogers em jul/1718
     ...perYear(1552, 1715, { m: [null, null, ["Ottoman Empire", "Banat"]] }), /*fixo*/ // eialete otomano de Temesvár até a conquista austríaca (out/1716)
     ...perYear(1705, 1705, { r: { "Nice": "Condado de Nice (sitiado pela França)" }, f: { "Nice": "blank" }, o: { "Nice": null } }), /*fixo*/ // sítio de 15/mar/1705 a 4/jan/1706
-    ...perYear(1500, 1704, { m: [null, null, ["Spain", "Valencia"]] }), /*fixo*/ // Valência tomada pelos aliados em 1705
+    ...perYear(1490, 1704, { m: [null, null, ["Spain", "Valencia"]] }), /*fixo*/ // Valência tomada pelos aliados em 1705
     ...perYear(1551, 1710, { r: { "Libya": "Tripolitânia otomana" }, f: { "Libya": "blank" }, o: { "Libya": "Império Otomano" } }), /*fixo*/ // golpe de Ahmed Caramanli em 1711
     ...perYear(1505, 1708, { m: [null, null, ["Bukhara", "Kokand", "Khujand"]] }), /*fixo*/ // Shahrukh Biy funda o canato de Kokand em 1709
     ...perYear(1588, 1597, { m: [null, null, ["Bukhara", "Herat"]] }), /*fixo*/ // Herat uzbeque de 1588 até a batalha de 9/ago/1598
     ...perYear(1598, 1715, { m: [null, null, ["Persia", "Herat"]] }), /*fixo*/ // revolta abdali em Herat em 1716
-    ...perYear(1500, 1755, { r: { "Seychelles": null } }), /*fixo*/ // posse francesa em 1756
+    ...perYear(1490, 1755, { r: { "Seychelles": null } }), /*fixo*/ // posse francesa em 1756
     ...perYear(1710, 1714, { r: { "Mauritius": null } }), /*fixo*/ // holandeses saíram em 1710; posse francesa em 20/set/1715
     ...perYear(1713, 1762, { r: { "Saint Pierre and Miquelon": "Saint-Pierre e Miquelon (britânica)" }, f: { "Saint Pierre and Miquelon": "x:gb" }, o: { "Saint Pierre and Miquelon": "Reino da Grã-Bretanha" } }), /*fixo*/ // cedidas em Utrecht (1713); devolvidas em 1763
-    ...perYear(1500, 1787, { r: { "French Polynesia": "Taiti e ilhas da Polinésia (chefias rivais)" }, f: { "French Polynesia": "blank" }, o: { "French Polynesia": null } }), /*fixo*/ // Reino do Taiti fundado por Pōmare I em 1788/91
+    ...perYear(1490, 1787, { r: { "French Polynesia": "Taiti e ilhas da Polinésia (chefias rivais)" }, f: { "French Polynesia": "blank" }, o: { "French Polynesia": null } }), /*fixo*/ // Reino do Taiti fundado por Pōmare I em 1788/91
     ...perYear(1559, 1767, { r: { "Nepal": "Reinos do Nepal (Malla, Gorkha e outros)" }, f: { "Nepal": "blank" }, o: { "Nepal": null } }), /*fixo*/ // unificação por Prithvi Narayan Shah em 25/set/1768
     ...perYear(1596, 1613, { r: { "Lan Na": "Lan Na (sob suserania de Ayutthaya)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }), /*fixo*/ // Nawrata Minsaw vassalo de Naresuan; Chiang Mai retomada pelos birmaneses em 1614
     ...perYear(1614, 1726, { r: { "Lan Na": "Lan Na (vassalo da Birmânia)" }, f: { "Lan Na": "blank" }, o: { "Lan Na": null } }), /*fixo*/ // Chiang Mai revoltou-se em 1727
     ...perYear(1627, 1672, { r: { "French Indochina": "Đại Việt (dinastia Lê; guerra entre os senhores Trịnh e Nguyễn)" }, f: { "French Indochina": "blank" }, o: { "French Indochina": null } }), /*fixo*/ // guerra Trịnh–Nguyễn, 1627–1672
     ...perYear(1592, 1626, { r: { "French Indochina": "Đại Việt (dinastia Lê; senhores Trịnh no norte e Nguyễn no sul)" }, f: { "French Indochina": "blank" }, o: { "French Indochina": null } }), /*fixo*/
     ...perYear(1673, 1770, { r: { "French Indochina": "Đại Việt (dinastia Lê; senhores Trịnh no norte e Nguyễn no sul)" }, f: { "French Indochina": "blank" }, o: { "French Indochina": null } }), /*fixo*/ // revolta Tây Sơn em 1771
-    ...perYear(1500, 1743, { r: { "Riyadh": null, "Qassim": null, "Hail": null } }), /*fixo*/ // Emirado de Diriyah desde 1744
+    ...perYear(1490, 1743, { r: { "Riyadh": null, "Qassim": null, "Hail": null } }), /*fixo*/ // Emirado de Diriyah desde 1744
     ...perYear(1669, 1795, { r: { "Hasa": "Emirado de Bani Khalid (Hasa e Qatif)" }, f: { "Hasa": "blank" }, o: { "Hasa": null } }), /*fixo*/ // 1669–1796
     ...perYear(1669, 1751, { m: [null, null, ["Hasa", "Kuwait"]] }), /*fixo*/ // xeques de Bani Khalid; Al Sabah desde 1752
     ...perYear(1602, 1716, { m: [null, null, ["Persia", "Bahrain"]] }), /*fixo*/ // Bahrein safávida de 1602 a 1717
@@ -32222,18 +33842,18 @@ export const EVENTS = {
     ...perYear(1542, 1716, { m: [null, null, ["Peru", "Colombia", "Panama", "Ecuador"]] }), /*fixo*/ // Vice-Reino do Peru criado em 20/nov/1542; // Vice-Reino de Nova Granada criado em 27/mai/1717
     ...perYear(1724, 1738, { m: [null, null, ["Peru", "Colombia", "Panama", "Ecuador"]] }), /*fixo*/ // suprimido em 5/nov/1723; restabelecido em 20/ago/1739
     ...perYear(1607, 1731, { r: { "United States of America": "Colônias britânicas da América do Norte" } }), /*fixo*/ // Geórgia (13ª colônia) em 1732
-    ...perYear(1500, 1744, { r: { "Swaziland": null } }), /*fixo*/ // reino suazi fundado em meados do séc. XVIII (Ngwane III)
-    ...perYear(1500, 1799, { r: { "Orange Free State": null } }), /*fixo*/ // Klaarwater/Griquatown no início do séc. XIX
-    ...perYear(1500, 1788, { r: { "Oregon": null } }), /*fixo*/ // disputa a partir da crise de Nootka (1789–1794)
-    ...perYear(1500, 1854, { r: { "Sakhalin": null } }), /*fixo*/ // condomínio russo-japonês só no Tratado de Shimoda (1855)
+    ...perYear(1490, 1744, { r: { "Swaziland": null } }), /*fixo*/ // reino suazi fundado em meados do séc. XVIII (Ngwane III)
+    ...perYear(1490, 1799, { r: { "Orange Free State": null } }), /*fixo*/ // Klaarwater/Griquatown no início do séc. XIX
+    ...perYear(1490, 1788, { r: { "Oregon": null } }), /*fixo*/ // disputa a partir da crise de Nootka (1789–1794)
+    ...perYear(1490, 1854, { r: { "Sakhalin": null } }), /*fixo*/ // condomínio russo-japonês só no Tratado de Shimoda (1855)
     ...perYear(1600, 1809, { r: { "Madagascar": "Reinos de Madagascar (merinas, sakalavas e outros)" }, f: { "Madagascar": "blank" }, o: { "Madagascar": null } }), /*fixo*/ // Andrianampoinimerina desde 1787; Radama I (1810–1828) quase unificou a ilha
     ...perYear(1667, 1773, { r: { "Grand Duchy of Oldenburg": "Condados de Oldemburgo e Delmenhorst (Dinamarca)" }, f: { "Grand Duchy of Oldenburg": "x:dk" }, o: { "Grand Duchy of Oldenburg": "Dinamarca" } }), /*fixo*/ // união pessoal 1667–1773; ducado em 1774
     ...perYear(1544, 1772, { r: { "Duchy of Holstein": "Ducado de Holstein (partes ducal de Gottorp e real dinamarquesa)" }, f: { "Duchy of Holstein": "blank" }, o: { "Duchy of Holstein": null } }), /*fixo*/ // Tratado de Tsarskoye Selo (1773)
     ...perYear(1660, 1689, { r: { "Dominica": "Dominica (neutra; caribes)" }, f: { "Dominica": "blank" }, o: { "Dominica": null } }), /*fixo*/ // deixada aos caribes pelo tratado anglo-francês de 1660
-    ...perYear(1500, 1659, { r: { "Dominica": "Dominica (caribes)" }, f: { "Dominica": "blank" }, o: { "Dominica": null } }), /*fixo*/
+    ...perYear(1490, 1659, { r: { "Dominica": "Dominica (caribes)" }, f: { "Dominica": "blank" }, o: { "Dominica": null } }), /*fixo*/
     ...perYear(1690, 1726, { r: { "Dominica": "Dominica (neutra; colonos franceses)" }, f: { "Dominica": "blank" }, o: { "Dominica": null } }), /*fixo*/ // neutra pelo tratado de 1660; colonos franceses desde 1690; colônia francesa formal em 1727
-    ...perYear(1500, 1718, { r: { "Saint Vincent": "São Vicente (caribes)" }, f: { "Saint Vincent": "blank" }, o: { "Saint Vincent": null } }), /*fixo*/ // franceses em Barrouallie em 1719
-    ...perYear(1500, 1720, { r: { "Greenland": "Groenlândia (inuítes; reivindicada pela Dinamarca-Noruega)" }, f: { "Greenland": "blank" }, o: { "Greenland": null } }), /*fixo*/ // colonização de Hans Egede em 1721
+    ...perYear(1490, 1718, { r: { "Saint Vincent": "São Vicente (caribes)" }, f: { "Saint Vincent": "blank" }, o: { "Saint Vincent": null } }), /*fixo*/ // franceses em Barrouallie em 1719
+    ...perYear(1490, 1720, { r: { "Greenland": "Groenlândia (inuítes; reivindicada pela Dinamarca-Noruega)" }, f: { "Greenland": "blank" }, o: { "Greenland": null } }), /*fixo*/ // colonização de Hans Egede em 1721
     ...perYear(1528, 1879, { r: { "Malaya": "Sultanatos malaios (Johor, Perak, Pahang e outros)" } }), /*fixo*/
     ...perYear(1621, 1750, { r: { "Maranhao": "Estado do Maranhão (Portugal)" }, f: { "Maranhao": "blank" }, o: { "Maranhao": "Portugal" } }), /*fixo*/ // criado em 1621, capital São Luís
     ...perYear(1641, 1643, { r: { "Maranhao": "Estado do Maranhão (disputado; São Luís holandesa)" }, f: { "Maranhao": "blank" }, o: { "Maranhao": null } }), /*fixo*/ // São Luís tomada pelos holandeses em nov/1641; evacuada em fev/1644
@@ -32250,14 +33870,53 @@ export const EVENTS = {
     ...perYear(1691, 1697, { r: { "Nice": "Condado de Nice (ocupação francesa)" }, f: { "Nice": "x:fr" }, o: { "Nice": null } }), /*fixo*/ // 1691–1697
     ...perYear(1747, 1750, { r: { "Balkh": "Balkh (Haji Khan, canato de Maimana)" }, f: { "Balkh": "blank" }, o: { "Balkh": null } }), /*fixo*/ // independência declarada em 1747
     ...perYear(1664, 1709, { r: { "Mauritius": "Maurício (Holanda)" }, f: { "Mauritius": "blank" }, o: { "Mauritius": "República das Sete Províncias Unidas" } }), /*fixo*/ // holandeses em 1638–1658 e 1664–1710
-    ...perYear(1500, 1615, { r: { "British Guiana": null } }), /*fixo*/ // forte holandês de Kyk-over-al em 1616
+    ...perYear(1490, 1615, { r: { "British Guiana": null } }), /*fixo*/ // forte holandês de Kyk-over-al em 1616
     ...perYear(1616, 1626, { r: { "British Guiana": "Essequibo (Holanda)" }, f: { "British Guiana": "blank" }, o: { "British Guiana": "República das Sete Províncias Unidas" } }), /*fixo*/ // Berbice fundada por Van Peere em 1627
     ...perYear(1627, 1744, { r: { "British Guiana": "Essequibo e Berbice (Holanda)" } }), /*fixo*/ // Demerara fundada em 1745
-    ...perYear(1500, 1599, { r: { "Madagascar": "Madagascar (reinos e chefias locais)" }, f: { "Madagascar": "blank" }, o: { "Madagascar": null } }), /*fixo*/ // reino sakalava surge por volta de 1600
-    ...perYear(1500, 1526, { r: { "Netherlands Antilles": "Curaçao, Aruba e Bonaire (caquetíos)" }, f: { "Netherlands Antilles": "blank" }, o: { "Netherlands Antilles": null } }), /*fixo*/ // colonização espanhola de Curaçao em 1527
-    ...perYear(1500, 1501, { r: { "Newfoundland": "Terra Nova (beotucos)" }, f: { "Newfoundland": "blank" }, o: { "Newfoundland": null } }), /*fixo*/ // viagens de Corte-Real (1500–1501)
-    ...perYear(1500, 1554, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": null } }), /*fixo*/ // suserania safávida a partir da Paz de Amasya (1555)
-    ...perYear(1500, 1515, { m: [null, null, ["Ottoman Empire", "Montenegro"]] }), /*fixo*/ // Zeta anexada pelos otomanos (1496–1499); príncipe-bispado a partir de 1516
+    ...perYear(1490, 1599, { r: { "Madagascar": "Madagascar (reinos e chefias locais)" }, f: { "Madagascar": "blank" }, o: { "Madagascar": null } }), /*fixo*/ // reino sakalava surge por volta de 1600
+    ...perYear(1490, 1526, { r: { "Netherlands Antilles": "Curaçao, Aruba e Bonaire (caquetíos)" }, f: { "Netherlands Antilles": "blank" }, o: { "Netherlands Antilles": null } }), /*fixo*/ // colonização espanhola de Curaçao em 1527
+    ...perYear(1490, 1501, { r: { "Newfoundland": "Terra Nova (beotucos)" }, f: { "Newfoundland": "blank" }, o: { "Newfoundland": null } }), /*fixo*/ // viagens de Corte-Real (1500–1501)
+    ...perYear(1490, 1554, { r: { "Kartli-Kakheti": "Reinos de Kartli e Kakheti" }, f: { "Kartli-Kakheti": "blank" }, o: { "Kartli-Kakheti": null } }), /*fixo*/ // suserania safávida a partir da Paz de Amasya (1555)
+    ...perYear(1496, 1515, { m: [null, null, ["Ottoman Empire", "Montenegro"]] }), /*fixo*/ // Zeta anexada pelos otomanos (1496–1499); príncipe-bispado a partir de 1516
+    ...perYear(1490, 1499, { m: ["Brasil (povos indígenas)", "blank", ["Kingdom of Brazil", "Rio Grande do Sul"]], o: { "Kingdom of Brazil": null } }), /*fixo*/ // Cabral chega em abr/1500
+    ...perYear(1490, 1499, { r: { "Bukhara": "Transoxiana (timúridas)" }, f: { "Bukhara": "blank" }, o: { "Bukhara": null } }), /*fixo*/ // Xaibani Khan toma Bukhara e Samarcanda em 1500
+    ...perYear(1500, 1500, { r: { "Bukhara": "Transoxiana (disputada entre Xaibani Khan e Babur)" }, f: { "Bukhara": "blank" }, o: { "Bukhara": null } }), /*fixo*/ // Babur retoma Samarcanda no outono de 1500
+    ...perYear(1490, 1497, { m: ["Fergana (timúridas)", "blank", ["Kokand", "Khujand"]], o: { "Kokand": null } }), /*fixo*/
+    ...perYear(1497, 1500, { r: { "Sweden–Norway": "Suécia (União de Kalmar, sob João I)" }, f: { "Sweden–Norway": "blank" }, o: { "Sweden–Norway": null } }), /*fixo*/ // João I coroado em 1497; deposto em 1501
+    ...perYear(1490, 1496, { r: { "Sweden–Norway": "Suécia (União de Kalmar; regente Sten Sture)" }, f: { "Sweden–Norway": "blank" }, o: { "Sweden–Norway": null } }), /*fixo*/
+    ...perYear(1490, 1499, { m: ["Landgraviatos de Hesse-Kassel e Hesse-Marburg", "blank", ["Electorate of Hesse", "Grand Duchy of Hesse"]], o: { "Electorate of Hesse": null } }), /*fixo*/ // reunidos por Guilherme II em 1500
+    ...perYear(1496, 1500, { r: { "Two Sicilies": "Reino de Nápoles (Frederico de Aragão)" }, f: { "Two Sicilies": "blank" }, o: { "Two Sicilies": null } }), /*fixo*/ // Frederico rei desde out/1496
+    ...perYear(1495, 1495, { r: { "Two Sicilies": "Reino de Nápoles (disputado; invasão de Carlos VIII)" }, f: { "Two Sicilies": "blank" }, o: { "Two Sicilies": null } }), /*fixo*/ // Carlos VIII entra em Nápoles em fev/1495
+    ...perYear(1490, 1494, { r: { "Two Sicilies": "Reino de Nápoles" }, f: { "Two Sicilies": "blank" }, o: { "Two Sicilies": null } }), /*fixo*/
+    ...perYear(1490, 1492, { m: [null, null, ["France", "Artois", "Roussillon"]] }), /*fixo*/ // Artois e Rossilhão devolvidos em 1493
+    ...perYear(1490, 1495, { r: { "Montenegro": "Principado de Zeta (Crnojević)" }, f: { "Montenegro": "blank" }, o: { "Montenegro": null } }), /*fixo*/ // Zeta cai sob os otomanos em 1496
+    ...perYear(1490, 1493, { r: { "Bengal Subah": "Sultanato de Bengala (sultões habshis)" }, f: { "Bengal Subah": "blank" }, o: { "Bengal Subah": null } }), /*fixo*/ // Alauddin Hussain Shah desde 1494
+    ...perYear(1490, 1495, { r: { "Aceh": "Norte de Sumatra (Samudera Pasai e outros)" }, f: { "Aceh": "blank" }, o: { "Aceh": null } }), /*fixo*/ // Sultanato de Aceh fundado c. 1496
+    ...perYear(1490, 1494, { r: { "Kingdom of Württemberg": "Condado de Württemberg" }, f: { "Kingdom of Württemberg": "blank" }, o: { "Kingdom of Württemberg": null } }), /*fixo*/ // ducado em 1495
+    ...perYear(1490, 1504, { r: { "Kingdom of Bavaria": "Ducados da Baviera (Munique e Landshut)" }, f: { "Kingdom of Bavaria": "blank" }, o: { "Kingdom of Bavaria": null } }), /*fixo*/ // reunidos após a Guerra de Landshut (1505)
+    ...perYear(1490, 1498, { r: { "Lombardy": "Ducado de Milão (Sforza)" }, f: { "Lombardy": "blank" }, o: { "Lombardy": null } }), /*fixo*/ // Luís XII toma Milão em set/1499
+    ...perYear(1490, 1497, { r: { "Trinidad": "Trinidad (povos indígenas)" }, f: { "Trinidad": "blank" }, o: { "Trinidad": null } }), /*fixo*/ // Colombo em jul/1498
+    ...perYear(1494, 1495, { m: ["La Española (Espanha; La Isabela)", "blank", ["Dominican Republic", "Haiti"]], o: { "Dominican Republic": "Espanha" } }), /*fixo*/ // La Isabela fundada em jan/1494; Santo Domingo em 1496
+    ...perYear(1490, 1493, { m: ["Hispaniola (cacicados taínos)", "blank", ["Dominican Republic", "Haiti"]], o: { "Dominican Republic": null } }), /*fixo*/
+    ...perYear(1490, 1511, { r: { "ES Navarra": "Reino de Navarra" }, f: { "ES Navarra": "blank" }, o: { "ES Navarra": null } }), /*fixo*/ // Alta Navarra conquistada por Castela em jul/1512
+    { y: 1512, y1: 1912, /*fixo*/ m: [null, null, ["Spain", "ES Navarra"]] },
+    ...perYear(1490, 1491, { r: { "ES Granada": "Emirado de Granada (nasridas)" }, f: { "ES Granada": "blank" }, o: { "ES Granada": null } }), /*fixo*/ // Granada rende-se em 2/jan/1492
+    { y: 1492, y1: 1912, /*fixo*/ m: [null, null, ["Spain", "ES Granada"]] },
+    ...perYear(1491, 1531, { r: { "FR Bretagne": "Ducado da Bretanha (união pessoal com a França)" }, f: { "FR Bretagne": "blank" }, o: { "FR Bretagne": null } }), /*fixo*/ // Ana casa-se com Carlos VIII em dez/1491; união formal em 1532
+    ...perYear(1490, 1490, { r: { "FR Bretagne": "Ducado da Bretanha" }, f: { "FR Bretagne": "blank" }, o: { "FR Bretagne": null } }), /*fixo*/
+    { y: 1532, y1: 1912, /*fixo*/ m: [null, null, ["France", "FR Bretagne"]] },
+    ...perYear(1473, 1488, { r: { "Cyprus": "Reino de Chipre (Lusignan, sob controle veneziano)" }, f: { "Cyprus": "blank" }, o: { "Cyprus": null } }), /*fixo*/ // Catarina Cornaro cede a ilha a Veneza em fev/1489
+    ...perYear(1480, 1488, { r: { "ES Almeria": "Almería (Emirado de Granada)" }, f: { "ES Almeria": "blank" }, o: { "ES Almeria": null } }), /*fixo*/ // Almería rende-se em dez/1489
+    { y: 1489, y1: 1912, /*fixo*/ m: [null, null, ["Spain", "ES Almeria"]] },
+    ...perYear(1480, 1486, { r: { "ES Malaga": "Málaga (Emirado de Granada)" }, f: { "ES Malaga": "blank" }, o: { "ES Malaga": null } }), /*fixo*/ // Málaga tomada em ago/1487
+    { y: 1487, y1: 1912, /*fixo*/ m: [null, null, ["Spain", "ES Malaga"]] },
+    ...perYear(1479, 1489, { m: [null, null, ["Hungary", "Silesia"]] }), /*fixo*/ // Paz de Olomouc (1479): Silésia e Morávia com Matias Corvino até 1490
+    ...perYear(1479, 1492, { r: { "Franche-Comte": "Franco-Condado (ocupação francesa)" }, f: { "Franche-Comte": "blank" }, o: { "Franche-Comte": null } }), /*fixo*/ // ocupado por Luís XI em 1479; devolvido em Senlis (1493)
+    ...perYear(1480, 1489, { r: { "Maratha": "Sultanato Bahmani" }, f: { "Maratha": "blank" }, o: { "Maratha": null } }), /*fixo*/ // Ahmadnagar, Bijapur e Berar independentes em 1490
+    ...perYear(1480, 1486, { r: { "Bengal Subah": "Sultanato de Bengala (dinastia Ilyas Shahi)" }, f: { "Bengal Subah": "blank" }, o: { "Bengal Subah": null } }), /*fixo*/ // golpe habshi em 1487
+    ...perYear(1480, 1481, { r: { "Gold Coast GB": "Costa do Ouro (estados akan)" }, f: { "Gold Coast GB": "blank" }, o: { "Gold Coast GB": null } }), /*fixo*/ // São Jorge da Mina fundado em 1482
+    ...perYear(1480, 1492, { r: { "Sao Tome": "São Tomé e Príncipe (descobertas por Portugal; povoamento a partir de 1493)" }, f: { "Sao Tome": "blank" }, o: { "Sao Tome": null } }), /*fixo*/
+    ...perYear(1471, 1489, { r: { "Bohemia": "Reino da Boêmia (Jagelões)" }, f: { "Bohemia": "blank" }, o: { "Bohemia": null } }), /*fixo*/ // Vladislau II rei desde 1471
   ],
   1914: [
     ...ISLES[1914],
