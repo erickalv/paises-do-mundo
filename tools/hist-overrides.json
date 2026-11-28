@@ -5183,6 +5183,45 @@
    }
   },
   {
+   "key": "Smolensk",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "RU-SMO"
+    ]
+   }
+  },
+  {
+   "key": "Chernihiv",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "UA-74"
+    ]
+   }
+  },
+  {
+   "key": "Hetmanate L",
+   "take": {
+    "from": "Russian Empire",
+    "iso": [
+     "UA-53",
+     "UA-30"
+    ]
+   }
+  },
+  {
+   "key": "Hetmanate R",
+   "take": {
+    "from": "Right-bank Ukraine",
+    "iso": [
+     "UA-05",
+     "UA-32",
+     "UA-71"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
