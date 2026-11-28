@@ -145,3 +145,10 @@ HD|Grão-Ducado de Hesse|1806|1874
 MS|(Grão-)?Ducado de Mecklemburgo-Schwerin|1621|1874
 MG|Ducado de Mecklemburgo-Güstrow|1621|1694
 MST|(Grão-)?Ducado de Mecklemburgo-Strelitz|1701|1874
+MV|Sultanato das Maldivas|1470|1874
+YEM|Imamato Zaidita do Iêmen( \(.*\))?|1636|1848
+IME|Reino de Imereti( \(vassalo russo\))?|1470|1809
+MOD|Marquesado de Ferrara e Ducado de Módena e Reggio \(Este\)|1470|1470
+MOD|Ducado de Ferrara, Módena e Reggio \(Este\)|1471|1597
+MOD|Ducado de Módena|1598|1858
+BRW|Principado de Brunsvique-Wolfenbüttel|1470|1805

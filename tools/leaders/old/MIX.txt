@@ -1,0 +1,88 @@
+# fonte: https://en.wikipedia.org/wiki/Imams_of_Yemen ; https://en.wikipedia.org/wiki/Kingdom_of_Imereti ; https://en.wikipedia.org/wiki/Duke_of_Ferrara_and_of_Modena ; https://en.wikipedia.org/wiki/List_of_princes_of_Brunswick-Wolfenb%C3%BCttel (Iêmen, Imereti e Brunsvique: só anos)
+YEM|1597|1620|al-Mansur al-Qasim|Imã
+YEM|1620|1644|al-Muayyad Muhammad I|Imã
+YEM|1644|1676|al-Mutawakkil Ismail|Imã
+YEM|1676|1681|al-Mahdi Ahmad|Imã
+YEM|1681|1686|al-Muayyad Muhammad II|Imã
+YEM|1687|1716|al-Mahdi Muhammad|Imã
+YEM|1716|1727|al-Mutawakkil al-Qasim|Imã
+YEM|1727|1748|al-Mansur al-Husayn II|Imã
+YEM|1748|1775|al-Mahdi Abbas|Imã
+YEM|1775|1809|al-Mansur Ali I|Imã
+YEM|1809|1816|al-Mutawakkil Ahmad|Imã
+YEM|1816|1835|al-Mahdi Abdallah|Imã
+YEM|1835|1837|al-Mansur Ali II|Imã
+YEM|1837|1840|an-Nasir Abdallah|Imã
+YEM|1840|1844|al-Hadi Muhammad|Imã
+YEM|1844|1845|al-Mansur Ali II|Imã
+YEM|1845|1849|al-Mutawakkil Muhammad|Imã
+IME|1463|1478|Bagrat II|Rei de Imereti
+IME|1484|1510|Alexandre II|Rei de Imereti
+IME|1510|1565|Bagrat III|Rei de Imereti
+IME|1565|1585|Jorge II|Rei de Imereti
+IME|1585|1590|Levan|Rei de Imereti
+IME|1590|1605|Rostom|Rei de Imereti
+IME|1605|1639|Jorge III|Rei de Imereti
+IME|1639|1660|Alexandre III|Rei de Imereti
+IME|1660|1661|Bagrat V|Rei de Imereti
+IME|1661|1663|Arquil II|Rei de Imereti
+IME|1663|1664|Demétrio Gurieli|Rei de Imereti
+IME|1664|1668|Bagrat V|Rei de Imereti
+IME|1669|1678|Bagrat V|Rei de Imereti
+IME|1678|1679|Arquil II|Rei de Imereti
+IME|1679|1681|Bagrat V|Rei de Imereti
+IME|1681|1683|Jorge III Gurieli|Rei de Imereti
+IME|1683|1690|Alexandre IV|Rei de Imereti
+IME|1690|1691|Arquil II|Rei de Imereti
+IME|1691|1695|Alexandre IV|Rei de Imereti
+IME|1695|1696|Arquil II|Rei de Imereti
+IME|1696|1698|Jorge IV|Rei de Imereti
+IME|1698|1701|Simão|Rei de Imereti
+IME|1701|1702|Mamia III Gurieli|Rei de Imereti
+IME|1702|1707|Jorge V (Giorgi-Malakia Abashidze)|Rei de Imereti
+IME|1707|1711|Jorge VI|Rei de Imereti
+IME|1712|1713|Jorge VI|Rei de Imereti
+IME|1713|1716|Jorge VI|Rei de Imereti
+IME|1719|1720|Jorge VI|Rei de Imereti
+IME|1720|1741|Alexandre V|Rei de Imereti
+IME|1741|1746|Alexandre V|Rei de Imereti
+IME|1746|1749|Mamuka|Rei de Imereti
+IME|1749|1752|Alexandre V|Rei de Imereti
+IME|1752|1766|Salomão I|Rei de Imereti
+IME|1766|1768|Teimuraz|Rei de Imereti
+IME|1768|1784|Salomão I|Rei de Imereti
+IME|1784|1789|Davi II|Rei de Imereti
+IME|1789|1790|Salomão II|Rei de Imereti
+IME|1790|1791|Davi II|Rei de Imereti
+IME|1792|1810|Salomão II|Rei de Imereti
+MOD|1450-10-01|1471-08-20|Borso d'Este|Duque de Módena e Reggio
+MOD|1471-08-20|1505-06-15|Hércules I|Duque de Ferrara, Módena e Reggio
+MOD|1505-06-15|1534-10-31|Afonso I|Duque de Ferrara, Módena e Reggio
+MOD|1534-10-31|1559-10-03|Hércules II|Duque de Ferrara, Módena e Reggio
+MOD|1559-10-03|1597-10-27|Afonso II|Duque de Ferrara, Módena e Reggio
+MOD|1597-10-27|1628-12-11|César|Duque de Módena e Reggio
+MOD|1628-12-11|1629-07-11|Afonso III|Duque de Módena e Reggio
+MOD|1629-07-11|1658-10-14|Francisco I|Duque de Módena e Reggio
+MOD|1658-10-14|1662-07-16|Afonso IV|Duque de Módena e Reggio
+MOD|1662-07-16|1694-09-06|Francisco II|Duque de Módena e Reggio
+MOD|1694-09-06|1737-04-26|Rinaldo|Duque de Módena e Reggio
+MOD|1737-04-26|1780-02-22|Francisco III|Duque de Módena e Reggio
+MOD|1780-02-22|1796-10-16|Hércules III|Duque de Módena e Reggio
+MOD|1814-07-14|1846-01-21|Francisco IV|Duque de Módena e Reggio
+MOD|1846-01-21|1859-06-11|Francisco V|Duque de Módena e Reggio
+BRW|1416|1482|Guilherme I|Príncipe de Brunsvique-Wolfenbüttel
+BRW|1482|1491|Guilherme II|Príncipe de Brunsvique-Wolfenbüttel
+BRW|1491|1514|Henrique, o Velho|Príncipe de Brunsvique-Wolfenbüttel
+BRW|1514|1568|Henrique, o Jovem|Príncipe de Brunsvique-Wolfenbüttel
+BRW|1568|1589|Júlio|Príncipe de Brunsvique-Wolfenbüttel
+BRW|1589|1613|Henrique Júlio|Príncipe de Brunsvique-Wolfenbüttel
+BRW|1613|1634|Frederico Ulrico|Príncipe de Brunsvique-Wolfenbüttel
+BRW|1635|1666|Augusto, o Jovem|Príncipe de Brunsvique-Wolfenbüttel
+BRW|1666|1685|Rodolfo Augusto|Príncipe de Brunsvique-Wolfenbüttel
+BRW|1685|1704|Rodolfo Augusto e Antônio Ulrico|Príncipes de Brunsvique-Wolfenbüttel
+BRW|1704|1714|Antônio Ulrico|Príncipe de Brunsvique-Wolfenbüttel
+BRW|1714|1731|Augusto Guilherme|Príncipe de Brunsvique-Wolfenbüttel
+BRW|1731|1735|Luís Rodolfo|Príncipe de Brunsvique-Wolfenbüttel
+BRW|1735|1735|Fernando Alberto II|Príncipe de Brunsvique-Wolfenbüttel
+BRW|1735|1780|Carlos I|Príncipe de Brunsvique-Wolfenbüttel
+BRW|1780|1806|Carlos Guilherme Fernando|Príncipe de Brunsvique-Wolfenbüttel

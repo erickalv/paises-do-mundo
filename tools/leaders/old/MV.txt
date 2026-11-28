@@ -1,0 +1,43 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_Maldivian_monarchs (só anos; 1558-1631 omitido: sultões cristãos in absentia)
+MV|1443|1467|Hasan III|Sultão
+MV|1467|1467|al-Sayyid Muhammad|Sultão
+MV|1467|1468|Hasan III|Sultão
+MV|1468|1480|Muhammad II|Sultão
+MV|1480|1480|Hasan IV|Sultão
+MV|1480|1484|Umar II|Sultão
+MV|1484|1485|Hasan V|Sultão
+MV|1485|1491|Hasan IV|Sultão
+MV|1491|1492|Hasan VI|Sultão
+MV|1492|1492|Ibrahim II|Sultão
+MV|1492|1492|Kalu Muhammad|Sultão
+MV|1492|1493|Yusuf III|Sultão
+MV|1493|1495|Ali II|Sultão
+MV|1495|1510|Kalu Muhammad|Sultão
+MV|1510|1511|Hasan VII|Sultão
+MV|1511|1513|al-Sharif Ahmad al-Makki|Sultão
+MV|1513|1513|Ali III|Sultão
+MV|1513|1529|Kalu Muhammad|Sultão
+MV|1529|1549|Hasan VIII|Sultão
+MV|1549|1551|Muhammad III|Sultão
+MV|1551|1552|Hasan IX|Sultão
+MV|1554|1557|Abu Bakr II|Sultão
+MV|1557|1558|Ali IV|Sultão
+MV|1632|1648|Muhammad Imaduddin I|Sultão
+MV|1648|1687|Ibrahim Iskandar I|Sultão
+MV|1687|1691|Kuda Muhammad|Sultão
+MV|1691|1692|Muhammad Mohyeddine|Sultão
+MV|1692|1701|Muhammad Saifuddin|Sultão
+MV|1701|1701|Ali VII|Sultão
+MV|1701|1701|Hasan X|Sultão
+MV|1701|1704|Ibrahim Muzhir al-Din|Sultão
+MV|1704|1720|Muhammad Imaduddin II|Sultão
+MV|1720|1750|Ibrahim Iskandar II|Sultão
+MV|1750|1757|Muhammad Imaduddin III|Sultão
+MV|1757|1759|Amina II|Sultana
+MV|1759|1766|Hasan Izz ud-din|Sultão
+MV|1766|1774|Muhammad Ghiyath al-Din|Sultão
+MV|1774|1774|Muhammad Shams al-Din Iskandar II|Sultão
+MV|1774|1779|Muhammad Muizz al-Din|Sultão
+MV|1779|1799|Hasan Nuruddin I|Sultão
+MV|1799|1835|Muhammad Muinuddin I|Sultão
+MV|1835|1882|Muhammad Imaduddin IV|Sultão
