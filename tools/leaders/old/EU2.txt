@@ -14,3 +14,26 @@ BA|1818-12-08|1830-03-30|Luís I|Grão-duque de Baden
 BA|1830-03-30|1852-04-24|Leopoldo|Grão-duque de Baden
 BA|1852-04-24|1858-01-22|Luís II|Grão-duque de Baden
 BA|1858-01-22|1907-09-28|Frederico I|Grão-duque de Baden
+# fonte: https://en.wikipedia.org/wiki/List_of_monarchs_of_W%C3%BCrttemberg
+WU|1482-12-14|1495-07-21|Eberardo V, o Barbudo|Conde de Württemberg
+WU|1495-07-21|1496-02-24|Eberardo I, o Barbudo|Duque de Württemberg
+WU|1496-02-24|1498-06-10|Eberardo II|Duque de Württemberg
+WU|1498-06-10|1519|Ulrico|Duque de Württemberg
+WU|1534|1550-11-06|Ulrico|Duque de Württemberg
+WU|1550-11-06|1568-12-28|Cristóvão|Duque de Württemberg
+WU|1568-12-28|1593-08-28|Luís, o Piedoso|Duque de Württemberg
+WU|1593-08-28|1608-01-29|Frederico I|Duque de Württemberg
+WU|1608-01-29|1628-07-18|João Frederico|Duque de Württemberg
+WU|1628-07-18|1634-09-06|Eberardo III|Duque de Württemberg
+WU|1648-10-24|1674-07-02|Eberardo III|Duque de Württemberg
+WU|1674-07-02|1677-06-23|Guilherme Luís|Duque de Württemberg
+WU|1677-06-23|1733-10-31|Eberardo Luís|Duque de Württemberg
+WU|1733-10-31|1737-03-12|Carlos Alexandre|Duque de Württemberg
+WU|1737-03-12|1793-10-24|Carlos Eugênio|Duque de Württemberg
+WU|1793-10-24|1795-05-20|Luís Eugênio|Duque de Württemberg
+WU|1795-05-20|1797-12-23|Frederico II Eugênio|Duque de Württemberg
+WU|1797-12-23|1803-02-25|Frederico II|Duque de Württemberg
+WU|1803-02-25|1806-08-06|Frederico II|Eleitor de Württemberg
+WU|1806-08-06|1816-10-30|Frederico I|Rei de Württemberg
+WU|1816-10-30|1864-06-25|Guilherme I|Rei de Württemberg
+WU|1864-06-25|1891-10-06|Carlos|Rei de Württemberg

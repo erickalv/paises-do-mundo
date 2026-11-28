@@ -1,0 +1,11 @@
+# fonte: https://iiab.live/kiwix/content/wikipedia_en_all_maxi_2023-05/A/Khanate_of_Bukhara (só anos; 1511-1582 e 1747-1785 sem lista confiável)
+BUK|1500|1510|Muhammad Xaibani|Cã
+BUK|1583|1598|Abdullah Khan II|Cã
+BUK|1599|1605|Baqi Muhammad Khan|Cã
+BUK|1605|1611|Vali Muhammad Khan|Cã
+BUK|1611|1642|Imam Quli Khan|Cã
+BUK|1642|1645|Nadr Muhammad Khan|Cã
+BUK|1645|1680|Abd al-Aziz Khan|Cã
+BUK|1680|1702|Subhan Quli Khan|Cã
+BUK|1702|1711-03-18|Ubaidullah Khan|Cã
+BUK|1711|1747|Abu'l-Fayz Khan|Cã

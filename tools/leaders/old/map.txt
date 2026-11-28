@@ -118,3 +118,11 @@ BA|Margraviato de Baden|1470|1514
 BA|Margraviato de Baden|1771|1802
 BA|Eleitorado de Baden|1803|1805
 BA|Grão-Ducado de Baden|1806|1874
+EN|Reino da Irlanda|1542|1800
+PAPA|Estados Papais( \(papa refugiado em Gaeta\))?|1470|1869
+RK|Reino de Ryukyu|1470|1871
+BUK|Canato de Bukhara|1501|1784
+WU|Condado de Württemberg|1482|1494
+WU|Ducado de Württemberg|1495|1802
+WU|Eleitorado de Württemberg|1803|1805
+WU|Reino de Württemberg|1806|1874
