@@ -1,0 +1,39 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_grand_masters_of_the_Knights_Hospitaller ; https://en.wikipedia.org/wiki/List_of_kings_and_dukes_of_Lorraine
+HOS|1454|1461|Jacques de Milly|Grão-mestre da Ordem de São João
+HOS|1461|1467|Piero Raimondo Zacosta|Grão-mestre da Ordem de São João
+HOS|1467|1476|Giovanni Battista Orsini|Grão-mestre da Ordem de São João
+HOS|1476|1503|Pierre d'Aubusson|Grão-mestre da Ordem de São João
+HOS|1503|1512|Emery d'Amboise|Grão-mestre da Ordem de São João
+HOS|1512|1513|Guy de Blanchefort|Grão-mestre da Ordem de São João
+HOS|1513|1521|Fabrizio del Carretto|Grão-mestre da Ordem de São João
+HOS|1521|1534|Philippe Villiers de L'Isle-Adam|Grão-mestre da Ordem de São João
+HOS|1534|1535|Piero de Ponte|Grão-mestre da Ordem de São João
+HOS|1535|1536|Didier de Saint-Jaille|Grão-mestre da Ordem de São João
+HOS|1536|1553|Juan de Homedes|Grão-mestre da Ordem de São João
+HOS|1553|1557|Claude de la Sengle|Grão-mestre da Ordem de São João
+HOS|1557|1568|Jean Parisot de Valette|Grão-mestre da Ordem de São João
+HOS|1568|1572|Pierre de Monte|Grão-mestre da Ordem de São João
+HOS|1572|1581|Jean de la Cassière|Grão-mestre da Ordem de São João
+HOS|1581|1595|Hugues Loubenx de Verdalle|Grão-mestre da Ordem de São João
+HOS|1595|1601|Martín Garzés|Grão-mestre da Ordem de São João
+HOS|1601|1622|Alof de Wignacourt|Grão-mestre da Ordem de São João
+HOS|1622|1623|Luís Mendes de Vasconcelos|Grão-mestre da Ordem de São João
+HOS|1623|1636|Antoine de Paule|Grão-mestre da Ordem de São João
+HOS|1636|1657|Giovanni Paolo Lascaris|Grão-mestre da Ordem de São João
+HOS|1657|1660|Martin de Redin|Grão-mestre da Ordem de São João
+HOS|1660|1660|Annet de Clermont-Gessant|Grão-mestre da Ordem de São João
+HOS|1660|1663|Rafael Cotoner|Grão-mestre da Ordem de São João
+HOS|1663|1680|Nicolás Cotoner|Grão-mestre da Ordem de São João
+HOS|1680|1690|Gregorio Carafa|Grão-mestre da Ordem de São João
+HOS|1690|1697|Adrien de Wignacourt|Grão-mestre da Ordem de São João
+HOS|1697|1720|Ramon Perellós|Grão-mestre da Ordem de São João
+HOS|1720|1722|Marc'Antonio Zondadari|Grão-mestre da Ordem de São João
+HOS|1722|1736|António Manoel de Vilhena|Grão-mestre da Ordem de São João
+HOS|1736|1741|Ramón Despuig|Grão-mestre da Ordem de São João
+HOS|1741|1773|Manuel Pinto da Fonseca|Grão-mestre da Ordem de São João
+HOS|1773|1775|Francisco Ximénez de Tejada|Grão-mestre da Ordem de São João
+HOS|1775|1797|Emmanuel de Rohan-Polduc|Grão-mestre da Ordem de São João
+HOS|1797|1799-07-06|Ferdinand von Hompesch zu Bolheim|Grão-mestre da Ordem de São João
+LOR|1453-02-28|1470-12-16|João II|Duque da Lorena
+LOR|1470-12-16|1473-07-24|Nicolau I|Duque da Lorena
+LOR|1737|1766-02-23|Estanislau Leszczyński|Duque da Lorena e Bar

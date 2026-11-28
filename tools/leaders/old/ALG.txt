@@ -1,0 +1,64 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_governors_and_rulers_of_the_Regency_of_Algiers (só anos) ; https://www.wikiwand.com/en/articles/Sultan_of_Aceh
+ALG|1545|1566|Hasan Paxá (filho de Barbarossa)|Paxá de Argel
+ALG|1566|1568|Maomé I Paxá|Paxá de Argel
+ALG|1568|1577|Uluç Ali Paxá (Occhiali)|Paxá de Argel
+ALG|1577|1588|Hassan Veneziano|Paxá de Argel
+ALG|1588|1589|Dely Ahmed|Paxá de Argel
+ALG|1589|1591|Hızır Paxá|Paxá de Argel
+ALG|1591|1593|Hadji Shaban Paxá|Paxá de Argel
+ALG|1593|1594|Mustafá Paxá|Paxá de Argel
+ALG|1594|1595|Kader Paxá|Paxá de Argel
+ALG|1596|1599|Mustafá II Paxá|Paxá de Argel
+ALG|1599|1601|Daly Hassan Paxá|Paxá de Argel
+ALG|1601|1603|Somiman Paxá|Paxá de Argel
+ALG|1605|1607|Maomé II, o Eunuco|Paxá de Argel
+ALG|1607|1607|Mustafá III Paxá|Paxá de Argel
+ALG|1607|1610|Redwan Paxá|Paxá de Argel
+ALG|1610|1614|Kussa Mustafá|Paxá de Argel
+ALG|1614|1616|Hasan IV|Paxá de Argel
+ALG|1616|1619|Mustafá IV Paxá|Paxá de Argel
+ALG|1619|1621|Kassan Kaid Kussa|Paxá de Argel
+ALG|1621|1626|Kader Paxá|Paxá de Argel
+ALG|1626|1634|Hassan Khodja|Paxá de Argel
+ALG|1634|1645|Yusuf II|Paxá de Argel
+ALG|1645|1647|Mahmud Brusali Paxá|Paxá de Argel
+ALG|1647|1650|Yusef Paxá|Paxá de Argel
+ALG|1650|1653|Mehmed Paxá|Paxá de Argel
+ALG|1653|1655|Ahmed Paxá|Paxá de Argel
+ALG|1655|1656|Ibrahim Paxá|Paxá de Argel
+ALG|1656|1657|Ahmed Paxá|Paxá de Argel
+ALG|1657|1659|Ibrahim Paxá|Paxá de Argel
+ALG|1659|1660|Khalil Agá|Agá de Argel
+ALG|1660|1661|Ramadan Agá|Agá de Argel
+ALG|1661|1665|Chabane Agá|Agá de Argel
+ALG|1665|1671|Ali Agá|Agá de Argel
+ALG|1671|1682|Mohamed Trik|Dei de Argel
+ALG|1682|1683|Baba Hassan|Dei de Argel
+ALG|1683|1688|Mezzo Morto Hüseyin Paxá|Dei de Argel
+ALG|1688|1695|Hadj Ahmed Chabane|Dei de Argel
+ALG|1695|1698|Hadj Ahmed|Dei de Argel
+ALG|1699|1700|Hadj Hassen Chaouch|Dei de Argel
+ALG|1700|1705|Hadj Mustafá|Dei de Argel
+ALG|1705|1707|Hussein Khodja|Dei de Argel
+ALG|1707|1710|Mohamed Bektach|Dei de Argel
+ALG|1710|1710|Dely Ibrahim|Dei de Argel
+ALG|1710|1718|Baba Ali Chaouche|Dei de Argel
+ALG|1718|1724|Mohamed Ben Hassen|Dei de Argel
+ALG|1724|1732|Baba Abdi|Dei de Argel
+ALG|1732|1745|Baba Ibrahim|Dei de Argel
+ALG|1745|1748|Ibrahim Kouchouk|Dei de Argel
+ALG|1748|1754|Mohamed Ibn Bekir|Dei de Argel
+ALG|1754|1766|Baba Ali Bou Sebâa|Dei de Argel
+ALG|1766|1791|Maomé V ben Othman|Dei de Argel
+ALG|1791|1798|Sidi Hassan|Dei de Argel
+ALG|1798|1805|Mustafá|Dei de Argel
+ALG|1805|1808|Ahmed bin Ali Khodja|Dei de Argel
+ALG|1808|1809|Ali III ben Mohamed|Dei de Argel
+ALG|1809|1815|Hadj Ali|Dei de Argel
+ALG|1815|1815|Hadj Mohamed|Dei de Argel
+ALG|1815|1817|Omar Agá|Dei de Argel
+ALG|1817|1818|Ali Khodja|Dei de Argel
+ALG|1818|1830-07-05|Hussein|Dei de Argel
+ACE|1838|1857|Sulaiman Syah|Sultão
+ACE|1857|1870|Ali Alauddin Mansur Syah|Sultão
+ACE|1870|1874|Mahmud Syah|Sultão

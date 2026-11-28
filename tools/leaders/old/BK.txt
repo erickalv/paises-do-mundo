@@ -1,0 +1,29 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_monarchs_of_Montenegro ; https://en.wikipedia.org/wiki/List_of_heads_of_state_of_Cambodia
+MNE|1516|1520|Vavila|Metropolita de Cetinje
+MNE|1520|1530|German II|Metropolita de Cetinje
+MNE|1530|1532|Pavle|Metropolita de Cetinje
+MNE|1532|1540|Vasilije I|Metropolita de Cetinje
+MNE|1540|1559|Romil|Metropolita de Cetinje
+MNE|1561|1569|Ruvim II|Metropolita de Cetinje
+MNE|1569|1579|Pahomije II|Metropolita de Cetinje
+MNE|1579|1582|Gerasim|Metropolita de Cetinje
+MNE|1582|1591|Venijamin|Metropolita de Cetinje
+MNE|1591|1593|Nikanor e Stefan|Metropolitas de Cetinje
+MNE|1593|1636|Ruvim III|Metropolita de Cetinje
+MNE|1639|1649|Mardarije I|Metropolita de Cetinje
+MNE|1649|1659|Visarion I|Metropolita de Cetinje
+MNE|1659|1673|Mardarije II|Metropolita de Cetinje
+MNE|1673|1685|Ruvim IV|Metropolita de Cetinje
+MNE|1685|1692|Visarion II|Metropolita de Cetinje
+MNE|1694|1697|Sava I|Metropolita de Cetinje
+MNE|1697-07-19|1735-01-11|Danilo I|Príncipe-bispo
+MNE|1735-01-11|1781-03-07|Sava II|Príncipe-bispo
+MNE|1750-08-11|1766-03-10|Sava II e Vasilije III|Príncipes-bispos
+MNE|1767-10-17|1773-09-22|Šćepan, o Pequeno|Governante (impostor)
+MNE|1781-03-07|1784-05-15|Arsenije II|Príncipe-bispo
+MNE|1784-10-13|1830-10-30|Petar I|Príncipe-bispo
+MNE|1830-10-30|1851-10-31|Petar II|Príncipe-bispo
+MNE|1851-10-31|1852-03-13|Danilo II|Príncipe-bispo
+MNE|1852-03-13|1860-08-13|Danilo I|Príncipe
+MNE|1860-08-13|1910-08-28|Nicolau I|Príncipe
+KH|1860-10-19|1904-04-24|Norodom|Rei

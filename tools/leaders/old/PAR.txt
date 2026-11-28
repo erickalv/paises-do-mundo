@@ -1,0 +1,27 @@
+# fonte: https://en.wikipedia.org/wiki/Duke_of_Parma ; https://en.wikipedia.org/wiki/List_of_rulers_of_Asante
+PAR|1545-09-16|1547-09-10|Pedro Luís Farnésio|Duque de Parma
+PAR|1549-11-09|1586-09-18|Otávio Farnésio|Duque de Parma
+PAR|1586-09-18|1592-12-03|Alexandre Farnésio|Duque de Parma
+PAR|1592-12-03|1622-03-05|Ranuccio I|Duque de Parma
+PAR|1622-03-05|1646-09-11|Odoardo|Duque de Parma
+PAR|1646-09-11|1694-12-11|Ranuccio II|Duque de Parma
+PAR|1694-12-11|1727-02-26|Francisco Farnésio|Duque de Parma
+PAR|1727-02-26|1731-01-20|Antônio Farnésio|Duque de Parma
+PAR|1731-02-26|1735-10-03|Carlos I|Duque de Parma
+PAR|1748-10-18|1765-07-18|Filipe|Duque de Parma
+PAR|1765-07-18|1802-10-09|Fernando|Duque de Parma
+PAR|1814-04-11|1847-12-17|Maria Luísa|Duquesa de Parma
+PAR|1847-12-17|1849-05-17|Carlos II|Duque de Parma
+PAR|1849-05-17|1854-03-27|Carlos III|Duque de Parma
+PAR|1854-03-27|1859-06-09|Roberto I|Duque de Parma
+ASA|1701|1717|Osei Tutu I|Asantehene
+ASA|1720|1750|Opoku Ware I|Asantehene
+ASA|1750|1764|Kusi Obodum|Asantehene
+ASA|1764|1777|Osei Kwadwo|Asantehene
+ASA|1777|1803|Osei Kwame Panyin|Asantehene
+ASA|1803-12|1804-03|Opoku Fofie|Asantehene
+ASA|1804|1824-01-21|Osei Bonsu|Asantehene
+ASA|1824|1834-02-21|Osei Yaw Akoto|Asantehene
+ASA|1834-08-25|1867-04-27|Kwaku Dua I|Asantehene
+ASA|1867-05-28|1874-10-26|Kofi Karikari|Asantehene
+ASA|1874|1883-03-08|Mensa Bonsu|Asantehene

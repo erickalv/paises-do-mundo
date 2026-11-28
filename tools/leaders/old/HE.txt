@@ -1,0 +1,50 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_Hessian_monarchs ; https://en.wikipedia.org/wiki/List_of_rulers_of_Mecklenburg
+HE|1493-06-03|1509-07-11|Guilherme II|Landgrave de Hesse
+HE|1509-07-11|1567-03-31|Filipe I, o Magnânimo|Landgrave de Hesse
+HK|1567-03-31|1592-08-25|Guilherme IV, o Sábio|Landgrave de Hesse-Kassel
+HK|1592-08-25|1627-03-17|Maurício, o Erudito|Landgrave de Hesse-Kassel
+HK|1627-03-17|1637-09-21|Guilherme V|Landgrave de Hesse-Kassel
+HK|1637-09-21|1663-07-16|Guilherme VI|Landgrave de Hesse-Kassel
+HK|1663-07-16|1670-11-21|Guilherme VII|Landgrave de Hesse-Kassel
+HK|1670-11-21|1730-03-23|Carlos I|Landgrave de Hesse-Kassel
+HK|1730-03-23|1751-04-05|Frederico I|Landgrave de Hesse-Kassel
+HK|1751-04-05|1760-02-01|Guilherme VIII|Landgrave de Hesse-Kassel
+HK|1760-02-01|1785-10-31|Frederico II|Landgrave de Hesse-Kassel
+HK|1785-10-31|1803|Guilherme IX|Landgrave de Hesse-Kassel
+HK|1803|1807-07-09|Guilherme I|Eleitor de Hesse
+HK|1813-11-21|1821-02-27|Guilherme I|Eleitor de Hesse
+HK|1821-02-27|1847-11-20|Guilherme II|Eleitor de Hesse
+HK|1847-11-20|1866-07-22|Frederico Guilherme|Eleitor de Hesse
+HD|1567-03-31|1596-02-07|Jorge I, o Piedoso|Landgrave de Hesse-Darmstadt
+HD|1596-02-07|1626-07-27|Luís V|Landgrave de Hesse-Darmstadt
+HD|1626-07-27|1661-06-11|Jorge II|Landgrave de Hesse-Darmstadt
+HD|1661-06-11|1678-04-24|Luís VI|Landgrave de Hesse-Darmstadt
+HD|1678-04-24|1678-08-31|Luís VII|Landgrave de Hesse-Darmstadt
+HD|1678-08-31|1739-09-12|Ernesto Luís|Landgrave de Hesse-Darmstadt
+HD|1739-09-12|1768-10-17|Luís VIII|Landgrave de Hesse-Darmstadt
+HD|1768-10-17|1790-04-06|Luís IX|Landgrave de Hesse-Darmstadt
+HD|1790-04-06|1806|Luís X|Landgrave de Hesse-Darmstadt
+HD|1806|1830-04-06|Luís I|Grão-duque de Hesse
+HD|1830-04-06|1848-06-16|Luís II|Grão-duque de Hesse
+HD|1848-06-16|1877-06-13|Luís III|Grão-duque de Hesse
+MS|1592-03-22|1628|Adolfo Frederico I|Duque de Mecklemburgo-Schwerin
+MS|1631|1658-02-27|Adolfo Frederico I|Duque de Mecklemburgo-Schwerin
+MS|1658-02-27|1692-06-21|Cristiano Luís I|Duque de Mecklemburgo-Schwerin
+MS|1692-06-21|1713-07-31|Frederico Guilherme|Duque de Mecklemburgo-Schwerin
+MS|1713-07-31|1747-11-28|Carlos Leopoldo|Duque de Mecklemburgo-Schwerin
+MS|1747-11-28|1756-05-30|Cristiano Luís II|Duque de Mecklemburgo-Schwerin
+MS|1756-05-30|1785-04-24|Frederico II, o Piedoso|Duque de Mecklemburgo-Schwerin
+MS|1785-04-24|1815|Frederico Francisco I|Duque de Mecklemburgo-Schwerin
+MS|1815|1837-02-01|Frederico Francisco I|Grão-duque de Mecklemburgo-Schwerin
+MS|1837-02-01|1842-03-07|Paulo Frederico|Grão-duque de Mecklemburgo-Schwerin
+MS|1842-03-07|1883-04-15|Frederico Francisco II|Grão-duque de Mecklemburgo-Schwerin
+MG|1610-07-22|1628|João Alberto II|Duque de Mecklemburgo-Güstrow
+MG|1631|1636-04-23|João Alberto II|Duque de Mecklemburgo-Güstrow
+MG|1636-04-23|1695-10-06|Gustavo Adolfo|Duque de Mecklemburgo-Güstrow
+MST|1701-03-08|1708-05-12|Adolfo Frederico II|Duque de Mecklemburgo-Strelitz
+MST|1708-05-12|1752-12-11|Adolfo Frederico III|Duque de Mecklemburgo-Strelitz
+MST|1752-12-11|1794-06-02|Adolfo Frederico IV|Duque de Mecklemburgo-Strelitz
+MST|1794-06-02|1815|Carlos II|Duque de Mecklemburgo-Strelitz
+MST|1815|1816-11-06|Carlos II|Grão-duque de Mecklemburgo-Strelitz
+MST|1816-11-06|1860-09-06|Jorge|Grão-duque de Mecklemburgo-Strelitz
+MST|1860-09-06|1904-05-30|Frederico Guilherme|Grão-duque de Mecklemburgo-Strelitz

@@ -126,3 +126,22 @@ WU|Condado de Württemberg|1482|1494
 WU|Ducado de Württemberg|1495|1802
 WU|Eleitorado de Württemberg|1803|1805
 WU|Reino de Württemberg|1806|1874
+MNE|Príncipe-Bispado de Montenegro|1516|1851
+MNE|Principado de Montenegro|1852|1874
+KH|Camboja \(vassalo do Sião\)|1860|1862
+HOS|Rodes e Dodecaneso \(Cavaleiros Hospitalários\)|1470|1522
+HOS|Malta \(Ordem de São João\)|1530|1797
+LOR|Ducado da Lorena|1470|1472
+LOR|Ducado da Lorena e Bar \(Estanislau Leszczyński\)|1737|1765
+ALG|Regência de Argel|1554|1829
+ACE|Sultanato de Aceh|1838|1873
+PAR|Ducado de Parma( \(Farnese\)| \(Carlos de Bourbon\))?|1545|1858
+ASA|Império Axanti|1701|1874
+HE|Landgraviato de Hesse|1500|1566
+HK|Landgraviato de Hesse-Kassel|1567|1802
+HK|Eleitorado de Hesse|1803|1865
+HD|Landgraviato de Hesse-Darmstadt|1567|1805
+HD|Grão-Ducado de Hesse|1806|1874
+MS|(Grão-)?Ducado de Mecklemburgo-Schwerin|1621|1874
+MG|Ducado de Mecklemburgo-Güstrow|1621|1694
+MST|(Grão-)?Ducado de Mecklemburgo-Strelitz|1701|1874
