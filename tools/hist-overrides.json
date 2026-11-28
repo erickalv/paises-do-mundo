@@ -5154,6 +5154,35 @@
    }
   },
   {
+   "key": "Scania",
+   "take": {
+    "from": "Sweden–Norway",
+    "iso": [
+     "SE-M",
+     "SE-K"
+    ]
+   }
+  },
+  {
+   "key": "Halland",
+   "take": {
+    "from": "Sweden–Norway",
+    "iso": [
+     "SE-N"
+    ]
+   }
+  },
+  {
+   "key": "Trondelag",
+   "take": {
+    "from": "Norway",
+    "iso": [
+     "NO-16",
+     "NO-17"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
