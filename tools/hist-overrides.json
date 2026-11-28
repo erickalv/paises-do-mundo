@@ -5364,6 +5364,24 @@
    }
   },
   {
+   "key": "IN Malwa",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "IN-MP"
+    ]
+   }
+  },
+  {
+   "key": "IN Gondwana",
+   "take": {
+    "from": "British Raj",
+    "iso": [
+     "IN-CT"
+    ]
+   }
+  },
+  {
    "key": "Old Northwest",
    "take": {
     "from": "United States of America",
@@ -5555,9 +5573,7 @@
    "take": {
     "from": "British Raj",
     "iso": [
-     "IN-MH",
-     "IN-MP",
-     "IN-CT"
+     "IN-MH"
     ]
    }
   },
@@ -6198,6 +6214,102 @@
      "FR-05",
      "FR-73",
      "FR-74"
+    ]
+   }
+  },
+  {
+   "key": "SwPom South",
+   "cut": {
+    "map": 1700,
+    "name": "Sweden",
+    "adm0": [
+     "DEU",
+     "POL"
+    ],
+    "iso_not": [
+     "DE-SN",
+     "DE-BY",
+     "DE-RP",
+     "DE-SL",
+     "DE-SH",
+     "DE-NI",
+     "DE-NW",
+     "DE-BW",
+     "DE-HB",
+     "DE-HH",
+     "DE-HE",
+     "DE-TH",
+     "DE-ST",
+     "DE-BE",
+     "PL-SL",
+     "PL-MA",
+     "PL-PK",
+     "PL-DS",
+     "PL-OP",
+     "PL-PD",
+     "PL-WN",
+     "PL-LB",
+     "PL-LU",
+     "PL-PM",
+     "PL-MZ",
+     "PL-LD",
+     "PL-KP",
+     "PL-WP",
+     "PL-SK"
+    ]
+   }
+  },
+  {
+   "key": "SwPom",
+   "cut": {
+    "map": 1783,
+    "name": "Sweden",
+    "adm0": [
+     "DEU"
+    ],
+    "iso_not": [
+     "DE-SN",
+     "DE-BY",
+     "DE-RP",
+     "DE-SL",
+     "DE-SH",
+     "DE-NI",
+     "DE-NW",
+     "DE-BW",
+     "DE-BB",
+     "DE-HB",
+     "DE-HH",
+     "DE-HE",
+     "DE-TH",
+     "DE-ST",
+     "DE-BE"
+    ]
+   }
+  },
+  {
+   "key": "Bremen-Verden",
+   "cut": {
+    "map": 1700,
+    "name": "Sweden",
+    "adm0": [
+     "DEU"
+    ],
+    "iso_not": [
+     "DE-SN",
+     "DE-BY",
+     "DE-RP",
+     "DE-SL",
+     "DE-SH",
+     "DE-NW",
+     "DE-BW",
+     "DE-BB",
+     "DE-MV",
+     "DE-HB",
+     "DE-HH",
+     "DE-HE",
+     "DE-TH",
+     "DE-ST",
+     "DE-BE"
     ]
    }
   }
