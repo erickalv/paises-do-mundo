@@ -8,7 +8,7 @@ export const ROWS = [
   // ---------------- Europe
   ["GEROCC", "Alemanha (ocupada pelos Aliados)", "blank", 1946, 1948, ["DEU", "DEU~E"]],
   ["FRG", "Alemanha Ocidental", "x:de", 1949, 1989, ["DEU"], [9, 50.6]],
-  ["GDR49", "Alemanha Oriental", "x:de", 1949, 1958, ["DEU~E"], [12.6, 52.2]], // brasão só a partir de 1/out/1959
+  ["GDR49", "Alemanha Oriental", "x:de", 1949, 1958, ["DEU~E"], [12.6, 52.2], null], // brasão só a partir de 1/out/1959
   ["GDR", "Alemanha Oriental", "h:ddr", 1959, 1989, ["DEU~E"], [12.6, 52.2]],
   ["AUTOCC", "Áustria (ocupada pelos Aliados)", "x:at", 1946, 1955, ["AUT"]],
   ["SUN", "União Soviética", "h:su", 1946, 1990, ["RUS", "UKR", "BLR", "EST", "LVA", "LTU", "MDA", "GEO", "ARM", "AZE", "KAZ", "UZB", "TKM", "KGZ", "TJK"], [95, 62]],
@@ -141,6 +141,7 @@ export const ROWS = [
   ["BHR0", "Bahrein (protetorado britânico)", "h:bh_old", 1946, 1970, ["BHR"]],
   ["BHR1", null, "h:bh_old", 1971, 2001, ["BHR"]],
   ["KWT0", "Kuwait (protetorado britânico)", "h:kw21", 1946, 1960, ["KWT"]],
+  ["KWT90", "Kuwait (ocupação iraquiana)", "h:iq63", 1990, 1990, ["KWT"], null, null], // invadido em 2/ago/1990 e anexado pelo Iraque; libertado em 26/fev/1991
   // ---------------- Africa
   ["EGYK", "Reino do Egito", "h:eg_k", 1946, 1952, ["EGY"]],
   ["EGY53", "Egito", "h:eg_k", 1953, 1957, ["EGY"]], // a bandeira do reino seguiu oficial até 1958

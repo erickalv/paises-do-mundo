@@ -137,8 +137,8 @@ class GeoData(ctx: Context) {
     val modernFrom: Int
     val snapYears: IntArray
     val eras: List<Era>
-    /** leaders.json: per unit name, the effective leader ("l") and the kind of territory ("t") on 31 Dec, as [year0, year1, text] */
-    private val yearTexts: Pair<Map<String, List<Triple<Int, Int, String>>>, Map<String, List<Triple<Int, Int, String>>>> by lazy {
+    /** leaders.json: per unit name, the effective leader ("l"), the kind of territory ("t") and the leader's title ("c") on 31 Dec, as [year0, year1, text] */
+    private val yearTexts: Triple<Map<String, List<Triple<Int, Int, String>>>, Map<String, List<Triple<Int, Int, String>>>, Map<String, List<Triple<Int, Int, String>>>> by lazy {
         val j = org.json.JSONObject(appCtx.assets.open("leaders.json").bufferedReader().readText())
         fun read(o: org.json.JSONObject): Map<String, List<Triple<Int, Int, String>>> {
             val m = HashMap<String, List<Triple<Int, Int, String>>>()
@@ -148,10 +148,12 @@ class GeoData(ctx: Context) {
             }
             return m
         }
-        read(j.getJSONObject("l")) to read(j.getJSONObject("t"))
+        Triple(read(j.getJSONObject("l")), read(j.getJSONObject("t")), j.optJSONObject("c")?.let { read(it) } ?: emptyMap())
     }
     fun leaderOf(name: String, y: Int): String? = yearTexts.first[name]?.firstOrNull { y >= it.first && y <= it.second }?.third
     fun kindOf(name: String, y: Int): String? = yearTexts.second[name]?.firstOrNull { y >= it.first && y <= it.second }?.third
+    /** cargo do líder (rei, presidente, primeiro-ministro...) */
+    fun titleOf(name: String, y: Int): String? = yearTexts.third[name]?.firstOrNull { y >= it.first && y <= it.second }?.third
     private val lookup = HashMap<String, String>()
     private val lookupStripped = HashMap<String, String>()
 

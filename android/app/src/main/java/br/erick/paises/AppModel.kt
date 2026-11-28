@@ -428,7 +428,7 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
                     val rows = listOfNotNull(
                         data.kindOf(pk.name, year)?.let { "Tipo" to it },
                         pk.owner?.let { if (it.first().isLowerCase()) "Situação" to it.replaceFirstChar { c -> c.uppercaseChar() } else "Pertence a" to it },
-                        data.leaderOf(pk.name, year)?.let { "Líder" to it },
+                        data.leaderOf(pk.name, year)?.let { (data.titleOf(pk.name, year) ?: "Líder") to it },
                         pk.period?.let { "Período" to it },
                     )
                     out += LabelItem("pick$i", pk.name, pk.flag, p[0], p[1], 0.0, true, top = true, missed = false,

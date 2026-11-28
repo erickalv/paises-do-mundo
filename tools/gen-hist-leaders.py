@@ -8,6 +8,8 @@ Saída: android/app/src/main/assets/leaders.json = {nome da unidade: [[ano0, ano
 Uso: python3 gen-hist-leaders.py ARCHIGOS.tsv REIGN_leader_list.csv codelist.csv
 """
 import csv, json, re, sys, urllib.parse, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)) + "/leaders")
+import kinds
 ARCH, REIGN, CODES = sys.argv[1:4]
 ROOT = os.path.dirname(os.path.abspath(__file__)) + "/.."
 A = ROOT + "/android/app/src/main/assets/"
@@ -25,6 +27,8 @@ def clean(s):
 
 # ---- mandatos por país (letras do COW) ----
 SRC = {"A": {}, "R": {}, "W": {}}
+FEMALE = set()
+AB2CC = {}
 FULL = set()
 for x in csv.DictReader(open(ARCH), delimiter="\t"):
     nm = x["leader"]
@@ -34,6 +38,7 @@ for x in csv.DictReader(open(ARCH), delimiter="\t"):
         FULL.add(nm)
     else:
         nm = clean(nm)
+    if x["gender"] == "F": FEMALE.add(nm)
     SRC["A"].setdefault(x["idacr"], []).append((x["startdate"], x["enddate"], nm))
 def at(src, c, dd):
     best = None
@@ -46,19 +51,33 @@ for x in csv.DictReader(open(REIGN, encoding="utf-8", errors="replace")):
     d = "%s-%02d-%02d" % (x["syear"], int(x["smonth"] or 1), int(x["sdate"] or 1))
     e = "%s-%02d-31" % (x["eyear"], int(x["emonth"] or 12)) if x["eyear"] else "2021-08-31"
     nm = clean(x["leader"])
+    AB2CC[c] = int(x["ccode"])
+    if x["gender"] == "0": FEMALE.add(nm)
     if d <= "2015-12-31" <= e: nm = at("A", c, "2015-12-31") or nm  # mesmo líder: nome completo do Archigos
     SRC["R"].setdefault(c, []).append((d, e, nm))
+GOV = kinds.load_reign(os.path.join(os.path.dirname(REIGN), "REIGN_2021_8.csv"))
+def gov(c, name, y):
+    """regime REIGN em dez/y (1950–2021), com as mudanças posteriores conferidas"""
+    fx = kinds.lookup(kinds.REGIME_FIX, name, y)
+    if fx: return fx
+    c = RALIAS.get(c, c)
+    if not c or c not in AB2CC or y < 1950: return None
+    cc = AB2CC[c]
+    for yy in range(min(y, 2021), 1949, -1):
+        if (cc, yy) in GOV: return GOV[(cc, yy)]
+    return None
 RECENT = ROOT + "/tools/leaders/recent.json"
 rec = json.load(open(RECENT)) if os.path.exists(RECENT) else {}
 for c, lst in rec.items():
     if c.startswith("_"): continue
     SRC["W"][c] = [(d, "2099-12-31", nm) for d, nm in lst]
 
+RALIAS = {"GFR": "GMY", "SER": "YUG", "RUM": "ROM", "FJI": "FIJ"}  # letras do Archigos -> REIGN
 def leader(c, y):
     """quem governava em 31/dez/y"""
     dd = "%d-12-31" % y
     if y <= 2015 and c in SRC["A"]: return at("A", c, dd)
-    if y <= 2020: return at("R", c, dd)
+    if y <= 2020: return at("R", RALIAS.get(c, c), dd)
     return at("W", c, dd)
 
 iso2cow = {}
@@ -70,7 +89,7 @@ ROWCOW = {"SUN": "RUS", "YUG1": "YUG", "YUG2": "YUG", "YUG3": "YUG", "SCG": "YUG
 ERA = json.load(open(ROOT + "/tools/leaders/era-names.json"))
 BAD = re.compile(r"ocupa|protetorado|mandato|fantoche|colônia|Liga das Nações|guerra civil|em disputa|adm\.|anexad|dividida|libertado|Estado cliente|parcialmente|\((britânic|francês|frances|holandes|portugu|espanhol|belga|italian|japon|americ|dinamarq|EUA|Japão|Reino Unido|França)")
 
-TYPES = []  # (name, own, y)
+TYPES = []  # (name, own, y, cow, lon)
 TYPE_FIX = {"Antártida": None, "Bir Tawil": "Terra não reivindicada", "Palestina": "Estado parcialmente reconhecido",
             "Kosovo": "Estado parcialmente reconhecido", "Taiwan": "Estado parcialmente reconhecido", "Rapa Nui (Chile)": "Território dependente"}
 DOMINION = {"Canadá": 1930, "União Sul-Africana": 1930, "Estado Livre Irlandês": 1930, "Austrália": 1938, "Nova Zelândia": 1946,
@@ -98,10 +117,23 @@ def ttype(name, own, y):
     return "País independente"
 
 out = {}
+cargo = {}
+FEMALE_REC = set(rec.get("_mulheres", [])) if isinstance(rec.get("_mulheres"), list) else set()
+CIN = []  # (unidade, ano, cow): o cargo é calculado depois, com o nome final do líder
+def addc(name, y, nm, c): CIN.append((name, y, c, nm in FEMALE or nm in FEMALE_REC))
+def mkcargo():
+    for name, y, c, fem in CIN:
+        nm = next((r[2] for r in out.get(name, []) if r[0] <= y <= r[1]), None)
+        if not nm: continue
+        g = gov(c, name, y)
+        t = kinds.title(name, y, nm, fem or nm in FEMALE or nm in FEMALE_REC, g, kinds.form_of(name, y))
+        lst = cargo.setdefault(name, [])
+        if lst and lst[-1][2] == t and lst[-1][1] == y - 1: lst[-1][1] = y
+        else: lst.append([y, y, t])
 REGNAL = {"Alexander": "Alexandre", "Charles": "Carlos", "Constantine": "Constantino", "Farouk": "Faruk"}
 def add(name, y, nm):
     # monarcas no formato da DBpedia ("Carol II of Romania"): tira o país e traduz o nome
-    m = re.match(r"^(\S+)((?: [IVX]+)?) of [A-Z][\w ]+$", nm)
+    m = re.match(r"^(.+?)((?: [IVX]+)?) of [A-Z][\w ]+$", nm)
     if m: nm = REGNAL.get(m.group(1), m.group(1)) + m.group(2)
     lst = out.setdefault(name, [])
     if lst and lst[-1][2] == nm and lst[-1][1] == y - 1: lst[-1][1] = y
@@ -112,12 +144,12 @@ for y in range(Y0, Y1 + 1):
         era = next(e for e in hist["eras"] if e["y0"] <= y <= e["y1"])
         for u in era["u"]:
             name = u[0]
-            if name: TYPES.append((name, u[5] if len(u) > 5 else None, y))
+            if name: TYPES.append((name, u[5] if len(u) > 5 else None, y, ERA.get(name), (u[2], u[3])))
             if not name or (len(u) > 5 and u[5]): continue
             c = ERA.get(name)
             if not c: continue
             nm = leader(c, y)
-            if nm: add(name, y, nm)
+            if nm: add(name, y, nm); addc(name, y, out[name][-1][2], c)
         continue
     rows = [r for r in hist["units"] if r[3] <= y <= r[4]]
     inrow = set(m for r in rows for m in r[5])
@@ -131,10 +163,10 @@ for y in range(Y0, Y1 + 1):
         if k in inrow: continue
         units.append((e["n"], e.get("o"), iso2cow.get(k)))
     for name, own, c in units:
-        TYPES.append((name, own, y))
+        TYPES.append((name, own, y, c, (None, None)))
         if own or not c or BAD.search(name): continue
         nm = leader(c, y)
-        if nm: add(name, y, nm)
+        if nm: add(name, y, nm); addc(name, y, out[name][-1][2], c)
 FIX = json.load(open(ROOT + "/tools/leaders/fullnames.json"))
 todo = {}
 for k, v in out.items():
@@ -150,13 +182,38 @@ for k, v in list(out.items()):  # junta trechos que ficaram iguais
         if m and m[-1][2] == r[2] and m[-1][1] == r[0] - 1: m[-1][1] = r[1]
         else: m.append(r)
     out[k] = m
+mkcargo()
 if len(sys.argv) > 4: open(sys.argv[4], "w").write("\n".join(k + " " + ",".join(v) for k, v in sorted(todo.items())))
 typ = {}
-for name, own, y in TYPES:
+COLONIAL = re.compile(r"^(Espanha|Portugal|França|Reino da França|Reino Unido|Reino da Grã-Bretanha|Reino da Inglaterra|Holanda|República das Sete Províncias Unidas|"
+                      r"República Holandesa|Reino Unido dos Países Baixos|Países Baixos|Dinamarca|Suécia|Bélgica|Império Alemão|Itália|Reino da Itália|Japão|Império do Japão|"
+                      r"Estados Unidos|Commonwealth da Inglaterra|República Batava|Reino da Holanda|Colônia do Cabo|Império Russo|Brandemburgo-Prússia|Courlândia|Austrália|Nova Zelândia|África do Sul|União Sul-Africana)")
+CADJ = re.compile(r"\((britânic|francês|francesa|holandês|holandesa|portugu|espanhol|belga|italian|japon|american|dinamarq|colônia)", re.I)
+VASSAL = re.compile(r"vassal|tribut|feudo|suserania|sob proteção", re.I)
+def ktype(name, own, y, c, ll):
+    lon, lat = ll
     t = ttype(name, own, y)
+    if t in ("País independente", "Domínio britânico"):
+        if t == "Domínio britânico": return t
+        return kinds.kind(name, None, y, gov(c, name, y))
+    if t == "Território dependente":
+        d = kinds.dep_kind(name, y)
+        if d: return d
+        f = kinds.form_of(name, y, False)
+        if VASSAL.search(name): return "Estado vassalo" + (f" ({f.lower()})" if f and f.split(" ")[0] in ("Reino", "Principado", "Canato", "Sultanato", "Emirado", "Ducado", "Beilhique") else "")
+        if "união pessoal" in name: return "União pessoal"
+        if f and f not in ("Território dependente", "Reino", "Principado", "Ducado", "Condado", "Grão-ducado", "Império", "República"): return f
+        europe = lon is not None and -25 <= lon <= 45 and lat >= 34
+        colon = (own and COLONIAL.match(own)) or (not own and CADJ.search(name))
+        if colon and not europe and (lon is not None or y >= 1946): return "Colônia"
+        if own == "Império Otomano": return "Eialete (Império Otomano)"
+        if f: return f + " (sob " + own + ")" if own and not own[0].islower() else f
+    return t
+for name, own, y, c, ll in TYPES:
+    t = ktype(name, own, y, c, ll)
     if t is None: continue
     lst = typ.setdefault(name, [])
     if lst and lst[-1][2] == t and lst[-1][1] >= y - 1: lst[-1][1] = max(lst[-1][1], y)
     elif not (lst and lst[-1][2] == t and lst[-1][1] >= y): lst.append([y, y, t])
-json.dump({"l": out, "t": typ}, open(A + "leaders.json", "w"), ensure_ascii=False, separators=(",", ":"))
+json.dump({"l": out, "t": typ, "c": cargo}, open(A + "leaders.json", "w"), ensure_ascii=False, separators=(",", ":"))
 print("unidades com líder:", len(out), "trechos:", sum(len(v) for v in out.values()))

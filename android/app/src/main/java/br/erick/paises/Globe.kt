@@ -438,10 +438,10 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
             val open = !it.info.isNullOrEmpty() && it.key == openKey
             // open label: the info rows hang below the name, inside the same shape
             val maxW = min(280 * d, width - 24 * d)
-            val rows = if (!open) emptyList() else it.info!!.map { (k, v) -> k to wrap(v, rowVal, maxW - 2 * pad) }
-            if (open) w = max(w, min(maxW, rows.maxOf { (k, ls) -> max(rowKey.measureText(k), ls.maxOf { l -> rowVal.measureText(l) }) } + 2 * pad))
+            val rows = if (!open) emptyList() else it.info!!.map { (k, v) -> wrap(k, rowKey, maxW - 2 * pad) to wrap(v, rowVal, maxW - 2 * pad) }
+            if (open) w = max(w, min(maxW, rows.maxOf { (ks, ls) -> max(ks.maxOf { l -> rowKey.measureText(l) }, ls.maxOf { l -> rowVal.measureText(l) }) } + 2 * pad))
             val lineV = rowVal.textSize + 3 * d; val lineK = rowKey.textSize + 4 * d
-            val extra = if (!open) 0f else 6 * d + rows.sumOf { (_, ls) -> (lineK + ls.size * lineV + 8 * d).toDouble() }.toFloat()
+            val extra = if (!open) 0f else 6 * d + rows.sumOf { (ks, ls) -> (ks.size * lineK + ls.size * lineV + 8 * d).toDouble() }.toFloat()
             val rpx = sqrt(it.sr / PI) * R
             // a label wider than its country sits above it, with a pointer to the right place
             val above = it.dot || rpx * 2.2 < w
@@ -489,8 +489,8 @@ class LabelsView(context: Context, private val host: GlobeHost) : View(context) 
                 var yy = y + h
                 canvas.drawRect(x + pad, yy, x + w - pad, yy + d, sep)
                 yy += 6 * d
-                for ((k, ls) in rows) {
-                    canvas.drawText(k, x + pad, yy - rowKey.ascent(), rowKey); yy += lineK
+                for ((ks, ls) in rows) {
+                    for (k in ks) { canvas.drawText(k, x + pad, yy - rowKey.ascent(), rowKey); yy += lineK }
                     for (ln in ls) { canvas.drawText(ln, x + pad, yy - rowVal.ascent(), rowVal); yy += lineV }
                     yy += 8 * d
                 }

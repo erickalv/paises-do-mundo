@@ -34150,6 +34150,7 @@ export const EVENTS = {
   1930: [
     ...ISLES[1930],
     // revisão 1935–1937 (situação em 31/dez); vale também para 1930–1934, ainda não revisados. Unidades novas vêm de hist-overrides.json.
+    ...perYear(1930, 1937, { r: { "Grenada": "Granada", "Saint Vincent and the Grenadines": "São Vicente" }, f: { "Grenada": "x:gb", "Saint Vincent and the Grenadines": "x:gb" }, o: { "Grenada": "Reino Unido", "Saint Vincent and the Grenadines": "Reino Unido" } }), /*fixo*/ // colônias britânicas desde 1783 (Wikipedia)
     { y: 1930, m: ["União Soviética", "h:su", ["White Russia", "Azerbaijan", "Armenia", "Georgia", "Far Eastern SSR"]] }, // a República do Extremo Oriente entrou na Rússia soviética em 15/nov/1922
     { y: 1930, m: ["Turquia", "x:tr", ["Republic of Turkey", "Turkey"]] },
     { y: 1930, m: ["Alemanha", "x:de", ["Germany", "East Prussia"]] },
