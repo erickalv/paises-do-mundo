@@ -1,0 +1,53 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_doges_of_Venice (? = só o ano de início)
+VEN|1462?|1471-11-10|Cristoforo Moro|Doge
+VEN|1471?|1473-07-28|Nicolò Tron|Doge
+VEN|1473-08-13|1474-12-01|Nicolò Marcello|Doge
+VEN|1474-12-14|1476-02-23|Pietro Mocenigo|Doge
+VEN|1476?|1478-05-05|Andrea Vendramin|Doge
+VEN|1478?|1485-11-04|Giovanni Mocenigo|Doge
+VEN|1485?|1486-08-14|Marco Barbarigo|Doge
+VEN|1486?|1501-09-20|Agostino Barbarigo|Doge
+VEN|1501-10-13|1521-06-22|Leonardo Loredan|Doge
+VEN|1521?|1523-05-07|Antonio Grimani|Doge
+VEN|1523-05-20|1538-12-28|Andrea Gritti|Doge
+VEN|1538?|1545-11-09|Pietro Lando|Doge
+VEN|1545?|1553-05-23|Francesco Donà|Doge
+VEN|1553?|1554-05-31|Marcantonio Trevisan|Doge
+VEN|1554-06-11|1556-06-02|Francesco Venier|Doge
+VEN|1556?|1559-08-17|Lorenzo Priuli|Doge
+VEN|1559-09-01|1567-11-04|Girolamo Priuli|Doge
+VEN|1567-11-29|1570-05-03|Pietro Loredan|Doge
+VEN|1570?|1577-06-04|Alvise I Mocenigo|Doge
+VEN|1577-06-11|1578-03-03|Sebastiano Venier|Doge
+VEN|1578-03-03|1585-07-30|Nicolò da Ponte|Doge
+VEN|1585?|1595-04-02|Pasquale Cicogna|Doge
+VEN|1595-04-26|1605-12-25|Marino Grimani|Doge
+VEN|1606-01-10|1612-07-16|Leonardo Donà|Doge
+VEN|1612-07-24|1615-10-31|Marcantonio Memmo|Doge
+VEN|1615-12-02|1618-03-16|Giovanni Bembo|Doge
+VEN|1618-05-17|1623-08-12|Antonio Priuli|Doge
+VEN|1623-09-08|1624-12-06|Francesco Contarini|Doge
+VEN|1625-01-24|1629-12-23|Giovanni I Cornaro|Doge
+VEN|1630-01-18|1631-04-02|Nicolò Contarini|Doge
+VEN|1631-04-10|1646-01-03|Francesco Erizzo|Doge
+VEN|1646-01-20|1655-02-27|Francesco Molin|Doge
+VEN|1655-03-27|1656-05-01|Carlo Contarini|Doge
+VEN|1656-06-15|1658-03-29|Bertuccio Valier|Doge
+VEN|1658-04-08|1659-09-30|Giovanni Pesaro|Doge
+VEN|1659-10-16|1675-01-26|Domenico II Contarini|Doge
+VEN|1675-02-06|1676-08-14|Nicolò Sagredo|Doge
+VEN|1676-08-26|1684-01-15|Alvise Contarini|Doge
+VEN|1684-01-26|1688-03-23|Marcantonio Giustinian|Doge
+VEN|1688-04-03|1694-01-16|Francesco Morosini|Doge
+VEN|1694-02-25|1700-07-07|Silvestro Valier|Doge
+VEN|1700-07-17|1709-05-06|Alvise II Mocenigo|Doge
+VEN|1709-05-22|1722-08-12|Giovanni II Cornaro|Doge
+VEN|1722-08-24|1732-05-21|Sebastiano Mocenigo|Doge
+VEN|1732-06-06|1735-01-05|Carlo Ruzzini|Doge
+VEN|1735-01-17|1741-06-17|Alvise Pisani|Doge
+VEN|1741-06-30|1752-03-07|Pietro Grimani|Doge
+VEN|1752-03-18|1762-05-19|Francesco Loredan|Doge
+VEN|1762-05-31|1763-03-31|Marco Foscarini|Doge
+VEN|1763-04-19|1779-01-01|Alvise Giovanni Mocenigo|Doge
+VEN|1779-01-14|1789-02-13|Paolo Renier|Doge
+VEN|1789-03-10|1797-05-12|Ludovico Manin|Doge

@@ -1,0 +1,21 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_kings_of_Joseon (só anos)
+KR|1455|1468|Sejo|Rei
+KR|1468|1469|Yejong|Rei
+KR|1469|1494|Seongjong|Rei
+KR|1494|1506|Yeonsangun|Rei
+KR|1506|1544|Jungjong|Rei
+KR|1544|1545|Injong|Rei
+KR|1545|1567|Myeongjong|Rei
+KR|1567|1608|Seonjo|Rei
+KR|1608|1623|Gwanghaegun|Rei
+KR|1623|1649|Injo|Rei
+KR|1649|1659|Hyojong|Rei
+KR|1659|1674|Hyeonjong|Rei
+KR|1674|1720|Sukjong|Rei
+KR|1720|1724|Gyeongjong|Rei
+KR|1724|1776|Yeongjo|Rei
+KR|1776|1800|Jeongjo|Rei
+KR|1800|1834|Sunjo|Rei
+KR|1834|1849|Heonjong|Rei
+KR|1849|1864|Cheoljong|Rei
+KR|1864|1897|Gojong|Rei

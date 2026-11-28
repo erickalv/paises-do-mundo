@@ -1,0 +1,18 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_presidents_of_the_United_States
+US|1789-04-30|1797-03-04|George Washington|Presidente
+US|1797-03-04|1801-03-04|John Adams|Presidente
+US|1801-03-04|1809-03-04|Thomas Jefferson|Presidente
+US|1809-03-04|1817-03-04|James Madison|Presidente
+US|1817-03-04|1825-03-04|James Monroe|Presidente
+US|1825-03-04|1829-03-04|John Quincy Adams|Presidente
+US|1829-03-04|1837-03-04|Andrew Jackson|Presidente
+US|1837-03-04|1841-03-04|Martin Van Buren|Presidente
+US|1841-04-04|1845-03-04|John Tyler|Presidente
+US|1845-03-04|1849-03-04|James K. Polk|Presidente
+US|1849-03-04|1850-07-09|Zachary Taylor|Presidente
+US|1850-07-09|1853-03-04|Millard Fillmore|Presidente
+US|1853-03-04|1857-03-04|Franklin Pierce|Presidente
+US|1857-03-04|1861-03-04|James Buchanan|Presidente
+US|1861-03-04|1865-04-15|Abraham Lincoln|Presidente
+US|1865-04-15|1869-03-04|Andrew Johnson|Presidente
+US|1869-03-04|1877-03-04|Ulysses S. Grant|Presidente

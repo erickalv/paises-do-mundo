@@ -1,0 +1,53 @@
+# fonte: https://en.wikipedia.org/wiki/Holy_Roman_Emperor ; https://en.wikipedia.org/wiki/List_of_monarchs_of_Prussia ; https://en.wikipedia.org/wiki/List_of_margraves_and_electors_of_Brandenburg ; https://en.wikipedia.org/wiki/List_of_Scottish_monarchs (só anos)
+# Monarquia de Habsburgo: chefe da casa nas terras austríacas (datas dos imperadores; Carlos V passou a Áustria a Fernando em 1521; Maria Teresa 1740–1780)
+HAB|1440-02-02|1493-08-19|Frederico III|Imperador
+HAB|1493-08-19|1519-01-12|Maximiliano I|Imperador
+HAB|1519-01-12|1521-04-28|Carlos V|Imperador
+HAB|1521-04-28|1564-07-25|Fernando I|Arquiduque e imperador
+HAB|1564-07-25|1576-10-12|Maximiliano II|Imperador
+HAB|1576-10-12|1612-01-20|Rodolfo II|Imperador
+HAB|1612-01-20|1619-03-20|Matias|Imperador
+HAB|1619-03-20|1637-02-15|Fernando II|Imperador
+HAB|1637-02-15|1657-04-02|Fernando III|Imperador
+HAB|1657-04-02|1705-05-05|Leopoldo I|Imperador
+HAB|1705-05-05|1711-04-17|José I|Imperador
+HAB|1711-04-17|1740-10-20|Carlos VI|Imperador
+HAB|1740-10-20|1780-11-29|Maria Teresa|Arquiduquesa e rainha
+HAB|1780-11-29|1790-02-20|José II|Imperador
+HAB|1790-02-20|1792-03-01|Leopoldo II|Imperador
+HAB|1792-03-01|1835-03-02|Francisco II (Francisco I da Áustria)|Imperador
+HAB|1835-03-02|1848-12-02|Fernando I|Imperador
+HAB|1848-12-02|1916-11-21|Francisco José I|Imperador
+PR|1525-04-10|1568-03-20|Alberto|Duque
+PR|1568-03-20|1618-08-27|Alberto Frederico|Duque
+PR|1618-08-27|1619-12-23|João Sigismundo|Eleitor e duque
+PR|1619-12-23|1640-12-01|Jorge Guilherme|Eleitor e duque
+PR|1640-12-01|1688-04-29|Frederico Guilherme, o Grande Eleitor|Eleitor e duque
+PR|1688-04-29|1701-01-18|Frederico III|Eleitor e duque
+PR|1701-01-18|1713-02-25|Frederico I|Rei
+PR|1713-02-25|1740-05-31|Frederico Guilherme I|Rei
+PR|1740-05-31|1786-08-17|Frederico II, o Grande|Rei
+PR|1786-08-17|1797-11-16|Frederico Guilherme II|Rei
+PR|1797-11-16|1840-06-07|Frederico Guilherme III|Rei
+PR|1840-06-07|1861-01-02|Frederico Guilherme IV|Rei
+PR|1861-01-02|1888-03-09|Guilherme I|Rei
+BR|1440-09-20|1471-02-10|Frederico II|Eleitor
+BR|1471-02-10|1486-03-11|Alberto III Aquiles|Eleitor
+BR|1486-03-11|1499-01-09|João Cícero|Eleitor
+BR|1499-01-09|1535-07-11|Joaquim I Nestor|Eleitor
+BR|1535-07-11|1571-01-03|Joaquim II Heitor|Eleitor
+BR|1571-01-03|1598-01-08|João Jorge|Eleitor
+BR|1598-01-08|1608-07-18|Joaquim Frederico|Eleitor
+BR|1608-07-18|1619-11-03|João Sigismundo|Eleitor
+SC|1460|1488|Jaime III|Rei
+SC|1488|1513|Jaime IV|Rei
+SC|1513|1542|Jaime V|Rei
+SC|1542|1567|Maria I|Rainha
+SC|1567|1625|Jaime VI|Rei
+SC|1625|1649|Carlos I|Rei
+SC|1649|1651|Carlos II|Rei
+SC|1660|1685|Carlos II|Rei
+SC|1685|1688|Jaime VII|Rei
+SC|1689|1694|Guilherme II e Maria II|Reis
+SC|1694|1702|Guilherme II|Rei
+SC|1702|1707|Ana|Rainha

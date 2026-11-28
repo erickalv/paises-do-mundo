@@ -42,3 +42,16 @@ EN|1760-10-25|1820-01-29|Jorge III|Rei
 EN|1820-01-29|1830-06-26|Jorge IV|Rei
 EN|1830-06-26|1837-06-20|Guilherme IV|Rei
 EN|1837-06-20|1901-01-22|Vitória|Rainha
+# república: https://en.wikipedia.org/wiki/List_of_heads_of_state_of_France
+FR|1792-12-13|1792-12-27|Jacques Defermon|Presidente da Convenção Nacional
+FR|1793-12-21|1794-01-05|Georges Couthon|Presidente da Convenção Nacional
+FR|1794-12-21|1795-01-06|Pierre-Louis Bentabole|Presidente da Convenção Nacional
+FR|1795-11-02|1799-11-09|Paul Barras e outros diretores|Diretório
+FR|1799-11-10|1804-05-18|Napoleão Bonaparte|Primeiro-cônsul
+FR|1848-02-26|1848-05-09|Jacques-Charles Dupont de l'Eure|Presidente do Governo Provisório
+FR|1848-05-09|1848-06-24|François Arago|Presidente da Comissão Executiva
+FR|1848-06-28|1848-12-20|Louis-Eugène Cavaignac|Chefe do Poder Executivo
+FR|1848-12-20|1852-12-02|Luís Napoleão Bonaparte|Presidente
+FR|1870-09-14|1871-02-13|Louis-Jules Trochu|Presidente do Governo de Defesa Nacional
+FR|1871-02-17|1873-05-24|Adolphe Thiers|Presidente
+FR|1873-05-24|1879-01-30|Patrice de MacMahon|Presidente

@@ -24,3 +24,23 @@ EN|Commonwealth da Inglaterra, Escócia e Irlanda|1653|1659
 EN|Reino da Grã-Bretanha|1707|1800
 EN|Reino Unido|1801|1874
 IR|Pérsia|1501|1874
+KR|Reino de Joseon|1470|1874
+VEN|República de Veneza|1470|1796
+MUG|Império Mogol|1526|1802
+SUR|Império Suri|1540|1554
+MING|Dinastia Ming|1470|1643
+SMING1|Ming do Sul \(Hongguang\)|1644|1644
+SMING2|Ming do Sul \(Longwu\)|1645|1645
+SMING3|Ming do Sul \(Yongli.*\)|1646|1661
+QING|Jin Posterior|1616|1635
+QING|Império Qing|1636|1874
+HAB|Monarquia de Habsburgo|1470|1803
+HAB|Império Austríaco|1804|1866
+HAB|Áustria-Hungria|1867|1874
+PR|Ducado da Prússia( \(.*\))?|1525|1700
+PR|Brandemburgo-Prússia|1618|1700
+PR|Reino da Prússia( \(.*\))?|1701|1866
+BR|Eleitorado de Brandemburgo|1470|1617
+SC|Reino da Escócia( \(.*\))?|1470|1706
+FR|República Francesa \(.*\)|1792|1803
+US|Estados Unidos|1776|1874

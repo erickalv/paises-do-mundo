@@ -1,0 +1,39 @@
+# fonte: https://en.wikipedia.org/wiki/List_of_emperors_of_the_Mughal_Empire ; List_of_emperors_of_the_Ming_dynasty ; List_of_emperors_of_the_Qing_dynasty
+MUG|1526-04-21|1530-12-26|Babur|Imperador
+MUG|1530-12-26|1540-05-17|Humayun|Imperador
+SUR|1540|1545|Sher Shah Suri|Imperador
+MUG|1555-02-22|1556-01-27|Humayun|Imperador
+MUG|1556-02-11|1605-10-27|Akbar I|Imperador
+MUG|1605-11-03|1627-10-28|Jahangir|Imperador
+MUG|1628-01-19|1658-07-31|Shah Jahan I|Imperador
+MUG|1658-07-31|1707-03-03|Aurangzeb|Imperador
+MUG|1707-06-19|1712-02-27|Bahadur Shah I|Imperador
+MUG|1712-02-27|1713-02-11|Jahandar Shah|Imperador
+MUG|1713-02-11|1719-02-28|Farrukhsiyar|Imperador
+MUG|1719-09-27|1748-04-26|Muhammad Shah|Imperador
+MUG|1748-04-29|1754-06-02|Ahmad Shah Bahadur|Imperador
+MUG|1754-06-03|1759-11-29|Alamgir II|Imperador
+MUG|1759-12-10|1760-10-10|Shah Jahan III|Imperador
+MUG|1760-10-10|1806-11-19|Shah Alam II|Imperador
+MING|1464-02-23|1487-09-09|Chenghua|Imperador
+MING|1487-09-09|1505-06-08|Hongzhi|Imperador
+MING|1505-06-09|1521-04-20|Zhengde|Imperador
+MING|1521-05-27|1567-01-23|Jiajing|Imperador
+MING|1567-01-23|1572-07-05|Longqing|Imperador
+MING|1572-07-05|1620-08-18|Wanli|Imperador
+MING|1620-09-26|1627-09-30|Tianqi|Imperador
+MING|1627-10-02|1644-04-25|Chongzhen|Imperador
+SMING1|1644-06-19|1645-06-15|Hongguang|Imperador
+SMING2|1645-08-18|1646-10-06|Longwu|Imperador
+SMING3|1646-12-24|1662-06-01|Yongli|Imperador
+QING|1616-02-17|1626-09-30|Nurhaci|Cã
+QING|1626-10-20|1636-05-15|Hong Taiji|Cã
+QING|1636-05-15|1643-09-21|Hong Taiji|Imperador
+QING|1644-10-30|1661-02-05|Shunzhi|Imperador
+QING|1661-02-05|1722-12-20|Kangxi|Imperador
+QING|1722-12-27|1735-10-08|Yongzheng|Imperador
+QING|1735-10-18|1796-02-09|Qianlong|Imperador
+QING|1796-02-09|1820-09-02|Jiaqing|Imperador
+QING|1820-10-03|1850-02-26|Daoguang|Imperador
+QING|1850-03-09|1861-08-22|Xianfeng|Imperador
+QING|1861-11-11|1875-01-12|Tongzhi|Imperador

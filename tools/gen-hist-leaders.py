@@ -97,7 +97,7 @@ for fn in sorted(os.listdir(OLDDIR)):
     for ln in open(OLDDIR + fn, encoding="utf-8"):
         ln = ln.strip()
         if not ln or ln.startswith("#"): continue
-        st, a, b, nm, t = ln.split("|")
+        st, a, b, nm, t = ln.replace("?", "").split("|")
         OLDR.setdefault(st, []).append((a, b or "9999", nm, t))
 OLDMAP = []
 for ln in open(OLDDIR + "map.txt", encoding="utf-8"):
