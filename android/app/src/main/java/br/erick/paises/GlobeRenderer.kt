@@ -30,6 +30,7 @@ class Style(
     val snapUnits: ByteArray? = null, // RGBA-encoded unit code per unit of that map
     val pickUnits: Set<Int> = emptySet(), // before 1946: units of the historical map painted yellow (the tapped one)
     val subUnits: Set<Int> = emptySet(),  // before 1946: units painted a softer yellow (colonies and occupied land of the tapped one)
+    val unknownUnits: Set<Int> = emptySet(), // before 1946: units with no information on that map, painted dark
     val outline: FloatArray? = null, // game: segments (ax ay az bx by bz) of the outline drawn strong
 )
 
@@ -114,8 +115,9 @@ class GlobeRenderer(private val ctx: Context, private val data: GeoData) : GLSur
         glEnable(GL_STENCIL_TEST)
         glStencilFunc(GL_ALWAYS, 1, 0xFF); glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE)
         glDrawElements(GL_TRIANGLES, landCount, GL_UNSIGNED_INT, 0)
-        if (st.snap >= 0 && (st.pickUnits.isNotEmpty() || st.subUnits.isNotEmpty())) {
+        if (st.snap >= 0 && (st.pickUnits.isNotEmpty() || st.subUnits.isNotEmpty() || st.unknownUnits.isNotEmpty())) {
             glStencilFunc(GL_EQUAL, 1, 0xFF); glStencilOp(GL_KEEP, GL_KEEP, GL_KEEP)
+            if (st.unknownUnits.isNotEmpty()) drawFill(v, st.snap, st.unknownUnits, DIM_RGB)
             if (st.subUnits.isNotEmpty()) drawFill(v, st.snap, st.subUnits, SUB_RGB)
             if (st.pickUnits.isNotEmpty()) drawFill(v, st.snap, st.pickUnits, PICK_RGB)
         }
@@ -549,6 +551,7 @@ uniform vec3 uColor;
 void main() { if (vZ < 0.0) discard; o = vec4(uColor, 1.0); }"""
         val PICK_RGB = floatArrayOf(230 / 255f, 198 / 255f, 110 / 255f)  // same yellow as FOUND in AppModel
         val SUB_RGB = floatArrayOf(232 / 255f, 216 / 255f, 166 / 255f)  // same as SUB in AppModel
+        val DIM_RGB = floatArrayOf(110 / 255f, 108 / 255f, 102 / 255f)  // same as DIM in AppModel: land with no information
 
         const val VS_DOT = "#version 300 es\n" + PROJ + """
 layout(location = 0) in vec3 aPos;

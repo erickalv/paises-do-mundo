@@ -364,7 +364,8 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
         val snapUnits = info?.snapMap?.let { m -> ByteArray(m.size * 4).also { b -> for (i in m.indices) GlobeRenderer.putCode(b, i, m[i]) } }
         for (p in 0 until n) {
             val o = data.pieceOwner[p]
-            val c = if (p in pickPieces) FOUND else if (p in subPieces) SUB else if (o >= 0) colorOf(data.entities[o]) else LAND
+            val unknown = info != null && info.snap < 0 && info.units.getOrNull(info.unitOfPiece.getOrElse(p) { -1 })?.name.isNullOrEmpty()
+            val c = if (p in pickPieces) FOUND else if (p in subPieces) SUB else if (unknown) DIM else if (o >= 0) colorOf(data.entities[o]) else LAND
             pal[p * 4] = ((c shr 16) and 0xFF).toByte(); pal[p * 4 + 1] = ((c shr 8) and 0xFF).toByte()
             pal[p * 4 + 2] = (c and 0xFF).toByte(); pal[p * 4 + 3] = 0xFF.toByte()
             val code = info?.unitOfPiece?.getOrNull(p) ?: if (o >= 0) o else 100000 + p
@@ -383,7 +384,9 @@ class AppModel(val data: GeoData, private val prefs: SharedPreferences) {
         val pickCodes = pks.map { it.code }.filter { it >= 0 }.toSet()
         val pickUnits = if (sm != null && pickCodes.isNotEmpty()) sm.indices.filter { sm[it] in pickCodes }.toSet() else emptySet()
         val subUnits = if (sm != null && subCodes.isNotEmpty()) sm.indices.filter { sm[it] in subCodes }.toSet() else emptySet()
-        return Style(pal, units, mode == Mode.HISTORY, dots, info?.snap ?: -1, snapUnits, pickUnits, subUnits,
+        // land with no information on the historical map is drawn dark
+        val unknownUnits = if (sm != null && info != null) sm.indices.filter { info.units.getOrNull(sm[it])?.name.isNullOrEmpty() }.toSet() else emptySet()
+        return Style(pal, units, mode == Mode.HISTORY, dots, info?.snap ?: -1, snapUnits, pickUnits, subUnits, unknownUnits,
             if (mode == Mode.GAME) outline else null)
     }
 
